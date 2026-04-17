@@ -1,0 +1,1066 @@
+[
+  {
+    "ticker": "7203",
+    "nameEn": "Toyota Motor",
+    "nameKo": "토요타 자동차",
+    "nameJp": "トヨタ自動車",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "6758",
+    "nameEn": "Sony Group",
+    "nameKo": "소니 그룹",
+    "nameJp": "ソニーグループ",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "9984",
+    "nameEn": "SoftBank Group",
+    "nameKo": "소프트뱅크 그룹",
+    "nameJp": "ソフトバンクグループ",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "6861",
+    "nameEn": "Keyence",
+    "nameKo": "키엔스",
+    "nameJp": "キーエンス",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "8306",
+    "nameEn": "Mitsubishi UFJ Financial",
+    "nameKo": "미쓰비시 UFJ 파이낸셜",
+    "nameJp": "三菱UFJフィナンシャル",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "9432",
+    "nameEn": "Nippon Telegraph & Telephone",
+    "nameKo": "NTT",
+    "nameJp": "日本電信電話",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "8058",
+    "nameEn": "Mitsubishi Corporation",
+    "nameKo": "미쓰비시 상사",
+    "nameJp": "三菱商事",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "8035",
+    "nameEn": "Tokyo Electron",
+    "nameKo": "도쿄 일렉트론",
+    "nameJp": "東京エレクトロン",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6098",
+    "nameEn": "Recruit Holdings",
+    "nameKo": "리크루트 홀딩스",
+    "nameJp": "リクルートホールディングス",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "8316",
+    "nameEn": "Sumitomo Mitsui Financial",
+    "nameKo": "미쓰이 스미토모 파이낸셜",
+    "nameJp": "三井住友フィナンシャル",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "4063",
+    "nameEn": "Shin-Etsu Chemical",
+    "nameKo": "신에쓰 화학",
+    "nameJp": "信越化学工業",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "8411",
+    "nameEn": "Mizuho Financial Group",
+    "nameKo": "미즈호 파이낸셜",
+    "nameJp": "みずほフィナンシャルグループ",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "7974",
+    "nameEn": "Nintendo",
+    "nameKo": "닌텐도",
+    "nameJp": "任天堂",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "9433",
+    "nameEn": "KDDI",
+    "nameKo": "KDDI",
+    "nameJp": "KDDI",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "7267",
+    "nameEn": "Honda Motor",
+    "nameKo": "혼다 자동차",
+    "nameJp": "本田技研工業",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "8001",
+    "nameEn": "Itochu Corporation",
+    "nameKo": "이토추 상사",
+    "nameJp": "伊藤忠商事",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "6501",
+    "nameEn": "Hitachi",
+    "nameKo": "히타치",
+    "nameJp": "日立製作所",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "4502",
+    "nameEn": "Takeda Pharmaceutical",
+    "nameKo": "다케다 제약",
+    "nameJp": "武田薬品工業",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "8031",
+    "nameEn": "Mitsui & Co.",
+    "nameKo": "미쓰이 물산",
+    "nameJp": "三井物産",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9983",
+    "nameEn": "Fast Retailing (Uniqlo)",
+    "nameKo": "패스트 리테일링",
+    "nameJp": "ファーストリテイリング",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "6594",
+    "nameEn": "Nidec Corporation",
+    "nameKo": "니덱",
+    "nameJp": "ニデック",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "7751",
+    "nameEn": "Canon",
+    "nameKo": "캐논",
+    "nameJp": "キヤノン",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "4503",
+    "nameEn": "Astellas Pharma",
+    "nameKo": "아스텔라스 제약",
+    "nameJp": "アステラス製薬",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "9020",
+    "nameEn": "East Japan Railway",
+    "nameKo": "JR 동일본",
+    "nameJp": "東日本旅客鉄道",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "5401",
+    "nameEn": "Nippon Steel",
+    "nameKo": "일본제철",
+    "nameJp": "日本製鉄",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "7011",
+    "nameEn": "Mitsubishi Heavy Industries",
+    "nameKo": "미쓰비시 중공업",
+    "nameJp": "三菱重工業",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "2914",
+    "nameEn": "Japan Tobacco",
+    "nameKo": "일본 담배산업",
+    "nameJp": "日本たばこ産業",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "4661",
+    "nameEn": "Oriental Land",
+    "nameKo": "오리엔탈 랜드",
+    "nameJp": "オリエンタルランド",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "8267",
+    "nameEn": "Aeon Co.",
+    "nameKo": "이온",
+    "nameJp": "イオン",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "6902",
+    "nameEn": "Denso Corporation",
+    "nameKo": "덴소",
+    "nameJp": "デンソー",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "6981",
+    "nameEn": "Murata Manufacturing",
+    "nameKo": "무라타 제작소",
+    "nameJp": "村田製作所",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6920",
+    "nameEn": "Lasertec",
+    "nameKo": "레이저테크",
+    "nameJp": "レーザーテック",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6857",
+    "nameEn": "Advantest",
+    "nameKo": "어드반테스트",
+    "nameJp": "アドバンテスト",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6971",
+    "nameEn": "Kyocera",
+    "nameKo": "교세라",
+    "nameJp": "京セラ",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6503",
+    "nameEn": "Mitsubishi Electric",
+    "nameKo": "미쓰비시 전기",
+    "nameJp": "三菱電機",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "7735",
+    "nameEn": "SCREEN Holdings",
+    "nameKo": "스크린 홀딩스",
+    "nameJp": "SCREENホールディングス",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "4704",
+    "nameEn": "Trend Micro",
+    "nameKo": "트렌드 마이크로",
+    "nameJp": "トレンドマイクロ",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6702",
+    "nameEn": "Fujitsu",
+    "nameKo": "후지쯔",
+    "nameJp": "富士通",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6762",
+    "nameEn": "TDK",
+    "nameKo": "TDK",
+    "nameJp": "TDK",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6988",
+    "nameEn": "Nitto Denko",
+    "nameKo": "닛토덴코",
+    "nameJp": "日東電工",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6954",
+    "nameEn": "Fanuc",
+    "nameKo": "화낙",
+    "nameJp": "ファナック",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6723",
+    "nameEn": "Renesas Electronics",
+    "nameKo": "르네사스",
+    "nameJp": "ルネサスエレクトロニクス",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "9613",
+    "nameEn": "NTT Data Group",
+    "nameKo": "NTT 데이터",
+    "nameJp": "NTTデータグループ",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "6701",
+    "nameEn": "NEC Corporation",
+    "nameKo": "NEC",
+    "nameJp": "日本電気",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "8725",
+    "nameEn": "MS&AD Insurance",
+    "nameKo": "MS&AD 인슈어런스",
+    "nameJp": "MS&ADインシュアランス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8766",
+    "nameEn": "Tokio Marine Holdings",
+    "nameKo": "도쿄해상",
+    "nameJp": "東京海上ホールディングス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8750",
+    "nameEn": "Dai-ichi Life Holdings",
+    "nameKo": "다이이치생명",
+    "nameJp": "第一生命ホールディングス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8630",
+    "nameEn": "Sompo Holdings",
+    "nameKo": "손포",
+    "nameJp": "SOMPOホールディングス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8591",
+    "nameEn": "Orix Corporation",
+    "nameKo": "오릭스",
+    "nameJp": "オリックス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8601",
+    "nameEn": "Daiwa Securities",
+    "nameKo": "다이와증권",
+    "nameJp": "大和証券グループ",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8604",
+    "nameEn": "Nomura Holdings",
+    "nameKo": "노무라",
+    "nameJp": "野村ホールディングス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8697",
+    "nameEn": "Japan Exchange Group",
+    "nameKo": "일본 거래소",
+    "nameJp": "日本取引所グループ",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "7182",
+    "nameEn": "Japan Post Bank",
+    "nameKo": "일본 우편은행",
+    "nameJp": "ゆうちょ銀行",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8473",
+    "nameEn": "SBI Holdings",
+    "nameKo": "SBI 홀딩스",
+    "nameJp": "SBIホールディングス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "8308",
+    "nameEn": "Resona Holdings",
+    "nameKo": "리소나",
+    "nameJp": "りそなホールディングス",
+    "segment": "Prime",
+    "sector": "Financials"
+  },
+  {
+    "ticker": "9022",
+    "nameEn": "Central Japan Railway",
+    "nameKo": "JR 도카이",
+    "nameJp": "東海旅客鉄道",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9021",
+    "nameEn": "West Japan Railway",
+    "nameKo": "JR 서일본",
+    "nameJp": "西日本旅客鉄道",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9101",
+    "nameEn": "Nippon Yusen (NYK)",
+    "nameKo": "니폰유센",
+    "nameJp": "日本郵船",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9104",
+    "nameEn": "Mitsui O.S.K. Lines",
+    "nameKo": "MOL",
+    "nameJp": "商船三井",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9107",
+    "nameEn": "Kawasaki Kisen (K Line)",
+    "nameKo": "가와사키기선",
+    "nameJp": "川崎汽船",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "6301",
+    "nameEn": "Komatsu",
+    "nameKo": "고마쓰",
+    "nameJp": "小松製作所",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "6326",
+    "nameEn": "Kubota Corporation",
+    "nameKo": "구보타",
+    "nameJp": "クボタ",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "6367",
+    "nameEn": "Daikin Industries",
+    "nameKo": "다이킨",
+    "nameJp": "ダイキン工業",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "7012",
+    "nameEn": "Kawasaki Heavy Industries",
+    "nameKo": "가와사키 중공업",
+    "nameJp": "川崎重工業",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "7013",
+    "nameEn": "IHI Corporation",
+    "nameKo": "IHI",
+    "nameJp": "IHI",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "6273",
+    "nameEn": "SMC Corporation",
+    "nameKo": "SMC",
+    "nameJp": "SMC",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "6305",
+    "nameEn": "Hitachi Construction Machinery",
+    "nameKo": "히타치 건기",
+    "nameJp": "日立建機",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "8002",
+    "nameEn": "Marubeni Corporation",
+    "nameKo": "마루베니",
+    "nameJp": "丸紅",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "8053",
+    "nameEn": "Sumitomo Corporation",
+    "nameKo": "스미토모 상사",
+    "nameJp": "住友商事",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "8015",
+    "nameEn": "Toyota Tsusho",
+    "nameKo": "도요타 통상",
+    "nameJp": "豊田通商",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9005",
+    "nameEn": "Tokyu Corporation",
+    "nameKo": "도큐",
+    "nameJp": "東急",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9202",
+    "nameEn": "ANA Holdings",
+    "nameKo": "ANA 홀딩스",
+    "nameJp": "ANAホールディングス",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "9201",
+    "nameEn": "Japan Airlines (JAL)",
+    "nameKo": "일본항공",
+    "nameJp": "日本航空",
+    "segment": "Prime",
+    "sector": "Industrials"
+  },
+  {
+    "ticker": "7261",
+    "nameEn": "Mazda Motor",
+    "nameKo": "마쓰다",
+    "nameJp": "マツダ",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "7269",
+    "nameEn": "Suzuki Motor",
+    "nameKo": "스즈키",
+    "nameJp": "スズキ",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "7270",
+    "nameEn": "Subaru Corporation",
+    "nameKo": "스바루",
+    "nameJp": "SUBARU",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "7201",
+    "nameEn": "Nissan Motor",
+    "nameKo": "닛산",
+    "nameJp": "日産自動車",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "7272",
+    "nameEn": "Yamaha Motor",
+    "nameKo": "야마하 모터",
+    "nameJp": "ヤマハ発動機",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "4755",
+    "nameEn": "Rakuten Group",
+    "nameKo": "라쿠텐",
+    "nameJp": "楽天グループ",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "3382",
+    "nameEn": "Seven & i Holdings",
+    "nameKo": "세븐&아이",
+    "nameJp": "セブン&アイ",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "9843",
+    "nameEn": "Nitori Holdings",
+    "nameKo": "니토리",
+    "nameJp": "ニトリホールディングス",
+    "segment": "Prime",
+    "sector": "ConsumerDiscretionary"
+  },
+  {
+    "ticker": "7733",
+    "nameEn": "Olympus Corporation",
+    "nameKo": "올림푸스",
+    "nameJp": "オリンパス",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "7752",
+    "nameEn": "Ricoh Company",
+    "nameKo": "리코",
+    "nameJp": "リコー",
+    "segment": "Prime",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "2503",
+    "nameEn": "Kirin Holdings",
+    "nameKo": "기린",
+    "nameJp": "キリンホールディングス",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "2502",
+    "nameEn": "Asahi Group Holdings",
+    "nameKo": "아사히",
+    "nameJp": "アサヒグループホールディングス",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "2802",
+    "nameEn": "Ajinomoto",
+    "nameKo": "아지노모토",
+    "nameJp": "味の素",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "2801",
+    "nameEn": "Kikkoman",
+    "nameKo": "기코만",
+    "nameJp": "キッコーマン",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "2897",
+    "nameEn": "Nissin Foods Holdings",
+    "nameKo": "닛신식품",
+    "nameJp": "日清食品ホールディングス",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "4452",
+    "nameEn": "Kao Corporation",
+    "nameKo": "카오",
+    "nameJp": "花王",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "4911",
+    "nameEn": "Shiseido",
+    "nameKo": "시세이도",
+    "nameJp": "資生堂",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "2269",
+    "nameEn": "Meiji Holdings",
+    "nameKo": "메이지",
+    "nameJp": "明治ホールディングス",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "8113",
+    "nameEn": "Unicharm",
+    "nameKo": "유니참",
+    "nameJp": "ユニ・チャーム",
+    "segment": "Prime",
+    "sector": "ConsumerStaples"
+  },
+  {
+    "ticker": "4568",
+    "nameEn": "Daiichi Sankyo",
+    "nameKo": "다이이치산쿄",
+    "nameJp": "第一三共",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4519",
+    "nameEn": "Chugai Pharmaceutical",
+    "nameKo": "주가이제약",
+    "nameJp": "中外製薬",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4523",
+    "nameEn": "Eisai",
+    "nameKo": "에이사이",
+    "nameJp": "エーザイ",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4578",
+    "nameEn": "Otsuka Holdings",
+    "nameKo": "오츠카 홀딩스",
+    "nameJp": "大塚ホールディングス",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4507",
+    "nameEn": "Shionogi",
+    "nameKo": "시오노기",
+    "nameJp": "塩野義製薬",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4151",
+    "nameEn": "Kyowa Kirin",
+    "nameKo": "교와 기린",
+    "nameJp": "協和キリン",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4901",
+    "nameEn": "Fujifilm Holdings",
+    "nameKo": "후지필름",
+    "nameJp": "富士フイルム",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "6869",
+    "nameEn": "Sysmex",
+    "nameKo": "시스멕스",
+    "nameJp": "シスメックス",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4543",
+    "nameEn": "Terumo",
+    "nameKo": "테루모",
+    "nameJp": "テルモ",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4530",
+    "nameEn": "Hisamitsu Pharmaceutical",
+    "nameKo": "히사미쓰",
+    "nameJp": "久光製薬",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4581",
+    "nameEn": "Taisho Pharmaceutical",
+    "nameKo": "다이쇼 제약",
+    "nameJp": "大正製薬ホールディングス",
+    "segment": "Standard",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "4587",
+    "nameEn": "Peptidream",
+    "nameKo": "펩티드림",
+    "nameJp": "ペプチドリーム",
+    "segment": "Prime",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "3407",
+    "nameEn": "Asahi Kasei",
+    "nameKo": "아사히카세이",
+    "nameJp": "旭化成",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "4188",
+    "nameEn": "Mitsubishi Chemical Group",
+    "nameKo": "미쓰비시 케미칼",
+    "nameJp": "三菱ケミカルグループ",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "4005",
+    "nameEn": "Sumitomo Chemical",
+    "nameKo": "스미토모 케미칼",
+    "nameJp": "住友化学",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "4042",
+    "nameEn": "Tosoh Corporation",
+    "nameKo": "도소",
+    "nameJp": "東ソー",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "5713",
+    "nameEn": "Sumitomo Metal Mining",
+    "nameKo": "스미토모 금속광산",
+    "nameJp": "住友金属鉱山",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "3402",
+    "nameEn": "Toray Industries",
+    "nameKo": "도레이",
+    "nameJp": "東レ",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "5108",
+    "nameEn": "Bridgestone",
+    "nameKo": "브리지스톤",
+    "nameJp": "ブリヂストン",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "5706",
+    "nameEn": "Mitsui Mining & Smelting",
+    "nameKo": "미쓰이 금속",
+    "nameJp": "三井金属鉱業",
+    "segment": "Prime",
+    "sector": "Materials"
+  },
+  {
+    "ticker": "9434",
+    "nameEn": "SoftBank Corp",
+    "nameKo": "소프트뱅크 (통신)",
+    "nameJp": "ソフトバンク",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "2432",
+    "nameEn": "DeNA",
+    "nameKo": "디엔에이",
+    "nameJp": "ディー・エヌ・エー",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "3659",
+    "nameEn": "Nexon",
+    "nameKo": "넥슨",
+    "nameJp": "ネクソン",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "4689",
+    "nameEn": "LY Corporation",
+    "nameKo": "LY 코퍼레이션",
+    "nameJp": "LYコーポレーション",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "9697",
+    "nameEn": "Capcom",
+    "nameKo": "캡콤",
+    "nameJp": "カプコン",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "9766",
+    "nameEn": "Konami Group",
+    "nameKo": "코나미",
+    "nameJp": "コナミグループ",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "7832",
+    "nameEn": "Bandai Namco Holdings",
+    "nameKo": "반다이남코",
+    "nameJp": "バンダイナムコホールディングス",
+    "segment": "Prime",
+    "sector": "Communication"
+  },
+  {
+    "ticker": "5020",
+    "nameEn": "ENEOS Holdings",
+    "nameKo": "에네오스",
+    "nameJp": "ENEOSホールディングス",
+    "segment": "Prime",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "1605",
+    "nameEn": "INPEX",
+    "nameKo": "인펙스",
+    "nameJp": "INPEX",
+    "segment": "Prime",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "1662",
+    "nameEn": "Japan Petroleum Exploration",
+    "nameKo": "석유자원개발",
+    "nameJp": "石油資源開発",
+    "segment": "Prime",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "9501",
+    "nameEn": "Tokyo Electric Power (TEPCO)",
+    "nameKo": "도쿄전력",
+    "nameJp": "東京電力ホールディングス",
+    "segment": "Prime",
+    "sector": "Utilities"
+  },
+  {
+    "ticker": "9503",
+    "nameEn": "Kansai Electric Power",
+    "nameKo": "간사이전력",
+    "nameJp": "関西電力",
+    "segment": "Prime",
+    "sector": "Utilities"
+  },
+  {
+    "ticker": "9502",
+    "nameEn": "Chubu Electric Power",
+    "nameKo": "주부전력",
+    "nameJp": "中部電力",
+    "segment": "Prime",
+    "sector": "Utilities"
+  },
+  {
+    "ticker": "9531",
+    "nameEn": "Tokyo Gas",
+    "nameKo": "도쿄가스",
+    "nameJp": "東京ガス",
+    "segment": "Prime",
+    "sector": "Utilities"
+  },
+  {
+    "ticker": "9532",
+    "nameEn": "Osaka Gas",
+    "nameKo": "오사카가스",
+    "nameJp": "大阪ガス",
+    "segment": "Prime",
+    "sector": "Utilities"
+  },
+  {
+    "ticker": "8802",
+    "nameEn": "Mitsubishi Estate",
+    "nameKo": "미쓰비시지쇼",
+    "nameJp": "三菱地所",
+    "segment": "Prime",
+    "sector": "RealEstate"
+  },
+  {
+    "ticker": "8801",
+    "nameEn": "Mitsui Fudosan",
+    "nameKo": "미쓰이 부동산",
+    "nameJp": "三井不動産",
+    "segment": "Prime",
+    "sector": "RealEstate"
+  },
+  {
+    "ticker": "8830",
+    "nameEn": "Sumitomo Realty & Development",
+    "nameKo": "스미토모 부동산",
+    "nameJp": "住友不動産",
+    "segment": "Prime",
+    "sector": "RealEstate"
+  },
+  {
+    "ticker": "3289",
+    "nameEn": "Tokyu Fudosan Holdings",
+    "nameKo": "도큐 부동산",
+    "nameJp": "東急不動産ホールディングス",
+    "segment": "Prime",
+    "sector": "RealEstate"
+  },
+  {
+    "ticker": "3003",
+    "nameEn": "Hulic",
+    "nameKo": "훌릭",
+    "nameJp": "ヒューリック",
+    "segment": "Prime",
+    "sector": "RealEstate"
+  },
+  {
+    "ticker": "8804",
+    "nameEn": "Tokyo Tatemono",
+    "nameKo": "도쿄 다테모노",
+    "nameJp": "東京建物",
+    "segment": "Prime",
+    "sector": "RealEstate"
+  }
+]

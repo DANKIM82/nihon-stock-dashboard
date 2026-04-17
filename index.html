@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nihon · Tokyo Stock Exchange Research Terminal</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='8' fill='%23C7391C'/%3E%3C/svg%3E" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ivory:      { 50:'#FBF9F4', 100:'#F6F2E9', 200:'#ECE5D2', 300:'#DDD3B8' },
+        sumi:       { 50:'#6B6A65', 100:'#4A4945', 200:'#2E2D2A', 300:'#1A1A18' },
+        vermillion: { 50:'#FDF2EE', 100:'#F8D8CB', 400:'#D94F2E', 500:'#C7391C', 600:'#A82B16' },
+        bull:       { DEFAULT:'#2E7D57', soft:'#E8F1EB' },
+        bear:       { DEFAULT:'#B8342A', soft:'#F7E6E4' },
+        'neutral-line': '#E6E1D4',
+      },
+      fontFamily: {
+        display: ["'Noto Serif JP'", "'Noto Serif KR'", 'Georgia', 'serif'],
+        sans:    ["'Inter'", "'Noto Sans JP'", "'Noto Sans KR'", 'system-ui', 'sans-serif'],
+        mono:    ["'JetBrains Mono'", "'Roboto Mono'", 'ui-monospace', 'monospace'],
+      },
+      animation: {
+        'fade-in': 'fadeIn .4s ease-out',
+        'slide-up': 'slideUp .45s cubic-bezier(.16,1,.3,1)',
+        'pulse-soft': 'pulseSoft 2s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeIn: { '0%': { opacity:'0' }, '100%': { opacity:'1' } },
+        slideUp: { '0%': { opacity:'0', transform:'translateY(8px)' }, '100%': { opacity:'1', transform:'translateY(0)' } },
+        pulseSoft: { '0%,100%':{opacity:'1'}, '50%':{opacity:'.55'} },
+      },
+    }
+  }
+}
+</script>
+
+<style>
+  html, body {
+    background-color: #FBF9F4;
+    color: #1A1A18;
+    font-family: 'Inter', 'Noto Sans JP', 'Noto Sans KR', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+  }
+  .tabular { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #DDD3B8; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #C5B98F; }
+
+  ::selection { background: #F8D8CB; color: #1A1A18; }
+
+  .editorial-rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #E6E1D4 20%, #E6E1D4 80%, transparent);
+  }
+
+  .rising-sun { position: relative; }
+  .rising-sun::before {
+    content: ""; position: absolute; width: 6px; height: 6px;
+    background: #C7391C; border-radius: 50%;
+    top: 50%; left: -14px; transform: translateY(-50%);
+  }
+
+  .paper-texture {
+    background-image: radial-gradient(circle at 1px 1px, rgba(26,26,24,.04) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type="number"] { -moz-appearance: textfield; }
+
+  .shadow-editorial { box-shadow: 0 1px 0 rgba(26,26,24,.04), 0 1px 3px rgba(26,26,24,.03); }
+  .shadow-lift { box-shadow: 0 4px 24px -8px rgba(26,26,24,.12); }
+
+  /* Loading splash */
+  #splash {
+    position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+    background: #FBF9F4; z-index: 100; transition: opacity .4s ease-out;
+  }
+  #splash.hidden { opacity: 0; pointer-events: none; }
+  .splash-mark {
+    width: 48px; height: 48px; border-radius: 50%; background: #C7391C;
+    position: relative;
+    animation: pulseSoft 1.4s ease-in-out infinite;
+  }
+  .splash-mark::after {
+    content: "日"; position: absolute; inset: 0; color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif JP', serif; font-weight: 700; font-size: 18px;
+  }
+</style>
+</head>
+
+<body class="bg-ivory-50 text-sumi-300 antialiased">
+
+<div id="splash"><div class="splash-mark"></div></div>
+<div id="root"></div>
+
+<!-- React 18 -->
+<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<!-- PropTypes is a peer dep of Recharts UMD -->
+<script crossorigin src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
+<!-- Recharts UMD -->
+<script crossorigin src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+<!-- Babel Standalone for JSX -->
+<script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useMemo, useCallback, useRef, createContext, useContext } = React;
+const {
+  ResponsiveContainer, AreaChart, Area, LineChart, Line,
+  ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip,
+  ReferenceLine, ReferenceArea, Cell,
+} = Recharts;
+
+/* ==========================================================================
+   i18n dictionary — home-grown, no external library
+   ========================================================================== */
+const dict = {
+  brandLine1: { ko:'NIHON', en:'NIHON' },
+  brandLine2: { ko:'東証リサーチ', en:'TSE RESEARCH' },
+  tagline: { ko:'일본 증시 밸류에이션 리서치 터미널', en:'Tokyo Stock Exchange Valuation Terminal' },
+  navDashboard:{ ko:'대시보드', en:'Dashboard' },
+  navScreener: { ko:'스크리너', en:'Screener' },
+  navSectors:  { ko:'섹터', en:'Sectors' },
+  navResearch: { ko:'리서치', en:'Research' },
+  sectionIndices:{ ko:'주요 지수', en:'Key Indices' },
+  sectionMarket: { ko:'시장 개요', en:'Market Overview' },
+  sectionScreener:{ ko:'밸류에이션 스크리너', en:'Valuation Screener' },
+  sectionSectors:{ ko:'섹터 성과', en:'Sector Performance' },
+  sectionValuationMap:{ ko:'밸류에이션 지도 (PBR × ROE)', en:'Valuation Map (PBR × ROE)' },
+  marketOpen:{ ko:'거래중', en:'Market Open' },
+  advancers:{ ko:'상승', en:'Advancers' },
+  decliners:{ ko:'하락', en:'Decliners' },
+  unchanged:{ ko:'보합', en:'Unchanged' },
+  belowBookCount:{ ko:'PBR 1배 미만 기업', en:'Companies Below Book Value' },
+  avgPer:{ ko:'평균 PER', en:'Avg. PER' },
+  avgPbr:{ ko:'평균 PBR', en:'Avg. PBR' },
+  avgDiv:{ ko:'평균 배당수익률', en:'Avg. Div. Yield' },
+  colTicker:{ ko:'종목코드', en:'Ticker' },
+  colName:{ ko:'기업명', en:'Company' },
+  colSector:{ ko:'섹터', en:'Sector' },
+  colPrice:{ ko:'주가', en:'Price' },
+  colChange:{ ko:'등락률', en:'Change' },
+  colMarketCap:{ ko:'시가총액', en:'Market Cap' },
+  colPer:{ ko:'PER', en:'P/E' },
+  colPbr:{ ko:'PBR', en:'P/B' },
+  colDiv:{ ko:'배당수익률', en:'Div. Yield' },
+  colRoe:{ ko:'ROE', en:'ROE' },
+  colPerf1Y:{ ko:'1년 수익률', en:'1Y Return' },
+  colSparkline:{ ko:'추세', en:'Trend' },
+  filterSearch:{ ko:'종목 검색…', en:'Search ticker or name…' },
+  filterSector:{ ko:'섹터', en:'Sector' },
+  filterSegment:{ ko:'시장 구분', en:'Market Segment' },
+  filterPerMax:{ ko:'PER ≤', en:'P/E ≤' },
+  filterPbrMax:{ ko:'PBR ≤', en:'P/B ≤' },
+  filterDivMin:{ ko:'배당수익률 ≥', en:'Div. Yield ≥' },
+  filterRoeMin:{ ko:'ROE ≥', en:'ROE ≥' },
+  presetBelowBook:{ ko:'PBR 1배 미만 (자본효율 리폼)', en:'Below Book (TSE Capital Reform)' },
+  presetQuality:{ ko:'퀄리티 (ROE·마진·재무건전성)', en:'Quality (ROE · Margin · B/S)' },
+  filterReset:{ ko:'필터 초기화', en:'Reset filters' },
+  filterResults:{ ko:'결과', en:'results' },
+  detailValuation:{ ko:'밸류에이션', en:'Valuation' },
+  detailQuality:{ ko:'퀄리티 지표', en:'Quality Metrics' },
+  detailGrowth:{ ko:'성장성', en:'Growth' },
+  operatingMargin:{ ko:'영업이익률', en:'Operating Margin' },
+  debtToEquity:{ ko:'부채비율 (D/E)', en:'Debt / Equity' },
+  revGrowth:{ ko:'매출 성장률 (YoY)', en:'Revenue Growth (YoY)' },
+  epsGrowth:{ ko:'EPS 성장률 (YoY)', en:'EPS Growth (YoY)' },
+  high52w:{ ko:'52주 최고', en:'52W High' },
+  low52w:{ ko:'52주 최저', en:'52W Low' },
+  closeDetail:{ ko:'닫기', en:'Close' },
+  noResults:{ ko:'조건에 해당하는 종목이 없습니다. 필터를 완화해 보세요.', en:'No securities match the current filters. Try relaxing your criteria.' },
+  capitalReformNote:{ ko:'TSE는 2023년부터 PBR 1배 미만 기업에 자본효율 개선을 요구하고 있습니다.', en:'Since 2023, the TSE has asked companies trading below book to publish capital-efficiency plans.' },
+  footerDisclaimer:{ ko:'본 자료는 참고용이며 투자 권유를 구성하지 않습니다. 데이터는 시연을 위한 샘플입니다.', en:'For informational purposes only — not investment advice. Data shown is illustrative sample data.' },
+};
+const sectorLabel = {
+  Technology: { ko:'기술', en:'Technology' },
+  Financials: { ko:'금융', en:'Financials' },
+  Industrials:{ ko:'산업재', en:'Industrials' },
+  ConsumerDiscretionary:{ ko:'경기소비재', en:'Cons. Discretionary' },
+  ConsumerStaples: { ko:'필수소비재', en:'Cons. Staples' },
+  Healthcare:  { ko:'헬스케어', en:'Healthcare' },
+  Materials:   { ko:'소재', en:'Materials' },
+  Communication:{ ko:'커뮤니케이션', en:'Communication' },
+  Energy:      { ko:'에너지', en:'Energy' },
+  Utilities:   { ko:'유틸리티', en:'Utilities' },
+  RealEstate:  { ko:'부동산', en:'Real Estate' },
+};
+const localizedSector = (s, lang) => sectorLabel[s][lang];
+
+/* ==========================================================================
+   Mock data generator & dataset (real TSE tickers)
+   ========================================================================== */
+function makeSpark(seed, points=20, volatility=0.015) {
+  const out = [];
+  let v = 100;
+  for (let i=0; i<points; i++) {
+    seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+    const rand = (seed % 10000) / 10000 - 0.5;
+    v = v * (1 + rand * volatility * 2);
+    out.push(Number(v.toFixed(2)));
+  }
+  return out;
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Market data is loaded at runtime from ./data.json (auto-refreshed by
+   the scripts/fetch_data.py GitHub Actions workflow).  The four payload
+   keys are: indices[], stocks[], sectorPerformance[], marketSummary{}.
+   ────────────────────────────────────────────────────────────────────── */
+
+
+/* ==========================================================================
+   Utility formatters
+   ========================================================================== */
+const cn = (...a) => a.filter(Boolean).join(' ');
+const formatJPY = v => '¥' + new Intl.NumberFormat('ja-JP', {maximumFractionDigits:0}).format(v);
+const formatMarketCap = b => {
+  if (b >= 1000) return `¥${(b/1000).toFixed(2)}T`;
+  if (b >= 1)    return `¥${b.toFixed(1)}B`;
+  return `¥${(b*1000).toFixed(0)}M`;
+};
+const formatRatio = v => v == null || Number.isNaN(v) ? '—' : v.toFixed(2);
+const formatPercent = (v, withSign=true) => {
+  if (v == null || Number.isNaN(v)) return '—';
+  const sign = v > 0 && withSign ? '+' : '';
+  return `${sign}${v.toFixed(2)}%`;
+};
+const signColor = v => {
+  if (v == null || Number.isNaN(v)) return 'text-sumi-50';
+  if (v > 0) return 'text-bull';
+  if (v < 0) return 'text-bear';
+  return 'text-sumi-50';
+};
+const signBg = v => {
+  if (v == null || Number.isNaN(v)) return 'bg-ivory-100 text-sumi-50';
+  if (v > 0) return 'bg-bull-soft text-bull';
+  if (v < 0) return 'bg-bear-soft text-bear';
+  return 'bg-ivory-100 text-sumi-50';
+};
+
+/* ==========================================================================
+   Inline SVG icons (no lucide-react dependency)
+   ========================================================================== */
+const Icon = ({ d, size=14, className='', fill='none', stroke='currentColor', sw=1.8, children }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24"
+       fill={fill} stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round"
+       className={className} aria-hidden="true">
+    {children || <path d={d} />}
+  </svg>
+);
+const IconSearch = p => <Icon {...p}><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></Icon>;
+const IconX = p => <Icon {...p}><path d="M18 6 6 18"/><path d="m6 6 12 12"/></Icon>;
+const IconCheck = p => <Icon {...p}><polyline points="20 6 9 17 4 12"/></Icon>;
+const IconMenu = p => <Icon {...p}><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></Icon>;
+const IconGlobe = p => <Icon {...p}><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></Icon>;
+const IconRotate = p => <Icon {...p}><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></Icon>;
+const IconZap = p => <Icon {...p}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></Icon>;
+const IconLandmark = p => <Icon {...p}><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></Icon>;
+const IconTrendUp = p => <Icon {...p}><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></Icon>;
+const IconTrendDown = p => <Icon {...p}><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></Icon>;
+const IconArrowUp = p => <Icon {...p}><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></Icon>;
+const IconArrowDown = p => <Icon {...p}><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></Icon>;
+const IconArrowUpDown = p => <Icon {...p}><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></Icon>;
+const IconChevronRight = p => <Icon {...p}><path d="m9 18 6-6-6-6"/></Icon>;
+const IconArrowUpRight = p => <Icon {...p}><path d="M7 7h10v10"/><path d="M7 17 17 7"/></Icon>;
+const IconArrowDownRight = p => <Icon {...p}><path d="m7 7 10 10"/><path d="M17 7v10H7"/></Icon>;
+const IconMinus = p => <Icon {...p}><path d="M5 12h14"/></Icon>;
+const IconAlert = p => <Icon {...p}><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></Icon>;
+const IconShield = p => <Icon {...p}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></Icon>;
+const IconTarget = p => <Icon {...p}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></Icon>;
+const IconActivity = p => <Icon {...p}><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></Icon>;
+const IconExternalLink = p => <Icon {...p}><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></Icon>;
+
+/* ==========================================================================
+   Language Context
+   ========================================================================== */
+const LanguageCtx = createContext(null);
+function LanguageProvider({ children }) {
+  const [lang, setLangState] = useState('en');
+  useEffect(() => {
+    try {
+      const s = localStorage.getItem('nihon.lang');
+      if (s === 'ko' || s === 'en') { setLangState(s); return; }
+      if (navigator.language && navigator.language.toLowerCase().startsWith('ko')) setLangState('ko');
+    } catch {}
+  }, []);
+  const setLang = useCallback(l => {
+    setLangState(l);
+    try { localStorage.setItem('nihon.lang', l); } catch {}
+  }, []);
+  const toggle = useCallback(() => setLang(lang === 'ko' ? 'en' : 'ko'), [lang, setLang]);
+  const t = useCallback(k => dict[k]?.[lang] ?? k, [lang]);
+  return <LanguageCtx.Provider value={{ lang, setLang, toggle, t }}>{children}</LanguageCtx.Provider>;
+}
+const useLanguage = () => useContext(LanguageCtx);
+
+/* ==========================================================================
+   UI primitives
+   ========================================================================== */
+const Card = ({ className='', children, ...rest }) => (
+  <div className={cn('bg-white border border-neutral-line shadow-editorial', className)} {...rest}>{children}</div>
+);
+
+const Badge = ({ variant='default', size='xs', className='', children }) => {
+  const sizeCls = size === 'xs' ? 'px-1.5 py-0.5 text-[10px]' : 'px-2 py-0.5 text-xs';
+  const variantCls = {
+    default: 'bg-ivory-100 text-sumi-100',
+    accent: 'bg-vermillion-50 text-vermillion-600',
+    bull: 'bg-bull-soft text-bull',
+    bear: 'bg-bear-soft text-bear',
+    outline: 'border border-neutral-line text-sumi-100',
+  }[variant];
+  return <span className={cn('inline-flex items-center gap-1 font-medium tracking-wide uppercase tabular', sizeCls, variantCls, className)}>{children}</span>;
+};
+
+function Sparkline({ data, width=72, height=24, positive, className }) {
+  if (!data || data.length < 2) return null;
+  const min = Math.min(...data);
+  const max = Math.max(...data);
+  const range = max - min || 1;
+  const pts = data.map((v,i) => {
+    const x = (i / (data.length-1)) * width;
+    const y = height - ((v - min) / range) * height;
+    return `${x.toFixed(2)},${y.toFixed(2)}`;
+  }).join(' ');
+  const goingUp = positive !== undefined ? positive : data[data.length-1] >= data[0];
+  const stroke = goingUp ? '#2E7D57' : '#B8342A';
+  const fill = goingUp ? 'rgba(46,125,87,.10)' : 'rgba(184,52,42,.10)';
+  const areaPath = `M 0,${height} L ${pts.replace(/\s+/g,' L ')} L ${width},${height} Z`;
+  return (
+    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={className} aria-hidden="true">
+      <path d={areaPath} fill={fill} stroke="none" />
+      <polyline points={pts} fill="none" stroke={stroke} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+function Header({ asOf }) {
+  const { lang, setLang, t } = useLanguage();
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const navItems = [
+    { label: t('navDashboard'), href: '#' },
+    { label: t('navScreener'),  href: '#screener' },
+    { label: t('navSectors'),   href: '#sectors' },
+    { label: t('navResearch'),  href: '#research' },
+  ];
+  const updatedLabel = asOf ? new Date(asOf).toLocaleString(lang === 'ko' ? 'ko-KR' : 'en-US', {
+    month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+  }) : null;
+  return (
+    <header className="sticky top-0 z-30 bg-ivory-50/85 backdrop-blur-md border-b border-neutral-line">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between">
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="relative w-9 h-9 flex items-center justify-center">
+            <span className="absolute inset-0 bg-vermillion-500 rounded-full transition-transform group-hover:scale-105" />
+            <span className="relative text-white font-display font-bold text-sm">日</span>
+          </div>
+          <div className="flex flex-col leading-none">
+            <span className="font-display text-[18px] font-bold tracking-tight text-sumi-300">{t('brandLine1')}</span>
+            <span className="font-mono text-[9px] tracking-[0.24em] text-sumi-50 mt-0.5 uppercase">{t('brandLine2')}</span>
+          </div>
+        </a>
+        <nav className="hidden lg:flex items-center gap-8">
+          {navItems.map(item => (
+            <a key={item.label} href={item.href} className="text-sm text-sumi-100 hover:text-vermillion-500 transition-colors relative group">
+              {item.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-vermillion-500 transition-all group-hover:w-full" />
+            </a>
+          ))}
+        </nav>
+        <div className="flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-2 px-3 h-9 border border-neutral-line bg-white/60 text-[11px] text-sumi-50 tabular">
+            <span className="w-1.5 h-1.5 rounded-full bg-bull animate-pulse-soft" />
+            <span className="tracking-[0.1em] uppercase text-[9px] text-sumi-50/80">
+              {lang === 'ko' ? '업데이트' : 'Updated'}
+            </span>
+            <span className="text-sumi-100 font-medium">{updatedLabel || '—'}</span>
+          </div>
+          <div className="flex items-center gap-1 h-9 px-1 border border-neutral-line bg-white">
+            <IconGlobe size={13} className="text-sumi-50 ml-2 mr-1" />
+            <button onClick={() => setLang('en')}
+              className={cn('text-xs font-medium px-2.5 h-7 transition-colors tracking-wide',
+                lang === 'en' ? 'bg-sumi-300 text-ivory-50' : 'text-sumi-50 hover:text-sumi-300')}
+              aria-pressed={lang === 'en'}>EN</button>
+            <button onClick={() => setLang('ko')}
+              className={cn('text-xs font-medium px-2.5 h-7 transition-colors tracking-wide',
+                lang === 'ko' ? 'bg-sumi-300 text-ivory-50' : 'text-sumi-50 hover:text-sumi-300')}
+              aria-pressed={lang === 'ko'}>한국어</button>
+          </div>
+          <button className="lg:hidden p-2 -mr-2" onClick={() => setMobileOpen(v=>!v)} aria-label="menu">
+            {mobileOpen ? <IconX size={20} /> : <IconMenu size={20} />}
+          </button>
+        </div>
+      </div>
+      {mobileOpen && (
+        <div className="lg:hidden border-t border-neutral-line bg-ivory-50">
+          <div className="px-6 py-4 flex flex-col gap-3">
+            {navItems.map(item => (
+              <a key={item.label} href={item.href} onClick={()=>setMobileOpen(false)} className="text-sm text-sumi-100 py-1">{item.label}</a>
+            ))}
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
+
+/* ==========================================================================
+   Index Dashboard
+   ========================================================================== */
+function IndexCard({ idx }) {
+  const { lang } = useLanguage();
+  const positive = idx.changePercent >= 0;
+  const TrendIcon = positive ? IconTrendUp : IconTrendDown;
+  const name = lang === 'ko' ? idx.nameKo : idx.nameEn;
+  const rangePct = ((idx.value - idx.low52w) / (idx.high52w - idx.low52w)) * 100;
+  const chartData = idx.sparkline.map((v, i) => ({ i, v }));
+  const gradId = `grad-${idx.symbol}`;
+  return (
+    <div className="bg-white p-5 relative group transition-colors hover:bg-ivory-50">
+      <div className="flex items-start justify-between mb-3">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2 mb-0.5">
+            <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-sumi-50">{idx.symbol}</span>
+          </div>
+          <div className="font-display text-[15px] font-semibold text-sumi-300 truncate">{name}</div>
+        </div>
+        <div className={cn('flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-semibold tabular',
+          positive ? 'bg-bull-soft text-bull' : 'bg-bear-soft text-bear')}>
+          <TrendIcon size={10} sw={2.4} />
+          {formatPercent(idx.changePercent)}
+        </div>
+      </div>
+      <div className="flex items-baseline gap-2 mb-3">
+        <span className="font-display text-[26px] font-semibold tabular text-sumi-300">
+          {idx.value.toLocaleString(undefined, { minimumFractionDigits:2, maximumFractionDigits:2 })}
+        </span>
+        <span className={cn('text-xs tabular font-medium', signColor(idx.change))}>
+          {idx.change > 0 ? '+' : ''}{idx.change.toFixed(2)}
+        </span>
+      </div>
+      <div className="h-12 -mx-1 mb-3">
+        <ResponsiveContainer width="100%" height="100%">
+          <AreaChart data={chartData} margin={{top:2,right:2,left:2,bottom:2}}>
+            <defs>
+              <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor={positive ? '#2E7D57' : '#B8342A'} stopOpacity={0.22}/>
+                <stop offset="100%" stopColor={positive ? '#2E7D57' : '#B8342A'} stopOpacity={0}/>
+              </linearGradient>
+            </defs>
+            <YAxis hide domain={['dataMin','dataMax']}/>
+            <Area type="monotone" dataKey="v"
+              stroke={positive ? '#2E7D57' : '#B8342A'} strokeWidth={1.4}
+              fill={`url(#${gradId})`} dot={false} isAnimationActive={false}/>
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
+      <div>
+        <div className="flex items-center justify-between text-[10px] font-mono tabular text-sumi-50 mb-1.5">
+          <span>{idx.low52w.toLocaleString(undefined, {maximumFractionDigits:0})}</span>
+          <span className="tracking-[0.18em] uppercase">52W</span>
+          <span>{idx.high52w.toLocaleString(undefined, {maximumFractionDigits:0})}</span>
+        </div>
+        <div className="relative h-1 bg-ivory-100">
+          <div className="absolute top-0 h-1 bg-sumi-300"
+               style={{ left: `${Math.max(0,Math.min(100,rangePct))}%`, width: 2 }}/>
+        </div>
+      </div>
+    </div>
+  );
+}
+function IndexDashboard({ indices }) {
+  if (!indices || !indices.length) return null;
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-line border border-neutral-line">
+      {indices.map(idx => <IndexCard key={idx.symbol} idx={idx} />)}
+    </div>
+  );
+}
+
+/* ==========================================================================
+   Market Summary
+   ========================================================================== */
+function Metric({ label, value, unit }) {
+  return (
+    <div>
+      <div className="text-[10px] tracking-[0.2em] uppercase text-sumi-50 mb-1">{label}</div>
+      <div className="flex items-baseline gap-1">
+        <span className="font-display text-xl font-semibold tabular text-sumi-300">{value}</span>
+        <span className="text-xs text-sumi-50">{unit}</span>
+      </div>
+    </div>
+  );
+}
+function MarketSummary({ summary }) {
+  const { t } = useLanguage();
+  if (!summary) return null;
+  const { advancers=0, decliners=0, unchanged=0, belowBookCount=0, avgPer=0, avgPbr=0, avgDiv=0, totalListings=0 } = summary;
+  const totalMoving = advancers + decliners + unchanged;
+  const advPct = (advancers/totalMoving)*100;
+  const decPct = (decliners/totalMoving)*100;
+  const uncPct = (unchanged/totalMoving)*100;
+  const belowBookPct = (belowBookCount/totalListings)*100;
+  return (
+    <div className="space-y-4">
+      <div>
+        <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">{t('sectionMarket')}</div>
+        <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300">{t('sectionMarket')}</h3>
+      </div>
+      <Card className="p-6">
+        <div className="mb-5">
+          <div className="flex items-center justify-between mb-3 text-xs">
+            <span className="flex items-center gap-1.5 text-bull font-medium tabular">
+              <IconArrowUpRight size={13} sw={2.4} />{advancers.toLocaleString()}
+              <span className="text-sumi-50 font-normal ml-1">{t('advancers')}</span>
+            </span>
+            <span className="flex items-center gap-1.5 text-sumi-50 tabular">
+              <IconMinus size={13} sw={2.4} />{unchanged.toLocaleString()}
+              <span className="font-normal ml-1">{t('unchanged')}</span>
+            </span>
+            <span className="flex items-center gap-1.5 text-bear font-medium tabular">
+              <IconArrowDownRight size={13} sw={2.4} />{decliners.toLocaleString()}
+              <span className="text-sumi-50 font-normal ml-1">{t('decliners')}</span>
+            </span>
+          </div>
+          <div className="flex h-1.5 overflow-hidden bg-ivory-100">
+            <div className="bg-bull" style={{ width:`${advPct}%` }} />
+            <div style={{ width:`${uncPct}%`, background:'rgba(107,106,101,.3)' }} />
+            <div className="bg-bear" style={{ width:`${decPct}%` }} />
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-4 py-4 border-y border-neutral-line">
+          <Metric label={t('avgPer')} value={avgPer.toFixed(1)} unit="x" />
+          <Metric label={t('avgPbr')} value={avgPbr.toFixed(2)} unit="x" />
+          <Metric label={t('avgDiv')} value={avgDiv.toFixed(2)} unit="%" />
+        </div>
+        <div className="pt-5">
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-vermillion-50 border border-vermillion-100">
+              <IconAlert size={14} className="text-vermillion-500" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-baseline justify-between gap-3 mb-1">
+                <div className="text-[11px] uppercase tracking-wider text-sumi-50">{t('belowBookCount')}</div>
+                <div className="font-display text-xl font-semibold tabular text-sumi-300">
+                  {belowBookCount.toLocaleString()}
+                  <span className="text-sm text-sumi-50 font-normal ml-1">/ {totalListings.toLocaleString()}</span>
+                </div>
+              </div>
+              <div className="relative h-1 bg-ivory-100 mb-2">
+                <div className="absolute top-0 left-0 h-1 bg-vermillion-500" style={{ width:`${belowBookPct}%` }} />
+              </div>
+              <p className="text-[11px] leading-relaxed text-sumi-50 italic">{t('capitalReformNote')}</p>
+            </div>
+          </div>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+/* ==========================================================================
+   Sector Heatmap
+   ========================================================================== */
+function heatColor(pct) {
+  const clamped = Math.max(-2, Math.min(2, pct));
+  const intensity = Math.abs(clamped) / 2;
+  if (clamped > 0.05) {
+    const alpha = 0.15 + intensity * 0.55;
+    return `rgba(46, 125, 87, ${alpha.toFixed(3)})`;
+  }
+  if (clamped < -0.05) {
+    const alpha = 0.15 + intensity * 0.55;
+    return `rgba(184, 52, 42, ${alpha.toFixed(3)})`;
+  }
+  return 'rgba(230, 225, 212, 0.6)';
+}
+function SectorHeatmap({ sectors }) {
+  const { lang, t } = useLanguage();
+  if (!sectors || !sectors.length) return null;
+  const total = sectors.reduce((s,x) => s + x.count, 0);
+  const tiles = sectors.map(s => ({...s, weight: s.count/total})).sort((a,b) => b.weight - a.weight);
+  return (
+    <div className="space-y-4" id="sectors">
+      <div>
+        <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">{t('sectionSectors')}</div>
+        <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300">{t('sectionSectors')}</h3>
+      </div>
+      <Card className="p-5">
+        <div className="grid grid-cols-12 gap-1 auto-rows-[72px]">
+          {tiles.map(tile => {
+            const span = Math.max(2, Math.min(6, Math.round(tile.weight * 24)));
+            const textCol = Math.abs(tile.changePercent) > 1.0 ? '#FFFFFF' : '#1A1A18';
+            return (
+              <div key={tile.sector}
+                className="relative p-2.5 border border-white/30 transition-all cursor-default group hover:ring-1 hover:ring-sumi-300/40"
+                style={{ gridColumn: `span ${span} / span ${span}`, backgroundColor: heatColor(tile.changePercent), color: textCol }}>
+                <div className="flex flex-col justify-between h-full">
+                  <div className="text-[11px] font-semibold leading-tight truncate">{localizedSector(tile.sector, lang)}</div>
+                  <div className="flex items-baseline justify-between gap-1">
+                    <span className="font-display font-semibold text-base tabular leading-none">{formatPercent(tile.changePercent)}</span>
+                    <span className="text-[9px] opacity-70 tabular">PBR {tile.avgPbr.toFixed(2)}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="mt-4 pt-4 border-t border-neutral-line flex items-center justify-between text-[10px] text-sumi-50">
+          <span className="tracking-[0.2em] uppercase">{lang === 'ko' ? '일일 변동 (%)' : 'Daily Change (%)'}</span>
+          <div className="flex items-center gap-2">
+            <span className="tabular">-2%</span>
+            <div className="flex h-2 w-40">
+              {[-2,-1.2,-0.4,0,0.4,1.2,2].map((v,i) => (
+                <div key={i} className="flex-1" style={{ backgroundColor: heatColor(v) }} />
+              ))}
+            </div>
+            <span className="tabular">+2%</span>
+          </div>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+/* ==========================================================================
+   Screener Filter
+   ========================================================================== */
+const ALL_SECTORS = ['Technology','Financials','Industrials','ConsumerDiscretionary','ConsumerStaples','Healthcare','Materials','Communication','Energy','Utilities','RealEstate'];
+const SEGMENTS = ['Prime','Standard','Growth'];
+
+function Label({ children, className='' }) {
+  return <div className={cn('text-[10px] tracking-[0.22em] uppercase text-sumi-50 mb-1.5', className)}>{children}</div>;
+}
+
+function NumericInput({ label, value, onChange, placeholder, suffix, step=1, className='' }) {
+  return (
+    <div className={className}>
+      <Label>{label}</Label>
+      <div className="relative">
+        <input type="number" step={step} value={value ?? ''}
+          onChange={e => { const v = e.target.value; onChange(v === '' ? null : Number(v)); }}
+          placeholder={placeholder}
+          className={cn('w-full h-9 px-3 text-sm bg-white border border-neutral-line',
+            'focus:border-sumi-300 focus:outline-none transition-colors tabular placeholder:text-sumi-50/70',
+            suffix && 'pr-8')}/>
+        {suffix && <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-sumi-50 tabular pointer-events-none">{suffix}</span>}
+      </div>
+    </div>
+  );
+}
+
+function PresetButton({ active, onClick, icon, label, accent }) {
+  return (
+    <button onClick={onClick}
+      className={cn('inline-flex items-center gap-1.5 px-3 h-8 text-xs font-medium transition-all border',
+        active ? (accent ? 'bg-vermillion-500 text-white border-vermillion-500 shadow-editorial'
+                         : 'bg-sumi-300 text-ivory-50 border-sumi-300 shadow-editorial')
+               : (accent ? 'bg-vermillion-50 text-vermillion-600 border-vermillion-100 hover:bg-vermillion-100'
+                         : 'bg-white text-sumi-100 border-neutral-line hover:bg-ivory-100'))}>
+      {icon}{label}
+    </button>
+  );
+}
+
+function ScreenerFilter({ value, onChange, resultCount }) {
+  const { lang, t } = useLanguage();
+  const [showAll, setShowAll] = useState(false);
+  const visibleSectors = showAll ? ALL_SECTORS : ALL_SECTORS.slice(0, 6);
+  const update = patch => onChange({ ...value, ...patch });
+  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, belowBookOnly:false, qualityOnly:false });
+  const toggleSector = s => update({ sectors: value.sectors.includes(s) ? value.sectors.filter(x=>x!==s) : [...value.sectors, s] });
+  const toggleSegment = s => update({ segments: value.segments.includes(s) ? value.segments.filter(x=>x!==s) : [...value.segments, s] });
+  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.belowBookOnly || value.qualityOnly;
+  return (
+    <div className="bg-white border border-neutral-line shadow-editorial mb-6">
+      <div className="flex flex-wrap gap-2 px-5 py-4 border-b border-neutral-line bg-ivory-50">
+        <PresetButton active={value.belowBookOnly} onClick={() => update({ belowBookOnly: !value.belowBookOnly })}
+          icon={<IconLandmark size={12} sw={2.4}/>} label={t('presetBelowBook')} accent />
+        <PresetButton active={value.qualityOnly} onClick={() => update({ qualityOnly: !value.qualityOnly })}
+          icon={<IconZap size={12} sw={2.4}/>} label={t('presetQuality')} />
+        <div className="flex-1" />
+        <div className="flex items-center gap-3 text-xs">
+          <span className="text-sumi-50 tabular">
+            <span className="font-semibold text-sumi-300">{resultCount}</span> {t('filterResults')}
+          </span>
+          {hasAnyFilter && (
+            <button onClick={reset} className="inline-flex items-center gap-1.5 text-sumi-50 hover:text-vermillion-500 transition-colors">
+              <IconRotate size={11} sw={2.4}/>{t('filterReset')}
+            </button>
+          )}
+        </div>
+      </div>
+      <div className="p-5 grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className="md:col-span-4">
+          <Label>{lang === 'ko' ? '검색' : 'Search'}</Label>
+          <div className="relative">
+            <IconSearch size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-50"/>
+            <input type="text" value={value.search} onChange={e => update({ search: e.target.value })}
+              placeholder={t('filterSearch')}
+              className="w-full h-9 pl-9 pr-9 text-sm bg-white border border-neutral-line focus:border-sumi-300 focus:outline-none transition-colors tabular placeholder:text-sumi-50/70"/>
+            {value.search && (
+              <button onClick={() => update({ search:'' })} className="absolute right-3 top-1/2 -translate-y-1/2 text-sumi-50 hover:text-sumi-300">
+                <IconX size={12}/>
+              </button>
+            )}
+          </div>
+        </div>
+        <NumericInput className="md:col-span-2" label={t('filterPerMax')} value={value.perMax} onChange={v => update({ perMax: v })} placeholder="25" step={1}/>
+        <NumericInput className="md:col-span-2" label={t('filterPbrMax')} value={value.pbrMax} onChange={v => update({ pbrMax: v })} placeholder="1.5" step={0.1}/>
+        <NumericInput className="md:col-span-2" label={t('filterDivMin')} value={value.divMin} onChange={v => update({ divMin: v })} placeholder="3.0" suffix="%" step={0.1}/>
+        <NumericInput className="md:col-span-2" label={t('filterRoeMin')} value={value.roeMin} onChange={v => update({ roeMin: v })} placeholder="10" suffix="%" step={1}/>
+      </div>
+      <div className="px-5 pb-5">
+        <div className="flex items-center justify-between mb-2">
+          <Label className="mb-0">{t('filterSector')}</Label>
+          <button onClick={() => setShowAll(v=>!v)} className="text-[10px] uppercase tracking-wider text-sumi-50 hover:text-sumi-300">
+            {showAll ? (lang === 'ko' ? '접기' : 'Less') : (lang === 'ko' ? '모두 보기' : 'Show all')}
+          </button>
+        </div>
+        <div className="flex flex-wrap gap-1.5">
+          {visibleSectors.map(s => {
+            const active = value.sectors.includes(s);
+            return (
+              <button key={s} onClick={() => toggleSector(s)}
+                className={cn('inline-flex items-center gap-1.5 px-2.5 h-7 text-xs transition-all border',
+                  active ? 'bg-sumi-300 text-ivory-50 border-sumi-300'
+                         : 'bg-white text-sumi-100 border-neutral-line hover:border-sumi-100')}>
+                {active && <IconCheck size={10} sw={3}/>}
+                {localizedSector(s, lang)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      <div className="px-5 pb-5 border-t border-neutral-line pt-4">
+        <Label>{t('filterSegment')}</Label>
+        <div className="flex flex-wrap gap-1.5">
+          {SEGMENTS.map(s => {
+            const active = value.segments.includes(s);
+            return (
+              <button key={s} onClick={() => toggleSegment(s)}
+                className={cn('inline-flex items-center gap-1.5 px-3 h-7 text-xs transition-all border uppercase tracking-wide font-medium',
+                  active ? 'bg-vermillion-500 text-white border-vermillion-500'
+                         : 'bg-white text-sumi-100 border-neutral-line hover:border-vermillion-400')}>
+                {s}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ==========================================================================
+   Stock Table
+   ========================================================================== */
+function SortIcon({ active, dir }) {
+  if (!active) return <IconArrowUpDown size={10} className="opacity-40" sw={2.4} />;
+  return dir === 'asc' ? <IconArrowUp size={10} sw={2.4}/> : <IconArrowDown size={10} sw={2.4}/>;
+}
+const COLUMNS = [
+  { key:'ticker', labelKey:'colTicker', align:'left', widthClass:'w-[88px]' },
+  { key:'nameEn', labelKey:'colName', align:'left' },
+  { key:'price', labelKey:'colPrice', align:'right' },
+  { key:'changePercent', labelKey:'colChange', align:'right' },
+  { key:'marketCapB', labelKey:'colMarketCap', align:'right' },
+  { key:'per', labelKey:'colPer', align:'right' },
+  { key:'pbr', labelKey:'colPbr', align:'right' },
+  { key:'dividendYield', labelKey:'colDiv', align:'right' },
+  { key:'roe', labelKey:'colRoe', align:'right' },
+  { key:'perf1Y', labelKey:'colPerf1Y', align:'right' },
+];
+function StockTable({ rows, onSelect }) {
+  const { lang, t } = useLanguage();
+  const [sortKey, setSortKey] = useState('marketCapB');
+  const [sortDir, setSortDir] = useState('desc');
+  const handleSort = key => {
+    if (key === sortKey) setSortDir(d => d === 'asc' ? 'desc' : 'asc');
+    else { setSortKey(key); setSortDir(key === 'ticker' || key === 'nameEn' ? 'asc' : 'desc'); }
+  };
+  const sorted = useMemo(() => {
+    const copy = [...rows];
+    copy.sort((a,b) => {
+      const av = a[sortKey], bv = b[sortKey];
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      if (typeof av === 'string' && typeof bv === 'string')
+        return sortDir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+      return sortDir === 'asc' ? av - bv : bv - av;
+    });
+    return copy;
+  }, [rows, sortKey, sortDir]);
+
+  if (rows.length === 0) {
+    return (
+      <div className="bg-white border border-neutral-line p-10 text-center">
+        <div className="font-display text-lg text-sumi-100 mb-1">{lang === 'ko' ? '결과 없음' : 'No results'}</div>
+        <div className="text-sm text-sumi-50 max-w-sm mx-auto">{t('noResults')}</div>
+      </div>
+    );
+  }
+  return (
+    <div className="bg-white border border-neutral-line shadow-editorial overflow-hidden">
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="bg-ivory-50 border-b border-neutral-line">
+              {COLUMNS.map(col => (
+                <th key={col.key}
+                  className={cn('sticky top-0 bg-ivory-50 px-3 h-10 font-medium text-[10px] uppercase tracking-[0.14em] text-sumi-50 whitespace-nowrap',
+                    col.align === 'right' ? 'text-right' : 'text-left', col.widthClass)}>
+                  <button onClick={() => handleSort(col.key)}
+                    className={cn('inline-flex items-center gap-1 transition-colors hover:text-sumi-300',
+                      sortKey === col.key && 'text-sumi-300',
+                      col.align === 'right' && 'flex-row-reverse')}>
+                    {t(col.labelKey)}
+                    <SortIcon active={sortKey === col.key} dir={sortDir} />
+                  </button>
+                </th>
+              ))}
+              <th className="sticky top-0 bg-ivory-50 px-3 h-10 w-[90px] font-medium text-[10px] uppercase tracking-[0.14em] text-sumi-50">{t('colSparkline')}</th>
+              <th className="sticky top-0 bg-ivory-50 w-8" />
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((s, idx) => (
+              <tr key={s.ticker} onClick={() => onSelect(s)}
+                className={cn('border-b border-neutral-line last:border-b-0 cursor-pointer group transition-colors hover:bg-ivory-50',
+                  idx % 2 === 1 && 'bg-ivory-50/40')}>
+                <td className="px-3 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono text-[11px] font-semibold tabular text-sumi-300">{s.ticker}</span>
+                    {s.belowBook && <span className="w-1.5 h-1.5 rounded-full bg-vermillion-500"
+                      title={lang === 'ko' ? 'PBR 1배 미만 — 자본효율 리폼 대상' : 'Below book — TSE capital reform watch'}/>}
+                  </div>
+                </td>
+                <td className="px-3 py-3 min-w-[220px]">
+                  <div className="flex flex-col">
+                    <span className="font-medium text-sumi-300 leading-tight truncate">{lang === 'ko' ? s.nameKo : s.nameEn}</span>
+                    <span className="text-[10px] text-sumi-50 leading-tight tracking-wide mt-0.5 flex items-center gap-1.5">
+                      <span className="truncate">{localizedSector(s.sector, lang)}</span>
+                      <span className="text-sumi-50/60">·</span>
+                      <span className="uppercase">{s.segment}</span>
+                    </span>
+                  </div>
+                </td>
+                <td className="px-3 py-3 text-right tabular font-medium">{formatJPY(s.price)}</td>
+                <td className="px-3 py-3 text-right">
+                  <span className={cn('inline-block px-1.5 py-0.5 text-[11px] font-semibold tabular', signBg(s.changePercent))}>
+                    {formatPercent(s.changePercent)}
+                  </span>
+                </td>
+                <td className="px-3 py-3 text-right tabular text-sumi-100">{formatMarketCap(s.marketCapB)}</td>
+                <td className="px-3 py-3 text-right tabular text-sumi-100">{formatRatio(s.per)}</td>
+                <td className={cn('px-3 py-3 text-right tabular',
+                  s.pbr !== null && s.pbr < 1 ? 'text-vermillion-600 font-semibold' : 'text-sumi-100')}>
+                  {formatRatio(s.pbr)}
+                </td>
+                <td className="px-3 py-3 text-right tabular text-sumi-100">
+                  {s.dividendYield !== null ? `${s.dividendYield.toFixed(2)}%` : '—'}
+                </td>
+                <td className="px-3 py-3 text-right tabular text-sumi-100">
+                  {s.roe !== null ? `${s.roe.toFixed(1)}%` : '—'}
+                </td>
+                <td className={cn('px-3 py-3 text-right tabular font-medium', signColor(s.perf1Y))}>
+                  {formatPercent(s.perf1Y)}
+                </td>
+                <td className="px-3 py-3"><Sparkline data={s.sparkline} /></td>
+                <td className="px-2 py-3 text-sumi-50 group-hover:text-vermillion-500 transition-colors">
+                  <IconChevronRight size={14}/>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="flex items-center justify-between px-4 py-2.5 border-t border-neutral-line bg-ivory-50 text-[10px] uppercase tracking-[0.14em] text-sumi-50">
+        <div className="flex items-center gap-3">
+          <span><span className="font-semibold text-sumi-300 tabular">{sorted.length}</span> {t('filterResults')}</span>
+          <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-vermillion-500"/>{lang === 'ko' ? 'PBR 1배 미만' : 'Below book'}</span>
+        </div>
+        <span>{lang === 'ko' ? '행을 클릭하면 상세' : 'Click row for details'}</span>
+      </div>
+    </div>
+  );
+}
+
+/* ==========================================================================
+   Valuation Chart (PBR × ROE scatter)
+   ========================================================================== */
+function QuadrantPill({ label, active, onClick, color }) {
+  const palette = {
+    vermillion: active ? 'bg-vermillion-500 text-white border-vermillion-500' : 'bg-white text-vermillion-600 border-vermillion-100 hover:bg-vermillion-50',
+    bull: active ? 'bg-bull text-white border-bull' : 'bg-white text-bull border-bull-soft hover:bg-bull-soft',
+    bear: active ? 'bg-bear text-white border-bear' : 'bg-white text-bear border-bear-soft hover:bg-bear-soft',
+    neutral: active ? 'bg-sumi-300 text-ivory-50 border-sumi-300' : 'bg-white text-sumi-100 border-neutral-line hover:bg-ivory-100',
+  }[color];
+  return (
+    <button onClick={onClick}
+      className={cn('inline-flex items-center gap-1.5 px-2.5 h-7 text-[11px] font-medium transition-all border whitespace-nowrap', palette)}>
+      {label}
+    </button>
+  );
+}
+
+function QuadrantLabel({ title, subtitle, note, color }) {
+  const dot = { vermillion:'bg-vermillion-500', bull:'bg-bull', bear:'bg-bear', neutral:'bg-sumi-50' }[color];
+  return (
+    <div className="bg-white p-4">
+      <div className="flex items-center gap-2 mb-1">
+        <span className={cn('w-1.5 h-1.5 rounded-full', dot)} />
+        <div className="font-display text-[13px] font-semibold text-sumi-300">{title}</div>
+      </div>
+      <div className="font-mono text-[10px] tracking-wider text-sumi-50 tabular mb-2">{subtitle}</div>
+      <p className="text-[11px] leading-snug text-sumi-100">{note}</p>
+    </div>
+  );
+}
+
+function ValuationTooltip({ active, payload }) {
+  if (!active || !payload || !payload.length) return null;
+  const p = payload[0].payload;
+  return (
+    <div className="bg-sumi-300 text-ivory-50 px-3 py-2 shadow-lift border border-sumi-300 min-w-[180px]">
+      <div className="flex items-baseline justify-between gap-3 mb-1">
+        <span className="font-mono text-[10px] tracking-[0.15em] opacity-70">{p.ticker}</span>
+        <span className={cn('font-mono text-[10px] tabular', p.changePercent >= 0 ? 'text-bull-soft' : 'text-bear-soft')}>
+          {p.changePercent >= 0 ? '+' : ''}{p.changePercent.toFixed(2)}%
+        </span>
+      </div>
+      <div className="font-display text-sm font-semibold mb-1.5 truncate">{p.name}</div>
+      <div className="grid grid-cols-3 gap-2 text-[10px] tabular pt-2 border-t border-sumi-100/40">
+        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">PBR</div><div className="font-semibold">{p.x.toFixed(2)}</div></div>
+        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">ROE</div><div className="font-semibold">{p.y.toFixed(1)}%</div></div>
+        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">Cap</div>
+          <div className="font-semibold">{p.z >= 1000 ? `¥${(p.z/1000).toFixed(1)}T` : `¥${p.z.toFixed(0)}B`}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ValuationChart({ data }) {
+  const { lang } = useLanguage();
+  const [quadrant, setQuadrant] = useState('all');
+  const points = useMemo(() => data.filter(s => s.pbr !== null && s.roe !== null && s.pbr > 0)
+    .map(s => ({
+      ticker: s.ticker,
+      name: lang === 'ko' ? s.nameKo : s.nameEn,
+      x: s.pbr, y: s.roe, z: s.marketCapB,
+      belowBook: s.belowBook, changePercent: s.changePercent,
+    })), [data, lang]);
+  const xMax = Math.min(8, Math.max(...points.map(p=>p.x), 2) * 1.1);
+  const yMax = Math.max(25, Math.max(...points.map(p=>p.y), 20) * 1.1);
+  const yMin = Math.min(-5, Math.min(...points.map(p=>p.y), 0));
+  const classify = p => {
+    if (p.x < 1 && p.y > 8) return 'undervalued';
+    if (p.x >= 1 && p.y > 15) return 'quality';
+    if (p.x < 1 && p.y <= 8) return 'value-trap';
+    if (p.x > 3 && p.y < 10) return 'expensive';
+    return 'all';
+  };
+  const colorFor = p => {
+    const q = classify(p);
+    if (q === 'undervalued') return '#C7391C';
+    if (q === 'quality') return '#2E7D57';
+    if (q === 'value-trap') return '#B8342A';
+    if (q === 'expensive') return '#6B6A65';
+    return '#1A1A18';
+  };
+  const visibleOpacity = p => quadrant === 'all' ? 0.85 : (classify(p) === quadrant ? 0.95 : 0.15);
+
+  return (
+    <Card className="overflow-hidden">
+      <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-neutral-line bg-ivory-50">
+        <div className="flex flex-wrap items-center gap-2">
+          <QuadrantPill label={lang === 'ko' ? '전체' : 'All'} active={quadrant==='all'} onClick={() => setQuadrant('all')} color="neutral"/>
+          <QuadrantPill label={lang === 'ko' ? '저평가 우량 (PBR<1, ROE>8)' : 'Undervalued Quality (PBR<1, ROE>8)'} active={quadrant==='undervalued'} onClick={() => setQuadrant('undervalued')} color="vermillion"/>
+          <QuadrantPill label={lang === 'ko' ? '퀄리티 컴파운더 (ROE>15)' : 'Quality Compounders (ROE>15)'} active={quadrant==='quality'} onClick={() => setQuadrant('quality')} color="bull"/>
+          <QuadrantPill label={lang === 'ko' ? '밸류 트랩' : 'Value Trap'} active={quadrant==='value-trap'} onClick={() => setQuadrant('value-trap')} color="bear"/>
+        </div>
+        <div className="text-[10px] uppercase tracking-[0.18em] text-sumi-50 tabular">{points.length} {lang === 'ko' ? '종목' : 'securities'}</div>
+      </div>
+      <div className="h-[440px] p-4">
+        <ResponsiveContainer width="100%" height="100%">
+          <ScatterChart margin={{ top:20, right:30, bottom:50, left:50 }}>
+            <CartesianGrid stroke="#E6E1D4" strokeDasharray="1 3" />
+            <ReferenceArea x1={0} x2={1} y1={8} y2={yMax} fill="#C7391C" fillOpacity={0.05} stroke="#C7391C" strokeOpacity={0.3} strokeDasharray="2 2" />
+            <ReferenceArea x1={1} x2={xMax} y1={15} y2={yMax} fill="#2E7D57" fillOpacity={0.04} />
+            <ReferenceLine x={1} stroke="#1A1A18" strokeOpacity={0.4} strokeDasharray="3 3" />
+            <ReferenceLine y={8} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />
+            <ReferenceLine y={15} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />
+            <XAxis type="number" dataKey="x" name="PBR" domain={[0, xMax]}
+              tick={{ fontSize:10, fill:'#6B6A65', fontFamily:'JetBrains Mono' }} stroke="#DDD3B8"
+              label={{ value: lang === 'ko' ? 'PBR (배)' : 'P/B Ratio', position:'insideBottom', offset:-30,
+                style:{ fontSize:10, fill:'#4A4945', textTransform:'uppercase', letterSpacing:'0.18em' } }} />
+            <YAxis type="number" dataKey="y" name="ROE" domain={[yMin, yMax]}
+              tick={{ fontSize:10, fill:'#6B6A65', fontFamily:'JetBrains Mono' }} stroke="#DDD3B8"
+              tickFormatter={v => `${v}%`}
+              label={{ value:'ROE', angle:-90, position:'insideLeft', offset:0,
+                style:{ fontSize:10, fill:'#4A4945', textTransform:'uppercase', letterSpacing:'0.18em' } }} />
+            <Tooltip cursor={{ strokeDasharray:'3 3', stroke:'#6B6A65' }} content={<ValuationTooltip/>} />
+            <Scatter data={points} isAnimationActive={false}>
+              {points.map(p => (
+                <Cell key={p.ticker} fill={colorFor(p)} fillOpacity={visibleOpacity(p)}
+                  stroke={colorFor(p)} strokeOpacity={visibleOpacity(p) * 0.6}
+                  r={Math.min(14, Math.max(4, Math.sqrt(p.z) / 12))} />
+              ))}
+            </Scatter>
+          </ScatterChart>
+        </ResponsiveContainer>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-line border-t border-neutral-line">
+        <QuadrantLabel title={lang === 'ko' ? 'Q1 · 저평가 우량' : 'Q1 · Undervalued Quality'}
+          subtitle="PBR<1, ROE>8%"
+          note={lang === 'ko' ? 'TSE 자본효율 리폼의 핵심 대상. 자사주 매입·배당 증가 기대.' : 'Prime candidates for TSE capital efficiency reform.'}
+          color="vermillion"/>
+        <QuadrantLabel title={lang === 'ko' ? 'Q2 · 퀄리티 컴파운더' : 'Q2 · Quality Compounder'}
+          subtitle="PBR>1, ROE>15%"
+          note={lang === 'ko' ? '고수익성 · 프리미엄 밸류에이션.' : 'High-return franchises at a premium.'}
+          color="bull"/>
+        <QuadrantLabel title={lang === 'ko' ? 'Q3 · 밸류 트랩' : 'Q3 · Value Trap'}
+          subtitle="PBR<1, ROE<8%"
+          note={lang === 'ko' ? '저평가로 보이지만 자본효율 낮음.' : 'Cheap for a reason — weak capital efficiency.'}
+          color="bear"/>
+        <QuadrantLabel title={lang === 'ko' ? 'Q4 · 고평가' : 'Q4 · Richly Priced'}
+          subtitle="PBR>3, ROE<10%"
+          note={lang === 'ko' ? '주의 — 밸류에이션 대비 수익성 부족.' : 'Caution — rich multiples vs. profitability.'}
+          color="neutral"/>
+      </div>
+    </Card>
+  );
+}
+
+/* ==========================================================================
+   Stock Detail Panel
+   ========================================================================== */
+function SectionTitle({ children, icon }) {
+  return (
+    <div className="flex items-center gap-2 text-[10px] tracking-[0.28em] uppercase text-sumi-50">
+      {icon}<span>{children}</span>
+    </div>
+  );
+}
+function MetricRow({ label, value, unit, accent, colorize }) {
+  const colorCls = colorize !== undefined && colorize !== null
+    ? (colorize > 0 ? 'text-bull' : colorize < 0 ? 'text-bear' : 'text-sumi-300')
+    : (accent === 'vermillion' ? 'text-vermillion-600' : 'text-sumi-300');
+  return (
+    <div className="bg-white px-4 py-3">
+      <div className="text-[10px] uppercase tracking-[0.18em] text-sumi-50 mb-1">{label}</div>
+      <div className="flex items-baseline gap-1">
+        <span className={cn('font-display text-lg font-semibold tabular', colorCls)}>{value}</span>
+        {unit && <span className="text-xs text-sumi-50">{unit}</span>}
+      </div>
+    </div>
+  );
+}
+function MetricGrid({ children }) {
+  return <div className="mt-3 grid grid-cols-2 gap-px bg-neutral-line border border-neutral-line">{children}</div>;
+}
+function computeQualityScore(s) {
+  let score = 0;
+  if (s.roe !== null) score += Math.min(40, (s.roe/20)*40);
+  if (s.operatingMargin !== null) score += Math.min(30, (s.operatingMargin/25)*30);
+  if (s.debtToEquity !== null) score += Math.max(0, Math.min(30, (1 - s.debtToEquity/2) * 30));
+  return Math.round(Math.max(0, Math.min(100, score)));
+}
+function StockDetailPanel({ stock, onClose }) {
+  const { lang, t } = useLanguage();
+  useEffect(() => {
+    if (!stock) return;
+    const onKey = e => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => { window.removeEventListener('keydown', onKey); document.body.style.overflow = ''; };
+  }, [stock, onClose]);
+  if (!stock) return null;
+  const chartData = stock.sparkline.map((v, i) => ({ i, v }));
+  const name = lang === 'ko' ? stock.nameKo : stock.nameEn;
+  const positive = stock.changePercent >= 0;
+  const qualityScore = computeQualityScore(stock);
+  return (
+    <React.Fragment>
+      <div className="fixed inset-0 bg-sumi-300/40 backdrop-blur-[2px] z-40 animate-fade-in" onClick={onClose} />
+      <aside className="fixed top-0 right-0 bottom-0 w-full sm:w-[520px] bg-ivory-50 z-50 overflow-y-auto shadow-2xl animate-slide-up border-l border-neutral-line"
+             role="dialog" aria-modal="true">
+        <div className="sticky top-0 z-10 bg-ivory-50/95 backdrop-blur-md border-b border-neutral-line">
+          <div className="flex items-start justify-between px-6 pt-5 pb-4">
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-sumi-50">TSE · {stock.ticker}</span>
+                <Badge variant="outline">{stock.segment}</Badge>
+                {stock.belowBook && <Badge variant="accent">{lang === 'ko' ? 'PBR<1' : 'Below Book'}</Badge>}
+              </div>
+              <h2 className="font-display text-2xl font-semibold text-sumi-300 leading-tight">{name}</h2>
+              <div className="text-[11px] text-sumi-50 mt-0.5 tracking-wide">{stock.nameJp} · {localizedSector(stock.sector, lang)}</div>
+            </div>
+            <button onClick={onClose}
+              className="w-9 h-9 flex-shrink-0 flex items-center justify-center text-sumi-50 hover:text-sumi-300 hover:bg-ivory-100 transition-colors"
+              aria-label={t('closeDetail')}>
+              <IconX size={18}/>
+            </button>
+          </div>
+          <div className="px-6 pb-5 flex items-baseline gap-3">
+            <span className="font-display text-3xl font-semibold tabular text-sumi-300">{formatJPY(stock.price)}</span>
+            <div className="flex flex-col">
+              <span className={cn('text-xs tabular font-medium', signColor(stock.change))}>
+                {stock.change > 0 ? '+' : ''}{stock.change.toFixed(1)}
+              </span>
+              <span className={cn('inline-block px-1.5 py-0.5 text-[11px] font-semibold tabular self-start', signBg(stock.changePercent))}>
+                {formatPercent(stock.changePercent)}
+              </span>
+            </div>
+          </div>
+        </div>
+        <section className="px-6 pt-6">
+          <SectionTitle icon={<IconActivity size={12} sw={2.4}/>}>{lang === 'ko' ? '가격 추이' : 'Price Trend'}</SectionTitle>
+          <div className="h-40 -mx-2 mt-3">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart data={chartData} margin={{top:8,right:8,left:8,bottom:0}}>
+                <defs>
+                  <linearGradient id="detailGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor={positive ? '#2E7D57' : '#B8342A'} stopOpacity={0.25}/>
+                    <stop offset="100%" stopColor={positive ? '#2E7D57' : '#B8342A'} stopOpacity={0}/>
+                  </linearGradient>
+                </defs>
+                <XAxis hide dataKey="i"/>
+                <YAxis hide domain={['dataMin - 2','dataMax + 2']}/>
+                <Tooltip content={({active, payload}) => !active || !payload || !payload.length ? null :
+                  <div className="bg-sumi-300 text-ivory-50 px-2.5 py-1 text-[10px] font-mono tabular">{payload[0].value.toFixed(2)}</div>
+                }/>
+                <Area type="monotone" dataKey="v"
+                  stroke={positive ? '#2E7D57' : '#B8342A'} strokeWidth={1.8}
+                  fill="url(#detailGrad)" isAnimationActive={false}/>
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+        </section>
+        <section className="px-6 pt-8">
+          <SectionTitle icon={<IconShield size={12} sw={2.4}/>}>{lang === 'ko' ? '퀄리티 스코어' : 'Quality Score'}</SectionTitle>
+          <div className="mt-3 p-4 bg-white border border-neutral-line">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs text-sumi-50">{lang === 'ko' ? 'ROE · 마진 · 재무건전성 종합' : 'Composite of ROE, Margin & Balance-sheet'}</span>
+              <span className="font-display text-xl font-semibold tabular text-sumi-300">{qualityScore}<span className="text-sm text-sumi-50">/100</span></span>
+            </div>
+            <div className="relative h-1.5 bg-ivory-100">
+              <div className={cn('absolute top-0 left-0 h-1.5 transition-all',
+                qualityScore >= 70 ? 'bg-bull' : qualityScore >= 45 ? 'bg-vermillion-500' : 'bg-bear')}
+                style={{ width: `${qualityScore}%` }} />
+            </div>
+          </div>
+        </section>
+        <section className="px-6 pt-8">
+          <SectionTitle icon={<IconTarget size={12} sw={2.4}/>}>{t('detailValuation')}</SectionTitle>
+          <MetricGrid>
+            <MetricRow label={t('colPer')} value={formatRatio(stock.per)} unit="x"/>
+            <MetricRow label={t('colPbr')} value={formatRatio(stock.pbr)} unit="x"
+              accent={stock.pbr !== null && stock.pbr < 1 ? 'vermillion' : undefined}/>
+            <MetricRow label={t('colDiv')} value={stock.dividendYield !== null ? stock.dividendYield.toFixed(2) : '—'} unit="%"/>
+            <MetricRow label={t('colMarketCap')} value={formatMarketCap(stock.marketCapB)}/>
+          </MetricGrid>
+        </section>
+        <section className="px-6 pt-6">
+          <SectionTitle icon={<IconShield size={12} sw={2.4}/>}>{t('detailQuality')}</SectionTitle>
+          <MetricGrid>
+            <MetricRow label={t('colRoe')} value={stock.roe !== null ? stock.roe.toFixed(1) : '—'} unit="%"/>
+            <MetricRow label="ROA" value={stock.roa !== null ? stock.roa.toFixed(1) : '—'} unit="%"/>
+            <MetricRow label={t('operatingMargin')} value={stock.operatingMargin !== null ? stock.operatingMargin.toFixed(1) : '—'} unit="%"/>
+            <MetricRow label={t('debtToEquity')} value={stock.debtToEquity !== null ? stock.debtToEquity.toFixed(2) : '—'} unit="x"/>
+          </MetricGrid>
+        </section>
+        <section className="px-6 pt-6 pb-8">
+          <SectionTitle icon={<IconTrendUp size={12} sw={2.4}/>}>{t('detailGrowth')}</SectionTitle>
+          <MetricGrid>
+            <MetricRow label={t('revGrowth')} value={stock.revenueGrowthYoY !== null ? formatPercent(stock.revenueGrowthYoY) : '—'} colorize={stock.revenueGrowthYoY}/>
+            <MetricRow label={t('epsGrowth')} value={stock.epsGrowthYoY !== null ? formatPercent(stock.epsGrowthYoY) : '—'} colorize={stock.epsGrowthYoY}/>
+            <MetricRow label={t('colPerf1Y')} value={formatPercent(stock.perf1Y)} colorize={stock.perf1Y}/>
+          </MetricGrid>
+        </section>
+        <div className="px-6 pb-8">
+          <a href="https://www.jpx.co.jp/english/listing/stocks/new/index.html" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center gap-2 text-xs text-sumi-100 hover:text-vermillion-500 transition-colors border-b border-dotted border-sumi-50">
+            {lang === 'ko' ? 'JPX 공식 페이지 열기' : 'Open JPX listing'}<IconExternalLink size={11} sw={2.4}/>
+          </a>
+        </div>
+      </aside>
+    </React.Fragment>
+  );
+}
+
+/* ==========================================================================
+   Filter logic + root App
+   ========================================================================== */
+const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, belowBookOnly:false, qualityOnly:false };
+function applyFilters(all, f) {
+  return all.filter(s => {
+    if (f.search.trim()) {
+      const q = f.search.trim().toLowerCase();
+      const hay = `${s.ticker} ${s.nameEn} ${s.nameKo} ${s.nameJp}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    if (f.sectors.length && !f.sectors.includes(s.sector)) return false;
+    if (f.segments.length && !f.segments.includes(s.segment)) return false;
+    if (f.perMax !== null && (s.per === null || s.per > f.perMax)) return false;
+    if (f.pbrMax !== null && (s.pbr === null || s.pbr > f.pbrMax)) return false;
+    if (f.divMin !== null && (s.dividendYield === null || s.dividendYield < f.divMin)) return false;
+    if (f.roeMin !== null && (s.roe === null || s.roe < f.roeMin)) return false;
+    if (f.belowBookOnly && !s.belowBook) return false;
+    if (f.qualityOnly) {
+      const ok = (s.roe ?? 0) >= 15 && (s.operatingMargin ?? 0) >= 15 && (s.debtToEquity ?? 99) <= 1.0;
+      if (!ok) return false;
+    }
+    return true;
+  });
+}
+
+function LoadingState() {
+  const { lang } = useLanguage();
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1 flex items-center justify-center">
+        <div className="text-center">
+          <div className="relative w-12 h-12 mx-auto mb-5">
+            <span className="absolute inset-0 bg-vermillion-500 rounded-full animate-pulse-soft" />
+            <span className="absolute inset-0 flex items-center justify-center text-white font-display font-bold text-lg">日</span>
+          </div>
+          <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50">
+            {lang === 'ko' ? '시장 데이터 로딩 중' : 'Loading market data'}
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+function ErrorState({ message, onRetry }) {
+  const { lang } = useLanguage();
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1 flex items-center justify-center">
+        <div className="text-center max-w-md px-6">
+          <div className="w-10 h-10 mx-auto mb-4 flex items-center justify-center bg-vermillion-50 border border-vermillion-100">
+            <IconAlert size={18} className="text-vermillion-500" />
+          </div>
+          <div className="font-display text-xl text-sumi-300 mb-2">
+            {lang === 'ko' ? '데이터를 불러오지 못했습니다' : 'Failed to load market data'}
+          </div>
+          <div className="text-xs text-sumi-50 mb-5 font-mono tabular break-all">{message}</div>
+          <button onClick={onRetry}
+            className="inline-flex items-center gap-2 px-4 h-9 border border-sumi-300 bg-sumi-300 text-ivory-50 text-sm hover:bg-sumi-100 transition-colors">
+            <IconRotate size={12} sw={2.4}/>
+            {lang === 'ko' ? '다시 시도' : 'Retry'}
+          </button>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+function App() {
+  const { t, lang } = useLanguage();
+  const [payload, setPayload] = useState(null);
+  const [error, setError] = useState(null);
+  const [filters, setFilters] = useState(defaultFilters);
+  const [selected, setSelected] = useState(null);
+  const [tick, setTick] = useState(0);  // bumped on retry
+
+  useEffect(() => {
+    let cancelled = false;
+    setError(null);
+    setPayload(null);
+    fetch('./data.json', { cache: 'no-store' })
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} ${r.statusText}`);
+        return r.json();
+      })
+      .then(d => { if (!cancelled) setPayload(d); })
+      .catch(e => { if (!cancelled) setError(e.message || String(e)); });
+    return () => { cancelled = true; };
+  }, [tick]);
+
+  if (error) return <ErrorState message={error} onRetry={() => setTick(t => t+1)} />;
+  if (!payload) return <LoadingState />;
+
+  const { indices = [], stocks = [], sectorPerformance = [], marketSummary = {}, asOf, source } = payload;
+  const filtered = applyFilters(stocks, filters);
+  const isBootstrap = typeof source === 'string' && source.toLowerCase().includes('bootstrap');
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header asOf={asOf} />
+      <main className="flex-1 w-full max-w-[1440px] mx-auto px-6 lg:px-10 pb-16">
+        {isBootstrap && (
+          <div className="mt-6 px-4 py-3 border border-vermillion-100 bg-vermillion-50 text-[11px] text-vermillion-600 flex items-start gap-2">
+            <IconAlert size={14} className="flex-shrink-0 mt-0.5"/>
+            <div>
+              {lang === 'ko'
+                ? '현재 부트스트랩 샘플 데이터가 표시되고 있습니다. GitHub Actions가 처음 실행되면 실제 Yahoo Finance 데이터로 자동 교체됩니다.'
+                : 'Showing bootstrap sample data. Live Yahoo Finance values will replace this on the first GitHub Actions run.'}
+            </div>
+          </div>
+        )}
+        <section className="pt-8 pb-10">
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">{t('sectionIndices')}</div>
+              <h2 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300">{t('tagline')}</h2>
+            </div>
+            <div className="hidden lg:block text-xs text-sumi-50 tabular">
+              <span className="inline-flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-bull animate-pulse-soft"/>
+                {t('marketOpen')} · TSE 09:00 – 15:00 JST
+              </span>
+            </div>
+          </div>
+          <IndexDashboard indices={indices}/>
+        </section>
+        <div className="editorial-rule mb-10"/>
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-14">
+          <div className="lg:col-span-5"><MarketSummary summary={marketSummary}/></div>
+          <div className="lg:col-span-7"><SectorHeatmap sectors={sectorPerformance}/></div>
+        </section>
+        <div className="editorial-rule mb-10"/>
+        <section className="mb-14">
+          <div className="mb-6">
+            <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">{t('sectionValuationMap')}</div>
+            <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300">{t('sectionValuationMap')}</h3>
+          </div>
+          <ValuationChart data={filtered.length ? filtered : stocks}/>
+        </section>
+        <div className="editorial-rule mb-10"/>
+        <section id="screener" className="mb-14 scroll-mt-20">
+          <div className="mb-6">
+            <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">{t('sectionScreener')}</div>
+            <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300 rising-sun pl-4">{t('sectionScreener')}</h3>
+          </div>
+          <ScreenerFilter value={filters} onChange={setFilters} resultCount={filtered.length}/>
+          <StockTable rows={filtered} onSelect={s => setSelected(s)}/>
+        </section>
+      </main>
+      <footer className="border-t border-neutral-line py-8">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-sumi-50">
+          <div className="flex items-center gap-3">
+            <span className="inline-block w-2 h-2 rounded-full bg-vermillion-500"/>
+            <span>© {new Date().getFullYear()} NIHON · TSE Research Terminal</span>
+            {source && <span className="text-sumi-50/60 font-mono text-[10px] tabular">· {source}</span>}
+          </div>
+          <div className="max-w-xl leading-relaxed">{t('footerDisclaimer')}</div>
+        </div>
+      </footer>
+      <StockDetailPanel stock={selected} onClose={() => setSelected(null)}/>
+    </div>
+  );
+}
+
+/* ==========================================================================
+   Mount
+   ========================================================================== */
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <LanguageProvider>
+    <App/>
+  </LanguageProvider>
+);
+
+// Fade out splash
+requestAnimationFrame(() => {
+  const splash = document.getElementById('splash');
+  if (splash) {
+    setTimeout(() => {
+      splash.classList.add('hidden');
+      setTimeout(() => splash.remove(), 500);
+    }, 200);
+  }
+});
+</script>
+</body>
+</html>
