@@ -32,6 +32,18 @@ import yfinance as yf
 # ============================================================================
 # Field-level conversions
 # ============================================================================
+def clean_nans(obj):
+    """Recursively replace NaN / Infinity with None so the result is valid JSON."""
+    import math
+    if isinstance(obj, dict):
+        return {k: clean_nans(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [clean_nans(v) for v in obj]
+    if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
+        return None
+    return obj
+
+
 # yfinance returns values in mixed units (some percent, some decimal). These
 # helpers normalize everything to match the UI's expectations.
 
@@ -377,9 +389,10 @@ def main() -> int:
         "marketSummary": summary,
     }
 
+    payload = clean_nans(payload)
     out_path = Path(args.output)
     out_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
+        json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     size_kb = out_path.stat().st_size / 1024
