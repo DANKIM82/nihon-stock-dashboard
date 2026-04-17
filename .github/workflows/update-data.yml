@@ -52,6 +52,8 @@ jobs:
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             git commit -m "chore: auto-update data.json (${TIMESTAMP})"
+            # Pull any remote changes first to avoid non-fast-forward rejections
+            git pull --rebase origin main
             git push
             echo "✓ Pushed updated data.json"
           fi
