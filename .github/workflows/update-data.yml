@@ -1,0 +1,57 @@
+name: Update stock data
+
+# ──────────────────────────────────────────────────────────────────────
+# Schedule:
+#   Monday–Friday at 07:30 UTC = 16:30 JST
+#   (market closes 15:00 JST; +1.5h buffer for Yahoo to settle closing prices)
+#
+# You can also run this manually from the Actions tab ▶ "Run workflow".
+# ──────────────────────────────────────────────────────────────────────
+
+on:
+  schedule:
+    - cron: "30 7 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch latest stock data
+        run: python scripts/fetch_data.py --output data.json
+
+      - name: Show diff summary
+        run: |
+          echo "data.json size: $(wc -c < data.json) bytes"
+          head -20 data.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "✓ No changes in data.json — skipping commit"
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "chore: auto-update data.json (${TIMESTAMP})"
+            git push
+            echo "✓ Pushed updated data.json"
+          fi
