@@ -1,17 +1,14 @@
 name: Update stock data
 
-# ──────────────────────────────────────────────────────────────────────
-# Schedule:
-#   Monday–Friday at 07:30 UTC = 16:30 JST
-#   (market closes 15:00 JST; +1.5h buffer for Yahoo to settle closing prices)
-#
-# You can also run this manually from the Actions tab ▶ "Run workflow".
-# ──────────────────────────────────────────────────────────────────────
-
 on:
   schedule:
     - cron: "30 7 * * 1-5"
   workflow_dispatch:
+
+# Prevent overlapping runs — if another run is in progress, this one waits.
+concurrency:
+  group: update-data
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -23,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -35,25 +34,37 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Fetch latest stock data
-        run: python scripts/fetch_data.py --output data.json
-
-      - name: Show diff summary
-        run: |
-          echo "data.json size: $(wc -c < data.json) bytes"
-          head -20 data.json
+        run: python scripts/fetch_data.py --output data.json --sleep 0.6
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # If nothing changed, exit cleanly
           git add data.json
           if git diff --staged --quiet; then
             echo "✓ No changes in data.json — skipping commit"
-          else
-            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            git commit -m "chore: auto-update data.json (${TIMESTAMP})"
-            # Pull any remote changes first to avoid non-fast-forward rejections
-            git pull --rebase origin main
-            git push
-            echo "✓ Pushed updated data.json"
+            exit 0
           fi
+
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          git commit -m "chore: auto-update data.json (${TIMESTAMP})"
+
+          # Retry push up to 5 times, pulling+rebasing in between.
+          # This handles the case where main advanced while we were running.
+          for i in 1 2 3 4 5; do
+            echo "::group::Push attempt ${i}"
+            git pull --rebase --autostash origin main || true
+            if git push origin main; then
+              echo "✓ Pushed updated data.json on attempt ${i}"
+              echo "::endgroup::"
+              exit 0
+            fi
+            echo "::endgroup::"
+            echo "Push failed, retrying in 5s..."
+            sleep 5
+          done
+
+          echo "✗ Failed to push after 5 retries"
+          exit 1
