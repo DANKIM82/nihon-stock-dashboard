@@ -282,6 +282,7 @@ const IconAlert = p => <Icon {...p}><circle cx="12" cy="12" r="10"/><line x1="12
 const IconShield = p => <Icon {...p}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></Icon>;
 const IconTarget = p => <Icon {...p}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></Icon>;
 const IconActivity = p => <Icon {...p}><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></Icon>;
+const IconStar = ({filled, ...p}) => <Icon {...p} fill={filled ? 'currentColor' : 'none'}><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></Icon>;
 const IconExternalLink = p => <Icon {...p}><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></Icon>;
 
 /* ==========================================================================
@@ -307,6 +308,46 @@ function LanguageProvider({ children }) {
 }
 const useLanguage = () => useContext(LanguageCtx);
 
+/* ==========================================================================
+   Watchlist Context — persists starred tickers to localStorage
+   ========================================================================== */
+const WatchlistCtx = createContext(null);
+function WatchlistProvider({ children }) {
+  const [watchlist, setWatchlist] = useState(() => {
+    try {
+      const raw = localStorage.getItem('nihon.watchlist');
+      return raw ? JSON.parse(raw) : [];
+    } catch { return []; }
+  });
+  const toggle = useCallback((ticker) => {
+    setWatchlist(prev => {
+      const next = prev.includes(ticker) ? prev.filter(t => t !== ticker) : [...prev, ticker];
+      try { localStorage.setItem('nihon.watchlist', JSON.stringify(next)); } catch {}
+      return next;
+    });
+  }, []);
+  const isWatched = useCallback((ticker) => watchlist.includes(ticker), [watchlist]);
+  return <WatchlistCtx.Provider value={{ watchlist, isWatched, toggle, count: watchlist.length }}>{children}</WatchlistCtx.Provider>;
+}
+const useWatchlist = () => useContext(WatchlistCtx);
+
+function WatchlistStar({ ticker }) {
+  const { isWatched, toggle } = useWatchlist();
+  const on = isWatched(ticker);
+  return (
+    <button
+      onClick={(e) => { e.stopPropagation(); toggle(ticker); }}
+      aria-label={on ? 'Remove from watchlist' : 'Add to watchlist'}
+      className={cn(
+        'flex items-center justify-center w-5 h-5 transition-colors',
+        on ? 'text-vermillion-500' : 'text-sumi-50/30 hover:text-vermillion-400'
+      )}
+    >
+      <IconStar size={13} filled={on} sw={2}/>
+    </button>
+  );
+}
+  
 /* ==========================================================================
    UI primitives
    ========================================================================== */
@@ -847,6 +888,7 @@ function StockTable({ rows, onSelect }) {
                   idx % 2 === 1 && 'bg-ivory-50/40')}>
                 <td className="px-3 py-3">
                   <div className="flex items-center gap-2">
+                    <WatchlistStar ticker={s.ticker}/>
                     <span className="font-mono text-[11px] font-semibold tabular text-sumi-300">{s.ticker}</span>
                     {s.belowBook && <span className="w-1.5 h-1.5 rounded-full bg-vermillion-500"
                       title={lang === 'ko' ? 'PBR 1배 미만 — 자본효율 리폼 대상' : 'Below book — TSE capital reform watch'}/>}
@@ -1379,9 +1421,9 @@ function App() {
    ========================================================================== */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <LanguageProvider>
+  <LanguageProvider><WatchlistProvider>
     <App/>
-  </LanguageProvider>
+  </WatchlistProvider></LanguageProvider>
 );
 
 // Fade out splash
