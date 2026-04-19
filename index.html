@@ -169,6 +169,7 @@ const dict = {
   filterRoeMin:{ ko:'ROE ≥', en:'ROE ≥' },
   presetBelowBook:{ ko:'PBR 1배 미만 (자본효율 리폼)', en:'Below Book (TSE Capital Reform)' },
   presetQuality:{ ko:'퀄리티 (ROE·마진·재무건전성)', en:'Quality (ROE · Margin · B/S)' },
+  presetWatchlist:{ ko:'내 즐겨찾기', en:'My Watchlist' },
   filterReset:{ ko:'필터 초기화', en:'Reset filters' },
   filterResults:{ ko:'결과', en:'results' },
   detailValuation:{ ko:'밸류에이션', en:'Valuation' },
@@ -721,14 +722,15 @@ function PresetButton({ active, onClick, icon, label, accent }) {
 }
 
 function ScreenerFilter({ value, onChange, resultCount }) {
+  const { count: watchlistCount } = useWatchlist();
   const { lang, t } = useLanguage();
   const [showAll, setShowAll] = useState(false);
   const visibleSectors = showAll ? ALL_SECTORS : ALL_SECTORS.slice(0, 6);
   const update = patch => onChange({ ...value, ...patch });
-  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, belowBookOnly:false, qualityOnly:false });
+  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, belowBookOnly:false, qualityOnly:false, watchlistOnly:false });
   const toggleSector = s => update({ sectors: value.sectors.includes(s) ? value.sectors.filter(x=>x!==s) : [...value.sectors, s] });
   const toggleSegment = s => update({ segments: value.segments.includes(s) ? value.segments.filter(x=>x!==s) : [...value.segments, s] });
-  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.belowBookOnly || value.qualityOnly;
+  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.belowBookOnly || value.qualityOnly || value.watchlistOnly;
   return (
     <div className="bg-white border border-neutral-line shadow-editorial mb-6">
       <div className="flex flex-wrap gap-2 px-5 py-4 border-b border-neutral-line bg-ivory-50">
@@ -736,6 +738,8 @@ function ScreenerFilter({ value, onChange, resultCount }) {
           icon={<IconLandmark size={12} sw={2.4}/>} label={t('presetBelowBook')} accent />
         <PresetButton active={value.qualityOnly} onClick={() => update({ qualityOnly: !value.qualityOnly })}
           icon={<IconZap size={12} sw={2.4}/>} label={t('presetQuality')} />
+        <PresetButton active={value.watchlistOnly} onClick={() => update({ watchlistOnly: !value.watchlistOnly })}
+          icon={<IconStar size={12} sw={2.4} filled={value.watchlistOnly}/>} label={`${t('presetWatchlist')} (${watchlistCount})`} />
         <div className="flex-1" />
         <div className="flex items-center gap-3 text-xs">
           <span className="text-sumi-50 tabular">
@@ -1252,9 +1256,10 @@ function StockDetailPanel({ stock, onClose }) {
 /* ==========================================================================
    Filter logic + root App
    ========================================================================== */
-const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, belowBookOnly:false, qualityOnly:false };
-function applyFilters(all, f) {
+const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, belowBookOnly:false, qualityOnly:false, watchlistOnly:false };
+function applyFilters(all, f, watchlist) {
   return all.filter(s => {
+    if (f.watchlistOnly && !watchlist.includes(s.ticker)) return false;
     if (f.search.trim()) {
       const q = f.search.trim().toLowerCase();
       const hay = `${s.ticker} ${s.nameEn} ${s.nameKo} ${s.nameJp}`.toLowerCase();
@@ -1321,6 +1326,7 @@ function ErrorState({ message, onRetry }) {
 }
 
 function App() {
+  const { watchlist } = useWatchlist();
   const { t, lang } = useLanguage();
   const [payload, setPayload] = useState(null);
   const [error, setError] = useState(null);
@@ -1346,7 +1352,7 @@ function App() {
   if (!payload) return <LoadingState />;
 
   const { indices = [], stocks = [], sectorPerformance = [], marketSummary = {}, asOf, source } = payload;
-  const filtered = applyFilters(stocks, filters);
+  const filtered = applyFilters(stocks, filters, watchlist);
   const isBootstrap = typeof source === 'string' && source.toLowerCase().includes('bootstrap');
 
   return (
