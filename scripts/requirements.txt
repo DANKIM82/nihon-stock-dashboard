@@ -1,2 +1,2 @@
-yfinance>=0.2.40
+yfinance>=0.2.40,<2.0
 pandas>=2.0
