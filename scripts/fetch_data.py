@@ -67,17 +67,24 @@ def safe(v: Any, default: Any = None) -> Any:
         return default
     return v
 
+def compute_div_yield(info: dict) -> float | None:
+    """
+    Compute dividend yield from dividendRate / price — version-independent.
+    yfinance's own `dividendYield` field has flipped between decimal and percent
+    across versions, so we derive it ourselves.
+    """
+    rate = info.get("dividendRate")
+    price = info.get("currentPrice") or info.get("regularMarketPrice")
 
-def normalise_div_yield(raw: Any) -> float | None:
-    """
-    yfinance's `dividendYield` has been inconsistent across versions —
-    sometimes decimal (0.0285), sometimes percent (2.85). We auto-detect:
-    anything > 1 is already percent; else multiply.
-    """
-    if raw is None or pd.isna(raw):
-        return None
-    raw = float(raw)
-    return round(raw if raw > 1.0 else raw * 100, 2)
+    if rate is not None and not pd.isna(rate) and price:
+        return round(float(rate) / float(price) * 100, 2)
+
+    trailing = info.get("trailingAnnualDividendYield")
+    if trailing is not None and not pd.isna(trailing):
+        return round(float(trailing) * 100, 2)
+
+    return None
+
 
 
 # ============================================================================
@@ -122,7 +129,7 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     # ── Valuation ───────────────────────────────────────────────────────────
     per = to_ratio(info.get("trailingPE"))
     pbr = to_ratio(info.get("priceToBook"))
-    div_yield = normalise_div_yield(info.get("dividendYield"))
+    div_yield = compute_div_yield(info)
 
     # ── Quality ─────────────────────────────────────────────────────────────
     roe = to_pct(info.get("returnOnEquity"))
