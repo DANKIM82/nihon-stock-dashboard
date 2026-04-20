@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-19T06:52:50.151392+00:00",
+  "asOf": "2026-04-20T09:28:05.177014+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -11,13 +11,12 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 58475.9,
-      "change": -1042.44,
-      "changePercent": -1.75,
+      "value": 58899.49,
+      "change": 423.59,
+      "changePercent": 0.72,
       "high52w": 59688.1,
       "low52w": 34109.85,
       "sparkline": [
-        51515.49,
         52252.28,
         53749.62,
         53603.65,
@@ -36,7 +35,8 @@
         57877.39,
         58134.24,
         59518.34,
-        58475.9
+        58475.9,
+        58899.49
       ]
     },
     {
@@ -1004,7 +1004,7 @@
       "changePercent": -1.06,
       "marketCapB": 22721.48,
       "per": 47.62,
-      "pbr": 9.07,
+      "pbr": 8.63,
       "dividendYield": 0.86,
       "roe": 20.62,
       "roa": 10.03,
@@ -6049,7 +6049,7 @@
     {
       "sector": "ConsumerDiscretionary",
       "changePercent": -0.33,
-      "avgPbr": 1.86,
+      "avgPbr": 1.83,
       "count": 14
     },
     {
