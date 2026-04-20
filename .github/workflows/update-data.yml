@@ -2,6 +2,9 @@ name: Update stock data
 
 on:
   schedule:
+    # 도쿄 장중 30분마다 (UTC 0:00-6:30 = JST 9:00-15:30)
+    - cron: "*/30 0-6 * * 1-5"
+    # 장 마감 후 최종 업데이트 (UTC 7:30 = JST 16:30)
     - cron: "30 7 * * 1-5"
   workflow_dispatch:
 
