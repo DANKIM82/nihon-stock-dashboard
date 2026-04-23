@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-23T08:07:41.938244+00:00",
+  "asOf": "2026-04-23T09:14:08.723056+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -2588,7 +2588,7 @@
       "revenueGrowthYoY": 7.6,
       "epsGrowthYoY": 14.9,
       "belowBook": true,
-      "perf1Y": 38.91,
+      "perf1Y": 43.59,
       "sparkline": [
         4205.0,
         4082.0,
@@ -3668,7 +3668,7 @@
       "revenueGrowthYoY": -19.0,
       "epsGrowthYoY": -6.2,
       "belowBook": false,
-      "perf1Y": -4.77,
+      "perf1Y": -5.6,
       "sparkline": [
         2126.5,
         2136.0,
