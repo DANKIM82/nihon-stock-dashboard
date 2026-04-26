@@ -99,7 +99,7 @@ def generate_market_summary(headlines: list[dict]) -> dict | None:
 
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
-        "gemini-2.0-flash:generateContent?key=" + api_key
+        "gemini-2.5-flash:generateContent?key=" + api_key
     )
     body = _json.dumps({
         "contents": [{"parts": [{"text": prompt}]}],
@@ -124,7 +124,7 @@ def generate_market_summary(headlines: list[dict]) -> dict | None:
             return {
                 "ko": str(parsed["ko"]).strip(),
                 "en": str(parsed["en"]).strip(),
-                "model": "gemini-2.0-flash",
+                "model": "gemini-2.5-flash",
                 "generatedTs": int(time.time()),
             }
     except Exception as e:
