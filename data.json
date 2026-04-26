@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-26T06:57:40.364557+00:00",
+  "asOf": "2026-04-26T07:15:09.563653+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3974,7 +3974,7 @@
       "changePercent": -1.04,
       "marketCapB": 1328.66,
       "per": 21.74,
-      "pbr": 2.37,
+      "pbr": 2.44,
       "dividendYield": 2.09,
       "roe": 11.46,
       "roa": 6.63,
@@ -6073,7 +6073,7 @@
     {
       "sector": "ConsumerStaples",
       "changePercent": 0.15,
-      "avgPbr": 2.42,
+      "avgPbr": 2.43,
       "count": 11
     },
     {
@@ -6154,5 +6154,6 @@
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYmoydzJiUG9VWmdEMEZOQnpTOTE3Ty10aW9oMW4zNFFKaHZxT1lMQUxjMnNGU19vLVpjV3BnTURqMFdoeGd3cFNJZ3ozY25CaTZlMmh0TnZGUXhFNDBBM044elpMYjM2MklfVkxpQy1OWDI4aWhoc1BaRWowT19GQktkMEdkYlhCQUFUanhNckQwVkZLMVdGbUtVTUU5VllMcGxodmN3?oc=5",
       "publishedTs": 1777091160
     }
-  ]
+  ],
+  "marketTone": null
 }
