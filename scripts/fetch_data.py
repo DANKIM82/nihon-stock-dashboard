@@ -198,7 +198,7 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     per = to_ratio(info.get("trailingPE"))
     pbr = to_ratio(info.get("priceToBook"))
     div_yield = compute_div_yield(info)
-    news_items = fetch_news_for_ticker(t, code)
+    news_items = fetch_news_for_ticker(yft, ticker_code)
     
     # ── Quality ─────────────────────────────────────────────────────────────
     roe = to_pct(info.get("returnOnEquity"))
