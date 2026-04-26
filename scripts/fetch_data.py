@@ -74,7 +74,7 @@ def _strip_html(text: str) -> str:
     return html.unescape(text).strip()
 
 
-def fetch_market_headlines(max_total: int = 7, max_age_hours: int = 24) -> list[dict]:
+def fetch_market_headlines(max_total: int = 7, max_age_hours: int = 72) -> list[dict]:
     """
     Pull Japanese-market business headlines from Google News RSS.
     Returns at most `max_total` items, fresher than `max_age_hours`.
@@ -89,7 +89,7 @@ def fetch_market_headlines(max_total: int = 7, max_age_hours: int = 24) -> list[
     # to stay TSE-relevant.
     url = (
         "https://news.google.com/rss/search?"
-        "q=Japan+stock+market+OR+Nikkei+OR+%22Tokyo+Stock+Exchange%22"
+        "q=Japan+stocks+OR+Nikkei+OR+TOPIX+OR+%22Bank+of+Japan%22+OR+yen"
         "&hl=en-US&gl=US&ceid=US:en"
     )
 
