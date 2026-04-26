@@ -1405,7 +1405,7 @@ function App() {
   if (error) return <ErrorState message={error} onRetry={() => setTick(t => t+1)} />;
   if (!payload) return <LoadingState />;
 
-  const { indices = [], stocks = [], sectorPerformance = [], marketSummary = {}, asOf, source } = payload;
+  const { indices = [], stocks = [], sectorPerformance = [], marketSummary = {}, headlines = [], asOf, source } = payload;
   const filtered = applyFilters(stocks, filters, watchlist);
   const isBootstrap = typeof source === 'string' && source.toLowerCase().includes('bootstrap');
 
@@ -1459,6 +1459,18 @@ function App() {
           </div>
           <ScreenerFilter value={filters} onChange={setFilters} resultCount={filtered.length}/>
           <StockTable rows={filtered} onSelect={s => setSelected(s)}/>
+        </section>
+        <div className="editorial-rule mb-10"/>
+        <section id="research" className="mb-14 scroll-mt-20">
+          <div className="mb-6">
+            <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">
+              {lang === 'ko' ? '리서치' : 'Research'}
+            </div>
+            <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300">
+              {lang === 'ko' ? '리서치' : 'Research'}
+            </h3>
+          </div>
+          <MarketHeadlines headlines={headlines}/>
         </section>
       </main>
       <footer className="border-t border-neutral-line py-8">
