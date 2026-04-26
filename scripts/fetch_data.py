@@ -67,48 +67,79 @@ def safe(v: Any, default: Any = None) -> Any:
         return default
     return v
 
-def fetch_news_for_ticker(ticker_obj, ticker_code: str, max_items: int = 2) -> list[dict]:
+def _strip_html(text: str) -> str:
+    """Remove HTML tags and decode common entities from RSS title strings."""
+    import re, html
+    text = re.sub(r"<[^>]+>", "", text or "")
+    return html.unescape(text).strip()
+
+
+def fetch_market_headlines(max_total: int = 7, max_age_hours: int = 24) -> list[dict]:
     """
-    Pull recent news headlines from Yahoo Finance for a given ticker.
-    Returns at most `max_items` items, each as a dict with title/publisher/link/published_ts.
-    Failures are swallowed — news is best-effort, not critical.
+    Pull Japanese-market business headlines from Google News RSS.
+    Returns at most `max_total` items, fresher than `max_age_hours`.
+    Best-effort — failures return an empty list, never raise.
     """
+    import urllib.request
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+    import time
+
+    # Google News query — broad enough to surface major moves, narrow enough
+    # to stay TSE-relevant.
+    url = (
+        "https://news.google.com/rss/search?"
+        "q=Japan+stock+market+OR+Nikkei+OR+%22Tokyo+Stock+Exchange%22"
+        "&hl=en-US&gl=US&ceid=US:en"
+    )
+
     try:
-        raw = ticker_obj.news or []
-    except Exception:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            xml_data = r.read()
+    except Exception as e:
+        print(f"    ! headlines fetch failed: {e}", file=sys.stderr)
         return []
 
-    items = []
-    for n in raw[:max_items]:
-        # yfinance news structure shifted around 2024 — try both shapes
-        content = n.get("content") if isinstance(n, dict) else None
-        if content:
-            title = content.get("title")
-            pub = (content.get("provider") or {}).get("displayName")
-            link = (content.get("clickThroughUrl") or content.get("canonicalUrl") or {}).get("url")
-            pub_date = content.get("pubDate")  # ISO string
-            ts = None
-            if pub_date:
-                try:
-                    ts = int(pd.Timestamp(pub_date).timestamp())
-                except Exception:
-                    ts = None
-        else:
-            title = n.get("title")
-            pub = n.get("publisher")
-            link = n.get("link")
-            ts = n.get("providerPublishTime")  # already unix seconds
+    try:
+        root = ET.fromstring(xml_data)
+    except ET.ParseError as e:
+        print(f"    ! headlines parse failed: {e}", file=sys.stderr)
+        return []
 
-        if not title or not ts:
+    cutoff = time.time() - max_age_hours * 3600
+    items = []
+    for item in root.iterfind(".//item"):
+        title = _strip_html(item.findtext("title") or "")
+        link = (item.findtext("link") or "").strip()
+        pub_str = item.findtext("pubDate")
+        source_el = item.find("source")
+        source = (source_el.text or "").strip() if source_el is not None else ""
+
+        if not title or not pub_str:
             continue
+
+        try:
+            ts = parsedate_to_datetime(pub_str).timestamp()
+        except Exception:
+            continue
+
+        if ts < cutoff:
+            continue
+
+        # Google News titles often end with " - SourceName"; trim if redundant.
+        if source and title.endswith(f" - {source}"):
+            title = title[: -(len(source) + 3)].strip()
+
         items.append({
-            "ticker": ticker_code,
-            "title": title.strip(),
-            "publisher": pub or "",
-            "link": link or "",
+            "title": title,
+            "publisher": source,
+            "link": link,
             "publishedTs": int(ts),
         })
-    return items
+
+    items.sort(key=lambda x: x["publishedTs"], reverse=True)
+    return items[:max_total]
 
 def compute_div_yield(info: dict) -> float | None:
     """
@@ -134,30 +165,6 @@ def compute_div_yield(info: dict) -> float | None:
 # Stock fetch
 # ============================================================================
 
-def collect_top_headlines(stocks: list[dict], max_total: int = 7, max_age_hours: int = 24) -> list[dict]:
-    """
-    Aggregate news across all stocks. Keep only the freshest 1 per ticker,
-    sort by recency, drop anything older than max_age_hours, return top N.
-    """
-    import time
-    cutoff = time.time() - max_age_hours * 3600
-
-    seen_tickers = set()
-    candidates = []
-    for s in stocks:
-        for n in s.get("news", []):
-            if n["ticker"] in seen_tickers:
-                continue
-            if n["publishedTs"] < cutoff:
-                continue
-            candidates.append({
-                **n,
-                "stockName": s.get("nameEn") or s.get("nameJp") or n["ticker"],
-            })
-            seen_tickers.add(n["ticker"])
-
-    candidates.sort(key=lambda x: x["publishedTs"], reverse=True)
-    return candidates[:max_total]
 
 def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     """
@@ -198,7 +205,7 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     per = to_ratio(info.get("trailingPE"))
     pbr = to_ratio(info.get("priceToBook"))
     div_yield = compute_div_yield(info)
-    news_items = fetch_news_for_ticker(yft, ticker_code)
+    
     
     # ── Quality ─────────────────────────────────────────────────────────────
     roe = to_pct(info.get("returnOnEquity"))
@@ -253,7 +260,6 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "belowBook": pbr is not None and pbr < 1.0,
         "perf1Y": perf_1y,
         "sparkline": sparkline,
-        "news": news_items,
     }
 
 
@@ -464,7 +470,7 @@ def main() -> int:
         "stocks": stocks,
         "sectorPerformance": sector_perf,
         "marketSummary": summary,
-        "headlines": collect_top_headlines(stocks),
+        "headlines": fetch_market_headlines(),
     }
 
     payload = clean_nans(payload)
