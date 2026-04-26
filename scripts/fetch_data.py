@@ -73,6 +73,64 @@ def _strip_html(text: str) -> str:
     text = re.sub(r"<[^>]+>", "", text or "")
     return html.unescape(text).strip()
 
+def generate_market_summary(headlines: list[dict]) -> dict | None:
+    """
+    Use Gemini to write a short Korean+English market tone summary
+    based on the day's headlines. Returns None on failure (best-effort).
+    """
+    import os
+    import json as _json
+    import urllib.request
+    import urllib.error
+
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key or not headlines:
+        return None
+
+    # Build a compact prompt with just titles
+    titles = "\n".join(f"- {h['title']}" for h in headlines[:7])
+    prompt = (
+        "Below are today's headlines about the Japanese stock market. "
+        "Write a brief 2-sentence summary of the overall market tone in BOTH Korean and English. "
+        "Be neutral and factual. Do not invent specifics not in the headlines. "
+        "Return ONLY a JSON object with keys 'ko' and 'en', no other text.\n\n"
+        f"Headlines:\n{titles}"
+    )
+
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        "gemini-2.0-flash:generateContent?key=" + api_key
+    )
+    body = _json.dumps({
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.3,
+            "responseMimeType": "application/json",
+        },
+    }).encode("utf-8")
+
+    try:
+        req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            resp = _json.loads(r.read().decode("utf-8"))
+    except Exception as e:
+        print(f"    ! gemini call failed: {e}", file=sys.stderr)
+        return None
+
+    try:
+        text = resp["candidates"][0]["content"]["parts"][0]["text"]
+        parsed = _json.loads(text)
+        if isinstance(parsed, dict) and "ko" in parsed and "en" in parsed:
+            return {
+                "ko": str(parsed["ko"]).strip(),
+                "en": str(parsed["en"]).strip(),
+                "model": "gemini-2.0-flash",
+                "generatedTs": int(time.time()),
+            }
+    except Exception as e:
+        print(f"    ! gemini parse failed: {e}", file=sys.stderr)
+
+    return None
 
 def fetch_market_headlines(max_total: int = 7, max_age_hours: int = 72) -> list[dict]:
     """
@@ -458,6 +516,8 @@ def main() -> int:
     summary = compute_market_summary(stocks)
 
     # ── Write data.json ─────────────────────────────────────────────────────
+    _headlines_for_payload = fetch_market_headlines()
+    
     payload = {
         "asOf": datetime.now(timezone.utc).isoformat(),
         "source": "yfinance",
@@ -470,7 +530,8 @@ def main() -> int:
         "stocks": stocks,
         "sectorPerformance": sector_perf,
         "marketSummary": summary,
-        "headlines": fetch_market_headlines(),
+        "headlines": _headlines_for_payload,
+        "marketTone": generate_market_summary(_headlines_for_payload),
     }
 
     payload = clean_nans(payload)
