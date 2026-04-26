@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-26T06:30:14.871060+00:00",
+  "asOf": "2026-04-26T06:57:40.364557+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6113,10 +6113,46 @@
   },
   "headlines": [
     {
+      "title": "WEST ASIA IMPASSE OVERSHADOWS TOKYO STOCKS DESPITE RECORD-SETTING RALLY",
+      "publisher": "bernama",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ocWY5WG1HNGNuQ29OaGRFR29Sc2UxQTBpNGxZanpSWGh4UjNtcVozZlp5czYwZS1GaXU1cUpyU25zdGItendQS2JfNkhaZWxMWGJ2cVUwMEJ1UQ?oc=5",
+      "publishedTs": 1777180943
+    },
+    {
+      "title": "Japan eyes expanded warship exports with Mogami-class frigate as template",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUVQ5OEpwSHgtWTV0aHhKSGZQMXhEMDk3aTdnb2RaQi1QNXFOMHA5aElaTVE0RzRiNkVBczVzNjZqNkZvOGhka1UxSGVaZlZtc3dfdlZZMFVwejB1NUY3V2hCUTVza3JYT2pxUmFPMU5CbzZpUmVDMXMwcnNZeWdFcjBsNWs3NGVfaGRPQ1d4dWhqSGFST2RsZ21OWGdsOGNsUmJSaWFUNzQwS3p2VUZQOW1uOFE4N0l0NHhiZGMtWnpBSzdSMjBDci1fYzlqYWdl?oc=5",
+      "publishedTs": 1777168260
+    },
+    {
       "title": "FOCUS: Mideast impasse overshadows Tokyo stocks despite record-setting rally",
       "publisher": "Japan Wire by Kyodo News",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE04MlBVSklzandTSFF2bFIwSlVDTWpXYjR6RWM3cnQ4dUQ1QUplVEd5UDBLYWpMZHJJVlJjZFNSQ21hN1hSbnZmcmY1YzJqVUZNbk5vNlUzU212QQ?oc=5",
       "publishedTs": 1777160880
+    },
+    {
+      "title": "Japan should prepare for a brain drain",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5Ca2owWU9PMHV0UklkNENvM1RYV2QyeXlUb0Y4UjV5RV8yOWRYd05sZU1XSk1mUFVqbDlnV2ZfUndDWUVEbUJ0SGhDRHVBTi0xb1pFZmVzM3hFOFZxMk1HcHVsNEVHVHlja3o5Z2JzOUZPeWxZc3VrV3dR?oc=5",
+      "publishedTs": 1777147500
+    },
+    {
+      "title": "Japan and EU to partner on undersea cable protections",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN3l6YVV3T3NrQzBDTGJtU2U3VWs4Tmh1MF94b090Y2tOUUZrV3dMVUVGR2VSTFllOEE1WTR3eExxY1pxeDgwX3UyWmJHTDl6dmJyS3JMUnV6cWJzTWxwYWpzWG16Uy1zcnZaNGZvQ1p0ZDR0NldfUDB4cDRTNGRPenVNaUFGb2FQMnJLZ3c3ZGtTUDdkRmZPVXhQNGpNOWtDMnd5X3cyNA?oc=5",
+      "publishedTs": 1777146660
+    },
+    {
+      "title": "Japan outbound travel remains at 70% of pre-pandemic levels amid weak yen",
+      "publisher": "Japan Wire by Kyodo News",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wZWhIMFZlYTZjUEc4WnI3UmFiSWM1d2dZYlYtMGlUdVRfQmN5QWRMSHExdlZ5THVRLTNCQWlCMnUwOUI5d092dmJzZUlHa1hxVDY1TjZ2SGVCQQ?oc=5",
+      "publishedTs": 1777124640
+    },
+    {
+      "title": "Bank branches in Japan tapped to double as luggage hubs",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYmoydzJiUG9VWmdEMEZOQnpTOTE3Ty10aW9oMW4zNFFKaHZxT1lMQUxjMnNGU19vLVpjV3BnTURqMFdoeGd3cFNJZ3ozY25CaTZlMmh0TnZGUXhFNDBBM044elpMYjM2MklfVkxpQy1OWDI4aWhoc1BaRWowT19GQktkMEdkYlhCQUFUanhNckQwVkZLMVdGbUtVTUU5VllMcGxodmN3?oc=5",
+      "publishedTs": 1777091160
     }
   ]
 }
