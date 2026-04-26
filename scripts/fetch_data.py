@@ -90,8 +90,11 @@ def generate_market_summary(headlines: list[dict]) -> dict | None:
     titles = "\n".join(f"- {h['title']}" for h in headlines[:7])
     prompt = (
         "Below are today's headlines about the Japanese stock market.\n"
-        "Write a brief 2-sentence summary of the overall market tone in BOTH Korean and English. "
-        "Be neutral and factual. Do not invent specifics not in the headlines.\n\n"
+        "Write a 3-4 sentence market briefing in BOTH Korean and English. "
+        "Include: (1) overall tone, (2) the 1-2 specific themes driving today's headlines, "
+        "(3) any notable risks or catalysts mentioned. "
+        "Be neutral and factual. Do not invent specifics not in the headlines. "
+        "Write the Korean version in natural Korean financial-news style, not literal translation from English.\n\n"
         "Return ONLY a JSON object in this exact format, no other text, no markdown fences:\n"
         '{"ko": "Korean summary here", "en": "English summary here"}\n\n'
         f"Headlines:\n{titles}"
