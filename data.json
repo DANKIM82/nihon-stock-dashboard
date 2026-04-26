@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-26T08:00:23.730740+00:00",
+  "asOf": "2026-04-26T08:06:56.521437+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6156,9 +6156,9 @@
     }
   ],
   "marketTone": {
-    "ko": "도쿄 증시는 현재 기록적인 랠리를 보이고 있습니다. 하지만 이러한 긍정적인 흐름은 중동 지역의 교착 상태로 인해 가려지고 있습니다.",
-    "en": "Tokyo stocks are currently experiencing a record-setting rally. However, this positive momentum is being overshadowed by the ongoing impasse in the Mideast.",
+    "ko": "도쿄 증시는 기록적인 랠리를 이어가고 있음에도 불구하고, 서아시아(중동) 교착 상태로 인한 지정학적 위험이 부각되며 신중한 분위기가 감돌고 있습니다. 이는 투자 심리를 위축시키는 주요 요인으로 작용하고 있습니다. 한편, 엔화 약세로 인해 해외여행 수요가 팬데믹 이전 수준을 회복하지 못하고 있으며, 장기적으로는 인재 유출 가능성 또한 주목받고 있습니다.",
+    "en": "Despite a record-setting rally, Tokyo stocks are currently overshadowed by the ongoing West Asia impasse, creating a cautious market tone. Geopolitical risks are a primary concern, tempering investor sentiment. Meanwhile, the weak yen continues to affect the travel sector, with outbound travel still below pre-pandemic levels, and long-term structural risks like a potential brain drain are also noted.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1777190430
+    "generatedTs": 1777190827
   }
 }
