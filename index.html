@@ -721,7 +721,7 @@ function PresetButton({ active, onClick, icon, label, accent }) {
   );
 }
 
-function MarketHeadlines({ headlines = [] }) {
+function MarketHeadlines({ headlines = [], tone = null }) {
   const { lang } = useLanguage();
 
   const fmtAge = (ts) => {
@@ -754,6 +754,21 @@ function MarketHeadlines({ headlines = [] }) {
         </h3>
         <span className="text-[10px] uppercase tracking-wider text-sumi-300">via Google News</span>
       </header>
+      {tone && (tone.ko || tone.en) && (
+        <div className="px-5 py-4 border-b border-sumi-50/10 bg-vermillion-500/[0.03]">
+          <div className="flex items-baseline justify-between mb-1.5">
+            <span className="text-[10px] uppercase tracking-wider text-vermillion-600 font-medium">
+              {lang === 'ko' ? 'AI 시장 톤 요약' : 'AI Market Tone'}
+            </span>
+            <span className="text-[9px] uppercase tracking-wider text-sumi-300/60">
+              {tone.model || 'AI'}
+            </span>
+          </div>
+          <p className="text-[12px] leading-relaxed text-sumi-50">
+            {lang === 'ko' ? (tone.ko || tone.en) : (tone.en || tone.ko)}
+          </p>
+        </div>
+      )}
       <ul className="divide-y divide-sumi-50/5">
         {headlines.map((h, i) => (
           <li key={i} className="px-5 py-3 hover:bg-vermillion-500/[0.04] transition-colors">
@@ -1405,7 +1420,7 @@ function App() {
   if (error) return <ErrorState message={error} onRetry={() => setTick(t => t+1)} />;
   if (!payload) return <LoadingState />;
 
-  const { indices = [], stocks = [], sectorPerformance = [], marketSummary = {}, headlines = [], asOf, source } = payload;
+  const { indices = [], stocks = [], sectorPerformance = [], marketSummary = {}, headlines = [], marketTone = null, asOf, source } = payload;
   const filtered = applyFilters(stocks, filters, watchlist);
   const isBootstrap = typeof source === 'string' && source.toLowerCase().includes('bootstrap');
 
@@ -1470,7 +1485,7 @@ function App() {
               {lang === 'ko' ? '리서치' : 'Research'}
             </h3>
           </div>
-          <MarketHeadlines headlines={headlines}/>
+          <MarketHeadlines headlines={headlines} tone={marketTone}/>
         </section>
       </main>
       <footer className="border-t border-neutral-line py-8">
