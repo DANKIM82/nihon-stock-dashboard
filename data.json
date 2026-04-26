@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-26T07:15:09.563653+00:00",
+  "asOf": "2026-04-26T07:25:12.435365+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3974,7 +3974,7 @@
       "changePercent": -1.04,
       "marketCapB": 1328.66,
       "per": 21.74,
-      "pbr": 2.44,
+      "pbr": 2.37,
       "dividendYield": 2.09,
       "roe": 11.46,
       "roa": 6.63,
@@ -6073,7 +6073,7 @@
     {
       "sector": "ConsumerStaples",
       "changePercent": 0.15,
-      "avgPbr": 2.43,
+      "avgPbr": 2.42,
       "count": 11
     },
     {
