@@ -67,6 +67,49 @@ def safe(v: Any, default: Any = None) -> Any:
         return default
     return v
 
+def fetch_news_for_ticker(ticker_obj, ticker_code: str, max_items: int = 2) -> list[dict]:
+    """
+    Pull recent news headlines from Yahoo Finance for a given ticker.
+    Returns at most `max_items` items, each as a dict with title/publisher/link/published_ts.
+    Failures are swallowed — news is best-effort, not critical.
+    """
+    try:
+        raw = ticker_obj.news or []
+    except Exception:
+        return []
+
+    items = []
+    for n in raw[:max_items]:
+        # yfinance news structure shifted around 2024 — try both shapes
+        content = n.get("content") if isinstance(n, dict) else None
+        if content:
+            title = content.get("title")
+            pub = (content.get("provider") or {}).get("displayName")
+            link = (content.get("clickThroughUrl") or content.get("canonicalUrl") or {}).get("url")
+            pub_date = content.get("pubDate")  # ISO string
+            ts = None
+            if pub_date:
+                try:
+                    ts = int(pd.Timestamp(pub_date).timestamp())
+                except Exception:
+                    ts = None
+        else:
+            title = n.get("title")
+            pub = n.get("publisher")
+            link = n.get("link")
+            ts = n.get("providerPublishTime")  # already unix seconds
+
+        if not title or not ts:
+            continue
+        items.append({
+            "ticker": ticker_code,
+            "title": title.strip(),
+            "publisher": pub or "",
+            "link": link or "",
+            "publishedTs": int(ts),
+        })
+    return items
+
 def compute_div_yield(info: dict) -> float | None:
     """
     Compute dividend yield from dividendRate / price — version-independent.
@@ -90,6 +133,31 @@ def compute_div_yield(info: dict) -> float | None:
 # ============================================================================
 # Stock fetch
 # ============================================================================
+
+def collect_top_headlines(stocks: list[dict], max_total: int = 7, max_age_hours: int = 24) -> list[dict]:
+    """
+    Aggregate news across all stocks. Keep only the freshest 1 per ticker,
+    sort by recency, drop anything older than max_age_hours, return top N.
+    """
+    import time
+    cutoff = time.time() - max_age_hours * 3600
+
+    seen_tickers = set()
+    candidates = []
+    for s in stocks:
+        for n in s.get("news", []):
+            if n["ticker"] in seen_tickers:
+                continue
+            if n["publishedTs"] < cutoff:
+                continue
+            candidates.append({
+                **n,
+                "stockName": s.get("nameEn") or s.get("nameJp") or n["ticker"],
+            })
+            seen_tickers.add(n["ticker"])
+
+    candidates.sort(key=lambda x: x["publishedTs"], reverse=True)
+    return candidates[:max_total]
 
 def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     """
@@ -130,7 +198,8 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     per = to_ratio(info.get("trailingPE"))
     pbr = to_ratio(info.get("priceToBook"))
     div_yield = compute_div_yield(info)
-
+    news_items = fetch_news_for_ticker(t, code)
+    
     # ── Quality ─────────────────────────────────────────────────────────────
     roe = to_pct(info.get("returnOnEquity"))
     roa = to_pct(info.get("returnOnAssets"))
@@ -184,6 +253,7 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "belowBook": pbr is not None and pbr < 1.0,
         "perf1Y": perf_1y,
         "sparkline": sparkline,
+        "news": news_items,
     }
 
 
@@ -394,6 +464,7 @@ def main() -> int:
         "stocks": stocks,
         "sectorPerformance": sector_perf,
         "marketSummary": summary,
+        "headlines": collect_top_headlines(stocks),
     }
 
     payload = clean_nans(payload)
