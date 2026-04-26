@@ -80,108 +80,61 @@ def generate_market_summary(headlines: list[dict]) -> dict | None:
     """
     import os
     import json as _json
+    import re as _re
     import urllib.request
-    import urllib.error
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key or not headlines:
         return None
 
-    # Build a compact prompt with just titles
     titles = "\n".join(f"- {h['title']}" for h in headlines[:7])
     prompt = (
-        "Below are today's headlines about the Japanese stock market. "
+        "Below are today's headlines about the Japanese stock market.\n"
         "Write a brief 2-sentence summary of the overall market tone in BOTH Korean and English. "
-        "Be neutral and factual. Do not invent specifics not in the headlines. "
-        "Return ONLY a JSON object with keys 'ko' and 'en', no other text.\n\n"
+        "Be neutral and factual. Do not invent specifics not in the headlines.\n\n"
+        "Return ONLY a JSON object in this exact format, no other text, no markdown fences:\n"
+        '{"ko": "Korean summary here", "en": "English summary here"}\n\n'
         f"Headlines:\n{titles}"
     )
 
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
-        "gemini-2.5-flash:generateContent?key=" + api_key
+        "gemini-2.5-flash:generateContent"
     )
     body = _json.dumps({
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0.3,
-            "responseMimeType": "application/json",
-        },
+        "generationConfig": {"temperature": 0.3},
     }).encode("utf-8")
 
     try:
-        req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as r:
+        req = urllib.request.Request(
+            url,
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "x-goog-api-key": api_key,
+            },
+        )
+        with urllib.request.urlopen(req, timeout=20) as r:
             resp = _json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body_txt = e.read().decode("utf-8", errors="ignore")[:500]
+        print(f"    ! gemini call failed: HTTP {e.code} {body_txt}", file=sys.stderr)
+        return None
     except Exception as e:
         print(f"    ! gemini call failed: {e}", file=sys.stderr)
         return None
 
     try:
         text = resp["candidates"][0]["content"]["parts"][0]["text"]
+        # Strip optional ```json fences
+        text = _re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip(), flags=_re.MULTILINE)
         parsed = _json.loads(text)
         if isinstance(parsed, dict) and "ko" in parsed and "en" in parsed:
             return {
                 "ko": str(parsed["ko"]).strip(),
                 "en": str(parsed["en"]).strip(),
                 "model": "gemini-2.5-flash",
-                "generatedTs": int(time.time()),
-            }
-    except Exception as e:
-        print(f"    ! gemini parse failed: {e}", file=sys.stderr)
-
-    return None
-
-def generate_market_summary(headlines: list[dict]) -> dict | None:
-    """
-    Use Gemini to write a short Korean+English market tone summary
-    based on the day's headlines. Returns None on failure (best-effort).
-    """
-    import os
-    import json as _json
-    import urllib.request
-
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key or not headlines:
-        return None
-
-    titles = "\n".join(f"- {h['title']}" for h in headlines[:7])
-    prompt = (
-        "Below are today's headlines about the Japanese stock market. "
-        "Write a brief 2-sentence summary of the overall market tone in BOTH Korean and English. "
-        "Be neutral and factual. Do not invent specifics not in the headlines. "
-        "Return ONLY a JSON object with keys 'ko' and 'en', no other text.\n\n"
-        f"Headlines:\n{titles}"
-    )
-
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        "gemini-2.0-flash:generateContent?key=" + api_key
-    )
-    body = _json.dumps({
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0.3,
-            "responseMimeType": "application/json",
-        },
-    }).encode("utf-8")
-
-    try:
-        req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as r:
-            resp = _json.loads(r.read().decode("utf-8"))
-    except Exception as e:
-        print(f"    ! gemini call failed: {e}", file=sys.stderr)
-        return None
-
-    try:
-        text = resp["candidates"][0]["content"]["parts"][0]["text"]
-        parsed = _json.loads(text)
-        if isinstance(parsed, dict) and "ko" in parsed and "en" in parsed:
-            return {
-                "ko": str(parsed["ko"]).strip(),
-                "en": str(parsed["en"]).strip(),
-                "model": "gemini-2.0-flash",
                 "generatedTs": int(time.time()),
             }
     except Exception as e:
