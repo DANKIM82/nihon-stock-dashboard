@@ -721,6 +721,72 @@ function PresetButton({ active, onClick, icon, label, accent }) {
   );
 }
 
+/* ==========================================================================
+   Market Headlines — Google News RSS curation
+   ========================================================================== */
+function MarketHeadlines({ headlines = [] }) {
+  const { lang, t } = useLanguage();
+
+  if (!headlines.length) {
+    return (
+      <div className="border border-sumi-50/10 bg-washi-50/[0.02] p-6">
+        <h3 className="font-serif text-base text-sumi-50 mb-1">
+          {lang === 'ko' ? '시장 헤드라인' : 'Market Headlines'}
+        </h3>
+        <p className="text-[11px] text-sumi-300">
+          {lang === 'ko' ? '최근 24시간 내 주요 헤드라인이 없습니다.' : 'No headlines in the past 24 hours.'}
+        </p>
+      </div>
+    );
+  }
+
+  const fmtAge = (ts) => {
+    const diffMin = Math.round((Date.now() / 1000 - ts) / 60);
+    if (diffMin < 1)   return lang === 'ko' ? '방금' : 'just now';
+    if (diffMin < 60)  return lang === 'ko' ? `${diffMin}분 전` : `${diffMin}m ago`;
+    const h = Math.round(diffMin / 60);
+    if (h < 24)        return lang === 'ko' ? `${h}시간 전` : `${h}h ago`;
+    return lang === 'ko' ? `${Math.round(h / 24)}일 전` : `${Math.round(h / 24)}d ago`;
+  };
+
+  return (
+    <section className="border border-sumi-50/10 bg-washi-50/[0.02]">
+      <header className="flex items-baseline justify-between px-5 py-3 border-b border-sumi-50/10">
+        <h3 className="font-serif text-base text-sumi-50">
+          {lang === 'ko' ? '시장 헤드라인' : 'Market Headlines'}
+        </h3>
+        <span className="text-[10px] uppercase tracking-wider text-sumi-300">
+          via Google News
+        </span>
+      </header>
+      <ul className="divide-y divide-sumi-50/5">
+        {headlines.map((h, i) => (
+          <li key={i}>
+            
+              href={h.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-5 py-3 hover:bg-vermillion-500/[0.04] transition-colors"
+            >
+              <div className="flex items-start gap-3">
+                <span className="font-mono text-[10px] text-sumi-300 tabular pt-0.5 flex-shrink-0 w-16">
+                  {fmtAge(h.publishedTs)}
+                </span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-[13px] text-sumi-50 leading-snug">{h.title}</p>
+                  {h.publisher && (
+                    <p className="text-[10px] text-sumi-300 mt-0.5">{h.publisher}</p>
+                  )}
+                </div>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+  
 function ScreenerFilter({ value, onChange, resultCount }) {
   const { count: watchlistCount } = useWatchlist();
   const { lang, t } = useLanguage();
