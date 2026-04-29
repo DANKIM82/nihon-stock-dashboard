@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-29T06:31:01.112196+00:00",
+  "asOf": "2026-04-29T08:42:38.259632+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -601,12 +601,12 @@
       "per": 27.4,
       "pbr": 3.07,
       "dividendYield": 1.5,
-      "roe": 11.48,
-      "roa": 7.63,
-      "operatingMargin": 25.26,
+      "roe": 10.68,
+      "roa": 7.03,
+      "operatingMargin": 21.44,
       "debtToEquity": 0.05,
-      "revenueGrowthYoY": -2.1,
-      "epsGrowthYoY": -3.5,
+      "revenueGrowthYoY": 1.3,
+      "epsGrowthYoY": -6.3,
       "belowBook": false,
       "perf1Y": 63.53,
       "sparkline": [
@@ -1139,7 +1139,7 @@
       "changePercent": -3.33,
       "marketCapB": 4131.18,
       "per": 14.22,
-      "pbr": 2.34,
+      "pbr": 2.26,
       "dividendYield": 3.47,
       "roe": 17.44,
       "roa": 6.88,
@@ -1456,12 +1456,12 @@
       "per": 11.32,
       "pbr": 0.94,
       "dividendYield": 4.01,
-      "roe": 7.89,
-      "roa": 3.58,
-      "operatingMargin": 8.63,
-      "debtToEquity": 0.18,
-      "revenueGrowthYoY": 5.0,
-      "epsGrowthYoY": 25.6,
+      "roe": 8.94,
+      "roa": 4.1,
+      "operatingMargin": 8.64,
+      "debtToEquity": 0.14,
+      "revenueGrowthYoY": 9.1,
+      "epsGrowthYoY": 68.8,
       "belowBook": true,
       "perf1Y": -0.05,
       "sparkline": [
@@ -1904,7 +1904,7 @@
       "changePercent": -9.06,
       "marketCapB": 2023.0,
       "per": 15.24,
-      "pbr": 1.76,
+      "pbr": 1.83,
       "dividendYield": 2.13,
       "roe": 12.17,
       "roa": 8.31,
@@ -2581,12 +2581,12 @@
       "per": 7.13,
       "pbr": 0.78,
       "dividendYield": 0.79,
-      "roe": 11.43,
-      "roa": 4.92,
-      "operatingMargin": 45.63,
-      "debtToEquity": 0.96,
-      "revenueGrowthYoY": 7.6,
-      "epsGrowthYoY": 14.9,
+      "roe": 11.47,
+      "roa": 4.9,
+      "operatingMargin": 27.11,
+      "debtToEquity": 0.94,
+      "revenueGrowthYoY": null,
+      "epsGrowthYoY": null,
       "belowBook": true,
       "perf1Y": 38.83,
       "sparkline": [
@@ -5641,12 +5641,12 @@
       "per": 8.9,
       "pbr": 0.66,
       "dividendYield": 2.68,
-      "roe": 8.23,
+      "roe": 7.74,
       "roa": 1.95,
-      "operatingMargin": 2.81,
-      "debtToEquity": 0.96,
-      "revenueGrowthYoY": -7.5,
-      "epsGrowthYoY": 79.4,
+      "operatingMargin": 6.28,
+      "debtToEquity": 0.91,
+      "revenueGrowthYoY": null,
+      "epsGrowthYoY": null,
       "belowBook": true,
       "perf1Y": 40.9,
       "sparkline": [
@@ -5686,10 +5686,10 @@
       "per": 10.59,
       "pbr": 1.46,
       "dividendYield": 1.73,
-      "roe": 12.13,
-      "roa": 3.25,
-      "operatingMargin": 6.21,
-      "debtToEquity": 0.72,
+      "roe": 12.76,
+      "roa": 3.12,
+      "operatingMargin": 6.96,
+      "debtToEquity": 0.67,
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
@@ -6061,7 +6061,7 @@
     {
       "sector": "Healthcare",
       "changePercent": 1.47,
-      "avgPbr": 2.64,
+      "avgPbr": 2.63,
       "count": 14
     },
     {
@@ -6113,46 +6113,46 @@
   },
   "headlines": [
     {
+      "title": "Bank of Japan Keeping Eyes on Mideast Situation, Rising Prices",
+      "publisher": "The Japan News",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ZTVQtMGo3SlNWVUJQdjRuSHF0MHZZTlBQbUdXeDk5ZlotekZMSVlDS0lLV011eUlJQmhNRXBwazIyaEk1RXhSYVVZY2Q1TURhbHc2Skh5Y1RRVnZuMWRaS1RUTjlac2toVmFqNEVzd3ZuSlU?oc=5",
+      "publishedTs": 1777451160
+    },
+    {
+      "title": "Investors reload yen shorts in intervention test",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMEZkY2JMNFdRVGlmM1RjRUZfRTdkTmo3aTdrVFoxemt0Wl84YV94dVh6NUtpMXIxOEVLWkJPdE1lWDRHM21uN2ZrWjd6YmtsdTMwUVBlMEU1OGVCdXhuNDk2NU9vTU5sanE1Y3REZUFUaDAtZDN6c2NNZ0Y1bmZDVmk1RWRuaWdYQVJtZURTNzlaQnpXSG0tamRNY01uMlhUSlE?oc=5",
+      "publishedTs": 1777451154
+    },
+    {
+      "title": "Traders Are Piling Back Into Bets Against The Japanese Yen",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORHlIMjk1dmtIRkhwOXk2OE9SWUFKWVg1RlM4elMxZDNsTnpSOTRIWVplSFhIMjZrb2R4TmF1VmstUzN4M211TUNLT3l1S2xIYm5LYWp4Qmdta1RCVVZVWGd0Wk1OUzlzN1pxMkNRb2RWOWFsVEFmeFJ0YnM0M2tjbEZEZDNVamRld2pWVERHZzA?oc=5",
+      "publishedTs": 1777449691
+    },
+    {
+      "title": "Japanese Yen trades with caution against US Dollar ahead of Fed’s monetary policy",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdHJ0VnF4ZFg5WnNpVF93Vm5VNTZ4VS1wSzJ4RmlsRndoLUU5enZKU3F5S1NzUXFhNXBTTjJYMW5DRUJfUTU5d3JVV1Y4N1hRU3MxVnJpSk04ckI3LWRjVXZNMm9qTnRCa2JSLWE3N0ZNS1NwUk9nZ1BMVnQ1Vi0wVGpQVnZKRGRSTWNKOHR3ZVdXOUxwWGRuU3pKOWZsZUxmMmY3VW80T3Vsa24zaWlrdDBkNkJnRnAwNDVHWUJlZWw?oc=5",
+      "publishedTs": 1777448118
+    },
+    {
       "title": "Japan’s Interest Rate Remains The Same… For Now",
       "publisher": "powderlife.com",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMElSWmh5NXhLdUJodlJodTlLQTktQlYyUkdBZEVEblJVRjNhVnpKa2d6MlRJalZpd0h1b0lDeUxoUXhnR3duSlJjS292SmdPSURHRVU1WjNOUVRJbDdndTYxZWJxV0hRajVVSEFieE5IV21nUl94ZG9BclU2aFBvQ1hvOVA?oc=5",
       "publishedTs": 1777434785
     },
     {
-      "title": "\"The Bank of Japan can't save the yen\"",
-      "publisher": "investingLive",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0V1eWdRVGpfcFNNUy1rOWlSZEU3ZzF5MVd1TzA0WWlLRGp0X20xYzNJUG1lelFNbFcwWmxtc0VWUXBzMklYOFRyUVZ4bnNzUmJXcTl6WWpjeWNWNldJXzloRjhWOVNPR0JUY0hNTFRTekpSMWI1bjMtOGRuQ1B4WWtFUmU3NFlMLUlR?oc=5",
-      "publishedTs": 1777432444
-    },
-    {
-      "title": "Stocks retreat on Iran, AI concerns as Fed meeting looms",
+      "title": "Stocks rally on earnings optimism as Fed meeting looms",
       "publisher": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9od0NpclZ4VU9xb3Q5Qm9fNFk3ejI5a3ZrWmlTMmpqb0lWT0g3ZExrdmh6MnlfZTRabkVXS1hENXlEakN6QVJFaE1COWk1N0xfdTV1d2EyUS1uTjlsUnV3SVdoTU00RWtidE1NRDFBOVhaY2JQVEJyQkRfZw?oc=5",
       "publishedTs": 1777427580
     },
     {
-      "title": "Asian Stock Markets Mixed: Kospi Steady, Hang Seng Futures Down, Japan Closed",
-      "publisher": "NDTV Profit",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPLTlEdGtscGVMLVA1Q3BvcTRvUHg4T0lJLXFxbWtjZlh2VnVPZlMyUGdBLUJWME43ZEZORTBWY2lXS0dLRW81NEU1YV9ReUc3SzZEeEN5Vy1xa2oxcnhhdEFZZVhScGJZdzl2bmo3bjlJMmFNblBWcUVTMmdtNFdGTVBDNzNRZXFrcEh4RzJBVW1VYkkwUllJSF9XRWpNOUZRc0phZmRGRGlSSkVjdW1TdFpBNWNmQW9xS3d5RERKSExrUnJ6dTFKYmhybm9LcEnSAdcBQVVfeXFMUG05Vl9IMVZMNWRMeVg2N015ekVaR3A1RkxBMW5oSXhPb2otaDBLcUotb0pYUUstRExOWEozUVlUR0c1Z0hTVkx0SlVOdDd5UUpRVXpmNi1wXzNXNjB2ZFJRT1RMQ3JjaGEwNTJqQzU5NmVYd0JQYUk0Nko2d1VuQWNLMVBWaGh3YTBVUU8zR0ZnVEYxTUl4TFFjck1tYmFVVDFzbHNWNzRoLXRFVzBRTHZnZm5KblM1SFRiV0EyQldRZHozM1VzR3ViQU45SS1pVTAwM28xc3M?oc=5",
-      "publishedTs": 1777424479
-    },
-    {
-      "title": "Japanese Yen flat lines vs USD as bulls shrug off hawkish BoJ ahead of Fed policy update",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNM2xVdGRvYWdXdFI2eXludzNNRkp4bnFIWllTQnFpY1hIbE5LNDdxMHZ1d21WNjZXXzJjbDFwUVhjVTZfejNEVzdlLTRoVUg5cUFCRnpsY1pxNDFJMUxoM2Nna1FjTXVqMVJHajZTN1VlblEwQWtBdWRTWWFGaW1YYVBYY0NJd3EwX0ljcGFvLWJPUUJzV1pTUi1QbU0wWEZ2MGYxVDAxY2Z5Q256cE1XekN0OU5QMm0tb3U2dWhTQzlEM1JTanBobFhXbw?oc=5",
-      "publishedTs": 1777423007
-    },
-    {
-      "title": "Bank of Japan Delivers Hawkish Hold But Yen Remains on Brink",
-      "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR2tqdURoQ2JLWFk0SWl2ZlNXMnVQdnk2TVpfclBBOUluS1k2OFJDYXNVYWoyWDRna3VOYkRCYUdzTWUyUjVQTGx4RTJzYzlCbXgzQzE3UkhTV3c1SmtMVDloTDBYOEx1NEdjV1dFajljQjNoN0hPU210b2lkSm5zUkJWamZtREtlTUlWaGdjRHdSTXlkRVc1TUtPLVFUS24yZDZNT3JVT0I5SUV3UE95NXlRSG9mQQ?oc=5",
-      "publishedTs": 1777417570
-    },
-    {
-      "title": "What Japan signals about the war-hit economy",
-      "publisher": "Axios",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xcU42RFNENHd2b1l3N2g3SlRuX1JiS2NCX1VmLTBXYVF0R2w1amlHNlJQSGp0X1dubDdGQ0dmbHgzRjNXdUd0MU1INVMteUhTVGRTdVJ1ZmhDS29QQ3hIX3N6RW9vRFNJZnNwS29iaw?oc=5",
-      "publishedTs": 1777413569
+      "title": "Stocks retreat on Iran, AI concerns as Fed meeting looms",
+      "publisher": "Yahoo Finance Singapore",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ2ZGOUFDY2s4aWNINEJ0MHMteVhCODl0SW5lU2xEMVhiZ1lHYXlYS3pJZmVlUE04ZGpfY0o3bHU0aTc0N2ptY0pNT041Uk9maEs3NHJ5eXkzZXRIRGlwLXU2S0hzRU45enJwZm1XZHRHVTJNYXlPN281bjRXb3dCRkwwUHhHcE0?oc=5",
+      "publishedTs": 1777427580
     }
   ],
   "marketTone": null
