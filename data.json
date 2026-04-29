@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-29T03:43:07.831976+00:00",
+  "asOf": "2026-04-29T06:31:01.112196+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -2313,9 +2313,9 @@
       "dividendYield": 4.77,
       "roe": 9.59,
       "roa": 0.51,
-      "operatingMargin": 19.52,
-      "debtToEquity": 9.57,
-      "revenueGrowthYoY": -63.5,
+      "operatingMargin": 18.48,
+      "debtToEquity": 12.06,
+      "revenueGrowthYoY": 77.7,
       "epsGrowthYoY": 69.6,
       "belowBook": false,
       "perf1Y": 56.98,
@@ -4381,12 +4381,12 @@
       "per": 16.31,
       "pbr": 1.95,
       "dividendYield": 1.25,
-      "roe": 12.46,
-      "roa": 7.46,
-      "operatingMargin": 12.22,
-      "debtToEquity": 0.07,
-      "revenueGrowthYoY": 8.4,
-      "epsGrowthYoY": -55.9,
+      "roe": 12.94,
+      "roa": 7.51,
+      "operatingMargin": 18.75,
+      "debtToEquity": 0.06,
+      "revenueGrowthYoY": 8.2,
+      "epsGrowthYoY": 17.5,
       "belowBook": false,
       "perf1Y": 60.7,
       "sparkline": [
@@ -6113,16 +6113,28 @@
   },
   "headlines": [
     {
+      "title": "Japan’s Interest Rate Remains The Same… For Now",
+      "publisher": "powderlife.com",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMElSWmh5NXhLdUJodlJodTlLQTktQlYyUkdBZEVEblJVRjNhVnpKa2d6MlRJalZpd0h1b0lDeUxoUXhnR3duSlJjS292SmdPSURHRVU1WjNOUVRJbDdndTYxZWJxV0hRajVVSEFieE5IV21nUl94ZG9BclU2aFBvQ1hvOVA?oc=5",
+      "publishedTs": 1777434785
+    },
+    {
+      "title": "\"The Bank of Japan can't save the yen\"",
+      "publisher": "investingLive",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0V1eWdRVGpfcFNNUy1rOWlSZEU3ZzF5MVd1TzA0WWlLRGp0X20xYzNJUG1lelFNbFcwWmxtc0VWUXBzMklYOFRyUVZ4bnNzUmJXcTl6WWpjeWNWNldJXzloRjhWOVNPR0JUY0hNTFRTekpSMWI1bjMtOGRuQ1B4WWtFUmU3NFlMLUlR?oc=5",
+      "publishedTs": 1777432444
+    },
+    {
       "title": "Stocks retreat on Iran, AI concerns as Fed meeting looms",
       "publisher": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9od0NpclZ4VU9xb3Q5Qm9fNFk3ejI5a3ZrWmlTMmpqb0lWT0g3ZExrdmh6MnlfZTRabkVXS1hENXlEakN6QVJFaE1COWk1N0xfdTV1d2EyUS1uTjlsUnV3SVdoTU00RWtidE1NRDFBOVhaY2JQVEJyQkRfZw?oc=5",
       "publishedTs": 1777427580
     },
     {
-      "title": "Stocks retreat on Iran, AI concerns as Fed meeting looms",
-      "publisher": "Yahoo Finance Singapore",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ2ZGOUFDY2s4aWNINEJ0MHMteVhCODl0SW5lU2xEMVhiZ1lHYXlYS3pJZmVlUE04ZGpfY0o3bHU0aTc0N2ptY0pNT041Uk9maEs3NHJ5eXkzZXRIRGlwLXU2S0hzRU45enJwZm1XZHRHVTJNYXlPN281bjRXb3dCRkwwUHhHcE0?oc=5",
-      "publishedTs": 1777427580
+      "title": "Asian Stock Markets Mixed: Kospi Steady, Hang Seng Futures Down, Japan Closed",
+      "publisher": "NDTV Profit",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPLTlEdGtscGVMLVA1Q3BvcTRvUHg4T0lJLXFxbWtjZlh2VnVPZlMyUGdBLUJWME43ZEZORTBWY2lXS0dLRW81NEU1YV9ReUc3SzZEeEN5Vy1xa2oxcnhhdEFZZVhScGJZdzl2bmo3bjlJMmFNblBWcUVTMmdtNFdGTVBDNzNRZXFrcEh4RzJBVW1VYkkwUllJSF9XRWpNOUZRc0phZmRGRGlSSkVjdW1TdFpBNWNmQW9xS3d5RERKSExrUnJ6dTFKYmhybm9LcEnSAdcBQVVfeXFMUG05Vl9IMVZMNWRMeVg2N015ekVaR3A1RkxBMW5oSXhPb2otaDBLcUotb0pYUUstRExOWEozUVlUR0c1Z0hTVkx0SlVOdDd5UUpRVXpmNi1wXzNXNjB2ZFJRT1RMQ3JjaGEwNTJqQzU5NmVYd0JQYUk0Nko2d1VuQWNLMVBWaGh3YTBVUU8zR0ZnVEYxTUl4TFFjck1tYmFVVDFzbHNWNzRoLXRFVzBRTHZnZm5KblM1SFRiV0EyQldRZHozM1VzR3ViQU45SS1pVTAwM28xc3M?oc=5",
+      "publishedTs": 1777424479
     },
     {
       "title": "Japanese Yen flat lines vs USD as bulls shrug off hawkish BoJ ahead of Fed policy update",
@@ -6137,22 +6149,10 @@
       "publishedTs": 1777417570
     },
     {
-      "title": "\"The Bank of Japan can't save the yen\"",
-      "publisher": "investingLive",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0V1eWdRVGpfcFNNUy1rOWlSZEU3ZzF5MVd1TzA0WWlLRGp0X20xYzNJUG1lelFNbFcwWmxtc0VWUXBzMklYOFRyUVZ4bnNzUmJXcTl6WWpjeWNWNldJXzloRjhWOVNPR0JUY0hNTFRTekpSMWI1bjMtOGRuQ1B4WWtFUmU3NFlMLUlR?oc=5",
-      "publishedTs": 1777415698
-    },
-    {
-      "title": "Japan turns to Chinese petrochemicals amid naphtha crunch",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNR29jbkNwZXM2TktLNWdiSjFUTHZfM2dSRGlxdGROVGYwODcwUmgxbmRRa1JkN2JobGNUM09faTF3TGF3LUl0N0tISVdUbDJpeXo0dGlMTkUyWGY3aU8tcGJVbEN6dUt1LU05OWVvSW13eThGS080ZmV1M09oM3NKUEJVdnZPWGNRMEoyemdiSlRGaEQwWlQzcWFzWQ?oc=5",
-      "publishedTs": 1777413300
-    },
-    {
-      "title": "Sinking AI stocks and rising oil prices weigh on Wall Street",
-      "publisher": "BNN Bloomberg",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNYWszcUxsSHo3WjFsZUptS3NfMkMzaWdOd0tzdVBTVmpXd294RzFBbEFQVXlnNm9Fc1J6VzJjRUFTRmNfc1E5SGhzY1hhNWFfZzFJWWpUX3FFRFNVUXhWQWpENXJUNV9JUDRMeTcteUpOVFBTUWh5SWt2eFB0Um1pQzFiMXQwalg4b1pBUGRrWEdRRTNYeFlobEExaWhGVThiVXhVYnlBZkdlajFRM2RWakRCVks2cGRvSmFpZDI5WFNBWWxkNDZLQUtYWHpkbWg2NjdScHozZEtFMTkzYnc?oc=5",
-      "publishedTs": 1777410583
+      "title": "What Japan signals about the war-hit economy",
+      "publisher": "Axios",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xcU42RFNENHd2b1l3N2g3SlRuX1JiS2NCX1VmLTBXYVF0R2w1amlHNlJQSGp0X1dubDdGQ0dmbHgzRjNXdUd0MU1INVMteUhTVGRTdVJ1ZmhDS29QQ3hIX3N6RW9vRFNJZnNwS29iaw?oc=5",
+      "publishedTs": 1777413569
     }
   ],
   "marketTone": null
