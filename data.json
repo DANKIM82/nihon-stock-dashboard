@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-04-29T08:42:38.259632+00:00",
+  "asOf": "2026-04-29T09:36:41.701780+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -1904,7 +1904,7 @@
       "changePercent": -9.06,
       "marketCapB": 2023.0,
       "per": 15.24,
-      "pbr": 1.83,
+      "pbr": 1.76,
       "dividendYield": 2.13,
       "roe": 12.17,
       "roa": 8.31,
@@ -5954,7 +5954,7 @@
       "changePercent": 2.93,
       "marketCapB": 1362.6,
       "per": 11.92,
-      "pbr": 1.49,
+      "pbr": 1.5,
       "dividendYield": 3.73,
       "roe": 12.99,
       "roa": 3.42,
@@ -6113,6 +6113,18 @@
   },
   "headlines": [
     {
+      "title": "Japanese Yen: Hawkish BoJ Hold Signals Rate Hikes Ahead",
+      "publisher": "Exchange Rates UK",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdFNPczdxUVBxLXQyRl9WNTBZZ0lybHpLMEtYaXU1a3NwdWhaYUUyQUFQWWRsbXhBelg2LWFuOS1Lbl9CeG5MU0stcWtSVGEzMDVQamN3MGRmREdiQll4MlVYcXFlQXp3NXJCY196aTVXU2FjbnhQek5FTC13NWxkMG03cE9Vb05Kc19zcEltSkh3MUM4TFFOMUlGWmJtV1BrcnVzcGtxMnMwc1pBRk50bFhnaUk?oc=5",
+      "publishedTs": 1777455000
+    },
+    {
+      "title": "Korean Investors Flee Japanese Stocks for 13th Straight Month",
+      "publisher": "Seoul Economic Daily",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcWFGNm9UVW4zUmlXS3BnaGhxSHd0cXhicFZ5ODlydmpha3plWTNKNFJKQWR1RVpqX2h1NDVsem5ja29ELV9iX1htc1p0YUlPMzFYLXlCNTJ5RXEwZENTeHFfVGdlQWVnQmRTRU4xSGJsS2ZfblVfMEt6dGpsa1V4Mi1QU0x0d0VGZWdHWnY4al9NbnZyVVdZcVhZVVF2dw?oc=5",
+      "publishedTs": 1777453018
+    },
+    {
       "title": "Bank of Japan Keeping Eyes on Mideast Situation, Rising Prices",
       "publisher": "The Japan News",
       "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ZTVQtMGo3SlNWVUJQdjRuSHF0MHZZTlBQbUdXeDk5ZlotekZMSVlDS0lLV011eUlJQmhNRXBwazIyaEk1RXhSYVVZY2Q1TURhbHc2Skh5Y1RRVnZuMWRaS1RUTjlac2toVmFqNEVzd3ZuSlU?oc=5",
@@ -6137,22 +6149,10 @@
       "publishedTs": 1777448118
     },
     {
-      "title": "Japan’s Interest Rate Remains The Same… For Now",
-      "publisher": "powderlife.com",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMElSWmh5NXhLdUJodlJodTlLQTktQlYyUkdBZEVEblJVRjNhVnpKa2d6MlRJalZpd0h1b0lDeUxoUXhnR3duSlJjS292SmdPSURHRVU1WjNOUVRJbDdndTYxZWJxV0hRajVVSEFieE5IV21nUl94ZG9BclU2aFBvQ1hvOVA?oc=5",
-      "publishedTs": 1777434785
-    },
-    {
       "title": "Stocks rally on earnings optimism as Fed meeting looms",
       "publisher": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9od0NpclZ4VU9xb3Q5Qm9fNFk3ejI5a3ZrWmlTMmpqb0lWT0g3ZExrdmh6MnlfZTRabkVXS1hENXlEakN6QVJFaE1COWk1N0xfdTV1d2EyUS1uTjlsUnV3SVdoTU00RWtidE1NRDFBOVhaY2JQVEJyQkRfZw?oc=5",
-      "publishedTs": 1777427580
-    },
-    {
-      "title": "Stocks retreat on Iran, AI concerns as Fed meeting looms",
-      "publisher": "Yahoo Finance Singapore",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ2ZGOUFDY2s4aWNINEJ0MHMteVhCODl0SW5lU2xEMVhiZ1lHYXlYS3pJZmVlUE04ZGpfY0o3bHU0aTc0N2ptY0pNT041Uk9maEs3NHJ5eXkzZXRIRGlwLXU2S0hzRU45enJwZm1XZHRHVTJNYXlPN281bjRXb3dCRkwwUHhHcE0?oc=5",
-      "publishedTs": 1777427580
+      "publishedTs": 1777444140
     }
   ],
   "marketTone": null
