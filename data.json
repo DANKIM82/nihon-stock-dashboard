@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-04T06:47:26.436894+00:00",
+  "asOf": "2026-05-04T09:38:56.749863+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -284,7 +284,7 @@
       "changePercent": 7.24,
       "marketCapB": 18543.47,
       "per": 41.67,
-      "pbr": 5.56,
+      "pbr": 5.34,
       "dividendYield": 0.72,
       "roe": null,
       "roa": null,
@@ -6043,7 +6043,7 @@
     {
       "sector": "Technology",
       "changePercent": -0.06,
-      "avgPbr": 5.73,
+      "avgPbr": 5.72,
       "count": 17
     },
     {
@@ -6113,52 +6113,52 @@
   },
   "headlines": [
     {
-      "title": "Yen Briefly Jumps in Asia Trade, Putting Investors on High Alert",
+      "title": "Asian Stocks Outside of Japan Hit Record High as Tech Rallies",
       "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWHRmUTJSOTZuUFFlejdCMjF3bGpzMl9KYV82ZEU4THR4aVl6RFoyODg1bVBkOU1xcUdSbzYzU09xa2lXU28yMjNmeXZFTEtDMHdLbU9ZWWRPUTNSMFVPdDhDa0hGRWxScnRCQUlXamJTRXVkTGRHQjV2X3oycFlxdmo1d2llcFVrUE1KTHd4My1ZU1IyWmJuSWZMOWNmWFBWXzdGaDZuaHV1SXI0R2dMLU53?oc=5",
-      "publishedTs": 1777874160
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcUdkalRmRXU3NHRGc2pab19DRkxWYWw4dDI3LXpvTjNrY0ZVd2gxY2w0aURDSklLSFFleGEyckFEanFidUNpYkJkZXUtVzhpQU9BVjhwSHVKc1Bqd3FUTTg5anZhTFNfMEtVM1lnSXJkaXlmTkttZ1pkSkozcWV6NGh4WDNwZlJieXRzb2FuZDlBaHp0QkhXTXl4M0hWemdqazlGLVpxbUtqeDVNS0VscF9R?oc=5",
+      "publishedTs": 1777886602
     },
     {
-      "title": "USD/JPY forecast: Japanese yen outlook after the $35 billion BoJ intervention",
-      "publisher": "Invezz",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORXotZFZndkJYX2tab3p5eTBxTEhqRFd2bUVTaDJxcDdoZ04zUk5hbzFyQ3VOQlVGMzhtd1JoMHNzbGtDenQ3aU9yYnN2SmZKcldMWnVPUHJRd256Tl9rZVBzQ1RJR2RZaDVBUGJLbmh2cGJ4cktRNzNuR1JpZ1FFeXB6RGV1SzZXUGNwb1F2OUMwTHFZVHQtYzlrSWdPb2N5N1BqOEJHQ05VTDE2VzR2Vg?oc=5",
-      "publishedTs": 1777873990
+      "title": "Yen jumps to upper 155 level against dollar",
+      "publisher": "nhk.or.jp",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40cjRybXJCMjRuMzZTaDRzUEM2S094Zno3MWVjSU9hNnZTMUhvdDFjZG9mSnF6Mm02dWduUVg3ZEswcVJ1Sk5aSGZNd2FwMndwLVA0LXFEYTV6Z0dNd0JzSmh3?oc=5",
+      "publishedTs": 1777886223
     },
     {
-      "title": "The Yen’s Sudden Jump Has Traders Watching Japan’s Next Move",
+      "title": "What is happening with Yen? The real global economic shift happening in Japanese market",
+      "publisher": "WION",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVE9kb1lMNk9hUVJVU2JFaXdDOTVxUmdMcTk4SkRfcHNla0QzSndMb3psOVVDSjBPaUs3R3l1WDRnZ1QwZnFIdmJJMWVJUXNxdVdqMV82VERMSEdwVl93NkNFeVF3UmJhaDJFc1MyTW1DanVWaG1ib1JoNVNUZ2J0clduU2pEa2U1aHZKaXNGZFE1aXV1UnMwT1d2Nld3bXlIVVdTNktnWlJ5XzRL0gGsAUFVX3lxTE9UT2RvWUw2T2FRUlVTYkVpd0M5NXFSZ0xxOThKRF9wc2VrRDNKd0xvemw5VUNKME9pSzdHeXVYNGdnVDBmcUh2YkkxZUlRc3F1V2oxXzZURExIR3BWX3c2Q0V5UXdSYmFoMkVzUzJNbUNqdVZobWJvUmg1U1RnYnRyV25TakRrZTVodkppc0ZkUTVpdXVSczBPV3Y2V3dteUhVV1M2S2daUnlfNEs?oc=5",
+      "publishedTs": 1777885560
+    },
+    {
+      "title": "Barclays sees Bank of Japan June hike on Middle East stability By Investing.com",
+      "publisher": "Investing.com South Africa",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQzQ2am1vYkZuVzBOcjVPMVlKc2JmS2pfVG4xYmxIVVNMWWt6VzNYV3BwX1FueUpYZ0NJcDhJMTZNUXBYY29ITHZjU3NXSi1ORkIxaE1uT3lJVWh4ZzIyaXZHalRvYW5JclpFTVF0azNWd1llMTZqN1FOWUNSRVJfajRjUUprWnVfcWJEV2l4VGhrdEozMURMU3kxY3lKNDg0T0xiWTNlbFhaUUQ4Zm55NktaRlRlbTVFREE?oc=5",
+      "publishedTs": 1777884525
+    },
+    {
+      "title": "Yen Surges Amid Speculation of Japanese Government Intervention",
+      "publisher": "Devdiscourse",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOVdBdjZhZ09aWWYzb2ZlZi1KZ0FsdHI3d2huNXkwcDc0bVAwcG9VX3lYT0pxYXBva01Ocjk5X0stZW5aRk5fZF95SHNOblI2emNhRVc1MUNJUVN5QnhaRkVkbm80YVZ0bWRhUUlDMnhZR2ZQYTAwTVVxc29rU3VxaXczTVVKYnltaURqUWVUdnlhV29Lalg3QTQ0NXdlNWl4bE1vb2hoSjB5Y01pOVc4ZVRUUExvcHRLanfSAb8BQVVfeXFMUG0tYU1JT3FkclQ5OGx1b1hyUWoycXlLTnJVZFd3M25QVjZBY1FydHJFZjhyWjV1UkdvNFBmNGljUDNFTDdaVWVGR3RrYVJPalZXLXk1SUtOYkh0bG12Z29VbVg5SXN5VVFuMVdhdE5nbFlKQWtXOUNfQW5USWRUVFY1aE1VenFXSjlCenpZMG5vanFDektBaXdZZ1pVSXRtOHlPU1V0cUlDS0hvU1E0MGwyMUZBTzVhVFpXVFVZUjQ?oc=5",
+      "publishedTs": 1777883236
+    },
+    {
+      "title": "Yen jumps as Japan takes on speculators",
+      "publisher": "MSN",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZmZDYlBlZE03VlZZSkRhRWhrbk9Ub0dEX1lEdi1obmhrOXhBdHJQRU8tWkl5ZVMxTTBuSDg2U3c1dnFOVVNnREhicVZHb2NyWHF6SGktWEJDSjJVRXBZMjBGWWhranVJRFBDX0lKUGJYbEp2LXpaXzJRU2xnRy1DYk9LUVVYLUplN2w1U052ZHZ0RkF5WTQ0NEE5bElKWUI1WEp5ZjRzYzV0SF9mWTg3MGNLUUJCSTlH?oc=5",
+      "publishedTs": 1777882085
+    },
+    {
+      "title": "Japan Defends The Yen With A Quick Market Jolt",
       "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX3ZPVWlIeG90eVdoZk5kNFdzd3VITVRmeWgzcVMzN2J5WV9zWmo2ZDFpY0tBTU5pelU0UEtnZERYMTk0RDBwX2xjckpuU1FrTGUwZnpXc3J4OGVPdTZsWWh4TzFBenVXR1lvYkVnczVvZ3dXNFZBMXlROUpzR3pRYlBIVVlCMWVJ?oc=5",
-      "publishedTs": 1777871822
-    },
-    {
-      "title": "Yen’s Sudden Jump Has Traders Watching Japan’s Next Move",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQ3RmMWsxbWtaSWtUUnhORlJfWksyY253Y0lKZkh1dEphcHE5cVhfcVA2NTNrU1N3c01WYXpQQVZQZm43QTBPX191ekRILXV4bTNROXdDMklRd1VkUGxEVU9hZU11REczMndPTkEyM3FoR2ZsaGlIWW5WeGRLdE9BWHBkcUZvclNQcC13?oc=5",
-      "publishedTs": 1777870610
-    },
-    {
-      "title": "Australia and Japan expand ties with focus on economic security",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPczNvNVNUV1czX0x6MGpONm43R0sta3RaZFpLQmNJZlR1YUZHTmRjay13WXNmNENyczA2ZHF1X0JybU1LZUIzMUxhc0kzQjd4UTVnTnBJWnB0bmp2ZkhNd3pGOXJWUVAyNW85OHhGb09zWFIzaHdGVVdhVWVZdU55XzMyS19RVWJEOWdrelAtS0J0cWM0NWZRNVJsNTBsUy1UeVV6QTR3MklRTmtLZ1d3R3p3NV9XaTZrUmRSbA?oc=5",
-      "publishedTs": 1777869720
-    },
-    {
-      "title": "Yen suddenly jumps on talk of possible intervention",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOclJCRnd2TVBFYk1rNS1NOWhtWDg1YkxnLUhuZUVhN2ZSZERCSzNyajA4Wmg1eC00X0tudTB6N0piSHhnRVpyazlsMVU3a2R6Zzk5YUp2Sk05ejljYTFYUHdxbnNLTlJLRGNFeEFsRXVjWjBvalNFWnY2eUNtTWdyZWNEdjBfWW56TjJGakF5dkJWVHJYRlgyS1FibW1aVEhaWHc?oc=5",
-      "publishedTs": 1777869300
-    },
-    {
-      "title": "Japan Can Conduct 30 More Yen Interventions, Goldman Sachs Says",
-      "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONnd6ZVZOTnI1N0xMRlR6Sjd6YkVrcWpGbldaMHRqaWxGSUkwZmFkRDRlT0lhY0o5MjRqTElYbUxSMGNQWWxHclEwWk5wTnpFYkZTbEhYSnpyRmJES2pnSzQ4b0s0a3Y0WnVrQVhTcXBEdTdJQ19JREpkSXpXV2xySzVvNU1iYTFiMVBXMVU2RzZEdHZITHZEbWlzWEFsZFhzaDQ1ak55aUhpWHkwSmxpalN2dw?oc=5",
-      "publishedTs": 1777867380
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzd3UXdmbDltVzZqUTZidTBjRU8wSk96Qkp5V2Q2RVkxVHhKckl3RUY5N2Z0LTVjTEU5TmVraTZTM2ZMU2lhV3hfTS00UDJlZlV1ODY0anhVem5VNC1WTFYzenJSVExOR2c4MmpsR2pfaTQ5WEZWakJOMWU4QnJHeA?oc=5",
+      "publishedTs": 1777882085
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시 헤드라인은 엔화의 급격한 변동성에 주목하고 있습니다. 아시아 시장에서 엔화가 일시적으로 급등하며 투자자들의 경계심이 높아졌는데, 이는 일본은행의 개입 가능성 및 이미 보도된 350억 달러 규모의 개입 여파로 풀이됩니다. 시장 참여자들은 일본 당국의 다음 행보를 주시하고 있으며, 골드만삭스는 일본이 추가적인 엔화 개입을 30회 더 단행할 여력이 있다고 분석했습니다. 전반적으로 엔화 동향과 당국의 정책에 대한 신중한 관망세가 짙습니다.",
-    "en": "Today's headlines highlight significant volatility in the Japanese yen, which briefly jumped in Asian trade, putting investors on high alert. This sudden movement is largely attributed to talk of possible intervention and follows reports of a $35 billion Bank of Japan intervention. Traders are closely watching Japan's next moves, with Goldman Sachs noting the country's capacity for further interventions. The market remains cautious, focused on potential future actions by Japanese authorities regarding the yen.",
+    "ko": "오늘 일본 증시 헤드라인은 엔화의 급격한 강세가 주요 테마를 이루고 있습니다. 엔화는 달러 대비 155엔대 후반으로 급등했으며, 이는 일본 당국의 투기 세력에 대한 개입과 방어 조치에 대한 강력한 추측과 확인된 행동에 기인합니다. 또한, 바클레이즈는 중동 안정화에 힘입어 일본은행(BOJ)이 6월에 금리 인상을 단행할 가능성을 제기하며, 추가적인 정책 변화에 대한 기대감을 높이고 있습니다.",
+    "en": "Today's Japanese market headlines are dominated by the sharp appreciation of the Yen, which jumped to the upper 155 level against the dollar. This surge is attributed to strong speculation and confirmed actions by Japanese authorities to intervene and defend the currency against speculators. Adding to the dynamic, Barclays anticipates a potential Bank of Japan rate hike in June, partly influenced by Middle East stability, suggesting further policy shifts could be on the horizon.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1777877253
+    "generatedTs": 1777887544
   }
 }
