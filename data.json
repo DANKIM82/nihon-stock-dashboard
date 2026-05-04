@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-04T03:48:41.541739+00:00",
+  "asOf": "2026-05-04T06:47:26.436894+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -284,7 +284,7 @@
       "changePercent": 7.24,
       "marketCapB": 18543.47,
       "per": 41.67,
-      "pbr": 5.34,
+      "pbr": 5.56,
       "dividendYield": 0.72,
       "roe": null,
       "roa": null,
@@ -961,12 +961,12 @@
       "per": 18.28,
       "pbr": 1.95,
       "dividendYield": 1.99,
-      "roe": 10.78,
-      "roa": 1.65,
-      "operatingMargin": 4.03,
-      "debtToEquity": 0.67,
-      "revenueGrowthYoY": -1.5,
-      "epsGrowthYoY": -20.4,
+      "roe": 10.3,
+      "roa": 1.6,
+      "operatingMargin": 3.89,
+      "debtToEquity": 0.63,
+      "revenueGrowthYoY": -1.1,
+      "epsGrowthYoY": -9.3,
       "belowBook": false,
       "perf1Y": 107.19,
       "sparkline": [
@@ -2811,7 +2811,7 @@
       "operatingMargin": 12.18,
       "debtToEquity": 0.38,
       "revenueGrowthYoY": 6.1,
-      "epsGrowthYoY": -15.6,
+      "epsGrowthYoY": -15.7,
       "belowBook": false,
       "perf1Y": 53.05,
       "sparkline": [
@@ -6043,7 +6043,7 @@
     {
       "sector": "Technology",
       "changePercent": -0.06,
-      "avgPbr": 5.72,
+      "avgPbr": 5.73,
       "count": 17
     },
     {
@@ -6113,52 +6113,52 @@
   },
   "headlines": [
     {
-      "title": "Asian Stocks Outside of Japan Hit Record High as Tech Rallies",
+      "title": "Yen Briefly Jumps in Asia Trade, Putting Investors on High Alert",
       "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcUdkalRmRXU3NHRGc2pab19DRkxWYWw4dDI3LXpvTjNrY0ZVd2gxY2w0aURDSklLSFFleGEyckFEanFidUNpYkJkZXUtVzhpQU9BVjhwSHVKc1Bqd3FUTTg5anZhTFNfMEtVM1lnSXJkaXlmTkttZ1pkSkozcWV6NGh4WDNwZlJieXRzb2FuZDlBaHp0QkhXTXl4M0hWemdqazlGLVpxbUtqeDVNS0VscF9R?oc=5",
-      "publishedTs": 1777862820
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWHRmUTJSOTZuUFFlejdCMjF3bGpzMl9KYV82ZEU4THR4aVl6RFoyODg1bVBkOU1xcUdSbzYzU09xa2lXU28yMjNmeXZFTEtDMHdLbU9ZWWRPUTNSMFVPdDhDa0hGRWxScnRCQUlXamJTRXVkTGRHQjV2X3oycFlxdmo1d2llcFVrUE1KTHd4My1ZU1IyWmJuSWZMOWNmWFBWXzdGaDZuaHV1SXI0R2dMLU53?oc=5",
+      "publishedTs": 1777874160
     },
     {
-      "title": "Goldman Sachs: It is estimated that Japan spent 5 trillion yen last week to intervene in the foreign exchange market, theoretically allowing for another 30 interventions.",
-      "publisher": "富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeVkzVTB6cjJlZUJPSFFuRkpkSmhsZzNydE5MMXg4X2M5MVpJNkxZOC0yNFF3bThTdVZwZTBwQzFIWnF1b3p4Uzh4NW5WeHVuTEh5eVhVRGw4cmpaTkNpYlc4eWFKUlViamVkSHdXUTBCdklKbnNQUUZqaTE5QXlFX3piYTZVUkJRLS1BQjMxR3FZSllPc29HMVF0LVVoR1U?oc=5",
-      "publishedTs": 1777861885
+      "title": "USD/JPY forecast: Japanese yen outlook after the $35 billion BoJ intervention",
+      "publisher": "Invezz",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORXotZFZndkJYX2tab3p5eTBxTEhqRFd2bUVTaDJxcDdoZ04zUk5hbzFyQ3VOQlVGMzhtd1JoMHNzbGtDenQ3aU9yYnN2SmZKcldMWnVPUHJRd256Tl9rZVBzQ1RJR2RZaDVBUGJLbmh2cGJ4cktRNzNuR1JpZ1FFeXB6RGV1SzZXUGNwb1F2OUMwTHFZVHQtYzlrSWdPb2N5N1BqOEJHQ05VTDE2VzR2Vg?oc=5",
+      "publishedTs": 1777873990
     },
     {
-      "title": "Goldman Sachs estimates that Japan utilized 5 trillion yen to intervene in the foreign exchange market last week and theoretically could intervene 30 more times.",
-      "publisher": "富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT1JSdHN4Sm9sdTYyWm0wNERHVzlyUkUwNkExNU1BN0w4MWR0MVZWd1YxRjNmbzd6MnFmd0ktZkZ5QmIzdkdrbGNfODM5NWcwYnJOQUVmbVUwaVJ2NWR5aTlydFJuQ1VOUnY1enNKNWRZM3MxYnh4cU13cTh6c2dGUzVPbUcyWEVPdVNreTdKN1E2TnlqczlFZmR5U05IeFhjbkVpMw?oc=5",
-      "publishedTs": 1777861859
+      "title": "The Yen’s Sudden Jump Has Traders Watching Japan’s Next Move",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX3ZPVWlIeG90eVdoZk5kNFdzd3VITVRmeWgzcVMzN2J5WV9zWmo2ZDFpY0tBTU5pelU0UEtnZERYMTk0RDBwX2xjckpuU1FrTGUwZnpXc3J4OGVPdTZsWWh4TzFBenVXR1lvYkVnczVvZ3dXNFZBMXlROUpzR3pRYlBIVVlCMWVJ?oc=5",
+      "publishedTs": 1777871822
     },
     {
-      "title": "Yen steady as intervention fears linger with Japan shut for holidays",
-      "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOalV0cGRQamNNcW5BMFNzTERmb2F5bmRHcHVld3B2M1ZlTEoyODJfT1N4N3NRNjk1c0JmY2VLcFlHRVpWZk1hR0NVaHZhRkVzTjEtT3ZrZ2I1Sk5VWW9NUkJaWS1za0Fqc1plNzVJM3RTRVBIQ284WTNTZ1BTVXBwQ0k5TDFCR2pUMjQ4cHFteksyMnc1cEI0QjVxS2FoMjJVSm9VamhES3hhd01vVzd3R19adFEydVVwMlloODZQbmNMTHcwdHZDRFk1WmdSclBhaXd5dWZfUXNuX09qSU9V?oc=5",
-      "publishedTs": 1777860687
+      "title": "Yen’s Sudden Jump Has Traders Watching Japan’s Next Move",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQ3RmMWsxbWtaSWtUUnhORlJfWksyY253Y0lKZkh1dEphcHE5cVhfcVA2NTNrU1N3c01WYXpQQVZQZm43QTBPX191ekRILXV4bTNROXdDMklRd1VkUGxEVU9hZU11REczMndPTkEyM3FoR2ZsaGlIWW5WeGRLdE9BWHBkcUZvclNQcC13?oc=5",
+      "publishedTs": 1777870610
     },
     {
-      "title": "The yen came under pressure this morning amid reports that Japan had intervened in the foreign exchange market last Thursday.",
-      "publisher": "富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVUwzTll5Zzh0VHpsaVpXUWdYazdzYzhwV0x5aVA2dVg2b05iUzNIeFB2dzZxdXpORWJ3YVBQU1pqQkNtYjdRbDB3OVhZTERmOWNneEd5OFMzNi1Yd3paTHVtcUZLNHc0ZWpnQWI2MElHcFFzV2EwVWo5YzA5bFkyOW5MREVkeFZnYjV0Y3ltSnhCVlNkOThkbDhzVS1kMk5l?oc=5",
-      "publishedTs": 1777857497
+      "title": "Australia and Japan expand ties with focus on economic security",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPczNvNVNUV1czX0x6MGpONm43R0sta3RaZFpLQmNJZlR1YUZHTmRjay13WXNmNENyczA2ZHF1X0JybU1LZUIzMUxhc0kzQjd4UTVnTnBJWnB0bmp2ZkhNd3pGOXJWUVAyNW85OHhGb09zWFIzaHdGVVdhVWVZdU55XzMyS19RVWJEOWdrelAtS0J0cWM0NWZRNVJsNTBsUy1UeVV6QTR3MklRTmtLZ1d3R3p3NV9XaTZrUmRSbA?oc=5",
+      "publishedTs": 1777869720
     },
     {
-      "title": "Japanese Yen Under Pressure This Morning, Report Says Japan Intervened in FX Market Last Thu",
-      "publisher": "AASTOCKS.com",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQUhUVW11QUtWVmpRTGJqOXdPY2FJeHBNam5BeWxzbEVlZGhqTmI0MkVZektzeVlIbEJqb25CYUItd3pXYUJ0RmdIcGdIRXJCMXRvcmJWZVROXzdkczUtdEFwQUxfb0l3b0R5TldZSHBzU2dPRmRzUTgwUGxKMW5SUGVzTEtKaTBRT21aSw?oc=5",
-      "publishedTs": 1777856520
+      "title": "Yen suddenly jumps on talk of possible intervention",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOclJCRnd2TVBFYk1rNS1NOWhtWDg1YkxnLUhuZUVhN2ZSZERCSzNyajA4Wmg1eC00X0tudTB6N0piSHhnRVpyazlsMVU3a2R6Zzk5YUp2Sk05ejljYTFYUHdxbnNLTlJLRGNFeEFsRXVjWjBvalNFWnY2eUNtTWdyZWNEdjBfWW56TjJGakF5dkJWVHJYRlgyS1FibW1aVEhaWHc?oc=5",
+      "publishedTs": 1777869300
     },
     {
-      "title": "Japanese Yen Under Pressure This Morning, Report Says Japan Intervened in FX Market Last Thu",
-      "publisher": "AASTOCKS.com",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRGs2VmRFREYyV1NIaE1xVjBjU2luN0NsVTJ5REl3YTlrRlM5NG5UdEpaUEh0UVJBVXVnMGFRNnFKbDZyR19tOHNxUWVadlI2eG5sRVk1THVELWthNENxUjF5aHdpQ1RmM3FBanZLWTlqN3Nzdmt2N2RQdHE5d1BSd3NYbGI?oc=5",
-      "publishedTs": 1777856520
+      "title": "Japan Can Conduct 30 More Yen Interventions, Goldman Sachs Says",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONnd6ZVZOTnI1N0xMRlR6Sjd6YkVrcWpGbldaMHRqaWxGSUkwZmFkRDRlT0lhY0o5MjRqTElYbUxSMGNQWWxHclEwWk5wTnpFYkZTbEhYSnpyRmJES2pnSzQ4b0s0a3Y0WnVrQVhTcXBEdTdJQ19JREpkSXpXV2xySzVvNU1iYTFiMVBXMVU2RzZEdHZITHZEbWlzWEFsZFhzaDQ1ak55aUhpWHkwSmxpalN2dw?oc=5",
+      "publishedTs": 1777867380
     }
   ],
   "marketTone": {
-    "ko": "일본 엔화는 지난주 외환시장 개입 보도에 따라 오늘 아침 압력을 받고 있습니다. 골드만삭스는 일본이 지난주 5조 엔을 개입에 사용했으며, 이론적으로 30회 추가 개입 여력이 있다고 추정했습니다. 일본이 휴장 중인 가운데 엔화는 보합세를 유지하고 있으나, 추가 개입에 대한 우려는 여전히 남아있습니다. 한편, 일본을 제외한 아시아 증시는 기술주 랠리에 힘입어 사상 최고치를 경신했습니다.",
-    "en": "The Japanese yen is under pressure this morning following reports of foreign exchange market intervention last Thursday, with Goldman Sachs estimating Japan spent 5 trillion yen last week and could intervene 30 more times. Despite these reports, the yen remains steady, though fears of further intervention linger, particularly during Japan's holiday period. This contrasts with broader Asian markets outside Japan, which have seen record highs driven by tech rallies.",
+    "ko": "오늘 일본 증시 헤드라인은 엔화의 급격한 변동성에 주목하고 있습니다. 아시아 시장에서 엔화가 일시적으로 급등하며 투자자들의 경계심이 높아졌는데, 이는 일본은행의 개입 가능성 및 이미 보도된 350억 달러 규모의 개입 여파로 풀이됩니다. 시장 참여자들은 일본 당국의 다음 행보를 주시하고 있으며, 골드만삭스는 일본이 추가적인 엔화 개입을 30회 더 단행할 여력이 있다고 분석했습니다. 전반적으로 엔화 동향과 당국의 정책에 대한 신중한 관망세가 짙습니다.",
+    "en": "Today's headlines highlight significant volatility in the Japanese yen, which briefly jumped in Asian trade, putting investors on high alert. This sudden movement is largely attributed to talk of possible intervention and follows reports of a $35 billion Bank of Japan intervention. Traders are closely watching Japan's next moves, with Goldman Sachs noting the country's capacity for further interventions. The market remains cautious, focused on potential future actions by Japanese authorities regarding the yen.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1777866528
+    "generatedTs": 1777877253
   }
 }
