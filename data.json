@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-05T06:05:58.451707+00:00",
+  "asOf": "2026-05-05T08:36:34.863708+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -5684,7 +5684,7 @@
       "changePercent": -0.84,
       "marketCapB": 2205.24,
       "per": 10.1,
-      "pbr": 1.39,
+      "pbr": 1.28,
       "dividendYield": 1.81,
       "roe": 12.76,
       "roa": 3.12,
@@ -6091,7 +6091,7 @@
     {
       "sector": "Utilities",
       "changePercent": -0.49,
-      "avgPbr": 0.87,
+      "avgPbr": 0.85,
       "count": 5
     },
     {
@@ -6113,52 +6113,47 @@
   },
   "headlines": [
     {
+      "title": "Capsule toys capture overseas visitors in Japan's latest cultural craze",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQ2Jid2MtMGE3NDdXOW44TFV3SnE2bE5Dc2NiOTJsX0NUNFhleXgzUGtTaEFSWXZ2eFlySExUZllqazlFZkhETXpHSGFtUU5xampkeWY4MTF4a2NyMV9telBsaTk3NWc1dlZkcWJab2VHNFA0c3k5OG5wcTlJdEo1RHpOckQ2S0lubU1Fem1ZYlFMaVVQNGJ2Uy1hYU56aEcwS0VRWFBYWVhtZHRHWkRUMXF0RE9LMFhPdDlKNG5DQldkQQ?oc=5",
+      "publishedTs": 1777968300
+    },
+    {
+      "title": "Japan has two more key windows for yen intervention by IMF rules",
+      "publisher": "The Edge Malaysia",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1BSTk1NGdSc0xfVkxKRWs1b0ZibGxGS1hYSk5mUGpfalZSRXd2bUdYNE5GQ29JQWo1OWlmZWtWRGItNTNOb2hrVnhvSi04OEtn?oc=5",
+      "publishedTs": 1777967905
+    },
+    {
+      "title": "Japan's startup ambitions collide with harassment concerns",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOV9tRWgweU83UmRLRTk4OS1HclZsOHhEbmh0bVFKRTdLWlRmajFUTXc3M3dZekhza3RFanktbW1YVTlKV0V3bURqYXpKaWJ5bHJ0WFhKbG1VMXRiWjczYnR5RWxRTnF2Vm5ac2JsXy1Fa3RjTDZYQ01KaXRnRmk5QUIzam12Ty0yOTdtZXVWNzk3cTkzbkNNUXVqVFhnMFEtTFE?oc=5",
+      "publishedTs": 1777965120
+    },
+    {
+      "title": "Japan Has Two More Windows for Yen Intervention by IMF Rules",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUjJoamVNbk5CY0xqQzlJNlQ3cUc2c0owTlpiM09MRGM2ZzFDTDNIU0l5dFhPcHllVkJmRnFoeHBLbndmZl9lT0tQTXpsRnQ5VkZmcjlfUGNxWDJPbGM2RzhDRWZlWmRlV3B6eTlOQTVaYVFnSEwwdUN5dnM1RDBnOWlzdWZDaDV3YXJSQWdLVlFzQTRRWTRteUJtMWNfdzYzbFhOZldyVzJWMFFPbndLV25lYUtCZw?oc=5",
+      "publishedTs": 1777964412
+    },
+    {
+      "title": "EUR/JPY holds below 184.00 as Japanese Yen steadies on suspected Japanese intervention",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYWw0TDRDWmJtekxZbkhMaDRQMXhXWElGOWVmMmgxM0wxV3BLWmlwLXhpOUR1d1g3Rk1CRl9UMTlVTHoyZGkyV2hsenJETnQxNi1qcmpUOW4xRXhOOHNBN255TXU2aHFieE5FSGNtY2dxOGFVV19iY0gwUTNqNTlPNXBHUVhQbXRZVFlQRlBzSUV2X2tqMEVnSlV4Q29OZFp1ZXBfRmR6eV9HSkNvelNLTHUyaTdyYmkxcUJwVmg0MHBCWEIzbW1F?oc=5",
+      "publishedTs": 1777964139
+    },
+    {
       "title": "Japanese Yen steadies on Middle East tensions, intervention caution",
       "publisher": "FXStreet",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbWVfdnV6dW1LelJ3VlFVVm5tQWN5Q1IwcndnZldMWENVZUlEWnBGODlvSzlybTZvRU5OSHVkQTV2ZUgtSlhUMTh4bTkwODF1LXJxbnQySjZYMXNUbU54S1g0TWZLSTdKbkN6VWJfMm1NWGR6OXVXeFZJdTM2Ym82NXJGUTBsSzl6azdRM0c4SXVBVXpfRmhmUnMtSTZ6aUhCVjhNbEVLVWlka0xqa1E?oc=5",
       "publishedTs": 1777945639
     },
     {
-      "title": "Shares slide, oil prices elevated as US-Iran truce prospects dim",
+      "title": "Shares falter, oil prices stay elevated as US-Iran hostilities ramp up",
       "publisher": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZTZ0LVpvcnZ5S20wVGpXU1gtNzhQV2tSTXNvLTA4VDYySHRpM250TVI4cjVycEtZRUdXM2pIVDNIYWFIejl0V0diVGx0Ylp1WFFCWVVpWHdHcHFMOVotSk81TjhUMnJCS0NJOFBzTVB4T0x4Y251dFRtUUEzdTRtX2xxZw?oc=5",
       "publishedTs": 1777945140
-    },
-    {
-      "title": "Japan's Itochu to invest $9.5bn, eyes retaking trading house 'triple crown'",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ0Y4bHJ4UWhBd1FLNGRUX3diMmgwS0FTRkNfUmVnWENfbUZoX2xjYXVWRG5CYkZTQV9kUzBmbWphNlV3SUpWOUxPQV8xRWJNM3Jvcjd6RW50T1BPYW5OU04tWS0zRUEtQUFzVUlCZ3JFUDVQVG1BZUhrYTNvYm0wWXF0LUU4bFlIR283YkE5R2pMQ2p6c2dBdHJkSE95RGdQY1NpcF9WNUtXRHVDaTdHNUI0d2Y?oc=5",
-      "publishedTs": 1777930320
-    },
-    {
-      "title": "Japan's AGC freezes construction of green hydrogen material plant",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNlVDdk1Xa3lKRU00enNoSnQtQjlCYWtkUDZsNWFFYkZta1RCRlVCZWc5ZjFTRmpORVpqbWtYd0ZvbWM0OEZ2RlpGUkFGNWtDSjdvbUE3WkpiZFpzamFUZ0tvVkk5cDJ6amd2cC02RkFTTEd0Yy1OeXJObzdyeGdhZklYSlVmR1FoOHR0UlliLTU5WEdZX2ppZ0Y5UjlaaE9HdnJJbEpqY2E?oc=5",
-      "publishedTs": 1777927860
-    },
-    {
-      "title": "Nikkei 225: Japanese Markets Closed for Public Holiday on 4 May 2026",
-      "publisher": "BBN Times",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ25nXzVaUzRGeS0zRzVPejBqRVZDN1NsaEVVOEhKS040UVFVRXdQU2xLcGoxdW9BYmRmU3NTeHh6R0NsM0NjSS1mUGp6OE80ckJvU0d4dFV1NThnNDJGbXJDUXFMNDhfNG1OR1E2M2FETkhoQU56Z0JPSEg4R1lwbVBRYnpMT2tRQjlkS09lM0NBekRMWks4SFhhb0Vnc2x5M3ZyUA?oc=5",
-      "publishedTs": 1777926374
-    },
-    {
-      "title": "Yen Jumps 0.8% in Asia Trading, Putting Investors on High Alert",
-      "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWHRmUTJSOTZuUFFlejdCMjF3bGpzMl9KYV82ZEU4THR4aVl6RFoyODg1bVBkOU1xcUdSbzYzU09xa2lXU28yMjNmeXZFTEtDMHdLbU9ZWWRPUTNSMFVPdDhDa0hGRWxScnRCQUlXamJTRXVkTGRHQjV2X3oycFlxdmo1d2llcFVrUE1KTHd4My1ZU1IyWmJuSWZMOWNmWFBWXzdGaDZuaHV1SXI0R2dMLU53?oc=5",
-      "publishedTs": 1777925611
-    },
-    {
-      "title": "Japan warns against FX speculation after yen jumps By Investing.com",
-      "publisher": "Investing.com Canada",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaTUwUEw1RXptTEQ3cW1mLVVzLTZmalBRaEE2VmJYaXZKZnlRQ3h5VnZIbU9acDRwV1dXWHA1TUtnRkF5dFc4QzYteHZRUlFvUmdzR0VDbmtaaWhiQ1RSWDVTVTd0VnlCOTZvWVN2UHVVVGZyU0VmWk80M0xpel9xZ3Y4MjBtTlJmVW9aVnRtSXlqRTE3aFZuemkwUWhmMjdjRG14Nk04MA?oc=5",
-      "publishedTs": 1777925070
     }
   ],
-  "marketTone": {
-    "ko": "일본 증시는 공휴일로 휴장했으나, 최근 헤드라인은 엔화의 높은 변동성과 지정학적 리스크에 주목하고 있습니다. 엔화는 상당한 상승세를 보였으며, 일본 정부는 외환 투기에 대해 경고하며 잠재적 개입 가능성에 투자자들의 경계심을 높였습니다. 한편, 미국-이란 휴전 전망이 불투명해지면서 유가가 상승하고 주식 시장이 하락하는 등 중동 긴장이 시장에 영향을 미치고 있습니다.",
-    "en": "Japanese markets are closed today for a public holiday, but recent headlines indicate a focus on significant yen volatility and geopolitical risks. The yen experienced a notable jump, leading to a warning from Japan against FX speculation and keeping investors alert for potential intervention. Concurrently, dimming US-Iran truce prospects are elevating oil prices and contributing to a slide in shares, reflecting broader Middle East tensions.",
-    "model": "gemini-2.5-flash",
-    "generatedTs": 1777961169
-  }
+  "marketTone": null
 }
