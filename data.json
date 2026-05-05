@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-04T09:38:56.749863+00:00",
+  "asOf": "2026-05-05T03:33:03.302159+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -417,7 +417,7 @@
       "price": 5219.0,
       "change": 229.0,
       "changePercent": 4.59,
-      "marketCapB": 19140.64,
+      "marketCapB": 19109.36,
       "per": 29.76,
       "pbr": 2.12,
       "dividendYield": 2.11,
@@ -822,7 +822,7 @@
       "price": 1987.0,
       "change": 49.0,
       "changePercent": 2.53,
-      "marketCapB": 13888.83,
+      "marketCapB": 13888.96,
       "per": 14.95,
       "pbr": 2.2,
       "dividendYield": 2.21,
@@ -957,7 +957,7 @@
       "price": 5765.0,
       "change": -131.0,
       "changePercent": -2.22,
-      "marketCapB": 16338.44,
+      "marketCapB": 16339.1,
       "per": 18.28,
       "pbr": 1.95,
       "dividendYield": 1.99,
@@ -2714,7 +2714,7 @@
       "changePercent": -0.3,
       "marketCapB": 2032.32,
       "per": 9.56,
-      "pbr": 0.75,
+      "pbr": 0.71,
       "dividendYield": 3.46,
       "roe": 7.57,
       "roa": 1.41,
@@ -3209,7 +3209,7 @@
       "changePercent": 12.57,
       "marketCapB": 7251.08,
       "per": 19.57,
-      "pbr": 2.41,
+      "pbr": 2.3,
       "dividendYield": 1.83,
       "roe": 13.2,
       "roa": 4.42,
@@ -5547,7 +5547,7 @@
       "price": 612.7,
       "change": 20.5,
       "changePercent": 3.46,
-      "marketCapB": 981.73,
+      "marketCapB": 981.98,
       "per": null,
       "pbr": 0.29,
       "dividendYield": 0.0,
@@ -5639,7 +5639,7 @@
       "changePercent": -1.43,
       "marketCapB": 2003.3,
       "per": 8.8,
-      "pbr": 0.67,
+      "pbr": 0.64,
       "dividendYield": 2.64,
       "roe": 7.74,
       "roa": 1.95,
@@ -6037,7 +6037,7 @@
     {
       "sector": "Industrials",
       "changePercent": 1.61,
-      "avgPbr": 2.15,
+      "avgPbr": 2.14,
       "count": 26
     },
     {
@@ -6091,7 +6091,7 @@
     {
       "sector": "Utilities",
       "changePercent": -0.49,
-      "avgPbr": 0.88,
+      "avgPbr": 0.87,
       "count": 5
     },
     {
@@ -6113,52 +6113,52 @@
   },
   "headlines": [
     {
-      "title": "Asian Stocks Outside of Japan Hit Record High as Tech Rallies",
+      "title": "Japanese Yen steadies on Middle East tensions, intervention caution",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbWVfdnV6dW1LelJ3VlFVVm5tQWN5Q1IwcndnZldMWENVZUlEWnBGODlvSzlybTZvRU5OSHVkQTV2ZUgtSlhUMTh4bTkwODF1LXJxbnQySjZYMXNUbU54S1g0TWZLSTdKbkN6VWJfMm1NWGR6OXVXeFZJdTM2Ym82NXJGUTBsSzl6azdRM0c4SXVBVXpfRmhmUnMtSTZ6aUhCVjhNbEVLVWlka0xqa1E?oc=5",
+      "publishedTs": 1777945639
+    },
+    {
+      "title": "Shares slide, oil prices elevated as US-Iran truce prospects dim",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZTZ0LVpvcnZ5S20wVGpXU1gtNzhQV2tSTXNvLTA4VDYySHRpM250TVI4cjVycEtZRUdXM2pIVDNIYWFIejl0V0diVGx0Ylp1WFFCWVVpWHdHcHFMOVotSk81TjhUMnJCS0NJOFBzTVB4T0x4Y251dFRtUUEzdTRtX2xxZw?oc=5",
+      "publishedTs": 1777945140
+    },
+    {
+      "title": "Japan's Itochu to invest $9.5bn, eyes retaking trading house 'triple crown'",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ0Y4bHJ4UWhBd1FLNGRUX3diMmgwS0FTRkNfUmVnWENfbUZoX2xjYXVWRG5CYkZTQV9kUzBmbWphNlV3SUpWOUxPQV8xRWJNM3Jvcjd6RW50T1BPYW5OU04tWS0zRUEtQUFzVUlCZ3JFUDVQVG1BZUhrYTNvYm0wWXF0LUU4bFlIR283YkE5R2pMQ2p6c2dBdHJkSE95RGdQY1NpcF9WNUtXRHVDaTdHNUI0d2Y?oc=5",
+      "publishedTs": 1777930320
+    },
+    {
+      "title": "Japan's AGC freezes construction of green hydrogen material plant",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNlVDdk1Xa3lKRU00enNoSnQtQjlCYWtkUDZsNWFFYkZta1RCRlVCZWc5ZjFTRmpORVpqbWtYd0ZvbWM0OEZ2RlpGUkFGNWtDSjdvbUE3WkpiZFpzamFUZ0tvVkk5cDJ6amd2cC02RkFTTEd0Yy1OeXJObzdyeGdhZklYSlVmR1FoOHR0UlliLTU5WEdZX2ppZ0Y5UjlaaE9HdnJJbEpqY2E?oc=5",
+      "publishedTs": 1777927860
+    },
+    {
+      "title": "Nikkei 225: Japanese Markets Closed for Public Holiday on 4 May 2026",
+      "publisher": "BBN Times",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ25nXzVaUzRGeS0zRzVPejBqRVZDN1NsaEVVOEhKS040UVFVRXdQU2xLcGoxdW9BYmRmU3NTeHh6R0NsM0NjSS1mUGp6OE80ckJvU0d4dFV1NThnNDJGbXJDUXFMNDhfNG1OR1E2M2FETkhoQU56Z0JPSEg4R1lwbVBRYnpMT2tRQjlkS09lM0NBekRMWks4SFhhb0Vnc2x5M3ZyUA?oc=5",
+      "publishedTs": 1777926400
+    },
+    {
+      "title": "Yen Jumps 0.8% in Asia Trading, Putting Investors on High Alert",
       "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcUdkalRmRXU3NHRGc2pab19DRkxWYWw4dDI3LXpvTjNrY0ZVd2gxY2w0aURDSklLSFFleGEyckFEanFidUNpYkJkZXUtVzhpQU9BVjhwSHVKc1Bqd3FUTTg5anZhTFNfMEtVM1lnSXJkaXlmTkttZ1pkSkozcWV6NGh4WDNwZlJieXRzb2FuZDlBaHp0QkhXTXl4M0hWemdqazlGLVpxbUtqeDVNS0VscF9R?oc=5",
-      "publishedTs": 1777886602
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWHRmUTJSOTZuUFFlejdCMjF3bGpzMl9KYV82ZEU4THR4aVl6RFoyODg1bVBkOU1xcUdSbzYzU09xa2lXU28yMjNmeXZFTEtDMHdLbU9ZWWRPUTNSMFVPdDhDa0hGRWxScnRCQUlXamJTRXVkTGRHQjV2X3oycFlxdmo1d2llcFVrUE1KTHd4My1ZU1IyWmJuSWZMOWNmWFBWXzdGaDZuaHV1SXI0R2dMLU53?oc=5",
+      "publishedTs": 1777925611
     },
     {
-      "title": "Yen jumps to upper 155 level against dollar",
-      "publisher": "nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40cjRybXJCMjRuMzZTaDRzUEM2S094Zno3MWVjSU9hNnZTMUhvdDFjZG9mSnF6Mm02dWduUVg3ZEswcVJ1Sk5aSGZNd2FwMndwLVA0LXFEYTV6Z0dNd0JzSmh3?oc=5",
-      "publishedTs": 1777886223
-    },
-    {
-      "title": "What is happening with Yen? The real global economic shift happening in Japanese market",
-      "publisher": "WION",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVE9kb1lMNk9hUVJVU2JFaXdDOTVxUmdMcTk4SkRfcHNla0QzSndMb3psOVVDSjBPaUs3R3l1WDRnZ1QwZnFIdmJJMWVJUXNxdVdqMV82VERMSEdwVl93NkNFeVF3UmJhaDJFc1MyTW1DanVWaG1ib1JoNVNUZ2J0clduU2pEa2U1aHZKaXNGZFE1aXV1UnMwT1d2Nld3bXlIVVdTNktnWlJ5XzRL0gGsAUFVX3lxTE9UT2RvWUw2T2FRUlVTYkVpd0M5NXFSZ0xxOThKRF9wc2VrRDNKd0xvemw5VUNKME9pSzdHeXVYNGdnVDBmcUh2YkkxZUlRc3F1V2oxXzZURExIR3BWX3c2Q0V5UXdSYmFoMkVzUzJNbUNqdVZobWJvUmg1U1RnYnRyV25TakRrZTVodkppc0ZkUTVpdXVSczBPV3Y2V3dteUhVV1M2S2daUnlfNEs?oc=5",
-      "publishedTs": 1777885560
-    },
-    {
-      "title": "Barclays sees Bank of Japan June hike on Middle East stability By Investing.com",
-      "publisher": "Investing.com South Africa",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQzQ2am1vYkZuVzBOcjVPMVlKc2JmS2pfVG4xYmxIVVNMWWt6VzNYV3BwX1FueUpYZ0NJcDhJMTZNUXBYY29ITHZjU3NXSi1ORkIxaE1uT3lJVWh4ZzIyaXZHalRvYW5JclpFTVF0azNWd1llMTZqN1FOWUNSRVJfajRjUUprWnVfcWJEV2l4VGhrdEozMURMU3kxY3lKNDg0T0xiWTNlbFhaUUQ4Zm55NktaRlRlbTVFREE?oc=5",
-      "publishedTs": 1777884525
-    },
-    {
-      "title": "Yen Surges Amid Speculation of Japanese Government Intervention",
-      "publisher": "Devdiscourse",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOVdBdjZhZ09aWWYzb2ZlZi1KZ0FsdHI3d2huNXkwcDc0bVAwcG9VX3lYT0pxYXBva01Ocjk5X0stZW5aRk5fZF95SHNOblI2emNhRVc1MUNJUVN5QnhaRkVkbm80YVZ0bWRhUUlDMnhZR2ZQYTAwTVVxc29rU3VxaXczTVVKYnltaURqUWVUdnlhV29Lalg3QTQ0NXdlNWl4bE1vb2hoSjB5Y01pOVc4ZVRUUExvcHRLanfSAb8BQVVfeXFMUG0tYU1JT3FkclQ5OGx1b1hyUWoycXlLTnJVZFd3M25QVjZBY1FydHJFZjhyWjV1UkdvNFBmNGljUDNFTDdaVWVGR3RrYVJPalZXLXk1SUtOYkh0bG12Z29VbVg5SXN5VVFuMVdhdE5nbFlKQWtXOUNfQW5USWRUVFY1aE1VenFXSjlCenpZMG5vanFDektBaXdZZ1pVSXRtOHlPU1V0cUlDS0hvU1E0MGwyMUZBTzVhVFpXVFVZUjQ?oc=5",
-      "publishedTs": 1777883236
-    },
-    {
-      "title": "Yen jumps as Japan takes on speculators",
-      "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZmZDYlBlZE03VlZZSkRhRWhrbk9Ub0dEX1lEdi1obmhrOXhBdHJQRU8tWkl5ZVMxTTBuSDg2U3c1dnFOVVNnREhicVZHb2NyWHF6SGktWEJDSjJVRXBZMjBGWWhranVJRFBDX0lKUGJYbEp2LXpaXzJRU2xnRy1DYk9LUVVYLUplN2w1U052ZHZ0RkF5WTQ0NEE5bElKWUI1WEp5ZjRzYzV0SF9mWTg3MGNLUUJCSTlH?oc=5",
-      "publishedTs": 1777882085
-    },
-    {
-      "title": "Japan Defends The Yen With A Quick Market Jolt",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzd3UXdmbDltVzZqUTZidTBjRU8wSk96Qkp5V2Q2RVkxVHhKckl3RUY5N2Z0LTVjTEU5TmVraTZTM2ZMU2lhV3hfTS00UDJlZlV1ODY0anhVem5VNC1WTFYzenJSVExOR2c4MmpsR2pfaTQ5WEZWakJOMWU4QnJHeA?oc=5",
-      "publishedTs": 1777882085
+      "title": "Japan warns against FX speculation after yen jumps By Investing.com",
+      "publisher": "Investing.com Canada",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaTUwUEw1RXptTEQ3cW1mLVVzLTZmalBRaEE2VmJYaXZKZnlRQ3h5VnZIbU9acDRwV1dXWHA1TUtnRkF5dFc4QzYteHZRUlFvUmdzR0VDbmtaaWhiQ1RSWDVTVTd0VnlCOTZvWVN2UHVVVGZyU0VmWk80M0xpel9xZ3Y4MjBtTlJmVW9aVnRtSXlqRTE3aFZuemkwUWhmMjdjRG14Nk04MA?oc=5",
+      "publishedTs": 1777925070
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시 헤드라인은 엔화의 급격한 강세가 주요 테마를 이루고 있습니다. 엔화는 달러 대비 155엔대 후반으로 급등했으며, 이는 일본 당국의 투기 세력에 대한 개입과 방어 조치에 대한 강력한 추측과 확인된 행동에 기인합니다. 또한, 바클레이즈는 중동 안정화에 힘입어 일본은행(BOJ)이 6월에 금리 인상을 단행할 가능성을 제기하며, 추가적인 정책 변화에 대한 기대감을 높이고 있습니다.",
-    "en": "Today's Japanese market headlines are dominated by the sharp appreciation of the Yen, which jumped to the upper 155 level against the dollar. This surge is attributed to strong speculation and confirmed actions by Japanese authorities to intervene and defend the currency against speculators. Adding to the dynamic, Barclays anticipates a potential Bank of Japan rate hike in June, partly influenced by Middle East stability, suggesting further policy shifts could be on the horizon.",
+    "ko": "일본 증시는 공휴일로 휴장했으나, 엔화 변동성과 지정학적 긴장감이 주요 헤드라인을 형성하며 조심스러운 분위기를 보였습니다. 엔화는 아시아 거래에서 급등하며 일본 당국이 외환 투기 경고를 발표, 투자자들의 높은 경계심을 유발했습니다. 중동 긴장 고조로 유가가 상승하고 글로벌 증시가 하락하는 가운데, 이토추의 대규모 투자 소식과 AGC의 그린 수소 플랜트 건설 동결 발표가 엇갈린 기업 활동을 보여주었습니다.",
+    "en": "Japanese markets are closed for a public holiday, but headlines indicate a cautious tone driven by yen volatility and geopolitical concerns. The yen saw a significant jump, prompting warnings from Japan against FX speculation and keeping investors on high alert regarding potential intervention. Elevated oil prices and sliding global shares reflect dimming US-Iran truce prospects, while corporate news is mixed with Itochu's large investment contrasting with AGC freezing a green hydrogen plant.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1777887544
+    "generatedTs": 1777951990
   }
 }
