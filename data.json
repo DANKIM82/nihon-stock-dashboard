@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-05T03:33:03.302159+00:00",
+  "asOf": "2026-05-05T06:05:58.451707+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3166,12 +3166,12 @@
       "per": 13.61,
       "pbr": 1.8,
       "dividendYield": 2.34,
-      "roe": null,
-      "roa": null,
-      "operatingMargin": 0.0,
-      "debtToEquity": null,
-      "revenueGrowthYoY": null,
-      "epsGrowthYoY": null,
+      "roe": 12.63,
+      "roa": 1.91,
+      "operatingMargin": 5.43,
+      "debtToEquity": 1.01,
+      "revenueGrowthYoY": 2.5,
+      "epsGrowthYoY": -33.4,
       "belowBook": false,
       "perf1Y": 95.26,
       "sparkline": [
@@ -6140,7 +6140,7 @@
       "title": "Nikkei 225: Japanese Markets Closed for Public Holiday on 4 May 2026",
       "publisher": "BBN Times",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ25nXzVaUzRGeS0zRzVPejBqRVZDN1NsaEVVOEhKS040UVFVRXdQU2xLcGoxdW9BYmRmU3NTeHh6R0NsM0NjSS1mUGp6OE80ckJvU0d4dFV1NThnNDJGbXJDUXFMNDhfNG1OR1E2M2FETkhoQU56Z0JPSEg4R1lwbVBRYnpMT2tRQjlkS09lM0NBekRMWks4SFhhb0Vnc2x5M3ZyUA?oc=5",
-      "publishedTs": 1777926400
+      "publishedTs": 1777926374
     },
     {
       "title": "Yen Jumps 0.8% in Asia Trading, Putting Investors on High Alert",
@@ -6156,9 +6156,9 @@
     }
   ],
   "marketTone": {
-    "ko": "일본 증시는 공휴일로 휴장했으나, 엔화 변동성과 지정학적 긴장감이 주요 헤드라인을 형성하며 조심스러운 분위기를 보였습니다. 엔화는 아시아 거래에서 급등하며 일본 당국이 외환 투기 경고를 발표, 투자자들의 높은 경계심을 유발했습니다. 중동 긴장 고조로 유가가 상승하고 글로벌 증시가 하락하는 가운데, 이토추의 대규모 투자 소식과 AGC의 그린 수소 플랜트 건설 동결 발표가 엇갈린 기업 활동을 보여주었습니다.",
-    "en": "Japanese markets are closed for a public holiday, but headlines indicate a cautious tone driven by yen volatility and geopolitical concerns. The yen saw a significant jump, prompting warnings from Japan against FX speculation and keeping investors on high alert regarding potential intervention. Elevated oil prices and sliding global shares reflect dimming US-Iran truce prospects, while corporate news is mixed with Itochu's large investment contrasting with AGC freezing a green hydrogen plant.",
+    "ko": "일본 증시는 공휴일로 휴장했으나, 최근 헤드라인은 엔화의 높은 변동성과 지정학적 리스크에 주목하고 있습니다. 엔화는 상당한 상승세를 보였으며, 일본 정부는 외환 투기에 대해 경고하며 잠재적 개입 가능성에 투자자들의 경계심을 높였습니다. 한편, 미국-이란 휴전 전망이 불투명해지면서 유가가 상승하고 주식 시장이 하락하는 등 중동 긴장이 시장에 영향을 미치고 있습니다.",
+    "en": "Japanese markets are closed today for a public holiday, but recent headlines indicate a focus on significant yen volatility and geopolitical risks. The yen experienced a notable jump, leading to a warning from Japan against FX speculation and keeping investors alert for potential intervention. Concurrently, dimming US-Iran truce prospects are elevating oil prices and contributing to a slide in shares, reflecting broader Middle East tensions.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1777951990
+    "generatedTs": 1777961169
   }
 }
