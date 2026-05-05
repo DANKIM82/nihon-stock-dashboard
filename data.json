@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-05T08:36:34.863708+00:00",
+  "asOf": "2026-05-05T09:29:56.447543+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6113,6 +6113,12 @@
   },
   "headlines": [
     {
+      "title": "US Joins China, South Korea, Germany, UK, France and Others in Driving Japan’s Unprecedented Over Thirty Seven Trillion Yen Travel Consumption in 2025, Marking a Historic Surge in Both Domestic and International Spending",
+      "publisher": "Travel And Tour World",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNVnNZS2lYVUtnZmplMzlqY1Q0bEtRTWxCUGNLSk81RWhuVGpkRGhYVEg1c1VqTVJPT0FjT0JJdWNLMkg5bmZFbUlMRlpVaU5qa19OLXRIR3RZb3NsSVhfOGZTaFZTMHhydTRrN19mZ2RXaExLS0ZoTnFoWlo2VnpEYWEzellLaHJWZ0lrbTlSWGRra1FCaWNKbnB1UHV1OTczeHk5RUNnOUYzcDF4cmR3TWt4UmRmYjNqR0ZscThBSDVfUTBUSHFCMldNV0xwQ255ekI1akNvWHpRT2lTQTVSRW9QR0VFTEJqaVp1MHlKS2tNR0NZOTFlV09PYXg2RWw5Uk5lb1ZQbTRCaE9BVFVERXdVd0tuUk5lYXExRVFyZm1wXy1NSldEcTJnaHQ5QVZZeUUtdjE3OUFkcEZ0aHpUVndRUUdqNFN4YXVhdlp0OU5SajUtNGc?oc=5",
+      "publishedTs": 1777970925
+    },
+    {
       "title": "Capsule toys capture overseas visitors in Japan's latest cultural craze",
       "publisher": "Nikkei Asia",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQ2Jid2MtMGE3NDdXOW44TFV3SnE2bE5Dc2NiOTJsX0NUNFhleXgzUGtTaEFSWXZ2eFlySExUZllqazlFZkhETXpHSGFtUU5xampkeWY4MTF4a2NyMV9telBsaTk3NWc1dlZkcWJab2VHNFA0c3k5OG5wcTlJdEo1RHpOckQ2S0lubU1Fem1ZYlFMaVVQNGJ2Uy1hYU56aEcwS0VRWFBYWVhtZHRHWkRUMXF0RE9LMFhPdDlKNG5DQldkQQ?oc=5",
@@ -6143,16 +6149,10 @@
       "publishedTs": 1777964139
     },
     {
-      "title": "Japanese Yen steadies on Middle East tensions, intervention caution",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbWVfdnV6dW1LelJ3VlFVVm5tQWN5Q1IwcndnZldMWENVZUlEWnBGODlvSzlybTZvRU5OSHVkQTV2ZUgtSlhUMTh4bTkwODF1LXJxbnQySjZYMXNUbU54S1g0TWZLSTdKbkN6VWJfMm1NWGR6OXVXeFZJdTM2Ym82NXJGUTBsSzl6azdRM0c4SXVBVXpfRmhmUnMtSTZ6aUhCVjhNbEVLVWlka0xqa1E?oc=5",
-      "publishedTs": 1777945639
-    },
-    {
-      "title": "Shares falter, oil prices stay elevated as US-Iran hostilities ramp up",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZTZ0LVpvcnZ5S20wVGpXU1gtNzhQV2tSTXNvLTA4VDYySHRpM250TVI4cjVycEtZRUdXM2pIVDNIYWFIejl0V0diVGx0Ylp1WFFCWVVpWHdHcHFMOVotSk81TjhUMnJCS0NJOFBzTVB4T0x4Y251dFRtUUEzdTRtX2xxZw?oc=5",
-      "publishedTs": 1777945140
+      "title": "Rabobank holds yen bull view despite poor run, eyes Hormuz as key risk",
+      "publisher": "investingLive",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWmktNm9tc0VLQ2JWNzhyMDBSd0Y2Vm1iMXprOE92czBia2t2TE11QWVCZmpRcW40MVJMMVdYbFZyQzN2ZWdaTVN3RXJvRllKQ1ljMEpWcE50dTBoOUJCRjNVenhRbUdyRXZYeVlTRnVjTkIwbkdZaHNJR0s1M2xGRFVlcmVjbU9HOFZqSUVqRjFIWlM4UzBvdFpZTlUyajJ6bWVVLUExN3lESDVNLTNFbA?oc=5",
+      "publishedTs": 1777948611
     }
   ],
   "marketTone": null
