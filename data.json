@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-06T03:44:10.485185+00:00",
+  "asOf": "2026-05-06T06:37:38.537983+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -464,7 +464,7 @@
       "changePercent": 6.89,
       "marketCapB": 21675.98,
       "per": 37.88,
-      "pbr": 10.85,
+      "pbr": 10.43,
       "dividendYield": 1.52,
       "roe": 29.27,
       "roa": 14.24,
@@ -6043,7 +6043,7 @@
     {
       "sector": "Technology",
       "changePercent": -0.06,
-      "avgPbr": 5.72,
+      "avgPbr": 5.69,
       "count": 17
     },
     {
@@ -6113,52 +6113,52 @@
   },
   "headlines": [
     {
-      "title": "Japanese Yen gains ground on Trump’s Hormuz pause, intervention caution",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVnlhX0NLWVFZQmhGZzJBVV9lMnc0Z0EyaGg4eHdDWEZqczRySWFjTlBQZGI0dGlSVWxPRmp4aTMyQzhQenp4bldvdHREckZ2SUR0ZVZwTGNpWHR0SHhfVUdudjFLTWNZYldOaFkyREZpV3lDbmRXSVA5Sm8ybFJoYzZzek1VcnZZMmVSUmFHRVpIaTM1X01wY2ZjRkVteWVjMWliek1UekZLVUx4Z0c0aDNR?oc=5",
-      "publishedTs": 1778034208
+      "title": "Yen rallies to build on gains spurred by recent intervention",
+      "publisher": "The Japan Times",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBuaFFxT2twdmFOMWtQeFhHajNaRmtOLTZqdmwzbHJOVDVPX3d5YkYwN3Rrdm93RDBoakEwa2ViZ2tvcFR3OHB0bXFuck5FTF9KRDZYNnV2LTBnQlFHR2F3aWpIZGlMRC16dW5rZmw3cjVLY2UydjY5Nw?oc=5",
+      "publishedTs": 1778049180
     },
     {
-      "title": "Institution: Japan may intervene in the yen exchange rate again.",
-      "publisher": "富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTXFhanRrMXN5bWg5c2Z3czJjNmFRRHRGQ1BXMmludFlQN2pNcWtxd1J4eXlsSl8wb1dwSk1aQm5tV3FocEZHZXg2bjFwSVRFQVVlYWFXMjYtVGNSMTJYODYxaG1OOGtGeGg1Y2hkRkV6bXZvMnhJQ0llQ1hGNmRuMXVqdzFMeUdsaWt6UFhnbVNWV0RabkxoYkpkdDMzN0docU05cExB?oc=5",
-      "publishedTs": 1778023963
+      "title": "Bank of Japan potential yen intervention limits Dollar vs Yen movement near ¥155.09 support",
+      "publisher": "Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSHdKaUswY0w5UExES2Rnb3dNN0Fqc2dZUVRuTzlyY1BOZDJKaHN6QlJTaDBhTUVqSEc5OHozbDNyOXoyQUNGeXpUY2lGMzNMakxxMC1FVmtPaFBESWpHZ1JQV2FTTGg5UFU0bWRNc0pBLW5HYzd6amVCSmJyUHJSemZ4S0lFTTNtZ081cVpoRXJwRWMx?oc=5",
+      "publishedTs": 1778048969
     },
     {
-      "title": "‘Demon Slayer’ kills again at box office, exceeding 40 billion yen",
-      "publisher": "朝日新聞",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtZTZ5WjVzTGZjam4yQ0xtWTVrMWtmdVNQTzJsOWtBalQ0ZUpITHd3a3NNZnpIVnE5N3RUQy10Y1NTbXVtaWF5bVJ4YmF4ZERKT0txX1h3?oc=5",
-      "publishedTs": 1778018400
+      "title": "Yen rallies to build on gains spurred by recent intervention",
+      "publisher": "The Edge Malaysia",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5tY3k2QklsNTc2eTQyajdZZ29oeXFpMWZSaC1RT3hZTkthQ2FCVVhDdmYxNTFpYVlwMFBsdFhlZjZsaE4zTmthMUZoZmhsTHVR?oc=5",
+      "publishedTs": 1778048116
     },
     {
-      "title": "Japanese Yen Weakens: USD/JPY Outlook as EUR/JPY and AUD/JPY Diverge",
-      "publisher": "FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUE41Y2JuRHpoaHBKSFkzZC1PRlFMNE0wd2hCMm5pd1NwS3FZTDJ2NVlxMHlSZXNvcUwzSGRVZGJucXhtbEF0ZFpCdWItbjNGWnRrX3NEUC1VWmktYXVld1JheFRsSzZZd2pocThlXzR5Q2ZYdW93ZDBMSVpyUW13SThrM1JtVWgwemZEcGdBeUktX1NiWGlUSllYV2N5X0FEak1OLW5EVlpPWTdFN1JDSTZNU25LQdIBwgFBVV95cUxORy04TW50My0ydHg0ellnRlZVLTIyV244cG1jNWN6bFAtdk9IVUI4WWdXNTAteTB4QzVSemotUFhjcjZheU4xY3phYVJRZkNKOUJMVHZhVHp2aERNbGQ3Vmk0eWhiRXQ0RFp3NzRMVlNzbDVDR1FwbTEtQU5mR3E4QUdrVGMtRUc1R0Rxdmc5V3IyOWxsVzNBc0pUU1N3YzNMWXFFb2NzdGJObktRdmtNbTlBWnJ1UDFSOF9vSTQ2cEdnQQ?oc=5",
-      "publishedTs": 1778018189
-    },
-    {
-      "title": "Japan's New Bicycle Fines Spark Cyclist Complaints Over Strict Enforcement",
-      "publisher": "조선일보",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORWlxNEJJaG0zeThXU0kwUTMzb3ZUVXRLc3c3dUtLT1pWWTluSnd1Rm1EdUpfeEgxdFlZZGFIMzhjSE4zVVZvRTZNUVNJcHJwdllhZXY1ODdxLXZ5a0JpR0tycjk3clNyeVpPdWRWUFVITy1mX3ZZcG14OHFnQm5xU2FxS0w?oc=5",
-      "publishedTs": 1778017638
-    },
-    {
-      "title": "Japan denies plans for extra budget as yen, bond markets remain volatile",
+      "title": "Japan's Asahi places global bet on beer-brewing byproducts",
       "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQVpJVi1rYVpyS3ExYkZGRHFWVkpXc1puYm1Md0dmYUs0a1RMNVAwc3p5ZGp2aUJvd3Q1Z0pmcngwMHpScm9wb2ZmMGV4NVJhSTZVeXN0RHlnSmJyQW5EanRmRzUwajFsdHU2ak9uaUItTFhqQmRWZEo5cGdWSndRN1lrLUlkbXZwMGk3NDZhTFBMRjIxd0R1UGhNVWg5OVJrQk5iOGh1Zw?oc=5",
-      "publishedTs": 1778016180
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTkxFTzBjOGxuemJ0amNEeEt5VXNHTkFrT1NKWDZlRHUzc1JuYVRDVUNMb1QwZVEzdVNBbEVwRzlTcWVFQS13UVZVVEFMV1ZUakdMWG43UHVtdDQ3UFBYTGo0U0ZPcUtGemFTdnQ1ZnNvMnl1LWNubWFrOU9NTzlIcmtaRWlCSV9fal9HTFVOSzduckU2dU5CR09RVFBZeHBfWGtPaGpyT2Y?oc=5",
+      "publishedTs": 1778047680
     },
     {
-      "title": "The Yen Carry Trade and the Bank of Japan's Dilemma",
-      "publisher": "Forex Factory",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOU1EMDhxSHlKUGxEV0RUUDlBLXZNWkRBdHo0dERUVXVqOGNIb2drMEhRVkk3N0FQcmVYUWN0cl80d0VZRWJyZmdWY08ta3pPWlF5c1BZM2lLVzBxQUZjVE1iSmFFemdJMlBYWnc5aUJPWFRTenZ1c3poQ2lhMVZySEZZaw?oc=5",
-      "publishedTs": 1778015220
+      "title": "Another intervention? The Japanese yen surged in the short term.",
+      "publisher": "富途牛牛",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWnVPNnJXYjdhVHhyRlIwekpNOU1pRXVWSjQ4SU5wNWduRWZrNmJNdzh4RzJRQUJ2TkVhbkg4NG1NNkY4dm9FVW5Hd2tweFJ3RWxUZ0hoQm5ZOU9jRGZ0YV8yNWRsVzREakstWmFyZU9ZZm5lQjFFeGRqcjg5ZjBUeWNaR090ZGc0ZHk5NUlocGNzcW9ZOC1PSlJ5MDE1VmM2NTNKOGRB?oc=5",
+      "publishedTs": 1778047022
+    },
+    {
+      "title": "Yen Rallies to Build on Gains Spurred by Recent Intervention",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPS3ZCcHlFNTJVc1k3N0FtVDc3RVNxSzhJZFY2RDE5MlZ2MUdWcFh3NGRpdmtjdm94ZFJMSnYyeEFzdWtIWFdxa0tlY1ZRZ2RlcnBIWGgyV05zb3hLbGd3ZmIyLXY3anp5WThNZ2o4T3FFeVd3c0xETWZlNEtIMHB6ZmRnY0lUdm5iamxkRjRqNlBrQ0lrdDVNLVhRNVNzSFdEQ3ZkYzhpYw?oc=5",
+      "publishedTs": 1778046120
+    },
+    {
+      "title": "Breaking: Japanese Yen strengthens on suspected FX intervention",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeWtlakFvclhuVm5RZ3J3SHphYXpSLWhDZWZaSGRWak1NZkhhcFNuaDBxOVFVRlBCY3NyZWpKeWs0clhpV3NON19LMU9yclRjNXdQbW1iRS12cklLY1MteFBLRlNWcTYwRVhVc1ZHeTB2Z0JsZlNjdzc5MXZDYl9jV20wZWEtcmd0ekFWOHI1TDdsbEJ1enoyYm9NVF84d3JIMzVGZE0tRTQ?oc=5",
+      "publishedTs": 1778044380
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시 헤드라인은 엔화의 높은 변동성과 잠재적인 외환시장 개입 가능성에 초점을 맞추고 있습니다. 엔화는 미국의 특정 행동 변화와 같은 외부 요인으로 강세를 보이기도 했으나, 동시에 약세 흐름을 보이며 당국의 재개입 가능성에 대한 기관들의 관측이 제기되었습니다. 이러한 상황은 일본은행(BOJ)이 엔 캐리 트레이드와 관련하여 딜레마에 직면하고 있음을 시사합니다. 한편, 정부는 엔화 및 채권 시장의 지속적인 변동성에도 불구하고 추가 예산 편성 계획을 부인했습니다.",
-    "en": "Today's Japanese market headlines are dominated by significant yen volatility and the ongoing debate surrounding potential currency intervention. The yen saw both gains, partly due to external factors like a pause in U.S. actions, and weakening trends, with institutions speculating on renewed intervention by Japan. This comes as the Bank of Japan faces a dilemma regarding the yen carry trade. Meanwhile, the government denies plans for an extra budget amidst persistent volatility in both yen and bond markets.",
+    "ko": "오늘 일본 엔화는 최근 및 의심되는 외환시장 개입에 힘입어 강세를 보이며 상승세를 이어가고 있습니다. 당국의 개입으로 엔화가 단기적으로 급등했으며, 이는 주요 촉매제로 작용하고 있습니다. 일본은행의 추가 개입 가능성은 달러-엔 환율의 움직임을 155.09엔 지지선 부근에서 제한하는 요인으로 언급됩니다. 시장은 통화 안정화를 위한 당국의 움직임에 지속적으로 주목하고 있습니다.",
+    "en": "The Japanese yen is rallying, building on gains spurred by recent and suspected foreign exchange interventions. Headlines indicate a short-term surge in the yen, with authorities' actions seen as the primary catalyst. The potential for further Bank of Japan intervention is also noted, limiting Dollar vs. Yen movement near the ¥155.09 support level. This highlights ongoing official efforts to manage currency fluctuations.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1778039057
+    "generatedTs": 1778049466
   }
 }
