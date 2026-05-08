@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-08T08:13:36.356248+00:00",
+  "asOf": "2026-05-08T08:58:21.430585+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -5982,6 +5982,24 @@
   },
   "headlines": [
     {
+      "title": "Japanese yen slowly erases intervention-driven gains as macro backdrop remains negative",
+      "publisher": "investingLive",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN3piRjFMa01Sc3hFRlRhMmZ5eTVQSnFmdWhUWW01U0c3TllwRFU1T0tpMHY5QjhEMVRhaGJ5bzlGbnkzYjlrMG0xMVhEU1FWR3hyRlVaOHpOTFduU05fN0JOUktZMXhTSl9RUUtTVDdtNE9YZVFPZU53SWM1YklGQm04ck5ndXhiUUxXM0tXQ2lDUW5hRjMzMGJQSGtWMHFQRUE5bmMzUTBEMWhfdHYwMU5Kc1BpT0MwQWVYeVhWR0xkZkc3OVl4cA?oc=5",
+      "publishedTs": 1778229463
+    },
+    {
+      "title": "Japan May Have Spent ¥4–¥5 Trillion in Another Yen Intervention",
+      "publisher": "The Japan News",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1oMXFPMndVbV9US3ozTEV4d19EV1lxcmxHUVVpTDJDYTFvWXFObk1VRkljVXpfVXE1Q0lkdURDRkdIRGxOd0NQeXdCZXdaeG55ajZpbXB3eFJtemI0OFBoY2xBSElnaW8zLUFVWDlLbE5PUQ?oc=5",
+      "publishedTs": 1778228640
+    },
+    {
+      "title": "Global Markets | Japan's Nikkei pulls back from record high as SoftBank Group falls",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOZ0NjQ0hWUVZ2SkZSdHJJN3NmcEFmckd5a2VncUJVM3JKZkRQUzI5UVNIN1F1SnZyODlvcEQ5WG92WnUzSlFpcjJub09BQlEtUFdiZ3BUU2JNVTBuN2E1LVMxOFplMkg3UGxITlZkdDY4T00tZUF2VXctLUlJOGw3T1BLYjc2SzFlaTR0V1RGcDNDQ2ZTVlB4bzk4akhTVWRsSmdtSWhxYTNDTnNEZlh6YUtTaWZ0eGE0TjBJYnJLNHFOaXNmOUhmeTVFS2NqT0FvLU1FU0NnVF92ZE5RZEozTVRPYml3dEhBbHk4UVFn0gHzAUFVX3lxTE12X000SDAtTnJaOXBLSGpsRENXdU9aem94NW1MbmZ6RS0wWU9jdW82bHBKTlFVN1BnbzFoSnc1RW1VZUs3cURCTHM2dzdid2JUdHdONU05b0pmbkJmS29hVTUtUDdSVm0zOE1waDBsUkJoalRybjljSzdkUkJCUUhTTkZEV3ZIcXRuVlRwcVhxdkdvYzdBVUxRc3ZxZTQ5UXlqTWxEQjZ6M3FKNmFfdll3RWcxRFczMDk1TmVnUzEyNUpSN1N3cFRhbkNuRHdtNWR5ZTVLZV9qaHJoN0FWVHc4V2hSNGRHbUVPVDdqN2lsdFB5NA?oc=5",
+      "publishedTs": 1778228122
+    },
+    {
       "title": "1220 AM & 104.3 FM | Salem Oregon News Talk Radio",
       "publisher": "KSLM Radio",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd21SZnFxRVZaUEZ1M2xWSXhGcmg4RURyVmFUVmtHcFp0dzFDSFowMF9HRkkyUVdZV0l5Q3JPc3BSc3g5ZmRjMnh3Tm5ERHFyb1Mtc0NtTUdyb1N6eWVqWXgwU1g0aUdHbjN5clBZY2lJVmxyX1J2NjBkY09VVXBadEo4VTAzdjhZd1pINWNpU0xFa2hXRFM1ZVZPb1BJY3pBYzYxZ3Zn?oc=5",
@@ -5994,40 +6012,22 @@
       "publishedTs": 1778225046
     },
     {
+      "title": "Japan and South Korea Stocks Fall at Open; US and Iran Suddenly Exchange Fire in Hormuz",
+      "publisher": "TradingKey",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMUNiUzZYWWRWbFZuQnJCR3BKLTJfZ0pPMjZkWVp5MkxCT09fZkZjczVYajRaZU13bTdLQ2tjcW5tZ3NjaGp1ckV5cHhjNDBucUJDeVdKeTFLVlhtTXp6cTkxTzd1Rkx1bHJGZW9lSmZLOFlkbXQwSEl4OWdvY0xGUUJjc09VWWhfd2FsOGFIcmVvamRlVGRHZjkydnhxeUt5MEZQc3o1NVNKaml3bE91SVhURllJU0JYdlFCY1owYVVMX1I5SE9Idlh5Z25vbG0ySVVsamJGM1lSckpSZWc?oc=5",
+      "publishedTs": 1778224725
+    },
+    {
       "title": "Japan's Nikkei pulls back from record high as SoftBank Group falls",
       "publisher": "marketscreener.com",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeE0xeFBRWUFZWGliTnNfaS1JLV9mb2RXZnhGQ1FzaS1qaE9qNkRkVmMxOHQyeFFENUhDZUN4V0VWS0JSNzl4OUNaSFhwZzNkQVR1cnp2WF9oTXlmOWxjeDhjMEhHTTlKMEdaZzFGcXJneDAxWENwemFpaGJ1QjEwUzctWGhnOXZyX01aX2JRVS1iaE1IRkwxcDVGNGFlLVQyUW5nd213QTNyaXNqQzQ1S1NTZlZzbTlDcVMw?oc=5",
       "publishedTs": 1778224720
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.16%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUGgxcnlnYl93UEFaSGxIRi1yTzNRaWE5QzNlbE5TY2pmSG5QMnFzNFBhUk8zbGxtYmVmMGRtN0FOaFFuaHJEMF9nYWJCWjlVRTM3aTN0TW5SUC1VX3ZleUFiUjFTcmQ1SmRhd2xXVnNIVU83d0hyXzVYczRXcnQ2S3lrdkg3OHZIemlRbU5jVEVxdm5mSWdLanNsMmdvMnJwazhLeVB2RjdkS0hlSkltSTdaQQ?oc=5",
-      "publishedTs": 1778224099
-    },
-    {
-      "title": "Japan Stocks Took A Breather After A Record Week",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaWk0RkpLbkg3akJqVWYyZU1sdEdBTVNzNElkVkszamNrV3l3RHgtQmxhMGFRNWVtN0twd1hTck1BOHptMXZLdVBDNXpyTGt6b1hEazN2MHdxVkt6bkNXYkFmV280Tno5X1RDbmg4TEdoREVQcWdzWm02bVZqMGFoUUNWYw?oc=5",
-      "publishedTs": 1778223646
-    },
-    {
-      "title": "Japan bets on Washington, BOJ for extra punch in yen battle",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdkFYaWQ5a2xxdWp3VV94TUdUQzVXWFQxRUNocFlUMmM0b3J3cW84NlNHSkpVcTVUaG1MNDJGV3NLVWViZ25KWk1NbXM2U1VKZDlRVmNnYUhtLTN4YnNTMzVVWVlEWkx4cGNKZzI1bl9NZ2VMUTVVcmdrZWFQbURlR05KVkEwWTNGdkpHT2VYNlBPT2lTaDktT2publhfdmNfOVc0MmxB?oc=5",
-      "publishedTs": 1778222940
-    },
-    {
-      "title": "ANALYSIS-Japan bets on Washington, BOJ for extra punch in yen battle",
-      "publisher": "Devdiscourse",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTnd1bEZUU0ZKOEVQSDk2MWNPRGhoT3FpbU1TZS1memJ1WmJMREZ6Rmh4a3pmR2pmXzJFUDgxcnphRWhLR3pmZ0I5cGM0VjBPal91Qng5Y0Zjb0NoM2h4MlNxYkxVZEFWSXRLTVV4bkdqbUs3M21NVUZfN2UtRS1EaXg1d1V4LVRKUHZBNGNVT2FCMWItaFA3RHJFa1k5dVpPeDhDNWxGbFNVcks5Wm1aNG10cEk4RHV3a3dRbXhYVQ?oc=5",
-      "publishedTs": 1778222867
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 닛케이 225 지수가 사상 최고치 경신 후 숨 고르기에 들어가며 소폭 하락했습니다. 소프트뱅크 그룹 등 주요 종목의 하락이 지수 하락에 영향을 미쳤습니다. 한편, 일본은 엔화 약세 압력에 맞서 미국 및 일본은행(BOJ)과의 공조를 통해 엔화 방어에 총력을 기울이는 모습이 주요 이슈로 부각되고 있습니다. 시장은 엔화 약세 지속 여부와 미일 당국의 잠재적 개입 움직임을 주시하고 있습니다.",
-    "en": "Japanese stocks experienced a slight pullback today, with the Nikkei 225 taking a breather after its recent record-setting week, partly influenced by declines in major stocks like SoftBank Group. A prominent theme is Japan's intensified focus on defending the yen against market pressure. The nation is reportedly seeking an \"extra punch\" in its yen battle through coordination with the United States and potential action from the Bank of Japan. The ongoing yen weakness and the anticipated responses from these authorities remain key catalysts for the market.",
+    "ko": "오늘 일본 증시는 닛케이 지수가 사상 최고치에서 후퇴하며 하락세를 보였으며, 특히 소프트뱅크 그룹의 주가 하락이 지수 하락에 영향을 미쳤습니다. 엔화는 거시 경제 여건이 부정적인 가운데 정부의 개입 효과가 점차 희석되면서 약세를 이어갔습니다. 일본 당국은 엔화 방어를 위해 미국 및 일본은행과의 협력을 모색하고 있으며, 또다시 4조~5조 엔 규모의 개입이 있었을 가능성도 제기됩니다. 한편, 미국과 이란 간의 호르무즈 해협에서의 교전 소식 등 지정학적 긴장도 전반적인 시장 하락에 영향을 미쳤습니다.",
+    "en": "Japanese equities saw a pullback today, with the Nikkei retreating from its record high, partly attributed to a significant fall in SoftBank Group shares. Meanwhile, the Japanese yen continued to struggle, with its intervention-driven gains slowly eroding amidst a negative macro backdrop, prompting Japan to seek support from the United States and the Bank of Japan. Reports suggest another substantial yen intervention of ¥4–¥5 trillion, yet market pressure persists. Broader market sentiment was also affected by geopolitical tensions, including reports of US and Iran exchanging fire in Hormuz.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1778228023
+    "generatedTs": 1778230709
   }
 }
