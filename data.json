@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-11T08:04:16.945828+00:00",
+  "asOf": "2026-05-11T10:49:11.367807+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -5720,47 +5720,52 @@
   },
   "headlines": [
     {
-      "title": "'Japan Expert' Bessent's Remarks on the Yen Draw Attention... \"A Double-Edged Sword\" for Takaichi",
-      "publisher": "아시아경제",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBpUWloWVFLSzdXY1YyV2pGd1pjaWhWVWRsU3ZTWTBvNTUtZF9ueDdUWnQ4V0xIMGI0S2k2WjVMSXF4ZDdkU3JWcWt3MlNmZ1hoMFF5dmpjUnIwR3IwUVJuUUtZNzNleVpDRUk2akF6cjEtMnFPak0taDJaQXc?oc=5",
-      "publishedTs": 1778484746
-    },
-    {
-      "title": "Asian private equity fund MBK to acquire Japanese aluminum components maker",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd0ZsQjYydkN1YWJqSlJaZm11UnRRNzlqT0wwWm5KV0RIQ2FHa3ZuTEFlWTVyLTVZbEtQOW9VTXI0b2llMzBwOXJseURzZXF0X1ZjdFZ0MW9TUWp5ZThyQUc1MjVORm9RVGJZci1uTm5ZWksxNW5ScElROTNWY25LYzI1bC1NazFRYzJIR2F1WlZtWkJsb0t0Mmc3SUhuUXYxR2x5eklVWnZ6aFVGT3NxQ2laeThaMUJ5bWtUUlRJQl8?oc=5",
-      "publishedTs": 1778484120
-    },
-    {
-      "title": "Japan's SoftBank enters battery business to power AI data centers",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORGU1N0VoVS1PWmRoMFZnRDhtcE5yS2hzSVk3Y3Y1a3VzLUhXZ1Y3ZU5pSVZtaGliWU9HeUNHNFVmVmZpUzB5cDA2Y3hKbGlweUxYWHE1dElKRWQxak9LdzViVHgxa0pVU3NZQkw4UWNzVUpJa0IzRE8yWHFiNWFObW9uX0RzVW02aW82UjZNRnM1WnA0NXU1X1pCSlo3aVotbS1tR3Q4U3E?oc=5",
-      "publishedTs": 1778483940
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.49%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZ21rejJISkRWamJkN2tkaE43RHBaT1NHVUtEOGU4NVFHbUlCWEZoTXRnejZtaVZHQUZIOGF4ZHFacFZRdjNCbjBILURSZVBxMF9Wa0cyRXphRVhpTFozcmRSbDQyRzhsdU1rOTZsWGx5QUNJaGJ2OVpIS25WSDR5UGRmYTE4azVqWTR1SV9Dd29nSGRKUjBGd21mY3dmZGNuakhXekFnLWRURnktZmlYRzFPSQ?oc=5",
-      "publishedTs": 1778483036
-    },
-    {
-      "title": "Japan shares lower at close of trade; Nikkei 225 down 0.49%",
-      "publisher": "Investing.com India",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTXJjalpWcnZxYTg3WmRJaC1KQnlsT0hyTWh0VHRtZ2ZuQldSZGwwaEY3bXRCbWNaNGRGRmIta1JwNEExTlllTEVNNjdkYTdUNDlVZENHZEVRWGtRMEJSU1ZaQ3VZVHRmWFlScHBVc3Zka1VZWWZ6QlNDMFhBTU52eFlaeC1hNXU1YmY2UWk3VEgwRWFkbGlkWWlCSkRSN3FuYkdJTkZkM0t6U0Rmbjc0X2pB?oc=5",
-      "publishedTs": 1778482995
-    },
-    {
-      "title": "Japan Stocks Split As Nikkei Slips From A Fresh High",
+      "title": "Japan’s Advisers Tell The Bank Of Japan Not To Rush Rate Hikes",
       "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEhRd1FMNTlDcHVidzRYRThxTE5XUzUweTk3TDlMNmVrSkloRG5KUzZBd0N6NVB3NV8za1J1TU5SQk9xVWkwMzRLbmhCV0MxQzZXRmY4ZElOQzBDRXBXUXFVZEU4OU9halh1UURid0c4eE1UMkZ2Z05qM2JsbzI2ZVdMSVp3WjhP?oc=5",
-      "publishedTs": 1778482982
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeVYyUXVxclh4bm05UFFDM1NHbDNfLXg3WHJHazlVWWQtWDBXVzBjYTNXSUM0c2RtdHVMVFNWekZ1RkVCSi1PaENOdXBvSUl3VWlMbmlOWGRTbXhLaXVsVS1QdzdVRGV3UTZRaTlkcXNKSThwXzVpcUphaEVETmFjTENjSGVXVlhCUG5McUZmSmQxaDJ2?oc=5",
+      "publishedTs": 1778493005
     },
     {
-      "title": "Japan shares lower at close of trade; Nikkei 225 down 0.49%",
-      "publisher": "Investing.com UK",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ3VSazNFN3pBcmJmRGxyUzl4bWg3QVk1NDQ4eWNqZnc0T1ZRNXA1ZlBJUlNIcDRKYXVFaF93UXRneHc0bVRoRFlyUDA4eEw0ZjZqRnNSUU84RWE3UzJzZ2FmaXF3R0tDdDIzRG1PU3NtTFZhblE1UTJLdUg5NGVuenhiQ1pXalQ1cHUzeE12ZmRQS2ZxNGFmQ09pTjJNTkVpSlowUFhSN2xZajNVM2RnVlNn?oc=5",
-      "publishedTs": 1778482800
+      "title": "Japan panel members urge BOJ to heed firms' funding strains amid Mideast tensions",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTWJncVZ4T0x1TUU5UHpKREZBb0NzRlhuY1l6Sy0yVTIyRndMR0NlM0lhZzRxVEpSZmdWS1NkZWlYd0k0RFFlUE5fSEY4M2JSRE5sNVoyd0xWYkpzUUExR0ZRQ3pPTG5YU2pCNy11Y0s2X3VMS1p5Wk54dXhYNUZSYy1yb3plZWtkelRkTnlWQjRPTFNZSlNDNnZVTVdjblFwcVdMRkN3R01IMl9nRzdYd0diemJGMGlwN1U2dXJoMk9kU01tM1hfSGtvYXc?oc=5",
+      "publishedTs": 1778492953
+    },
+    {
+      "title": "Nikkei 225 index loses ground after record intraday high",
+      "publisher": "nhk.or.jp",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaXzM3MjBzQThLUWs0Q2c5dkZFZW1JR2tPQ2JRVzVzRnZUT2hRSjZYck9wemxKaTgydUU5WXV2UDQ3YUxoN0tTODlhaF83Mll2RXJhekl5UWtreVZLUkJIWXlB?oc=5",
+      "publishedTs": 1778492144
+    },
+    {
+      "title": "Japan's Nikkei retreats from record high as Iran conflict concerns resurface",
+      "publisher": "Business Recorder",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qdTR5NmFYbC1odTJiWnJCbDJwTmdMbi1GOVNQcUUzZC1qUTNuTHA5YUhZNGpTVEtrMVlvU1JMRndfSEdGSGRhdlQ1cF9OM0pV0gFWQVVfeXFMUHE1R3NiRXE0WFBwU0FpYUwyc3RiVGtuV0FKdElwbWxObEZyNTl5RGhINFNnSnVNUjlfZmRYSFgxaGlySklCMGpfd25kV1YwaGdRUV92bVE?oc=5",
+      "publishedTs": 1778489830
+    },
+    {
+      "title": "The Nikkei 225 Index, the leading index of the Japanese stock market, broke the record high by break..",
+      "publisher": "매일경제",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBXc0JTV2h2NXZ2QUtKRVY1dEN5X1FLdUg1TFBmMzkyZTlZdmlRRXc3cER0ZVlrQ1JLbThhdTZWX3BiTURicmlzamdUOExWb3c?oc=5",
+      "publishedTs": 1778489756
+    },
+    {
+      "title": "Japan’s Nikkei retreats from a record high as war drags on",
+      "publisher": "Latest news from Azerbaijan",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdXBMNEx4ZWc1dURIeHJTMl9ELWlNR1p6M2VBak40LXJOa1I0UUloS3M0aS1mWFViSjBUczN4a2duMVFDWS1FWW9Fc2NFRHVtRkFSWWFyRXRYR2JOSlMxOG9zSjBJSndzajc5ZW1jUC1TcHpkX3UwYUV2OTBXSElJM3MyRF8?oc=5",
+      "publishedTs": 1778488748
+    },
+    {
+      "title": "Global Markets | Japan's Nikkei retreats from record high as Iran conflict concerns resurface",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNc0pFWEdyekdDTVl6N3RzSTlpMjVDaGFzaXp2bDJoUjF1OXNQbjliYW01VzVRQWtvaGxieFg2M1A0N2lJNTFBMjdncGNEN0tvS0ZtYmRqaGVVM2RfWFgzSTE0SS1NVXZvaFdQV3UxY2J5V1lOcWxuUHJMaDNnOHdwN2pSbFQxU3VMejc1cTVxY1ZyZE9VVlVMTHVld25CcmItN09IallDdHlYYXc3ZjNlaDJuc2FabWVBeFpOZHFNQWxDQ2NYNWJwMmFoQ0t6cXpoR19sN0taZGVMTWNpVHVZQjZtVXRLQ0M0Tnp4cENYZWtzeHVNRDZ1TzhDb9IBgAJBVV95cUxPOXNYV29nVmV3UUdmRF9tMjlmNEg4al9Cc1paTXk1em12eGEzTTlIa2gzT3Q1a0hvanB4Y3FYQ2NaSE9Xb2ZERTgxeXNFaDllQWplOFZfOWZhYTlhTGtzc29RNl9UdzFMaDh5cWdKNVdqaE9OTjQxQTV6SXczYUg5Vkx0TGVkMW9FdVozTGFyS1VWYVJNVjNTYXJJWC1vWGpJRk1LYjVSWGZ6WnJ6T2hDS05Zb3U0bExhdHlkanVzWm5MdlIwa202cFJCYm1Vd2YyN3VVQk9RRWtRWkl3N1ZtcnZZVXRyLXFVUzBZdjI4ZllHSzhnZmtPZHQtTHFYdlVs?oc=5",
+      "publishedTs": 1778486375
     }
   ],
-  "marketTone": null
+  "marketTone": {
+    "ko": "일본 증시는 닛케이 225 지수가 장중 사상 최고치를 경신한 후 하락하며 혼조세를 보였습니다. 이는 이란 분쟁 등 중동 지역의 지정학적 긴장 고조에 대한 우려가 다시 부각된 영향으로 풀이됩니다. 한편, 일본은행(BOJ) 자문단은 중동 긴장 속 기업들의 자금 조달 부담을 고려하여 성급한 금리 인상을 자제할 것을 촉구했습니다. 시장은 지정학적 상황과 일본은행의 신중한 통화정책 기조에 주목하고 있습니다.",
+    "en": "The Japanese stock market saw a mixed day, with the Nikkei 225 index retreating from a record intraday high. This pullback was largely attributed to resurfacing concerns over geopolitical tensions, particularly the Iran conflict. Meanwhile, advisors urged the Bank of Japan not to rush rate hikes, citing potential funding strains for firms amidst ongoing Mideast tensions. The market remains watchful of both geopolitical developments and the BOJ's cautious stance on monetary policy.",
+    "model": "gemini-2.5-flash",
+    "generatedTs": 1778496557
+  }
 }
