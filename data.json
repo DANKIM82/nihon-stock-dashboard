@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-13T06:54:42.863760+00:00",
+  "asOf": "2026-05-13T10:06:34.163777+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -326,7 +326,7 @@
       "marketCapB": 33033.15,
       "per": 17.39,
       "pbr": 1.55,
-      "dividendYield": 2.56,
+      "dividendYield": 2.67,
       "roe": 6.11,
       "roa": 0.33,
       "operatingMargin": 34.84,
@@ -546,7 +546,7 @@
       "marketCapB": 22342.96,
       "per": 15.65,
       "pbr": 1.43,
-      "dividendYield": 2.42,
+      "dividendYield": 2.68,
       "roe": 4.93,
       "roa": 0.24,
       "operatingMargin": 39.31,
@@ -722,7 +722,7 @@
       "marketCapB": 9671.88,
       "per": 13.83,
       "pbr": 1.96,
-      "dividendYield": 3.06,
+      "dividendYield": 0.0,
       "roe": 13.71,
       "roa": 3.83,
       "operatingMargin": 18.71,
@@ -809,7 +809,7 @@
       "changePercent": 2.1,
       "marketCapB": 14601.93,
       "per": 16.31,
-      "pbr": 2.32,
+      "pbr": 2.22,
       "dividendYield": 2.11,
       "roe": 13.91,
       "roa": 2.75,
@@ -1074,7 +1074,7 @@
       "marketCapB": 3621.14,
       "per": 11.36,
       "pbr": 1.05,
-      "dividendYield": 3.89,
+      "dividendYield": 3.84,
       "roe": 9.37,
       "roa": 4.54,
       "operatingMargin": 6.53,
@@ -1777,7 +1777,7 @@
       "changePercent": 1.48,
       "marketCapB": 5821.92,
       "per": 19.44,
-      "pbr": 2.88,
+      "pbr": 2.95,
       "dividendYield": 1.64,
       "roe": 15.62,
       "roa": 6.31,
@@ -1998,7 +1998,7 @@
       "marketCapB": 5566.41,
       "per": 20.66,
       "pbr": 2.7,
-      "dividendYield": 0.92,
+      "dividendYield": 0.95,
       "roe": 12.56,
       "roa": 5.12,
       "operatingMargin": 15.06,
@@ -2306,7 +2306,7 @@
       "marketCapB": 3676.63,
       "per": 10.71,
       "pbr": 1.0,
-      "dividendYield": 4.13,
+      "dividendYield": 3.77,
       "roe": 10.07,
       "roa": 0.63,
       "operatingMargin": 18.66,
@@ -2350,7 +2350,7 @@
       "marketCapB": 1900.09,
       "per": 24.06,
       "pbr": 5.51,
-      "dividendYield": 3.34,
+      "dividendYield": 3.3,
       "roe": 22.97,
       "roa": 0.09,
       "operatingMargin": 58.67,
@@ -2438,7 +2438,7 @@
       "marketCapB": 1997.91,
       "per": 4.95,
       "pbr": 1.11,
-      "dividendYield": 3.11,
+      "dividendYield": 3.07,
       "roe": 20.61,
       "roa": 1.45,
       "operatingMargin": 28.93,
@@ -2878,11 +2878,11 @@
       "marketCapB": 2856.09,
       "per": 26.38,
       "pbr": 3.54,
-      "dividendYield": 0.97,
+      "dividendYield": 1.17,
       "roe": null,
       "roa": null,
-      "operatingMargin": 7.25,
-      "debtToEquity": 1.19,
+      "operatingMargin": 7.44,
+      "debtToEquity": 0.91,
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
@@ -3010,7 +3010,7 @@
       "marketCapB": 1125.37,
       "per": 15.38,
       "pbr": 1.25,
-      "dividendYield": 3.22,
+      "dividendYield": 3.59,
       "roe": 9.12,
       "roa": 4.73,
       "operatingMargin": 9.39,
@@ -4110,7 +4110,7 @@
       "marketCapB": 1609.52,
       "per": 27.05,
       "pbr": 2.05,
-      "dividendYield": 1.94,
+      "dividendYield": 2.35,
       "roe": 7.7,
       "roa": 5.86,
       "operatingMargin": 13.44,
@@ -4154,7 +4154,7 @@
       "marketCapB": 4959.47,
       "per": 19.4,
       "pbr": 2.95,
-      "dividendYield": 2.85,
+      "dividendYield": 3.67,
       "roe": 15.81,
       "roa": 3.84,
       "operatingMargin": -0.8,
@@ -4724,7 +4724,7 @@
       "marketCapB": 892.05,
       "per": 10.51,
       "pbr": 0.87,
-      "dividendYield": 2.29,
+      "dividendYield": 2.48,
       "roe": 12.08,
       "roa": 4.88,
       "operatingMargin": 15.16,
@@ -5208,7 +5208,7 @@
       "marketCapB": 2732.82,
       "per": 27.32,
       "pbr": 4.84,
-      "dividendYield": 1.09,
+      "dividendYield": 1.11,
       "roe": 19.11,
       "roa": 12.79,
       "operatingMargin": 29.82,
@@ -5252,7 +5252,7 @@
       "marketCapB": 2448.84,
       "per": 19.44,
       "pbr": 2.89,
-      "dividendYield": 2.27,
+      "dividendYield": 1.21,
       "roe": 13.79,
       "roa": 8.62,
       "operatingMargin": 14.48,
@@ -5910,7 +5910,7 @@
     {
       "sector": "Technology",
       "changePercent": -0.14,
-      "avgPbr": 5.93,
+      "avgPbr": 5.94,
       "count": 17
     },
     {
@@ -5975,57 +5975,57 @@
     "belowBookCount": 24,
     "avgPer": 21.6,
     "avgPbr": 2.56,
-    "avgDiv": 2.27,
+    "avgDiv": 2.26,
     "totalListings": 131
   },
   "headlines": [
     {
-      "title": "Japanese Yen extends decline against USD amid rising hawkish Fed bets",
+      "title": "Japanese Investors Exit Foreign Stocks in April",
+      "publisher": "Sharecafe",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNc1JNY3hObWxyWi1GYnUzdlh4OU9zS2RaM2JCdGxuOUVJSnJ4UUtkUVA0UXQ4aFdIZXhfcjJ5RnptYlB4R2p4cDhnaElpN3Q5alI0MHVfa3FZemlBS0JnVmJpNnVTMjgxRzUzYkUzd3M5MmhrVlZ4U3VlTGYtbDlIMWF4WTA1cVFTNFhHNVhjT1o2Zw?oc=5",
+      "publishedTs": 1778665659
+    },
+    {
+      "title": "Tokyo Gets a Pass on Yen Intervention, But Concerns Remain",
+      "publisher": "JAPAN Forward",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSTRIQ2IxQ3o1QzhJVlFIQjVuVklNLUE5WVVuSmMxdnNVOGlwekdQc0tkSGp4U25MaGtLNzQ3ZnhlUzlnUG0waDk3ODhYLTJwT0RMcTQ4aWVYZ2p5X3cwSzJsT2VDQlB3TS1tS0dzdTlXQ3ZQUXNGeVJmUkJnNjU2cDJ4clJEVmx3eFNrTg?oc=5",
+      "publishedTs": 1778665174
+    },
+    {
+      "title": "Japan Launches Yen Stablecoin EJPY for Business Payments",
+      "publisher": "Coinfomania",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSTgwVEFPa25UQ2lrQjJHd2FzSWludldfdG12SWszTEhqeUlTQUdCTWtRZm15UlNUWlRzTWZjM0dTTXJTVC1qWTdkMGdVZ09SWFhxYmJwNlQ1Qmw2cDJrT2t5bG83bGNrbHNYOGVVV0pnY2Z5X1VnN3FaTlVqSEJDcUg1WEZBdV9Q?oc=5",
+      "publishedTs": 1778664583
+    },
+    {
+      "title": "Japanese Yen : Recovery against US Dollar faces resistance near 158.30 – UOB",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVGc0dXg5NjgxOU42STBScHlSVXNoUWpxa1pmejFCalVla0I4aldNV1hwSDJfUTAwSUR2eHRoZ3Vpd2F1WENRVXpfeE9Rbks3dzFiQzlPdXBWaElJQjROZ2dFM21MOXZzVlpLNjVLTWktMEl0djZVX21mSGxKUHVFRXVqTk5aTU9RdUppZlJURF9kZkR1X3hBUXZwdlkwTnU3UlpMS0FnR2ZhZ1lUS0dZeVlB?oc=5",
-      "publishedTs": 1778654126
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlo4YnVRNVdVT3B0ckoxWHV5OU9mVEtzUjdSZFM2RXowbkZKVkgtWHRUbEpWQjB5M1ZmZXNiellqX0JiZ0F4dmdjeWNmM0NSdG5LdURkUHZ4aF9TTTcyMlczWWFKTThqMlcwU2RreWZfb21VdGJhSVlZR240TXNYbzFPdnhKS1BhRXNzMG9lV1NmTkdLUy1aalM0RWlOQlNvRXZxU2dKemM3WlBXN0Q2RWJGS0I?oc=5",
+      "publishedTs": 1778661698
     },
     {
-      "title": "Japan crude stocks hit record low despite supply push",
-      "publisher": "Quantum Commodity Intelligence",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd21PNHBHUU92aGw3ZjFEcVlmYTVNZzl5NHhyMDBMYms3NDdYX19DZFByOFdWMFRDVG1KUnV3WE1feEZTelg5RFJ6d0RXZmkxUV9BRFVCbllLTGMzOGpIX2RxcjZrRG9uOHRPYkVPS0d5R2VPMlNiRUN1bmNUMVNxaHRMLXFJYjBYWEJJN3FRcm56cGZxbVU2SmFZOWE?oc=5",
-      "publishedTs": 1778653216
+      "title": "Japan TOPIX firms see 6% net profit rise as AI, rates boost earnings, SMBC Nikko data shows",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVXdqSlQwT2V1dGNEZEwwRUZpZzcyOG9WcjdHU0xZMDg1QldyUmYzRXdPZW52QU8wVFhEN0ZldmZSd2E5Q1QzQTNwRHB2YVFNMi0wU0t6b2hiUU5JdGlsZWVOTFI2Vkhyb1RmRFZYTVN2WC1CUEs5NU9hZVhzaC1FQ1ZKQVNXUktsckUzNTh1OHFrNktkaDZKbkdnR2pfdTFKS2hjV0dqckE2MFdZZ05wWmFQcjBiWnBSa01jT3hoMUJRODJzRXM1VVBELWdHejA?oc=5",
+      "publishedTs": 1778661609
     },
     {
-      "title": "Japan FY 2025 current account surplus hits record high for 3rd year in row",
-      "publisher": "Japan Wire by Kyodo News",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0NGhEVDJ4RGFvRW5EcS1KWlU0S2w4bndaV2hCaEQtYTNVYXBrUXh1OFI3T3I3Z284VDhaWm5WOEZEYXJtVkYzb2JZYjNXN2F4ZzdZUUtFamRTZw?oc=5",
-      "publishedTs": 1778650659
+      "title": "Japan sells foreign stocks in April amid inflation worries",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVd5WHJEYW5yWjBpMkhSX1NmREZTSU5XWHlBQ3dFcmt0OFdEaE9OTDI4Tm1vekptVTNFNTd0RExaNnFlRWZoWXlwRXBpZ0ZIVVIxUnN5ZG9zNGdPak1sR1NIbTc5WmNiSTZDQ1UyelVzTWlYVnFkVE9ZdXo2LTZkN0tUUU5aem9HWVB0UC1FR1ljSGRGRjNtTVdYakFZM25aMlJkOU9Jby13cGNGSXBqd05IcnRSQQ?oc=5",
+      "publishedTs": 1778661600
     },
     {
-      "title": "US-Japan agree excessive FX volatility is undesirable",
-      "publisher": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS3BJUEdGS1JOMi1qSzhtOU14Nlk2Yzh5b2s3d0VZdXNLc212NXd0RC1YWmdlNTRXcjVCbzdGS0lremdRdEMyWlNBdHRnc0dfYlBUMGdsN0V2UVJMelY1RWJwMXZRYzRiSWdIQk9fN0dEOGk3YUhwR3ZSTkpTQlF5OGFnYmdpbmxPMEZHM3dZUGRZb2FSdjFRcS1R?oc=5",
-      "publishedTs": 1778648400
-    },
-    {
-      "title": "Euro moves little against Japanese Yen as risk aversion increases",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSzJVQXJ4M2dyNnJZYmdUUlJNRjR6Y1Jqa1c4TE52YjI5dlVVTXMwVWlCYU1wOW5JWlNJWTZheUZPRm9KNzAtTTYybmpOU215aWNVa1FrSjhHa051VFRqLVNVSU05ZjRJaW14d2ZxWExkVDUzY2R0ejhoQ1FEZDV4b0Y5OVRoaDNlQUxPYmNiVWczb0lXREV2WEdlMVB0UjYzVGtaeTR3TW91aUNW?oc=5",
-      "publishedTs": 1778647682
-    },
-    {
-      "title": "Japan's megabanks set to access Anthropic's Mythos as soon as this month, Nikkei says",
-      "publisher": "marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcG8yOGpPM3BSb1J6VUhqMldCYjNtSXE3YVRGN2ZxcHR1bkpDUVlOS2dqSnRVQVZqS1FRb3Q5cld2LTBHd21FZVVoaXFCM1lIalZtU3ByWmVIVFZlQjVTWjNMaHRJSlBVZXZkWjBySXZoV0plTk11aVppSkt0TFp5UFhvNVVYUklqMG1DRkZLZk9TQ2JiMllDaXlkVkVYVXJmLUh5VXRXemtDTDNXSHA0OUZDcXMwSkpyamwxMWExaW42aEJqWEF4WnlVZVVHVk9GSnB3?oc=5",
-      "publishedTs": 1778645298
-    },
-    {
-      "title": "Japan’s Nikkei Stock Average Reverses Early Fall as Kioxia Rebounds",
-      "publisher": "The Japan News",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5UQ0RLM1lQbkNHdFdhZzFUQ3lXMlp4ckpCLWZla2hzNHNLSDRNejJfdHMwYW9KQjZQYWxyZFJTQUpuRG02YXF0SDZlVHNjeDlRN0dSTHlpLUdxay1aQ3U4WVI0RmwtRFY5WDhhazd6WjR3VEY1S1dVWlhR?oc=5",
-      "publishedTs": 1778644260
+      "title": "Japan TOPIX firms see 6% net profit rise as AI, rates boost earnings, SMBC Nikko data shows",
+      "publisher": "CNA",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNendZQ21rcFFsNXh0SVk1MmlMU0xNOGc2VUpfcEdyYS1XTEdSeTZ3aS1CWUstOUZWZjlqOTBsYVhZYmlMSHZ1VDRlQjQwM3ZIcmtxQThDSUVuY0NMN2dVVG16Rk1Hd3ZBcDZfQ2czYlREeTBTdDlKdERET0tyX1BOQzhSNEVJSlBKUVRHMEtncDVXdjZoWjlsaFpKLXFRMjc5ZkxaMzJsWk81ODhSMXdhWE5EaENqczNONG5hQzdmOE5UT0FXaGVVcU1kMlBMaUU?oc=5",
+      "publishedTs": 1778661571
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 닛케이 평균주가가 장 초반 하락세를 뒤집고 반등하는 등 회복력을 보였습니다. 엔화는 매파적인 연준 전망에 따라 달러 대비 약세를 이어갔으며, 미일 양국은 과도한 외환 변동성이 바람직하지 않다는 데 의견을 같이했습니다. 한편, 일본의 경상수지 흑자가 사상 최고치를 기록했음에도 불구하고 원유 재고는 사상 최저 수준을 기록하며 에너지 부문에 대한 우려가 제기되었으며, 메가뱅크의 AI 기술 도입 소식도 전해졌습니다.",
-    "en": "Today's Japanese market headlines present a mixed picture, with the Nikkei Stock Average showing resilience by reversing early falls, partly due to a rebound in Kioxia. A key theme remains the Japanese Yen's extended decline against the USD, driven by hawkish Fed bets, prompting a joint US-Japan statement on the undesirability of excessive FX volatility. While Japan's current account surplus hit a record high, concerns persist over record-low crude stocks, alongside positive news of megabanks adopting AI technology.",
+    "ko": "오늘 일본 증시 헤드라인은 혼조세를 보였습니다. TOPIX 기업들은 AI 및 금리 인상에 힘입어 순이익이 6% 증가하는 등 견조한 실적을 발표하며 시장에 긍정적인 신호를 보냈습니다. 그러나 엔화는 달러 대비 158.30선 부근에서 회복에 어려움을 겪으며 약세가 지속되었고, 외환 개입에 대한 우려도 여전히 남아있습니다. 한편, 일본 투자자들은 인플레이션 우려로 4월 해외 주식을 매도했으며, 비즈니스 결제용 엔화 스테이블코인 EJPY가 출시되는 등 새로운 움직임도 포착되었습니다.",
+    "en": "Today's Japanese stock market headlines present a mixed picture. TOPIX firms reported a robust 6% net profit increase, largely driven by AI advancements and rising interest rates, signaling strong corporate performance. However, the Japanese yen continues to face headwinds, struggling to recover against the US dollar and remaining a focus of intervention concerns. Concurrently, Japanese investors exited foreign stocks in April, partly due to inflation worries, indicating a cautious shift in investment strategy.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1778655292
+    "generatedTs": 1778666801
   }
 }
