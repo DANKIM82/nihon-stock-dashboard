@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-14T03:57:32.155405+00:00",
+  "asOf": "2026-05-14T06:52:15.638587+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -11,9 +11,9 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 63400.26,
-      "change": 128.15,
-      "changePercent": 0.2,
+      "value": 62654.05,
+      "change": -618.06,
+      "changePercent": -0.98,
       "high52w": 63799.32,
       "low52w": 36855.83,
       "sparkline": [
@@ -36,16 +36,16 @@
         62417.88,
         62742.57,
         63272.11,
-        63400.26
+        62654.05
       ]
     },
     {
       "symbol": "1306",
       "nameKo": "토픽스 (ETF 1306)",
       "nameEn": "TOPIX (NEXT FUNDS ETF)",
-      "value": 413.6,
-      "change": -2.1,
-      "changePercent": -0.51,
+      "value": 411.2,
+      "change": -4.5,
+      "changePercent": -1.08,
       "high52w": 4137.0,
       "low52w": 367.4,
       "sparkline": [
@@ -68,16 +68,16 @@
         407.1,
         410.3,
         415.7,
-        413.6
+        411.2
       ]
     },
     {
       "symbol": "1591",
       "nameKo": "JPX 니케이 400 (ETF)",
       "nameEn": "JPX-Nikkei 400 (NEXT FUNDS ETF)",
-      "value": 35690.0,
-      "change": -160.0,
-      "changePercent": -0.45,
+      "value": 35500.0,
+      "change": -350.0,
+      "changePercent": -0.98,
       "high52w": 36000.0,
       "low52w": 24615.0,
       "sparkline": [
@@ -100,16 +100,16 @@
         35120.0,
         35430.0,
         35850.0,
-        35690.0
+        35500.0
       ]
     },
     {
       "symbol": "2516",
       "nameKo": "도쿄 그로스 (ETF)",
       "nameEn": "Tokyo Growth 250 (NEXT FUNDS ETF)",
-      "value": 639.2,
-      "change": -15.6,
-      "changePercent": -2.38,
+      "value": 629.0,
+      "change": -25.8,
+      "changePercent": -3.94,
       "high52w": 675.0,
       "low52w": 504.7,
       "sparkline": [
@@ -132,7 +132,7 @@
         665.0,
         645.0,
         654.8,
-        639.2
+        629.0
       ]
     }
   ],
@@ -144,13 +144,13 @@
       "nameJp": "トヨタ自動車",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 2978.0,
-      "change": 38.5,
-      "changePercent": 1.31,
-      "marketCapB": 38813.42,
-      "per": 10.09,
-      "pbr": 0.97,
-      "dividendYield": 3.36,
+      "price": 3008.0,
+      "change": 68.5,
+      "changePercent": 2.33,
+      "marketCapB": 39204.42,
+      "per": 10.19,
+      "pbr": 0.98,
+      "dividendYield": 3.32,
       "roe": 10.23,
       "roa": 2.37,
       "operatingMargin": 4.57,
@@ -178,7 +178,7 @@
         2870.0,
         2843.0,
         2939.5,
-        2978.0
+        3008.0
       ]
     },
     {
@@ -188,13 +188,13 @@
       "nameJp": "ソニーグループ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 3459.0,
-      "change": -201.0,
-      "changePercent": -5.49,
-      "marketCapB": 20435.98,
-      "per": 20.19,
-      "pbr": 2.52,
-      "dividendYield": 1.01,
+      "price": 3444.0,
+      "change": -216.0,
+      "changePercent": -5.9,
+      "marketCapB": 20347.36,
+      "per": 20.11,
+      "pbr": 2.51,
+      "dividendYield": 1.02,
       "roe": 12.37,
       "roa": 3.71,
       "operatingMargin": 7.55,
@@ -222,7 +222,7 @@
         3372.0,
         3484.0,
         3660.0,
-        3459.0
+        3444.0
       ]
     },
     {
@@ -232,12 +232,12 @@
       "nameJp": "ソフトバンクグループ",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 5826.0,
-      "change": -186.0,
-      "changePercent": -3.09,
-      "marketCapB": 33201.93,
-      "per": 10.89,
-      "pbr": 2.15,
+      "price": 5770.0,
+      "change": -242.0,
+      "changePercent": -4.03,
+      "marketCapB": 32882.79,
+      "per": 10.78,
+      "pbr": 2.13,
       "dividendYield": 0.19,
       "roe": 26.02,
       "roa": 0.69,
@@ -266,7 +266,7 @@
         5743.0,
         5987.0,
         6012.0,
-        5826.0
+        5770.0
       ]
     },
     {
@@ -276,13 +276,13 @@
       "nameJp": "キーエンス",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 79080.0,
-      "change": -360.0,
-      "changePercent": -0.45,
-      "marketCapB": 19178.89,
-      "per": 43.09,
-      "pbr": 5.52,
-      "dividendYield": 0.7,
+      "price": 77310.0,
+      "change": -2130.0,
+      "changePercent": -2.68,
+      "marketCapB": 18749.62,
+      "per": 42.13,
+      "pbr": 5.4,
+      "dividendYield": 0.71,
       "roe": null,
       "roa": null,
       "operatingMargin": 53.6,
@@ -310,7 +310,7 @@
         82300.0,
         79260.0,
         79440.0,
-        79080.0
+        77310.0
       ]
     },
     {
@@ -320,13 +320,13 @@
       "nameJp": "三菱UFJフィナンシャル",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 2892.5,
-      "change": -34.0,
-      "changePercent": -1.16,
-      "marketCapB": 32649.37,
-      "per": 17.19,
+      "price": 2877.0,
+      "change": -49.5,
+      "changePercent": -1.69,
+      "marketCapB": 32474.42,
+      "per": 17.1,
       "pbr": 1.53,
-      "dividendYield": 2.7,
+      "dividendYield": 2.71,
       "roe": 6.11,
       "roa": 0.33,
       "operatingMargin": 34.84,
@@ -354,7 +354,7 @@
         2856.5,
         2886.0,
         2926.5,
-        2892.5
+        2877.0
       ]
     },
     {
@@ -364,13 +364,13 @@
       "nameJp": "日本電信電話",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 148.6,
-      "change": -1.4,
-      "changePercent": -0.93,
-      "marketCapB": 12099.55,
-      "per": 11.78,
-      "pbr": 1.24,
-      "dividendYield": 3.63,
+      "price": 149.6,
+      "change": -0.4,
+      "changePercent": -0.27,
+      "marketCapB": 12180.97,
+      "per": 11.86,
+      "pbr": 1.25,
+      "dividendYield": 3.61,
       "roe": 10.04,
       "roa": 3.1,
       "operatingMargin": 9.55,
@@ -398,7 +398,7 @@
         148.4,
         149.4,
         150.0,
-        148.6
+        149.6
       ]
     },
     {
@@ -408,13 +408,13 @@
       "nameJp": "三菱商事",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 5800.0,
-      "change": -64.0,
-      "changePercent": -1.09,
-      "marketCapB": 21240.35,
-      "per": 27.63,
-      "pbr": 2.36,
-      "dividendYield": 2.16,
+      "price": 5882.0,
+      "change": 18.0,
+      "changePercent": 0.31,
+      "marketCapB": 21536.94,
+      "per": 28.02,
+      "pbr": 2.39,
+      "dividendYield": 2.13,
       "roe": 8.98,
       "roa": 1.15,
       "operatingMargin": 1.76,
@@ -442,7 +442,7 @@
         5252.0,
         5500.0,
         5864.0,
-        5802.0
+        5882.0
       ]
     },
     {
@@ -452,13 +452,13 @@
       "nameJp": "東京エレクトロン",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 52070.0,
-      "change": 730.0,
-      "changePercent": 1.42,
-      "marketCapB": 23786.47,
-      "per": 41.57,
-      "pbr": 11.44,
-      "dividendYield": 1.39,
+      "price": 51200.0,
+      "change": -140.0,
+      "changePercent": -0.27,
+      "marketCapB": 23389.04,
+      "per": 40.87,
+      "pbr": 11.25,
+      "dividendYield": 1.41,
       "roe": 29.27,
       "roa": 14.24,
       "operatingMargin": 28.89,
@@ -486,7 +486,7 @@
         52080.0,
         52160.0,
         51340.0,
-        52070.0
+        51200.0
       ]
     },
     {
@@ -496,13 +496,13 @@
       "nameJp": "リクルートホールディングス",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 7633.0,
-      "change": -167.0,
-      "changePercent": -2.14,
-      "marketCapB": 10657.3,
-      "per": 25.68,
-      "pbr": 6.88,
-      "dividendYield": 0.33,
+      "price": 7780.0,
+      "change": -20.0,
+      "changePercent": -0.26,
+      "marketCapB": 10862.54,
+      "per": 26.18,
+      "pbr": 7.01,
+      "dividendYield": 0.32,
       "roe": 27.32,
       "roa": 13.64,
       "operatingMargin": 19.31,
@@ -530,7 +530,7 @@
         7700.0,
         7573.0,
         7800.0,
-        7633.0
+        7780.0
       ]
     },
     {
@@ -540,13 +540,13 @@
       "nameJp": "三井住友フィナンシャル",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 5737.0,
-      "change": -115.0,
-      "changePercent": -1.97,
-      "marketCapB": 21900.65,
-      "per": 15.34,
-      "pbr": 1.4,
-      "dividendYield": 2.74,
+      "price": 5675.0,
+      "change": -177.0,
+      "changePercent": -3.02,
+      "marketCapB": 21663.97,
+      "per": 15.18,
+      "pbr": 1.39,
+      "dividendYield": 2.77,
       "roe": 4.93,
       "roa": 0.24,
       "operatingMargin": 39.31,
@@ -574,7 +574,7 @@
         5661.0,
         5789.0,
         5852.0,
-        5737.0
+        5675.0
       ]
     },
     {
@@ -584,10 +584,10 @@
       "nameJp": "信越化学工業",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 7477.0,
-      "change": 60.0,
-      "changePercent": 0.81,
-      "marketCapB": 13883.32,
+      "price": 7476.0,
+      "change": 59.0,
+      "changePercent": 0.8,
+      "marketCapB": 13881.47,
       "per": 29.65,
       "pbr": 3.11,
       "dividendYield": 1.42,
@@ -618,7 +618,7 @@
         7574.0,
         7520.0,
         7417.0,
-        7479.0
+        7476.0
       ]
     },
     {
@@ -628,13 +628,13 @@
       "nameJp": "みずほフィナンシャルグループ",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 7014.0,
-      "change": -36.0,
-      "changePercent": -0.51,
-      "marketCapB": 17103.48,
-      "per": 16.64,
-      "pbr": 1.55,
-      "dividendYield": 2.07,
+      "price": 6984.0,
+      "change": -66.0,
+      "changePercent": -0.94,
+      "marketCapB": 17030.32,
+      "per": 16.57,
+      "pbr": 1.54,
+      "dividendYield": 2.08,
       "roe": 9.65,
       "roa": 0.36,
       "operatingMargin": 36.26,
@@ -662,7 +662,7 @@
         6890.0,
         6970.0,
         7050.0,
-        7014.0
+        6984.0
       ]
     },
     {
@@ -672,13 +672,13 @@
       "nameJp": "任天堂",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 6910.0,
-      "change": -231.0,
-      "changePercent": -3.23,
-      "marketCapB": 7966.05,
-      "per": 18.97,
-      "pbr": 2.7,
-      "dividendYield": 3.17,
+      "price": 6864.0,
+      "change": -277.0,
+      "changePercent": -3.88,
+      "marketCapB": 7913.02,
+      "per": 18.85,
+      "pbr": 2.68,
+      "dividendYield": 3.19,
       "roe": 14.93,
       "roa": 6.25,
       "operatingMargin": 14.67,
@@ -706,7 +706,7 @@
         7020.0,
         7179.0,
         7141.0,
-        6910.0
+        6864.0
       ]
     },
     {
@@ -716,19 +716,19 @@
       "nameJp": "KDDI",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 2592.0,
-      "change": 51.5,
-      "changePercent": 2.03,
-      "marketCapB": 9867.95,
-      "per": 14.13,
-      "pbr": 2.0,
-      "dividendYield": 0.0,
-      "roe": 13.71,
-      "roa": 3.83,
-      "operatingMargin": 18.71,
+      "price": 2645.5,
+      "change": 105.0,
+      "changePercent": 4.13,
+      "marketCapB": 10071.63,
+      "per": 14.42,
+      "pbr": 2.04,
+      "dividendYield": 3.18,
+      "roe": 14.01,
+      "roa": 3.7,
+      "operatingMargin": 14.68,
       "debtToEquity": 0.96,
-      "revenueGrowthYoY": null,
-      "epsGrowthYoY": null,
+      "revenueGrowthYoY": 8.8,
+      "epsGrowthYoY": 42.2,
       "belowBook": false,
       "perf1Y": -0.86,
       "sparkline": [
@@ -750,7 +750,7 @@
         2519.5,
         2529.5,
         2540.5,
-        2592.0
+        2645.5
       ]
     },
     {
@@ -760,13 +760,13 @@
       "nameJp": "本田技研工業",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 1271.5,
-      "change": -0.5,
-      "changePercent": -0.04,
-      "marketCapB": 4949.38,
-      "per": 10.19,
-      "pbr": 0.4,
-      "dividendYield": 5.51,
+      "price": 1320.0,
+      "change": 48.0,
+      "changePercent": 3.77,
+      "marketCapB": 5138.17,
+      "per": 10.58,
+      "pbr": 0.41,
+      "dividendYield": 5.3,
       "roe": 4.3,
       "roa": 1.29,
       "operatingMargin": 2.87,
@@ -794,7 +794,7 @@
         1251.0,
         1255.5,
         1272.0,
-        1271.5
+        1320.0
       ]
     },
     {
@@ -804,13 +804,13 @@
       "nameJp": "伊藤忠商事",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2032.0,
-      "change": -57.0,
-      "changePercent": -2.73,
-      "marketCapB": 14203.5,
-      "per": 15.87,
-      "pbr": 2.16,
-      "dividendYield": 2.17,
+      "price": 2044.0,
+      "change": -45.0,
+      "changePercent": -2.15,
+      "marketCapB": 14287.38,
+      "per": 15.96,
+      "pbr": 2.17,
+      "dividendYield": 2.15,
       "roe": 13.91,
       "roa": 2.75,
       "operatingMargin": 4.57,
@@ -838,7 +838,7 @@
         1983.0,
         2046.0,
         2089.0,
-        2032.0
+        2044.0
       ]
     },
     {
@@ -848,13 +848,13 @@
       "nameJp": "日立製作所",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 4701.0,
-      "change": -49.0,
-      "changePercent": -1.03,
-      "marketCapB": 21153.38,
-      "per": 26.6,
-      "pbr": 3.25,
-      "dividendYield": 1.19,
+      "price": 4671.0,
+      "change": -79.0,
+      "changePercent": -1.66,
+      "marketCapB": 21018.39,
+      "per": 26.43,
+      "pbr": 3.23,
+      "dividendYield": 1.2,
       "roe": 13.3,
       "roa": 5.29,
       "operatingMargin": 12.11,
@@ -882,7 +882,7 @@
         4887.0,
         4868.0,
         4750.0,
-        4701.0
+        4671.0
       ]
     },
     {
@@ -892,13 +892,13 @@
       "nameJp": "武田薬品工業",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 5246.0,
-      "change": 54.0,
-      "changePercent": 1.04,
-      "marketCapB": 8287.82,
-      "per": 43.93,
-      "pbr": 1.08,
-      "dividendYield": 3.89,
+      "price": 5256.0,
+      "change": 64.0,
+      "changePercent": 1.23,
+      "marketCapB": 8303.62,
+      "per": 44.01,
+      "pbr": 1.09,
+      "dividendYield": 3.88,
       "roe": 1.5,
       "roa": 2.47,
       "operatingMargin": 10.85,
@@ -926,7 +926,7 @@
         5162.0,
         5168.0,
         5192.0,
-        5246.0
+        5256.0
       ]
     },
     {
@@ -936,13 +936,13 @@
       "nameJp": "三井物産",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 6110.0,
-      "change": -22.0,
-      "changePercent": -0.36,
-      "marketCapB": 17316.89,
-      "per": 21.02,
+      "price": 6131.0,
+      "change": -1.0,
+      "changePercent": -0.02,
+      "marketCapB": 17376.41,
+      "per": 21.09,
       "pbr": 1.98,
-      "dividendYield": 2.29,
+      "dividendYield": 2.28,
       "roe": 10.3,
       "roa": 1.6,
       "operatingMargin": 3.89,
@@ -970,7 +970,7 @@
         5649.0,
         5868.0,
         6132.0,
-        6110.0
+        6131.0
       ]
     },
     {
@@ -980,12 +980,12 @@
       "nameJp": "ファーストリテイリング",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 71180.0,
-      "change": -1320.0,
-      "changePercent": -1.82,
-      "marketCapB": 21840.85,
-      "per": 45.66,
-      "pbr": 8.3,
+      "price": 71330.0,
+      "change": -1170.0,
+      "changePercent": -1.61,
+      "marketCapB": 21886.88,
+      "per": 45.76,
+      "pbr": 8.31,
       "dividendYield": 0.9,
       "roe": 20.62,
       "roa": 10.03,
@@ -1014,7 +1014,7 @@
         75050.0,
         72220.0,
         72500.0,
-        71180.0
+        71330.0
       ]
     },
     {
@@ -1028,7 +1028,7 @@
       "change": 252.0,
       "changePercent": 10.35,
       "marketCapB": 3080.13,
-      "per": 29.74,
+      "per": 25.6,
       "pbr": 1.75,
       "dividendYield": 1.49,
       "roe": 6.31,
@@ -1068,13 +1068,13 @@
       "nameJp": "キヤノン",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 4178.0,
-      "change": 9.0,
-      "changePercent": 0.22,
-      "marketCapB": 3628.96,
-      "per": 11.38,
-      "pbr": 1.06,
-      "dividendYield": 3.83,
+      "price": 4215.0,
+      "change": 46.0,
+      "changePercent": 1.1,
+      "marketCapB": 3661.1,
+      "per": 11.48,
+      "pbr": 1.07,
+      "dividendYield": 3.8,
       "roe": 9.37,
       "roa": 4.54,
       "operatingMargin": 6.53,
@@ -1102,7 +1102,7 @@
         4092.0,
         4111.0,
         4169.0,
-        4178.0
+        4215.0
       ]
     },
     {
@@ -1112,13 +1112,13 @@
       "nameJp": "アステラス製薬",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 2342.0,
-      "change": -35.0,
-      "changePercent": -1.47,
-      "marketCapB": 4195.67,
-      "per": 14.45,
-      "pbr": 2.29,
-      "dividendYield": 3.42,
+      "price": 2367.5,
+      "change": -9.5,
+      "changePercent": -0.4,
+      "marketCapB": 4241.36,
+      "per": 14.6,
+      "pbr": 2.32,
+      "dividendYield": 3.38,
       "roe": 17.44,
       "roa": 6.88,
       "operatingMargin": 16.51,
@@ -1146,7 +1146,7 @@
         2325.0,
         2328.0,
         2377.0,
-        2342.0
+        2367.5
       ]
     },
     {
@@ -1156,13 +1156,13 @@
       "nameJp": "東日本旅客鉄道",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 3701.0,
-      "change": -63.0,
-      "changePercent": -1.67,
-      "marketCapB": 4177.15,
-      "per": 16.87,
-      "pbr": 1.37,
-      "dividendYield": 2.27,
+      "price": 3680.0,
+      "change": -84.0,
+      "changePercent": -2.23,
+      "marketCapB": 4153.45,
+      "per": 16.77,
+      "pbr": 1.36,
+      "dividendYield": 2.28,
       "roe": 8.39,
       "roa": 2.47,
       "operatingMargin": 7.65,
@@ -1190,7 +1190,7 @@
         3639.0,
         3693.0,
         3764.0,
-        3701.0
+        3680.0
       ]
     },
     {
@@ -1200,13 +1200,13 @@
       "nameJp": "日本製鉄",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 558.7,
-      "change": -0.7,
-      "changePercent": -0.13,
-      "marketCapB": 2919.93,
-      "per": 169.3,
+      "price": 556.2,
+      "change": -3.2,
+      "changePercent": -0.57,
+      "marketCapB": 2906.86,
+      "per": 168.55,
       "pbr": 0.55,
-      "dividendYield": 4.3,
+      "dividendYield": 4.31,
       "roe": -0.41,
       "roa": 2.05,
       "operatingMargin": 4.8,
@@ -1234,7 +1234,7 @@
         561.1,
         559.4,
         559.4,
-        558.7
+        556.2
       ]
     },
     {
@@ -1244,13 +1244,13 @@
       "nameJp": "三菱重工業",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 4131.0,
-      "change": -275.0,
-      "changePercent": -6.24,
-      "marketCapB": 13881.02,
-      "per": 39.4,
-      "pbr": 5.23,
-      "dividendYield": 0.73,
+      "price": 4162.0,
+      "change": -244.0,
+      "changePercent": -5.54,
+      "marketCapB": 13985.19,
+      "per": 39.69,
+      "pbr": 5.27,
+      "dividendYield": 0.72,
       "roe": 12.58,
       "roa": 3.77,
       "operatingMargin": 11.0,
@@ -1278,7 +1278,7 @@
         4384.0,
         4300.0,
         4406.0,
-        4132.0
+        4162.0
       ]
     },
     {
@@ -1288,13 +1288,13 @@
       "nameJp": "日本たばこ産業",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 6245.0,
-      "change": 65.0,
-      "changePercent": 1.05,
-      "marketCapB": 11086.38,
-      "per": 22.21,
-      "pbr": 2.71,
-      "dividendYield": 3.88,
+      "price": 6254.0,
+      "change": 74.0,
+      "changePercent": 1.2,
+      "marketCapB": 11102.36,
+      "per": 22.24,
+      "pbr": 2.72,
+      "dividendYield": 3.87,
       "roe": 13.62,
       "roa": 7.01,
       "operatingMargin": 32.72,
@@ -1322,7 +1322,7 @@
         6164.0,
         6058.0,
         6180.0,
-        6245.0
+        6254.0
       ]
     },
     {
@@ -1332,13 +1332,13 @@
       "nameJp": "オリエンタルランド",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 2136.5,
-      "change": -33.5,
-      "changePercent": -1.54,
-      "marketCapB": 3502.83,
-      "per": 28.7,
-      "pbr": 3.18,
-      "dividendYield": 0.75,
+      "price": 2149.0,
+      "change": -21.0,
+      "changePercent": -0.97,
+      "marketCapB": 3523.32,
+      "per": 28.87,
+      "pbr": 3.2,
+      "dividendYield": 0.74,
       "roe": null,
       "roa": null,
       "operatingMargin": 15.49,
@@ -1366,7 +1366,7 @@
         2202.5,
         2182.5,
         2170.0,
-        2136.5
+        2149.0
       ]
     },
     {
@@ -1376,12 +1376,12 @@
       "nameJp": "イオン",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 1474.0,
-      "change": -48.5,
-      "changePercent": -3.19,
-      "marketCapB": 4078.0,
-      "per": 55.0,
-      "pbr": 3.34,
+      "price": 1477.0,
+      "change": -45.5,
+      "changePercent": -2.99,
+      "marketCapB": 4086.3,
+      "per": 55.11,
+      "pbr": 3.35,
       "dividendYield": 0.95,
       "roe": 5.76,
       "roa": 1.16,
@@ -1410,7 +1410,7 @@
         1532.0,
         1500.0,
         1522.5,
-        1474.0
+        1477.0
       ]
     },
     {
@@ -1420,13 +1420,13 @@
       "nameJp": "デンソー",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 1900.5,
-      "change": -16.5,
-      "changePercent": -0.86,
-      "marketCapB": 5116.03,
-      "per": 11.66,
-      "pbr": 0.93,
-      "dividendYield": 3.89,
+      "price": 1884.0,
+      "change": -33.0,
+      "changePercent": -1.72,
+      "marketCapB": 5071.61,
+      "per": 11.56,
+      "pbr": 0.92,
+      "dividendYield": 3.93,
       "roe": 8.94,
       "roa": 4.1,
       "operatingMargin": 8.64,
@@ -1454,7 +1454,7 @@
         1879.0,
         1878.0,
         1917.0,
-        1900.5
+        1884.0
       ]
     },
     {
@@ -1464,13 +1464,13 @@
       "nameJp": "村田製作所",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 6425.0,
-      "change": 336.0,
-      "changePercent": 5.52,
-      "marketCapB": 11695.37,
-      "per": 50.25,
-      "pbr": 4.3,
-      "dividendYield": 1.09,
+      "price": 6339.0,
+      "change": 250.0,
+      "changePercent": 4.11,
+      "marketCapB": 11538.83,
+      "per": 49.57,
+      "pbr": 4.24,
+      "dividendYield": 1.1,
       "roe": 8.83,
       "roa": 6.67,
       "operatingMargin": 28.06,
@@ -1498,7 +1498,7 @@
         5960.0,
         6078.0,
         6089.0,
-        6425.0
+        6339.0
       ]
     },
     {
@@ -1508,13 +1508,13 @@
       "nameJp": "レーザーテック",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 42260.0,
-      "change": -230.0,
-      "changePercent": -0.54,
-      "marketCapB": 3787.79,
-      "per": 43.81,
-      "pbr": 16.8,
-      "dividendYield": 0.78,
+      "price": 40560.0,
+      "change": -1930.0,
+      "changePercent": -4.54,
+      "marketCapB": 3635.42,
+      "per": 42.05,
+      "pbr": 16.12,
+      "dividendYield": 0.81,
       "roe": 44.08,
       "roa": 24.94,
       "operatingMargin": 36.82,
@@ -1542,7 +1542,7 @@
         44110.0,
         43490.0,
         42490.0,
-        42260.0
+        40560.0
       ]
     },
     {
@@ -1552,12 +1552,12 @@
       "nameJp": "アドバンテスト",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 29145.0,
-      "change": 855.0,
-      "changePercent": 3.02,
-      "marketCapB": 21141.71,
-      "per": 56.91,
-      "pbr": 31.38,
+      "price": 28615.0,
+      "change": 325.0,
+      "changePercent": 1.15,
+      "marketCapB": 20760.81,
+      "per": 55.88,
+      "pbr": 30.82,
       "dividendYield": 0.21,
       "roe": 57.65,
       "roa": 30.79,
@@ -1586,7 +1586,7 @@
         28780.0,
         28705.0,
         28290.0,
-        29145.0
+        28615.0
       ]
     },
     {
@@ -1596,13 +1596,13 @@
       "nameJp": "京セラ",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 2924.0,
-      "change": 42.5,
-      "changePercent": 1.47,
-      "marketCapB": 3852.09,
-      "per": 28.5,
-      "pbr": 1.15,
-      "dividendYield": 1.92,
+      "price": 2935.0,
+      "change": 53.5,
+      "changePercent": 1.86,
+      "marketCapB": 3866.59,
+      "per": 28.61,
+      "pbr": 1.16,
+      "dividendYield": 1.91,
       "roe": 4.38,
       "roa": 1.61,
       "operatingMargin": 8.67,
@@ -1630,7 +1630,7 @@
         2858.0,
         2847.5,
         2881.5,
-        2924.0
+        2935.0
       ]
     },
     {
@@ -1640,12 +1640,12 @@
       "nameJp": "三菱電機",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 6450.0,
-      "change": -18.0,
-      "changePercent": -0.28,
-      "marketCapB": 13199.51,
-      "per": 32.48,
-      "pbr": 2.96,
+      "price": 6436.0,
+      "change": -32.0,
+      "changePercent": -0.49,
+      "marketCapB": 13170.86,
+      "per": 32.41,
+      "pbr": 2.95,
       "dividendYield": 0.93,
       "roe": 9.96,
       "roa": 3.94,
@@ -1674,7 +1674,7 @@
         6447.0,
         6373.0,
         6468.0,
-        6450.0
+        6436.0
       ]
     },
     {
@@ -1684,13 +1684,13 @@
       "nameJp": "SCREENホールディングス",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 12455.0,
-      "change": 1240.0,
-      "changePercent": 11.06,
-      "marketCapB": 2355.09,
-      "per": 39.95,
-      "pbr": 5.31,
-      "dividendYield": 1.85,
+      "price": 12205.0,
+      "change": 990.0,
+      "changePercent": 8.83,
+      "marketCapB": 2307.82,
+      "per": 39.15,
+      "pbr": 5.21,
+      "dividendYield": 1.88,
       "roe": 19.77,
       "roa": 10.36,
       "operatingMargin": 20.51,
@@ -1718,7 +1718,7 @@
         11410.0,
         11430.0,
         11215.0,
-        12455.0
+        12205.0
       ]
     },
     {
@@ -1728,13 +1728,13 @@
       "nameJp": "トレンドマイクロ",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 5433.0,
-      "change": -174.0,
-      "changePercent": -3.1,
-      "marketCapB": 705.03,
-      "per": 20.84,
-      "pbr": 5.44,
-      "dividendYield": 3.41,
+      "price": 5471.0,
+      "change": -136.0,
+      "changePercent": -2.43,
+      "marketCapB": 709.96,
+      "per": 20.98,
+      "pbr": 5.47,
+      "dividendYield": 3.38,
       "roe": 27.22,
       "roa": 8.78,
       "operatingMargin": 18.17,
@@ -1762,7 +1762,7 @@
         5645.0,
         5594.0,
         5607.0,
-        5433.0
+        5471.0
       ]
     },
     {
@@ -1772,13 +1772,13 @@
       "nameJp": "富士通",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 3194.0,
-      "change": -162.0,
-      "changePercent": -4.83,
-      "marketCapB": 5540.88,
-      "per": 18.48,
-      "pbr": 2.81,
-      "dividendYield": 1.72,
+      "price": 3240.0,
+      "change": -116.0,
+      "changePercent": -3.46,
+      "marketCapB": 5620.68,
+      "per": 18.75,
+      "pbr": 2.85,
+      "dividendYield": 1.7,
       "roe": 15.62,
       "roa": 6.31,
       "operatingMargin": 13.06,
@@ -1806,7 +1806,7 @@
         3341.0,
         3307.0,
         3356.0,
-        3194.0
+        3240.0
       ]
     },
     {
@@ -1816,13 +1816,13 @@
       "nameJp": "TDK",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 3111.0,
-      "change": 194.5,
-      "changePercent": 6.67,
-      "marketCapB": 5905.12,
-      "per": 30.22,
-      "pbr": 2.7,
-      "dividendYield": 1.29,
+      "price": 3072.0,
+      "change": 155.5,
+      "changePercent": 5.33,
+      "marketCapB": 5831.09,
+      "per": 29.84,
+      "pbr": 2.67,
+      "dividendYield": 1.3,
       "roe": 9.92,
       "roa": 4.28,
       "operatingMargin": 6.45,
@@ -1850,7 +1850,7 @@
         2936.0,
         2961.0,
         2916.5,
-        3111.0
+        3072.0
       ]
     },
     {
@@ -1860,11 +1860,11 @@
       "nameJp": "日東電工",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 3049.0,
-      "change": -39.0,
-      "changePercent": -1.26,
-      "marketCapB": 2043.7,
-      "per": 15.48,
+      "price": 3045.0,
+      "change": -43.0,
+      "changePercent": -1.39,
+      "marketCapB": 2041.02,
+      "per": 15.46,
       "pbr": 1.79,
       "dividendYield": 2.1,
       "roe": 12.17,
@@ -1894,7 +1894,7 @@
         3101.0,
         3088.0,
         3088.0,
-        3049.0
+        3045.0
       ]
     },
     {
@@ -1904,13 +1904,13 @@
       "nameJp": "ファナック",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 8325.0,
-      "change": 645.0,
-      "changePercent": 8.4,
-      "marketCapB": 7768.54,
-      "per": 46.72,
-      "pbr": 4.17,
-      "dividendYield": 1.29,
+      "price": 8036.0,
+      "change": 356.0,
+      "changePercent": 4.64,
+      "marketCapB": 7498.86,
+      "per": 45.1,
+      "pbr": 4.02,
+      "dividendYield": 1.33,
       "roe": 9.35,
       "roa": 5.7,
       "operatingMargin": 23.9,
@@ -1938,7 +1938,7 @@
         7564.0,
         7750.0,
         7680.0,
-        8324.0
+        8036.0
       ]
     },
     {
@@ -1948,13 +1948,13 @@
       "nameJp": "ルネサスエレクトロニクス",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 3909.0,
-      "change": 334.0,
-      "changePercent": 9.34,
-      "marketCapB": 7092.08,
+      "price": 3854.0,
+      "change": 279.0,
+      "changePercent": 7.8,
+      "marketCapB": 6992.29,
       "per": null,
-      "pbr": 2.79,
-      "dividendYield": 0.72,
+      "pbr": 2.75,
+      "dividendYield": 0.73,
       "roe": -0.39,
       "roa": 4.35,
       "operatingMargin": 24.34,
@@ -1982,7 +1982,7 @@
         3500.0,
         3750.0,
         3575.0,
-        3909.0
+        3854.0
       ]
     },
     {
@@ -1992,13 +1992,13 @@
       "nameJp": "日本電気",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 4005.0,
-      "change": -185.0,
-      "changePercent": -4.42,
-      "marketCapB": 5320.64,
-      "per": 19.75,
-      "pbr": 2.58,
-      "dividendYield": 1.0,
+      "price": 4049.0,
+      "change": -141.0,
+      "changePercent": -3.37,
+      "marketCapB": 5379.09,
+      "per": 19.97,
+      "pbr": 2.61,
+      "dividendYield": 0.99,
       "roe": 12.56,
       "roa": 5.12,
       "operatingMargin": 15.06,
@@ -2026,7 +2026,7 @@
         4101.0,
         4130.0,
         4190.0,
-        4005.0
+        4049.0
       ]
     },
     {
@@ -2036,13 +2036,13 @@
       "nameJp": "MS&ADインシュアランス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 4372.0,
-      "change": -42.0,
-      "changePercent": -0.95,
-      "marketCapB": 6343.51,
-      "per": 9.06,
-      "pbr": 1.4,
-      "dividendYield": 2.74,
+      "price": 4399.0,
+      "change": -15.0,
+      "changePercent": -0.34,
+      "marketCapB": 6382.68,
+      "per": 9.12,
+      "pbr": 1.41,
+      "dividendYield": 2.73,
       "roe": 16.31,
       "roa": 2.3,
       "operatingMargin": 13.98,
@@ -2070,7 +2070,7 @@
         4024.0,
         4285.0,
         4414.0,
-        4372.0
+        4399.0
       ]
     },
     {
@@ -2080,13 +2080,13 @@
       "nameJp": "東京海上ホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 7382.0,
-      "change": 13.0,
-      "changePercent": 0.18,
-      "marketCapB": 14193.7,
-      "per": 13.43,
-      "pbr": 2.64,
-      "dividendYield": 2.86,
+      "price": 7362.0,
+      "change": -7.0,
+      "changePercent": -0.09,
+      "marketCapB": 14155.24,
+      "per": 13.39,
+      "pbr": 2.63,
+      "dividendYield": 2.87,
       "roe": 20.66,
       "roa": 2.94,
       "operatingMargin": 14.39,
@@ -2114,7 +2114,7 @@
         7150.0,
         7140.0,
         7369.0,
-        7382.0
+        7362.0
       ]
     },
     {
@@ -2124,13 +2124,13 @@
       "nameJp": "第一生命ホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 1486.5,
-      "change": -15.5,
-      "changePercent": -1.03,
-      "marketCapB": 5360.34,
-      "per": 13.43,
-      "pbr": 1.32,
-      "dividendYield": 3.5,
+      "price": 1500.0,
+      "change": -2.0,
+      "changePercent": -0.13,
+      "marketCapB": 5409.02,
+      "per": 13.55,
+      "pbr": 1.33,
+      "dividendYield": 3.47,
       "roe": 11.2,
       "roa": 0.66,
       "operatingMargin": -0.18,
@@ -2158,7 +2158,7 @@
         1466.5,
         1479.0,
         1502.0,
-        1486.5
+        1500.0
       ]
     },
     {
@@ -2168,11 +2168,11 @@
       "nameJp": "SOMPOホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 6008.0,
-      "change": -76.0,
-      "changePercent": -1.25,
-      "marketCapB": 5360.54,
-      "per": 13.2,
+      "price": 5998.0,
+      "change": -86.0,
+      "changePercent": -1.41,
+      "marketCapB": 5351.62,
+      "per": 13.18,
       "pbr": 1.08,
       "dividendYield": 2.5,
       "roe": 17.39,
@@ -2202,7 +2202,7 @@
         5821.0,
         5893.0,
         6084.0,
-        6008.0
+        5998.0
       ]
     },
     {
@@ -2212,13 +2212,13 @@
       "nameJp": "オリックス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 5802.0,
-      "change": -216.0,
-      "changePercent": -3.59,
-      "marketCapB": 6374.0,
-      "per": 14.52,
+      "price": 5787.0,
+      "change": -231.0,
+      "changePercent": -3.84,
+      "marketCapB": 6357.52,
+      "per": 14.48,
       "pbr": 1.42,
-      "dividendYield": 2.69,
+      "dividendYield": 2.7,
       "roe": 10.42,
       "roa": 2.4,
       "operatingMargin": 16.69,
@@ -2246,7 +2246,7 @@
         5514.0,
         5986.0,
         6018.0,
-        5802.0
+        5787.0
       ]
     },
     {
@@ -2256,13 +2256,13 @@
       "nameJp": "大和証券グループ",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 1484.0,
-      "change": -11.0,
-      "changePercent": -0.74,
-      "marketCapB": 2056.29,
-      "per": 11.96,
+      "price": 1478.0,
+      "change": -17.0,
+      "changePercent": -1.14,
+      "marketCapB": 2047.97,
+      "per": 11.91,
       "pbr": 1.16,
-      "dividendYield": 4.72,
+      "dividendYield": 4.74,
       "roe": 9.59,
       "roa": 0.51,
       "operatingMargin": 18.48,
@@ -2290,7 +2290,7 @@
         1464.0,
         1468.5,
         1495.0,
-        1484.0
+        1478.0
       ]
     },
     {
@@ -2300,20 +2300,20 @@
       "nameJp": "野村ホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 1272.0,
-      "change": -1.5,
-      "changePercent": -0.12,
-      "marketCapB": 3672.3,
-      "per": 10.69,
-      "pbr": 1.0,
-      "dividendYield": 3.77,
+      "price": 1265.0,
+      "change": -8.5,
+      "changePercent": -0.67,
+      "marketCapB": 3652.09,
+      "per": 10.64,
+      "pbr": 0.99,
+      "dividendYield": 3.79,
       "roe": 10.07,
       "roa": 0.63,
       "operatingMargin": 18.66,
       "debtToEquity": 9.17,
       "revenueGrowthYoY": 27.5,
       "epsGrowthYoY": 4.5,
-      "belowBook": false,
+      "belowBook": true,
       "perf1Y": 47.74,
       "sparkline": [
         1318.0,
@@ -2334,7 +2334,7 @@
         1228.5,
         1235.0,
         1273.5,
-        1272.0
+        1265.0
       ]
     },
     {
@@ -2344,11 +2344,11 @@
       "nameJp": "日本取引所グループ",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 1807.0,
-      "change": -41.5,
-      "changePercent": -2.25,
-      "marketCapB": 1857.43,
-      "per": 23.5,
+      "price": 1805.0,
+      "change": -43.5,
+      "changePercent": -2.35,
+      "marketCapB": 1855.38,
+      "per": 23.47,
       "pbr": 5.38,
       "dividendYield": 3.38,
       "roe": 22.97,
@@ -2378,7 +2378,7 @@
         1847.5,
         1829.0,
         1848.5,
-        1807.0
+        1805.0
       ]
     },
     {
@@ -2388,11 +2388,11 @@
       "nameJp": "ゆうちょ銀行",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 2838.0,
-      "change": -11.0,
-      "changePercent": -0.39,
-      "marketCapB": 10108.8,
-      "per": 23.6,
+      "price": 2835.5,
+      "change": -13.5,
+      "changePercent": -0.47,
+      "marketCapB": 10099.9,
+      "per": 23.58,
       "pbr": 1.08,
       "dividendYield": 2.47,
       "roe": 5.31,
@@ -2422,7 +2422,7 @@
         2796.5,
         2841.5,
         2849.0,
-        2838.0
+        2835.5
       ]
     },
     {
@@ -2432,13 +2432,13 @@
       "nameJp": "SBIホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 3040.0,
-      "change": -51.0,
-      "changePercent": -1.65,
-      "marketCapB": 1964.94,
-      "per": 4.87,
-      "pbr": 1.09,
-      "dividendYield": 3.12,
+      "price": 3068.0,
+      "change": -23.0,
+      "changePercent": -0.74,
+      "marketCapB": 1983.04,
+      "per": 4.91,
+      "pbr": 1.1,
+      "dividendYield": 3.1,
       "roe": 20.61,
       "roa": 1.45,
       "operatingMargin": 28.93,
@@ -2466,7 +2466,7 @@
         3055.0,
         3056.0,
         3091.0,
-        3040.0
+        3068.0
       ]
     },
     {
@@ -2483,12 +2483,12 @@
       "per": 17.99,
       "pbr": 1.59,
       "dividendYield": 1.81,
-      "roe": 9.39,
-      "roa": 0.35,
-      "operatingMargin": 39.37,
+      "roe": 9.16,
+      "roa": 0.34,
+      "operatingMargin": 24.25,
       "debtToEquity": null,
-      "revenueGrowthYoY": 24.3,
-      "epsGrowthYoY": 46.5,
+      "revenueGrowthYoY": 15.1,
+      "epsGrowthYoY": -15.6,
       "belowBook": false,
       "perf1Y": 67.53,
       "sparkline": [
@@ -2520,10 +2520,10 @@
       "nameJp": "東海旅客鉄道",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 3616.0,
-      "change": -10.0,
-      "changePercent": -0.28,
-      "marketCapB": 3454.2,
+      "price": 3618.0,
+      "change": -8.0,
+      "changePercent": -0.22,
+      "marketCapB": 3456.11,
       "per": 6.34,
       "pbr": 0.68,
       "dividendYield": 0.88,
@@ -2554,7 +2554,7 @@
         3580.0,
         3582.0,
         3626.0,
-        3616.0
+        3618.0
       ]
     },
     {
@@ -2564,13 +2564,13 @@
       "nameJp": "西日本旅客鉄道",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2713.5,
-      "change": -18.5,
-      "changePercent": -0.68,
-      "marketCapB": 1234.87,
-      "per": 9.77,
+      "price": 2710.0,
+      "change": -22.0,
+      "changePercent": -0.81,
+      "marketCapB": 1233.28,
+      "per": 9.75,
       "pbr": 1.02,
-      "dividendYield": 3.59,
+      "dividendYield": 3.6,
       "roe": 10.17,
       "roa": 3.2,
       "operatingMargin": 0.19,
@@ -2598,7 +2598,7 @@
         2786.5,
         2714.0,
         2732.0,
-        2713.5
+        2710.0
       ]
     },
     {
@@ -2608,13 +2608,13 @@
       "nameJp": "日本郵船",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 5417.0,
-      "change": 59.0,
-      "changePercent": 1.1,
-      "marketCapB": 2186.07,
-      "per": 10.73,
+      "price": 5446.0,
+      "change": 88.0,
+      "changePercent": 1.64,
+      "marketCapB": 2197.77,
+      "per": 10.79,
       "pbr": 0.72,
-      "dividendYield": 3.69,
+      "dividendYield": 3.67,
       "roe": 7.06,
       "roa": 1.82,
       "operatingMargin": 6.29,
@@ -2642,7 +2642,7 @@
         5471.0,
         5301.0,
         5358.0,
-        5417.0
+        5446.0
       ]
     },
     {
@@ -2652,13 +2652,13 @@
       "nameJp": "商船三井",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 5831.0,
-      "change": -42.0,
-      "changePercent": -0.72,
-      "marketCapB": 2002.78,
-      "per": 9.42,
-      "pbr": 0.7,
-      "dividendYield": 3.52,
+      "price": 5901.0,
+      "change": 28.0,
+      "changePercent": 0.48,
+      "marketCapB": 2026.82,
+      "per": 9.53,
+      "pbr": 0.71,
+      "dividendYield": 3.47,
       "roe": 7.57,
       "roa": 1.41,
       "operatingMargin": 5.05,
@@ -2686,7 +2686,7 @@
         5802.0,
         5846.0,
         5873.0,
-        5831.0
+        5901.0
       ]
     },
     {
@@ -2696,13 +2696,13 @@
       "nameJp": "川崎汽船",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2515.0,
-      "change": 5.0,
-      "changePercent": 0.2,
-      "marketCapB": 1589.72,
-      "per": 11.96,
-      "pbr": 0.88,
-      "dividendYield": 4.77,
+      "price": 2543.5,
+      "change": 33.5,
+      "changePercent": 1.33,
+      "marketCapB": 1607.73,
+      "per": 12.09,
+      "pbr": 0.89,
+      "dividendYield": 4.72,
       "roe": 7.75,
       "roa": 2.31,
       "operatingMargin": 6.16,
@@ -2730,7 +2730,7 @@
         2480.0,
         2522.5,
         2510.0,
-        2515.0
+        2543.5
       ]
     },
     {
@@ -2740,13 +2740,13 @@
       "nameJp": "小松製作所",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 6573.0,
-      "change": -65.0,
-      "changePercent": -0.98,
-      "marketCapB": 5922.92,
-      "per": 15.87,
-      "pbr": 1.69,
-      "dividendYield": 2.89,
+      "price": 6560.0,
+      "change": -78.0,
+      "changePercent": -1.18,
+      "marketCapB": 5911.2,
+      "per": 15.84,
+      "pbr": 1.68,
+      "dividendYield": 2.9,
       "roe": 11.39,
       "roa": 5.81,
       "operatingMargin": 12.18,
@@ -2774,7 +2774,7 @@
         6615.0,
         6645.0,
         6638.0,
-        6573.0
+        6560.0
       ]
     },
     {
@@ -2784,13 +2784,13 @@
       "nameJp": "クボタ",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2906.0,
-      "change": 11.5,
-      "changePercent": 0.4,
-      "marketCapB": 3305.12,
-      "per": 17.77,
-      "pbr": 1.23,
-      "dividendYield": 1.79,
+      "price": 2870.0,
+      "change": -24.5,
+      "changePercent": -0.85,
+      "marketCapB": 3264.18,
+      "per": 17.55,
+      "pbr": 1.21,
+      "dividendYield": 1.81,
       "roe": 8.87,
       "roa": 3.16,
       "operatingMargin": 12.1,
@@ -2818,7 +2818,7 @@
         2839.0,
         2870.0,
         2894.5,
-        2906.0
+        2870.0
       ]
     },
     {
@@ -2828,19 +2828,19 @@
       "nameJp": "ダイキン工業",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 25320.0,
-      "change": -460.0,
-      "changePercent": -1.78,
-      "marketCapB": 7414.75,
-      "per": 26.98,
-      "pbr": 2.35,
-      "dividendYield": 1.42,
-      "roe": 9.29,
-      "roa": 4.45,
-      "operatingMargin": 5.16,
-      "debtToEquity": 0.29,
-      "revenueGrowthYoY": 7.9,
-      "epsGrowthYoY": -1.8,
+      "price": 25025.0,
+      "change": -755.0,
+      "changePercent": -2.93,
+      "marketCapB": 7328.36,
+      "per": 26.67,
+      "pbr": 2.32,
+      "dividendYield": 1.44,
+      "roe": 9.26,
+      "roa": 4.74,
+      "operatingMargin": 7.94,
+      "debtToEquity": 0.33,
+      "revenueGrowthYoY": 16.4,
+      "epsGrowthYoY": 2.3,
       "belowBook": false,
       "perf1Y": 60.07,
       "sparkline": [
@@ -2862,7 +2862,7 @@
         24290.0,
         24110.0,
         25780.0,
-        25320.0
+        25025.0
       ]
     },
     {
@@ -2872,13 +2872,13 @@
       "nameJp": "川崎重工業",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 3183.0,
-      "change": -234.0,
-      "changePercent": -6.85,
-      "marketCapB": 2660.5,
-      "per": 24.58,
-      "pbr": 3.03,
-      "dividendYield": 1.26,
+      "price": 3162.0,
+      "change": -255.0,
+      "changePercent": -7.46,
+      "marketCapB": 2642.95,
+      "per": 24.42,
+      "pbr": 3.01,
+      "dividendYield": 1.27,
       "roe": null,
       "roa": null,
       "operatingMargin": 7.44,
@@ -2906,7 +2906,7 @@
         3170.0,
         3391.0,
         3417.0,
-        3183.0
+        3162.0
       ]
     },
     {
@@ -2916,13 +2916,13 @@
       "nameJp": "IHI",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2658.0,
-      "change": -174.5,
-      "changePercent": -6.16,
-      "marketCapB": 2817.91,
-      "per": 17.51,
-      "pbr": 5.0,
-      "dividendYield": 0.87,
+      "price": 2679.5,
+      "change": -153.0,
+      "changePercent": -5.4,
+      "marketCapB": 2840.7,
+      "per": 17.65,
+      "pbr": 5.04,
+      "dividendYield": 0.86,
       "roe": 27.76,
       "roa": 4.43,
       "operatingMargin": 12.26,
@@ -2950,7 +2950,7 @@
         2870.0,
         2806.0,
         2832.5,
-        2658.0
+        2679.5
       ]
     },
     {
@@ -2960,13 +2960,13 @@
       "nameJp": "SMC",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 84700.0,
-      "change": 450.0,
-      "changePercent": 0.53,
-      "marketCapB": 5347.88,
-      "per": 34.31,
-      "pbr": 2.62,
-      "dividendYield": 1.18,
+      "price": 79470.0,
+      "change": -4780.0,
+      "changePercent": -5.67,
+      "marketCapB": 5017.66,
+      "per": 32.19,
+      "pbr": 2.46,
+      "dividendYield": 1.26,
       "roe": 7.9,
       "roa": 5.28,
       "operatingMargin": 22.31,
@@ -2994,7 +2994,7 @@
         82320.0,
         84560.0,
         84250.0,
-        84700.0
+        79470.0
       ]
     },
     {
@@ -3004,13 +3004,13 @@
       "nameJp": "日立建機",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 5322.0,
-      "change": 32.0,
-      "changePercent": 0.6,
-      "marketCapB": 1132.18,
-      "per": 15.48,
-      "pbr": 1.26,
-      "dividendYield": 3.57,
+      "price": 5301.0,
+      "change": 11.0,
+      "changePercent": 0.21,
+      "marketCapB": 1127.71,
+      "per": 15.42,
+      "pbr": 1.25,
+      "dividendYield": 3.58,
       "roe": 9.12,
       "roa": 4.73,
       "operatingMargin": 9.39,
@@ -3038,7 +3038,7 @@
         5674.0,
         5443.0,
         5290.0,
-        5322.0
+        5301.0
       ]
     },
     {
@@ -3048,13 +3048,13 @@
       "nameJp": "丸紅",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 5868.0,
-      "change": 128.0,
-      "changePercent": 2.23,
-      "marketCapB": 9611.43,
-      "per": 17.78,
-      "pbr": 2.2,
-      "dividendYield": 1.96,
+      "price": 5898.0,
+      "change": 158.0,
+      "changePercent": 2.75,
+      "marketCapB": 9660.57,
+      "per": 17.87,
+      "pbr": 2.21,
+      "dividendYield": 1.95,
       "roe": 13.5,
       "roa": 1.63,
       "operatingMargin": 3.16,
@@ -3082,7 +3082,7 @@
         5418.0,
         5520.0,
         5740.0,
-        5868.0
+        5898.0
       ]
     },
     {
@@ -3092,12 +3092,12 @@
       "nameJp": "住友商事",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 7557.0,
-      "change": -142.0,
-      "changePercent": -1.84,
-      "marketCapB": 9032.68,
-      "per": 15.15,
-      "pbr": 1.95,
+      "price": 7540.0,
+      "change": -159.0,
+      "changePercent": -2.07,
+      "marketCapB": 9011.17,
+      "per": 15.11,
+      "pbr": 1.94,
       "dividendYield": 0.53,
       "roe": 13.52,
       "roa": 1.97,
@@ -3126,7 +3126,7 @@
         7206.0,
         7428.0,
         7699.0,
-        7557.0
+        7540.0
       ]
     },
     {
@@ -3136,13 +3136,13 @@
       "nameJp": "豊田通商",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 7411.0,
-      "change": 14.0,
-      "changePercent": 0.19,
-      "marketCapB": 7824.36,
-      "per": 21.14,
-      "pbr": 2.48,
-      "dividendYield": 1.7,
+      "price": 7370.0,
+      "change": -27.0,
+      "changePercent": -0.37,
+      "marketCapB": 7781.08,
+      "per": 21.02,
+      "pbr": 2.46,
+      "dividendYield": 1.71,
       "roe": 13.2,
       "roa": 4.42,
       "operatingMargin": 4.65,
@@ -3170,7 +3170,7 @@
         6991.0,
         7130.0,
         7397.0,
-        7411.0
+        7370.0
       ]
     },
     {
@@ -3180,19 +3180,19 @@
       "nameJp": "東急",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 1659.5,
-      "change": 14.0,
-      "changePercent": 0.85,
-      "marketCapB": 945.83,
-      "per": 19.58,
-      "pbr": 1.08,
-      "dividendYield": 1.93,
-      "roe": null,
-      "roa": null,
-      "operatingMargin": 11.06,
-      "debtToEquity": 1.52,
-      "revenueGrowthYoY": 2.0,
-      "epsGrowthYoY": -2.9,
+      "price": 1669.5,
+      "change": 24.0,
+      "changePercent": 1.46,
+      "marketCapB": 951.53,
+      "per": 19.7,
+      "pbr": 1.09,
+      "dividendYield": 1.92,
+      "roe": 9.73,
+      "roa": 2.3,
+      "operatingMargin": 4.97,
+      "debtToEquity": 1.45,
+      "revenueGrowthYoY": 12.0,
+      "epsGrowthYoY": 16.6,
       "belowBook": false,
       "perf1Y": -6.45,
       "sparkline": [
@@ -3214,7 +3214,7 @@
         1619.0,
         1611.5,
         1645.5,
-        1659.5
+        1669.5
       ]
     },
     {
@@ -3224,10 +3224,10 @@
       "nameJp": "ANAホールディングス",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2766.5,
-      "change": 1.0,
-      "changePercent": 0.04,
-      "marketCapB": 1254.77,
+      "price": 2769.0,
+      "change": 3.5,
+      "changePercent": 0.13,
+      "marketCapB": 1255.9,
       "per": 8.62,
       "pbr": 0.84,
       "dividendYield": 2.17,
@@ -3258,7 +3258,7 @@
         2828.5,
         2789.5,
         2765.5,
-        2767.0
+        2769.0
       ]
     },
     {
@@ -3268,10 +3268,10 @@
       "nameJp": "日本航空",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 2541.5,
-      "change": 2.0,
-      "changePercent": 0.08,
-      "marketCapB": 1092.19,
+      "price": 2542.5,
+      "change": 3.0,
+      "changePercent": 0.12,
+      "marketCapB": 1092.84,
       "per": 8.28,
       "pbr": 0.85,
       "dividendYield": 3.78,
@@ -3302,7 +3302,7 @@
         2559.5,
         2544.0,
         2539.5,
-        2541.0
+        2542.5
       ]
     },
     {
@@ -3312,13 +3312,13 @@
       "nameJp": "マツダ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 1073.5,
-      "change": -6.5,
-      "changePercent": -0.6,
-      "marketCapB": 677.14,
-      "per": 19.3,
+      "price": 1068.5,
+      "change": -11.5,
+      "changePercent": -1.06,
+      "marketCapB": 673.99,
+      "per": 19.21,
       "pbr": 0.37,
-      "dividendYield": 5.12,
+      "dividendYield": 5.15,
       "roe": 1.92,
       "roa": 0.75,
       "operatingMargin": 5.27,
@@ -3346,7 +3346,7 @@
         994.0,
         1034.5,
         1080.0,
-        1073.5
+        1068.5
       ]
     },
     {
@@ -3356,13 +3356,13 @@
       "nameJp": "スズキ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 1821.5,
-      "change": 13.5,
-      "changePercent": 0.75,
-      "marketCapB": 3514.17,
-      "per": 8.98,
-      "pbr": 1.06,
-      "dividendYield": 2.53,
+      "price": 1920.0,
+      "change": 112.0,
+      "changePercent": 6.19,
+      "marketCapB": 3704.21,
+      "per": 9.46,
+      "pbr": 1.12,
+      "dividendYield": 2.4,
       "roe": 13.45,
       "roa": 5.89,
       "operatingMargin": 9.24,
@@ -3390,7 +3390,7 @@
         1783.5,
         1781.0,
         1808.0,
-        1821.5
+        1920.0
       ]
     },
     {
@@ -3400,13 +3400,13 @@
       "nameJp": "SUBARU",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 2370.5,
-      "change": 24.5,
-      "changePercent": 1.04,
-      "marketCapB": 1695.92,
-      "per": 6.53,
-      "pbr": 0.62,
-      "dividendYield": 4.85,
+      "price": 2402.0,
+      "change": 56.0,
+      "changePercent": 2.39,
+      "marketCapB": 1718.46,
+      "per": 6.62,
+      "pbr": 0.63,
+      "dividendYield": 4.79,
       "roe": 3.76,
       "roa": 1.24,
       "operatingMargin": -3.21,
@@ -3434,7 +3434,7 @@
         2319.5,
         2288.0,
         2346.0,
-        2370.5
+        2402.0
       ]
     },
     {
@@ -3444,10 +3444,10 @@
       "nameJp": "日産自動車",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 367.5,
-      "change": 3.1,
-      "changePercent": 0.85,
-      "marketCapB": 1284.92,
+      "price": 365.7,
+      "change": 1.3,
+      "changePercent": 0.36,
+      "marketCapB": 1278.63,
       "per": null,
       "pbr": 0.26,
       "dividendYield": 0.0,
@@ -3478,7 +3478,7 @@
         350.2,
         349.5,
         364.4,
-        367.5
+        365.7
       ]
     },
     {
@@ -3532,12 +3532,12 @@
       "nameJp": "楽天グループ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 756.8,
-      "change": -11.5,
-      "changePercent": -1.5,
-      "marketCapB": 1642.23,
+      "price": 760.5,
+      "change": -7.8,
+      "changePercent": -1.02,
+      "marketCapB": 1650.26,
       "per": null,
-      "pbr": 1.65,
+      "pbr": 1.66,
       "dividendYield": 0.0,
       "roe": -9.5,
       "roa": 0.21,
@@ -3566,7 +3566,7 @@
         761.8,
         756.8,
         768.3,
-        756.8
+        760.5
       ]
     },
     {
@@ -3576,13 +3576,13 @@
       "nameJp": "セブン&アイ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 1856.0,
-      "change": -17.5,
-      "changePercent": -0.93,
-      "marketCapB": 4290.48,
-      "per": 15.63,
-      "pbr": 1.19,
-      "dividendYield": 3.23,
+      "price": 1850.5,
+      "change": -23.0,
+      "changePercent": -1.23,
+      "marketCapB": 4277.76,
+      "per": 15.58,
+      "pbr": 1.18,
+      "dividendYield": 3.24,
       "roe": 7.61,
       "roa": 2.58,
       "operatingMargin": 4.83,
@@ -3610,7 +3610,7 @@
         1901.0,
         1879.0,
         1873.5,
-        1856.0
+        1850.5
       ]
     },
     {
@@ -3620,13 +3620,13 @@
       "nameJp": "ニトリホールディングス",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 2279.5,
-      "change": -23.5,
-      "changePercent": -1.02,
-      "marketCapB": 1288.05,
-      "per": 16.33,
-      "pbr": 1.32,
-      "dividendYield": 1.35,
+      "price": 2265.0,
+      "change": -38.0,
+      "changePercent": -1.65,
+      "marketCapB": 1279.86,
+      "per": 16.23,
+      "pbr": 1.31,
+      "dividendYield": 1.36,
       "roe": 8.4,
       "roa": 5.31,
       "operatingMargin": 17.42,
@@ -3654,7 +3654,7 @@
         2362.0,
         2336.0,
         2303.0,
-        2279.5
+        2265.0
       ]
     },
     {
@@ -3664,13 +3664,13 @@
       "nameJp": "オリンパス",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 1749.5,
-      "change": -96.5,
-      "changePercent": -5.23,
-      "marketCapB": 1925.83,
-      "per": 28.54,
-      "pbr": 2.37,
-      "dividendYield": 1.71,
+      "price": 1809.0,
+      "change": -37.0,
+      "changePercent": -2.0,
+      "marketCapB": 1991.89,
+      "per": 29.52,
+      "pbr": 2.45,
+      "dividendYield": 1.66,
       "roe": 8.72,
       "roa": 5.87,
       "operatingMargin": 16.86,
@@ -3698,7 +3698,7 @@
         1551.0,
         1540.5,
         1846.0,
-        1749.5
+        1809.0
       ]
     },
     {
@@ -3708,19 +3708,19 @@
       "nameJp": "リコー",
       "sector": "Technology",
       "segment": "Prime",
-      "price": 1422.5,
-      "change": -11.0,
-      "changePercent": -0.77,
-      "marketCapB": 809.73,
-      "per": 14.57,
+      "price": 1414.0,
+      "change": -19.5,
+      "changePercent": -1.36,
+      "marketCapB": 804.89,
+      "per": 14.48,
       "pbr": 0.71,
-      "dividendYield": 3.09,
-      "roe": 5.92,
-      "roa": 3.15,
-      "operatingMargin": 5.24,
-      "debtToEquity": 0.46,
-      "revenueGrowthYoY": null,
-      "epsGrowthYoY": null,
+      "dividendYield": 3.11,
+      "roe": 5.09,
+      "roa": 2.49,
+      "operatingMargin": 3.82,
+      "debtToEquity": 0.44,
+      "revenueGrowthYoY": 4.8,
+      "epsGrowthYoY": -50.6,
       "belowBook": true,
       "perf1Y": -7.99,
       "sparkline": [
@@ -3742,7 +3742,7 @@
         1359.5,
         1376.0,
         1433.5,
-        1422.5
+        1414.0
       ]
     },
     {
@@ -3752,11 +3752,11 @@
       "nameJp": "キリンホールディングス",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 2526.5,
-      "change": 12.0,
-      "changePercent": 0.48,
-      "marketCapB": 2033.42,
-      "per": 13.88,
+      "price": 2524.5,
+      "change": 10.0,
+      "changePercent": 0.4,
+      "marketCapB": 2031.81,
+      "per": 13.87,
       "pbr": 1.59,
       "dividendYield": 3.01,
       "roe": 11.39,
@@ -3786,7 +3786,7 @@
         2474.0,
         2475.0,
         2514.5,
-        2526.5
+        2524.5
       ]
     },
     {
@@ -3796,11 +3796,11 @@
       "nameJp": "アサヒグループホールディングス",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 1524.5,
-      "change": -11.0,
-      "changePercent": -0.72,
-      "marketCapB": 2230.14,
-      "per": 13.2,
+      "price": 1527.0,
+      "change": -8.5,
+      "changePercent": -0.55,
+      "marketCapB": 2233.8,
+      "per": 13.22,
       "pbr": 0.82,
       "dividendYield": 3.41,
       "roe": 5.8,
@@ -3830,7 +3830,7 @@
         1520.0,
         1519.0,
         1535.5,
-        1524.5
+        1527.0
       ]
     },
     {
@@ -3840,13 +3840,13 @@
       "nameJp": "味の素",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 5702.0,
-      "change": 219.0,
-      "changePercent": 3.99,
-      "marketCapB": 5465.05,
-      "per": 41.27,
-      "pbr": 7.09,
-      "dividendYield": 0.88,
+      "price": 5542.0,
+      "change": 59.0,
+      "changePercent": 1.08,
+      "marketCapB": 5311.7,
+      "per": 40.11,
+      "pbr": 6.89,
+      "dividendYield": 0.9,
       "roe": 17.5,
       "roa": 6.77,
       "operatingMargin": 14.09,
@@ -3874,7 +3874,7 @@
         5499.0,
         5439.0,
         5483.0,
-        5702.0
+        5542.0
       ]
     },
     {
@@ -3884,13 +3884,13 @@
       "nameJp": "キッコーマン",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 1390.5,
-      "change": -11.5,
-      "changePercent": -0.82,
-      "marketCapB": 1288.35,
-      "per": 21.06,
-      "pbr": 2.3,
-      "dividendYield": 1.8,
+      "price": 1407.0,
+      "change": 5.0,
+      "changePercent": 0.36,
+      "marketCapB": 1303.64,
+      "per": 21.31,
+      "pbr": 2.32,
+      "dividendYield": 1.78,
       "roe": 11.46,
       "roa": 6.63,
       "operatingMargin": 7.88,
@@ -3918,7 +3918,7 @@
         1374.0,
         1383.0,
         1402.0,
-        1390.5
+        1407.0
       ]
     },
     {
@@ -3928,11 +3928,11 @@
       "nameJp": "日清食品ホールディングス",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 2636.0,
-      "change": 27.0,
-      "changePercent": 1.03,
-      "marketCapB": 756.69,
-      "per": 16.87,
+      "price": 2632.0,
+      "change": 23.0,
+      "changePercent": 0.88,
+      "marketCapB": 755.54,
+      "per": 16.84,
       "pbr": 1.52,
       "dividendYield": 2.66,
       "roe": 10.3,
@@ -3962,7 +3962,7 @@
         2755.5,
         2720.0,
         2609.0,
-        2636.0
+        2632.0
       ]
     },
     {
@@ -3972,12 +3972,12 @@
       "nameJp": "花王",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 5867.0,
-      "change": 42.0,
-      "changePercent": 0.72,
-      "marketCapB": 2653.77,
-      "per": 25.31,
-      "pbr": 2.49,
+      "price": 5893.0,
+      "change": 68.0,
+      "changePercent": 1.17,
+      "marketCapB": 2665.53,
+      "per": 25.42,
+      "pbr": 2.5,
       "dividendYield": 1.99,
       "roe": 11.0,
       "roa": 5.61,
@@ -4006,7 +4006,7 @@
         5871.0,
         5809.0,
         5825.0,
-        5867.0
+        5893.0
       ]
     },
     {
@@ -4016,19 +4016,19 @@
       "nameJp": "資生堂",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 3123.0,
-      "change": 22.0,
-      "changePercent": 0.71,
-      "marketCapB": 1247.81,
+      "price": 3063.0,
+      "change": -38.0,
+      "changePercent": -1.23,
+      "marketCapB": 1223.84,
       "per": null,
-      "pbr": 2.08,
-      "dividendYield": 1.92,
-      "roe": -6.23,
-      "roa": 0.92,
-      "operatingMargin": 2.07,
-      "debtToEquity": 0.52,
-      "revenueGrowthYoY": null,
-      "epsGrowthYoY": null,
+      "pbr": 2.04,
+      "dividendYield": 1.96,
+      "roe": -5.58,
+      "roa": 1.19,
+      "operatingMargin": 5.32,
+      "debtToEquity": 0.55,
+      "revenueGrowthYoY": 1.6,
+      "epsGrowthYoY": 126.9,
       "belowBook": false,
       "perf1Y": 28.57,
       "sparkline": [
@@ -4050,7 +4050,7 @@
         3348.0,
         3304.0,
         3101.0,
-        3123.0
+        3063.0
       ]
     },
     {
@@ -4060,13 +4060,13 @@
       "nameJp": "明治ホールディングス",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 3535.0,
-      "change": -76.0,
-      "changePercent": -2.1,
-      "marketCapB": 958.35,
-      "per": 21.1,
-      "pbr": 1.25,
-      "dividendYield": 2.97,
+      "price": 3589.0,
+      "change": -22.0,
+      "changePercent": -0.61,
+      "marketCapB": 972.99,
+      "per": 21.42,
+      "pbr": 1.27,
+      "dividendYield": 2.93,
       "roe": 6.29,
       "roa": 4.38,
       "operatingMargin": 9.47,
@@ -4094,7 +4094,7 @@
         3608.0,
         3595.0,
         3611.0,
-        3535.0
+        3589.0
       ]
     },
     {
@@ -4104,11 +4104,11 @@
       "nameJp": "ユニ・チャーム",
       "sector": "ConsumerStaples",
       "segment": "Prime",
-      "price": 925.1,
-      "change": -9.9,
-      "changePercent": -1.06,
-      "marketCapB": 1591.94,
-      "per": 26.81,
+      "price": 924.0,
+      "change": -11.0,
+      "changePercent": -1.18,
+      "marketCapB": 1590.04,
+      "per": 26.78,
       "pbr": 2.03,
       "dividendYield": 2.38,
       "roe": 7.7,
@@ -4138,7 +4138,7 @@
         915.2,
         928.9,
         935.0,
-        925.1
+        924.0
       ]
     },
     {
@@ -4148,13 +4148,13 @@
       "nameJp": "第一三共",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 2568.0,
-      "change": -157.5,
-      "changePercent": -5.78,
-      "marketCapB": 4672.87,
-      "per": 18.3,
-      "pbr": 2.78,
-      "dividendYield": 3.89,
+      "price": 2582.0,
+      "change": -143.5,
+      "changePercent": -5.27,
+      "marketCapB": 4698.34,
+      "per": 18.4,
+      "pbr": 2.79,
+      "dividendYield": 3.87,
       "roe": 15.81,
       "roa": 3.84,
       "operatingMargin": -0.8,
@@ -4182,7 +4182,7 @@
         2649.0,
         2738.0,
         2725.5,
-        2568.0
+        2582.0
       ]
     },
     {
@@ -4192,13 +4192,13 @@
       "nameJp": "中外製薬",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 7926.0,
-      "change": 121.0,
-      "changePercent": 1.55,
-      "marketCapB": 13044.32,
-      "per": 30.04,
-      "pbr": 6.84,
-      "dividendYield": 1.67,
+      "price": 8096.0,
+      "change": 291.0,
+      "changePercent": 3.73,
+      "marketCapB": 13324.1,
+      "per": 30.69,
+      "pbr": 6.98,
+      "dividendYield": 1.63,
       "roe": 23.71,
       "roa": 17.38,
       "operatingMargin": 49.35,
@@ -4226,7 +4226,7 @@
         7953.0,
         7794.0,
         7805.0,
-        7926.0
+        8096.0
       ]
     },
     {
@@ -4236,13 +4236,13 @@
       "nameJp": "エーザイ",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 4672.0,
-      "change": -45.0,
-      "changePercent": -0.95,
-      "marketCapB": 1317.0,
-      "per": 26.7,
-      "pbr": 1.48,
-      "dividendYield": 3.42,
+      "price": 4721.0,
+      "change": 4.0,
+      "changePercent": 0.08,
+      "marketCapB": 1330.81,
+      "per": 26.98,
+      "pbr": 1.5,
+      "dividendYield": 3.39,
       "roe": 4.89,
       "roa": 2.12,
       "operatingMargin": 9.11,
@@ -4270,7 +4270,7 @@
         4646.0,
         4649.0,
         4717.0,
-        4672.0
+        4721.0
       ]
     },
     {
@@ -4280,13 +4280,13 @@
       "nameJp": "大塚ホールディングス",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 11210.0,
-      "change": 65.0,
-      "changePercent": 0.58,
-      "marketCapB": 5911.24,
-      "per": 16.35,
-      "pbr": 1.9,
-      "dividendYield": 1.25,
+      "price": 11405.0,
+      "change": 260.0,
+      "changePercent": 2.33,
+      "marketCapB": 6014.07,
+      "per": 16.64,
+      "pbr": 1.93,
+      "dividendYield": 1.23,
       "roe": 12.94,
       "roa": 7.51,
       "operatingMargin": 18.75,
@@ -4314,7 +4314,7 @@
         10990.0,
         10990.0,
         11145.0,
-        11210.0
+        11405.0
       ]
     },
     {
@@ -4324,19 +4324,19 @@
       "nameJp": "塩野義製薬",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 3036.0,
-      "change": 58.0,
-      "changePercent": 1.95,
-      "marketCapB": 2583.56,
-      "per": 15.13,
-      "pbr": 1.71,
-      "dividendYield": 2.5,
+      "price": 3076.0,
+      "change": 98.0,
+      "changePercent": 3.29,
+      "marketCapB": 2617.6,
+      "per": 15.32,
+      "pbr": 1.73,
+      "dividendYield": 2.47,
       "roe": 13.51,
-      "roa": 6.84,
-      "operatingMargin": 50.22,
-      "debtToEquity": 0.02,
-      "revenueGrowthYoY": 23.5,
-      "epsGrowthYoY": 47.4,
+      "roa": 3.78,
+      "operatingMargin": -18.6,
+      "debtToEquity": 0.41,
+      "revenueGrowthYoY": 32.8,
+      "epsGrowthYoY": null,
       "belowBook": false,
       "perf1Y": 36.07,
       "sparkline": [
@@ -4358,7 +4358,7 @@
         3207.0,
         3171.0,
         2978.0,
-        3036.0
+        3076.0
       ]
     },
     {
@@ -4368,13 +4368,13 @@
       "nameJp": "協和キリン",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 2354.0,
-      "change": -3.5,
-      "changePercent": -0.15,
-      "marketCapB": 1232.29,
-      "per": 18.39,
-      "pbr": 1.38,
-      "dividendYield": 2.97,
+      "price": 2363.0,
+      "change": 5.5,
+      "changePercent": 0.23,
+      "marketCapB": 1237.0,
+      "per": 18.46,
+      "pbr": 1.39,
+      "dividendYield": 2.96,
       "roe": 8.46,
       "roa": 6.59,
       "operatingMargin": 14.55,
@@ -4402,7 +4402,7 @@
         2384.5,
         2331.5,
         2357.5,
-        2354.0
+        2363.0
       ]
     },
     {
@@ -4412,13 +4412,13 @@
       "nameJp": "富士フイルム",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 3214.0,
-      "change": -68.0,
-      "changePercent": -2.07,
-      "marketCapB": 3873.93,
-      "per": 14.32,
+      "price": 3226.0,
+      "change": -56.0,
+      "changePercent": -1.71,
+      "marketCapB": 3888.39,
+      "per": 14.37,
       "pbr": 1.01,
-      "dividendYield": 2.33,
+      "dividendYield": 2.32,
       "roe": 7.71,
       "roa": 3.87,
       "operatingMargin": 10.97,
@@ -4446,7 +4446,7 @@
         3055.0,
         3300.0,
         3282.0,
-        3214.0
+        3226.0
       ]
     },
     {
@@ -4456,13 +4456,13 @@
       "nameJp": "シスメックス",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 1337.5,
-      "change": -4.5,
-      "changePercent": -0.34,
-      "marketCapB": 833.5,
-      "per": 17.86,
-      "pbr": 1.66,
-      "dividendYield": 2.69,
+      "price": 1343.0,
+      "change": 1.0,
+      "changePercent": 0.07,
+      "marketCapB": 836.93,
+      "per": 17.94,
+      "pbr": 1.67,
+      "dividendYield": 2.68,
       "roe": 9.24,
       "roa": 6.63,
       "operatingMargin": 12.2,
@@ -4490,7 +4490,7 @@
         1325.0,
         1303.0,
         1342.0,
-        1337.5
+        1343.0
       ]
     },
     {
@@ -4500,13 +4500,13 @@
       "nameJp": "テルモ",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 1911.0,
-      "change": -39.0,
-      "changePercent": -2.0,
-      "marketCapB": 2818.86,
-      "per": 21.59,
-      "pbr": 1.85,
-      "dividendYield": 1.57,
+      "price": 1930.0,
+      "change": -20.0,
+      "changePercent": -1.03,
+      "marketCapB": 2846.89,
+      "per": 21.8,
+      "pbr": 1.87,
+      "dividendYield": 1.55,
       "roe": 8.74,
       "roa": 5.87,
       "operatingMargin": 14.79,
@@ -4534,7 +4534,7 @@
         1957.0,
         1921.5,
         1950.0,
-        1911.0
+        1930.0
       ]
     },
     {
@@ -4585,12 +4585,12 @@
       "nameJp": "ペプチドリーム",
       "sector": "Healthcare",
       "segment": "Prime",
-      "price": 1074.0,
-      "change": -44.5,
-      "changePercent": -3.98,
-      "marketCapB": 138.0,
+      "price": 1099.5,
+      "change": -19.0,
+      "changePercent": -1.7,
+      "marketCapB": 141.28,
       "per": null,
-      "pbr": 8.1,
+      "pbr": 8.29,
       "dividendYield": 0.0,
       "roe": 7.79,
       "roa": 5.57,
@@ -4619,7 +4619,7 @@
         1151.0,
         1120.5,
         1118.5,
-        1074.0
+        1099.5
       ]
     },
     {
@@ -4629,13 +4629,13 @@
       "nameJp": "旭化成",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 1722.5,
-      "change": -27.5,
-      "changePercent": -1.57,
-      "marketCapB": 2336.47,
-      "per": 14.73,
+      "price": 1729.0,
+      "change": -21.0,
+      "changePercent": -1.2,
+      "marketCapB": 2345.29,
+      "per": 14.79,
       "pbr": 1.12,
-      "dividendYield": 2.55,
+      "dividendYield": 2.54,
       "roe": 8.02,
       "roa": 3.55,
       "operatingMargin": 7.79,
@@ -4663,7 +4663,7 @@
         1532.5,
         1654.5,
         1750.0,
-        1722.5
+        1729.0
       ]
     },
     {
@@ -4673,18 +4673,18 @@
       "nameJp": "三菱ケミカルグループ",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 1053.5,
-      "change": 46.5,
-      "changePercent": 4.62,
-      "marketCapB": 1431.24,
+      "price": 1054.0,
+      "change": 47.0,
+      "changePercent": 4.67,
+      "marketCapB": 1431.92,
       "per": null,
       "pbr": 0.77,
       "dividendYield": 3.04,
-      "roe": 3.68,
-      "roa": 1.71,
-      "operatingMargin": 3.12,
-      "debtToEquity": 0.77,
-      "revenueGrowthYoY": -13.9,
+      "roe": -0.7,
+      "roa": 0.34,
+      "operatingMargin": -8.39,
+      "debtToEquity": 0.78,
+      "revenueGrowthYoY": -10.1,
       "epsGrowthYoY": null,
       "belowBook": true,
       "perf1Y": 32.95,
@@ -4707,7 +4707,7 @@
         927.3,
         928.3,
         1007.0,
-        1053.5
+        1054.0
       ]
     },
     {
@@ -4717,13 +4717,13 @@
       "nameJp": "住友化学",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 543.2,
-      "change": -1.6,
-      "changePercent": -0.29,
-      "marketCapB": 889.43,
-      "per": 10.48,
-      "pbr": 0.86,
-      "dividendYield": 2.49,
+      "price": 603.5,
+      "change": 58.7,
+      "changePercent": 10.77,
+      "marketCapB": 988.17,
+      "per": 11.65,
+      "pbr": 0.96,
+      "dividendYield": 2.24,
       "roe": 12.08,
       "roa": 4.88,
       "operatingMargin": 15.16,
@@ -4751,7 +4751,7 @@
         512.2,
         523.4,
         544.8,
-        543.2
+        603.5
       ]
     },
     {
@@ -4761,20 +4761,20 @@
       "nameJp": "東ソー",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 2575.0,
-      "change": -193.5,
-      "changePercent": -6.99,
-      "marketCapB": 792.82,
-      "per": 20.26,
-      "pbr": 0.99,
-      "dividendYield": 3.88,
+      "price": 2618.0,
+      "change": -150.5,
+      "changePercent": -5.44,
+      "marketCapB": 806.06,
+      "per": 20.6,
+      "pbr": 1.01,
+      "dividendYield": 3.82,
       "roe": null,
       "roa": null,
       "operatingMargin": 9.79,
       "debtToEquity": 0.24,
       "revenueGrowthYoY": -4.2,
       "epsGrowthYoY": -25.4,
-      "belowBook": true,
+      "belowBook": false,
       "perf1Y": 36.28,
       "sparkline": [
         2381.5,
@@ -4795,7 +4795,7 @@
         2648.5,
         2680.0,
         2768.5,
-        2575.0
+        2618.0
       ]
     },
     {
@@ -4805,13 +4805,13 @@
       "nameJp": "住友金属鉱山",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 10815.0,
-      "change": -5.0,
-      "changePercent": -0.05,
-      "marketCapB": 2926.0,
-      "per": 16.66,
-      "pbr": 1.41,
-      "dividendYield": 1.92,
+      "price": 10565.0,
+      "change": -255.0,
+      "changePercent": -2.36,
+      "marketCapB": 2858.36,
+      "per": 16.27,
+      "pbr": 1.38,
+      "dividendYield": 1.97,
       "roe": 8.7,
       "roa": 3.35,
       "operatingMargin": 13.15,
@@ -4839,7 +4839,7 @@
         10155.0,
         10725.0,
         10820.0,
-        10815.0
+        10565.0
       ]
     },
     {
@@ -4849,13 +4849,13 @@
       "nameJp": "東レ",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 1173.0,
-      "change": 5.5,
-      "changePercent": 0.47,
-      "marketCapB": 1709.46,
-      "per": 22.18,
-      "pbr": 0.99,
-      "dividendYield": 2.22,
+      "price": 1163.5,
+      "change": -4.0,
+      "changePercent": -0.34,
+      "marketCapB": 1695.61,
+      "per": 22.0,
+      "pbr": 0.98,
+      "dividendYield": 2.23,
       "roe": 2.65,
       "roa": 1.92,
       "operatingMargin": 0.98,
@@ -4883,7 +4883,7 @@
         1133.0,
         1145.5,
         1167.5,
-        1173.0
+        1163.5
       ]
     },
     {
@@ -4893,13 +4893,13 @@
       "nameJp": "ブリヂストン",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 3352.0,
-      "change": 44.0,
-      "changePercent": 1.33,
-      "marketCapB": 4231.05,
-      "per": 28.15,
-      "pbr": 1.17,
-      "dividendYield": 3.88,
+      "price": 3420.0,
+      "change": 112.0,
+      "changePercent": 3.39,
+      "marketCapB": 4316.88,
+      "per": 28.72,
+      "pbr": 1.19,
+      "dividendYield": 3.8,
       "roe": 8.64,
       "roa": 5.24,
       "operatingMargin": 15.73,
@@ -4927,7 +4927,7 @@
         3298.0,
         3274.0,
         3308.0,
-        3352.0
+        3420.0
       ]
     },
     {
@@ -4937,13 +4937,13 @@
       "nameJp": "三井金属鉱業",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 52350.0,
-      "change": -2550.0,
-      "changePercent": -4.64,
-      "marketCapB": 2995.06,
-      "per": 32.77,
-      "pbr": 8.25,
-      "dividendYield": 0.53,
+      "price": 50660.0,
+      "change": -4240.0,
+      "changePercent": -7.72,
+      "marketCapB": 2898.38,
+      "per": 31.71,
+      "pbr": 7.98,
+      "dividendYield": 0.55,
       "roe": 18.38,
       "roa": 8.67,
       "operatingMargin": 17.91,
@@ -4971,7 +4971,7 @@
         51250.0,
         50850.0,
         54900.0,
-        52350.0
+        50660.0
       ]
     },
     {
@@ -4981,12 +4981,12 @@
       "nameJp": "ソフトバンク",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 221.4,
-      "change": -1.4,
-      "changePercent": -0.63,
-      "marketCapB": 10583.2,
-      "per": 19.65,
-      "pbr": 3.58,
+      "price": 221.9,
+      "change": -0.9,
+      "changePercent": -0.4,
+      "marketCapB": 10607.1,
+      "per": 19.69,
+      "pbr": 3.59,
       "dividendYield": 3.97,
       "roe": 16.27,
       "roa": 3.58,
@@ -5015,7 +5015,7 @@
         221.8,
         219.3,
         222.8,
-        221.4
+        221.9
       ]
     },
     {
@@ -5025,13 +5025,13 @@
       "nameJp": "ディー・エヌ・エー",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 2577.0,
-      "change": 18.0,
-      "changePercent": 0.7,
-      "marketCapB": 264.89,
-      "per": 15.08,
-      "pbr": 1.14,
-      "dividendYield": 2.56,
+      "price": 2630.0,
+      "change": 71.0,
+      "changePercent": 2.77,
+      "marketCapB": 270.34,
+      "per": 15.39,
+      "pbr": 1.17,
+      "dividendYield": 2.51,
       "roe": 9.75,
       "roa": 6.68,
       "operatingMargin": 5.95,
@@ -5059,7 +5059,7 @@
         2662.5,
         2661.0,
         2559.0,
-        2577.0
+        2630.0
       ]
     },
     {
@@ -5069,12 +5069,12 @@
       "nameJp": "ネクソン",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 2518.0,
-      "change": -106.5,
-      "changePercent": -4.06,
-      "marketCapB": 1991.94,
-      "per": 22.05,
-      "pbr": 1.88,
+      "price": 2519.5,
+      "change": -105.0,
+      "changePercent": -4.0,
+      "marketCapB": 1993.12,
+      "per": 22.07,
+      "pbr": 1.89,
       "dividendYield": 2.38,
       "roe": 8.56,
       "roa": 5.61,
@@ -5103,7 +5103,7 @@
         2647.5,
         2566.5,
         2624.5,
-        2518.0
+        2519.5
       ]
     },
     {
@@ -5113,13 +5113,13 @@
       "nameJp": "LYコーポレーション",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 403.0,
-      "change": -11.7,
-      "changePercent": -2.82,
-      "marketCapB": 2761.54,
-      "per": 14.46,
+      "price": 404.8,
+      "change": -9.9,
+      "changePercent": -2.39,
+      "marketCapB": 2773.87,
+      "per": 14.52,
       "pbr": 0.93,
-      "dividendYield": 2.73,
+      "dividendYield": 2.72,
       "roe": 7.94,
       "roa": 1.72,
       "operatingMargin": 10.56,
@@ -5147,7 +5147,7 @@
         448.8,
         410.1,
         414.7,
-        403.0
+        404.8
       ]
     },
     {
@@ -5157,13 +5157,13 @@
       "nameJp": "カプコン",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 3093.0,
-      "change": -203.0,
-      "changePercent": -6.16,
-      "marketCapB": 1293.83,
-      "per": 21.33,
-      "pbr": 5.17,
-      "dividendYield": 1.49,
+      "price": 3049.0,
+      "change": -247.0,
+      "changePercent": -7.49,
+      "marketCapB": 1275.42,
+      "per": 21.02,
+      "pbr": 5.1,
+      "dividendYield": 1.51,
       "roe": null,
       "roa": null,
       "operatingMargin": 43.81,
@@ -5191,7 +5191,7 @@
         3501.0,
         3431.0,
         3296.0,
-        3093.0
+        3049.0
       ]
     },
     {
@@ -5201,12 +5201,12 @@
       "nameJp": "コナミグループ",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 19425.0,
-      "change": -735.0,
-      "changePercent": -3.65,
-      "marketCapB": 2633.18,
-      "per": 26.33,
-      "pbr": 4.66,
+      "price": 19540.0,
+      "change": -620.0,
+      "changePercent": -3.08,
+      "marketCapB": 2648.77,
+      "per": 26.48,
+      "pbr": 4.69,
       "dividendYield": 1.15,
       "roe": 19.11,
       "roa": 12.79,
@@ -5235,7 +5235,7 @@
         21090.0,
         20275.0,
         20160.0,
-        19425.0
+        19540.0
       ]
     },
     {
@@ -5245,13 +5245,13 @@
       "nameJp": "バンダイナムコホールディングス",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 3718.0,
-      "change": -99.0,
-      "changePercent": -2.59,
-      "marketCapB": 2385.24,
-      "per": 17.09,
-      "pbr": 2.82,
-      "dividendYield": 1.29,
+      "price": 3804.0,
+      "change": -13.0,
+      "changePercent": -0.34,
+      "marketCapB": 2439.76,
+      "per": 17.48,
+      "pbr": 2.88,
+      "dividendYield": 1.26,
       "roe": 13.79,
       "roa": 8.62,
       "operatingMargin": 14.48,
@@ -5279,7 +5279,7 @@
         3653.0,
         3649.0,
         3817.0,
-        3719.0
+        3804.0
       ]
     },
     {
@@ -5289,13 +5289,13 @@
       "nameJp": "ENEOSホールディングス",
       "sector": "Energy",
       "segment": "Prime",
-      "price": 1339.0,
-      "change": -12.5,
-      "changePercent": -0.92,
-      "marketCapB": 3601.8,
-      "per": 76.82,
-      "pbr": 1.13,
-      "dividendYield": 2.54,
+      "price": 1315.5,
+      "change": -36.0,
+      "changePercent": -2.66,
+      "marketCapB": 3538.59,
+      "per": 75.47,
+      "pbr": 1.11,
+      "dividendYield": 2.58,
       "roe": 2.05,
       "roa": 0.76,
       "operatingMargin": 2.65,
@@ -5323,7 +5323,7 @@
         1305.0,
         1371.0,
         1351.5,
-        1339.0
+        1315.5
       ]
     },
     {
@@ -5333,13 +5333,13 @@
       "nameJp": "INPEX",
       "sector": "Energy",
       "segment": "Prime",
-      "price": 3847.0,
-      "change": -83.0,
-      "changePercent": -2.11,
-      "marketCapB": 4470.94,
-      "per": 11.64,
-      "pbr": 0.94,
-      "dividendYield": 2.81,
+      "price": 3920.0,
+      "change": -10.0,
+      "changePercent": -0.25,
+      "marketCapB": 4555.78,
+      "per": 11.86,
+      "pbr": 0.96,
+      "dividendYield": 2.76,
       "roe": 8.46,
       "roa": 8.32,
       "operatingMargin": 44.49,
@@ -5367,7 +5367,7 @@
         3848.0,
         3944.0,
         3930.0,
-        3847.0
+        3920.0
       ]
     },
     {
@@ -5377,13 +5377,13 @@
       "nameJp": "石油資源開発",
       "sector": "Energy",
       "segment": "Prime",
-      "price": 1988.0,
-      "change": -10.0,
-      "changePercent": -0.5,
-      "marketCapB": 508.93,
-      "per": 9.52,
-      "pbr": 0.9,
-      "dividendYield": 2.26,
+      "price": 2012.0,
+      "change": 14.0,
+      "changePercent": 0.7,
+      "marketCapB": 515.07,
+      "per": 9.64,
+      "pbr": 0.91,
+      "dividendYield": 2.24,
       "roe": 8.41,
       "roa": 4.54,
       "operatingMargin": 7.13,
@@ -5411,7 +5411,7 @@
         2164.0,
         2198.0,
         1998.0,
-        1988.0
+        2012.0
       ]
     },
     {
@@ -5421,10 +5421,10 @@
       "nameJp": "東京電力ホールディングス",
       "sector": "Utilities",
       "segment": "Prime",
-      "price": 610.4,
-      "change": -2.2,
-      "changePercent": -0.36,
-      "marketCapB": 978.45,
+      "price": 609.0,
+      "change": -3.6,
+      "changePercent": -0.59,
+      "marketCapB": 976.05,
       "per": null,
       "pbr": 0.29,
       "dividendYield": 0.0,
@@ -5455,7 +5455,7 @@
         651.1,
         645.2,
         612.6,
-        610.5
+        609.0
       ]
     },
     {
@@ -5465,10 +5465,10 @@
       "nameJp": "関西電力",
       "sector": "Utilities",
       "segment": "Prime",
-      "price": 2344.5,
-      "change": 4.0,
-      "changePercent": 0.17,
-      "marketCapB": 2611.92,
+      "price": 2345.5,
+      "change": 5.0,
+      "changePercent": 0.21,
+      "marketCapB": 2613.04,
       "per": 6.87,
       "pbr": 0.76,
       "dividendYield": 3.41,
@@ -5499,7 +5499,7 @@
         2373.0,
         2380.5,
         2340.5,
-        2344.5
+        2345.5
       ]
     },
     {
@@ -5509,13 +5509,13 @@
       "nameJp": "中部電力",
       "sector": "Utilities",
       "segment": "Prime",
-      "price": 2722.5,
-      "change": -16.0,
-      "changePercent": -0.58,
-      "marketCapB": 2056.56,
-      "per": 9.03,
-      "pbr": 0.66,
-      "dividendYield": 2.57,
+      "price": 2715.5,
+      "change": -23.0,
+      "changePercent": -0.84,
+      "marketCapB": 2051.27,
+      "per": 9.01,
+      "pbr": 0.65,
+      "dividendYield": 2.58,
       "roe": 7.74,
       "roa": 1.95,
       "operatingMargin": 6.28,
@@ -5543,7 +5543,7 @@
         2742.0,
         2769.0,
         2738.5,
-        2722.5
+        2715.5
       ]
     },
     {
@@ -5553,13 +5553,13 @@
       "nameJp": "東京ガス",
       "sector": "Utilities",
       "segment": "Prime",
-      "price": 6573.0,
-      "change": -34.0,
-      "changePercent": -0.51,
-      "marketCapB": 2191.56,
-      "per": 10.04,
-      "pbr": 1.27,
-      "dividendYield": 1.83,
+      "price": 6625.0,
+      "change": 18.0,
+      "changePercent": 0.27,
+      "marketCapB": 2208.9,
+      "per": 10.12,
+      "pbr": 1.28,
+      "dividendYield": 1.81,
       "roe": 12.76,
       "roa": 3.12,
       "operatingMargin": 6.96,
@@ -5587,7 +5587,7 @@
         6745.0,
         6670.0,
         6607.0,
-        6573.0
+        6625.0
       ]
     },
     {
@@ -5597,11 +5597,11 @@
       "nameJp": "大阪ガス",
       "sector": "Utilities",
       "segment": "Prime",
-      "price": 5757.0,
-      "change": -12.0,
-      "changePercent": -0.21,
-      "marketCapB": 2203.55,
-      "per": 14.72,
+      "price": 5742.0,
+      "change": -27.0,
+      "changePercent": -0.47,
+      "marketCapB": 2197.8,
+      "per": 14.68,
       "pbr": 1.23,
       "dividendYield": 2.26,
       "roe": 8.5,
@@ -5631,7 +5631,7 @@
         5590.0,
         5699.0,
         5769.0,
-        5757.0
+        5742.0
       ]
     },
     {
@@ -5641,13 +5641,13 @@
       "nameJp": "三菱地所",
       "sector": "RealEstate",
       "segment": "Prime",
-      "price": 4276.0,
-      "change": -207.0,
-      "changePercent": -4.62,
-      "marketCapB": 5158.87,
-      "per": 23.49,
-      "pbr": 2.05,
-      "dividendYield": 1.17,
+      "price": 4320.0,
+      "change": -163.0,
+      "changePercent": -3.64,
+      "marketCapB": 5211.95,
+      "per": 23.73,
+      "pbr": 2.07,
+      "dividendYield": 1.16,
       "roe": 9.4,
       "roa": 2.66,
       "operatingMargin": 25.66,
@@ -5675,7 +5675,7 @@
         4489.0,
         4515.0,
         4483.0,
-        4276.0
+        4320.0
       ]
     },
     {
@@ -5685,13 +5685,13 @@
       "nameJp": "三井不動産",
       "sector": "RealEstate",
       "segment": "Prime",
-      "price": 1532.5,
-      "change": -165.0,
-      "changePercent": -9.72,
-      "marketCapB": 4177.33,
-      "per": 15.17,
+      "price": 1528.0,
+      "change": -169.5,
+      "changePercent": -9.99,
+      "marketCapB": 4165.06,
+      "per": 15.13,
       "pbr": 1.31,
-      "dividendYield": 2.41,
+      "dividendYield": 2.42,
       "roe": null,
       "roa": null,
       "operatingMargin": 13.34,
@@ -5719,7 +5719,7 @@
         1670.5,
         1674.5,
         1697.5,
-        1532.5
+        1528.0
       ]
     },
     {
@@ -5729,11 +5729,11 @@
       "nameJp": "住友不動産",
       "sector": "RealEstate",
       "segment": "Prime",
-      "price": 4422.0,
-      "change": -448.0,
-      "changePercent": -9.2,
-      "marketCapB": 4084.23,
-      "per": 20.68,
+      "price": 4418.0,
+      "change": -452.0,
+      "changePercent": -9.28,
+      "marketCapB": 4080.54,
+      "per": 20.67,
       "pbr": 1.7,
       "dividendYield": 0.97,
       "roe": 9.6,
@@ -5763,7 +5763,7 @@
         4816.0,
         4886.0,
         4870.0,
-        4422.0
+        4418.0
       ]
     },
     {
@@ -5773,13 +5773,13 @@
       "nameJp": "東急不動産ホールディングス",
       "sector": "RealEstate",
       "segment": "Prime",
-      "price": 1330.5,
-      "change": -68.0,
-      "changePercent": -4.86,
-      "marketCapB": 948.29,
-      "per": 9.82,
-      "pbr": 1.06,
-      "dividendYield": 3.76,
+      "price": 1344.0,
+      "change": -54.5,
+      "changePercent": -3.9,
+      "marketCapB": 957.91,
+      "per": 9.92,
+      "pbr": 1.07,
+      "dividendYield": 3.72,
       "roe": 11.18,
       "roa": 3.12,
       "operatingMargin": 15.17,
@@ -5807,7 +5807,7 @@
         1326.0,
         1389.0,
         1398.5,
-        1330.5
+        1344.0
       ]
     },
     {
@@ -5817,13 +5817,13 @@
       "nameJp": "ヒューリック",
       "sector": "RealEstate",
       "segment": "Prime",
-      "price": 1748.0,
-      "change": -53.5,
-      "changePercent": -2.97,
-      "marketCapB": 1327.29,
-      "per": 11.62,
-      "pbr": 1.46,
-      "dividendYield": 3.83,
+      "price": 1760.0,
+      "change": -41.5,
+      "changePercent": -2.3,
+      "marketCapB": 1336.4,
+      "per": 11.7,
+      "pbr": 1.47,
+      "dividendYield": 3.81,
       "roe": 12.99,
       "roa": 3.42,
       "operatingMargin": 13.74,
@@ -5851,7 +5851,7 @@
         1786.5,
         1799.0,
         1801.5,
-        1747.5
+        1760.0
       ]
     },
     {
@@ -5861,13 +5861,13 @@
       "nameJp": "東京建物",
       "sector": "RealEstate",
       "segment": "Prime",
-      "price": 3330.0,
-      "change": -244.0,
-      "changePercent": -6.83,
-      "marketCapB": 691.37,
-      "per": 11.76,
+      "price": 3345.0,
+      "change": -229.0,
+      "changePercent": -6.41,
+      "marketCapB": 694.49,
+      "per": 11.82,
       "pbr": 1.17,
-      "dividendYield": 3.66,
+      "dividendYield": 3.65,
       "roe": 10.38,
       "roa": 2.76,
       "operatingMargin": 25.7,
@@ -5895,136 +5895,136 @@
         3489.0,
         3519.0,
         3574.0,
-        3330.0
+        3345.0
       ]
     }
   ],
   "sectorPerformance": [
     {
       "sector": "Industrials",
-      "changePercent": -0.69,
+      "changePercent": -0.77,
       "avgPbr": 2.14,
       "count": 26
     },
     {
       "sector": "Technology",
-      "changePercent": 1.85,
-      "avgPbr": 6.05,
+      "changePercent": 0.87,
+      "avgPbr": 5.95,
       "count": 17
     },
     {
       "sector": "ConsumerDiscretionary",
-      "changePercent": -0.72,
+      "changePercent": -0.02,
       "avgPbr": 1.7,
       "count": 14
     },
     {
       "sector": "Financials",
-      "changePercent": -1.15,
+      "changePercent": -1.25,
       "avgPbr": 1.69,
       "count": 14
     },
     {
       "sector": "Healthcare",
-      "changePercent": -1.2,
-      "avgPbr": 2.56,
+      "changePercent": -0.08,
+      "avgPbr": 2.61,
       "count": 14
     },
     {
       "sector": "Communication",
-      "changePercent": -2.22,
-      "avgPbr": 2.57,
+      "changePercent": -1.73,
+      "avgPbr": 2.58,
       "count": 11
     },
     {
       "sector": "ConsumerStaples",
-      "changePercent": 0.01,
-      "avgPbr": 2.47,
+      "changePercent": -0.13,
+      "avgPbr": 2.46,
       "count": 11
     },
     {
       "sector": "Materials",
-      "changePercent": -0.64,
-      "avgPbr": 1.92,
+      "changePercent": 0.2,
+      "avgPbr": 1.91,
       "count": 10
     },
     {
       "sector": "RealEstate",
-      "changePercent": -6.37,
+      "changePercent": -5.92,
       "avgPbr": 1.46,
       "count": 6
     },
     {
       "sector": "Utilities",
-      "changePercent": -0.3,
+      "changePercent": -0.28,
       "avgPbr": 0.84,
       "count": 5
     },
     {
       "sector": "Energy",
-      "changePercent": -1.18,
+      "changePercent": -0.74,
       "avgPbr": 0.99,
       "count": 3
     }
   ],
   "marketSummary": {
-    "advancers": 42,
-    "decliners": 88,
+    "advancers": 45,
+    "decliners": 85,
     "unchanged": 1,
     "belowBookCount": 25,
-    "avgPer": 21.98,
-    "avgPbr": 2.54,
-    "avgDiv": 2.29,
+    "avgPer": 21.91,
+    "avgPbr": 2.53,
+    "avgDiv": 2.31,
     "totalListings": 131
   },
   "headlines": [
     {
-      "title": "Japan may step into currency market again to support yen with US backing",
-      "publisher": "毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00eWd6NGN2ZkN4dTRWOTFaaTl2UlZVeUZrdUxsV2otSWMtWF9saUFDWV9oT3p4Z3pPZVd2N2hNZTk0SUtOUlVwRWdEaXBYWktIbVhrMll0N0pQcjdJUjVRd0JYT0U1N0pkS3pCMjlFdklMcEU?oc=5",
-      "publishedTs": 1778729470
-    },
-    {
-      "title": "Line-Yahoo Japan operator values Kakaku.com at $4bn in challenge to EQT",
+      "title": "Japan's Eneos to buy Chevron fuel business for $2.17bn",
       "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONnJLN0xvU0JKM0xzakZUd2Q5S3JIMmNPenN0RVdGOTUwZGVBcS1OUWYybW5oaEVuajJEWGlVTU1SazZSNF9DTUQxblJNWkRBNGZveEJaR2huN3A2Q3pjcjNxT1ZicWdwZEtjeWx6aXdaMlRSNXg3aXRoeDI1bzMzNWgwMFZOTkdxZlVKVTh3bkQ5dTVTanViZVB3eVpfaTVHc3VYSWE4VmZqVDlnb3FJUmNTMy1IZUU4S3c?oc=5",
-      "publishedTs": 1778726880
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSVNsSl91M2FFbEQyN1E0anBOVEo0a1Z5cFZaTGJUM0N0cWdUaVNKQi1hYzNXcVQyN25EMWF6UkJuT1I4U2tmdzRySG1mdERJcEUzYU9UTWJkVVNxQTNkTjUxRVNQRURUdEI4bHZPR2dEV1RUSWxaYXAtNi16QjN1c1p2WFhWMDZfSnhRNGhPQmdGU2E0OEdmcTdUZXlFQ200MG5v?oc=5",
+      "publishedTs": 1778740680
     },
     {
-      "title": "Japan's Nikkei touches record high on tech optimism; SoftBank, Topix slump",
-      "publisher": "marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQU3RFZ2NmeVU3eTlqcmdwNnNvOHhGV3lPMFhhc0VyT2ZqNlRFaW1YTVF2ZXE0VVNWa241bk95QnBlblFtV3FBUThsczFyTjBEWFBIVjJLczdCaEI1R0trdWF0MEZpa2hLNFZncVBhUTBzLUt1b1NJb3A4dWoxZk0wVjlSVzJJRlhwd0JnWmhEQjhzMEp5UURQdXBEeWVaZ29FZGtMQmRBQTgwTDlCaGtJRHRYcHNtY1A4dHA2MFBPV25KSHc?oc=5",
-      "publishedTs": 1778726428
+      "title": "The emergence of a hawkish stance from the Bank of Japan suggests a bearish outlook for the US Dollar against the Japanese Yen in the short term.",
+      "publisher": "富途牛牛",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRHlfdUVZb0F5S2xZNGtJRmp4a05Eb1hmMDkyNGRqZmpEbG9mbk5oVU0tbDdRd0phczVLc2FJdllGRFQ4SVlCZklSNjhaLTc4QVhUVjFZSGdwZU1IN2U3RWptdWF4cXIxQld2Z0gwZkw0YnNNM05lU0FEa0J1dzdoNHFZTGQzUjZxNGJIdUNfMHkxRVhEbWc?oc=5",
+      "publishedTs": 1778739015
     },
     {
-      "title": "Japan's Nikkei touches record high on tech optimism; SoftBank, Topix slump",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQemZhRDhJNWN6NmJFUTJHdjMxRzJnNGhONDlqekZObk05MVk2bXV6d0pSanpidnJKdVBySnRHQ25aeWV4TE1vWkxOeVNfQldZRDdseVlEOGZQVXpvVzJsZ1cwd1lKQmVnRHlfS2x5TndPZER1T21nRUZZLW12Rlc0alh4VUkwSTNvNm9QUlllZXJWY0NSYThkbE5abUxnNEx3R0VBVUk0V21xdFNDaDRNN3N1QWl2cmZOdG0xRUJyZHZWS1F1Vkt2ams0VjB6d2NhcUtDdVlWX3J0UQ?oc=5",
-      "publishedTs": 1778726340
+      "title": "Stock market today: Japan's Nikkei hits new high as SK Hynix nears $1 trillion market cap, Wall Street futures rise",
+      "publisher": "Economy Middle East",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZ21nY1VtRlJVd2lyRkdqYkhhbl9ZdHZYREpzd3VPc1lBNWxRamFnbTFJOU5YWFBYc1hlUzZKZGNmWVozYncwa0ZnbUxObDRNakpZM0EtNHgxZDFOZzJjb3F1UEpmZVlzaXhDLW44OS1ndEhZU2k3eWNlOWJnSUw2NVowY2FWRVRyanRSY2lkRGNPRUJlTUR1UlNWcE9JUGh0di0yZHVYYlhrMW5hLV85MVVnMEJkbHZncGtYc3ZPZ3RFTHBsMW5QamNmUTJ1bzVJZE9WNVpGQzlWTnc?oc=5",
+      "publishedTs": 1778737190
     },
     {
-      "title": "Asia stocks rise on AI enthusiasm, focus on Trump-Xi summit",
+      "title": "Nikkei 225 hits intraday record amid US-China summit",
+      "publisher": "nhk.or.jp",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhaENjTHlGSVYzZHNVR1pIOXJ0SVFNNkQ2MF9tU0EyaWdHcVFXRVYyMl9DbTRlekF3N1g0VGxmbUZkMEIxVWxvSEhZS2dkeHFUNFVVaHctdEdmSDdLcXhPVFZn?oc=5",
+      "publishedTs": 1778735354
+    },
+    {
+      "title": "Euro holds gains against Japanese Yen amid hawkish ECB rate outlook",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ3dSSWRuQmtWaHFvNHNKbW5wRkVEOHE5aFJtRUJMODhuYWNTdVN5cE5Ua2N1VERuY2p2eWJEc3lmNzEzRG1nd2Vsb09WdE5yRHQ1RG0yR09DcFdPQWtaLWlPaXlCWW1CdXI1RFo1WTBnOWFRRDZSZ1dsbGFwTF83V3FLaHJYa09ZV1BDOHBBZWx3RWRUUTJpc3hwUWVjZnFPSWlrSzJ6Tlk4VW1Bbjdv?oc=5",
+      "publishedTs": 1778734146
+    },
+    {
+      "title": "BOJ board member Masu calls for early rate hike, joins hawkish chorus",
       "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fY0kxQml0aFpucDFLYmVRWUlqb28tdmlEejdneTBTbmNwdEJaUk1zR0tuSzR4Z3NuSkxyUWR4bnpRZVRKbEszVlg4X1dFT0ZVWFdIV25LSHBMZ2h2clBtc3Q3UEk5aGl3Vi03aW9NY0RJNUpNVG83a1Y5NlFYdnM?oc=5",
-      "publishedTs": 1778722860
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc09PTXp6a0ZjN0FtVHRUZWV1SndQdF9QRUJibW5mQ1Y1SzJNZTFJamFKRWU0YVNlV1RhMXVHaE10ZWpodi14Ul9raHRoVWh6bXlrWERrUFVaVHZqQjlqTFJreHlnbVlsRmF6RDJPdXgwbTRDM1l0N1JUYVQ2dS1TUzJtd2MyWVI2YjJPN2Z5Y056bGtkRmFvcHBIVTJBcHc?oc=5",
+      "publishedTs": 1778733660
     },
     {
-      "title": "Japan FX intervention flips yen from undervalued to overvalued, StanChart says",
-      "publisher": "investingLive",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPLUJ6YzdOYXlqODdvbEdaeTl5V3ZneHRscTAwZ0c1RjdLWHc2Tmt0Y0hSN204ckdMU0Vjdjg1Z2RYbGhGMDdQbU8zNkdlclI3cmNKSWt0OVc4YlEwNGlPNk4xZERQS3RxRmlWOUE2ZW5aTHhMcV9DWnI3TDZ2a0xmQkJRSXFlSW96VUk4MnlDSG5zOUZPdUZsdXk3UXVmMElsZGgxbjQ3eDJGM2huV0xQWEFsYW5SdHBRTkdmZ1BfNmJqVVU?oc=5",
-      "publishedTs": 1778721367
-    },
-    {
-      "title": "Japan and South Korea Stocks Rise in Early Trade, Samsung Rebounds Over 3%, Trump Arrives in Beijing With Tech Giants",
-      "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOUF2ZWlWZl91Wl9seG90MDVud1hkTUdqWHpRd1BLU3o2ekRLYXJYWC0wbUVkbDM1RXlBSFVBblR3TUdPWXNsU0dJeEN6LU0tX2VqOTNyUU9Ha2VUQTQzRURfTjNBNzlGVGxPWTBOLWtfT3JDa08wZnZLX2xUSzd3ZFdPWFd1NVl6bkF4UXRyRnIyRmN0aUV1S1pfY19LeFhXaGxkbzVBUWxLRFRSQkdfSjJQVjZqbV9GY3BHV1h5ZDZxNVdHYlpEZzVJWkFGbHhz?oc=5",
-      "publishedTs": 1778720865
+      "title": "Bank Of Japan’s Rate-Hike Debate Is Heating Up Again",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaThQelF5UVNGWmNONklrcEw3b3oxaHJ4MnBTZ2pBZmpNRzNUWGR3ejV5bHRWOWQyWFRER3pnZXdhZnZtQXhHOXc5UzFNN1ZKTjR2XzY5b1NlLVFlcHRJa2dlaUlvLWVHdXY1WVE5V191QXQzSTBIMS1Ra2RNWDBoQ1N6U29mUjQ?oc=5",
+      "publishedTs": 1778733121
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 기술주 낙관론에 힘입어 닛케이 지수가 사상 최고치를 경신하며 혼조세를 보였습니다. 그러나 이러한 강세는 시장 전반에 걸쳐 고르지 않아, 토픽스 지수와 소프트뱅크는 하락하며 시장 내 괴리를 나타냈습니다. 엔화 변동성 또한 주요 이슈로, 일본 정부가 엔화 지지를 위해 외환 시장에 재개입할 가능성이 제기되며, 과거 개입으로 엔화 가치가 저평가에서 고평가로 전환되었다는 분석도 나왔습니다. 투자자들은 또한 트럼프-시진핑 정상회담 등 지정학적 전개에 주목하며 아시아 증시 전반에 미칠 영향을 주시하고 있습니다.",
-    "en": "The Japanese stock market presents a mixed picture today, with the Nikkei 225 index reaching a record high driven by strong tech optimism and AI enthusiasm. However, this strength is not uniform, as the broader Topix index and SoftBank experienced a slump, indicating a divergence within the market. A key theme is the yen's volatility, with Japan potentially stepping into the currency market again to support it, following past interventions that have shifted the yen from undervalued to overvalued. Investors are also monitoring geopolitical developments, particularly the upcoming Trump-Xi summit, as a potential catalyst for broader Asian markets.",
+    "ko": "오늘 일본 증시는 닛케이 225 지수가 사상 최고치를 경신하며 강세를 보였습니다. 이는 긍정적인 글로벌 시장 분위기와 미중 정상회담 등의 영향으로 풀이됩니다. 한편, 일본은행(BOJ)의 매파적 기조가 뚜렷해지면서 조기 금리 인상 논의가 가열되고 있으며, 이는 단기적으로 달러 대비 엔화 강세 압력으로 작용하고 있습니다. 투자자들은 BOJ의 향후 정책 방향을 주요 촉매로 주시하고 있습니다.",
+    "en": "Today's Japanese stock market saw the Nikkei 225 hit new intraday and record highs, buoyed by positive global sentiment and an ongoing US-China summit. A key theme driving market attention is the Bank of Japan's increasingly hawkish stance, with board members calling for early rate hikes and the rate-hike debate heating up. This has led to a bearish outlook for the US Dollar against the Japanese Yen in the short term, while the Euro holds gains against the JPY. Investors are closely watching BOJ developments for potential catalysts.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1778731060
+    "generatedTs": 1778741543
   }
 }
