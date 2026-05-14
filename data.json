@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-14T06:52:15.638587+00:00",
+  "asOf": "2026-05-14T09:59:01.307756+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -239,12 +239,12 @@
       "per": 10.78,
       "pbr": 2.13,
       "dividendYield": 0.19,
-      "roe": 26.02,
-      "roa": 0.69,
-      "operatingMargin": 3.84,
-      "debtToEquity": 1.32,
-      "revenueGrowthYoY": 8.2,
-      "epsGrowthYoY": null,
+      "roe": 32.72,
+      "roa": 0.01,
+      "operatingMargin": -19.66,
+      "debtToEquity": 1.25,
+      "revenueGrowthYoY": 7.1,
+      "epsGrowthYoY": 263.6,
       "belowBook": false,
       "perf1Y": 207.83,
       "sparkline": [
@@ -721,7 +721,7 @@
       "changePercent": 4.13,
       "marketCapB": 10071.63,
       "per": 14.42,
-      "pbr": 2.04,
+      "pbr": 1.98,
       "dividendYield": 3.18,
       "roe": 14.01,
       "roa": 3.7,
@@ -1777,7 +1777,7 @@
       "changePercent": -3.46,
       "marketCapB": 5620.68,
       "per": 18.75,
-      "pbr": 2.85,
+      "pbr": 2.78,
       "dividendYield": 1.7,
       "roe": 15.62,
       "roa": 6.31,
@@ -3979,12 +3979,12 @@
       "per": 25.42,
       "pbr": 2.5,
       "dividendYield": 1.99,
-      "roe": 11.0,
-      "roa": 5.61,
-      "operatingMargin": 11.59,
+      "roe": 11.93,
+      "roa": 6.3,
+      "operatingMargin": 10.87,
       "debtToEquity": 0.22,
-      "revenueGrowthYoY": 4.1,
-      "epsGrowthYoY": -1.5,
+      "revenueGrowthYoY": 6.0,
+      "epsGrowthYoY": 39.3,
       "belowBook": false,
       "perf1Y": -7.19,
       "sparkline": [
@@ -4417,7 +4417,7 @@
       "changePercent": -1.71,
       "marketCapB": 3888.39,
       "per": 14.37,
-      "pbr": 1.01,
+      "pbr": 1.05,
       "dividendYield": 2.32,
       "roe": 7.71,
       "roa": 3.87,
@@ -4856,10 +4856,10 @@
       "per": 22.0,
       "pbr": 0.98,
       "dividendYield": 2.23,
-      "roe": 2.65,
-      "roa": 1.92,
-      "operatingMargin": 0.98,
-      "debtToEquity": 0.52,
+      "roe": null,
+      "roa": null,
+      "operatingMargin": 3.93,
+      "debtToEquity": 0.47,
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": true,
@@ -5032,12 +5032,12 @@
       "per": 15.39,
       "pbr": 1.17,
       "dividendYield": 2.51,
-      "roe": 9.75,
-      "roa": 6.68,
-      "operatingMargin": 5.95,
-      "debtToEquity": 0.19,
-      "revenueGrowthYoY": -32.6,
-      "epsGrowthYoY": null,
+      "roe": 7.47,
+      "roa": 4.92,
+      "operatingMargin": 5.41,
+      "debtToEquity": 0.07,
+      "revenueGrowthYoY": -29.7,
+      "epsGrowthYoY": -73.3,
       "belowBook": false,
       "perf1Y": -13.62,
       "sparkline": [
@@ -5909,7 +5909,7 @@
     {
       "sector": "Technology",
       "changePercent": 0.87,
-      "avgPbr": 5.95,
+      "avgPbr": 5.94,
       "count": 17
     },
     {
@@ -5933,7 +5933,7 @@
     {
       "sector": "Communication",
       "changePercent": -1.73,
-      "avgPbr": 2.58,
+      "avgPbr": 2.57,
       "count": 11
     },
     {
@@ -5979,52 +5979,52 @@
   },
   "headlines": [
     {
-      "title": "Japan's Eneos to buy Chevron fuel business for $2.17bn",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSVNsSl91M2FFbEQyN1E0anBOVEo0a1Z5cFZaTGJUM0N0cWdUaVNKQi1hYzNXcVQyN25EMWF6UkJuT1I4U2tmdzRySG1mdERJcEUzYU9UTWJkVVNxQTNkTjUxRVNQRURUdEI4bHZPR2dEV1RUSWxaYXAtNi16QjN1c1p2WFhWMDZfSnhRNGhPQmdGU2E0OEdmcTdUZXlFQ200MG5v?oc=5",
-      "publishedTs": 1778740680
-    },
-    {
-      "title": "The emergence of a hawkish stance from the Bank of Japan suggests a bearish outlook for the US Dollar against the Japanese Yen in the short term.",
-      "publisher": "富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRHlfdUVZb0F5S2xZNGtJRmp4a05Eb1hmMDkyNGRqZmpEbG9mbk5oVU0tbDdRd0phczVLc2FJdllGRFQ4SVlCZklSNjhaLTc4QVhUVjFZSGdwZU1IN2U3RWptdWF4cXIxQld2Z0gwZkw0YnNNM05lU0FEa0J1dzdoNHFZTGQzUjZxNGJIdUNfMHkxRVhEbWc?oc=5",
-      "publishedTs": 1778739015
-    },
-    {
-      "title": "Stock market today: Japan's Nikkei hits new high as SK Hynix nears $1 trillion market cap, Wall Street futures rise",
-      "publisher": "Economy Middle East",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZ21nY1VtRlJVd2lyRkdqYkhhbl9ZdHZYREpzd3VPc1lBNWxRamFnbTFJOU5YWFBYc1hlUzZKZGNmWVozYncwa0ZnbUxObDRNakpZM0EtNHgxZDFOZzJjb3F1UEpmZVlzaXhDLW44OS1ndEhZU2k3eWNlOWJnSUw2NVowY2FWRVRyanRSY2lkRGNPRUJlTUR1UlNWcE9JUGh0di0yZHVYYlhrMW5hLV85MVVnMEJkbHZncGtYc3ZPZ3RFTHBsMW5QamNmUTJ1bzVJZE9WNVpGQzlWTnc?oc=5",
-      "publishedTs": 1778737190
-    },
-    {
-      "title": "Nikkei 225 hits intraday record amid US-China summit",
-      "publisher": "nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhaENjTHlGSVYzZHNVR1pIOXJ0SVFNNkQ2MF9tU0EyaWdHcVFXRVYyMl9DbTRlekF3N1g0VGxmbUZkMEIxVWxvSEhZS2dkeHFUNFVVaHctdEdmSDdLcXhPVFZn?oc=5",
-      "publishedTs": 1778735354
-    },
-    {
-      "title": "Euro holds gains against Japanese Yen amid hawkish ECB rate outlook",
+      "title": "Japanese Yen: Sideways versus US Dollar as BoJ turns hawkish – BBH",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ3dSSWRuQmtWaHFvNHNKbW5wRkVEOHE5aFJtRUJMODhuYWNTdVN5cE5Ua2N1VERuY2p2eWJEc3lmNzEzRG1nd2Vsb09WdE5yRHQ1RG0yR09DcFdPQWtaLWlPaXlCWW1CdXI1RFo1WTBnOWFRRDZSZ1dsbGFwTF83V3FLaHJYa09ZV1BDOHBBZWx3RWRUUTJpc3hwUWVjZnFPSWlrSzJ6Tlk4VW1Bbjdv?oc=5",
-      "publishedTs": 1778734146
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZy11LVUxcnVnWEhzS2g2ZTBzSmdGV3Y5SndIS2VIX1ppaUdWVHdjdGJjaHRJMGk4b3FVc1NfQXBhT25QeWR1ZEJWOGV6dWlPSHJpa0FtalpRQVN6YzdCRzk5MHQ0Y1cwdV9EZkI0VkFhUm80YXZKUUplRjFraWxaUWlHZlhVV3JlaXBZOHNMY0kxajJNaXpkZlN0S094Wkx4djJxZFc3T2hWdw?oc=5",
+      "publishedTs": 1778750859
     },
     {
-      "title": "BOJ board member Masu calls for early rate hike, joins hawkish chorus",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc09PTXp6a0ZjN0FtVHRUZWV1SndQdF9QRUJibW5mQ1Y1SzJNZTFJamFKRWU0YVNlV1RhMXVHaE10ZWpodi14Ul9raHRoVWh6bXlrWERrUFVaVHZqQjlqTFJreHlnbVlsRmF6RDJPdXgwbTRDM1l0N1JUYVQ2dS1TUzJtd2MyWVI2YjJPN2Z5Y056bGtkRmFvcHBIVTJBcHc?oc=5",
-      "publishedTs": 1778733660
+      "title": "Global Markets | Japan's Nikkei falls from record as inflation, interest rate concerns mount",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNLWlzekRMZi1ONkp4ZUc4Sk5Ya010QTFUdHlYSUZ3S0RtUnhfSC0yUUNUdFpOZ21OZkxHbVJvQUZEN2M4a0FNeEZLRU96QVhsWnB4dUxRRmxFbDZSdzBSYi1OS0Mxbl9mbnJ0X3dRcUN5MHZYdURwLVVhTU91a3ZIY1k2TWI4bWR6Zlk0VG5yZlB6TlhldnlTeGZWeV9SRkdNTzM2WGdMdlNqck1EdzBQbmZscFU2ZEdLTzlCM0dkQkt3Mm90X2FybndUcGQ0clkyUEtEYllPN0p6ZzBpcy1NTWVnSkQwcUwteUJ5T3hUQXFQYlQzQnlQX9IB_gFBVV95cUxQSHBQNTZpMWVzUjJTVHZWdGJEUENsT0c1Z1hOYmpTS0lXWGFmTHExeGFfTUNGSS1qV2JwRzNlR1hYcGlTTlBQSUFmNFFLVEdyV2I1WEFKUmtGYVVweFNsMi02aVN1SXJRRlJQUnNJWDhnLWowZ2NlUThVQ01kMVVBWUI0WWZyUVR3S0tiMVBZUGxuRE1XWHVNSGVWdWJRMmNjdEtvRWJ0aWdvMnAwNEZJTDM5c1lNNG9pZVpzY3ZRMEktdWl3bkVBNm5OTFZZX3RvdnpTU001ZW9KZGtGZ1FPRW8wTU5mQUFvSGswU3poMUE0WlBvcDZsZDJ6SjZJUQ?oc=5",
+      "publishedTs": 1778748741
     },
     {
-      "title": "Bank Of Japan’s Rate-Hike Debate Is Heating Up Again",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaThQelF5UVNGWmNONklrcEw3b3oxaHJ4MnBTZ2pBZmpNRzNUWGR3ejV5bHRWOWQyWFRER3pnZXdhZnZtQXhHOXc5UzFNN1ZKTjR2XzY5b1NlLVFlcHRJa2dlaUlvLWVHdXY1WVE5V191QXQzSTBIMS1Ra2RNWDBoQ1N6U29mUjQ?oc=5",
-      "publishedTs": 1778733121
+      "title": "Nikkei 225 retreats after record intraday high",
+      "publisher": "nhk.or.jp",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EN3ljVXVfWkU5N2dId0VrYTFtclNjYS14T2loWk1WcFRLMmJYMDZBMzByR2xzT25qclBKdjA0cWtKR3JtRjlnMjlLblppNWFYTDBqb1JKUzhRM2JGVVNHRHV0UQ?oc=5",
+      "publishedTs": 1778748674
+    },
+    {
+      "title": "Japanese Yen clings to losses against US Dollar as hawkish Fed bets escalate",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNkdKX2ZTbXZORzBkU0lqVGFUMjZGdDNaZmx4WUJ5RzluMGh3OTdORk5uQnRVQ25HWHdOSE1ZNjU4MzJXcU0wNjlJanpZcFpSMkNyUnZZU3R2eHdGRDBNZ3Y3TWlpNVdBcWU1R0hrNDlVcTdWbWNzMnlJVlgxOVJXZnFSSnNLb25FUUIwamk1cHVWOWxCbEdTSnFEQjJZSDFnRzRVSjRMNGgyaDZSUXZOMEVVTmdqQnltR3NN?oc=5",
+      "publishedTs": 1778747236
+    },
+    {
+      "title": "Japan's Nikkei falls from record as inflation, interest rate concerns mount",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONGJpbjJXVVdSTUdWLVpYXzF3UEhvQVQ5S0RyWDVGc3ZSMkp5bF93SHVMaENMYTNQWjR6ejVSOUdzYkVSTTdrbHhmeWFqWGFLVGtlZE9vYWQ2TDRoamZwVlhwTkZ4YmZRNUFQdkZZUDYySmZZVzFvVm4wcW5hYWRtVWFJb2R1dnVlRGhwQjVDbUhBWXk0dDdremxmRzF6ekJPb1EzZ3N1S2RuSzkxMXhsai1IcG91alRfaXNSRXc3NThueUhSQXpKSlJoemN1MzJESGcwOGZnWWVUM1RI?oc=5",
+      "publishedTs": 1778743980
+    },
+    {
+      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.95%",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMWNnMWNjcUFPYnFyMVFmTlJ0S3F6Z2U2TDhycGhsejlnMkhBMVc0OVNwOGowQW5VWGs5TjFaSC14VnM4elhFU2Y0cUdVU29oZGFPNS1Hb0ZNeXBUS0Fxc2NyRThNckFHQXE2Ym5lWF9taXRzUUdIQjBZb1JHUE55TThna0hja3RaWnJKbk8zX2phY3NuS25id1JaVzIxamkyWnlSNlJEaHB2MmlpT3lmWnhIYw?oc=5",
+      "publishedTs": 1778742302
+    },
+    {
+      "title": "Japan shares lower at close of trade; Nikkei 225 down 0.95%",
+      "publisher": "Investing.com UK",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYXRwd183b1hVbEJfaEtSSl9jNHVkVWRteUE2VmtwYUhNTndCbGl5YjlPb3oyeXJlQjFpOVlqa08tU2dTWnZNc1F2Y2pIZGNVblVydjMybDBGTXQ2c3J6Y1NpemZtV0c0NDhQOV9TdlpUNWthX25CTllXNjhTOEhpczgtdVdTaXJ4SFBKRkdFQXphem0zTnlJYzBMc0FWUzZQS1FJQUFCaGZFVWluQ09DVERB?oc=5",
+      "publishedTs": 1778742000
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 닛케이 225 지수가 사상 최고치를 경신하며 강세를 보였습니다. 이는 긍정적인 글로벌 시장 분위기와 미중 정상회담 등의 영향으로 풀이됩니다. 한편, 일본은행(BOJ)의 매파적 기조가 뚜렷해지면서 조기 금리 인상 논의가 가열되고 있으며, 이는 단기적으로 달러 대비 엔화 강세 압력으로 작용하고 있습니다. 투자자들은 BOJ의 향후 정책 방향을 주요 촉매로 주시하고 있습니다.",
-    "en": "Today's Japanese stock market saw the Nikkei 225 hit new intraday and record highs, buoyed by positive global sentiment and an ongoing US-China summit. A key theme driving market attention is the Bank of Japan's increasingly hawkish stance, with board members calling for early rate hikes and the rate-hike debate heating up. This has led to a bearish outlook for the US Dollar against the Japanese Yen in the short term, while the Euro holds gains against the JPY. Investors are closely watching BOJ developments for potential catalysts.",
+    "ko": "오늘 일본 증시는 닛케이 225 지수가 사상 최고치에서 후퇴하며 0.95% 하락 마감했습니다. 이는 인플레이션 우려와 금리 인상 가능성에 대한 투자자들의 경계심이 커진 데 따른 것으로 분석됩니다. 한편, 엔화는 일본은행(BoJ)의 매파적 전환에도 불구하고 미국 연방준비제도(Fed)의 매파적 베팅이 강화되면서 달러 대비 약세를 유지하는 모습을 보였습니다.",
+    "en": "Japanese stocks retreated today, with the Nikkei 225 falling 0.95% from its recent record highs. This decline was primarily driven by mounting concerns over inflation and the prospect of rising interest rates. Meanwhile, the Japanese Yen traded sideways against the US Dollar, influenced by a hawkish turn from the Bank of Japan, though it continued to cling to losses amid escalating hawkish bets on the Federal Reserve.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1778741543
+    "generatedTs": 1778752748
   }
 }
