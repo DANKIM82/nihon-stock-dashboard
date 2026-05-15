@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-15T07:32:46.707156+00:00",
+  "asOf": "2026-05-15T10:04:55.620725+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -237,7 +237,7 @@
       "changePercent": -0.43,
       "marketCapB": 32740.32,
       "per": 10.74,
-      "pbr": 2.12,
+      "pbr": 1.88,
       "dividendYield": 0.19,
       "roe": 32.72,
       "roa": 0.01,
@@ -897,7 +897,7 @@
       "changePercent": 0.4,
       "marketCapB": 8336.8,
       "per": 44.03,
-      "pbr": 1.07,
+      "pbr": 1.09,
       "dividendYield": 3.87,
       "roe": 2.61,
       "roa": 2.63,
@@ -1777,7 +1777,7 @@
       "changePercent": -0.71,
       "marketCapB": 5580.78,
       "per": 18.63,
-      "pbr": 2.76,
+      "pbr": 2.83,
       "dividendYield": 1.71,
       "roe": 15.62,
       "roa": 6.31,
@@ -4417,7 +4417,7 @@
       "changePercent": -3.6,
       "marketCapB": 3722.36,
       "per": 13.85,
-      "pbr": 1.01,
+      "pbr": 0.98,
       "dividendYield": 2.41,
       "roe": 7.71,
       "roa": 3.87,
@@ -4425,7 +4425,7 @@
       "debtToEquity": 0.27,
       "revenueGrowthYoY": 6.8,
       "epsGrowthYoY": 4.7,
-      "belowBook": false,
+      "belowBook": true,
       "perf1Y": -0.31,
       "sparkline": [
         3144.0,
@@ -5689,7 +5689,7 @@
       "changePercent": 0.75,
       "marketCapB": 4196.41,
       "per": 15.24,
-      "pbr": 1.32,
+      "pbr": 1.28,
       "dividendYield": 2.4,
       "roe": 8.17,
       "roa": 2.49,
@@ -5932,7 +5932,7 @@
     {
       "sector": "Communication",
       "changePercent": 0.32,
-      "avgPbr": 2.58,
+      "avgPbr": 2.56,
       "count": 11
     },
     {
@@ -5970,7 +5970,7 @@
     "advancers": 66,
     "decliners": 63,
     "unchanged": 2,
-    "belowBookCount": 23,
+    "belowBookCount": 24,
     "avgPer": 21.16,
     "avgPbr": 2.48,
     "avgDiv": 2.3,
@@ -5978,52 +5978,52 @@
   },
   "headlines": [
     {
-      "title": "Japan chipmaker Kioxia FY 2025 net profit doubled to 554.49 bil. yen",
-      "publisher": "Japan Wire by Kyodo News",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03RUNrNEc1RU1ENTQ1eTMtaWxXeTVqbUhtZldXMG5Cay1USXdqWkRnVUppdjVNd04tNmJXZlR6RFd5YU5ySHJJWHlkOEhlYUkzbFJZLTFzXzFmQQ?oc=5",
-      "publishedTs": 1778829420
+      "title": "Yen’s sudden jumps stir talk of quiet intervention from Tokyo",
+      "publisher": "equiti.com",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMTlxUG15QzhBckw4UURCWVNoV3c1b3dpTEY4NmtuT0N1bjhHcHlreUYwWkpRdjRhaW9mUGdCTDhmaVBja09lT3lQNnZZQWluR2VVTWUwR0ktdHRLdHZGQzViaUdwblBEQUxQTnlyUEhSYnpqSlNnZm9hSFhhNjY2cndNVFJwNGdZcExVNDhxd3dDVWpZZnJJZGZnRlpIN0h6Y21FUWpfQkVIUGRXOUxr?oc=5",
+      "publishedTs": 1778838111
     },
     {
-      "title": "Tokyo stocks lose ground after early gains",
-      "publisher": "nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9OUWNyeUUzZGpCYTRUWlZwYzYxaXotODJjMDUwM2xEVFQtejNDMjJmeG5UdnBxTVJyS2h3bkZVRFEzazFwY2h0U1BkQ0hjOUFhdEo2V0VzcmRQdEFSLWo1RW93?oc=5",
-      "publishedTs": 1778828756
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 1.76%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUWtDa1A5SEZUMkJiOTRPam5pR05TeTlYWGdOaFRtUUM5V1N0c0pEaDVLcGp5a0lULXcyc2RuYnp5ZEtUWGR0clJJZXFSZTdNZHI2aHJhRVpONUZ3NWJfVk5QTi01MFhYcDVMRDNnWHNrRk5XV1llR1ZDMWVVcTI5d2tFQ0g3YnMxLUJlY1NTdVZHZmdvYmFoNU80YzQ0MUw2U3dxNHJOV1pvTTVnYUNVWW1SOA?oc=5",
-      "publishedTs": 1778828513
-    },
-    {
-      "title": "Japan Stocks End The Week Split As Tech Profits Fade",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX2cyRVJLUlJYVXVLUUtXX3RpQzd4NmlQdGV4UlhPQmx6LWwtRDFLZWlHWmlsbmljRVRTdDdxdlJBcWxtNVRiM2E3SWJPWnZNSThBLXFXUHpnX2RxRjZhY3lQTlVwTUI2NGxETnM4eHBacXRlNlFfeUVaM1g1RTZqSmRRMWZqLUNO?oc=5",
-      "publishedTs": 1778828496
-    },
-    {
-      "title": "BOJ warns of financial system risks from investment fund activity",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUHF0OHZWcmp4SXZJTWw2REFrVlRlREoyamJERTVOdm9kZ010ZkFKWHNVclVJZXNRbklLcXRGSWJ3M0JwWFpsNmJyLUJDWUFZeWUxR0pyOTl5N19DcmExaWlSb3ZxcVZNQjJyMV9wQXFGcl9TbFZudHhQYTllS2paOVF6RkhJRjhTVUlBbXI0bGJEMW9mX1J6VjRVdkpWb2dzcFQ2YnR5UDhxQnk5bkZfbWZYb3lMQk9PbjB1b1U1alhoX0cxeGJYRGlBbkRqdw?oc=5",
-      "publishedTs": 1778827200
-    },
-    {
-      "title": "European stocks set to fall as inflation fears return; Starmer faces leadership challenge",
-      "publisher": "CNBC",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPR1hETnRKSGJrVnoyWTREV3Q0YWtqOVlpUmVWdVFGWEl6ZmY0a3VmSHUwNkplMEJuclNDNWxYLXV6T1MwSkNnTG5sWkJOOG9CcTdUak1WZWpjbUVTbFVXU1ZDckZ4YXAyVFdqWEwyanRpWHAxYTJhSlhhRWVhcGZ0MDEwdlZZZUFBcnpTMFN4N2V5VG9leVU0SzF3QdIBoAFBVV95cUxOVkVGV2ZCemV0YkNZZE5xSFpIbVQ2bEZYYlNCbFVULWNKbXJuX0N5X0FyOWR3TVZUVlU0T3VERVE2RVQ5WWI1aXluU24xVFB6QkcwVkNGWGhJRjVKZVlzTVFYMGs3UmczS3lqWkxjOEJtVDhRaDdodVNNaC1qaTZ1S3E1NlNwRzI3d3RPeE03ZTZOWXFEWDZsZ0FNajFMMGll?oc=5",
-      "publishedTs": 1778826299
-    },
-    {
-      "title": "Alphabet (GOOGL) Makes History with Record Yen Bond Sale in Japan — And It’s All to Pay for AI",
+      "title": "GOOGL Stock Falls as Alphabet Goes Big on AI Funding with Record Yen Bond Sale in Japan",
       "publisher": "TipRanks",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT0Q5UlpZZmZ3MVRaMEs5UEFKMVllakVydk5vNTB1bVJ4clBnWEx6Mi16TVFZWGd4SE5Tcm5Uai00Y0kydjRZVDdqSHBtVmhlTkVoMjV1Q3JKOFVHMHNhTkVWZTdjRVE3YUpTNWp2ejNLd09DRWdvbjhiS21YektGT09SY3Z0cFRpVkVmbXBLdE9rTUh5OHpMblQxZGlXXzYzeUVXd1FFdzdyNEptZU02S1UyajFEbGtJNVRF?oc=5",
-      "publishedTs": 1778826078
+      "publishedTs": 1778837640
+    },
+    {
+      "title": "Japanese Yen: Interventions need rate backing – Commerzbank",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQanZvZFR0ZndlX0pQYmRwOEQ2bndZaGotd2RWY3Z5dEk5WmhLNTMxd3NhTExhTGdUMnJwT2g5d1ZKNzFZdWFQY2FJMVJzUDBFUTA2NmZvOUM4VmF5c1BxRDNMLUtNb1FPOFkxTWRXRnVGVlBtUlFRcC1JMG9kcHotM0ljNlJyUG1kTF82SDRBbjV1WUFPblhacEN0NTNDQ3BQ?oc=5",
+      "publishedTs": 1778836844
+    },
+    {
+      "title": "Curious Yen Spikes Have Traders Gaming Out Japan ‘Warning Shots’",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZkRwM0hyakpFQ3ZTaWlxN2UtcDFtVVZXbHU3Z3liakMwVHFGRDlValQ4QWNkWmFIVU9VUThUVWVkanRfUktwdjFaM0NSejFQTkVqQmdlb3ltdTlUcUI3VnlwWkJwSWd0ZkU3TFVPZXo2bGQybW9OV1hhNTVmWU5neTB4ZUI2c21kQnJaSlZlbGdqZ2d5WUtEaGNoSXY1dU82LVNhc1cxU1BXMi1RdUZZbEMwQQ?oc=5",
+      "publishedTs": 1778836224
+    },
+    {
+      "title": "Curious Yen Spikes Have Traders Gaming Out Japan ‘Warning Shots’",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVVFJU3dtSWFzZG1pWENvbFMxX2NVUFNzaGxNbUV5WGNjZ1ltd1o4WmVrRE9DV21COUZzUW1nS1NxZkZ3QWZIMTFqd2lPSEQ0MWRUZTZleUVoRWlTemZGLXZ1ZW1oOERLSWJQM2l1UnhENG1oUEZCckVKWm1hMVl1MXRiZDUxMWtqWGhQQ1VveDhKWVQxemNOQjFSTHdraUVIYzl3dQ?oc=5",
+      "publishedTs": 1778836224
+    },
+    {
+      "title": "Alphabet announces record 576bn yen bond issuance in Japan",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORWNUbnI3RDd5OXRkT2VHeXZfdFRZamQwWUF4MEZUZXlYakxvTzVTcmhjWThMenFKLWdMYWswNDloQmFPSTNvbzk1a3dRT2ZnbnV2ZDRFVEZfVzJGSnEtUk5FZWtpT0dndi1Oa3E5MndxTGlneS04aXh6aWc4NFE3TjVNWU1iNGlVQWRmNjdTOWl5Uk9NNTAxaFBEbFhkbHJF?oc=5",
+      "publishedTs": 1778836200
+    },
+    {
+      "title": "Japan and South Korea tech stocks swoon and bond yields soar",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV0pfV2VEUlZYT2RqLWdfUml0RHp2MWEwWjBHSnExVmt0bHh4NDJEa3RmcHVWZlJoOTA0RUpsa2o3UGFkTU5IRVZsTEdUck9mU091a1dDR0FNOGpPaEpJNllpWXNMMG55MWJic2FQNDVqMVVxaWM1WEZBZTdNTHJXbzBHdGxFcDJFcC1ZM3d0MjZLZVVIQzFtVjJWTGVmRTVxQW1F?oc=5",
+      "publishedTs": 1778832600
     }
   ],
   "marketTone": {
-    "ko": "일본 증시는 장 초반 상승분을 반납하며 하락 마감했으며, 닛케이 225 지수는 1.76% 하락하며 한 주를 혼조세로 마쳤습니다. 개별 종목으로는 반도체 기업 키옥시아가 2025 회계연도 순이익 두 배 증가를 발표했으나, 전반적인 기술주 이익은 둔화되는 모습을 보였습니다. 한편, 알파벳이 AI 투자 자금 조달을 위해 일본에서 엔화 채권을 사상 최대 규모로 발행했으며, 일본은행은 투자 펀드 활동으로 인한 금융 시스템 리스크를 경고했습니다.",
-    "en": "Japanese stocks closed lower today, with the Nikkei 225 falling 1.76%, reversing earlier gains and ending the week on a mixed note. While chipmaker Kioxia reported a significant profit increase, broader tech profits appeared to fade, contributing to the market's split performance. Separately, Alphabet made a historic yen bond sale in Japan to fund AI initiatives, even as the Bank of Japan warned of potential financial system risks from investment fund activity.",
+    "ko": "오늘 일본 증시 헤드라인은 엔화의 급격한 변동성과 개입 가능성에 대한 추측이 지배적이었습니다. 엔화의 갑작스러운 급등은 도쿄의 조용한 개입 시사로 해석되며, 일부 분석가들은 개입의 효과를 위해 금리 인상이 뒷받침되어야 한다고 지적했습니다. 한편, 알파벳은 AI 자금 조달을 위해 일본에서 5,760억 엔 규모의 사상 최대 채권을 발행했으며, 이는 GOOGL 주가 하락에 영향을 미쳤습니다. 또한, 일본과 한국의 기술주가 하락하고 채권 수익률이 급등하는 등 전반적으로 아시아 지역 시장에 조심스러운 분위기가 감지됩니다.",
+    "en": "Today's Japanese stock market headlines highlight significant yen volatility, with sudden jumps sparking speculation of quiet intervention from Tokyo, though some analysts suggest interventions require interest rate backing. Concurrently, Alphabet announced a record 576 billion yen bond issuance in Japan to fund AI, which reportedly contributed to a fall in GOOGL stock. Broader market sentiment also saw tech stocks in Japan and South Korea swoon, accompanied by soaring bond yields, indicating a cautious tone across the region.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1778830376
+    "generatedTs": 1778839503
   }
 }
