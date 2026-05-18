@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-18T08:34:50.983546+00:00",
+  "asOf": "2026-05-18T11:33:26.485067+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -2039,7 +2039,7 @@
       "changePercent": -0.19,
       "marketCapB": 5823.71,
       "per": 14.59,
-      "pbr": 1.44,
+      "pbr": 1.37,
       "dividendYield": 4.46,
       "roe": 11.06,
       "roa": 0.3,
@@ -3257,7 +3257,7 @@
       "changePercent": -7.11,
       "marketCapB": 1706.3,
       "per": 19.0,
-      "pbr": 0.62,
+      "pbr": 0.61,
       "dividendYield": 4.86,
       "roe": 3.31,
       "roa": 0.47,
@@ -3383,7 +3383,7 @@
       "changePercent": -1.88,
       "marketCapB": 1660.05,
       "per": null,
-      "pbr": 1.67,
+      "pbr": 1.84,
       "dividendYield": 0.0,
       "roe": -5.23,
       "roa": 0.32,
@@ -5651,7 +5651,7 @@
     {
       "sector": "ConsumerDiscretionary",
       "changePercent": -3.03,
-      "avgPbr": 1.7,
+      "avgPbr": 1.72,
       "count": 14
     },
     {
@@ -5715,52 +5715,52 @@
   },
   "headlines": [
     {
+      "title": "Japan's Nikkei index falls on global bond Sell-Off",
+      "publisher": "saba.ye",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1TaW9tenA5SW9pN1dtY3JrUGVOWTJyTGlfbnlSUnhyTmIzeXZ5d3AzMHlOM2lnMWRQTlRFSnRaMFZZd1NrTnIyTzV0cFR5WEU?oc=5",
+      "publishedTs": 1779101986
+    },
+    {
+      "title": "Stocks fall and oil prices gain after Trump warns the Iran 'clock is ticking'",
+      "publisher": "The Joplin Globe",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOSF83UVBLaUt2b21IcDBPQWtfc3VlZmo4SHdZa29wOURYLUNOek9oQVlvTkNINVFzWm84M1htV1VSRHdncDFZcXpjanA0TW1jTjB1Rk5GMXFHaURhcFN1Qk85amg0cGs0cTA4SEdmVzNHQ2xXV2NtQllEUUszRXVZTlFrSjM3OHN2ZXFSbTR4NUNBZDZIWTNlVWQ4SHJaRHVuSnB6TXVnemNfMC11c0NBUnptRFN3d3RBSzJ4NE9KNkkwLTNLTlZQdzYwRm11LXRrUUVxRE11VjJnSkdHREtsYjAwSXE5THV3bEdUVFdldjNTZXZmTGVUVE9yeFZ6TlllMDdVeXFXMlBaUQ?oc=5",
+      "publishedTs": 1779101550
+    },
+    {
+      "title": "Stocks fall and oil prices gain after Trump warns the Iran 'clock is ticking'",
+      "publisher": "Midland Reporter-Telegram",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeTAySW9yc3Q4QlU2WmRHUlIzWElMOU5BWWpuMHdCeXliMXFMc2ExaFBIUlJwZmJtVjNYTTl1SThsTEtwMzN6WFIwU3RkUXNpRnQtZzF1QVVaQ25OanRSWFA2eW01TTkyZEcyODhtZFluVHk4MlJZRjlzSmdPZG9IUERHR0ljS1pzWXg1R3hCVUJLbHFIb1Vpdm5wTi1NWFpERGE4?oc=5",
+      "publishedTs": 1779101427
+    },
+    {
+      "title": "Japanese Yen: Fiscal risks and energy shock weigh on JPY – MUFG",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONGFkNHJscGpsQ1hKRGpjT1o5b2NnUmhKUFhYUzd1MVI5MlptUXpSUG1lblROeDl0VkJCWUdtSE44TjNmQllURHYzNnpDcVFOaXFZNjVqVFEwcFlLdk9pZnRWcFZqSUVqOUR0OXZCUkp0VnR1Skg3ZURqcGx6cno5SkVRcl9UdTJEeFNiYzJuV2hyQlpxbFBzTWFlVFVxQkwzblhBOUNR?oc=5",
+      "publishedTs": 1779098196
+    },
+    {
+      "title": "Japanese Yen struggles despite retreating oil prices",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb2R4ZkZpOVg1Y2g5dmVGNFJCXzVYQnBSMUlqeXNFVzJreDNwQVpPRzEwVk44dVBrVTl6eDlZZ3lYMUlCUmRTRVVIZV9fQ1RsRkVETGlnY0YyYkdjWFNaM1hCUWxETF9zaUlSX1p6VGgtR1c3bWdmT05PcU5nNGVFOFgtYzhYd0hsVmo3Q1dUQ3U2cEhOT1ZMOUotbw?oc=5",
+      "publishedTs": 1779093412
+    },
+    {
       "title": "Bank of Japan : Highlights of the Outlook for Economic Activity and Prices (April 2026)",
       "publisher": "marketscreener.com",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOM2QzTmFYSHZqUEZhOGhlUGhlWDdOUWhYUDZ5Rjk4VEJ1WFFaQnlPRW5sTEJsTXh6amNfbGFsNy03Mk5kb19Ldm5lZ2d2c0dnNlJ6OVRjUm1zTmpLTk1oOUhUdlhfa2M2LTVYX1ZRbEtqUXJycFpfVW82SG9KYWNYbjA1N2cxRWd0bUFSVHZiVmhMa1A1c29KcDBVdzk2NFZtTmVHcXZ1MFNOTUFqTlgxczdKXzREbTFMQmdKbkVDUDE5SjJZN3VLaU9UWkc2ZWZ6MUE?oc=5",
       "publishedTs": 1779092006
     },
     {
-      "title": "Stocks fall and oil prices gain after Trump warns the Iran 'clock is ticking'",
-      "publisher": "San Francisco Chronicle",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ3ZXV09nTnZ6TkRYVkxINjAyNUVqLVFTeFcwWEkyNU05clhpdFZDMEl1Nmw2M21NeHRmYnNUR0NkSllCUEl2MTZhd0hxWDZZUEF1UzVmVXVZeVVwUUJON3dmek5pU3YtOXBFVml5QnJqOHZjejR2MkVRNURpYkUwNHF5a0gxV09XRGRlNXhKdnpNdkhlRHBPbktVUlNtd3pBdE1ub3VqaG4xeGc5dkE?oc=5",
-      "publishedTs": 1779091425
-    },
-    {
-      "title": "Japanese Yen: Pressure builds near 159 against US Dollar – UOB",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbFVveE1HRXZ0eEZLd3BoREN6ZFQ4X0RzRkVITmJpblFsRXR2Wi1na0hZcjRvYU1obmFETDFUT1VfWHNQR0VQbUU3Q2Z4NUxLR3BLaEZlc3dsclRaeEpUMjFzRlJlMV9YNHV4Tmxmb0ViUmd6Nmh4aEJlbnoteHFnMEp3LVg5a3hHbnFZTWRtUnBqUFkycHdRT0k0X19kMmFqNGpTZQ?oc=5",
-      "publishedTs": 1779090566
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 1.08%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZFlOTlN5bHNpWmlXWXBGTHkwYjBLY0ljY2xGbjZKd0RYV3RmdzFhV3hPRDdDTzd1RTE1ZXVaa1E2ejhCRmdudDZ0YmYzdVUxaFBORTBVX2o4QUlBMmlqbnNuQ3JoOG52ZEhPTGNfZjQteEFMUy1BUWtiMUU0OWp2ZGt4QjZvVkpmWGhVYWxXNXBJbFFONHlOWGxxdVNadUpIS3BmbmstVGRmNm1uOW1EZUVDbw?oc=5",
-      "publishedTs": 1779088050
-    },
-    {
-      "title": "Asian Stocks Retreat as Oil Surges After Trump Warns Iran “Clock Is Ticking”",
-      "publisher": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX3NhVGJvd3pLNGhuaW50Z01iYjVzS18tWVJJSElnbi1CWXJkaXVBUHVjZVZGanBBU2xackRXanUxQTBqVm95bEZqOGxHTlVLd1FqS1FwSmNMcmppSkdPUXJzTmNVYlNSWFFMdzlWRDE1VGFwb283YnFPQmJNOVhEb2ZCQlpvTTB5SjMtZUJGbFJMR1M3eUg4UkhVMWJfZ09FZ0xfZHNBNlRCMzcwUmlGeHlqVW9KdjBhY3c?oc=5",
-      "publishedTs": 1779087000
-    },
-    {
-      "title": "Japan's Nikkei slips for third day as global bond selloff, Mideast war weigh",
-      "publisher": "Business Recorder",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5QLVhIS0VEU3RWckpraDZSTk00blRZZm1sb3c1ajlxaGdyaHJaa25HZ2hUYkpIQlZrNGNLaTZ5YjBKWjB3V1FuN3ZTeVlVQktD0gFWQVVfeXFMT0t5LVNmTGlVb0F2OHZwNndlN2c2RDE0OV9NZm42blJpVlZOeHhxMkpURDZ4MUNQWXRRVm5OdnhGS05kMmRhTUJBa2xtVFlZSWpBS0hlaEE?oc=5",
-      "publishedTs": 1779084018
-    },
-    {
-      "title": "Top 2 reasons why the Nikkei 225 Index is crashing today",
-      "publisher": "Invezz",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYWxibEJlbW1xRUtUYUU0cGZVMkJpMUp6bXdpWUpMWk1ERTZzeDZxWXBuVFdUR3g0MWRWRG9lNTlkYVVaRVVPN2xJZndtRXpscGdWckpWekIzUDJ2Yi1SZUdXV2h1V1htb3Fwd0MxM0tDLWJTaVp5OWEzZThOZk9kS05tdWk5SDdyMGF4VDZnRDRTSUZuM1l3?oc=5",
-      "publishedTs": 1779083580
+      "title": "Stocks fall and oil prices gain after Trump warns the Iran ‘clock is ticking’",
+      "publisher": "CityNews Halifax",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQR1phbnFvczVLSzdIOVgtVEFLWnR0aVBRNEhJXzhSbl9LSjA3RUpZSENwR05yU3phQmM2MTlKYkFIVzhrQnRfbGVMaFU2TzBwZmlZUWFDb3lMa1FZaUFEakRmbll4V3J4dGVlQ3Q4UmdHSktVUFF4eWtZdXVQWUliSEN5ek81SGl3d3pjcU1iTUZCbzRlMjJIVEh1LXEwMWNSOE9KOG9qQUZkbm5ORFBvN1JWTUdLZklk?oc=5",
+      "publishedTs": 1779091402
     }
   ],
   "marketTone": {
-    "ko": "일본 증시는 중동발 지정학적 긴장 고조와 글로벌 채권 매도세의 영향으로 3거래일 연속 하락 마감했습니다. 닛케이 225 지수는 1% 이상 하락했으며, 특히 이란 관련 경고음이 커지면서 유가가 급등하고 아시아 증시 전반에 걸쳐 투자 심리가 위축되었습니다. 엔화는 달러 대비 159엔에 근접하며 약세 압력을 지속적으로 받고 있으며, 글로벌 채권 시장의 매도세 또한 증시 하락에 일조했습니다. 일본은행의 경제활동 및 물가 전망 보고서 발표도 주목받고 있습니다.",
-    "en": "Japanese stocks closed lower for the third consecutive day, with the Nikkei 225 falling over 1%, reflecting a broadly negative market tone. This downturn was primarily driven by escalating geopolitical tensions in the Middle East following warnings regarding Iran, which also led to a surge in oil prices and a retreat in broader Asian markets. Further weighing on sentiment were a global bond selloff and the Japanese Yen's continued depreciation, nearing 159 against the US Dollar. The Bank of Japan's economic outlook remains a key area of focus for future policy direction.",
+    "ko": "오늘 일본 증시는 글로벌 채권 매도세와 지정학적 긴장 고조의 영향으로 하락세를 보였습니다. 특히 트럼프 전 대통령의 이란 관련 경고 발언이 시장 불확실성을 키우며 주식 시장 하락과 유가 상승을 이끌었습니다. 한편, 엔화는 재정 위험과 에너지 충격에 대한 우려로 약세를 면치 못했으며, 유가가 일부 하락했음에도 불구하고 고전하는 모습을 보였습니다.",
+    "en": "Japanese stocks fell today, primarily driven by a global bond sell-off and heightened geopolitical tensions. Former President Trump's warning about Iran fueled market uncertainty, leading to a decline in stocks and a rise in oil prices. Meanwhile, the Japanese Yen struggled, pressured by fiscal risks and energy shock, despite some retreat in oil prices.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1779093300
+    "generatedTs": 1779104013
   }
 }
