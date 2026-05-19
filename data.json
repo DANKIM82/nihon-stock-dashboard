@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-19T08:04:41.844003+00:00",
+  "asOf": "2026-05-19T10:49:51.407141+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -1740,7 +1740,7 @@
       "changePercent": 3.13,
       "marketCapB": 5780.28,
       "per": 19.31,
-      "pbr": 2.85,
+      "pbr": 2.93,
       "dividendYield": 1.65,
       "roe": 15.62,
       "roa": 6.31,
@@ -5604,7 +5604,7 @@
       "changePercent": -0.65,
       "marketCapB": 3652.9,
       "per": 18.5,
-      "pbr": 3.72,
+      "pbr": 1.48,
       "dividendYield": 1.31,
       "roe": 9.16,
       "roa": 2.69,
@@ -5775,7 +5775,7 @@
     {
       "sector": "Technology",
       "changePercent": -0.94,
-      "avgPbr": 5.57,
+      "avgPbr": 5.58,
       "count": 17
     },
     {
@@ -5817,7 +5817,7 @@
     {
       "sector": "RealEstate",
       "changePercent": 1.17,
-      "avgPbr": 1.74,
+      "avgPbr": 1.36,
       "count": 6
     },
     {
@@ -5839,58 +5839,58 @@
     "unchanged": 2,
     "belowBookCount": 25,
     "avgPer": 21.33,
-    "avgPbr": 2.49,
+    "avgPbr": 2.47,
     "avgDiv": 2.34,
     "totalListings": 131
   },
   "headlines": [
     {
-      "title": "Australian Dollar falls vs Japanese Yen as RBA Minutes flag inflation, growth risks",
+      "title": "Japan's Nikkei 225 index eases for fourth session",
+      "publisher": "Business Standard",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS2V3dXJWVGRjeUZzWlZLRHZtSE9KaUVodHdmdkxGSXpHVnl5Ty01NFlqNWtBMXFVQ2tjaVhUNTA0YXlYQXBSVE9tT0pOX2UwS3B0RzljYlA5aTNSV1UyZ3NFWGZpZzBEb0JWMmZXX01HakpUb2l2R29rSmk5U0hJQnMyclk3a19SUWpZY1lvTG16RjJmelhXLWVXeFpaNXJCZ2Z2TDIyUXlwUW50ejdvbzUtUTlQR2xyenRqRE1tTW15SmRHSHB0dnBna9IB0AFBVV95cUxOMWp1R1BSNkU2U3ZCSzE0clBmeVlZNVJZNDR4XzZhamNkc21oRVVuTHVrYXRNRmt4NUQ1Q3lUZGZYX19GOUJxLUNHNzhuVXVrZ19tMVQ4X08tU2N3by0wbDZkWElXaTNyOXA4QVJ5bDcwUVE1UzE4LTRsRHlUZndORDE4SEs5ZUVLVE56dVpnV2JEUmxUN2RFTGVNV2NkOWRUeXF1SVR5Z25EMndhTW42UTdVUXNmX3hYVGgxRy1yallUM2t6X0QwSmJzdkZKb1N6?oc=5",
+      "publishedTs": 1779186970
+    },
+    {
+      "title": "Japan Plans Automated Financial System Using AI and Tokenized Yen",
+      "publisher": "CoinCentral",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOHphZ1NUNUZJRlNyajhfa1ZQSlpqNENFc0tTcmtrVkEzMmdlOGlKMHpwUFVYd1o4a21HOE9GZFJzWEgtR2piTTJQQnAwRjBwQ3ZvLTdMNW1oZE03NGRqTkRhVHJ3ZlowS3JDcHNkUmUwM2lpdm1hUGdaNGQ3c284S05aczM3cVNaUkRMR1BQRnk3N0Zp?oc=5",
+      "publishedTs": 1779185414
+    },
+    {
+      "title": "Japan AI-blockchain finance plan backs yen stablecoins",
+      "publisher": "crypto.news",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVk5NdktlNmVjbjljT2xiRmNsRWF3NHZXS2xMS0ZMTG9fQjl0T1plczljcDdySGJmLXBXREZHS3N1QUNuM0UzQVJfWDNWTEtnNENOcDNFX1VUWWpteEhqRk1XZGxNcXNsOFdZOThYbm9oMjR1RGwyOVVTQjBlc0owVg?oc=5",
+      "publishedTs": 1779184722
+    },
+    {
+      "title": "US Tech Weakness Drags Down Asian Equities, Japan, South Korea and Taiwan Stocks Fall, Samsung Union Talks Make Progress.",
+      "publisher": "TradingKey",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNHZIdHJERlpoNmQ5QWFPZ05iQk5tZUZDN05YS191RXc3WlVOaWk2SzRMRV93TVQ3LTdmQUVYeHJEdU5iM3lTQTJFM2VQTVJqcjNKblQ1NDVnMHUxVC1CZGJ6VUdCUkxXV2ZsbnEtbHdQNGtfajJxV20zZ2hvVWFQeGp0aVZNMFRnRnRUci1BZWlJcmlRZVNoOTJVbVcybzZ5LXJwb3hqX3Z1RmJ4ZUpqZWpMMldNT3owVjM0?oc=5",
+      "publishedTs": 1779184273
+    },
+    {
+      "title": "Japanese Yen: Fiscal risks support renewed Takaichi trades – DBS",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQVk3Nzl5TnFFMEtDR1JvQ1puaDNsOC1FOWJhWm9mcDdmY0ozd0NTZG9jbzBlNzlRM01tWG96SXI0RmxXV0tGeTZMMFdHMnducno0QUtYbGQtZWk3emVXS1BOeHcteXhVblkwYUJSbzdtR2hEZC1TMlBjVDJLSWltRWQ2aFg5RkhtY21JMGxIQVZLdkdWZ3FkZzVGZmExWWIxNEt4ZGFyeFY5aHNWWjJXNktsWFQ3VXFIRm5kZDdmUkFzUnc?oc=5",
-      "publishedTs": 1779176852
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWlNXZE5yNGIwQ1NfODh3NU5rVm5Dd1RGSkxqUnFBMTRCaFJTWktZY2RqTFNPOUM3RjJwWUhLNkhOaHFiZUdUQXVHUmF0RDFTcTFQS25uQzBTZXRNRXBjVzJzbkZjMFlHRENqX0hkeEdNbk9IbUM4RmlsYUxOc19wSTBJZWthOG5OUV9KMF9PWEttMl9JUW9TU1BlUjBFeVZYZTl6NDh6cw?oc=5",
+      "publishedTs": 1779184217
     },
     {
-      "title": "BOJ could temper its taper as bond wobbles rattle markets",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTGtvbHVoWDR6S0ljaVpHZ2dyYUdScGc4SUdrMkFic0xlWno3cjhCcV9RT3kxd1BDS2tONDZxa3J2NXl0b09XQjBnQXdSeGU0WlE0bG42SVZ5M085TzhXY002VzIzVFJQeElYR012SE9UTkplczVxdm5lbk1BNVpTU0NDUEFzU0hRTFNRdXExdnlidDEwMzI2WGxEMVAxMnpmaTRMZ09Scjd2cVRBRmc?oc=5",
-      "publishedTs": 1779176751
+      "title": "Nikkei index reverses early Gains as Tech stocks decline",
+      "publisher": "saba.ye",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5dUxnTE15aFV3WnZnSEhQUzhHbXBOcXU4OUJXM1NFd0RwY0tQU2ItODltcTdIY3dEVXk2UU5LckVQeGFzY19zVFBMU3hSOEU?oc=5",
+      "publishedTs": 1779183061
     },
     {
-      "title": "Japan Inc. posts bumper year under shadow of Mideast risks",
-      "publisher": "朝日新聞",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3SWlpUFVKYy1vV2JEWWhLUzdsYlpMRWY5ZjM3LTdTNkRQR1h0UjdTSXp2NUh4Q3loaFhGOFQ5akxaTDB5dTZaSzBRSzBRRkR5RG90eEJR?oc=5",
-      "publishedTs": 1779176520
-    },
-    {
-      "title": "Asian shares trade mixed and Kospi falls 3% as oil prices keep swinging",
-      "publisher": "Midland Daily News",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdHlQMFJkSXk5QzJ3bzc1OW1TWDRlOUpQODVDRDdfaGF6Q0FDdzFRb2tEUXpQNjEwM2JYM0VWSEhTMDMydS01ei1qdG5zQTFfekQydjRpZXEwTmZjdC1fZ0hobWZZR0g2LXBwZldobU9CRHozY3ZGWVBWaHItMFUxYWxWSE5vTmhQemp1VTlHRTE2ZFhsRl9uYzdqZE1WV2d0by1DSWJEWHd1UQ?oc=5",
-      "publishedTs": 1779176475
-    },
-    {
-      "title": "Solid GDP data supports Bank of Japan’s June rate rise",
-      "publisher": "Financial Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBocnhzUktpc3dGY2RWd0RveDlwR2VsYjB2a0ZyQVVTMkxmNmctb2VyRFhVWVhvdlYyT2Jzdmw2bldOQnpkWFVoWGdTa2hUMk1WczZ4WFBfVVFFWFhITHNMTTR6ckxqMHdjTW1uNFp5Ymo?oc=5",
-      "publishedTs": 1779175975
-    },
-    {
-      "title": "Japan’s Nikkei Stock Average Gives up Early Gains as Tech Shares Fall",
-      "publisher": "The Japan News",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1kMkV4X0otS3BSSW0tZkpIa0Z2dXltWUw5d3pMNG96bkRkdjI1RU1YZVhrSEQyN2V6UVIwdE1seF9ybEVQMVVyV25xX0c4djIyS0k2enJQRFlUVmMxLWh1cHQ2OGgxZFYxWGFEOGdWWlZ5Sm5LNlB6TFl3?oc=5",
-      "publishedTs": 1779175860
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.12%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQVV0eFZiR1NnVGtZUXk0dUdqR2tjcWRnOTE1MW43aG9ZMF9wX3Z1S29ELTdGaE5pTi1OcUVIMnBfa0hpNVZZMUlZQVdiMFMxN2hBMmdaMkRzMDdRamRZUmpRbnFUMGE5NTE4Z2lqX0R3cDhlN1hSamgzUHFHbEFNTlNZVTBrTHBLeEh2U0xfQzRvdmtOanBObl9yT1VxRmNTX0hBaTJoOTJlNGNDT2VOYkliNA?oc=5",
-      "publishedTs": 1779175225
+      "title": "Global shares trade mixed and Kospi falls 3% as oil prices keep swinging",
+      "publisher": "Norwalk Hour",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1pWNFpRZjgwWDduT0l1aElYVFhFbTVPd3NPdmdtSEVQNUVuZnlLX0o5SjNHREx4N3NSUFptalFhbTkwM0tMSTg4RENhUllubzRuV0FsYWh6eTVRRms1QmhQM2NpVVlNMko1enB5OXBfYWhpUlJkMkJfRmNkb0stZ0ZOdUJOekxlaUpjeDFhM2xsdGxJeE9HZ2hCakF4OU0tNFRrUmhR?oc=5",
+      "publishedTs": 1779182550
     }
   ],
   "marketTone": {
-    "ko": "일본 증시는 기술주 약세로 장 초반 상승분을 반납하며 소폭 하락 마감했습니다. 견조한 GDP 지표가 6월 일본은행(BOJ)의 금리 인상 가능성을 뒷받침하는 한편, 채권 시장의 불안정성이 BOJ의 테이퍼링 속도 조절 가능성을 시사하며 통화정책 방향에 대한 혼조된 신호를 보였습니다. 기업 실적은 호조를 보였으나, 중동 리스크와 유가 변동성 등 지정학적 우려가 아시아 시장 전반에 부담으로 작용했습니다.",
-    "en": "Japanese stocks closed slightly lower, with the Nikkei 225 giving up early gains as tech shares declined. While solid GDP data supported a potential Bank of Japan rate hike in June, bond market wobbles suggested the BOJ might temper its tapering plans, creating mixed signals for monetary policy. Strong corporate earnings were reported, but geopolitical concerns, particularly Mideast risks and fluctuating oil prices, weighed on the broader Asian market.",
+    "ko": "일본 닛케이 225 지수가 미국 기술주 약세의 영향으로 4거래일 연속 하락세를 보이며 약세를 지속했습니다. 장 초반 상승분을 반납하고 기술주 하락이 지수를 끌어내리며 아시아 증시 전반에 걸쳐 하락 압력이 가해졌습니다. 한편, 일본은 AI와 토큰화된 엔화를 활용한 자동화된 금융 시스템 구축 계획을 발표하며 엔화 스테이블코인 지원 의사를 밝혔습니다. 엔화는 재정 리스크가 부각되며 새로운 거래 전략을 뒷받침하는 요인으로 언급되었습니다.",
+    "en": "The Japanese Nikkei 225 index eased for a fourth consecutive session, with early gains reversed by a decline in tech stocks. This weakness was largely attributed to US tech sector performance, dragging down broader Asian equities including Japan. In contrast, Japan unveiled plans for an automated financial system leveraging AI and tokenized yen, supporting yen stablecoins. Meanwhile, fiscal risks were highlighted as a factor influencing renewed trading strategies for the Japanese Yen.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1779177893
+    "generatedTs": 1779187800
   }
 }
