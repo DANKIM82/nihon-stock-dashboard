@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-20T08:04:23.613980+00:00",
+  "asOf": "2026-05-20T10:36:01.859639+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -1777,7 +1777,7 @@
       "changePercent": -2.07,
       "marketCapB": 5660.58,
       "per": 18.9,
-      "pbr": 2.87,
+      "pbr": 2.8,
       "dividendYield": 1.69,
       "roe": 15.62,
       "roa": 6.31,
@@ -5905,7 +5905,7 @@
     {
       "sector": "Technology",
       "changePercent": -1.64,
-      "avgPbr": 5.53,
+      "avgPbr": 5.52,
       "count": 17
     },
     {
@@ -5969,11 +5969,35 @@
     "unchanged": 2,
     "belowBookCount": 27,
     "avgPer": 21.05,
-    "avgPbr": 2.45,
+    "avgPbr": 2.44,
     "avgDiv": 2.37,
     "totalListings": 131
   },
   "headlines": [
+    {
+      "title": "Morgan Stanley Japan CEO: Hope Yen to Gain to 140",
+      "publisher": "marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2g5ZDRHYTZpYjBobS01d1MxNEstWWFLR2wxZDhvVi1GdkpzNkptVzZzLU5mbGdrNFdSeFlzMFlUZ2Z1N29iVzB3YVRCYjNZXzQ2STdTXzBPNHlTSTNqZzVoeXhQUVRQYVpvNy1ubl9xVTBKRGtqTzVoelNBRTg1bjI1a2tvS2RMcjJoMy1VSjlDSW9hLXI2NDlQak9oRzhicEZ3?oc=5",
+      "publishedTs": 1779269045
+    },
+    {
+      "title": "British Pound flatlines against the Japanese Yen, amid soft UK CPI data",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMkFCY0dUaUJLZkNTaGRXSWMxbUpmVnQtcFY3ZzZTQWxicHN3Q3VmV1BRN3g4eER5Sm1MMTcxa2dUcEZKbXptdDAyZExDajhNaVJxN096VjExNDgxcHUwcFUwblRBODdzSFZoQ2ttR0dySkEyM3NScVNHMnRaSE1IaU1ZcXJ6eXJxQXl4UjJoN1luaTR5eHppemZ6OE04b2haOEdXaUdUNWdlalh0bkRLbjVMcw?oc=5",
+      "publishedTs": 1779266791
+    },
+    {
+      "title": "Japan's refinery runs rise as crude stocks bounce off record low",
+      "publisher": "Quantum Commodity Intelligence",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQVZldDJqRkdpTmhXYUZhQlAxSjJnVEV4M2M3MzZhZGQtTExYUUNvWUpySUFyZTdfa0FwWnVWU1hZY3pKWDE4aV82cVdSTlR4anBTOW83d1FsREE2ZVpJT1dDNThWRloxU3VDYzh4elFzTXB6V29mRTN1TWdSTWxNREQyb2cyWnMzS0FHTmR2WjF3LW5ydWxWSU1ZeFJrb09ueDhNQWxUTkNKYTA?oc=5",
+      "publishedTs": 1779265080
+    },
+    {
+      "title": "Japanese Yen: Dollar strength dominates as US yields rise – MUFG",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQmk4WVdyLWs1dGRkaDFoWU1PaWtTdC1YdkZRZTJudHNnbDA2QURET2xwdmlMUXVhYzdLMkRWMW56dmJ0NHMxNUI1dUNTRzBzbWMtWXMtV1BHN0ttd2hsdUN4NnJqVHpyeHNtamdJQWNYSjJOeXVXUFU0UXFOd1hmRFFFOHNRNlFvN3R5dGxFT1lvdTc0emIxb2p3S2RLNnAtM3FPcmc4aw?oc=5",
+      "publishedTs": 1779263986
+    },
     {
       "title": "Global Markets | Japan's Nikkei ends near three-week low as AI-stock selloff weighs",
       "publisher": "The Economic Times",
@@ -5990,37 +6014,8 @@
       "title": "Japan stocks lower at close of trade; Nikkei 225 down 1.34%",
       "publisher": "Investing.com",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT3hZS184VU1oMEZzb1FFQzMxaWdHUWVmWjhpTVN1YXdxNTYxbjVNZFR6RUdENi1YQWticy1Fa1RGb2RWZlVmWUwzb1J3ZVYwdGtJbGFhNDFIS05NWE1aMHJsVUdfN19NZ3gtRkgxZURkZzJOb0o1NzFlZ2E2NTZqYWM1TnFXX2xHMkllNkhUWmVnbFJEVXpaNExoOURaQUZzU2J6WGhVV0loanc0VzJUbnVHTQ?oc=5",
-      "publishedTs": 1779260845
-    },
-    {
-      "title": "Japanese Stocks Are Bargains, Even After Big Gains",
-      "publisher": "Barron's",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBacDlxbGUyNHpiMHFNTi1YZVFPYWREN3pIQlpyQjYteXlwR29talBJdUQtYjVpaWFfTWRsbGd0emNJTDlWNk9BTERud1F0WlhId2Y1N0JkRXdkcWR6OWlhay1KWHRUeVFEMmRYOUxjVHFMTjVtOWlxeQ?oc=5",
-      "publishedTs": 1779260820
-    },
-    {
-      "title": "Japan's Nikkei ends near three-week low as AI-stock selloff weighs",
-      "publisher": "marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQU3lsbHpQR2tBLXpiZjR6NDRHSUFmMF9pNGV3UUNsYlR3X1N5VzJQZjNzRGNxYVBFNktfajAyeHVXVkU5SG5laHJzaERTUzBiSHRSSlRKclVYMFJ5SWpHS0Utbm93QzdjaHhTVEloVW9aTmUxYjItdW1CX0F0RUlpeGR6NlZURlJWRmZ2WndCWi1YTnpRajZJR2FSeEdoUDYxYVNYN0tfT0J0VDhaOTYwMWgzZlpfU0tNOEh3?oc=5",
-      "publishedTs": 1779260746
-    },
-    {
-      "title": "Japan Stocks Take A Breather As AI Trade Loses Steam",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdGFIZjRjUkVhSlg1V0dfUWc3b05YS1kyekVEMzN4aUxKcW5VS05rWjRYMVlWellfRGxndHVCWXo3bjRuSUc3VGVVUkNPdmVhV3p5Q1oyR0xfZWhNZWQ5WFhNZmRBU1dmSnpjV3RiM0NjeUs4VDNTeE45T3pBc0NHZ1VYRHBPTVFq?oc=5",
-      "publishedTs": 1779260341
-    },
-    {
-      "title": "Asian shares track Wall Street's retreat as bond markets crank up the pressure",
-      "publisher": "San Antonio Express-News",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU2ZOV2w0WUFXYnR5X2dMNXFYRVluVnpMaVV6WExRTzUtblN3RGUwTC1rYnQ0cC1qTFk2bWVpampiWkhsUGVwZk9NbC1GS1BRYndmWHB6S2htMElWOW9HNzZndmVEZkEtaVdqdXBLb09lQndEaXNIcHVOYVYwbG1tVWNHendTOUx6d3kyUGZrelIwaF84T2hQdWNyWUNPVmNQcWRxRXQzMWlGZw?oc=5",
-      "publishedTs": 1779258683
+      "publishedTs": 1779261526
     }
   ],
-  "marketTone": {
-    "ko": "오늘 일본 증시는 하락세를 보이며 닛케이 225 지수가 1.34% 내린 3주래 최저치에 근접했습니다. 이러한 하락은 인공지능(AI) 관련 주식의 매도세와 AI 테마의 동력 상실에 주로 기인합니다. 또한, 채권 시장의 압력으로 인한 월스트리트의 후퇴를 아시아 증시가 추종하면서 전반적인 시장 심리가 위축되었습니다.",
-    "en": "The Japanese stock market experienced a downturn today, with the Nikkei 225 closing near a three-week low, down 1.34%. This decline was largely attributed to a selloff in AI-related stocks as the AI trade lost steam. Shares also tracked a broader retreat on Wall Street, influenced by increasing pressure from bond markets, reflecting a cautious global sentiment.",
-    "model": "gemini-2.5-flash",
-    "generatedTs": 1779264271
-  }
+  "marketTone": null
 }
