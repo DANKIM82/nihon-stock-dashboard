@@ -1,7 +1,7 @@
 """
 Fetch Japanese stock data from Yahoo Finance and write data.json.
 
-This script is executed by GitHub Actions on a daily cron (see
+This script is executed by GitHub Actions on a schedule (장중 30분마다, see
 .github/workflows/update-data.yml) but also runs locally:
 
     python scripts/fetch_data.py                     # writes ./data.json
@@ -261,8 +261,23 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         return None
 
     # ── Price & intraday change ─────────────────────────────────────────────
-    price = safe(info.get("currentPrice")) or safe(info.get("regularMarketPrice"))
-    prev_close = safe(info.get("previousClose"))
+    # ── Real-time price via fast_info (장중 실시간 반영) ──────────────────────
+    price = None
+    try:
+        fi = yft.fast_info
+        price = safe(getattr(fi, "last_price", None))
+    except Exception:
+        pass
+    if price is None:
+        price = safe(info.get("currentPrice")) or safe(info.get("regularMarketPrice"))
+
+    prev_close = None
+    try:
+        prev_close = safe(getattr(yft.fast_info, "previous_close", None))
+    except Exception:
+        pass
+    if prev_close is None:
+        prev_close = safe(info.get("previousClose"))
     change = change_pct = None
     if price is not None and prev_close:
         change = round(price - prev_close, 2)
