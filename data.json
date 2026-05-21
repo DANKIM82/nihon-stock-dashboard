@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-21T08:11:57.642530+00:00",
+  "asOf": "2026-05-21T10:55:37.839224+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -5641,7 +5641,7 @@
       "changePercent": 3.45,
       "marketCapB": 4958.59,
       "per": 22.63,
-      "pbr": 1.85,
+      "pbr": 1.84,
       "dividendYield": 1.22,
       "roe": 8.38,
       "roa": 2.49,
@@ -5974,10 +5974,34 @@
   },
   "headlines": [
     {
+      "title": "Japan's April crude import price hits record high in yen terms amid Middle East war, weak yen",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRk9MWG5lWnZvZFZxQnhOYldoeG9GSkNseVMyd3dDeGhVRmlkb180T09MdnBkelJtRmpfVWxocHVfR2NSeFFUUkxUay1walFyYW5GcTdQRzBodlR5ODFKRlRNV01RcWpWQjV1OG9zek9qWXd6YUNweDR3bUZ1ZXYwakNsTG45RGJsMnhvcFVra3NrQTNtbjF1Z2hkcmpENVVmdzF1WEliMnBIYkpTTU9EeWhfcy1ic28wYkp0aXdJWVJvcHprbmFaME1HWmh0UG1heURwNnJERV9rUUlaelNFbEFhaml5ZWZxVVEwOE5keUZZMGtI?oc=5",
+      "publishedTs": 1779356930
+    },
+    {
+      "title": "Toyota set to sell Taiwan-made vehicles in Japan",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdnNsYlh2SDJ6cnZ3MUhHQkRsQXFZTUVVR1FuWDlla09zdld5TTBDM2NKOHptaFNlU054U3ZKbHozVHJlcDRFeDk2X1RRTUt1b0FtUVBsS1JaQnBhd1hqM1g3MkJZYmdrOVdFamk0YjVZaHpaNmR0V2hUaXM0TkxiOXZ1VUxRYkg3NnBTSURfVVhBR2J1N1dsSw?oc=5",
+      "publishedTs": 1779354000
+    },
+    {
+      "title": "Japan Stocks Jump As Peace-Talk Hopes Lift Risk Appetite",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTEg0LVFvMzdZNElSX2tvNU1BWUVzY2c2LW5tWUNncV9CRFBaSFlSWFAxY2V2aVZYZFFPUkxFQ05MckRBY2FFdExzWWZZd21ZVkd3U29kSXdKdUtlVmZ1ZWI0VEpSUWdkQjF4eGhiVEU5QzZDMFRQMXZCN196dlNMQ0psTmUyV25xYk1MNm1B?oc=5",
+      "publishedTs": 1779353797
+    },
+    {
       "title": "Japan mulls tapping 500 bil. yen for summer electricity, gas subsidies",
       "publisher": "Japan Wire by Kyodo News",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqd0lQNFFXVG1lWXQzcTJfaGRxOWlTWVZQUXVadDNHMkNzMWZURDN5VWdmLXFQd2o3VkJzam91OFZSMnNtNTBLTkJyWkNfdTdvZ0phZTdGVVlSUQ?oc=5",
       "publishedTs": 1779350280
+    },
+    {
+      "title": "Japan Stocks Jumped As AI And Chips Led A Broad Rally",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaVk4VVBlbTE2UDFMalFEMFFRTGNCQmtsbVlkbjk2OVBCNUxLbVNLYXQ3MVJ6ZkI2SS12MVVwQ2xTMldHRll5cXpxaXBiaktyNWdTWFFwTUZaakVRWEpoMHk4enZiWmZ1OTBLNXpuMjAwaHJ2ZzNaTy14THViX1NjcHdJb05GNmhSLWc?oc=5",
+      "publishedTs": 1779350202
     },
     {
       "title": "Bank of Japan’s Koeda emphasizes stronger role in combating inflation",
@@ -5990,36 +6014,12 @@
       "publisher": "FXStreet",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOekRRMDBXZ25KWUlKTFVKN3ZrWVRiNDdKcEFQc3BEbXJhWFk5ZmhMMm0ydlRLMGNDVTdMVjctVE0waW1SRWQ2NlFjdXktNko5Z3VuaWk1NmNrcktHcDdoWDdlYVBfZk5RZmJzcU96c0lSX0ZLdm5rLXhTVG5kaGQ3c0t3bmFkYjU3V1FvNzNQMWhwVlVMNDdxZ1o4b0hFeWFjaFY3Tm1GaWtPdE0?oc=5",
       "publishedTs": 1779348819
-    },
-    {
-      "title": "Bank Of Japan Signals Another Rate Hike Could Come Soon",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOODNHeWpTRGE1Y1FoTUl6ZTNDLTNvamdYNjJNb2plWGdqYjJGRnZTZUYtTWtocnplZS1CWmNSWEtzY3RidGhoM3lPc1ZUdU0weWxqcXR0OUpIMjQ2Vy0tQjVvY3IySkxXcGpKbXd5dEFiUWI2RElSXzRYd0JuUVZvYmhiUmlMMjZrRjIyOWM0TVk2QQ?oc=5",
-      "publishedTs": 1779347078
-    },
-    {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 3.10%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSGd2UmttbHVSNElPbkMwUVZGMnR2eUMxdWdKbjVza1F6czdqTHhoNUJLVlVtUU9rWEFIanZFSHZpeDJ3NHpNekp6NHh4YXFTc1R0QUdfZDJVMDVsbWg3c1FQOFFmUklSQWZPWjFqeS1jRHpmOWVNVDVTYVdqTXlzemJLM1VqbnNUUWJYSkdNem1kWkxfWWZ4bXVNX2JReXZJOC1Nb2F0cVlhSlI0d1lEVG5R?oc=5",
-      "publishedTs": 1779347019
-    },
-    {
-      "title": "Aflac Follows Alphabet Into Japan’s Booming Yen Bond Market",
-      "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNFRNRjdYQmdlbDhOMGZlUy1IajV1SHFBdFM2aV9HblF4OENzSzNYSWkxTGVHQkotSWY2WWZ0b2lPTjYtcVRBSDZGRFNKczR5OC1tNmRqRDhzTWo4RXI0cldkM09zb2xCZ2dqbHlsd3dEbE04NzFFcG5RdWE3QTRZTmlSampTR3QzbE9hSnVUb2JSVi03YWRMa1NGS1JTTlpfU3dQdFZOMm93THpudVow?oc=5",
-      "publishedTs": 1779346873
-    },
-    {
-      "title": "Japan Stocks Jumped As AI And Chips Led A Broad Rally",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaVk4VVBlbTE2UDFMalFEMFFRTGNCQmtsbVlkbjk2OVBCNUxLbVNLYXQ3MVJ6ZkI2SS12MVVwQ2xTMldHRll5cXpxaXBiaktyNWdTWFFwTUZaakVRWEpoMHk4enZiWmZ1OTBLNXpuMjAwaHJ2ZzNaTy14THViX1NjcHdJb05GNmhSLWc?oc=5",
-      "publishedTs": 1779346833
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 AI 및 반도체 관련주가 주도하는 광범위한 랠리에 힘입어 닛케이 225 지수가 3% 이상 급등하며 강세를 보였습니다. 일본은행(BOJ)은 인플레이션 억제를 위한 강력한 역할을 강조하며 조만간 추가 금리 인상 가능성을 시사했습니다. 이러한 통화정책 긴축 기대감은 엔화 채권 시장으로의 투자 유입을 촉진하는 요인으로 작용하고 있습니다. 한편, 일본 정부는 여름철 전기 및 가스 요금 보조금으로 5천억 엔 규모의 재원 투입을 검토 중인 것으로 알려졌습니다.",
-    "en": "Japanese stocks closed significantly higher today, with the Nikkei 225 surging over 3% amid a broad rally led by AI and chip-related sectors. This market optimism comes as the Bank of Japan signals a potential rate hike soon, with officials emphasizing a stronger role in combating inflation driven by cost pressures. The prospect of tighter monetary policy is also attracting foreign investment into Japan's booming yen bond market. Separately, the government is reportedly considering 500 billion yen in subsidies for summer electricity and gas.",
+    "ko": "일본 증시는 AI 및 반도체 관련주의 강세와 평화 회담 기대감에 따른 투자 심리 개선으로 오늘 큰 폭으로 상승했습니다. 그러나 중동 전쟁과 엔화 약세로 4월 원유 수입 가격이 엔화 기준 사상 최고치를 기록하는 등 인플레이션 압력은 지속되고 있습니다. 이에 일본은행은 인플레이션 억제에 대한 강력한 역할을 강조하며 향후 금리 인상 가능성을 높였고, 정부는 여름철 전기·가스 요금 보조금 지급을 검토 중입니다.",
+    "en": "Japanese stocks jumped today, driven by a broad rally led by AI and chip-related sectors, alongside improved risk appetite stemming from peace-talk hopes. However, underlying inflationary pressures persist, with April crude import prices hitting a record high in yen terms due to a weak yen and Middle East conflict. This environment has prompted the Bank of Japan to emphasize a stronger role in combating inflation, increasing the perceived risk of future rate hikes. The government is also considering subsidies to mitigate rising electricity and gas costs.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1779351124
+    "generatedTs": 1779360945
   }
 }
