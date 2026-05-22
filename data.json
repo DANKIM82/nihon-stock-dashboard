@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-22T08:01:29.757465+00:00",
+  "asOf": "2026-05-22T10:36:01.227729+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3361,7 +3361,7 @@
       "changePercent": 0.03,
       "marketCapB": 3452.44,
       "per": 7.86,
-      "pbr": 1.02,
+      "pbr": 1.05,
       "dividendYield": 2.91,
       "roe": 13.87,
       "roa": 6.17,
@@ -5973,6 +5973,24 @@
   },
   "headlines": [
     {
+      "title": "Japanese Yen: Under pressure as USD eyes 160.50 – Societe Generale",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcEZqLVFFaWJfdHU3c0Y0NWxOU3dBLXpoWmJwR0xPMzNYWVhZMGRpRUJvbEFWc3RKX1h6aEYyVlZ2cU5CdWs5Tm1LbG9HNHhfd0gxQVczYkIzV0owSldNS1gtc1VQU09Xc25fQnJUbk5rTWJURWZESWRoLUNBYVRwcGw3NGozQW82QlNoOE5Od3FHMU9rNWhKTHl0Q0FReUtaQmV4c182X0g?oc=5",
+      "publishedTs": 1779439864
+    },
+    {
+      "title": "Stocks climb, dollar near six-week high amid Iran talks uncertainty",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLTI4N2NGMFdmS2FqX3ZLM1k5VzMtSXRBX0FtSjloMjZKaG9sREJ0V0paSnVDS1ZGUVhBQWdsXzR5YTBlMHhXRDZqc0NPOUhjYTJsenA5Mk1wNjZNREZpX3hCeTlXVkZPZEJ0eFU4VGNiakNQSnRNekhTbUp1REh2RDJhNFI5OFNXMVAwN0Fac0k2cTFuOVhv?oc=5",
+      "publishedTs": 1779437496
+    },
+    {
+      "title": "Stock market today: Japan’s Nikkei, Wall Street futures rise as dollar hovers near six-week high amid U.S.-Iran talks",
+      "publisher": "Economy Middle East",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNbzJLOW5hRGFSclR2cEpBWlJpR3JKcVpuSzkwS1hicVhMSlZMakVvUi1ZUTQ2Z3Z4TTlZTmJaVnFYaXh6bUhoajZSMkpsRTJEWVUwX0F0LTZCbktXNks3ZFJNSFZRLVVQQUQzOXMyQ2VTSVBpakZqR1NzVVpPU0tHM1BRbXhOR2tkRUpMTkJfNERKLXoyY3pHbWptT3VUVGlWUkt1UWJYZ01Cd1k2YVFKTTBZSkExemJIMm9LcEV5VmhRNGNLbEJUNnN4SVp2N09FY3pHR2djVDJnM2g2QnVNdXJSUQ?oc=5",
+      "publishedTs": 1779437129
+    },
+    {
       "title": "Japan and Philippines to start talks on intelligence-sharing pact",
       "publisher": "Nikkei Asia",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSnljWk9TOHlmMVdEN0pmc1JLem1MNjJqYmlmd29waUZtdGI1a2VXT29GY3ZFYnVRSm5XTW5xYVhUVFhsc3BrOHU1TmVaTTc4WGowR1hqUk9vOEs2OU9PS0pGTlYyaGRKTDN5NFhtNll4ZDhUNWZ2MEN4czlPOTFlMXpLYllhOVBRX0pYX2R3SWliaDRQNnZyZ3J3UlhocXhTTkl1d3laQnU4MUNKb3BlRjFBRDJvVzRxajluVVhmRQ?oc=5",
@@ -5982,7 +6000,7 @@
       "title": "Asian Stocks Strengthen Across the Board. Japan and South Korea Stocks Near Record Highs, US $2 Billion Injection Ignites Quantum Computing Concept Stocks",
       "publisher": "TradingKey",
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQWYtTFJ0TDlGdXdmbGJHQ2dISXdpLXFyaGNGSUlrUWp6NlpCZ2ZFZXhYRU9oRXEyOENwRUxfZkdGRkpGOWJGWTRqRUFmSHpVU2dYUVNfR2VzY2p4ZDFoRmJENlg3V3VGMWM1RGxMeVRSWEQ5U3hoRzA1VEg4SWotVXV4by1ocXhiSjAxQl9SSWxYaXhDWHpqUFVlS190SVhEMlo3blYwWWVKS3U5SjBBRUpsczBIN3hlVXhvWGYzV24yY0FsVGc2VXpR?oc=5",
-      "publishedTs": 1779435987
+      "publishedTs": 1779436083
     },
     {
       "title": "Japanese Yen: Energy and rates keep Yen under pressure – Commerzbank",
@@ -5992,28 +6010,15 @@
     },
     {
       "title": "Japan's Nikkei rallies to record close as AI shares shine",
-      "publisher": "thestar.com.my",
+      "publisher": "The Star | Malaysia",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNTRBSEdOYk5NQ2twSUFMamRGWHBwTi1IdU9OVUN5MG5NNUJ1c2Zrd3VxazlBZGR0dGpxX1JfUEZseENOeW9McEFxR3hkXzk1RTg4bkcyZ0tCS2VJdlBzUmptRkktTjU0Q0dVenRVUHhYN1E2RmlBVVhObU1UOHZMVTIteEVhSEFIWXBScDJuZkt0eWlIMEV6YUsxal9kUlRvelhiN29nTDBfQ2JrSmoyTjl3LVhXQWhUYkVUbg?oc=5",
       "publishedTs": 1779434520
-    },
-    {
-      "title": "Japanese stocks hit record high on hopes for Iran resolution",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb1dmTVZRV3dzNTJMTVhIZFRNSnNIRnJXbUNFM21leG5SNHdIR2h5NUw4ZzFPSUFIVzliR3FNMUNhS3laQUJ1X3FaMnpRNV9leHRmTFRLeklpNTlCbkZsTWxreERWYTRmUGdmZ2t5M1NhdmVUSVRiVjYwYmZ1bFZOcGVJM2k0anM1bElfRkJQQTdOOWx3bWNWaVJTQkdjRFVvdHNv?oc=5",
-      "publishedTs": 1779434220
-    },
-    {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 2.74%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWjFyQ2xGY2xGUV84bzFTQzJUS0NkenE0bmRJX2NuVzF6ZW1adFF4bHdjV1laWHcwVWlPLWJVdkpzanZ5d1doNTZfN3RlUDFzeWctVTk4LWNrTFpvVnVLQTFIZjlNbG9UekplTGtNVU5La0tkT3hBSFA5SVduVkEyLU43TUFxTXA4NTIxRndyYXlCZmFUMTNnZDgwZlp6dHJJOVlnY19Kb1VEZHdVczhmaHBB?oc=5",
-      "publishedTs": 1779433438
-    },
-    {
-      "title": "Japan’s Nikkei Hit A Record Close On AI And SoftBank",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQzN6Ti12RVZRNHE0dmlGTnZ1M29SazNwTWZzTGlhc09SejI2dDBFM3V1R2x4WjZwcHFXRHh2ek10WUhMZW9RYXdJX3kyUTJUVmZxTDVSZWZRUTZvWjJTdjVnY1gwT1ZfOFRvd0NHY0RzeUlYVF8xQ25HY2t5MGRHb0d0TDJWZlU?oc=5",
-      "publishedTs": 1779433264
     }
   ],
-  "marketTone": null
+  "marketTone": {
+    "ko": "일본 증시는 AI 관련주 강세에 힘입어 닛케이 지수가 사상 최고치로 마감하는 등 견조한 상승세를 보였습니다. 아시아 증시 전반의 강세 속에서 일본과 한국 증시가 사상 최고치에 근접했으며, 양자 컴퓨팅 관련주도 대규모 투자 소식에 주목받았습니다. 반면 엔화는 에너지 가격 및 금리 차이 등의 요인으로 달러 대비 약세를 지속하며, 달러는 6주래 최고치 부근에서 거래되었습니다. 한편, 미국-이란 회담 불확실성도 시장의 배경 요인으로 언급되었습니다.",
+    "en": "Japanese stocks showed strong performance today, with the Nikkei rallying to a record close, primarily driven by the robust performance of AI-related shares and broader Asian market strength. Quantum computing concept stocks also gained attention following a significant US investment. Conversely, the Japanese Yen remained under significant pressure, weakening against the dollar which hovered near a six-week high, attributed to factors like energy prices and interest rate differentials. Market sentiment also noted uncertainty surrounding U.S.-Iran talks as a background factor.",
+    "model": "gemini-2.5-flash",
+    "generatedTs": 1779446170
+  }
 }
