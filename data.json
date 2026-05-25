@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-25T08:48:41.742354+00:00",
+  "asOf": "2026-05-25T11:38:35.151279+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -5710,52 +5710,52 @@
   },
   "headlines": [
     {
+      "title": "Nikkei 225 Tops 65,000 First Time on Iran Peace Hopes",
+      "publisher": "Gotrade",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeFpwbXZGMndPQV8xd3dJTTlRcVl0bl8xUzFMNW5obHNMYTR0cVRiektIV2JCRUxXRDROWmRZTHZ4Ymctb3poOE5yWkxRSlhOdGtQWDg0czNJanpubjY2N1FmS0czX281YXFiQ3lTSUw0NmNQRFF2UjNTM253OUpFQnNRMkU0UQ?oc=5",
+      "publishedTs": 1779706350
+    },
+    {
       "title": "Global shares gain and oil prices fall after Trump says talks on ending the war are proceeding",
-      "publisher": "Norwalk Hour",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLTlVb1VhZFp3MjdXX1FsMjhCVmhEX2FJWWg4blI3VjU5Zk56b25uSW9mNTROT2hPNnVudDdVMlZyMk9WZFVVYk95X2ZGZUFsdE1EZzBjd1VRc3ZoS1JjaGpQYkxmWDhIQmFPZ1ZlRHh0WW13aVBvTjI4Y3BzaVhUV2hNSF9vQW9nRU50LWpTZ3czdDdldmk1dG84cUhQYmFPRWc?oc=5",
-      "publishedTs": 1779698250
+      "publisher": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3NWSlhTNEozMHNSNTFNejZ3RDdpMk1jVnUtRVJZel9qdFlmN0tuMm9waTEzVWtWSEJBNW9rMzZPVUFxVkY5MFdoc0gyNVFJX1hkTFpHd0I2ajFtLXJxay1aejloNWQ4SDhkeEpqUWZsS3JwMTRxZUxPengyVDBEcm1vSVdYTlRpM2otMGJiT0JPbEFQcEo2WnFZOERuLXZVYlNadm1QNmNkXzBfMEhXRWtmZHdBckY4SWE3WnJFRm5VNm02RFhN?oc=5",
+      "publishedTs": 1779705002
     },
     {
-      "title": "Japanese Yen: Intervention needs BoJ support – HSBC",
+      "title": "Japanese Yen: Bearish against US Dollar but momentum slows – UOB",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNM0RaM1RUbVBOZEF4NzBNak5qWW11U282SV90NDR1b1hfbFQ4YmZPTjgybnhacklNaGVabngtX1N2SUhmakRicmhPeUVTOWYyU2o4ajZOYXdZYW9qSEVrNW84c054M1Vqa3VGZTNTZHZRUndwZE90eWxHLU1mSjFJV0ZNWVJJcDZCY183U255Wm83ZHg3LXc?oc=5",
-      "publishedTs": 1779697619
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUmdtMC13cWdLekp4N0I5NEFvTTNzWm1VNF9LbENNUG9Ubmxza20ydUdzYmpIY2M4SHRNeDc0SlZqVFktSHQ0V0hDZ21aSFVaMVJrSmFDY01nTVhZYWFJWmZfMWVYY1k0WDNFYzFJbE5RZXNhZUgxMWdnblVFMThmM0NleXRyNnpPdDVCMi1GaGtVbmN1SDI3eldRdGhGZkhmY2ltallhNA?oc=5",
+      "publishedTs": 1779703265
     },
     {
-      "title": "SoftBank taps retail investors with US$1.6 billion yen bond deal",
-      "publisher": "The Business Times",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRHR5RUxtUEVVMlJLZkVpaDNBalRVOUJ0cmlyemZIcW5keUNoaC1vN3puZzlWd3lNTUR6WU1VNGJnNjE3OVRCbmQtUFVySHVNR3dnZTJkQWNRNHlPWTdXZ0tQSW5oOXBkY2Q1T0lSNFI0LVZOczdVR0VCYlNRV2JLeThpb3JXRVo2U3g1aFJKSFk4VUZNbmI3MW1nMVpOTzNvdlY0U1R2SmktS282ZVRoNjU2dHJoWkJoQ0c2VkI0Z2x4ZUk?oc=5",
-      "publishedTs": 1779695400
+      "title": "Japan plans 3 trillion yen extra budget amid concerns over fiscal strains",
+      "publisher": "The Standard (HK)",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONjNoeXFDWXdqYmtldnpaRjRFdXgyZXdUU2NkNWhyWHpOZzdweUNwSWZYOFJIdjBRd2tNMVZoSlZnYTVZbm96Zkk5RmEwNTlERkhabFFnc0xiajRPdWtLUWc3ZDNodzVENFdHdTdSdFBUTHNZWXZKb21WSTA1blN1eUVjcVlGUkk2MW4zUWJVLU5EVmJBM1haWGhvLUQ4WXpEVkJEZ1Vpdl81NWNEcDJUdUhrNUhYckpkVUo3Y1JMWUJtdW52OHc?oc=5",
+      "publishedTs": 1779700072
     },
     {
-      "title": "Japanese Yen slides to 159.00 vs weaker USD amid economic risks due to Mideast uncertainty",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYlF0WnlURWpUUUZFU29rUWhYODdsd3dKS2pEU0NPc3RSSEFTSHFBNUluUHpVSmgyTHQ3dWhteC1FSXJmb0swcm1iakxZSFU0ZjdUWDVXZlJvOEJpalhkM1RPM1FCS2dSMzktZTlncWl5enlZRTJFX1M0eENjS3dxTnhkYWlabVhXdy1qaW0tcVhpeEIzbHAzMFROX1ZSRDBNRlNEbGk4dHJPdzc2MHYydk5NS1piLXQ5VUZwOHl2VjRJRUM1Wl9PWHRHRkU?oc=5",
-      "publishedTs": 1779695332
+      "title": "Nikkei 225 stock average tops 65,000 for first time",
+      "publisher": "The Japan Times",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMkFhS180VG9MS0g1M0dDRW9GTDUzelAxZkFCMG5oV0htNURVSjlIeWVQbEs2R2F0R0l1eUZsakdMdlRkY213UGxzaDhadF9kajJST1daaUp5NkhMWWNELXRET3dVZjJhVVk0MV9ucmlUT2xQalFLQURPNm9ERUprYnJ6Rnl0SGNJZkNJMTVSTGV1YVZ5?oc=5",
+      "publishedTs": 1779699900
     },
     {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 3.04%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMkFFR0oxRWhlUmNNUGo5WVE4a25ONmdwaXk1SndxbGlSUDV6T1otel8wNnBicnRZY2VacWV2ZEtxbDN1UzMxcG1PVGpHU0Y1dy1mUXg0YTU1aTBnSHVNcnkzMXZFVVhNYTRFVHFBR2N5UVd5U283LXp1ckQ1X19GSWN2aWJ2Nmo0ZWFCSjVZQTNxS2VtQnZnRmxtMDVqRU1YVFpfM1JQNldTa3JVZkFVZ2ln?oc=5",
-      "publishedTs": 1779695278
+      "title": "BREAKING NEWS: Japan gov't to compile over 3 tril. yen extra budget: PM Takaichi",
+      "publisher": "Japan Wire by Kyodo News",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBzSU1GUU5WTkJEVFJxYS1INUhVV09QQ21kYnhfTVRvWE1oV3ZVUkk1TUZhamEyNFRtbXlZRUlGQWlveTNKOGJnOXZnTGZramcxUGxzQ1JpMXJxQQ?oc=5",
+      "publishedTs": 1779698661
     },
     {
-      "title": "Japan's Nikkei jumps past 65,000 mark for first time on Iran talks optimism",
-      "publisher": "KLSE Screener",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZVYzY29tanpVTEk2NGFrblJ4WjgxSkozNDh1WW9MQVl0ZU5kMEdiY0tyeWI3c1V3dmxfRmhhVllZWkx2WUl1Vlg5MHhHZ0lOSWhKYWZuTnVCNFB6eFdPdnRXNjlUd1Jfb0JyR1VwRWhseGx1anQwU3dtc2d4d3RkQ2VlcFhyaXFKV1RsQXJidnBzUGQ5c2hQQ0dRQmg3T1RxblQ3T3VSQ3JzdC0wWjA3LWt6MnBHWUJzUDBqZ0tmcDRPMmM?oc=5",
-      "publishedTs": 1779694613
-    },
-    {
-      "title": "Nikkei index ends above 65,000 for 1st time amid Mideast peace hopes",
-      "publisher": "毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94czhybkJEck5sTVlGMlM3cGNuOWI3c2k2SFBNaDExVzNBM3dWMERzZTAzWDdFeGVmMVJiOG9Td1lreWctWWZ0M01qR09nZWdLVTQxdDJvb2NhemJfTEdiTTlhb05HVGVwRXJjSTFIOVZpSzQ?oc=5",
-      "publishedTs": 1779694499
+      "title": "Japan plans 3 trillion yen extra budget amid concerns over fiscal strains",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQXdzM05ZRUhUS1dfYXNMbzBaYzAwZGxIM2FRekNQM19Mc1JoTlJCYXZJZ01GT1hHLW1acGRweHgtM1EwSGRsVWVOM3NnZm9WbFFRWmtMREdLT3ZQYXlBS3JZLWdtemI3ak1nN2djTkZQZm1aclJfUkk3bHpVS1dWXzdCQmhSMzBsWTBkbEJvN0FFSUhPQ0lDMUo5MUdrbjZnT0F0aHd5UWZQQXdoN1BodklGZS16SjhPVW9HWDVkTFlGc180LU82Z0xxSjVIdGtDQ3NsMEpWeERrS3M?oc=5",
+      "publishedTs": 1779698644
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 중동 평화 회담에 대한 낙관론에 힘입어 크게 상승했습니다. 닛케이 225 지수는 3% 이상 오르며 사상 처음으로 65,000선을 돌파 마감했습니다. 한편, 엔화는 중동발 경제 리스크 우려 속에 약세를 지속하며 달러 대비 159엔대까지 하락했습니다. 시장에서는 엔화 약세에 대한 개입 가능성이 제기되고 있으나, HSBC는 일본은행의 지지가 필요하다고 분석했습니다.",
-    "en": "Japanese stocks surged today, with the Nikkei 225 climbing over 3% and closing above the 65,000 mark for the first time, driven by optimism surrounding Mideast peace talks. Global shares also gained as President Trump indicated progress in de-escalation discussions. Meanwhile, the Japanese Yen continued to slide, reaching 159.00 against a weaker USD, amid economic risks linked to Mideast uncertainty. Analysts suggest that any potential intervention to support the Yen would require Bank of Japan backing.",
+    "ko": "오늘 일본 증시는 니케이 225 지수가 사상 처음으로 65,000선을 돌파하며 강세를 보였습니다. 이는 이란 평화 협상 기대감 등 지정학적 요인으로 인한 글로벌 증시 상승 분위기에 힘입은 것으로 풀이됩니다. 한편, 일본 정부는 3조 엔 규모의 추가 예산 편성을 발표했으나, 이로 인한 재정 건전성 우려가 제기되고 있습니다. 엔화는 미국 달러 대비 약세를 지속했지만, 하락 모멘텀은 둔화되는 양상입니다.",
+    "en": "The Japanese stock market saw a strong performance today, with the Nikkei 225 surpassing 65,000 for the first time, buoyed by global optimism stemming from hopes for peace talks in Iran. This geopolitical catalyst also led to gains in global shares and a fall in oil prices. Meanwhile, the Japanese government announced plans for a 3 trillion yen extra budget, which has raised concerns about potential fiscal strains. The yen remained bearish against the US dollar, though its downward momentum appears to be slowing.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1779698928
+    "generatedTs": 1779709121
   }
 }
