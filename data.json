@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-27T08:29:02.396911+00:00",
+  "asOf": "2026-05-27T11:06:37.443099+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3361,7 +3361,7 @@
       "changePercent": -0.39,
       "marketCapB": 3693.59,
       "per": 8.41,
-      "pbr": 1.12,
+      "pbr": 1.09,
       "dividendYield": 2.72,
       "roe": 13.87,
       "roa": 6.17,
@@ -5906,7 +5906,7 @@
     {
       "sector": "ConsumerDiscretionary",
       "changePercent": 0.83,
-      "avgPbr": 1.8,
+      "avgPbr": 1.79,
       "count": 14
     },
     {
@@ -5970,52 +5970,52 @@
   },
   "headlines": [
     {
-      "title": "Asian shares are mostly higher, tracking Wall Street’s fresh records, and oil prices fall",
-      "publisher": "朝日新聞",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xYzJHRlNuYzNVUU9zeXRRR2ZIV0JLbnY5clZiTWVPSS1LUGI3WGV0S1pTU0stRVprNWFjVlVTZFp5a3lYTWVwODBPeG9zeUE4M1d3cTdB?oc=5",
-      "publishedTs": 1779870000
-    },
-    {
-      "title": "Japan's Nikkei retreats from record high as AI rally sparks caution",
-      "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc1BKQUoxRFcwbVdCR0g0eFVia2Y4ZkpPZlhDbGFnZzVGM3FBcDBROFFma0NFeEhoWWdfbVo5bU9jdGZjREIzX29WRVVjQVg4Vjg2aFpjeTJBektBMUJBX1NncE1FcHBkVkRObDFDN1ROczJWeEU5TmlMNndTSWxfUmpiWWItZWtEalFITlcxa0N5alJIZHo3SERRRmtYMHNpNlVFTXhnTmRmaHA0MlQtMHdxLWVJRlc5eTJSZWJOdDdrZ3VVNTVzY21Ncjk5b082QjJXeG9jZmowa0psWHc?oc=5",
-      "publishedTs": 1779868844
-    },
-    {
-      "title": "Euro hits fresh monthly highs with Japanese Yen weakness raising intervention concerns",
+      "title": "Japanese Yen drifts to 159.45 lows against US Dollar, with intervention risks looming",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPczFKZnl0bXJZTURZQmpXdFNYcmhUUko1ek1sWFVveEZZNWg1b1BwZ3RrNU5aSmZuak12QlAxN3A2YTJQTUJIc1E5cVFkTlV1U25UbnNTWkh6TkFPMDFzNEVJTDViZ18tRlQza2Z0ZlB6OERKem03b3NMLVRPRmZJY2dXb0pMTzNMeGNhaWVtY3YxWk13akRqZWlZTGVqMC0wLUZQQjNGU05JRlZndk5nNldHT3FCQWRJTDlhaEU4cGtaa1FDTnZESA?oc=5",
-      "publishedTs": 1779868227
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVVk5cnZSOFkyN2pXVmhXODVLMHhRYWRzeHVhc0lxRzFrUE9MNkg3WlRrY2E3VEtaN3NrOU1Za0FIdldOSXhsOGpMRG44TEZjd3FuRVpSaUdSU2I5SHJNbTdheExrSWptZTY2aUp0YklILXFGMFBGNjZRODFyeHVNclZCWUpLUTh4dmRBbi1OZk5MQWx5c2p1RVNtNnozUHVYZlFuREVrT3V6LUgwQWNPY1lsdDh1VGlLTjE4M1BR?oc=5",
+      "publishedTs": 1779877483
     },
     {
-      "title": "Global Markets: Japan's Nikkei retreats from record high as AI rally sparks caution",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOdVUwemtZbHVMU293MkJVVGswRlZoamY4WEdPYjFtVDZsY1JpZjV1TW9tcW9fajJ1X0cxS1FtODMxYzFDaDFKb3JFb0hieFRvZTNEeTdJNlNyaGg3XzRaNHRiWXk1M0xHTnhlaEIzYjJRbEUzVEFjYmczcU5NNmdtVzJZZzdYOHRNb2lHSjlnaDVyczhfemp0bzYtMDBOM1BuR1dLNjFSSnM5b1J4N1drWVFiM1g0U0xiWFFURXB3dzMxSkk0VFRkZEExNmljYVZwU2dqbWwta2h3amZJZE9FU0NkRzhLSUo4VmpocXNUVdIB9AFBVV95cUxNOVVxRnlMbjRvUEotUDY0dnU5NDFjcGVIdjFXenpGMjlqUUhKREVtMnhhN2tnTV9hLXFzbllZRGVrUS1JeE01aVd3Q3BhYUxxOVo3WDZlVktGRzAyNU1Ya0YweHpHN1ZLeks5WGVUeFBMQUxocEVueWVLNzJWMFJSVmVhV3RIMkhHNmpXWlhlMWo5MHNSWWR0Q28xWVlCcDdwX0lhYlRZTnNnMERCclZUTWJTVlFoTnBienA0ZEVJT0U5bmtoamt4b205UkM0T3N3Q014THJEWHZfWTZQaDNwSGRBSTMtYTVELUtqRkhWdk5LWUF3?oc=5",
-      "publishedTs": 1779867866
+      "title": "World is facing 5th 'oil price shock', Bank of Japan chief warns",
+      "publisher": "Latest news from Azerbaijan",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdm95VXVXQS02eEdiMW0yRFFNdVZ1UE40ZXVPZk1Ic1NVb3ZUejlPaHJVYk1FUkF4OWw3aFE1TlRUd2o1ZnFqWVJkRlAzMF9nTDJxSjk5Q2otbjlCSzUwdkV4ZW9zZ0lYZVE4dVRVMUIzbnJFbXlhYU9VcGtXSnlIVWE0el9qMzdJV2c?oc=5",
+      "publishedTs": 1779876901
     },
     {
-      "title": "Japan's Nikkei retreats from record high as AI rally sparks caution",
-      "publisher": "CNA",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUnVKdGFvSVRod3hDSjREWFJPQUNhbkowMzNaYktEWjhpWDRfdkRDMFYzODIwWWxjSWVYcWlLc0VOSXRDdDNxTjNWc1R1dVJpWFlDanNSellnaWk5Rm96OXlWdTFoUEVGTGF1eVgwVHZTSlZxcVBGRF82STRrUXFYSVFScXJudDFiV01tam9KUXI5M2Nub0ZFWkNVNEZSNmpPQ3lPV0tIUGxZTWM?oc=5",
-      "publishedTs": 1779867447
+      "title": "Japanese Yen: Yield focus and BoJ risks – MUFG",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSTdDbEtSVG5GeWc0RHhVa2dRakxNY3NGRk9SaHNzR0Uxbmpod252ZWRubEd0R2Y1NEVPVnF2aWdBRGxfQjhUb1V3TDhDZV9tUTIxYmU3enR6ZU5SN2FtMVBOVVZHU3ZoYmp2TjAzaXJ4Y21oWDdtdXRwWk1Zc3hsUGZHZEc0anBOYmFLN0g4MA?oc=5",
+      "publishedTs": 1779874510
     },
     {
-      "title": "Japan's Nikkei retreats from record high as AI rally sparks caution",
+      "title": "Japan’s Nikkei Rally Fizzled After A Tech-Led Jump",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNnhUc0NWa0ZJRUdHRTJWRUlxX2JzTTRZM3ItQ25OeWV1THpaWS1SY09XZ0lwZU9pQmdLakZuUlQ2bHRPWWp0V3N2T3lJTE5nUkVZSVg5MmxwZ2xENVozWVJfRGhlcVN5aE55MHV5Ykl1NVBSUFpTWXVNcWgtY2YzeWZDNk4?oc=5",
+      "publishedTs": 1779874418
+    },
+    {
+      "title": "Japan yen nears intervention zone; dollar steady as traders watch Iran",
+      "publisher": "MSN",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcWcteHBKUjNtR09yRGhUajRvNWF0aEV2Z2FDMVlhQzVGenR6SHdOX1B1MnJIeWhTVGpZOTdUeXlaS0EyNDhQNlFxUkhUVWFUS004Rkl2T2JTYWFZM1JFaC00UC1wVi1iU25nc2xMdC1sYUpsSV96M2RIRUdSZVZfTGVJYVRaOW50T2dMaGVLNlBaWXVoVTAyNGRpRklUSl9uaEl4NlhZOG1TbkRFTDRfMy1obWxLRnZKTXZTMV8tQnJPVDRhcVIweVAzd2MtNnJXTGNiUXNxMXRGdTNxM2FDWQ?oc=5",
+      "publishedTs": 1779873176
+    },
+    {
+      "title": "The Yen Drifted Back Toward Japan’s 160 Line In The Sand",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNM05sVGNaVktfRk03OU8yTmVLQXRsNmdkVGx2OExVUHR1b2JPUUpZMXN2U20xNElWNnljaHdCSDlBWkY3MHVSN2NSU0QtTTBqbTY3am81WjgzR0Y2VFpQNENvbDBKUHhfNFBfTjNNWWZ2UXo4eFNocWY2NU9Dc3QxQkRZeUxxMEhmUTBLTA?oc=5",
+      "publishedTs": 1779872582
+    },
+    {
+      "title": "Japan yen nears intervention zone; dollar steady as traders watch Iran",
       "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNd0c2d09XcVlNTkdiQ09JSzBqNnRqcFZDSVh2Ukx3a0FMMFdsVFNKbHpkZkdvLVlsalFZNEtXcW1VQmVydlJURmNGdnlTS0JleS04anBET2lmSkpYc1k5cWhBOUZPQWFpdFpPYU4yVVAwR2NqMzlHazg3bTRiaktyR2d3UkNid0QxV09oekpSeXhQWEpzenM0a1RVMmxEX3J3UkJ2OEtMSVFOdWZ0T3lmaTZTTWVmTDM5T01kTXNxZkluZlBxUkVEeVFBUnJwMkl5Smk4?oc=5",
-      "publishedTs": 1779867438
-    },
-    {
-      "title": "Ueda Says Wage Growth and Expectations, Not Oil Prices Alone, Drive Japan Inflation Outlook and Yen",
-      "publisher": "VT Markets",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcHJmZlFpTmF4Yy1uRk40YmVWd0p6R3dvbGU4eE81UEUxZEludTQ4NjNFN3g3czZ5bHdCd0VSNUd0aDJxY3g4aEExSjRLekNJSGNjeTZsdHg1d1NjSE1kQkROOHkzaE5pOEZYMXFwZ0ItbkJxdzNQUGZXSXdiTjFGTGkyYjVMWTBCNjQyUzNqOWY1LWxPdV82bVlfakc0Q0NnOVRiR3kzV1hPVXRQb25rVENwQ1BaYUIyQXpidE9mYmdFbm8yZkxaYTRIRFdKTWdLdktR?oc=5",
-      "publishedTs": 1779866676
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQY2k1dFQwMTFLUk42SUFYdlNOa1lhd3Q1SWktelJaSEdxZ2pYbkVvYnJ1RUIxeEI0WEJDX0Y3M1VpZmNoUENZMXV2djBGYzl0ZmlBUTFrbFM1N0x5OGlEY3dwWk5pODNPN2ZIdk9Yb0l2QS1ib3d4R0VJOTBjY1N4czFlZHR5S0FjMHh3ZGJZSHFCTjVOOHpQdWhnbEpmUFRZbTJOU1VMRERMTlZPcVBxQzBQRXNZS1lvY3lNVVIxUE81c2tfZW5GWjNOQUktTnQ0eTg1UVdR?oc=5",
+      "publishedTs": 1779872573
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 니케이 지수가 사상 최고치에서 후퇴하며 AI 랠리에 대한 투자자들의 경계심이 부각되었습니다. 엔화 약세가 지속되며 유로 대비 강세를 보이는 가운데, 외환시장 개입 가능성에 대한 우려가 커지고 있습니다. 한편, 우에다 일본은행 총재는 일본의 인플레이션 전망과 엔화 움직임에 유가뿐 아니라 임금 상승과 기대가 중요한 동력이라고 언급했습니다.",
-    "en": "Japanese equities saw a retreat from record highs today, with the Nikkei pulling back as the recent AI-driven rally sparked investor caution, despite broader Asian markets generally tracking Wall Street's gains. Concurrently, the Japanese Yen's continued weakness, particularly against the Euro, has intensified concerns about potential currency intervention. Bank of Japan Governor Ueda further elaborated on the inflation outlook, emphasizing that wage growth and expectations, rather than solely oil prices, are key drivers for Japan's inflation and the Yen's trajectory.",
+    "ko": "오늘 일본 증시는 엔화 약세와 개입 경계감이 주요 화두입니다. 엔/달러 환율이 159-160엔대 개입 경계선에 근접하며 당국 개입 가능성이 고조되고 있으며, 일본은행 총재는 5차 오일 쇼크 가능성을 경고하며 인플레이션 우려를 키웠습니다. 기술주 주도로 상승했던 닛케이 지수는 상승폭을 반납하며 혼조세를 보였고, 시장은 이란 관련 지정학적 리스크도 주시하고 있습니다.",
+    "en": "Japanese markets are marked by caution today, primarily driven by the yen's continued depreciation towards the 159-160 intervention zone against the US dollar, with risks of official intervention looming. The Bank of Japan chief also warned of a potential fifth 'oil price shock,' adding to inflationary concerns. Meanwhile, the Nikkei's tech-led rally fizzled, indicating a subdued equity performance amidst these currency and commodity pressures. Traders are also monitoring geopolitical developments in Iran, which could influence the dollar.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1779870548
+    "generatedTs": 1779880006
   }
 }
