@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-28T08:30:18.793154+00:00",
+  "asOf": "2026-05-28T11:08:34.332627+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3361,7 +3361,7 @@
       "changePercent": 0.39,
       "marketCapB": 3702.28,
       "per": 8.43,
-      "pbr": 1.12,
+      "pbr": 1.09,
       "dividendYield": 2.71,
       "roe": 13.87,
       "roa": 6.17,
@@ -5969,52 +5969,47 @@
   },
   "headlines": [
     {
-      "title": "Japan and South Korea Stocks Fall, SK Hynix Defies Trend to Close Up 2.07%, Reaching Another Record Closing High",
+      "title": "HDFC Capital ropes in Development Bank of Japan as LP for real estate PE fund",
+      "publisher": "DealStreetAsia",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPV18tT0tTRzlDUGJralNGcHRxbldfYUdSWlpqd2JWb1BsVE1OMFRjam1kYmFyUmJza1Qya1oteU9sdUZuSFZtQl85VjloYkVpZXVfQmU1S3N0Qy1EYW5POTR0M2pkQWk0dy1lTU9LdEIyZk1QUFJXUDJsMHVUR09FMFF0RmgtanAzbWFLSQ?oc=5",
+      "publishedTs": 1779963856
+    },
+    {
+      "title": "Japan and Philippines elevate ties amid China security concerns",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZVFrSExMLXYtY25abjlVa0NMZ2o0MlNIZFhUaXhtVElkUnU0TDV1ZklyVXFmaDBPU3RieGVyUUgwLWFtcXVES0Q2cl85XzhCeWM4UlgzSDA3VG9icFlza01JcnRFWl9PaWJrVTZoOVFsQ2pzU3h3UUlqdl8xOF9RVm1HMVFlMnBQZ2FHRFhwd3lKM3hoSTNkQjFfZlJFc21tV1c3aVF5bDIzZHB0YllZbDZnUmJyWXNDaGpGVA?oc=5",
+      "publishedTs": 1779963840
+    },
+    {
+      "title": "USD/JPY Nears 160 Level Again. When Will Bank of Japan Intervene Again?",
       "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVlyQjNPYWJ3R3J0b0dDek5ybkdPTWs4QTU5cWdsamdVazlhTFpEaGFTZ3FibG4yLWlfTy1hUXBTazVTTm9hbWtWTHhCT1pieHV5V0o1anRFbW9yTmQ4RVlSUlZDMzZudnMtOTQtOGlCNklUNFJOSjVrb2hIbFZldHZ4a2NiN1luYUNuUnFn?oc=5",
-      "publishedTs": 1779956330
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONERzaUlKV3h5Uzh2eTJDSC05MW1kVVc1eUhDWHJrZFMtSEVJNDdMWktldHNNT2tzeU5Qd2VEbjNzT2Rfa1VlWlcwbXBtMkg5UHA2VjB6aWFtZlBPTDE5R1otMXhPOEt2dER5ZEN1aE5HR0xsT2xkRHBVNUtfTmlBRHdIUnVydWlXdlpWVjVmOFF1My1GWlVJNkpOSUVkSEVGd3dLSF9RMXJFT0FQMnZiZE1ZMjRMZnRkTzNNNzRLZGN0N3YtQjFhaTU5clc0djFnLVo4Q0ZZcjJfVnI0anc?oc=5",
+      "publishedTs": 1779960604
     },
     {
-      "title": "Japan banks battle to secure deposits as savers chase market highs",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb2xwZ1Jhc3RzUFJJZURQaFF3UnFKc1hhaS1waXgwUDh3Mk05SWpiY3BhWjdtc2lKcWpUNFlRV0otNDMzdWpTV2RPd3M1c1I3aUJMcERFS0Y3T0VoMkYzZVMyU21mdkFPbTRUaWJ6VjVFSFdrNlFCZ0RWYWdROC1aRExsOFZ3R0lIQ0hkdUZOWUN6QjA4bUs0Uy0zVkE5UkptN25Ya1EtdV95VF9oaHAwYkhBMA?oc=5",
-      "publishedTs": 1779952330
+      "title": "World shares decline and oil prices gain more than $2 after US strikes on Iran",
+      "publisher": "Midland Daily News",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORjFsSUtKaTBuU3dBRzk1aC1mMlhNOGdnZ1cwVTlveEo5aTk5RVB1TWpibkMyTjJCbXV3TkZLOU82Y29XTm9vUjFrVU1CaUNrb1c4UWFfbVdHdGRpemozTmtFeU9PbWJQdTNpMmotUF9xY1J0YUhMTEctUFg4ekdKemlKa2NXeHNWOWxRTmt1ZDEtdktEVkdzeVppcExSb0dMQTVrN0V4bmQ?oc=5",
+      "publishedTs": 1779958974
     },
     {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.53%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNjlPWG5PUHZRQVNZN2RNeXBoX1JlS0FJMGkwYy1Tdl9nRW9lTHdnUGFMdEQwUXVnUTZ2LTFwd1BKN3FfajBBSjZBb19fLUJVRW9XLWNIdUNZU3lwVU1adDBrWUJkQ2pEbHUtZmwtUHBEVDNWRFhNMzZjOXJrMnNhQVhkMGJRMi1hbzFVNFVVVS1fZ3c2dWxmZlNDTlgxay14LVY5U3V6TjF5QldCRklNMXJtYw?oc=5",
-      "publishedTs": 1779952135
+      "title": "Japan’s Nikkei Stock Average Retreats as Tech Valuations, Iran Conflict Weigh",
+      "publisher": "The Japan News",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1tUDZoZUZNMVRpSjBvd19CMjRwMVZvdUlCR0l1TkkwUC03b2FPNDNJUHQwLWRHeWJNX2g0MkhiSmlKbWx3ZHZpVEFaMU5faW11ZFpydUNZNkt6SElvMjJ0dVdjeVVIZWZFY0pIVTZBQWpyZ3YzN1hkY0NB?oc=5",
+      "publishedTs": 1779958500
     },
     {
-      "title": "Japanese Shares Fall as Tech Stocks Weigh",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcFhuRHZDMm9rTm1hOVB5MEduR0JSX2JISTVJZWd0dlhROWFmUkxsMXBvSFF2WHA2dnJESEN6UkZ1eFZlY29vVG1jZUQ2WUZpT1lIeTVKZnE5aUhGSDF4STdSTGRLZmhHb1ByV1BHTmZySkY3WHp2aDRmY3FycXJLbUlycnFpR3dKV1I2dWxocmpfc0s3eEVz?oc=5",
-      "publishedTs": 1779951947
-    },
-    {
-      "title": "Japanese Yen: Downtrend intact against US Dollar with 159.95 in focus – UOB",
+      "title": "Japanese Yen: Approaching intervention zone against USD – Societe Generale",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWnEwcGJFRTFuQ21SZWdfMTZJRVZEcTZTVkZORlZEMFd0Ny1qN2FkLTRKVjZXZ2Z0YUxBN1lKS1ZYWlVueW50Rlc0OUstLVI2TlRIa0xhd2dxWWQwX0VScnJadHlKQS1oOGlEejlxbDBwSkI2Zl84SnkzNUc3dk1KbmFKUEVMOWtZTC03eEdpMGdPc0JqUzIzYTF5UndIdEllNk5FbzlLT0h5T3k1RXZscWRXOEQ?oc=5",
-      "publishedTs": 1779951915
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFhiMUY3UG8yRWx4em5MdWt6NTdmS1lqY2ROWmpKRnNDWlBJeUhXOE9HSFd3ejdQLXl5TWpWRVVHMDgxM3FDZHVIRmJ5ekhTVVpvTG5VZzh1Q25scFVZaGFjQklURHZWVWdhbGM4b25CbGlkcm5WN0lZRDVaV0dreWhxWGtoNXVHY3JTcS1iNGNpclZpZVVfM3M4bGhyVzRUV1RLZTN6U1p1clI1SmRNLTN2SVU?oc=5",
+      "publishedTs": 1779958057
     },
     {
-      "title": "BOJ rate hike timing secondary to economy's readiness, ex-BOJ Deputy Governor Wakatabe says",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcVNna1JBaVZtMTQ2Q0phZE9fTjQ2b3dWT0owalZQUG9ReUdVSGtnNjF6TXhTWjJDanNrLVR2NDhBZ0lONVI1dWFLbmdUQzFEVFJRUWdOTHNhdlJpR2FCTnpIdkhWbnFxbGxBOHI5UnoySDV3Y0hpYVhkdUhOOUxhVFE5QkJkNEowbE9pNldqa2lkTE1QT1ViaTJlMWhhR05lLVM1bHVkNkpiai1kNHhkdkdnMGdTMElfUmg2a1owUlpYTmlaU1E?oc=5",
-      "publishedTs": 1779951480
-    },
-    {
-      "title": "Japan's Nikkei retreats as tech valuations, Iran conflict weigh",
-      "publisher": "marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWmRnMFAzWjZRNmxESDJyMzc0c2hQV0E2ME1sNVVHc1dmbTlubFVrY3B1d2pBanp2T21wQy1uOERQeU9GNW9vZ3NwcnhWUndmYmN2bW54Q2J4QXdtRl8weXBSOGdfMlhVRm9PQ3ZtVEdGV1o2MHJsRWIweVQ4M1hXNHhPRGdGZkZKdFZ6c2hZX25vdWN2ZmZPWGJzZDdGUmRKNGhKbExvaG1EbDc1ZExxRFVyREdpZw?oc=5",
-      "publishedTs": 1779950725
+      "title": "Bank of Japan's rate hike timing secondary to economy's readiness: ex-BOJ Deputy Governor Wakatabe",
+      "publisher": "The Business Times",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNOS05VE1TWl9OTFlOZnZWbXFIWlZ2TUJyNU13Qkp6VzQ5UG82WmRKblcxMmdraWpKVXdtTDFBNzFPTkdVZTc2akdKbjV5d3dJOUJMN0x0a0Z1RFFoLXJDWnVHMmxFbDI4RG9JenllNUxsekN3WjJDdG1fVmxiMnJLbV95ZFFveEh6TXJENy0wR20xZFVSQzhFN25Cc2NsVHI2WUE0MGdXa1Z5NFdYVG5RUFFJTXk2dzhMN05oWHZBVlBFVXRnSUYweTVUbnR1Z1J3c1JhRmpKMm1CM0VyMkZZeGQ0S3RLcjZMdlg2VA?oc=5",
+      "publishedTs": 1779957540
     }
   ],
-  "marketTone": {
-    "ko": "오늘 일본 증시는 기술주 약세와 밸류에이션 부담으로 하락 마감하며 닛케이 225 지수가 0.53% 내렸습니다. 엔화는 달러 대비 약세 흐름을 이어가며 159.95엔 수준에 대한 관심이 높아지고 있으며, 이란발 지정학적 갈등 또한 시장에 부담으로 작용했습니다. 한편, 일본 은행들은 예금 확보 경쟁을 벌이는 가운데 전 BOJ 부총재는 금리 인상 시기가 경제 준비도에 달려있다고 언급했습니다.",
-    "en": "Japanese stocks closed lower today, with the Nikkei 225 retreating 0.53% as tech stocks and their valuations weighed on the market. The Japanese Yen maintained its downtrend against the US Dollar, with 159.95 in focus, while geopolitical tensions from the Iran conflict also contributed to the decline. Amidst this, Japanese banks are competing for deposits, and an ex-BOJ official indicated that future rate hike timing depends on the economy's readiness rather than a fixed schedule.",
-    "model": "gemini-2.5-flash",
-    "generatedTs": 1779957027
-  }
+  "marketTone": null
 }
