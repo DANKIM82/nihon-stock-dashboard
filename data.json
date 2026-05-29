@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-29T08:27:50.053727+00:00",
+  "asOf": "2026-05-29T10:58:46.545753+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -3361,7 +3361,7 @@
       "changePercent": 2.87,
       "marketCapB": 3807.42,
       "per": 8.67,
-      "pbr": 1.13,
+      "pbr": 1.15,
       "dividendYield": 2.63,
       "roe": 13.87,
       "roa": 6.17,
@@ -5968,47 +5968,52 @@
   },
   "headlines": [
     {
-      "title": "Bank ‌of Japan may heed calls to pause bond taper next year",
-      "publisher": "صحيفة مال",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02V0gxTXJEZmp1bGx0X05qQ2xtTUlVUXo0OHUxSEZuU0RyeERhY2FCbEVpTE5uSkhwX0hXWkFlQWM5Y2ljN3JPOTVxQWxoZmVRcU5yVkRiYkFObUJNTlpxV0lxWl9DZ1dYTXI0?oc=5",
-      "publishedTs": 1780043043
+      "title": "Japan spent $73 billion in yen-buying intervention, ministry data shows",
+      "publisher": "AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA1VmV6T3kxTmwwTm0yQ0h3aXY4MnY4TUVNcUJGTDRWWDVwSmQzRFNBczIxRjE0M0UtY2o5WTlIWkFPUnYwMFoyMjVKNFA0WURkUkh1QjBtM2NkcXpOS1NuX2lDZVdxR1RKTV9COVBvd2dYMHA2SEJMc1p3?oc=5",
+      "publishedTs": 1780052284
     },
     {
-      "title": "Stronger growth in Japan supports June rate hike despite softer inflation",
-      "publisher": "ING THINK economic and financial analysis | ING THINK",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcG5PN0g2X3p3NVJhTXgxNE44S1QwSVVrN0ZlUzNZRWJuR3ZaSFZ5STVJU296UVMxenBYZWYtUTZBdTJqUjdIemRqenJ5SC0zM3BPUHc5QkxOampuZ2tIenNfYjhwdnNzblV1bE9adlBnN0hHZHlLeUNfUG9pNlRYRERIVDJHc29fRVl3MXd5cmdFRkJ6MXZaN2Vud3dvVk5mLUxMcg?oc=5",
-      "publishedTs": 1780042803
+      "title": "Japan spent $73 billion in yen-buying intervention, ministry data shows",
+      "publisher": "MSN",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQNG52OFRmcEtZcGNHUkZCUldPMU5NdWM1U1pxUEt5LVRRT1d0ZTBoU1dJTUJiem9UMFhFX2RmUjF3R2lwY0dob1dmR2ptNnN3Y0JSNjFnQXktU3hDR1h4YnJqV29oUXo1ZDdLSTFScGlJTXlZLXhxZnZxY3B1NGVPb1ZxOVU3SGlGNXpIcmlwc3RYZFlqcjJEVmtkZVV2cllFX2NUUlhQSWxwemcxNVZJN2I2NlRMWjNpRDc2VlFUbklrVzl4MW9yX2ZCaXVRSUVZSjdoOEF1Vkt4LUE3XzE0aw?oc=5",
+      "publishedTs": 1780051890
     },
     {
-      "title": "Japan's Nikkei scales record peak on Mideast, AI optimism",
-      "publisher": "The Standard (HK)",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd3BYNDBhdXNpM0VPbWN1T2M3dHJnU185V1k5VlpsRmRBQk1VUlVKYWU0dkNtVEtnZlBzOGpwOG1iejg4NzlDeGVSTVp0Y1U4bGg3MUVoLWVBcks2Mm9KRHdHLUJ1akMxTjJDTTlzNVRacEFxMENTTERLV0FseFdidFpreHpXNWRyZ0VLVVNQS0tBcDk2YXRLRVlfY3FXaVBWS1dkbjZWSUV0V0hFX1E?oc=5",
-      "publishedTs": 1780041933
+      "title": "Japan spent $73 billion in yen-buying intervention, ministry data shows",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUG9Rc3A1MDlzbG5abHFIOVpuc0g3cGRnUmhHcDJXRjF4WldYVlRsX25ISlg4VDJJeVl1dTFvNnR6YWJfTGUyamJwNXVDdUNHeXJ4VVIwWTVkZ2Z0elpZSDFNTFVfckhwTU9vWlR5RVllWUJORmlUcWV2REZwVGJIX1VsUDdNVnNKNFl0bVVXazQwOUtaSDhQTDh1WQ?oc=5",
+      "publishedTs": 1780051040
     },
     {
-      "title": "Japan, South Korea Close: Samsung Jumps Nearly 6% to Lead, Japanese MLCC Stocks Surge Collectively",
-      "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeHNyYzRVa3F6a09PTHc3aU5NRGpOeXhZVE01RFFValdwTWJ1a2hSTEc3ejlTV2VENUU5TWFLNTQ0cENNak9vb3NhT0c2Yy1uTndGR01kalgxZ3VnOE9MdXFwZHBPWk1KY3g0V1FVWUVCWmN0WjVSOWd2QjFsa0VuNS1oeDBPclh6N2lUcnp0U2JCcjV6MkU2Nks5d1Z3WFNJUU1odkdJQ3hrUG1uQWc?oc=5",
-      "publishedTs": 1780040475
+      "title": "Japan spent $73 billion in yen-buying intervention, ministry data shows",
+      "publisher": "CNA",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV2FFRndrTGhfLVZtQ2l6Y0JnVmJNdEdIYzBLbmZpOWtWNEYwLUdYX2pXZUhsaUlPNkIxOVVvMDg3Y2tXU1FOSGlSU09qempWT2s2MzVyZ3MxcjNJdkJPWkw5ZGVULVRTd3lfZ1lZSzFSdkxSLVI3d3ZNN2FoRUttUHJQNVdvMTltQndfZHlfOGV3S2Q0UnJ4eWFoT1FfRUNYUUhsTW9yRm0xNXVPLWltRlhwMm1SQkNXRHc?oc=5",
+      "publishedTs": 1780051040
     },
     {
-      "title": "Thai-Cambodia border clash fallout hits Japan auto industry",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcGxmMmVCSjgwTGVhNEZ2QjlnNlVvbmdkdU5FQ2tiODlURGw2dEJvNnZSSHNFcWhwRUMyUmpHaWxqbWZwS19KMjJjeVpmRnNGSUpGWmpfbTBhc1pub2hqbF9KQ3hSRHRRMVdsWEp4M0ptTW8yTnNDeFBVc3I2WFlEd3pCelJWM2VxVTNkTlU4cmlsUTFuLS1ibFVMQ1VVS3h4R05rdGw5U3ktT1hJU19jSk9zRHdNb1ZNVmk4WFVsNG9rNUgzVjVFUHVFZU5HNWIybDYtdk1qQzZfb1k?oc=5",
-      "publishedTs": 1780040220
+      "title": "Japan Spent Record 11.735 Trillion Yen On Currency Intervention",
+      "publisher": "marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQmhCS2ZYQ2RJM0p5Mm00ejJKeG45WUxiVURiQjRTZWF4QzI4ck9wZVJQTUNLdG5Cd0NYZkgzclprRmt4OEtHRHJib2V4cVZlOW1hN1U5TWZaYUZ6ZHFJMmJSSjh0X3VkTHJFamZvaVNHR1F3MEk3VGk5NktZTjFPMU5iSGhHQXRPeWxYcDM1bUF3cEVHOURRMkZUcDhjdDFNQ1hhYjJKdVpDRE5mNFp2eGhPN2hTeUE?oc=5",
+      "publishedTs": 1780050800
     },
     {
-      "title": "Japan's Nikkei scales record peak on optimism around possible US-Iran peace deal, AI shares",
-      "publisher": "Dawn",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOc1YwVnd0NlVmZWZmLXd1UEhCc3ZxbzhzUDBPY2k3VDAzWl9vekJScFc0STk0alZRUXpoU2RDdktueUdPRFE1dm81NHczMkRUT3Z2R1hjdmNsYUl0T2RmM3dMZ2JrUUN1T0pTLWFpM1JZUmZlR2VKdDh0MlJLalVSYlpWQUszM0p3c3c3TjNDUmhBd0FaZDJUUmRPcnJzZDdVNy15eFFPMTkweDQxSGNJQnplUV93aEtwQmVRandzOWrSAU5BVV95cUxOT1JBN2RPMUxaZ0JqUzVMUEU1SEtDNUx5cDV4bmZxejRkVUZuY2QzT2ViWG8zek93UkFlellQcmhhNnlKSUF6QjVhZmY1RXc?oc=5",
-      "publishedTs": 1780040081
+      "title": "Japan's Costly Yen Rescue: Intervention Falls Short",
+      "publisher": "Devdiscourse",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNVhYRWZ4UkpxTFlsUzhHOXEtUzIySFJ3VHhwQmxYMzhpWDlCTzFoWDd0YzVTaGowckg3WHo5aGdNUnBjY3NaWFVDMkVIUG5HYUxjdmVFejVUaE5vVHFKV2MwWjlCSnVkaE9RYTBHRHdycWU0NlotQ3JjQWlZMjlRa1ZTYVRHUXF2LTBfWG5RRTdhT0lBNFNUcldNRFdDRTY5MS1jbmtR0gGrAUFVX3lxTE5aSmUteHVLaHFteE1waGVhX3JZcjJqQU9tcTB3dkhaeE5HRml3ZVp3Q3NqOVk0R1dtdmt1Wk1teXlYckJTU2F5Q2MxLUFmUkFzWllMV0xvXzFvTzIxOVlEa0t1ckF1emVpSGp6b2otTUJjc1ZveHhBc2NlSG81ZXdSWi05WHVFbHYtX19zSndnWnJnX0IyVEQ3UHhCanZtYjNVUnNkb0Q2RVlNUQ?oc=5",
+      "publishedTs": 1780050041
     },
     {
-      "title": "Japanese and South Korean stock markets soar on anticipation of Iran deal",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTTJpSGI4b2ZmTnY2X0Vjc3cxMHdLNGdtUGVuanVDVkhHdW85Q0dqWkJ6MDJXNGx2alJ0VVlWSVpEd1FNNmp6TUEtbnQyb1E1STFsMVNJeVUtakp5Yk1YOTBqVDdmLTAyZl9aT3ZodHdDbkp0azdNazhTT1lOU1BCMk12VFhGdTVvMTEwUE1QMHJEaVo5LXhmclRtbnMwVG1QTU5HeEpOdE1JSXl1SkJrZVJJdDA?oc=5",
-      "publishedTs": 1780039980
+      "title": "BREAKING NEWS: Japan's yen-buying intervention amount hits record high in April-May",
+      "publisher": "Japan Wire by Kyodo News",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHNGlEUmh5Q1lrTmNNY2VTaUs0UGdZd3hfSHk1YmFXTUUyY3VoelEwSGN5V25IUEprOUQ3S01iLVZJM0xLbzREd0ZRNWJRZ240Zjg2QjlVY2Qwdw?oc=5",
+      "publishedTs": 1780049944
     }
   ],
-  "marketTone": null
+  "marketTone": {
+    "ko": "오늘 일본 증시 헤드라인은 정부의 기록적인 엔화 매수 개입 소식으로 요약됩니다. 일본 재무성 데이터에 따르면, 4월과 5월 두 달간 엔화 가치 방어를 위해 사상 최대 규모인 730억 달러(약 11조 7350억 엔)가 투입된 것으로 나타났습니다. 그러나 일부 보도에서는 이 막대한 개입에도 불구하고 엔화 약세 흐름을 되돌리기에는 역부족이었다는 평가가 나오며, 엔화 안정화에 대한 지속적인 도전 과제를 시사하고 있습니다.",
+    "en": "Japanese stock market headlines today are dominated by the government's record-breaking yen-buying intervention. Ministry data shows Japan spent an unprecedented $73 billion (11.735 trillion yen) in April and May to support its currency. Despite this massive expenditure, some reports suggest the intervention has fallen short of its goals, highlighting the persistent challenges in stabilizing the yen.",
+    "model": "gemini-2.5-flash",
+    "generatedTs": 1780052331
+  }
 }
