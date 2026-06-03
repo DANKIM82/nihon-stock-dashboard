@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-03T10:00:29.987620+00:00",
+  "asOf": "2026-06-03T12:22:59.077225+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6096,47 +6096,52 @@
   },
   "headlines": [
     {
-      "title": "Japanese Yen rises sharply against its peers. Have Japan officials intervened?",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSnZfc2thaDJoMkJoNm80UkhDdlRqMzdGaGtvbmxFSDU4azBOVTE3VG1YcXZFek1USlBiYlBnYkxSbnlFREN6elFjS1AtWFBYVi1ReUhBcjBTLTdxb0pyTUIwVW5GSDdxdWNSOFVFeFg0YTI2bDBVOU4tcXNoelhsSndQT256NmZiT1AyYnFTRVpQb2d4R3NkVWRZMFZnWWR5Mi1YRDBST2hJWTNqaFBoTG5FcG1kSWdrOTNMLUExZlduM1RV?oc=5",
-      "publishedTs": 1780479599
+      "title": "Yen Rises After Japan PM Takaichi's Intervention Warning",
+      "publisher": "RTTNews",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQenRIaEpodnpfVDFUbzRaQkJpTkpNZlFYaWtrQmpXbkR2NUFCQW1zV2RxWWg1QUlPRGxGMkp4QlNva3Y2R1dHOFV4WTZmZmNERzR2bFNJYzFyTVhTalFZX1M4dlAtV0NYQ0dranpla1ZEU0Y4Y1RWazJJS0g0X2VXUnZOdlVpSEozakQ4RkVidnExMzVUNHphag?oc=5",
+      "publishedTs": 1780488900
     },
     {
-      "title": "The Best Asia ex-Japan Equity ETFs",
-      "publisher": "Morningstar",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB3LV9TaXRoZW9ZNENuVjZiRzd6cjhYVGM5WHo3Um5iUm5rOE42UDdaNFptWDZtQmJSdzhoTVVacE41WllCdllZVzhzN3QzUFZnRnRvNVNvRDVac3VReElvZ3dNLW5ZRFUzN0RsTC0wbHBEWFVZMHYzOW1LTVQ?oc=5",
-      "publishedTs": 1780479413
-    },
-    {
-      "title": "Japan warns as traders push yen to 160 intervention zone",
+      "title": "Yen falls to 160 level, prompting warnings from Japanese officials",
       "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVlI0c2JQUHNXeXZleUF0WTZTaEhvRENpb004X3AzVVFzRDVUSVVkVVlPSkpweDBGMnBMZlZwMDNYVms3VGJjUW1BSEhaT1kwTDg5b0VyZ0FSMFU1SzRWSUZyamlVdjVqSkJ1LUQycFphZUJiTW9JTGR0dl96dTVqcEx2R2RocVEyR0x2N0JNYVlxdzBlNmhHTzcyVFlMOFI5RU1HRDg1bXd0UHQyZHIwMVU5TlU4OUhRM0FQUHZybF9qVTVUTjlvLXk1OVdQeGM?oc=5",
-      "publishedTs": 1780477524
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbEVyS3hEMmdNMl9rY2pQSzZvSHJDdHcxcDNvclVwTlhYNE1pdk1qZkROeVNGX1BzQW15MDRVRm4wdkRNNDhOcTVEVW0wVFY3bVpUbUdtOE1iT191TXM4UXFqN1AwN09tYzlQQ2VERUN1aHpKVmJhSDNzZ2NuZmZPQkEtTVdaa2cxdExtd0ZYWmFpVWhRMFp4eW81Y0ZrdGRjMXRCdzc5T2tUQUNRdVRpa3ZEZ2p3X21mdktqc1FKUFptVndUTUVQUXpFT2w4LXg3LWVEZzU2eXdBTUU?oc=5",
+      "publishedTs": 1780488551
     },
     {
-      "title": "World shares are mixed as Tokyo's Nikkei 225 follows Wall Street to an all-time high",
-      "publisher": "Midland Reporter-Telegram",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQmItRHR5dUgyRW9sRFR4TnhWMG1tSzFoWmdfZ1hidmN0RjgzVmZ6eGJoT0E0NnNBOEoyYkZqZDFycUkySnF2cGdZb3RKcmlXNk5XdWs3OFprZ2RzanNZcm9oSnRoUWxOMWFCbFZack94UG5FaTJleDhRUk1WMWhsdllPbHJ0ZnpFakRGS3BHY2R6WHBuLWZEaDBOOGVtSWM?oc=5",
-      "publishedTs": 1780476178
+      "title": "BOJ will \"discuss\" rate hike despite uncertainties, said Gov. Ueda",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUGp1Y1lVdnNLS3VMSXpnR2pBcHlpd3RtX3EzU2dkOTd3RkJRb2tickdfNVVEUUQzSmZYcHZJWVJGSDR4Y2hkR3MzNmI2Rm5aS2kzenlhMjR5Q3hmXzE5blJoalRqdXQwRFB6WjVfbkZlX190ZENSMWN1NUZxaGZvMHhsN3o0b1E1bWwxUjAzakhLSFlfNjVJeWxwX3pzLTd6N2RMTHNPMnQ1TXIzaUE?oc=5",
+      "publishedTs": 1780488420
     },
     {
-      "title": "Ueda Says BOJ Needs to Keep Raising Rates to Contain Inflation",
-      "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNW0xNG5VWXA1RDV0OFJpaEQ4bXVBY3hETE9PRGpXQXlWcXg1aDg5dFdNSk9mMDB4Y3V6c1NLM2FKbC1hVmdEMnpZSjlHWDlPYUtfSWNBYjlwX1VEdTVYM0MySXQzRF9rUGhxLTVfZURtN1MyNUZWcUV3cVJSeTlKWUVIQ2tRNi0tbEd2LThnSWdOUkV5dnlMa25TSm1MN1lBRjQwdDl3Q092RjdGeTVrV01VUQ?oc=5",
-      "publishedTs": 1780476133
+      "title": "Nikkei Hits Record High Above 68,000 Points Driven by AI Stocks | June 2026 - News and Statistics",
+      "publisher": "IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTUNnY2dhS29RdmlNcUZKVFd0aXUwVk9qcUlYVGxZRmI3bXh3bnc5RllOWm5qc2VuRzFuR1pubmV4TlpPUFY1LVpISm1pZ0JpLXBjSllPR1EyRHFzajZrSzNXaEZnS29uYnVZTkQ2dkZYdDhrWno4R2c2NWFqa2ZLdXcxMGJkOGhqbHd0bg?oc=5",
+      "publishedTs": 1780487460
     },
     {
-      "title": "Nikkei 225, TOPIX set all-time highs",
-      "publisher": "nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBod1FyY1dQWTl1eHl4Y0ZRci0yN29ncE5IOWpuS0ZWSG1qVE5xVWhscGpIR2RQLW1BcXpuYUpDaHNaZDhsQmFKOXN3TFNUcVVOQjVIb3Z0OVdPZVFxemtMV0d3?oc=5",
-      "publishedTs": 1780475778
+      "title": "Japan's stock market has made history once again. On the 3rd, the Nikkei 225 average stock price ind..",
+      "publisher": "매일경제",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3MnJROURQZC1zT1VpUnRlcHdVWnFMQklhX3pzVEJIMEVyZ1RrYy1GZkg5eG9mZGd5U0VmWW4wdnIxQXB6SHRqXzc5aml4YVU?oc=5",
+      "publishedTs": 1780487344
     },
     {
-      "title": "Japanese Yen bounces up from lows after Japan PM Takaichi’s intervention warnings",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMWVoR0FPR2p0MGYxVTBZakhTbHVwY0VPckh6YVVuRzR1NG0tb1lRdUttMDNrRXNlaVNNSDVFenRpWUptYkxHUkNRU1VVY3pySnNoRXJEQ3gtalZ4N0YwUDA1ZEJlVnRTbEZSdEt4RXoxTEgtZllLc3hzWVNBZ3lKeEo2OVN4WjQ4aXFkbzlFS3FjLUkwaTQxVnZwanBxcWNsOUV5eEFKVHdKSFBLbmNCZS00LXNRS2h5SXBJdWRycnM?oc=5",
-      "publishedTs": 1780475471
+      "title": "Early trading on Wall Street mixed as oil prices tick higher with Iran cease fire under strain",
+      "publisher": "LancasterOnline",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQYVB2RTIwb1B4U3BNbHJLRmYtRXM1NklBYzNRSEhpblJEam9nRmdaeW1CRGxYNm9ES0lQUGZBSVd5Z2lvMXlfRE5nbTZfYnlxVkhNdElrUXpadGRHWk9ranFRU0FFUmVlNG1TMEMySnE1eXdkS0xpZ1pVU2ZmZzlnOWRlVEVmLXNORWMxNVRSQ2tRellxWjd0enBjNFhETktmM1E1NzJyLUEtUWpFVi1UWFdaTkhEXzZlZ0cyYzVKanphUGNLSjg3dWVEU0hVcmV4ZjdHeGg4ZGR1c0ZjOGVqQ3hLQXlIN0JWQ2lTOTVJNlVYNmF3YXUzazEyRHNyRUw4Y2I1aTc2T0doTHRmVFE?oc=5",
+      "publishedTs": 1780487330
+    },
+    {
+      "title": "Bank of Japan may raise rates in June amid inflation concerns",
+      "publisher": "Investing.com Nigeria",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcmFCamk2YURlbEUzZ2o3UkpSNjZDckhQWTdKUnRxdHFQNzJhRERNRnlYaHZlb3pKWnppUHNieHpfUnBJeVBPVXMyYXowZ2UzckFBaEtXNEpwZkxlTzJGb1hCaFFiMHdvR1d5Tmo5S1YzSXIwdmpqMHE5UkdNMHpNempiMjZUVzR2NllTd0s2b0hOWmVxbjNJeWp0QmtxMF9JalR2clJQZVhzeGJzSFI4Qm5QcjZiTnJy?oc=5",
+      "publishedTs": 1780486991
     }
   ],
-  "marketTone": null
+  "marketTone": {
+    "ko": "오늘 일본 증시는 AI 관련주 강세에 힘입어 니케이 225 지수가 68,000 포인트를 돌파하며 사상 최고치를 경신하는 등 긍정적인 흐름을 보였습니다. 그러나 엔화는 160엔대에서 등락을 거듭하며 변동성이 커졌고, 일본 당국자들은 시장 개입 가능성에 대한 경고를 내놓았습니다. 한편, 일본은행(BOJ) 우에다 총재는 불확실성에도 불구하고 금리 인상 논의를 시사했으며, 인플레이션 우려 속 6월 조기 인상 가능성도 제기되고 있어 통화정책이 주요 관심사로 부상했습니다.",
+    "en": "The Japanese market presents a mixed picture today, with the Nikkei 225 hitting a new record high above 68,000 points, largely propelled by AI stocks. However, significant yen volatility is a prominent theme, as the currency's fluctuations around the 160 level have drawn warnings from Japanese officials about potential intervention. Meanwhile, the Bank of Japan remains a key focus, with Governor Ueda indicating discussions on a rate hike despite uncertainties, possibly as early as June amid inflation concerns.",
+    "model": "gemini-2.5-flash",
+    "generatedTs": 1780489386
+  }
 }
