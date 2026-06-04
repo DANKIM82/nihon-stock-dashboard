@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-04T08:56:33.084790+00:00",
+  "asOf": "2026-06-04T10:50:43.059556+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6096,52 +6096,52 @@
   },
   "headlines": [
     {
+      "title": "Goldman sees Bank of Japan hike this month",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbzZPUzJTTnVvd05McGFuN0F5Q2dKSVd4dTJwY19OSGF5TzQ0VWNOSnYzSW9vODZNaGc1Wnl3cVRqS25OMThxemJrazVWdnRPVC1NbS02bHB2dEJhSjdRNmxBUXpQOUdnUnpGeU10SFJlMlhnaDlSV1NaWFpBQVZUN0xEVzdZTzdLV0J3Y0RzcU0xeHdnWDBoU0lFY05xUE04aXMtVG5jWVNzSThxOXJnZlhn?oc=5",
+      "publishedTs": 1780566150
+    },
+    {
+      "title": "Japanese Yen: Pressured by wider spreads versus US Dollar – Societe Generale",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORkNRX2lTRXFTSXJubTBvU2tyWnAzbkpCd0hMQjZ2aHRiZFBmakdVX2h4cl9nbng5X0xGTW5XRGJHQXN5X1RndlF4TkIzNkxTYXliU2E3bzhBQVZKOHgzNFFSOGUzeEJpYnptQnpEY3JlbXFNcEhoTElkRzBQYjhrZHM2bnRkUUVTVTVFYmVReDJaRTY3cWtMVTFDUlJHWWVhVkxXa0ZzSzA3SlM2TGt3VDlrc2pTUVE?oc=5",
+      "publishedTs": 1780565063
+    },
+    {
+      "title": "USD/JPY forecast: Japanese yen crashes as traders predict 2 BoJ rate hikes",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUjYyTTVfbHZ4djB4TUprbjJ5NzR5a0VXc2E2amgxaUNyM1FxYUFnQzM0WTVsQ01WemV2cnJtdzF5YVpyelFiajFnX0FMQlI2VW5nMU41UnZIcXF0NjR4TXB6UHAtMTBPWFI3VjFOMXhxSmZkZlNNMS1tSmZIdkpfd194dDFTN0FyeVlrYzdJZGNWNUd3OHRtNmpTdFY2M2x0Yl9mNDRwdi1HWktZN3ZDaE11Q2xzS3hTMXo2Q0dOaC1NWS1YVEJUQktB?oc=5",
+      "publishedTs": 1780564882
+    },
+    {
+      "title": "Asian shares retreat as US stocks halt their record-breaking rally, while oil prices fall back",
+      "publisher": "WRAL",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWjcwVjRDeW5VLUktR0xWTlZyb2UwaEp2WGo0cl9rcElFUUJqMkpzamlwOTJQR0JpVTNrYUhta2toS1ZnX2NXTFJDUTltMFl6ZjRYd1MxM2hST29Iamw4YVlwamJyLU0tUE5NMlh1Z2gzaHVTeGhPZUZXTzJ5RkxmeHNPS2pDWnV3MDM1MUNsV2dFMGdvc1NUR0JiT3BGdkxTTW11T0VMLTd2X212SG9NS0FGTGJ0ZzVnWXVwZHNRQXlnVVJFSU1sbA?oc=5",
+      "publishedTs": 1780564849
+    },
+    {
+      "title": "Rising expectations of a Bank of Japan rate hike, coupled with concerns over intervention, pressured the British pound, causing GBP/JPY to trade in a volatile range near its highs.",
+      "publisher": "Moomoo",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTTV3Ym9nVGZjMEpNOTNLbjNGRmQzMTZTR0hXUGk3V1BTY21mVnI5R3pLNE5JTmtRX2hRVHE0cjFnM2RHZnlweWVUVGhLX1lXcmxUUnhfYW54X1QwQWZCdXNSaTlXdThPcGIwMTRodUFiT0ZISzIyNGJrc0JKU204N25Qamxrc0lyczRHRDItT0ZwbG4xNnphT2s1YklGXzg?oc=5",
+      "publishedTs": 1780564588
+    },
+    {
+      "title": "How Japan’s 30-Million-Yen Visa Wall Threatens Beloved Restaurants",
+      "publisher": "Tokyo Review",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR1FnWFd3eDFvQ1hCYlNpYmN1ZS14YkQ3cDhiOVNsdWtESkhCSzB6TUNxd0pndnlXNXRQdHlaenBMNDNCaFZnWkFmRTVlcHZpa0F0eGpNLUV1em43TTRkOG41ajFYbVBqU1FLNy1wbU9zSVlkYW0tQnAtVDR0VWVOaFg5LTRoRnViOWs2bGkzV3l6RjR4aktlY3liVEw5eUQ1VHNLRg?oc=5",
+      "publishedTs": 1780563347
+    },
+    {
       "title": "Japanese Yen outperforms amid hawkish BoJ prospects",
       "publisher": "FXStreet",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSVBsMW1zRHRPRWMwQThac21fYl9IZUdhSS1Nd0JRbzh3dzFhckVpeDFoOFFwYkRqNXRiX2tQMmZxanZtQkVTYkVrZE9kU1lqMlB0VHJ4enhNVUV2bFpTVUJ3dTlydWtuSXlHZmFWZmU4U0JHcUJEbWJiWUFpYVJ3dURKRmFYQ3Fuc0k5VzV3dElnUDh3Z3pGdmtn?oc=5",
       "publishedTs": 1780562441
-    },
-    {
-      "title": "Softbank-backed PayPay to enter life insurance business",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVGRjN2NSN3RGZGxmeGVXUXhFM1pfREVFNjhuUzR0UnBUOFdKMnlZN1FPUENlNm1CMUFxd0lTU3g2blRKaGJVMU5WUTg5N0NPQXk0bjFJdk1XcUwzeEVudkVfTWlsM3kxU1JLUVcyMlRmU1BaTncwYVA5WGppa1VGM01pZWc1YWtDU1lfV1hVYUZjUFNfNHNINnJOMVdqRU1uc0h6bU9B?oc=5",
-      "publishedTs": 1780561260
-    },
-    {
-      "title": "Bank of Japan Governor has essentially confirmed a rate hike in June, marking a full pivot of monetary policy toward combating inflation.",
-      "publisher": "Moomoo",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSGJkaFdRWnVSOUZhMFplVmtnWVZBOEFvd2o1YmVWb2dDMUgxNEZacmJKYWdsNWJXZFVhWk1jNjZLVkJ4YVZyNEd4a0RoNVp1R3k1WkRabFRXeDJIMzVfUXJfeTkxenEwby1lcmpOOTdELVFyZ3lRMHIyd0pvU3ZNVURQUjBHOHJrVUthTGlidEVreXU1RkhqYTNiOG9NS1RYS21vWQ?oc=5",
-      "publishedTs": 1780560845
-    },
-    {
-      "title": "Foreigners Offload Japanese Stocks as AI Bubble Worries Grow",
-      "publisher": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWGxZOGhZVUx6dk56dnpxcHo4RmVXcUhhTFRWUnlsS2dpb3FSTzBOZDJhRXhWOHhad0cxcWhYNWJmR0pBMG1hV243R2x3RVlqUERuanpJT3VFWG1sUG5YV2E1TGdidU9ZOHM1U2M1VXR2WjVSSU5WTVp0cUdyY2lYR280b0RCUmF6aEZlMEpjZWdmTmxneFdIRGFlZzM5eUpnd3BwSkwtRFhoMjFCWmRibw?oc=5",
-      "publishedTs": 1780560583
-    },
-    {
-      "title": "Tokyo stocks retreat from record highs on profit-taking",
-      "publisher": "nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBWLXZ2cmdFYURXZ3dyOGhzWXY0eVB3RnlHUms5eU16Y3dTZHZtV3R5QWpudU1HV1Y0LTlEdmstUUo1WWtvOEZwU2JaTW5mYnNTc252b2xhMmR2OUlDVWk1ZE5n?oc=5",
-      "publishedTs": 1780560334
-    },
-    {
-      "title": "Trump should push back on Xi's narrative on Japan",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWENrUjF1b3ZrWXQ4WjRSVXZUSkdFeEI2b2V4UHRFYklRb3JjOGNXZi1Hc1J5ZzBJWTRNTlZUN3liNWJla3BTUGlpcGdwNE5FZVR3V1RNeEhxR1hRdFIyeHd2YVBYWVlwMDlSV1JmdG9PNTkxQnpfOVc3YVJIenc5NW8xWnZTalF1?oc=5",
-      "publishedTs": 1780560300
-    },
-    {
-      "title": "Bank Of Japan Eyes A June Rate Hike",
-      "publisher": "Finimize",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBrVUdYWk14cHhhSHlPWndXa2Rrd2VlckJFMUhFR1o1Q2FiUjZ2Zm9VYXhIYWxFY1daY1RuTzFFLXlaWVVmSEkxdWtwN1JLREcyN3ZZWDFRdzBwNHV2Qll0LVNiRW1IRHFUQlZ3RjBwWkFkZw?oc=5",
-      "publishedTs": 1780560029
     }
   ],
   "marketTone": {
-    "ko": "일본 증시는 일본은행(BOJ)의 6월 금리 인상 확정 및 인플레이션 대응을 위한 통화정책 전환에 주목하며 엔화 강세가 두드러지고 있습니다. 하지만 도쿄 증시는 사상 최고치에서 차익 실현 매물과 'AI 버블' 우려로 인한 외국인 투자자들의 매도세로 하락세를 보였습니다. 이는 통화 긴축이 엔화를 지지하는 반면 주식 시장에는 신중한 분위기를 조성하는 복합적인 시장 심리를 반영합니다.",
-    "en": "The Japanese market is primarily focused on the Bank of Japan's confirmed pivot towards combating inflation, with a June rate hike now essentially certain, leading to a stronger Yen. However, Tokyo stocks retreated from recent record highs due to profit-taking and foreign investors offloading shares amid growing concerns over an 'AI bubble.' This indicates a mixed sentiment, where monetary policy tightening supports the Yen but prompts caution in the equity market.",
+    "ko": "오늘 일본 증시 헤드라인은 일본은행(BoJ)의 금리 인상 기대감에 집중되었습니다. 일부 분석가들은 이달 중 금리 인상을 전망하며, 시장에서는 복수 인상 가능성까지 점치고 있습니다. 이러한 매파적 전망은 엔화에 상당한 변동성을 가져왔으며, 미 달러 대비 금리 스프레드 확대 압력과 함께 엔화 강세 흐름이 혼재하는 모습을 보였습니다. 한편, 통화 개입에 대한 우려와 미국 증시 랠리 중단에 따른 아시아 증시 전반의 하락세가 시장에 신중한 분위기를 더했습니다.",
+    "en": "Today's Japanese market headlines are dominated by strong expectations for a Bank of Japan rate hike, with some analysts predicting a move this month and traders forecasting multiple hikes. This hawkish outlook has driven significant volatility in the Japanese Yen, which has seen both pressure from wider interest rate spreads against the US Dollar and periods of outperformance. Concerns over potential currency intervention also contribute to the yen's fluctuating movements. Broader market sentiment remains cautious, as Asian shares retreated following a halt in the US stock rally.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1780563399
+    "generatedTs": 1780570252
   }
 }
