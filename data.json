@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-05T08:33:12.451304+00:00",
+  "asOf": "2026-06-05T11:00:25.835769+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6096,52 +6096,52 @@
   },
   "headlines": [
     {
-      "title": "Yen holds near 160 as Japan signals readiness for action",
+      "title": "Japan parliament enacts 3 tril. yen extra budget to ease energy cost impact",
+      "publisher": "毎日新聞",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJVFRMRjBERml6VS03UFdmMElHdG9DUDUzT2htVVRMMVJwcU56d2k2VkowVW1INEU1VU1WNlViTUlRYnMzMWhDeWh0U1BOV29YeklaZXRNa0gwYUduOXZBUEdBdHBNWmY5c0RzWFRWekwxams?oc=5",
+      "publishedTs": 1780655463
+    },
+    {
+      "title": "Japan Enacts 3.1-T.-Yen Extra Budget for FY 2026",
+      "publisher": "nippon.com",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMGhpUWw1LVAxMFFGZ1RUb2MyVGl3cE5ET09hZGxMX0IxakdRZ29uMkNTby1aSjZ3azlaWTI4bDcyZEtIYU1VNDVSSFpsdTFpTGVOaVBDSG1DaFVpZ1RhcWpvY2w4WWJobUFVNUlVcTcwejQxTV9YSHBGU3B3SzVKVlV5ZnRHb01CS1NrMGM3Y1FSTFVQRG9VWnpNSmN6UUtaM1pn?oc=5",
+      "publishedTs": 1780654629
+    },
+    {
+      "title": "Japan's Nikkei slips as tech stocks weigh",
+      "publisher": "Business Standard",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZDZSN0FyUzd3QWlRVVlyMU11QnBCME1sWVZDcTM5T2RON3R3a0pLOUVoRktzRGNCWTFlLU1XekxlRTZyTENlSXBRNW9iYUt5MkVjcG1qT2ZTeE5ROXNmelJUNm1maUp2Zlh5UXlsdzBHX0xUZjY2YVFGSnZPT1BLbFg4aHJYaHZaTGRGOHVMSzRCNWlpN3NqelEwOEFDT2FmNFlWaURVYWNPT1RWRHgzY0pXZUx4akhUN3VOOUI2cjPSAcYBQVVfeXFMT2FnT1NydzNTempRbkRhZFlDOTdnUkNSUWVHQjBGdmkxVUpndlFXS0hkRVE0b2NfOVBURVJHSG9od2N0c3l2WG5pTlo5bWxZdDNxX3dKRHNJMzg1LTlRUml1X09tb2gybkxqSEoyTWdLY29RMzdHSjNNNzJfX0JQMmJKR1dTNFVnUW55MDN2NGpwVzJaZVpmQmMzU0pTTzNsVEZVUGpnZEx0dHJUNnEzUVZMbzctQWJYaFk2bDlqSUQtRFRTVWF3?oc=5",
+      "publishedTs": 1780653701
+    },
+    {
+      "title": "Japan approves $19bn extra budget to curb fuel costs amid Iran tensions",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT3o1Y3E3VFhiS3VMTVFhLVBTanVuQnc4MnVjQXU0V3BpOUduZFd4Mm5uTGxkVHp2dEVJemxBazlLTmhPUHMyZTdqUTNXTTRWSkpJTHRIMWtnWHVpTXU3RUl2bGp0cE5UY3lMUjRjOXpDN0V1aDVEX0Y3Qkk0UC1IeXE2bDNwTGdkY3RWX1NEbmNpeXJXTE9uZjVab2NHSmtFRy1iRg?oc=5",
+      "publishedTs": 1780653660
+    },
+    {
+      "title": "Japan likely sold Treasurys to fund yen intervention",
+      "publisher": "The Japan Times",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ0U1LS1TcGpkSkhFS1dXdUpWb2NXSGd1cTdWOVItZVZXRWVkSFc1NmtRZ1k1NmJLZjlWbi12TXBFQ1BCajVhMnFYQnJCd2pfTlY4QXpya3h2Z0k3SUJ6aThqWkFYUmVCS0d1YWQ4UDN6MUhqQlpWeUpsSGhuQVZtVmh3R3JRZ0FVLThlWUY2SGZIbzhC?oc=5",
+      "publishedTs": 1780653375
+    },
+    {
+      "title": "Yen nears 160 as Japan warns of decisive action",
       "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHBuQzlfN21Kck1EM2lxdEJOZWZmMVdheXE3b0hPN1V2MU9saFNBRmxGVW9xOHhEcnlEd1dLUS12ZHNyU2tNYmFPdkhWTTRDVFZOOUZpYjJKMnFWVEhjSXlCQmhkRjF2Z0NjdlY1WHExWHVPSjM0LVJSMTd3MDJqUzUtUmNjVWIwSkFPcFFVR0ZQMXZ4YkNIeG13dml2NTY3ZFN3NnN3cENLT05OUDF4YWpXSjZ6dXBuQ2JDcy1DaFgzOVRVWVdwY3hmNy0wX00?oc=5",
-      "publishedTs": 1780648288
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNOFVGN2VtZ2RGMEd4QkZQY0JqMnZlZ2luOGRsRnV2TnUtTjFvZFZSQnJpTUlXdFVud3hSczNtbFJROEZKaldidlYtZDFFWmtoSXFGZXJuaTRJQlBsZURYMWgzakh3TUpMTnRaWWNicEZKQ0stR25mSldCaDNoc3VBMW9kVlowZDNOS0ZsVWRiTmhmSnBCaE1iSlN4eFBBMjdUVEdBSWNwdjFNeWRKc0hsMW00ZWRwWFAzUVktdHB1WlpYVms?oc=5",
+      "publishedTs": 1780653274
     },
     {
-      "title": "Japanese Yen: Consolidation inside tight range versus US Dollar – UOB",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbFUyNUtCVkgzOTJSNFo0WDYtRU9NYmwtNXZsUU5GQmJteHQwRjlhdFZnR205amdXLWZISy1VUnR3Yk9MY1MzVks5UDBoRk13VWxUMi05ZS1MOWpSVk5WYUhZbFRkZlJwcjNYajZKYzNOcXY3bzEzcWNsZS0yakpoR2Z3bG84LUVpMXJqQ21QclZna2daUFdaOHhMQzlzYzZiTldXRmhxUnhaMHZ2R0E?oc=5",
-      "publishedTs": 1780647444
-    },
-    {
-      "title": "Japan’s record yen defence drains foreign reserves",
-      "publisher": "Nation Thailand",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9pMmR0SUxlOGFkMmNQUXV5ekZBNXYtNnRFNUVWTDhmUUZRLUE0Sm04dHdxbXVURl9fdHZHY3JPRktkZnFfSmwzaGdwNXhZaldvbmJ2MUxSOExhOFZxbjlZ?oc=5",
-      "publishedTs": 1780644632
-    },
-    {
-      "title": "Japan shares lower at close of trade; Nikkei 225 down 1.26%",
-      "publisher": "Investing.com India",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbWxwNDgzOEtadXZKZUt2UTYzYWtaVGxyWnR1aGRKNHJnRFB5UlpNTEthdDUzTXdGWlpLZlFIRU5RUUotamhMYVotOWdFM05tQllpSTZMbUwzWm5jV001dTBHRXcySHItZGpGR1JURm5fVmpHVjFGRXZoTUNzOHdQMnZ6dUJJTjRfejlYNkFfWVhGbkRsaEtRbkFXX1A1eEg2XzN4QlFjSlZySHFQa2VnTVNR?oc=5",
-      "publishedTs": 1780643925
-    },
-    {
-      "title": "'Black Friday' Sweeps Korean Stocks, SK Hynix Plunges Nearly 10%, Samsung Electronics Drops Over 6%",
-      "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcW9GZF9Qd05oZkFEQWdHdU1lLWt4SXlmYTFLM1VEOVlkQzZTa051c0RzSi1ZeEpoTHFUODR0M2trV0Nqb1FvWFBJcTZfTG01WTNURl9kNEVQRDNEZ2pjckFsUnhpaVl3ZWhhdk5veVhvMXFncURHa1FUajBDamdSaGRWVUZSemt3VE9TbzI5Qkt4d2lKTHJYejhR?oc=5",
-      "publishedTs": 1780643590
-    },
-    {
-      "title": "Japanese Shares End Lower on Friday as Global Technology Stocks Slip",
-      "publisher": "marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUUJQRml5aWhMTWd5Qk9jeGJ3Sk5wdWM2bDk2VnUwT0R0enBhU1F0Mm5jUUJlbVY5Y2NacVNMaV8zekdnN1NZN1ZsaENsN0R1OFY0TnA3ZU9XUlhQc2l0T3d1TERqYkx0YngybVpadDJqMU9CVTdJZTNJMVpuSTY4NmlMdXZSX1Y2MVQtRnJoLU5FTWEtMTFjZFJ4V0dxWDlLQ01LeHlJNDh5OExhV0NGREh5dDlkN1lNMDBYWWx3?oc=5",
-      "publishedTs": 1780643564
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 1.26%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOWVlSmctTzZodFhtclRQa2RzRkRWUjdweUViS2EtUklKX0F5TW1oYkM0UHhBbHVvUy1zWWxpaGN0aUVoNUIzUS1ONnZsQURaQkhFYjNoai1jUWtuc1Q3dTZLR2t2eWc0cjR5eDY0TUNSOGY3bWwza1Y3a1dFc1g0bGhfYzdRMnhoaE9HdFUyRmpJZnFlMEttM1lyZTJkRGUwRDIxN29UcEN4d0U4bjI0bTFZQQ?oc=5",
-      "publishedTs": 1780643250
+      "title": "Nikkei225 Falls Toward 66,590 as Tech Pullback Hits Japan Stocks",
+      "publisher": "VT Markets",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTk1nVUI2Qkg5ejF4Nkw4TjhzZGZ5SGJpUU9CTmt0TWU1NTNHU2d4NzJBTmFHOER2Qmg3NWVhVW9VNF9RT2d6S3Z6Qi1hd1JiUy1WYnpLZk5xZnI2U01TbXZ5aFZQc1V5ZEpvUk0yWGdXeHRRWjJ5X0FmUnJROFJHcmdrQlkxSE9ncmlUd2FlYWZDMHBRcHo1R1pRQVYwRWc?oc=5",
+      "publishedTs": 1780653156
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 글로벌 기술주 하락의 영향으로 닛케이 225 지수가 1.26% 내리며 하락 마감했습니다. 엔화는 달러 대비 160엔 선에 근접한 수준을 유지했으며, 일본 당국은 개입 준비 태세를 시사했습니다. 한편, 기록적인 엔화 방어 노력으로 외환보유액이 소진되었다는 소식이 전해지며 엔화 약세에 대한 우려가 지속되고 있습니다.",
-    "en": "Today, the Japanese stock market closed lower, with the Nikkei 225 down 1.26%, primarily influenced by a broader slip in global technology stocks. The yen remained a key focus, holding near 160 against the dollar as Japan signaled readiness for potential intervention. Concerns persist regarding the yen's weakness, especially after record defense efforts have reportedly drained foreign reserves.",
+    "ko": "오늘 일본 증시는 기술주 약세로 닛케이225 지수가 하락하며 부진한 흐름을 보였습니다. 한편, 일본 정부는 에너지 및 유류비 부담 완화를 위해 3.1조 엔 규모의 추가경정예산을 통과시켰으며, 이는 지정학적 긴장 고조에 따른 대응으로 풀이됩니다. 외환시장에서는 엔화 약세가 지속되어 160엔에 근접하자 일본 당국이 단호한 조치를 경고했으며, 엔화 방어를 위해 미국 국채 매각 가능성도 언급되었습니다. 전반적으로 주식 시장의 하락세와 엔화 약세에 대한 우려가 부각되는 가운데, 정부의 경기 부양 노력이 주목받는 하루였습니다.",
+    "en": "The Japanese market presented a mixed picture today, with the Nikkei 225 slipping due to a pullback in tech stocks. In response to rising energy costs and geopolitical tensions, the government enacted a significant 3.1 trillion yen extra budget aimed at easing fuel burdens. Meanwhile, the yen continued its depreciation, nearing the 160 level, prompting warnings from Japan of potential decisive action, possibly involving the sale of Treasurys for intervention. This highlights ongoing concerns about currency stability alongside government efforts to support the domestic economy.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1780648399
+    "generatedTs": 1780657234
   }
 }
