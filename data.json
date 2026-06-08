@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-08T09:30:20.412487+00:00",
+  "asOf": "2026-06-08T12:17:05.911005+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6095,47 +6095,52 @@
   },
   "headlines": [
     {
+      "title": "Anwar arrives in Tokyo for three-day Japan visit, Nikkei Forum on agenda",
+      "publisher": "Malay Mail",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZUZ0M24wUkMzMXp2OE9hcl9FT0pUdER0aThidGNvbUNHZ05qNHNwNS1Ia3RvSWlxZVJqU25tdVVjcVdLQXVWeEZseExBNWVaVzlLb1VmVjV0ZHFzdWhTRVNpa2RCWkpRUjRraDVYbkhLaXVOZFhjZ2NZVktOeHNlcDNUYzF5SGp5ZGpRUVU5b29JWnl6ampsVERQblRqQmlNLS00STNlU3F3MVpHMHN5Q05iSENmQ3dQcjhYbUhFd0dUVVhtNktRTtIBzgFBVV95cUxPdVFfVkdhNXc1VUhHZ2FObEVORzJpZmh3YllJQkZ2SVh5ZGxHVWt6NUlFaERaWUh2ZGhUbW1ZMDB2MktxZ2hNVXBvXzlOV2lMeEtIVFpnZkkyNUZtX2hETWoxeEVpUzlXd1kyd2dOZmc5eUJaUHZaOC1raFhEU25jeWplcGRKb085UnhOUno1VW9DU1F5Nko4dmVBU0JSNl82QTBHa0tnU3M4eFd0MS03QlJyVTdOQWs1UDJLQXYzd2c4LW15eHpsa2Z5QndyUQ?oc=5",
+      "publishedTs": 1780920634
+    },
+    {
+      "title": "European Stocks Trim Loss on Trump Comment; Zealand Pharma Sinks",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdXE2LTBBSF9EdFBGVGRNYUVxMTdZRTRPYllDemV2ZVM0c0NHb0pXYVV3WlZCY3FyS29ZOGdFTm1ZS05ZMEtNLVVfX0ZZQXdoMHBuMVctSEI5R2hWbHowRHFDbm1oTVd4N0YxbzluREROR0NBX3N1TE5FTGl4ZUVvM2JYek9GV3N2UzRmZkl4WDFYa2taMHVEYUVwc0R5YV9ueWRMQll6UGcyX1NPazdF?oc=5",
+      "publishedTs": 1780916882
+    },
+    {
+      "title": "Tokyo Stocks Suffer Fifth-Largest Drop as Tech Sell-Off Deepens",
+      "publisher": "News On Japan",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE92ZVRFZEFrc2E0cnZXLVZvSzR1MUJ3anBkRkdEZ1ZDX09NMmhGVGFCN3JXdFlXbHZ1QmFMeUxMZjRBNFNKWldqdTZZVlF6bEIzaW1ydA?oc=5",
+      "publishedTs": 1780915607
+    },
+    {
+      "title": "Euro edges lower vs Japanese Yen as BoJ tightening bets support JPY",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS2FXU1hPMmlUdTFGeXp0c0N1MDNxTk5VdFFYX2xQYjhJRS1OZzdQRmM4WUwzSEp3ZEg3QWdYNThXcDRURXZTZ0NSZnVvNGtNb0ZvTnFrWEJOc1hzV08zUGQtT2Y4VmNIYVEwLVM3cW9JcXpsSjBxbkV0enQ0RkZWOGdUc1RjUGphb3d0Z1RZQWg5Zm9JQVl5UExudGhIUEhHTm0xcjVvTTF2ekstOEo4?oc=5",
+      "publishedTs": 1780912631
+    },
+    {
+      "title": "Korean Stocks Tumble as AI Trades Unwind, Threatening Bull Run",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONGpyY3BVWEJySkJGWDZRYjRuR1ZUVXBFOGNRN3daaDQ3c3NRMGhiTDRhVThPdXNwX3hmSlJNeGZobVduRVZNZmc1dzlrMjg1ZjRyZ3lIQ0RBVjlSQ0lWM3lud1ZyUy1kLVozRzkzbVplV0lvanFrVkdQTEJER053NS1QazNiN1U1Z0RSNHE1NHlLU3dVNjA1RmpZZ1J3cFc5YjNhamJrMUtsSnBmbWlLbjd3?oc=5",
+      "publishedTs": 1780911651
+    },
+    {
+      "title": "Stock markets fall on tech plunge and renewed Middle East attacks",
+      "publisher": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01QWVNQjFNbU01RjRfOWkxQ2pCQnI2MzJEY3ByNW1TM2d2cG01bUt2c0xnR1RwTXMtRzJma1BvdnBQNnpnQjZqVHpEUXdoQ3JTS2g3THgwRzN4Zw?oc=5",
+      "publishedTs": 1780910866
+    },
+    {
       "title": "Japanese investors make biggest foreign stock exit in five years in May",
       "publisher": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX2doWU1sbG43ejIwdHF5amlGUmhYa3VuSVR2cXh0WEY1QldfV2JVQ0FUSGVxbnU4a3RhUTJHNmF1b3NPbEQ0QmxvZ252clNUcmtXY1k5ZTlDWFRLR2F0ei05c0lLUmx6YXhwLXctSndHUUhoVWozSUE5VjF0N0xwQTVNVnFHVUZhbEVqQWs0ZGp0eXpmOEp5VVBoLUpTWWxpNGZDbjFZS0plRFZ2dEdGZkVDaE9ZT0hwOUE?oc=5",
       "publishedTs": 1780910383
-    },
-    {
-      "title": "Japanese Investors Flee Foreign Stocks Amid Market Volatility",
-      "publisher": "Devdiscourse",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSldTTl9sODVYclczem9fY29pam9SVkQtOFJ6Sy1XWm5LWU1rVlBiM044a3NXSkluODdJQXljVmstT3c3cnBIaUtONVZ6WnBQZHhjVmxTd2M5Qk01dko5a0pMMVBvVzNQd1V6SThZTWVXLVR2ZjNOYk1zcFZ1M3lnb091bjk2a0ZXb0lmNEgtSnFISjhndWhId2JnTXF5TV81UUVHazBmN3RFZXdLallNbVlHZWdjQdIBuwFBVV95cUxOWDJUTDFtTEpaWGdnNGtGUW5xdlRYUF9aal9qTDBON0dlNi04a0loSHVrMUtkQkVHS2ZCODZZT21fNW8tY1gzSThPRU1YRUkxQllQZnYyVTN1WGpKMmJyUlFOdUUwZnF4WDl5MDl3TXRlY0d4Ni1FU211LUdsNlZuLXpBMUJjcWVIS2tHRlRBZk1EMmVFYTZqY0FGN1RqNjBaRHNnZWVmeUdhMHZUZk1ZRjRNbmJlaVhkOEFv?oc=5",
-      "publishedTs": 1780910188
-    },
-    {
-      "title": "Japanese idol group Arashi's farewell tour generates 137.5 bil. yen in economic impact",
-      "publisher": "毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ZT3lEZlV6aEstUEl5ZTkzaVRKSmtZazJDcnVjUXFkalJXZE5NRUpyVFIxeVBQZ3ctakgxcHQyM1Fib3k4Vllic1RMTWlNZjJpeGlQV0VNd0FaOVVqcTZGSHdIUm5NeFBqVy0yYmVIeVBFWVU?oc=5",
-      "publishedTs": 1780909821
-    },
-    {
-      "title": "Oil Surges After Hostilities Between Iran and Israel Escalate",
-      "publisher": "The New York Times",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9EQjZHRTVVUENXRTZkLTRhb1JFYzRGRkE2cWFfNmowWFFOZFV6TFVfWEdkNXNHSWpKekZGd1NxU0xQNDRrem0yanpYc1d2OWI3VzZFdW15a182TXVJT3RnUDJKb2M0Smgwd3RXVUQ5RzAyZFphWmg4?oc=5",
-      "publishedTs": 1780909200
-    },
-    {
-      "title": "Japan's Q1 growth slows on weak capex as yen nears 160",
-      "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNUkRnMFZPRnJTTkJlcDd4NlU4dG82bUpnRG93Ul9pQ2JCMk5JRUJtVE5IOFJ4NGRVbUlDcDBsS1duSXlXa0pYeFFrQV90WFdTWEpadEtfaXRHbHdQblV5eHhVSGtxbkpTeF9MSVZlQVctVFEyNVlPRzQtNGFIczh6VHBLX25hcUJzaGNOTzZMT2NDS1QzYmZUVFJyNlkyeFhveDNoWFZ0SFY0NGJFUnZMdk40RWktaVBlOGVscU15V000cGIyRkxhLWlTcXY?oc=5",
-      "publishedTs": 1780908822
-    },
-    {
-      "title": "Yen lingers above ¥160 to the dollar ahead of BOJ meeting",
-      "publisher": "The Japan Times",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBONGJ3ZDI3bVlYSXdmNlBpUFRVNlF2b3NiOU0wcThMWm52RWFUVWJPOVdkLVliWU81OTZfZHdtbDdkM0FVTEJjZmloclVzcXFIbV9BUm5oSTVSVm5aTkpITlp0ZWhIWFhDSG54VHdpM0FiWDB3RGNTaDY2OHI?oc=5",
-      "publishedTs": 1780908480
-    },
-    {
-      "title": "Anwar to outline Malaysia's geopolitical vision at Nikkei conference in Japan",
-      "publisher": "NST Online",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNXhBNHhQcEhrT1REZHI3U1JYRlZkX1lvVkh4Znp5WEFlczNhWlVwZVl0UXVMalR0enJiVHRRdHhlVkVNRXlPZzNtRm4yRWNhQkxad2pueTdYNTJqdVplZjNVUnB0dTg2NzNtWENqYXN4R1NKRmZ4czdOcTJja0lpcy01QkJUU09VRnYtdEJPeTh2bVVIYkEyX25RTER0cUdiQ1ZUYTI2UjhZSjRlZ2xnc3VDMUpNbVNBSnNFWUZKY9IBvwFBVV95cUxQNXhBNHhQcEhrT1REZHI3U1JYRlZkX1lvVkh4Znp5WEFlczNhWlVwZVl0UXVMalR0enJiVHRRdHhlVkVNRXlPZzNtRm4yRWNhQkxad2pueTdYNTJqdVplZjNVUnB0dTg2NzNtWENqYXN4R1NKRmZ4czdOcTJja0lpcy01QkJUU09VRnYtdEJPeTh2bVVIYkEyX25RTER0cUdiQ1ZUYTI2UjhZSjRlZ2xnc3VDMUpNbVNBSnNFWUZKYw?oc=5",
-      "publishedTs": 1780907339
     }
   ],
-  "marketTone": null
+  "marketTone": {
+    "ko": "오늘 일본 증시는 기술주 매도세 심화로 인해 큰 폭의 하락세를 기록하며, 역대 다섯 번째로 큰 낙폭을 보였습니다. 한편, 일본은행의 긴축 기대감이 높아지면서 엔화는 유로화 대비 강세를 나타냈습니다. 이러한 가운데 일본 투자자들은 5월 중 5년 만에 가장 큰 규모로 해외 주식을 매도했으며, 중동 지역의 재개된 공격 또한 전반적인 시장 심리에 영향을 미쳤습니다.",
+    "en": "Japanese stocks experienced a significant decline today, marking one of their largest drops, primarily driven by a deepening global tech sell-off. The yen, however, strengthened against the Euro amid increased speculation about potential Bank of Japan tightening. Adding to the market dynamics, Japanese investors made their largest exit from foreign stocks in five years during May, while broader market sentiment was also impacted by renewed Middle East attacks.",
+    "model": "gemini-2.5-flash",
+    "generatedTs": 1780921033
+  }
 }
