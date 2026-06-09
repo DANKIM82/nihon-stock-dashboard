@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-09T08:10:11.029815+00:00",
+  "asOf": "2026-06-09T10:47:44.446849+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6094,46 +6094,46 @@
   },
   "headlines": [
     {
-      "title": "Japan and South Korea Stocks Both Close Higher, Memory Chip Stocks Rally Sharply: SK Hynix Rises Nearly 16%, Kioxia Rises Over 6%",
-      "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRXBEZk1fVV9qdzNCRHliQUNjcTlFa0xUTlR4amFONGdEa09mampFbjRpOHg4Q3hRNlc0bXNuaEdWZGhiWkRFa3dqcXRrbTVSSG5OdklPNU9ydVZfUEpQVHZuR0gxUFdTUlZaRHpBNkhuZ0FjRmluc25jSC0tOS1sa3BHcmdSTVNFSXAycE91U1ozMDJqVFdYd1RjbHpmRGhYdTJXdmlB?oc=5",
-      "publishedTs": 1780989944
+      "title": "Weak yen, hawkish Fed adds to pressure on BOJ to accelerate hikes",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVHRTbEVkNllBeWlhNDE2aWY2Vzg5aTBBaTF5cFBJWGo0anZGZ3dVb3VtcVFFakYweTk2akRPZzJUcy1WVDVJY3NIYjFqNldMdzVtNDhtRHFCd1RrMW9KdVBoc1RRaDk2VGkxdXRWdEZYSVNrOFFQMzlHZlRocExaanFRNW5mRy1Tc3BaejFoa2VVNTZ5SFpEQVdiR1BQSUFuWVktVnNQQVJkSlhvcTFj?oc=5",
+      "publishedTs": 1780999903
     },
     {
-      "title": "Euro Advances vs Yen on ECB Hike, Japan Risk Outlook FX",
-      "publisher": "TradingPedia",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM0xRN3NhWGwwT1R4azBqcTEzQVlsWG5uQThXakdPbDBjbmdpOVJYTTF0M00ybTlWdDlkSXhNSVJVRGcybG9nR1p5b1B4bVhXUlVEM2dDS0tZeUFEWHBRVDN2dnI3RlJjUE5hUUxPUkRwQm11aTJKWDBVWE4yZ0FNOEQwTlZRMHAxVi1yWHRjWlNQWk1qME43bXphcw?oc=5",
-      "publishedTs": 1780989251
+      "title": "Bank of Japan’s 1% Rate Hike Could be Critical for Bitcoin",
+      "publisher": "BeInCrypto",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uTmhEZm0tZUhlTzBFSl9fM1dMMU1qTkxWX21Bakxtdm9FNWN0WGdNSEZDaFl5SVF6YU01YURPcGFZRnhNeXk4SVFOZmc0S1BCcUNUaEp0dXp3VnJzVlRGdFhTTGQzdkhENHZVOXJBTldmR0luaEpCcktR?oc=5",
+      "publishedTs": 1780999740
     },
     {
-      "title": "Euro remains stronger against Japanese Yen following German Industrial Production data",
+      "title": "The Bank of Japan has signaled a possible rate hike next week; sources say, 'It will be too late if we delay any further.'",
+      "publisher": "Moomoo",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVVJDVUhBS05JNlFJRGVjSXpYa3RBSV9Pb2lQMHh5XzJPdUVrNDhBMzAyamlfSVpUQmdfek4ySmFyTVN6azkzTTVXM2ZwR1N2emloT1RHc2ZYa2NvT1BCRVpBUUNzTFBzZ2xkYWlua2ppdWtzeTB0YTRtdFFCakJiNmNUWHZkTDlFVFNOMl94Q0h2MUdjZnNkOA?oc=5",
+      "publishedTs": 1780999225
+    },
+    {
+      "title": "Japanese Yen: Weak against US Dollar despite BoJ hike bets – MUFG",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaENySTRCU0FTVzY1MXVMV3E3WXlDYjBBTnVIOWM0SU5oWXNfVHRyRm1yQVdTTFFvbFFLT0JFVFpxdk9RQUFHS0tjTVBJYkQwalV4X25tZVBHQjRnRXVVQzlidTJzcHNjZktGY1NqWFlhMnpSSHVIWk1QYm5kbWF5Y1RaS0NsN0dCOVNMZzQyNlhZZkRrZG1tQUJpRUdNY2IzQUpXdGJxOWVxMWRVdndGTVVZQmhHRjdJWFU2UkhaV1BqOTZPaDhFbg?oc=5",
-      "publishedTs": 1780989150
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTFhuX1o0RFZnaXBqUzZyZ0h0d1RCRWI0RlZTOXhWUHFpdVFuaEJSMnR3dGM2cXlTZ25sU21tOGtBQWVCbnVNNGQ2OWdXZ0pjUnhadXVSZjdnM29rQl9TeEUyVDRqZUdMTlV2Y3BVaUpWcXZRNm41UjFlWUpzbXZ6aDVuMFlycFdRUFJZWjBadlNLRkFtZFo0d0o4dV9HTEhTMThsZm9QWE0?oc=5",
+      "publishedTs": 1780998534
     },
     {
-      "title": "Japan issues warning on yen, bond yields as fiscal pressure mounts",
-      "publisher": "MSN",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQy1QYmJMSzZ1N3F6OVdMOV9ILVNjMi1ZeXhlZ1BXM2NyVHp4VUViZWlqVEFnblZHT1JlQVdQZjRXMEdjSTctcTZjQWltTngwV29aU25pWFk1UkhzOGJXc1J5dm5ibnZabmNFampHamZlZDlZaE9ZMzlraWZONGNDcHc0N212dktWU20xeFFMbU9PVTgxWmllalFiM1gxcFRBbUZkcjNRMGcwaHF1STd1X2pZa1hIZkdEU29IT1NCZ1c0ZHhLVlpzaDJzaHV2VkxZN24tQjZYMmdaOG8?oc=5",
-      "publishedTs": 1780989010
+      "title": "BOJ to Hike Rates to 1% in June. Highest Rates in 30 Years Loom, Will Japanese Stocks Plunge and Bear Market Approach?",
+      "publisher": "TradingKey",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaEhZTWV4VEUtNVg3MFNFckxSYjE1RXZzdlVJeG82Mm5OUGVIMkx0T1VlRWl1Wno4QUphUk1uQ1V1eHJCcEdHMXF4RDZyeWs4TU1iYUlQV1FjVk9lZGdQWE9TcG9kRWhPVHRGbHpwekpvWWVLQ2JxYVFIWEhtY2UyS1RnY1l3aTJWSEZQdFdoeUtFLWF4RjV3NDdrRQ?oc=5",
+      "publishedTs": 1780998368
     },
     {
-      "title": "Japan shares higher at close of trade; Nikkei 225 up 1.92%",
-      "publisher": "Investing.com India",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMUhzdEJtbU52cy1CS1dBWWtyXzQ4VS02aEdzS0F5YWRSMmZ5ck1QeDVCeGJkM0FoRlIyUlE0a29QVFN1YlE3LXhEUnZaR3g0UENocEVmUmVJVVczV0lXME4zRi1FVUZzelNSbFMxd2pSLWJCSUd4M1M1ZUd0QnY4c2lTZ2hVYlBOS2VDdHRJZk1VSkRqV1NCMF9jcnBJYnFFN3hNLXgzTUVnWlBTT3dRMg?oc=5",
-      "publishedTs": 1780988850
+      "title": "Raiden Watermelon Fetches Record 400,000 Yen at First Auction",
+      "publisher": "News On Japan",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBnV01QNXhjOUtVamtYTVRrM19DeV9ESW52d0ZpTXRmaFR0ZEUtendkWkZReXpoUTV0d0IzYW1XX25EUnd0TEdIVEN2eGVsdFYyRXg5Xw?oc=5",
+      "publishedTs": 1780998279
     },
     {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 1.92%",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUM1ZS1iU3dyNnp3ZmtaMUtfMjRUY1dvSXdWYWdkRTJFRmgzRS1ySzZ3Q3pKTjV0X21XM216X3IyLUdoTGZTWm9zUE9YTDdwM0N3d05yalZ2Rm5zSDNWSkZHeEM2ZUxkUnlZRkd6Tk9xem82N2FfWnNLZFFJQnZjTFFkY2U2SFhZbTdLNHBUZFhoVUVTZEdVZ0VKNGpyMVlFM3FFZzM5N3JOelBqZWFQSTFB?oc=5",
-      "publishedTs": 1780988800
-    },
-    {
-      "title": "Japanese Shares Rebound as Investor Interest in Tech Stocks Recovers",
-      "publisher": "marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNDZQNUFOZUFUbHdNUUJxc0hLWWpQUHdXWFpQeUpjdC0yZGktOFY1eFF5c0s4VnRRVDY1bW1oSkJKLTZXVXhxWEt3SUJHem5rU1Mxa0NUMTdPX3ROYTdRSC1QdkZuQjF6N2xrb0E5SWwzZG1HMzdReUJXS2MtTFVCcF9qQlByY0FxR0NhaTd2dnFYdXRGTjVnY3B4by1TZ3ZYc1dyUEdMTlVnM3F0dGRXcnpvYjBwMkpUeExaS2tB?oc=5",
-      "publishedTs": 1780988672
+      "title": "Japanese Yen steadies near recent lows as ceasefire, Japan intervention threats offset",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMlFsdmM2WVRRdTd0RnF0RDJzenppWnJuRFBjSHNUeXJ5cllBamFOVnRkYzlDVlI4WG5aYWs0R0lLZlR4RlNRV0ZQWDNFRk5sNUdBNlBfcm9PZnJuTC1yNmFxcHFDVWF1OW9jal9KeWdkUGtrSlF2LVZXWjlyZVVKNG5JdnJBUGphMERVNmVfUEVvUFVPVENVMUVhWGR6U2VyeUM4NVFrTkRFaXhjczdQSTE5Wi1oZ3NIcHM5YnhxZjBrOVZHbnQ0?oc=5",
+      "publishedTs": 1780997310
     }
   ],
   "marketTone": null
