@@ -374,6 +374,16 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "shortPctChange": None,
         "shortAsOf": None,
         "shortCandidate": False,
+        # weekly margin balances (attached in main)
+        "marginLongM": None,
+        "marginShortM": None,
+        "marginRatio": None,
+        "marginAsOf": None,
+        # sector-relative z-scores (computed in main)
+        "pbrZ": None,
+        "perZ": None,
+        "roeZ": None,
+        "valZ": None,
     }
 
 
@@ -544,6 +554,64 @@ def flag_short_candidates(stocks: list[dict]) -> int:
 
 
 # ============================================================================
+# Weekly margin balances & sector-relative z-scores
+# ============================================================================
+
+def attach_margin_data(stocks: list[dict], margin: dict | None) -> int:
+    """Merge JPX weekly margin balances into stock rows (in place)."""
+    if not margin:
+        return 0
+    by_code = margin.get("byCode", {})
+    n = 0
+    for s in stocks:
+        m = by_code.get(s["ticker"])
+        if not m:
+            continue
+        s["marginLongM"] = round(m["longSh"] / 1e6, 2)
+        s["marginShortM"] = round(m["shortSh"] / 1e6, 2)
+        s["marginRatio"] = m.get("ratio")
+        s["marginAsOf"] = margin.get("asOf")
+        n += 1
+    return n
+
+
+def compute_sector_zscores(stocks: list[dict], min_n: int = 4) -> None:
+    """Sector-relative z-scores for PBR, PER and ROE, plus a composite
+    valuation score valZ (mean of pbrZ/perZ; positive = rich vs sector,
+    negative = cheap vs sector). Sectors with fewer than `min_n` valid
+    observations are left as None.
+    """
+    import statistics
+    by_sector: dict[str, list[dict]] = defaultdict(list)
+    for s in stocks:
+        by_sector[s["sector"]].append(s)
+
+    def zmap(arr: list[dict], key: str) -> dict[str, float]:
+        vals = [(s["ticker"], s[key]) for s in arr
+                if s.get(key) is not None and s[key] > 0]
+        if len(vals) < min_n:
+            return {}
+        xs = [v for _, v in vals]
+        mu = statistics.fmean(xs)
+        sd = statistics.pstdev(xs)
+        if sd == 0:
+            return {}
+        return {t: round((v - mu) / sd, 2) for t, v in vals}
+
+    for arr in by_sector.values():
+        pbr_z = zmap(arr, "pbr")
+        per_z = zmap(arr, "per")
+        roe_z = zmap(arr, "roe")
+        for s in arr:
+            t = s["ticker"]
+            s["pbrZ"] = pbr_z.get(t)
+            s["perZ"] = per_z.get(t)
+            s["roeZ"] = roe_z.get(t)
+            comps = [z for z in (s["pbrZ"], s["perZ"]) if z is not None]
+            s["valZ"] = round(sum(comps) / len(comps), 2) if comps else None
+
+
+# ============================================================================
 # Main
 # ============================================================================
 
@@ -678,8 +746,41 @@ def main() -> int:
                         s[k] = prev.get(k)
             print("  ⚠ jpx feed unavailable — carried forward previous values")
 
+    # ── JPX weekly margin balances (best-effort) ────────────────────────────
+    margin_meta = {"ok": False, "asOf": None, "coveredStocks": 0}
+    if not args.skip_jpx:
+        print()
+        print("📊 Fetching JPX weekly margin balances...")
+        try:
+            from jpx_margin import fetch_margin_balances
+        except ImportError:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            from jpx_margin import fetch_margin_balances
+        try:
+            margin = fetch_margin_balances()
+        except Exception as e:
+            print(f"    ! jpx margin feed failed: {e}", file=sys.stderr)
+            margin = None
+        if margin:
+            n_m = attach_margin_data(stocks, margin)
+            margin_meta = {"ok": True, "asOf": margin.get("asOf"),
+                           "coveredStocks": n_m}
+            print(f"  ✓ margin data attached to {n_m}/{len(stocks)} stocks")
+        else:
+            for s in stocks:
+                prev = prev_stocks.get(s["ticker"])
+                if prev:
+                    for k in ("marginLongM", "marginShortM",
+                              "marginRatio", "marginAsOf"):
+                        s[k] = prev.get(k)
+            print("  ⚠ margin feed unavailable — carried forward previous values")
+
     n_short = flag_short_candidates(stocks)
     print(f"  ✓ short-candidate screen: {n_short} names flagged")
+
+    compute_sector_zscores(stocks)
+    n_z = sum(1 for s in stocks if s["valZ"] is not None)
+    print(f"  ✓ sector z-scores computed for {n_z}/{len(stocks)} stocks")
 
     # ── Derive summaries ────────────────────────────────────────────────────
     sector_perf = compute_sector_performance(stocks)
@@ -703,6 +804,7 @@ def main() -> int:
         "headlines": _headlines_for_payload,
         "marketTone": generate_market_summary(_headlines_for_payload),
         "shortData": short_meta,
+        "marginData": margin_meta,
     }
 
     payload = clean_nans(payload)

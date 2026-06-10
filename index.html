@@ -176,6 +176,26 @@ const dict = {
   daysToCover:{ ko:'Days to Cover', en:'Days to Cover' },
   shortReportersLabel:{ ko:'보고 주체 수', en:'Reporting Entities' },
   shortNote:{ ko:'JPX 잔고보고(0.5% 이상) 합산 기준 — 실제 공매도 잔고의 하한값입니다.', en:'Sum of JPX position reports ≥0.5% — a lower bound of true short interest.' },
+  colValZ:{ ko:'밸류 Z (섹터)', en:'Val Z (Sector)' },
+  marginLong:{ ko:'신용 매수잔고', en:'Margin Long Bal.' },
+  marginShort:{ ko:'신용 매도잔고', en:'Margin Short Bal.' },
+  marginRatio:{ ko:'신용배율 (매수/매도)', en:'Margin Ratio (L/S)' },
+  zNote:{ ko:'섹터 내 z-score — 음수일수록 섹터 대비 저평가, 양수일수록 고평가.', en:'Z-score within sector — negative = cheap vs peers, positive = rich.' },
+  navBook:{ ko:'롱/숏 북', en:'L/S Book' },
+  sectionBook:{ ko:'롱/숏 북', en:'Long / Short Book' },
+  bookEmpty:{ ko:'스크리너에서 별표(★)를 눌러 종목을 추가하면 여기서 롱/숏 포지션을 구성할 수 있습니다.', en:'Star (★) names in the screener to start building long/short positions here.' },
+  bookSide:{ ko:'방향', en:'Side' },
+  bookWeight:{ ko:'비중 %', en:'Weight %' },
+  bookGross:{ ko:'그로스', en:'Gross' },
+  bookNet:{ ko:'넷', en:'Net' },
+  bookLongExp:{ ko:'롱 합계', en:'Long Σ' },
+  bookShortExp:{ ko:'숏 합계', en:'Short Σ' },
+  bookPositions:{ ko:'포지션', en:'Positions' },
+  bookSectorExp:{ ko:'섹터별 넷 익스포저', en:'Net Exposure by Sector' },
+  bookLegMetrics:{ ko:'레그별 가중 평균', en:'Weighted Averages by Leg' },
+  bookExport:{ ko:'CSV 내보내기', en:'Export CSV' },
+  bookRemove:{ ko:'제거', en:'Remove' },
+  bookNote:{ ko:'비중은 NAV 대비 %입니다. 숏은 음수로 합산됩니다. 데이터는 브라우저에만 저장됩니다.', en:'Weights are % of NAV; shorts aggregate as negatives. Stored locally in your browser only.' },
   filterSearch:{ ko:'종목 검색…', en:'Search ticker or name…' },
   filterSector:{ ko:'섹터', en:'Sector' },
   filterSegment:{ ko:'시장 구분', en:'Market Segment' },
@@ -372,6 +392,238 @@ function WatchlistStar({ ticker }) {
 }
   
 /* ==========================================================================
+   Long/Short Book Context — persists positions to localStorage
+   ========================================================================== */
+const BookCtx = createContext(null);
+function BookProvider({ children }) {
+  const [book, setBook] = useState(() => {
+    try {
+      const raw = localStorage.getItem('nihon.book');
+      return raw ? JSON.parse(raw) : {};
+    } catch { return {}; }
+  });
+  const persist = next => { try { localStorage.setItem('nihon.book', JSON.stringify(next)); } catch {} };
+  const setEntry = useCallback((ticker, patch) => {
+    setBook(prev => {
+      const next = { ...prev, [ticker]: { side:'L', weight:0, ...(prev[ticker]||{}), ...patch } };
+      persist(next);
+      return next;
+    });
+  }, []);
+  const removeEntry = useCallback((ticker) => {
+    setBook(prev => {
+      const next = { ...prev };
+      delete next[ticker];
+      persist(next);
+      return next;
+    });
+  }, []);
+  return <BookCtx.Provider value={{ book, setEntry, removeEntry }}>{children}</BookCtx.Provider>;
+}
+const useBook = () => useContext(BookCtx);
+
+function PortfolioBook({ stocks }) {
+  const { lang, t } = useLanguage();
+  const { watchlist, toggle } = useWatchlist();
+  const { book, setEntry } = useBook();
+
+  const rows = useMemo(() => {
+    const byT = Object.fromEntries(stocks.map(s => [s.ticker, s]));
+    return watchlist.map(tk => byT[tk]).filter(Boolean).map(s => {
+      const e = book[s.ticker] || { side:'L', weight:0 };
+      const w = Number(e.weight) || 0;
+      return { ...s, side: e.side === 'S' ? 'S' : 'L', weight: w, signed: e.side === 'S' ? -w : w };
+    });
+  }, [stocks, watchlist, book]);
+
+  const longs = rows.filter(r => r.side === 'L');
+  const shorts = rows.filter(r => r.side === 'S');
+  const longExp = longs.reduce((a,r) => a + r.weight, 0);
+  const shortExp = shorts.reduce((a,r) => a + r.weight, 0);
+  const gross = longExp + shortExp;
+  const net = longExp - shortExp;
+
+  const sectorExp = useMemo(() => {
+    const m = {};
+    rows.forEach(r => { m[r.sector] = (m[r.sector] || 0) + r.signed; });
+    return Object.entries(m).map(([sector, v]) => ({ sector, v: Math.round(v*100)/100 }))
+      .sort((a,b) => Math.abs(b.v) - Math.abs(a.v));
+  }, [rows]);
+  const maxAbs = Math.max(...sectorExp.map(s => Math.abs(s.v)), 1);
+
+  const wavg = (arr, key) => {
+    const xs = arr.filter(r => r[key] != null && r.weight > 0);
+    const W = xs.reduce((a,r) => a + r.weight, 0);
+    if (!W) return null;
+    return xs.reduce((a,r) => a + r[key]*r.weight, 0) / W;
+  };
+  const legStats = leg => ({
+    pbr: wavg(leg, 'pbr'), per: wavg(leg, 'per'),
+    shortPct: wavg(leg, 'shortPct'), valZ: wavg(leg, 'valZ'),
+  });
+  const L = legStats(longs), S = legStats(shorts);
+  const fmt = (v, d=2) => v == null ? '—' : v.toFixed(d);
+
+  const exportCsv = () => {
+    const head = 'ticker,name,side,weight_pct,price,changePct,pbr,per,roe,shortPct,dtc,advValueB,valZ';
+    const lines = rows.map(r => [r.ticker, '"'+(lang==='ko'?r.nameKo:r.nameEn)+'"', r.side, r.weight,
+      r.price, r.changePercent, r.pbr, r.per, r.roe, r.shortPct, r.shortDtc, r.advValueB, r.valZ]
+      .map(v => v == null ? '' : v).join(','));
+    const blob = new Blob([[head, ...lines].join('\n')], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `nihon_book_${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+
+  if (rows.length === 0) {
+    return (
+      <div className="bg-white border border-neutral-line p-10 text-center">
+        <IconStar size={18} className="mx-auto mb-3 text-sumi-50"/>
+        <div className="text-sm text-sumi-50 max-w-md mx-auto leading-relaxed">{t('bookEmpty')}</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-white border border-neutral-line shadow-editorial">
+      <div className="grid grid-cols-2 md:grid-cols-5 divide-x divide-neutral-line border-b border-neutral-line bg-ivory-50">
+        {[
+          { label: t('bookGross'), v: `${gross.toFixed(1)}%` },
+          { label: t('bookNet'), v: `${net > 0 ? '+' : ''}${net.toFixed(1)}%`, color: net > 0 ? 'text-bull' : net < 0 ? 'text-bear' : undefined },
+          { label: t('bookLongExp'), v: `${longExp.toFixed(1)}%`, color: 'text-bull' },
+          { label: t('bookShortExp'), v: `−${shortExp.toFixed(1)}%`, color: 'text-bear' },
+          { label: t('bookPositions'), v: `${longs.length}L / ${shorts.length}S` },
+        ].map((c, i) => (
+          <div key={i} className="px-4 py-3">
+            <div className="text-[10px] uppercase tracking-[0.18em] text-sumi-50 mb-1">{c.label}</div>
+            <div className={cn('font-display text-lg font-semibold tabular', c.color || 'text-sumi-300')}>{c.v}</div>
+          </div>
+        ))}
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="bg-ivory-50 border-b border-neutral-line text-[10px] uppercase tracking-[0.14em] text-sumi-50">
+              <th className="px-3 h-9 text-left font-medium">{t('colTicker')}</th>
+              <th className="px-3 h-9 text-left font-medium">{t('colName')}</th>
+              <th className="px-3 h-9 text-center font-medium">{t('bookSide')}</th>
+              <th className="px-3 h-9 text-right font-medium">{t('bookWeight')}</th>
+              <th className="px-3 h-9 text-right font-medium">{t('colPrice')}</th>
+              <th className="px-3 h-9 text-right font-medium">{t('colChange')}</th>
+              <th className="px-3 h-9 text-right font-medium">{t('colPbr')}</th>
+              <th className="px-3 h-9 text-right font-medium">{t('colValZ')}</th>
+              <th className="px-3 h-9 text-right font-medium">{t('colShortPct')}</th>
+              <th className="px-3 h-9 w-8" />
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(r => (
+              <tr key={r.ticker} className="border-b border-neutral-line last:border-b-0">
+                <td className="px-3 py-2.5 font-mono text-[11px] font-semibold tabular">{r.ticker}</td>
+                <td className="px-3 py-2.5">
+                  <div className="leading-tight font-medium text-sumi-300 truncate max-w-[180px]">{lang==='ko'?r.nameKo:r.nameEn}</div>
+                  <div className="text-[10px] text-sumi-50">{localizedSector(r.sector, lang)}</div>
+                </td>
+                <td className="px-3 py-2.5 text-center">
+                  <div className="inline-flex border border-neutral-line">
+                    {['L','S'].map(side => (
+                      <button key={side} onClick={() => setEntry(r.ticker, { side })}
+                        className={cn('px-2.5 h-6 text-[11px] font-semibold transition-colors',
+                          r.side === side
+                            ? (side === 'L' ? 'bg-bull text-white' : 'bg-bear text-white')
+                            : 'bg-white text-sumi-50 hover:text-sumi-300')}>
+                        {side}
+                      </button>
+                    ))}
+                  </div>
+                </td>
+                <td className="px-3 py-2.5 text-right">
+                  <input type="number" min="0" step="0.5" value={r.weight || ''}
+                    onChange={e => setEntry(r.ticker, { weight: e.target.value === '' ? 0 : Math.max(0, Number(e.target.value)) })}
+                    placeholder="0.0"
+                    className="w-16 h-7 px-2 text-right text-[12px] tabular bg-white border border-neutral-line focus:border-sumi-300 focus:outline-none"/>
+                </td>
+                <td className="px-3 py-2.5 text-right tabular">{formatJPY(r.price)}</td>
+                <td className={cn('px-3 py-2.5 text-right tabular text-[12px]', signColor(r.changePercent))}>{formatPercent(r.changePercent)}</td>
+                <td className="px-3 py-2.5 text-right tabular text-sumi-100">{formatRatio(r.pbr)}</td>
+                <td className={cn('px-3 py-2.5 text-right tabular text-[12px]',
+                  r.valZ == null ? 'text-sumi-50/60' : r.valZ <= -1 ? 'text-bull font-semibold' : r.valZ >= 1 ? 'text-bear font-semibold' : 'text-sumi-100')}>
+                  {r.valZ != null ? (r.valZ > 0 ? '+' : '') + r.valZ.toFixed(2) : '—'}
+                </td>
+                <td className="px-3 py-2.5 text-right tabular text-sumi-100">{r.shortPct != null ? `${r.shortPct.toFixed(2)}%` : '—'}</td>
+                <td className="px-2 py-2.5">
+                  <button onClick={() => toggle(r.ticker)} title={t('bookRemove')}
+                    className="text-sumi-50/40 hover:text-bear transition-colors"><IconX size={12} sw={2.4}/></button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-neutral-line border-t border-neutral-line">
+        <div className="bg-white p-5">
+          <div className="text-[10px] uppercase tracking-[0.18em] text-sumi-50 mb-3">{t('bookSectorExp')}</div>
+          <div className="space-y-2">
+            {sectorExp.map(({ sector, v }) => (
+              <div key={sector} className="flex items-center gap-2 text-[11px]">
+                <span className="w-28 truncate text-sumi-100">{localizedSector(sector, lang)}</span>
+                <div className="flex-1 relative h-3 bg-ivory-100">
+                  <div className="absolute top-0 bottom-0 left-1/2 w-px bg-neutral-line"/>
+                  <div className={cn('absolute top-0 h-3', v >= 0 ? 'bg-bull left-1/2' : 'bg-bear right-1/2')}
+                    style={{ width: `${Math.abs(v)/maxAbs*48}%` }}/>
+                </div>
+                <span className={cn('w-14 text-right tabular font-medium', v > 0 ? 'text-bull' : v < 0 ? 'text-bear' : 'text-sumi-50')}>
+                  {v > 0 ? '+' : ''}{v.toFixed(1)}%
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="bg-white p-5">
+          <div className="text-[10px] uppercase tracking-[0.18em] text-sumi-50 mb-3">{t('bookLegMetrics')}</div>
+          <table className="w-full text-[12px] tabular">
+            <thead>
+              <tr className="text-[10px] uppercase tracking-wider text-sumi-50">
+                <th className="text-left font-medium pb-2"></th>
+                <th className="text-right font-medium pb-2">{t('colPbr')}</th>
+                <th className="text-right font-medium pb-2">{t('colPer')}</th>
+                <th className="text-right font-medium pb-2">{t('colValZ')}</th>
+                <th className="text-right font-medium pb-2">{t('colShortPct')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t border-neutral-line">
+                <td className="py-2 font-semibold text-bull">LONG</td>
+                <td className="py-2 text-right">{fmt(L.pbr)}</td>
+                <td className="py-2 text-right">{fmt(L.per,1)}</td>
+                <td className="py-2 text-right">{L.valZ != null ? (L.valZ>0?'+':'')+L.valZ.toFixed(2) : '—'}</td>
+                <td className="py-2 text-right">{L.shortPct != null ? L.shortPct.toFixed(2)+'%' : '—'}</td>
+              </tr>
+              <tr className="border-t border-neutral-line">
+                <td className="py-2 font-semibold text-bear">SHORT</td>
+                <td className="py-2 text-right">{fmt(S.pbr)}</td>
+                <td className="py-2 text-right">{fmt(S.per,1)}</td>
+                <td className="py-2 text-right">{S.valZ != null ? (S.valZ>0?'+':'')+S.valZ.toFixed(2) : '—'}</td>
+                <td className="py-2 text-right">{S.shortPct != null ? S.shortPct.toFixed(2)+'%' : '—'}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div className="flex items-center justify-between px-4 py-2.5 border-t border-neutral-line bg-ivory-50">
+        <span className="text-[10px] text-sumi-50 leading-snug max-w-lg">{t('bookNote')}</span>
+        <button onClick={exportCsv}
+          className="inline-flex items-center gap-1.5 px-3 h-7 text-[11px] font-medium border border-sumi-300 bg-sumi-300 text-ivory-50 hover:bg-sumi-100 transition-colors whitespace-nowrap">
+          <IconExternalLink size={11} sw={2.4}/>{t('bookExport')}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/* ==========================================================================
    UI primitives
    ========================================================================== */
 const Card = ({ className='', children, ...rest }) => (
@@ -421,6 +673,7 @@ function Header({ asOf }) {
   const navItems = [
     { label: t('navDashboard'), href: '#' },
     { label: t('navScreener'),  href: '#screener' },
+    { label: t('navBook'),      href: '#book' },
     { label: t('navSectors'),   href: '#sectors' },
     { label: t('navResearch'),  href: '#research' },
   ];
@@ -930,6 +1183,7 @@ const COLUMNS = [
   { key:'advValueB', labelKey:'colAdv', align:'right' },
   { key:'shortPct', labelKey:'colShortPct', align:'right' },
   { key:'shortDtc', labelKey:'colDtc', align:'right' },
+  { key:'valZ', labelKey:'colValZ', align:'right' },
 ];
 function StockTable({ rows, onSelect }) {
   const { lang, t } = useLanguage();
@@ -1041,6 +1295,14 @@ function StockTable({ rows, onSelect }) {
                   )}
                 </td>
                 <td className="px-3 py-3 text-right tabular text-sumi-100">{s.shortDtc != null ? s.shortDtc.toFixed(1) : '—'}</td>
+                <td className="px-3 py-3 text-right tabular">
+                  {s.valZ == null ? <span className="text-sumi-50/60">—</span> : (
+                    <span className={cn('inline-block px-1.5 py-0.5 text-[11px] font-semibold tabular',
+                      s.valZ <= -1 ? 'bg-bull-soft text-bull' : s.valZ >= 1 ? 'bg-bear-soft text-bear' : 'text-sumi-100')}>
+                      {s.valZ > 0 ? '+' : ''}{s.valZ.toFixed(2)}
+                    </span>
+                  )}
+                </td>
                 <td className="px-3 py-3"><Sparkline data={s.sparkline} /></td>
                 <td className="px-2 py-3 text-sumi-50 group-hover:text-vermillion-500 transition-colors">
                   <IconChevronRight size={14}/>
@@ -1335,7 +1597,10 @@ function StockDetailPanel({ stock, onClose }) {
               accent={stock.pbr !== null && stock.pbr < 1 ? 'vermillion' : undefined}/>
             <MetricRow label={t('colDiv')} value={stock.dividendYield !== null ? stock.dividendYield.toFixed(2) : '—'} unit="%"/>
             <MetricRow label={t('colMarketCap')} value={formatMarketCap(stock.marketCapB)}/>
+            <MetricRow label={`${t('colPbr')} z`} value={stock.pbrZ != null ? (stock.pbrZ > 0 ? '+' : '') + stock.pbrZ.toFixed(2) : '—'} colorize={stock.pbrZ != null ? -stock.pbrZ : null}/>
+            <MetricRow label={`${t('colPer')} z`} value={stock.perZ != null ? (stock.perZ > 0 ? '+' : '') + stock.perZ.toFixed(2) : '—'} colorize={stock.perZ != null ? -stock.perZ : null}/>
           </MetricGrid>
+          <p className="mt-2 text-[10px] leading-snug text-sumi-50">{t('zNote')}</p>
         </section>
         <section className="px-6 pt-6">
           <SectionTitle icon={<IconShield size={12} sw={2.4}/>}>{t('detailQuality')}</SectionTitle>
@@ -1366,6 +1631,10 @@ function StockDetailPanel({ stock, onClose }) {
             <MetricRow label={t('shortChange')} value={stock.shortPctChange != null ? formatPercent(stock.shortPctChange) : '—'} colorize={stock.shortPctChange != null ? -stock.shortPctChange : null}/>
             <MetricRow label={t('daysToCover')} value={stock.shortDtc != null ? stock.shortDtc.toFixed(1) : '—'} unit={stock.shortDtc != null ? 'd' : undefined}/>
             <MetricRow label={t('shortReportersLabel')} value={stock.shortReporters != null ? String(stock.shortReporters) : '—'}/>
+            <MetricRow label={t('marginLong')} value={stock.marginLongM != null ? `${stock.marginLongM.toLocaleString()}M` : '—'}/>
+            <MetricRow label={t('marginShort')} value={stock.marginShortM != null ? `${stock.marginShortM.toLocaleString()}M` : '—'}/>
+            <MetricRow label={t('marginRatio')} value={stock.marginRatio != null ? stock.marginRatio.toFixed(2) : '—'} unit={stock.marginRatio != null ? 'x' : undefined}
+              accent={stock.marginRatio != null && stock.marginRatio < 1 ? 'vermillion' : undefined}/>
           </MetricGrid>
           <p className="mt-2 text-[10px] leading-snug text-sumi-50">
             {t('shortNote')}{stock.shortAsOf ? ` · ${stock.shortAsOf}` : ''}
@@ -1539,6 +1808,14 @@ function App() {
           <StockTable rows={filtered} onSelect={s => setSelected(s)}/>
         </section>
         <div className="editorial-rule mb-10"/>
+        <section id="book" className="mb-14 scroll-mt-20">
+          <div className="mb-6">
+            <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">{t('sectionBook')}</div>
+            <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300 rising-sun pl-4">{t('sectionBook')}</h3>
+          </div>
+          <PortfolioBook stocks={stocks}/>
+        </section>
+        <div className="editorial-rule mb-10"/>
         <section id="research" className="mb-14 scroll-mt-20">
           <div className="mb-6">
             <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">
@@ -1571,9 +1848,9 @@ function App() {
    ========================================================================== */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <LanguageProvider><WatchlistProvider>
+  <LanguageProvider><WatchlistProvider><BookProvider>
     <App/>
-  </WatchlistProvider></LanguageProvider>
+  </BookProvider></WatchlistProvider></LanguageProvider>
 );
 
 // Fade out splash
