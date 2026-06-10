@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-10T08:35:33.638977+00:00",
+  "asOf": "2026-06-10T11:11:13.495345+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 131,
@@ -6094,46 +6094,46 @@
   },
   "headlines": [
     {
-      "title": "USD/JPY between dollar strength and bank of Japan tightening",
-      "publisher": "London Business News",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN2ZfaDlUSk9jTXh3NU10b0dCLW5oMWs2UkVTbkRCbzdhRUEtWjg4ZW5DNHE0cDZ6Vm81R0JDVlVxYlFTR0t2UmdlUkZYZGNLNWk4NDExNU5TX05PZm9kUDJaWHFoclJrNkN0am9fd2ptdmY1SXRiTVJxdGEtT0xFWlVpZ01FczlkQ0REVEVkeGVYVlBLYTdrZQ?oc=5",
-      "publishedTs": 1781079531
+      "title": "BOJ's Ueda hospitalized ahead of key rate meeting",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcmlCYnhfNnlLUnQ0d2Q1V090RW1VOU5kU2dyb213bnpTX0tzdmdWd3hYTnFndmlUeEJHcXFjTWMxVFh0ZzVQN3MxVHkzVUNXaVNibnBKazBPblRrX1ZQd3BuZ01TVGdQSmMxa1JTdW1VV2hRcWpseDdPUTR0QktxSzRkZF9Fc242MDMyQ1JhT2p1Ni05cDZzWU5pNA?oc=5",
+      "publishedTs": 1781088060
     },
     {
-      "title": "Bank of Japan Prepares to Raise Interest Rate to 1.0％ at Policy Meeting Next Week, Would Be Highest Level in 31 Years",
-      "publisher": "The Japan News",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE03Um9XNG1MT0pfc0ZEM1hsTU9OU3cteG92Ujk5Z0l1WFVsR2VqRFp5N0ZVM05OVktIQVBfWjRwWVJMaTV1S1d3MlNWVnhSemQ3QlR0MmltMkhPeGpqV19xVGI3WWtIMU5wU3BNU0FmTTBaMWc?oc=5",
-      "publishedTs": 1781079000
+      "title": "Bank of Japan Governor Kazuo Ueda hospitalized, will miss critical policy meeting",
+      "publisher": "Crypto Briefing",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1aeGluWG43TmRGZklDRnJOcjZPNS04cUtPWU5ycVZ4bmgweVMzNFBPUl9wOUJCcHoybUVXRklER3JMVjBnSmhhT0Y3SlJKQkdjejBtQXo1T2ZyU1plNXJ4a2lQT3JEZjBwTlpTQnZ1UlJnT055U2d3TzQzWHpqdw?oc=5",
+      "publishedTs": 1781087336
     },
     {
-      "title": "The Bank of Japan's gradual rate hike path may struggle to keep pace with inflation, with Bank of America projecting rates to rise to 1.75% by the end of 2027.",
-      "publisher": "富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFJqU3BJdTE2X0xVY1NFVnlCQUxyTWlWOXAyeV91NlZ2bEwyU2lMSy1fNkxPdlljS09FaVM0WjlwdEFZMVl2OUllZVpzVnFtT0ltTUlEdVVjREljSHN5YlozZGpZTkh2OHBLeGJxNlBwSVV3ajFXTFB0QWpQeUVvWjhXdnRXaEQtX0V5VDlLZEM?oc=5",
-      "publishedTs": 1781076509
-    },
-    {
-      "title": "Japanese and South Korean Stocks Both Close Lower, SoftBank, SK Hynix Plunge Over 7%. VKOSPI Fear Index Hits Record High",
-      "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUU1rQWpmSmtLT2tkZTJERThWR1RGbktxcWpxWk9lQ09HallyS0IwdlFxQ2pKOVRBRE1zTkgtUUcxV3dkS0hPcS1fZy1rZ2JVd1prQ1FpMVRla1pOdFZOeUZOSnVKQVRDdVpKRGdLQ0c0TjkwaEF3QlFONzkxZ1B6XzdyeHEwd3VBamthajd6dWw1SG9NS0RvUDY1U1BWYk9wcEE?oc=5",
-      "publishedTs": 1781075515
-    },
-    {
-      "title": "Euro strengthens against Japanese Yen due to ECB rate hike odds",
+      "title": "Bank of Japan Governor Ueda hospitalized: expected to miss June monetary policy",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVjlETFdfWUhhalBzblZ2cU5tQ0NNTUVhRUEySU1LN3VUVktIQlBYbHVLTm8xdjN3ZlVJZFBYaVB5ZXk2WHZxbk5Ldm1LSjZfdFM0TE9RY3ZxN0gzS1R4Si1sdzluUWJMX3djbmthWFhFb3dNbFhNaFhndm03MExIdEZtV0xaSWNXRmd6aXhPNXNrOThqN2VmQVNZQU5QV2tmb0NQazFRT19SUQ?oc=5",
-      "publishedTs": 1781074459
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMkFLQUthbDdkY29JUk92T3YwRDI2OElNeEwtdmxqUlkzTWtHOG1EcmphWldMQjRacTdBbE9URVZyNENrN1k2MG5KUUM1aUpOcFlYc2dLUFlWUHRhZzZVRzQ1bzd3Z2dxVG9LNUJhUU9jbWZ4NVRaWDk0cHlKM09oeVpmZWd6VEQwdGZTeVpPSjI2bURTLXRQNzVOaVB2LU9GOTlVbUp2TjgtWEV6Y29GY0hSWTRIR0Y3OW93TGpB?oc=5",
+      "publishedTs": 1781087154
     },
     {
-      "title": "Japan's Nikkei slides as Gulf tensions prompt shift out of high-flying tech stocks",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxObGtSbnNXTTdiUlhvUUFfcUpwVWFrbjZiOHI5aWV5NFVWQkFZQ2U4T2JzZnh6YTFhUFJldXc1eC1aTXk1b3gwbVRDWEw0THhHOU5GYmZ2MnJPNUozYTlDbHNxR3o2UmpQbTlNeGdVUXFwaEN0TXlRNXV0eFVObnAyNjlVeFJVUnZXRmJDZ3AteC1fTmxDWl9VQUFidXpxQW1lel9NMFhFNDhDV1owUlJfbF85TC1rb21aU1RuR1Fyb0ZXLUs0TDZTUE9wUlZ0dERMQ2ZMMTRrQ0RuQ3pwZ3ctbHlkX0VJT2s?oc=5",
-      "publishedTs": 1781074440
+      "title": "Bank of Japan Says Ueda Hospitalized, Will Miss Policy Meeting",
+      "publisher": "WSJ",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdHlEYUZEVUFfbFE4T3NVaFMtazNyU2t5V2twdXlTeUtyQUxQdUlYR1A3ZzdXbEQ0Z21pM1I4ZEJzOXBQVjBEN3dkSldCT0RXREJqVzVBOE9CcWluRlpPTVc3Y0doal9vMzhRLU1vLWgzM3N0cTM1NFBvVUlDR3h5Tm00b09RbXZVeWQyUXJiWU9xRjEyWWsyeXZMbWZ0RlQwVmpQaG45UmxQOUhpN05vZUFnemI?oc=5",
+      "publishedTs": 1781086980
     },
     {
-      "title": "Japan's three largest banks prepare yen-backed stablecoin",
-      "publisher": "IDNFinancials.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZElmUDJmRzFhb1lSWkhIMkdCQlRpMHJ4UWw0VDRHaFlPLTNVTnZpWV9saVp0UzU5LUNveFB0REI1MjA0a0hsbkFBZThQM1pWS2Y0YXBicFg3SXU5VkJKLU9MWXh3NHNrZG56bGRHcHNqTjU5emlTbjctaFZEMU8xMFlrYmZ5NlBldkVMWFRCYUVxbXZCT0hIRXdiUlFudw?oc=5",
-      "publishedTs": 1781073000
+      "title": "Bank of Japan governor hospitalized, to miss June meeting",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT2lwbTNIRXFVb3dWb3A1T2FmTXpmV29xRmlLaUs2cUM5eE8zVkpUcHFHbkhhZ18xRm5RcjRpeEIxZkpRWU93WlJ3V3ZvZzdLQktvTGpSTDUwNzZrMktKRkY5dGMtOE5JMDlqR29IM0Vtc0NoWnZHR2IybTZfRHczcTJEVnhRSlRGczZOZ2tHejFrNTJBQ1JtcGlOMmhTVmRIdU5aUUNxRmsweGlNcy0wTGlyVQ?oc=5",
+      "publishedTs": 1781086844
+    },
+    {
+      "title": "Japan's ASICS to spin off Onitsuka Tiger high-end sneaker business",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMUJkMDJqVG96ekR2TFdpVnpCQWI4cU9wbUpYZ0x1YlFRTUJRX0dydFd0ZUpic2IyaGU4bllYMmZZSTNjYy1EZDB1czR6UjJmYXAwTDRtMlVHNTZyZHNBUFZ0QnN0MG55bzBpbnlJWV9BUHpybmxXNnFEYkJ6akdaOXlIclNSbkRiQXRzNW0zcXpLVXVmVEQwTXhVZFZScEx4R0RmTktYVnVSTHUt?oc=5",
+      "publishedTs": 1781086740
+    },
+    {
+      "title": "Bank of Japan governor Ueda hospitalised, will miss June meeting",
+      "publisher": "Yahoo",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOX1ZwMnBuS043bGx5TElQd1NpUlo1MjRNT1ZDU0NYUy1qVVU1NmpaNEN2OUN1d2Q4Sk1MeXNhMlZmZmJDUTY5VHNkbFhPeEJYMTRpX2JOZG4ySTV5cXJOV1dMelVKNldzVWRTTXdXeHJMREI3cmJkN2F3NGpoV3dJMWEwWmZ1ZDJfaG5IUDVNNzRTUQ?oc=5",
+      "publishedTs": 1781086638
     }
   ],
   "marketTone": null
