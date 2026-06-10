@@ -188,8 +188,11 @@ def fetch_margin_balances(sleep: float = 0.5) -> dict | None:
         time.sleep(sleep)
         if parsed:
             by_code, asof = parsed
+            # DEBUG: 파싱된 종목코드 출력
+            parsed_codes = list(by_code.keys())
+            print(f"    DEBUG parsed codes (first 20): {parsed_codes[:20]}", file=sys.stderr)
             print(f"    jpx margin: {len(by_code)} stocks parsed from "
                   f"{url.rsplit('/',1)[-1]} (as of {asof})")
-            return {"byCode": by_code, "asOf": asof}
+            return {"byCode": by_code, "asOf": asof}            
     print("    ! jpx margin: no parsable file found", file=sys.stderr)
     return None
