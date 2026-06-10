@@ -314,14 +314,30 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     # ── 1Y performance ──────────────────────────────────────────────────────
     perf_1y = to_pct(info.get("52WeekChange"))
 
-    # ── Sparkline (last 20 trading days) ────────────────────────────────────
+    # ── Sparkline + 20d liquidity (last ~2 months of history) ──────────────
     sparkline: list[float] = []
+    adv_value_b = adv_shares_m = None
     try:
-        hist = yft.history(period="1mo", auto_adjust=True)
+        hist = yft.history(period="2mo", auto_adjust=True)
         if not hist.empty:
             sparkline = [round(float(v), 2) for v in hist["Close"].tail(20).tolist()]
+            tail = hist.tail(20)
+            if "Volume" in tail and tail["Volume"].notna().any():
+                vol = tail["Volume"].astype(float)
+                adv_shares_m = round(float(vol.mean()) / 1e6, 3)          # M shares/day
+                turnover = (tail["Close"].astype(float) * vol)
+                adv_value_b = round(float(turnover.mean()) / 1e9, 3)      # ¥B/day
     except Exception as e:
         print(f"    ! history failed for {ticker_code}: {e}", file=sys.stderr)
+
+    # ── Share count & free float ────────────────────────────────────────────
+    shares_out = safe(info.get("sharesOutstanding"))
+    float_shares = safe(info.get("floatShares"))
+    shares_out_m = round(shares_out / 1e6, 2) if shares_out else None
+    free_float_pct = (
+        round(float_shares / shares_out * 100, 1)
+        if shares_out and float_shares else None
+    )
 
     return {
         "ticker": ticker_code,
@@ -346,6 +362,18 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "belowBook": pbr is not None and pbr < 1.0,
         "perf1Y": perf_1y,
         "sparkline": sparkline,
+        # liquidity (computed here); short fields are attached in main()
+        "advValueB": adv_value_b,
+        "advSharesM": adv_shares_m,
+        "sharesOutM": shares_out_m,
+        "freeFloatPct": free_float_pct,
+        "shortPct": None,
+        "shortSharesM": None,
+        "shortDtc": None,
+        "shortReporters": None,
+        "shortPctChange": None,
+        "shortAsOf": None,
+        "shortCandidate": False,
     }
 
 
@@ -453,6 +481,69 @@ def compute_market_summary(stocks: list[dict]) -> dict:
 
 
 # ============================================================================
+# Short-position attachment & short-candidate screening
+# ============================================================================
+
+def attach_short_data(stocks: list[dict], short_agg: dict | None,
+                      prev_stocks: dict[str, dict]) -> None:
+    """Merge JPX short aggregates into stock rows (in place)."""
+    if not short_agg:
+        return
+    by_code = short_agg.get("byCode", {})
+    for s in stocks:
+        agg = by_code.get(s["ticker"])
+        if not agg:
+            continue
+        s["shortPct"] = round(agg["pct"], 2)
+        s["shortReporters"] = agg["reporters"]
+        s["shortAsOf"] = agg.get("latestDate")
+        if agg.get("shares"):
+            s["shortSharesM"] = round(agg["shares"] / 1e6, 2)
+            if s.get("advSharesM"):
+                s["shortDtc"] = round(s["shortSharesM"] / s["advSharesM"], 1)
+        prev = prev_stocks.get(s["ticker"])
+        if prev and prev.get("shortPct") is not None:
+            s["shortPctChange"] = round(s["shortPct"] - prev["shortPct"], 2)
+
+
+def _percentile_map(values: list[tuple[str, float]]) -> dict[str, float]:
+    """ticker -> percentile rank (0-100) of value within the universe."""
+    if not values:
+        return {}
+    ordered = sorted(values, key=lambda x: x[1])
+    n = len(ordered)
+    return {t: round(i / max(n - 1, 1) * 100, 1) for i, (t, _) in enumerate(ordered)}
+
+
+def flag_short_candidates(stocks: list[dict]) -> int:
+    """Mark liquid, expensive, fundamentally-deteriorating names.
+
+    Criteria (all required):
+      * PBR in the top 30% of the universe (rich vs peers)
+      * EPS or revenue growth negative (deteriorating)
+      * 1Y price performance in the bottom 40% (tape confirms)
+      * ADV >= ¥1B/day (actually shortable in size)
+    """
+    pbr_pct = _percentile_map([(s["ticker"], s["pbr"]) for s in stocks
+                               if s.get("pbr") is not None])
+    perf_pct = _percentile_map([(s["ticker"], s["perf1Y"]) for s in stocks
+                                if s.get("perf1Y") is not None])
+    n = 0
+    for s in stocks:
+        t = s["ticker"]
+        deteriorating = ((s.get("epsGrowthYoY") is not None and s["epsGrowthYoY"] < 0)
+                         or (s.get("revenueGrowthYoY") is not None and s["revenueGrowthYoY"] < 0))
+        s["shortCandidate"] = bool(
+            pbr_pct.get(t, 0) >= 70
+            and deteriorating
+            and perf_pct.get(t, 100) <= 40
+            and (s.get("advValueB") or 0) >= 1.0
+        )
+        n += s["shortCandidate"]
+    return n
+
+
+# ============================================================================
 # Main
 # ============================================================================
 
@@ -474,6 +565,14 @@ def main() -> int:
     )
     parser.add_argument(
         "--limit", type=int, default=0, help="Limit to N tickers (0 = all)."
+    )
+    parser.add_argument(
+        "--skip-jpx", action="store_true",
+        help="Skip the JPX short-position feed (faster local runs).",
+    )
+    parser.add_argument(
+        "--short-state", default="short_state.json",
+        help="Path of the persistent JPX short-position state file.",
     )
     args = parser.parse_args()
 
@@ -539,6 +638,49 @@ def main() -> int:
         else:
             print(f"  ✗ {symbol}")
 
+    # ── JPX short positions (best-effort) ───────────────────────────────────
+    short_meta = {"ok": False, "asOf": None, "coveredStocks": 0}
+    prev_stocks: dict[str, dict] = {}
+    out_prev = Path(args.output)
+    if out_prev.exists():
+        try:
+            prev_payload = json.loads(out_prev.read_text(encoding="utf-8"))
+            prev_stocks = {s["ticker"]: s for s in prev_payload.get("stocks", [])}
+        except Exception:
+            pass
+
+    if not args.skip_jpx:
+        print()
+        print("🩳 Updating JPX short-position state...")
+        try:
+            from jpx_short import update_short_state
+        except ImportError:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            from jpx_short import update_short_state
+        try:
+            short_agg = update_short_state(args.short_state)
+        except Exception as e:
+            print(f"    ! jpx short feed failed: {e}", file=sys.stderr)
+            short_agg = None
+        if short_agg:
+            attach_short_data(stocks, short_agg, prev_stocks)
+            covered = sum(1 for s in stocks if s["shortPct"] is not None)
+            short_meta = {"ok": True, "asOf": short_agg.get("asOf"),
+                          "coveredStocks": covered}
+            print(f"  ✓ short data attached to {covered}/{len(stocks)} stocks")
+        else:
+            # carry forward yesterday's values rather than blanking the UI
+            for s in stocks:
+                prev = prev_stocks.get(s["ticker"])
+                if prev:
+                    for k in ("shortPct", "shortSharesM", "shortDtc",
+                              "shortReporters", "shortAsOf"):
+                        s[k] = prev.get(k)
+            print("  ⚠ jpx feed unavailable — carried forward previous values")
+
+    n_short = flag_short_candidates(stocks)
+    print(f"  ✓ short-candidate screen: {n_short} names flagged")
+
     # ── Derive summaries ────────────────────────────────────────────────────
     sector_perf = compute_sector_performance(stocks)
     summary = compute_market_summary(stocks)
@@ -560,6 +702,7 @@ def main() -> int:
         "marketSummary": summary,
         "headlines": _headlines_for_payload,
         "marketTone": generate_market_summary(_headlines_for_payload),
+        "shortData": short_meta,
     }
 
     payload = clean_nans(payload)
