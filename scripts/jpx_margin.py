@@ -156,13 +156,13 @@ def _parse_margin_file(content: bytes, url: str) -> tuple[dict, str | None] | No
 
         for i in range(hi + 1, len(df)):
             code = _norm(df.iat[i, c_code]).split(".")[0]
-            if not re.match(r"^\d{4,5}[A-Z]?$", code):
+            # JPX code might be 5-digit, so try both 4 and 5 digit formats
+            if len(code) >= 4 and code[:4].isdigit():
+                code4 = code[:4]
+            elif len(code) >= 5 and code[:5].isdigit():
+                code4 = code[:5]
+            else:
                 continue
-            sell = _parse_int(df.iat[i, c_sell])
-            buy = _parse_int(df.iat[i, c_buy])
-            if sell is None and buy is None:
-                continue
-            code4 = code[:4]
             entry = by_code.setdefault(code4, {"longSh": 0, "shortSh": 0})
             entry["longSh"] += buy or 0
             entry["shortSh"] += sell or 0
