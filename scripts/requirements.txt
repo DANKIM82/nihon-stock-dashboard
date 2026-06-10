@@ -1,4 +1,4 @@
 yfinance>=0.2.40,<2.0
 pandas>=2.0
-xlrd>=2.0           # JPX daily short-position reports (.xls)
-openpyxl>=3.1       # newer JPX files (.xlsx)
+openpyxl>=3.1       # JPX short-position daily reports (.xlsx)
+xlrd>=2.0           # JPX short-position daily reports (.xls)

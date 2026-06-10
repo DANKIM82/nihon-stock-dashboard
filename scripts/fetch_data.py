@@ -750,14 +750,15 @@ def main() -> int:
     margin_meta = {"ok": False, "asOf": None, "coveredStocks": 0}
     if not args.skip_jpx:
         print()
-        print("📊 Fetching JPX weekly margin balances...")
+        print("📊 Fetching weekly margin balances (SoftHompo)...")
         try:
             from jpx_margin import fetch_margin_balances
         except ImportError:
             sys.path.insert(0, str(Path(__file__).resolve().parent))
             from jpx_margin import fetch_margin_balances
         try:
-            margin = fetch_margin_balances()
+            margin = fetch_margin_balances(
+                universe={m["ticker"] for m in tickers})
         except Exception as e:
             print(f"    ! jpx margin feed failed: {e}", file=sys.stderr)
             margin = None
