@@ -200,6 +200,16 @@ const dict = {
   catNone:{ ko:'최근 90일 내 감지된 이벤트가 없습니다.', en:'No events detected in the last 90 days.' },
   catNote:{ ko:'출처: EDINET 대량보유보고 · TDnet 적시공시 (최근 90일)', en:'Sources: EDINET 5% reports · TDnet timely disclosures (last 90 days)' },
   presetCatalyst:{ ko:'최근 카탈리스트 (30일)', en:'Recent Catalyst (30d)' },
+  presetActivist:{ ko:'행동주의 타깃 후보', en:'Activist Target Candidates' },
+  colActScore:{ ko:'타깃 점수', en:'Target Score' },
+  detailActivist:{ ko:'행동주의 타깃 분석', en:'Activist Target Analysis' },
+  actEngaged:{ ko:'🎯 행동주의 이미 진입', en:'🎯 Activist already engaged' },
+  actSubValue:{ ko:'밸류에이션 (PBR·섹터 Z)', en:'Valuation (PBR · sector Z)' },
+  actSubCash:{ ko:'순현금 / 시총', en:'Net cash / mkt cap' },
+  actSubProf:{ ko:'ROE 갭 (8% 기준)', en:'ROE gap (vs 8%)' },
+  actSubPayout:{ ko:'배당성향 여력', en:'Payout headroom' },
+  actSubFloat:{ ko:'유통주식 구조', en:'Free-float structure' },
+  actNote:{ ko:'PBR 1배·자본비용 8%(이토 리포트)·배당성향 50% 등 일본 거버넌스 기준점에 앵커링한 점수입니다. 70점 이상 + 유동성·유통주식 조건 충족 시 후보로 표시됩니다.', en:'Anchored to Japan-governance benchmarks: the 1.0x PBR line, the Ito Review 8% cost of equity, a 50% payout ceiling. Candidates need a 70+ score plus liquidity and float gates.' },
   reformYes:{ ko:'자본효율 공시', en:'Reform Disclosed' },
   reformNo:{ ko:'자본효율 미공시', en:'No Reform Disclosure' },
   filterSearch:{ ko:'종목 검색…', en:'Search ticker or name…' },
@@ -317,6 +327,7 @@ const IconMenu = p => <Icon {...p}><line x1="4" x2="20" y1="12" y2="12"/><line x
 const IconGlobe = p => <Icon {...p}><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></Icon>;
 const IconRotate = p => <Icon {...p}><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></Icon>;
 const IconZap = p => <Icon {...p}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></Icon>;
+const IconCrosshair = p => <Icon {...p}><circle cx="12" cy="12" r="9"/><line x1="12" y1="3" x2="12" y2="7"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="3" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="21" y2="12"/></Icon>;
 const IconLandmark = p => <Icon {...p}><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></Icon>;
 const IconTrendUp = p => <Icon {...p}><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></Icon>;
 const IconTrendDown = p => <Icon {...p}><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></Icon>;
@@ -1282,10 +1293,10 @@ function ScreenerFilter({ value, onChange, resultCount }) {
   const [showAll, setShowAll] = useState(false);
   const visibleSectors = showAll ? ALL_SECTORS : ALL_SECTORS.slice(0, 6);
   const update = patch => onChange({ ...value, ...patch });
-  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, recentCatalystOnly:false, watchlistOnly:false });
+  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, recentCatalystOnly:false, activistOnly:false, watchlistOnly:false });
   const toggleSector = s => update({ sectors: value.sectors.includes(s) ? value.sectors.filter(x=>x!==s) : [...value.sectors, s] });
   const toggleSegment = s => update({ segments: value.segments.includes(s) ? value.segments.filter(x=>x!==s) : [...value.segments, s] });
-  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.advMin !== null || value.shortMin !== null || value.belowBookOnly || value.qualityOnly || value.shortCandidatesOnly || value.recentCatalystOnly || value.watchlistOnly;
+  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.advMin !== null || value.shortMin !== null || value.belowBookOnly || value.qualityOnly || value.shortCandidatesOnly || value.recentCatalystOnly || value.activistOnly || value.watchlistOnly;
   return (
     <div className="bg-white border border-neutral-line shadow-editorial mb-6">
       <div className="flex flex-wrap gap-2 px-5 py-4 border-b border-neutral-line bg-ivory-50">
@@ -1297,6 +1308,8 @@ function ScreenerFilter({ value, onChange, resultCount }) {
           icon={<IconTrendDown size={12} sw={2.4}/>} label={t('presetShortCandidates')} />
         <PresetButton active={value.recentCatalystOnly} onClick={() => update({ recentCatalystOnly: !value.recentCatalystOnly })}
           icon={<IconZap size={12} sw={2.4}/>} label={t('presetCatalyst')} />
+        <PresetButton active={value.activistOnly} onClick={() => update({ activistOnly: !value.activistOnly })}
+          icon={<IconCrosshair size={12} sw={2.4}/>} label={t('presetActivist')} />
         <PresetButton active={value.watchlistOnly} onClick={() => update({ watchlistOnly: !value.watchlistOnly })}
           icon={<IconStar size={12} sw={2.4} filled={value.watchlistOnly}/>} label={`${t('presetWatchlist')} (${watchlistCount})`} />
         <div className="flex-1" />
@@ -1397,6 +1410,7 @@ const COLUMNS = [
   { key:'shortPct', labelKey:'colShortPct', align:'right' },
   { key:'shortDtc', labelKey:'colDtc', align:'right' },
   { key:'valZ', labelKey:'colValZ', align:'right' },
+  { key:'activistScore', labelKey:'colActScore', align:'right' },
 ];
 function StockTable({ rows, onSelect }) {
   const { lang, t } = useLanguage();
@@ -1515,6 +1529,16 @@ function StockTable({ rows, onSelect }) {
                     <span className={cn('inline-block px-1.5 py-0.5 text-[11px] font-semibold tabular',
                       s.valZ <= -1 ? 'bg-bull-soft text-bull' : s.valZ >= 1 ? 'bg-bear-soft text-bear' : 'text-sumi-100')}>
                       {s.valZ > 0 ? '+' : ''}{s.valZ.toFixed(2)}
+                    </span>
+                  )}
+                </td>
+                <td className="px-3 py-3 text-right tabular">
+                  {s.activistScore == null ? <span className="text-sumi-50/60">—</span> : (
+                    <span className={cn('inline-block px-1.5 py-0.5 text-[11px] font-semibold tabular',
+                      s.activistCandidate ? 'bg-vermillion-500 text-white' :
+                      s.activistScore >= 70 ? 'bg-vermillion-50 text-vermillion-600' :
+                      s.activistScore >= 50 ? 'text-sumi-100' : 'text-sumi-50')}>
+                      {s.activistScore}
                     </span>
                   )}
                 </td>
@@ -1834,6 +1858,38 @@ function StockDetailPanel({ stock, onClose }) {
             <MetricRow label={t('colPerf1Y')} value={formatPercent(stock.perf1Y)} colorize={stock.perf1Y}/>
           </MetricGrid>
         </section>
+        {stock.activistScore != null && (
+          <section className="px-6 pt-6">
+            <SectionTitle icon={<IconCrosshair size={12} sw={2.4}/>}>{t('detailActivist')}</SectionTitle>
+            <div className="mt-3 flex items-center gap-3">
+              <span className={cn('px-2.5 py-1 text-[18px] font-bold tabular',
+                stock.activistCandidate ? 'bg-vermillion-500 text-white' :
+                stock.activistScore >= 70 ? 'bg-vermillion-50 text-vermillion-600' : 'bg-ivory-100 text-sumi-100')}>
+                {stock.activistScore}
+              </span>
+              <span className="text-[11px] text-sumi-50">/ 100</span>
+              {(stock.catalysts || []).some(ev => ev.type === '5pct' && classifyFiler(ev.filer) === 'activist') && (
+                <span className="px-2 py-0.5 text-[10px] font-semibold bg-vermillion-50 text-vermillion-600">
+                  {t('actEngaged')}
+                </span>
+              )}
+            </div>
+            <div className="mt-3 space-y-1.5">
+              {[['value','actSubValue'],['cash','actSubCash'],['prof','actSubProf'],['payout','actSubPayout'],['float','actSubFloat']].map(([k, lk]) => (
+                stock.activistSub && stock.activistSub[k] != null && (
+                  <div key={k} className="flex items-center gap-2">
+                    <span className="w-[150px] flex-shrink-0 text-[10px] text-sumi-50">{t(lk)}</span>
+                    <span className="flex-1 h-1.5 bg-ivory-100 overflow-hidden">
+                      <span className="block h-full bg-vermillion-400" style={{ width: stock.activistSub[k] + '%' }}/>
+                    </span>
+                    <span className="w-8 text-right font-mono text-[10px] tabular text-sumi-100">{stock.activistSub[k]}</span>
+                  </div>
+                )
+              ))}
+            </div>
+            <p className="mt-2 text-[10px] leading-snug text-sumi-50">{t('actNote')}</p>
+          </section>
+        )}
         <section className="px-6 pt-6">
           <SectionTitle icon={<IconZap size={12} sw={2.4}/>}>{t('detailCatalysts')}</SectionTitle>
           {(!stock.catalysts || stock.catalysts.length === 0) ? (
@@ -1882,7 +1938,7 @@ function StockDetailPanel({ stock, onClose }) {
 /* ==========================================================================
    Filter logic + root App
    ========================================================================== */
-const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, recentCatalystOnly:false, watchlistOnly:false };
+const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, recentCatalystOnly:false, activistOnly:false, watchlistOnly:false };
 function applyFilters(all, f, watchlist) {
   return all.filter(s => {
     if (f.watchlistOnly && !watchlist.includes(s.ticker)) return false;
@@ -1902,6 +1958,7 @@ function applyFilters(all, f, watchlist) {
     if (f.belowBookOnly && !s.belowBook) return false;
     if (f.shortCandidatesOnly && !s.shortCandidate) return false;
     if (f.recentCatalystOnly && !s.recentCatalyst) return false;
+    if (f.activistOnly && !s.activistCandidate) return false;
     if (f.qualityOnly) {
       const ok = (s.roe ?? 0) >= 15 && (s.operatingMargin ?? 0) >= 15 && (s.debtToEquity ?? 99) <= 1.0;
       if (!ok) return false;

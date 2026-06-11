@@ -330,6 +330,16 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
     except Exception as e:
         print(f"    ! history failed for {ticker_code}: {e}", file=sys.stderr)
 
+    # ── Balance-sheet slack (for activist score) ────────────────────────────
+    total_cash = safe(info.get("totalCash"))
+    total_debt = safe(info.get("totalDebt"))
+    net_cash_b = net_cash_pct = None
+    if total_cash is not None:
+        net_cash = total_cash - (total_debt or 0)
+        net_cash_b = round(net_cash / 1e9, 2)
+        if mcap:
+            net_cash_pct = round(net_cash / mcap * 100, 1)
+
     # ── Share count & free float ────────────────────────────────────────────
     shares_out = safe(info.get("sharesOutstanding"))
     float_shares = safe(info.get("floatShares"))
@@ -367,6 +377,8 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "advSharesM": adv_shares_m,
         "sharesOutM": shares_out_m,
         "freeFloatPct": free_float_pct,
+        "netCashB": net_cash_b,
+        "netCashPct": net_cash_pct,
         "shortPct": None,
         "shortSharesM": None,
         "shortDtc": None,
@@ -388,6 +400,10 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "catalysts": [],
         "reformDisclosed": None,
         "recentCatalyst": False,
+        # activist target score (computed in main)
+        "activistScore": None,
+        "activistSub": None,
+        "activistCandidate": False,
     }
 
 
@@ -619,6 +635,84 @@ def compute_sector_zscores(stocks: list[dict], min_n: int = 4) -> None:
 # Main
 # ============================================================================
 
+
+def compute_activist_scores(stocks: list[dict]) -> None:
+    """Activist-target score (0-100): how attractive each stock looks as a
+    *next* engagement target, using Japan-governance-canonical anchors so the
+    number is explainable rather than a black box.
+
+    Components (weights):
+      value 30%      — PBR anchored at the TSE's 1.0x line (0.5x→full, 1.3x→0)
+                       blended with the sector valuation z-score
+      cash 25%       — net cash / market cap (40%+ → full). Skipped for
+                       Financial Services, where balance-sheet cash isn't
+                       corporate slack.
+      profitability 20% — ROE gap below 8% (the Ito Review cost-of-equity
+                       threshold). Loss-makers get partial credit (0.3): they
+                       are turnarounds, not classic lazy-balance-sheet targets.
+      payout 15%     — headroom below a 50% payout ratio, approximated as
+                       divYield × PER (DPS/EPS = (DPS/P)·(P/EPS)).
+      structure 10%  — free float 30%→80%: a controlling holder blocks
+                       campaigns; high float means a vote can actually be won.
+
+    Missing components are dropped and weights renormalized; a score requires
+    the value component plus at least one other. Writes per stock:
+      activistScore (0-100), activistSub {value,cash,prof,payout,float},
+      activistCandidate (score>=70 & pbr<1.2 & advValueB>=0.5).
+    """
+    def clamp01(x):
+        return max(0.0, min(1.0, x))
+
+    for st in stocks:
+        comps: dict[str, float] = {}
+
+        pbr = st.get("pbr")
+        if pbr is not None and pbr > 0:
+            pbr_part = clamp01((1.3 - pbr) / (1.3 - 0.5))
+            valz = st.get("valZ")
+            if valz is not None:
+                z_part = clamp01((-valz) / 2.0)        # z = -2 → full
+                comps["value"] = 0.6 * pbr_part + 0.4 * z_part
+            else:
+                comps["value"] = pbr_part
+
+        if st.get("sector") != "Financial Services":
+            ncp = st.get("netCashPct")
+            if ncp is not None:
+                comps["cash"] = clamp01(ncp / 40.0)
+
+        roe = st.get("roe")
+        if roe is not None:
+            comps["prof"] = clamp01((8.0 - roe) / 8.0) if roe > 0 else 0.3
+
+        dy, per = st.get("dividendYield"), st.get("per")
+        if dy is not None and per is not None and per > 0:
+            payout = dy * per                          # ≈ payout ratio in %
+            comps["payout"] = clamp01((50.0 - payout) / 50.0)
+
+        ff = st.get("freeFloatPct")
+        if ff is not None:
+            comps["float"] = clamp01((ff - 30.0) / 50.0)
+
+        if "value" not in comps or len(comps) < 2:
+            continue
+
+        weights = {"value": 0.30, "cash": 0.25, "prof": 0.20,
+                   "payout": 0.15, "float": 0.10}
+        wsum = sum(weights[k] for k in comps)
+        score = sum(comps[k] * weights[k] for k in comps) / wsum * 100
+
+        st["activistScore"] = round(score)
+        st["activistSub"] = {k: round(v * 100) for k, v in comps.items()}
+        st["activistCandidate"] = bool(
+            score >= 70
+            and pbr is not None and pbr < 1.2
+            and (st.get("advValueB") or 0) >= 0.5
+            # a controlling holder blocks any campaign — require a winnable float
+            and (ff is None or ff >= 35.0)
+        )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -794,6 +888,12 @@ def main() -> int:
     compute_sector_zscores(stocks)
     n_z = sum(1 for s in stocks if s["valZ"] is not None)
     print(f"  ✓ sector z-scores computed for {n_z}/{len(stocks)} stocks")
+
+    compute_activist_scores(stocks)
+    n_a = sum(1 for s in stocks if s["activistScore"] is not None)
+    n_c = sum(1 for s in stocks if s["activistCandidate"])
+    print(f"  ✓ activist scores computed for {n_a}/{len(stocks)} stocks "
+          f"({n_c} candidates ≥70)")
 
     # ── Catalyst layer (best-effort: EDINET 5%, TDnet, JPX reform) ──────────
     catalyst_meta = {"edinet": False, "tdnet": False, "reform": False}
