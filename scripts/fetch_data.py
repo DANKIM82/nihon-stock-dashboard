@@ -745,6 +745,10 @@ def main() -> int:
         help="Skip the catalyst layer (EDINET/TDnet/JPX reform).",
     )
     parser.add_argument(
+        "--force-catalysts", action="store_true",
+        help="Run the catalyst scan even intraday (default: close window only).",
+    )
+    parser.add_argument(
         "--catalyst-state", default="catalyst_state.json",
         help="Path of the persistent catalyst state file.",
     )
@@ -896,8 +900,23 @@ def main() -> int:
           f"({n_c} candidates ≥70)")
 
     # ── Catalyst layer (best-effort: EDINET 5%, TDnet, JPX reform) ──────────
+    # To keep intraday runs fast on a larger universe, the catalyst scan
+    # (EDINET/TDnet network calls) only runs at/after the JST close unless
+    # forced. The close run is the cron at UTC 7:30 (JST 16:30).
     catalyst_meta = {"edinet": False, "tdnet": False, "reform": False}
-    if not args.skip_catalysts:
+    _now_jst = datetime.now(timezone(timedelta(hours=9)))
+    _is_close_window = _now_jst.hour >= 15 or args.force_catalysts
+    if not args.skip_catalysts and not _is_close_window:
+        print()
+        print(f"⚡ Catalyst layer skipped intraday (JST {_now_jst:%H:%M}); "
+              f"runs after market close. Carrying forward previous values.")
+        for s in stocks:
+            prev = prev_stocks.get(s["ticker"])
+            if prev:
+                s["catalysts"] = prev.get("catalysts", [])
+                s["reformDisclosed"] = prev.get("reformDisclosed")
+                s["recentCatalyst"] = prev.get("recentCatalyst", False)
+    elif not args.skip_catalysts:
         print()
         print("⚡ Updating catalyst layer (EDINET / TDnet / JPX reform)...")
         try:

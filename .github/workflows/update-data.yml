@@ -2,9 +2,9 @@ name: Update stock data
 
 on:
   schedule:
-    # 도쿄 장중 30분마다 (UTC 0:00-6:30 = JST 9:00-15:30)
-    - cron: "*/30 0-6 * * 1-5"
-    # 장 마감 후 최종 업데이트 (UTC 7:30 = JST 16:30)
+    # 도쿄 장중 15분마다 (UTC 0:00-6:45 = JST 9:00-15:45)
+    - cron: "*/15 0-6 * * 1-5"
+    # 장 마감 후 최종 업데이트 (UTC 7:30 = JST 16:30) — 카탈리스트 포함
     - cron: "30 7 * * 1-5"
   workflow_dispatch:
 
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 15
+    timeout-minutes: 14
 
     steps:
       - name: Checkout repository
@@ -37,7 +37,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
-        run: python scripts/fetch_data.py --output data.json --sleep 0.6
+        run: python scripts/fetch_data.py --output data.json --sleep 0.3
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
