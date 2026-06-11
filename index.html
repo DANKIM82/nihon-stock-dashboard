@@ -369,13 +369,25 @@ function LanguageProvider({ children }) {
 const useLanguage = () => useContext(LanguageCtx);
 
 // Resolve a security's display name with graceful fallback. In Korean mode we
-// prefer the Korean name, then English, then Japanese — so a stock that only
-// has a Japanese name (e.g. a newly added TOPIX issue) shows its English name
-// rather than CJK text. English mode prefers English, then Japanese.
+// prefer the Korean name, then English, then Japanese. Crucially, a newly added
+// issue often has its Japanese name copied into nameKo/nameEn as a placeholder,
+// so we treat any value containing kana (Japanese-specific scripts) as "not a
+// real localized name" and fall through to the next option. Hangul and Latin
+// names pass; CJK-only Japanese text is skipped.
+const hasKana = t => /[\u3040-\u30ff]/.test(t || '');           // hiragana/katakana
+const isLatin = t => /[A-Za-z]/.test(t || '');
+const isHangul = t => /[\uac00-\ud7a3]/.test(t || '');
+const goodKo = t => !!t && (isHangul(t) || isLatin(t)) && !hasKana(t);
+const goodEn = t => !!t && isLatin(t) && !hasKana(t);
 const displayName = (s, lang) => {
   if (!s) return '';
-  if (lang === 'ko') return s.nameKo || s.nameEn || s.nameJp || s.ticker || '';
-  return s.nameEn || s.nameJp || s.ticker || '';
+  if (lang === 'ko') {
+    if (goodKo(s.nameKo)) return s.nameKo;
+    if (goodEn(s.nameEn)) return s.nameEn;
+    return s.nameEn || s.nameJp || s.ticker || '';
+  }
+  if (goodEn(s.nameEn)) return s.nameEn;
+  return s.nameJp || s.ticker || '';
 };
 
 /* ==========================================================================
