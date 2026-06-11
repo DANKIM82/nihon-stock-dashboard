@@ -412,6 +412,196 @@ const CAT_TYPE = {
 const catLabel = (type, lang) => (CAT_TYPE[type] || { ko:type, en:type })[lang] || type;
 const catCls = type => (CAT_TYPE[type] || {}).cls || 'bg-ivory-100 text-sumi-100';
 
+/* ── Reporter (filer) classification for 5% reports ──────────────────────
+   Three buckets drive both the icon and the tone of the explanation:
+   activist (🎯 — engagement/pressure likely), passive (📊 — index/benchmark
+   money, usually not a governance signal), corporate (🏢 — strategic/related
+   party). Matching is substring-based on the Japanese/English filer name. */
+const ACTIVIST_FILERS = [
+  'オアシス','Oasis','エリオット','Elliott','サード・ポイント','Third Point',
+  '3D','スリーディー','シティインデックス','City Index','村上','Murakami',
+  'ストラテジックキャピタル','Strategic Capital','エフィッシモ','Effissimo',
+  'アスリード','Asuka','ダルトン','Dalton','ValueAct','バリューアクト',
+  'RMBキャピタル','RMB','カーライル','Carlyle','レノ','Reno','南青山',
+  'シルチェスター','Silchester','インディペンデント・フランチャイズ','Nippon Active',
+  'ニッポン・アクティブ','フェニックス','Phoenix','光通信','タワー投資',
+];
+const PASSIVE_FILERS = [
+  'ブラックロック','BlackRock','バンガード','Vanguard','ステート・ストリート','State Street',
+  '野村','Nomura','日興','Nikko','大和','Daiwa','三井住友','Sumitomo Mitsui',
+  'みずほ','Mizuho','三菱UFJ','Mitsubishi UFF','ニッセイ','Nissay','アセットマネジメント',
+  'Asset Management','フィデリティ','Fidelity','ベイリー・ギフォード','Baillie Gifford',
+  'キャピタル・リサーチ','Capital Research','JPモルガン','JPMorgan','ゴールドマン','Goldman',
+  'モルガン・スタンレー','Morgan Stanley','UBS','Schroder','シュローダー','インベスコ','Invesco',
+  'T.ロウ','T. Rowe','GIC','Norges','ノルウェー',
+];
+function classifyFiler(filer) {
+  if (!filer) return 'unknown';
+  if (ACTIVIST_FILERS.some(k => filer.includes(k))) return 'activist';
+  if (PASSIVE_FILERS.some(k => filer.includes(k))) return 'passive';
+  // a 株式会社/銀行/Inc that isn't a known fund → treat as corporate/related
+  if (/(株式会社|銀行|ホールディングス|Holdings|Inc|Corp|Ltd|生命|保険)/.test(filer))
+    return 'corporate';
+  return 'unknown';
+}
+const FILER_BADGE = {
+  activist:  { icon:'🎯', ko:'행동주의', en:'Activist',  cls:'bg-vermillion-50 text-vermillion-600' },
+  passive:   { icon:'📊', ko:'패시브·기관', en:'Passive/Inst.', cls:'bg-ivory-100 text-sumi-50' },
+  corporate: { icon:'🏢', ko:'사업회사·관계자', en:'Corporate/Related', cls:'bg-ivory-100 text-sumi-50' },
+  unknown:   { icon:'',  ko:'',          en:'',          cls:'' },
+};
+
+/* ── Bilingual translation + plain-language explanation per event ────────
+   Returns { titleKo, titleEn, shortKo, shortEn, longKo, longEn }.
+   `ev.title` is the raw Japanese; we key off ev.type and (for 5%) the filer
+   class rather than parsing free text, so it stays robust. */
+function explainEvent(ev, stockName) {
+  const nm = stockName || (lang => lang === 'ko' ? '해당 종목' : 'the issuer');
+  const name = typeof nm === 'function' ? null : nm;
+  const N = name || '해당 종목';
+  const NE = name || 'the issuer';
+  const isNew = ev.title && ev.title.includes('新規') || (ev.title && ev.title.includes('신규'));
+  const variant = ev.title && (ev.title.includes('変更') || ev.title.includes('변경')) ? 'change' : 'new';
+
+  if (ev.type === '5pct') {
+    const cls = classifyFiler(ev.filer);
+    const filer = ev.filer || (lang === 'ko' ? '한 기관' : 'an institution');
+    const verb = variant === 'change'
+      ? { ko:'대량보유 지분에 변동이 발생', en:'changed its large-shareholding position' }
+      : { ko:'지분을 5% 이상 신규 취득', en:'newly crossed the 5% ownership threshold' };
+    const titleKo = `${filer}이(가) ${N}의 ${verb.ko} (대량보유보고서)`;
+    const titleEn = `${filer} ${verb.en} in ${NE} (large-shareholding report)`;
+    const EXP = {
+      activist: {
+        shortKo:'🎯 행동주의 펀드의 지분 신고 — 경영 개입·주주제안 가능성에 주목.',
+        shortEn:'🎯 An activist fund filing — watch for engagement or shareholder proposals.',
+        longKo:`행동주의 성향으로 분류되는 ${filer}이(가) 5% 이상을 신고했습니다. 이런 펀드는 단순 투자보다 이사회 구성, 자본배치(자사주·배당), 분할·매각 등을 요구하며 주가 촉매가 되는 경우가 많습니다. 변경보고서라면 지분을 늘렸는지 줄였는지(증액=압박 강화 신호)를 확인하세요.`,
+        longEn:`${filer}, classified as activist-leaning, has crossed 5%. Such funds often push for board change, capital allocation (buybacks/dividends), or breakups rather than passively holding — frequently a share-price catalyst. If this is a change report, check whether the stake rose (escalation) or fell.`,
+      },
+      passive: {
+        shortKo:'📊 대형 운용사의 지분 신고 — 대개 인덱스·벤치마크 자금으로 거버넌스 신호는 약함.',
+        shortEn:'📊 A large asset manager filing — usually index/benchmark money, a weak governance signal.',
+        longKo:`${filer}은(는) 패시브·기관 자금으로 분류됩니다. 5% 신고는 의무 공시일 뿐, 대개 인덱스 편입이나 벤치마크 추종에 따른 것으로 경영 개입 의도는 약합니다. 다만 액티브 운용 부문이라면 종목 선택의 신뢰 신호로 읽을 수도 있습니다.`,
+        longEn:`${filer} is classified as passive/institutional. A 5% filing here is largely a disclosure obligation tied to index inclusion or benchmark tracking, with little activist intent. That said, if it's their active strategy, it can be read as a conviction signal.`,
+      },
+      corporate: {
+        shortKo:'🏢 사업회사·관계자의 지분 신고 — 전략적 제휴나 그룹 내 지분 관계일 수 있음.',
+        shortEn:'🏢 A corporate/related party filing — may reflect a strategic tie or intra-group holding.',
+        longKo:`${filer}은(는) 사업회사 또는 관계자로 보입니다. 이런 5% 신고는 전략적 제휴, 정책보유주식(政策保有株), 그룹 재편, 또는 모자회사 관계와 연관된 경우가 많습니다. 일본 거버넌스 개혁의 핵심 이슈인 '정책보유주식 축소'와 반대 방향일 수 있어 맥락 확인이 필요합니다.`,
+        longEn:`${filer} appears to be a corporate or related party. Such filings often relate to strategic alliances, cross-shareholdings (政策保有株), group restructuring, or parent-subsidiary ties — worth contextualizing against Japan's governance push to unwind cross-holdings.`,
+      },
+      unknown: {
+        shortKo:'한 투자자가 5% 이상 지분을 신고했습니다.',
+        shortEn:'An investor has filed a 5%+ ownership report.',
+        longKo:`${filer}이(가) ${N}의 지분 5% 이상을 신고했습니다. 보고자의 성격(행동주의/패시브/사업회사)에 따라 의미가 달라지므로, 보고자명을 확인해 의도를 가늠하세요.`,
+        longEn:`${filer} has reported a 5%+ stake in ${NE}. The significance depends on who is filing — check the filer to gauge intent.`,
+      },
+    };
+    return { titleKo, titleEn, filerClass: cls, ...EXP[cls] };
+  }
+
+  if (ev.type === 'buyback') {
+    return {
+      titleKo:`${N} 자사주 취득 관련 공시`,
+      titleEn:`${NE} share buyback disclosure`,
+      shortKo:'자사주 매입 — 주당가치 상승·주가 부양 요인.',
+      shortEn:'Share buyback — accretive to per-share value and typically supportive of the price.',
+      longKo:`회사가 자기주식을 사들이는 공시입니다. 유통주식 수가 줄어 EPS·ROE가 개선되고, 경영진이 주가를 저평가로 본다는 신호로 해석됩니다. 일본에서는 자본효율 개혁(자본비용·주가를 의식한 경영)의 대표적 실행 수단이라, 밸류업 관점에서 긍정적 촉매입니다. 규모(취득 한도/발행주식 대비 %)와 실제 집행 여부를 확인하세요.`,
+      longEn:`The company is repurchasing its own shares. This shrinks the share count (boosting EPS/ROE) and signals management sees the stock as undervalued. In Japan it's a flagship tool of the capital-efficiency reform push, so it's a positive value-up catalyst. Check the size (limit as % of shares outstanding) and actual execution.`,
+    };
+  }
+  if (ev.type === 'tob') {
+    return {
+      titleKo:`${N} 공개매수(TOB) 관련 공시`,
+      titleEn:`${NE} tender offer (TOB) disclosure`,
+      shortKo:'공개매수 — 경영권 인수·비공개화 가능성, 보통 프리미엄 수반.',
+      shortEn:'Tender offer — a takeover or take-private, usually at a premium.',
+      longKo:`특정 주체가 시장 밖에서 정해진 가격에 주식을 사 모으는 공개매수입니다. 통상 시장가 대비 프리미엄이 붙으며, 경영권 인수·완전자회사화·비공개화(going-private)로 이어집니다. 매수가격·매수자·목적(우호적/적대적), 그리고 소수주주 보호 장치(공정성 의견 등)를 확인하세요. 이벤트드리븐 관점에서 핵심 촉매입니다.`,
+      longEn:`A party is buying shares off-market at a fixed price. Tenders usually carry a premium and lead to a takeover, full subsidiarization, or going-private. Check the offer price, the bidder, whether it's friendly or hostile, and minority-protection terms (fairness opinions). A core event-driven catalyst.`,
+    };
+  }
+  if (ev.type === 'mbo') {
+    return {
+      titleKo:`${N} MBO(경영진 매수) 관련 공시`,
+      titleEn:`${NE} management buyout (MBO) disclosure`,
+      shortKo:'MBO — 경영진이 회사를 사들여 상장폐지하는 거래, 프리미엄 수반.',
+      shortEn:'MBO — management buying out the company to delist, at a premium.',
+      longKo:`경영진이 자금을 모아 자사 주식을 사들이고 상장폐지하는 거래입니다. 보통 프리미엄이 붙지만, 경영진이 매수자이자 매도 측 의사결정자라는 이해상충 때문에 가격의 공정성이 쟁점이 됩니다. 소수주주 보호(다수of소수 조건, 특별위원회, 공정성 의견)를 반드시 확인하세요. 행동주의가 'MBO 가격이 낮다'며 개입하는 경우도 많습니다.`,
+      longEn:`Management raises capital to buy out the company and delist it. Usually at a premium, but the inherent conflict (management is both buyer and seller-side decision-maker) makes price fairness the key issue. Scrutinize minority protections (majority-of-minority, special committee, fairness opinion). Activists often intervene arguing the MBO price is too low.`,
+    };
+  }
+  if (ev.type === 'guidance') {
+    return {
+      titleKo:`${N} 실적예상 수정 공시`,
+      titleEn:`${NE} earnings guidance revision`,
+      shortKo:'실적 가이던스 수정 — 상향이면 호재, 하향이면 악재.',
+      shortEn:'Guidance revision — upward is positive, downward is negative.',
+      longKo:`회사가 기존 실적 전망치를 바꾼 공시입니다. 상향(上方修正)이면 긍정적, 하향(下方修正)이면 부정적입니다. 매출·영업이익·순이익·배당 중 무엇이 바뀌었는지, 그리고 일회성인지 구조적인지 확인하세요. 원문에 '上方'이 있으면 상향, '下方'이면 하향입니다.`,
+      longEn:`The company revised its earnings forecast. An upward revision (上方修正) is positive; downward (下方修正) is negative. Check which line (revenue, operating/net profit, dividend) moved and whether it's one-off or structural. '上方' = up, '下方' = down in the original.`,
+    };
+  }
+  if (ev.type === 'dividend') {
+    return {
+      titleKo:`${N} 배당예상 수정 공시`,
+      titleEn:`${NE} dividend forecast revision`,
+      shortKo:'배당 수정 — 증액이면 주주환원 강화 신호.',
+      shortEn:'Dividend revision — an increase signals stronger shareholder returns.',
+      longKo:`배당 전망을 바꾼 공시입니다. 증액(増配)은 주주환원 강화·이익 자신감의 신호로 긍정적이고, 감액(減配)은 그 반대입니다. 자본효율 개혁 흐름에서 증배는 자사주 매입과 함께 핵심 밸류업 수단입니다. 원문의 '増配'(증액)/'減配'(감액)을 확인하세요.`,
+      longEn:`The company revised its dividend outlook. An increase (増配) signals stronger shareholder returns and earnings confidence (positive); a cut (減配) is the opposite. Alongside buybacks, dividend hikes are a core value-up lever in the reform era. Look for '増配' (up) vs '減配' (cut).`,
+    };
+  }
+  // fallback
+  return {
+    titleKo: ev.title, titleEn: ev.title,
+    shortKo:'적시공시 이벤트입니다.', shortEn:'A timely-disclosure event.',
+    longKo: ev.title, longEn: ev.title,
+  };
+}
+
+/* Single catalyst row: raw JP title + translated title + filer badge +
+   toggleable plain-language explanation (short by default, long on click). */
+function CatalystItem({ ev, stockName, lang }) {
+  const [open, setOpen] = React.useState(false);
+  const ex = explainEvent(ev, stockName);
+  const title = lang === 'ko' ? ex.titleKo : ex.titleEn;
+  const short = lang === 'ko' ? ex.shortKo : ex.shortEn;
+  const long = lang === 'ko' ? ex.longKo : ex.longEn;
+  const fb = ev.type === '5pct' ? FILER_BADGE[ex.filerClass || 'unknown'] : null;
+  return (
+    <li className="px-3 py-2.5">
+      <div className="flex items-start gap-2.5">
+        <span className="font-mono text-[10px] text-sumi-50 tabular pt-0.5 flex-shrink-0 w-[68px]">{ev.date}</span>
+        <span className={cn('flex-shrink-0 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide', catCls(ev.type))}>
+          {catLabel(ev.type, lang)}
+        </span>
+        {fb && fb.icon && (
+          <span className={cn('flex-shrink-0 px-1.5 py-0.5 text-[10px] font-semibold', fb.cls)}
+            title={lang === 'ko' ? '보고자 유형' : 'Filer type'}>
+            {fb.icon} {lang === 'ko' ? fb.ko : fb.en}
+          </span>
+        )}
+      </div>
+      <div className="mt-1.5 pl-[78px]">
+        {/* translated headline */}
+        <p className="text-[11px] text-sumi-100 leading-snug font-medium">{title}</p>
+        {/* raw Japanese original */}
+        <p className="text-[10px] text-sumi-50 mt-0.5 leading-snug">
+          <span className="text-sumi-40">原文:</span> {ev.title}
+          {ev.filer && <span className="text-sumi-40"> · {ev.filer}</span>}
+        </p>
+        {/* explanation: short always, long on toggle */}
+        <div className="mt-1.5 bg-ivory-50 border-l-2 border-vermillion-300 pl-2 py-1">
+          <p className="text-[11px] text-sumi-90 leading-snug">{open ? long : short}</p>
+          <button onClick={() => setOpen(o => !o)}
+            className="mt-1 text-[10px] font-medium text-vermillion-600 hover:text-vermillion-700 transition-colors">
+            {open ? (lang === 'ko' ? '접기 ▲' : 'Less ▲') : (lang === 'ko' ? '자세히 ▼' : 'More ▼')}
+          </button>
+        </div>
+      </div>
+    </li>
+  );
+}
+
 /* ==========================================================================
    Long/Short Book Context — persists positions to localStorage
    ========================================================================== */
@@ -1649,18 +1839,9 @@ function StockDetailPanel({ stock, onClose }) {
           {(!stock.catalysts || stock.catalysts.length === 0) ? (
             <p className="mt-3 text-[11px] text-sumi-50">{t('catNone')}</p>
           ) : (
-            <ul className="mt-3 divide-y divide-neutral-line border border-neutral-line bg-white">
+            <ul className="mt-3 border border-neutral-line bg-white divide-y divide-neutral-line">
               {stock.catalysts.map((ev, i) => (
-                <li key={i} className="px-3 py-2.5 flex items-start gap-2.5">
-                  <span className="font-mono text-[10px] text-sumi-50 tabular pt-0.5 flex-shrink-0 w-[72px]">{ev.date}</span>
-                  <span className={cn('flex-shrink-0 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide', catCls(ev.type))}>
-                    {catLabel(ev.type, lang)}
-                  </span>
-                  <span className="flex-1 min-w-0">
-                    <span className="block text-[11px] text-sumi-100 leading-snug">{ev.title}</span>
-                    {ev.filer && <span className="block text-[10px] text-sumi-50 mt-0.5 truncate">{ev.filer}</span>}
-                  </span>
-                </li>
+                <CatalystItem key={i} ev={ev} stockName={lang === 'ko' ? (stock.nameKo || stock.name) : (stock.nameEn || stock.name)} lang={lang} />
               ))}
             </ul>
           )}
