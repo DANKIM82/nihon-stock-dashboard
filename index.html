@@ -368,6 +368,16 @@ function LanguageProvider({ children }) {
 }
 const useLanguage = () => useContext(LanguageCtx);
 
+// Resolve a security's display name with graceful fallback. In Korean mode we
+// prefer the Korean name, then English, then Japanese — so a stock that only
+// has a Japanese name (e.g. a newly added TOPIX issue) shows its English name
+// rather than CJK text. English mode prefers English, then Japanese.
+const displayName = (s, lang) => {
+  if (!s) return '';
+  if (lang === 'ko') return s.nameKo || s.nameEn || s.nameJp || s.ticker || '';
+  return s.nameEn || s.nameJp || s.ticker || '';
+};
+
 /* ==========================================================================
    Watchlist Context — persists starred tickers to localStorage
    ========================================================================== */
@@ -967,7 +977,7 @@ function IndexCard({ idx }) {
   const { lang } = useLanguage();
   const positive = idx.changePercent >= 0;
   const TrendIcon = positive ? IconTrendUp : IconTrendDown;
-  const name = lang === 'ko' ? idx.nameKo : idx.nameEn;
+  const name = displayName(idx, lang);
   const rangePct = ((idx.value - idx.low52w) / (idx.high52w - idx.low52w)) * 100;
   const chartData = idx.sparkline.map((v, i) => ({ i, v }));
   const gradId = `grad-${idx.symbol}`;
@@ -1481,7 +1491,7 @@ function StockTable({ rows, onSelect }) {
                 </td>
                 <td className="px-3 py-3 min-w-[220px]">
                   <div className="flex flex-col">
-                    <span className="font-medium text-sumi-300 leading-tight truncate">{lang === 'ko' ? s.nameKo : s.nameEn}</span>
+                    <span className="font-medium text-sumi-300 leading-tight truncate">{displayName(s, lang)}</span>
                     <span className="text-[10px] text-sumi-50 leading-tight tracking-wide mt-0.5 flex items-center gap-1.5">
                       <span className="truncate">{localizedSector(s.sector, lang)}</span>
                       <span className="text-sumi-50/60">·</span>
@@ -1710,7 +1720,7 @@ function ValuationChart({ data }) {
   const raw = useMemo(() => data.filter(s => s.pbr !== null && s.roe !== null && s.pbr > 0)
     .map(s => ({
       ticker: s.ticker,
-      name: lang === 'ko' ? s.nameKo : s.nameEn,
+      name: displayName(s, lang),
       pbr: s.pbr, roe: s.roe, z: s.marketCapB,
       belowBook: s.belowBook, changePercent: s.changePercent,
       sector: s.sector, segment: s.segment,
@@ -1954,7 +1964,7 @@ function StockDetailPanel({ stock, onClose }) {
   }, [stock, onClose]);
   if (!stock) return null;
   const chartData = stock.sparkline.map((v, i) => ({ i, v }));
-  const name = lang === 'ko' ? stock.nameKo : stock.nameEn;
+  const name = displayName(stock, lang);
   const positive = stock.changePercent >= 0;
   const qualityScore = computeQualityScore(stock);
   return (

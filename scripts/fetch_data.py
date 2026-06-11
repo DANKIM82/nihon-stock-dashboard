@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 from collections import defaultdict
@@ -349,9 +350,31 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         if shares_out and float_shares else None
     )
 
+    # ── English name backfill ───────────────────────────────────────────────
+    # New universe entries (added via build_universe) carry only the Japanese
+    # name in all three fields. yfinance's longName/shortName gives a usable
+    # romanized/English company name, so prefer it whenever our master nameEn
+    # is empty or still equals the Japanese text. Strip the ".T"/exchange noise.
+    def _clean_name(n):
+        if not n:
+            return None
+        n = str(n).strip()
+        # drop a trailing market suffix some names carry
+        n = re.sub(r"\s*\(.*?\)\s*$", "", n).strip()
+        return n or None
+
+    name_en = meta.get("nameEn")
+    yf_name = _clean_name(info.get("longName")) or _clean_name(info.get("shortName"))
+    # treat "missing" as: empty, or identical to the Japanese name (i.e. never
+    # localized). Japanese text contains CJK; if nameEn has CJK we override it.
+    def _has_cjk(t):
+        return bool(t) and any("\u3000" <= ch <= "\u9fff" or "\uff00" <= ch <= "\uffef" for ch in t)
+    if yf_name and (not name_en or name_en == meta.get("nameJp") or _has_cjk(name_en)):
+        name_en = yf_name
+
     return {
         "ticker": ticker_code,
-        "nameEn": meta["nameEn"],
+        "nameEn": name_en or meta["nameEn"],
         "nameKo": meta["nameKo"],
         "nameJp": meta["nameJp"],
         "sector": meta["sector"],
