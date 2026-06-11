@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-11T09:18:37.194112+00:00",
+  "asOf": "2026-06-11T12:00:19.017065+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 246,
@@ -12,12 +12,11 @@
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
       "value": 64217.27,
-      "change": -1199.36,
-      "changePercent": -1.83,
+      "change": 38.0,
+      "changePercent": 0.06,
       "high52w": 68786.49,
       "low52w": 37540.2,
       "sparkline": [
-        62654.05,
         61409.29,
         60815.95,
         60550.59,
@@ -36,6 +35,7 @@
         66588.12,
         64024.6,
         65416.63,
+        64179.27,
         64217.27
       ]
     },
@@ -4863,7 +4863,7 @@
       "price": 6405.0,
       "change": -158.0,
       "changePercent": -2.41,
-      "marketCapB": 5774.25,
+      "marketCapB": 5724.82,
       "per": 15.48,
       "pbr": 1.64,
       "dividendYield": 2.97,
@@ -4899,10 +4899,10 @@
       ],
       "advValueB": 26.468,
       "advSharesM": 4.058,
-      "sharesOutM": 901.52,
-      "freeFloatPct": 98.6,
+      "sharesOutM": 893.81,
+      "freeFloatPct": 99.4,
       "netCashB": -979.85,
-      "netCashPct": -17.0,
+      "netCashPct": -17.1,
       "shortPct": null,
       "shortSharesM": null,
       "shortDtc": null,
@@ -5673,7 +5673,7 @@
       "price": 1711.0,
       "change": -19.0,
       "changePercent": -1.1,
-      "marketCapB": 975.18,
+      "marketCapB": 970.69,
       "per": 20.19,
       "pbr": 1.07,
       "dividendYield": 1.87,
@@ -5709,10 +5709,10 @@
       ],
       "advValueB": 10.612,
       "advSharesM": 6.513,
-      "sharesOutM": 569.95,
-      "freeFloatPct": 98.7,
+      "sharesOutM": 567.32,
+      "freeFloatPct": 99.1,
       "netCashB": -1301.2,
-      "netCashPct": -133.4,
+      "netCashPct": -134.0,
       "shortPct": 1.41,
       "shortSharesM": 8.83,
       "shortDtc": 1.4,
@@ -11338,7 +11338,7 @@
       "price": 1969.5,
       "change": 12.5,
       "changePercent": 0.64,
-      "marketCapB": 550.97,
+      "marketCapB": 550.7,
       "per": 17.39,
       "pbr": 1.07,
       "dividendYield": 3.3,
@@ -11374,8 +11374,8 @@
       ],
       "advValueB": 2.21,
       "advSharesM": 1.122,
-      "sharesOutM": 279.75,
-      "freeFloatPct": 90.4,
+      "sharesOutM": 279.61,
+      "freeFloatPct": 90.5,
       "netCashB": 8.67,
       "netCashPct": 1.6,
       "shortPct": null,
@@ -19591,54 +19591,49 @@
   },
   "headlines": [
     {
+      "title": "News Explorer — Japan Moves to Regulate Crypto Like Stocks in New Bill",
+      "publisher": "Decrypt",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN01MSWREOC0xa3hCc2Q0bHltNXMtMlk5Qy1UY0ttSEpNTzFyczNfQnl5S19JZFJGSnNRNW1HMFd1MUtpR1Y2VkE5R0Rob1lha0pqaG0zUFJjSEVKNmxJS0tFajI0ekEzQVRnRk9pMnVDaEFWT05iVV84QlVqY0hvTDZkRnJWaFBUYU5UU0VSb3FZS0ozbFRReWRXUlM0WnpXNFRmNGNvZnZrYkVV?oc=5",
+      "publishedTs": 1781178133
+    },
+    {
+      "title": "Japan businesses in China seek transparency in dual-use export controls",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPa2V3dElpWElvWG1FQk1ubVJMbk1RU1JSQXVJZGtHZk03bUFjdjNxT1pLdl8zSDhHNmdCUk0tTzVGME52SVlGNENJeWpkSGtmYTlNLVAyb3Y3SUNYNTJuYk1ocll0bUxtSExReHhDb1pvNUtGZVVfd2x0X2Z6bWxGa0JyWlBqUDlaMElMV3doRklPdFZyUVpZUFdfZlpwcnFpRjk3VG9QQ0NVNTlhRlpkN1dKWkFzN2VRQk9yQWtRVDFKM193SXYwYXJ1LVhQbjBzQjBSMWZxVmhubHo1a2tYOEllWQ?oc=5",
+      "publishedTs": 1781174820
+    },
+    {
+      "title": "Japan’s parliament poised to pass sweeping bill to regulate crypto like stocks",
+      "publisher": "CoinDesk",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON3prdmhrWENTXzJwczhfNHlBNFZLMWdHVnMwYkZqSmdBQzdjcFZPRTJQNDVVSWswTWotZnFsX2N0XzZsSUdIOVp6VWpGOE9DdDRwU3I3ZUhzeTZ6dHEwVDU5WEFMNWd1RXBISk04XzBMY0w3X29PVTlVQk1vS3VIYlRCV3V2WExRQXRuRnlZb0RfTTdSd0RGa2Y5dDVnekg2UHNYOGFyaGJiQnp3OXlOOTVyRDItdDZNUkVpVWFxdEVDdmVWVEV6SktDR1Q?oc=5",
+      "publishedTs": 1781174053
+    },
+    {
+      "title": "Breaking: Japan Advances Bill To Treat Bitcoin, Ethereum, XRP Just Like Stocks",
+      "publisher": "CoinGape",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObUxnYld0aHQyNW1XR2ZUbzB2dF9GcEpna2RlYnNoS0ZsNS1VVDktQzRWZGtSUjNlUzdhUXk4UC14N0NEdWJUZGVMVVJlY0h6eGdRNWVWaGx0anIwM1V6U1lUWGxPczJSNHBoSW9oSUJfYjA5eFotYm9UbUdtRjZDYmhNT3hua0dQSFBiWkU1YzB3Zw?oc=5",
+      "publishedTs": 1781171483
+    },
+    {
+      "title": "Has the Japanese Yen Lost Its Safe-Haven Crown in 2026?",
+      "publisher": "Disruption Banking",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNi1EdUttUzVhUjlpazZwUGF6SzNUdkpOUGtxbE01VGNicEc5ZEJZNGdvSlVMdmJwWnZ2d2hnNVF6S3BrU3V4dTBsYlpsSUJaRDlyVHhpWms2R0JhZE9NbkY3aDdQaUFWMkdrTjUtS0ZqZWhnYTluRXJZSFlSMHlEb2UxT3NwRERHdWMzR0lJbGhUNlJ1dlVUc2R5NmpoVExSSEE?oc=5",
+      "publishedTs": 1781171035
+    },
+    {
+      "title": "Nikkei 225 volatile as Middle East tensions unnerve investors",
+      "publisher": "nhk.or.jp",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84Nld2TjF5VTRRLWRTV1htbFFLT05TUDVDUkZrNU9TTEZPRjlQemJfcGdJT3M1NzUyOWszenRIaGJ0M0YtRFVkWDN2TFQzaVk2eS1Obk8xS184Y3QxVkltRW9B?oc=5",
+      "publishedTs": 1781169418
+    },
+    {
       "title": "Japanese Yen: Edges lower toward 160.75 against US Dollar – UOB",
       "publisher": "FXStreet",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWmh6Xy1aT2lnZkFtRGZ6aXpzeUtDNi1ianN6UmNXbDNWS191SER2UTJlSXR5VWdrUVdZcjRJNzdCejdfMTBOQk0zXzRIRFBUZklaT0NrX2R6V2V1RVNVc1JrZXNPVjIxUTgwdzlKN0xBd1dHbG9MM3FtNF9VcDZ6YlFReGxraW84OHBqUDVaWWZiSVp0bWtBb2lTNm5iY1lNMkg5Uw?oc=5",
       "publishedTs": 1781166476
-    },
-    {
-      "title": "Applied Materials in Singapore and Japan's new subsea cable approach",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYWwwRkhiM0JuVHlUbFdTUHFoOG81VmtlT1p6d0ZZY21UR1VrcUJEUGcwX2lvblVzWURYdDY0OFJOc3VvVVFQa2FWcUt2Uk1sNVpFOVMwRVg4NzYxM2I5WDU3SGdRX2NMdl91dlVCX1d6LVJTT19nQkVZQkpSUW51MjVoRlpkWFdfZ1hDelBUOVNORkwzQmNSemhjb2dqWGZHdFNr?oc=5",
-      "publishedTs": 1781164500
-    },
-    {
-      "title": "BOJ's pivotal moment muddied by Ueda's absence",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdEdjVzlDZGhtbmNOTEZQYmhfMHMtLVNSZFVaVTljWjFaS2sxTWI5aS1ZTTZ1bi1NTkdfV19UckZZSXlKU2ZWbzBMSHV3Ty1Pd3ZwTEhuZTczWDZqcno2VUZOMkthNXFaVnlXR0V4Q3JGZWczLXhTblhkdVpOLWgtR0hiQjlDZ01MRWd1QUxtNk55d0szY2pheERyZjZvT21YSElTZUxHbkF1M3Vwa0ZNSGRXMXFSMUE?oc=5",
-      "publishedTs": 1781164443
-    },
-    {
-      "title": "Japanese Yen: Limited upside as flows deteriorate – BNY",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQm9LWGdNVUxhR0Z0bjRVamhyeS1Rd3B4UUV1QkRubHFXYVpNdTZnZFNmRkNYQXdnZFhQWG5yQl81dGVfVVBJY3hZQV9IdHhGUk1PTWdYcDhValQxTmFvM3NVRHhLWnUwRkkySTVwVExGUDhselZGSnhhN3d2d2o1NE1wTzRDSEFFOHhKN1VJOC1sWDZ4R1l0eHNucw?oc=5",
-      "publishedTs": 1781164219
-    },
-    {
-      "title": "Japan big companies' sentiment sours in April-June qtr, hurt by Iran war",
-      "publisher": "毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XVTE3R0dkOGJUZm9LN0VOMmFXRTZYQ2w4OVBhcVREZjNGYUxZZ29peTBxbExIRHk3eThsVEV3eFpwRVBFMm9oaTUzZEZBWEZIeFlPQjlZRm9ZdlJ2MGhybFJmN1ZwYmI3OC1adWxlc21DLTg?oc=5",
-      "publishedTs": 1781163057
-    },
-    {
-      "title": "Japan, South Korea Stocks Rebound After Lower Open, KOSPI Index Reverses Higher, SK Hynix Rises Over 4%",
-      "publisher": "TradingKey",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZzZtSmV1a1phdURNbmZqM3VON21pVFY3R3piN2FkY1hHNUhWdWZPQlFMVGI2VUtpbmxsYmtmZ3R4UHAwOGE0c1hyVHBvdnF6b0Y0dm5OM1liMFNESk1TRU5TV09YWEp2cTFwVTlXcVFqMWFUMV9BNEE5c3RvRjZjeGF0ZVRKamdvWHlFWGo4UG9vTnEydmU1Wg?oc=5",
-      "publishedTs": 1781162536
-    },
-    {
-      "title": "Japan moves to regulate crypto like stocks in market growth push",
-      "publisher": "The Business Times",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR2hxeW9GQzdhM01mSnkyeXVQdUhrVEY1SGpsV0U5WXB1Nnp3RVpYcDBkUjVtRW5nNVhpY0dnZUNoMFpNWF9RTV9IWmZYOXpfM3FjdGpmWGZwd3M3MXNtdE5fZ094X0l6MzhxQzhWbTlDdDdMREZnVG15UXlMWFA3N2hMcEkxUjFPTWpBd3Uxdk9iQ25wcFlGYjVEb3JJQXdwZnc?oc=5",
-      "publishedTs": 1781162400
     }
   ],
-  "marketTone": {
-    "ko": "오늘 일본 시장은 엔화가 달러 대비 160.75엔 수준으로 약세를 지속하며 상승 여력이 제한적이라는 분석이 나왔습니다. 일본은행(BOJ)의 통화정책 전환 시점은 우에다 총재의 부재로 인해 불확실성이 커졌습니다. 일본 증시는 하락 출발 후 반등했지만, 대기업들의 4~6월 경기 심리는 이란 전쟁 등의 영향으로 악화된 것으로 나타났습니다. 한편, 일본은 시장 성장을 위해 암호화폐를 주식처럼 규제하고 해저 케이블 프로젝트를 추진하는 등 다양한 노력을 기울이고 있습니다.",
-    "en": "Today's Japanese market showed mixed signals, with the Yen continuing its depreciation towards 160.75 against the US Dollar, facing limited upside. Monetary policy uncertainty was also a key theme, with the BOJ's pivotal moment reportedly clouded by Governor Ueda's absence. While Japanese stocks rebounded after an initial dip, sentiment among large companies soured in the April-June quarter, partly due to geopolitical concerns like the Iran war. Separately, Japan is also pursuing market growth initiatives, including regulating crypto like stocks and advancing subsea cable projects.",
-    "model": "gemini-2.5-flash",
-    "generatedTs": 1781169526
-  },
+  "marketTone": null,
   "shortData": {
     "ok": true,
     "asOf": "2026-06-10",
