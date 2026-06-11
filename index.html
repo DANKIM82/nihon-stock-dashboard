@@ -1607,12 +1607,48 @@ function ValuationTooltip({ active, payload }) {
       </div>
       <div className="font-display text-sm font-semibold mb-1.5 truncate">{p.name}</div>
       <div className="grid grid-cols-3 gap-2 text-[10px] tabular pt-2 border-t border-sumi-100/40">
-        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">PBR</div><div className="font-semibold">{p.x.toFixed(2)}</div></div>
-        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">ROE</div><div className="font-semibold">{p.y.toFixed(1)}%</div></div>
+        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">PBR</div><div className="font-semibold">{p.pbr.toFixed(2)}{p.clampedX ? ' ⤴' : ''}</div></div>
+        <div><div className="opacity-60 uppercase tracking-wider text-[9px]">ROE</div><div className="font-semibold">{p.roe.toFixed(1)}%{p.clampedY ? ' ⤴' : ''}</div></div>
         <div><div className="opacity-60 uppercase tracking-wider text-[9px]">Cap</div>
           <div className="font-semibold">{p.z >= 1000 ? `¥${(p.z/1000).toFixed(1)}T` : `¥${p.z.toFixed(0)}B`}</div>
         </div>
       </div>
+      {(p.clampedX || p.clampedY) && (
+        <div className="mt-1.5 pt-1.5 border-t border-sumi-100/40 text-[9px] opacity-60">⤴ 축 범위 밖 — 가장자리에 표시됨</div>
+      )}
+    </div>
+  );
+}
+
+// pretty axis numbers — kill floating-point noise like 3.415000000006
+const niceNum = v => {
+  if (!isFinite(v)) return '';
+  const a = Math.abs(v);
+  if (a >= 100) return Math.round(v).toString();
+  if (a >= 10) return v.toFixed(0);
+  if (a >= 1) return v.toFixed(1);
+  return v.toFixed(2).replace(/\.?0+$/, '');
+};
+// quantile helper for winsorization
+const quantile = (sorted, q) => {
+  if (!sorted.length) return 0;
+  const pos = (sorted.length - 1) * q;
+  const base = Math.floor(pos), rest = pos - base;
+  return sorted[base + 1] !== undefined
+    ? sorted[base] + rest * (sorted[base + 1] - sorted[base])
+    : sorted[base];
+};
+
+function AxisControl({ label, lo, hi, onLo, onHi, suffix }) {
+  return (
+    <div className="flex items-center gap-1.5">
+      <span className="text-[10px] uppercase tracking-wider text-sumi-50 w-8">{label}</span>
+      <input type="number" value={lo} onChange={e => onLo(e.target.value === '' ? '' : Number(e.target.value))}
+        className="w-14 h-6 px-1.5 text-[11px] tabular border border-neutral-line bg-white text-sumi-300 focus:border-vermillion-400 focus:outline-none" />
+      <span className="text-[10px] text-sumi-50">–</span>
+      <input type="number" value={hi} onChange={e => onHi(e.target.value === '' ? '' : Number(e.target.value))}
+        className="w-14 h-6 px-1.5 text-[11px] tabular border border-neutral-line bg-white text-sumi-300 focus:border-vermillion-400 focus:outline-none" />
+      {suffix && <span className="text-[10px] text-sumi-50">{suffix}</span>}
     </div>
   );
 }
@@ -1620,32 +1656,81 @@ function ValuationTooltip({ active, payload }) {
 function ValuationChart({ data }) {
   const { lang } = useLanguage();
   const [quadrant, setQuadrant] = useState('all');
-  const points = useMemo(() => data.filter(s => s.pbr !== null && s.roe !== null && s.pbr > 0)
+  const [logScale, setLogScale] = useState(true);
+  const [manual, setManual] = useState(false);
+  // manual bounds (PBR in real units; ROE in %)
+  const [pbrLo, setPbrLo] = useState(''); const [pbrHi, setPbrHi] = useState('');
+  const [roeLo, setRoeLo] = useState(''); const [roeHi, setRoeHi] = useState('');
+
+  const raw = useMemo(() => data.filter(s => s.pbr !== null && s.roe !== null && s.pbr > 0)
     .map(s => ({
       ticker: s.ticker,
       name: lang === 'ko' ? s.nameKo : s.nameEn,
-      x: s.pbr, y: s.roe, z: s.marketCapB,
+      pbr: s.pbr, roe: s.roe, z: s.marketCapB,
       belowBook: s.belowBook, changePercent: s.changePercent,
     })), [data, lang]);
-  const xMax = Math.min(8, Math.max(...points.map(p=>p.x), 2) * 1.1);
-  const yMax = Math.max(25, Math.max(...points.map(p=>p.y), 20) * 1.1);
-  const yMin = Math.min(-5, Math.min(...points.map(p=>p.y), 0));
+
+  // ── Auto bounds via winsorization (2nd–98th percentile) so a single PBR=23
+  //    or ROE=-47 outlier doesn't compress everyone into a corner ───────────
+  const auto = useMemo(() => {
+    if (!raw.length) return { pbrLo:0.2, pbrHi:8, roeLo:-20, roeHi:30 };
+    const pbrs = raw.map(p => p.pbr).sort((a,b)=>a-b);
+    const roes = raw.map(p => p.roe).sort((a,b)=>a-b);
+    return {
+      pbrLo: Math.max(0.1, quantile(pbrs, 0.0)),
+      pbrHi: quantile(pbrs, 0.98),
+      roeLo: Math.min(0, quantile(roes, 0.02)),
+      roeHi: quantile(roes, 0.98),
+    };
+  }, [raw]);
+
+  // effective bounds: manual overrides where provided, else auto
+  const b = {
+    pbrLo: manual && pbrLo !== '' ? pbrLo : auto.pbrLo,
+    pbrHi: manual && pbrHi !== '' ? pbrHi : auto.pbrHi,
+    roeLo: manual && roeLo !== '' ? roeLo : auto.roeLo,
+    roeHi: manual && roeHi !== '' ? roeHi : auto.roeHi,
+  };
+
+  // x transform: log10(pbr) when logScale, else raw pbr
+  const fx = v => logScale ? Math.log10(Math.max(v, 0.01)) : v;
+  const xLo = fx(b.pbrLo), xHi = fx(b.pbrHi);
+  const yLo = b.roeLo, yHi = b.roeHi;
+
+  // build plotted points, clamping out-of-range to the edges (with a flag)
+  const points = useMemo(() => raw.map(p => {
+    let x = fx(p.pbr), y = p.roe, cx = false, cy = false;
+    if (x < xLo) { x = xLo; cx = true; } else if (x > xHi) { x = xHi; cx = true; }
+    if (y < yLo) { y = yLo; cy = true; } else if (y > yHi) { y = yHi; cy = true; }
+    return { ...p, x, y, clampedX: cx, clampedY: cy };
+  }), [raw, xLo, xHi, yLo, yHi, logScale]);
+
+  const nClamped = points.filter(p => p.clampedX || p.clampedY).length;
+
+  // tick marks: for log scale use canonical PBR values within range
+  const xTicks = useMemo(() => {
+    if (!logScale) {
+      const ticks = []; const step = (b.pbrHi - b.pbrLo) / 5;
+      for (let i = 0; i <= 5; i++) ticks.push(fx(b.pbrLo + step * i));
+      return ticks;
+    }
+    const cands = [0.25, 0.5, 0.75, 1, 1.5, 2, 3, 5, 8, 12, 20, 30];
+    return cands.filter(v => v >= b.pbrLo * 0.95 && v <= b.pbrHi * 1.05).map(fx);
+  }, [logScale, b.pbrLo, b.pbrHi]);
+  const xTickLabel = lv => niceNum(logScale ? Math.pow(10, lv) : lv);
+
   const classify = p => {
-    if (p.x < 1 && p.y > 8) return 'undervalued';
-    if (p.x >= 1 && p.y > 15) return 'quality';
-    if (p.x < 1 && p.y <= 8) return 'value-trap';
-    if (p.x > 3 && p.y < 10) return 'expensive';
+    if (p.pbr < 1 && p.roe > 8) return 'undervalued';
+    if (p.pbr >= 1 && p.roe > 15) return 'quality';
+    if (p.pbr < 1 && p.roe <= 8) return 'value-trap';
+    if (p.pbr > 3 && p.roe < 10) return 'expensive';
     return 'all';
   };
-  const colorFor = p => {
-    const q = classify(p);
-    if (q === 'undervalued') return '#C7391C';
-    if (q === 'quality') return '#2E7D57';
-    if (q === 'value-trap') return '#B8342A';
-    if (q === 'expensive') return '#6B6A65';
-    return '#1A1A18';
-  };
-  const visibleOpacity = p => quadrant === 'all' ? 0.85 : (classify(p) === quadrant ? 0.95 : 0.15);
+  const colorFor = p => ({ undervalued:'#C7391C', quality:'#2E7D57',
+    'value-trap':'#B8342A', expensive:'#6B6A65' }[classify(p)] || '#1A1A18');
+  const visibleOpacity = p => quadrant === 'all' ? 0.85 : (classify(p) === quadrant ? 0.95 : 0.12);
+
+  const resetAxes = () => { setManual(false); setPbrLo(''); setPbrHi(''); setRoeLo(''); setRoeHi(''); };
 
   return (
     <Card className="overflow-hidden">
@@ -1658,31 +1743,71 @@ function ValuationChart({ data }) {
         </div>
         <div className="text-[10px] uppercase tracking-[0.18em] text-sumi-50 tabular">{points.length} {lang === 'ko' ? '종목' : 'securities'}</div>
       </div>
+
+      {/* axis controls */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-5 py-2.5 border-b border-neutral-line bg-white">
+        <button onClick={() => setLogScale(l => !l)}
+          className={cn('inline-flex items-center gap-1.5 px-2.5 h-6 text-[10px] font-medium uppercase tracking-wider transition-all border',
+            logScale ? 'bg-sumi-300 text-ivory-50 border-sumi-300' : 'bg-white text-sumi-100 border-neutral-line hover:bg-ivory-100')}>
+          {logScale ? (lang==='ko'?'PBR 로그축 ✓':'Log PBR ✓') : (lang==='ko'?'PBR 선형축':'Linear PBR')}
+        </button>
+        <button onClick={() => setManual(m => !m)}
+          className={cn('inline-flex items-center gap-1.5 px-2.5 h-6 text-[10px] font-medium uppercase tracking-wider transition-all border',
+            manual ? 'bg-vermillion-500 text-white border-vermillion-500' : 'bg-white text-sumi-100 border-neutral-line hover:bg-ivory-100')}>
+          {lang==='ko'?'수동 축 조정':'Manual axes'}
+        </button>
+        {manual && (
+          <>
+            <AxisControl label="PBR" lo={pbrLo === '' ? niceNum(auto.pbrLo) : pbrLo} hi={pbrHi === '' ? niceNum(auto.pbrHi) : pbrHi}
+              onLo={setPbrLo} onHi={setPbrHi} suffix="x" />
+            <AxisControl label="ROE" lo={roeLo === '' ? Math.round(auto.roeLo) : roeLo} hi={roeHi === '' ? Math.round(auto.roeHi) : roeHi}
+              onLo={setRoeLo} onHi={setRoeHi} suffix="%" />
+            <button onClick={resetAxes} className="text-[10px] uppercase tracking-wider text-vermillion-600 hover:text-vermillion-700">
+              {lang==='ko'?'자동 리셋':'Reset'}
+            </button>
+          </>
+        )}
+        {!manual && nClamped > 0 && (
+          <span className="text-[10px] text-sumi-50">
+            {lang==='ko' ? `이상치 ${nClamped}개 가장자리 표시 (자동 범위 조정됨)` : `${nClamped} outliers clamped to edges (auto-ranged)`}
+          </span>
+        )}
+      </div>
+
       <div className="h-[440px] p-4">
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart margin={{ top:20, right:30, bottom:50, left:50 }}>
             <CartesianGrid stroke="#E6E1D4" strokeDasharray="1 3" />
-            <ReferenceArea x1={0} x2={1} y1={8} y2={yMax} fill="#C7391C" fillOpacity={0.05} stroke="#C7391C" strokeOpacity={0.3} strokeDasharray="2 2" />
-            <ReferenceArea x1={1} x2={xMax} y1={15} y2={yMax} fill="#2E7D57" fillOpacity={0.04} />
-            <ReferenceLine x={1} stroke="#1A1A18" strokeOpacity={0.4} strokeDasharray="3 3" />
-            <ReferenceLine y={8} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />
-            <ReferenceLine y={15} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />
-            <XAxis type="number" dataKey="x" name="PBR" domain={[0, xMax]}
+            {fx(1) >= xLo && fx(1) <= xHi && (
+              <ReferenceArea x1={xLo} x2={fx(1)} y1={Math.max(8,yLo)} y2={yHi} fill="#C7391C" fillOpacity={0.05} stroke="#C7391C" strokeOpacity={0.3} strokeDasharray="2 2" />
+            )}
+            {fx(1) >= xLo && fx(1) <= xHi && (
+              <ReferenceArea x1={fx(1)} x2={xHi} y1={Math.max(15,yLo)} y2={yHi} fill="#2E7D57" fillOpacity={0.04} />
+            )}
+            {fx(1) >= xLo && fx(1) <= xHi && <ReferenceLine x={fx(1)} stroke="#1A1A18" strokeOpacity={0.4} strokeDasharray="3 3" />}
+            {8 >= yLo && 8 <= yHi && <ReferenceLine y={8} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />}
+            {15 >= yLo && 15 <= yHi && <ReferenceLine y={15} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />}
+            <XAxis type="number" dataKey="x" name="PBR" domain={[xLo, xHi]} ticks={xTicks} allowDataOverflow
               tick={{ fontSize:10, fill:'#6B6A65', fontFamily:'JetBrains Mono' }} stroke="#DDD3B8"
-              label={{ value: lang === 'ko' ? 'PBR (배)' : 'P/B Ratio', position:'insideBottom', offset:-30,
+              tickFormatter={xTickLabel}
+              label={{ value: lang === 'ko' ? (logScale?'PBR (배, 로그)':'PBR (배)') : 'P/B Ratio', position:'insideBottom', offset:-30,
                 style:{ fontSize:10, fill:'#4A4945', textTransform:'uppercase', letterSpacing:'0.18em' } }} />
-            <YAxis type="number" dataKey="y" name="ROE" domain={[yMin, yMax]}
+            <YAxis type="number" dataKey="y" name="ROE" domain={[yLo, yHi]} allowDataOverflow
               tick={{ fontSize:10, fill:'#6B6A65', fontFamily:'JetBrains Mono' }} stroke="#DDD3B8"
-              tickFormatter={v => `${v}%`}
+              tickFormatter={v => `${niceNum(v)}%`}
               label={{ value:'ROE', angle:-90, position:'insideLeft', offset:0,
                 style:{ fontSize:10, fill:'#4A4945', textTransform:'uppercase', letterSpacing:'0.18em' } }} />
             <Tooltip cursor={{ strokeDasharray:'3 3', stroke:'#6B6A65' }} content={<ValuationTooltip/>} />
             <Scatter data={points} isAnimationActive={false}>
-              {points.map(p => (
-                <Cell key={p.ticker} fill={colorFor(p)} fillOpacity={visibleOpacity(p)}
-                  stroke={colorFor(p)} strokeOpacity={visibleOpacity(p) * 0.6}
-                  r={Math.min(14, Math.max(4, Math.sqrt(p.z) / 12))} />
-              ))}
+              {points.map(p => {
+                const clamped = p.clampedX || p.clampedY;
+                return (
+                  <Cell key={p.ticker} fill={colorFor(p)} fillOpacity={visibleOpacity(p)}
+                    stroke={clamped ? colorFor(p) : colorFor(p)} strokeOpacity={clamped ? 1 : visibleOpacity(p) * 0.6}
+                    strokeWidth={clamped ? 1.5 : 1}
+                    r={clamped ? 4 : Math.min(14, Math.max(4, Math.sqrt(p.z) / 12))} />
+                );
+              })}
             </Scatter>
           </ScatterChart>
         </ResponsiveContainer>
