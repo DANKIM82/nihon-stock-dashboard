@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-11T09:14:16.304394+00:00",
+  "asOf": "2026-06-11T09:18:37.194112+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 246,
@@ -19634,10 +19634,10 @@
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 엔화 약세 지속과 일본은행(BOJ)의 통화정책 불확실성 속에서 혼조세를 보였습니다. 엔화는 달러 대비 160.75엔을 향해 하락세를 이어갔으며, 자금 흐름 악화로 상승 여력이 제한적인 모습입니다. 이란 전쟁의 영향으로 일본 대기업들의 4~6월 기업 심리가 악화되었으나, 일본 증시는 장 초반 하락세에서 반등하며 회복세를 나타냈습니다. 한편, 일본은 새로운 해저 케이블 접근 방식과 암호화폐를 주식처럼 규제하는 등 시장 성장을 위한 움직임을 보이고 있습니다.",
-    "en": "Japanese markets present a mixed picture today, characterized by continued Yen weakness and uncertainty surrounding the Bank of Japan's monetary policy. The Yen edged lower towards 160.75 against the US Dollar, with limited upside due to deteriorating flows, while a \"pivotal moment\" for the BOJ was complicated by Ueda's absence. Corporate sentiment for the April-June quarter soured, notably impacted by the Iran war, yet regional stocks, including Japan, rebounded after an initial lower open. Meanwhile, Japan is also advancing in areas like new subsea cable approaches and regulating crypto like stocks to foster market growth.",
+    "ko": "오늘 일본 시장은 엔화가 달러 대비 160.75엔 수준으로 약세를 지속하며 상승 여력이 제한적이라는 분석이 나왔습니다. 일본은행(BOJ)의 통화정책 전환 시점은 우에다 총재의 부재로 인해 불확실성이 커졌습니다. 일본 증시는 하락 출발 후 반등했지만, 대기업들의 4~6월 경기 심리는 이란 전쟁 등의 영향으로 악화된 것으로 나타났습니다. 한편, 일본은 시장 성장을 위해 암호화폐를 주식처럼 규제하고 해저 케이블 프로젝트를 추진하는 등 다양한 노력을 기울이고 있습니다.",
+    "en": "Today's Japanese market showed mixed signals, with the Yen continuing its depreciation towards 160.75 against the US Dollar, facing limited upside. Monetary policy uncertainty was also a key theme, with the BOJ's pivotal moment reportedly clouded by Governor Ueda's absence. While Japanese stocks rebounded after an initial dip, sentiment among large companies soured in the April-June quarter, partly due to geopolitical concerns like the Iran war. Separately, Japan is also pursuing market growth initiatives, including regulating crypto like stocks and advancing subsea cable projects.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1781169269
+    "generatedTs": 1781169526
   },
   "shortData": {
     "ok": true,
