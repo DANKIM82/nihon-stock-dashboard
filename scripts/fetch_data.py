@@ -21,7 +21,7 @@ import json
 import sys
 import time
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -930,8 +930,7 @@ def main() -> int:
             print(f"    ! catalyst layer failed: {e}", file=sys.stderr)
             cat = None
         if cat:
-            from datetime import timedelta as _td
-            cutoff_30d = (datetime.now(timezone.utc) - _td(days=30)
+            cutoff_30d = (datetime.now(timezone.utc) - timedelta(days=30)
                           ).strftime("%Y-%m-%d")
             n_attached = 0
             for s in stocks:
