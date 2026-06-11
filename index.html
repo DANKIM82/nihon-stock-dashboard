@@ -1606,6 +1606,12 @@ function ValuationTooltip({ active, payload }) {
         </span>
       </div>
       <div className="font-display text-sm font-semibold mb-1.5 truncate">{p.name}</div>
+      {(p._dotColor || p._secLabel) && (
+        <div className="flex items-center gap-1.5 mb-1.5 text-[10px] opacity-80">
+          <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: p._dotColor || '#6B6A65' }} />
+          <span className="truncate">{p._secLabel}{p._segLabel ? ` · ${p._segLabel}` : ''}</span>
+        </div>
+      )}
       <div className="grid grid-cols-3 gap-2 text-[10px] tabular pt-2 border-t border-sumi-100/40">
         <div><div className="opacity-60 uppercase tracking-wider text-[9px]">PBR</div><div className="font-semibold">{p.pbr.toFixed(2)}{p.clampedX ? ' ⤴' : ''}</div></div>
         <div><div className="opacity-60 uppercase tracking-wider text-[9px]">ROE</div><div className="font-semibold">{p.roe.toFixed(1)}%{p.clampedY ? ' ⤴' : ''}</div></div>
@@ -1639,6 +1645,62 @@ const quantile = (sorted, q) => {
     : sorted[base];
 };
 
+// Sector colour palette — tuned to the dashboard's earth-tone aesthetic so
+// 11 categories stay distinguishable without going neon.
+const SECTOR_META = {
+  Technology:            { ko:'기술',       en:'Technology',          c:'#C7391C' },
+  Financials:            { ko:'금융',       en:'Financials',          c:'#2E7D57' },
+  Industrials:           { ko:'산업재',     en:'Industrials',         c:'#3A6EA5' },
+  ConsumerDiscretionary: { ko:'경기소비재', en:'Cons. Discretionary', c:'#D98324' },
+  ConsumerStaples:       { ko:'필수소비재', en:'Cons. Staples',       c:'#7B9E3F' },
+  Healthcare:            { ko:'헬스케어',   en:'Healthcare',          c:'#B0457B' },
+  Materials:             { ko:'소재',       en:'Materials',           c:'#8A6D3B' },
+  Communication:         { ko:'커뮤니케이션', en:'Communication',     c:'#5C6BC0' },
+  Energy:                { ko:'에너지',     en:'Energy',              c:'#C28800' },
+  Utilities:             { ko:'유틸리티',   en:'Utilities',           c:'#4C8C8C' },
+  RealEstate:            { ko:'부동산',     en:'Real Estate',         c:'#9C5A3C' },
+};
+const SECTOR_FALLBACK = '#6B6A65';
+const SEGMENT_META = {
+  Prime:    { ko:'프라임',   en:'Prime',    c:'#C7391C' },
+  Standard: { ko:'스탠다드', en:'Standard', c:'#3A6EA5' },
+  Growth:   { ko:'그로스',   en:'Growth',   c:'#2E7D57' },
+};
+const SEGMENT_FALLBACK = '#6B6A65';
+
+// Custom scatter marker: circle for in-range points, a small triangle pointing
+// outward for clamped outliers (so they read as "beyond the edge" instead of
+// rendering as a half-clipped circle on the border).
+function ValuationDot(props) {
+  const { cx, cy, payload, fill, fillOpacity, stroke } = props;
+  if (cx == null || cy == null) return null;
+  const clamped = payload.clampedX || payload.clampedY;
+  if (!clamped) {
+    return <circle cx={cx} cy={cy} r={payload._r} fill={fill}
+      fillOpacity={fillOpacity} stroke={stroke} strokeOpacity={fillOpacity * 0.6} />;
+  }
+  // direction the point is "escaping" toward
+  const dx = payload.clampedX ? (payload._edgeRight ? 1 : -1) : 0;
+  const dy = payload.clampedY ? (payload._edgeTop ? -1 : 1) : 0;
+  const sz = 5;
+  // nudge inward a touch so the triangle isn't clipped by the plot edge
+  const px = cx - dx * 3, py = cy - dy * 3;
+  let pts;
+  if (dx !== 0 && dy === 0) {           // left/right → horizontal triangle
+    pts = dx > 0
+      ? `${px+sz},${py} ${px-sz},${py-sz} ${px-sz},${py+sz}`
+      : `${px-sz},${py} ${px+sz},${py-sz} ${px+sz},${py+sz}`;
+  } else if (dy !== 0 && dx === 0) {    // up/down → vertical triangle
+    pts = dy < 0
+      ? `${px},${py-sz} ${px-sz},${py+sz} ${px+sz},${py+sz}`
+      : `${px},${py+sz} ${px-sz},${py-sz} ${px+sz},${py-sz}`;
+  } else {                              // corner → diamond
+    pts = `${px},${py-sz} ${px+sz},${py} ${px},${py+sz} ${px-sz},${py}`;
+  }
+  return <polygon points={pts} fill={fill} fillOpacity={Math.max(fillOpacity, 0.9)}
+    stroke={stroke} strokeWidth={1.2} strokeOpacity={1} />;
+}
+
 function AxisControl({ label, lo, hi, onLo, onHi, suffix }) {
   return (
     <div className="flex items-center gap-1.5">
@@ -1658,6 +1720,7 @@ function ValuationChart({ data }) {
   const [quadrant, setQuadrant] = useState('all');
   const [logScale, setLogScale] = useState(true);
   const [manual, setManual] = useState(false);
+  const [colorMode, setColorMode] = useState('quadrant');  // quadrant | sector | segment
   // manual bounds (PBR in real units; ROE in %)
   const [pbrLo, setPbrLo] = useState(''); const [pbrHi, setPbrHi] = useState('');
   const [roeLo, setRoeLo] = useState(''); const [roeHi, setRoeHi] = useState('');
@@ -1668,6 +1731,7 @@ function ValuationChart({ data }) {
       name: lang === 'ko' ? s.nameKo : s.nameEn,
       pbr: s.pbr, roe: s.roe, z: s.marketCapB,
       belowBook: s.belowBook, changePercent: s.changePercent,
+      sector: s.sector, segment: s.segment,
     })), [data, lang]);
 
   // ── Auto bounds via winsorization (2nd–98th percentile) so a single PBR=23
@@ -1699,11 +1763,18 @@ function ValuationChart({ data }) {
 
   // build plotted points, clamping out-of-range to the edges (with a flag)
   const points = useMemo(() => raw.map(p => {
-    let x = fx(p.pbr), y = p.roe, cx = false, cy = false;
-    if (x < xLo) { x = xLo; cx = true; } else if (x > xHi) { x = xHi; cx = true; }
-    if (y < yLo) { y = yLo; cy = true; } else if (y > yHi) { y = yHi; cy = true; }
-    return { ...p, x, y, clampedX: cx, clampedY: cy };
-  }), [raw, xLo, xHi, yLo, yHi, logScale]);
+    let x = fx(p.pbr), y = p.roe, cx = false, cy = false, eR = false, eT = false;
+    if (x < xLo) { x = xLo; cx = true; } else if (x > xHi) { x = xHi; cx = true; eR = true; }
+    if (y < yLo) { y = yLo; cy = true; } else if (y > yHi) { y = yHi; cy = true; eT = true; }
+    const _r = Math.min(14, Math.max(4, Math.sqrt(p.z) / 12));
+    const secMeta = SECTOR_META[p.sector];
+    const segMeta = SEGMENT_META[p.segment];
+    return { ...p, x, y, clampedX: cx, clampedY: cy, _edgeRight: eR, _edgeTop: eT, _r,
+      _secLabel: secMeta ? secMeta[lang] : p.sector,
+      _segLabel: segMeta ? segMeta[lang] : p.segment,
+      _dotColor: (colorMode === 'sector' ? (secMeta||{}).c
+                : colorMode === 'segment' ? (segMeta||{}).c : null) || null };
+  }), [raw, xLo, xHi, yLo, yHi, logScale, lang, colorMode]);
 
   const nClamped = points.filter(p => p.clampedX || p.clampedY).length;
 
@@ -1726,9 +1797,17 @@ function ValuationChart({ data }) {
     if (p.pbr > 3 && p.roe < 10) return 'expensive';
     return 'all';
   };
-  const colorFor = p => ({ undervalued:'#C7391C', quality:'#2E7D57',
-    'value-trap':'#B8342A', expensive:'#6B6A65' }[classify(p)] || '#1A1A18');
+  const colorFor = p => {
+    if (colorMode === 'sector')
+      return (SECTOR_META[p.sector] || {}).c || SECTOR_FALLBACK;
+    if (colorMode === 'segment')
+      return (SEGMENT_META[p.segment] || {}).c || SEGMENT_FALLBACK;
+    return ({ undervalued:'#C7391C', quality:'#2E7D57',
+      'value-trap':'#B8342A', expensive:'#6B6A65' }[classify(p)] || '#1A1A18');
+  };
   const visibleOpacity = p => quadrant === 'all' ? 0.85 : (classify(p) === quadrant ? 0.95 : 0.12);
+  // quadrant shading fades right out in sector/segment modes (just a hint)
+  const shadeMul = colorMode === 'quadrant' ? 1 : 0.25;
 
   const resetAxes = () => { setManual(false); setPbrLo(''); setPbrHi(''); setRoeLo(''); setRoeHi(''); };
 
@@ -1756,6 +1835,20 @@ function ValuationChart({ data }) {
             manual ? 'bg-vermillion-500 text-white border-vermillion-500' : 'bg-white text-sumi-100 border-neutral-line hover:bg-ivory-100')}>
           {lang==='ko'?'수동 축 조정':'Manual axes'}
         </button>
+        <span className="w-px h-5 bg-neutral-line mx-0.5" />
+        <span className="text-[10px] uppercase tracking-wider text-sumi-50">{lang==='ko'?'색상':'Color'}</span>
+        <div className="inline-flex border border-neutral-line overflow-hidden">
+          {[['quadrant', lang==='ko'?'사분면':'Quadrant'],
+            ['sector',   lang==='ko'?'섹터':'Sector'],
+            ['segment',  lang==='ko'?'시장구분':'Segment']].map(([m, lbl], i) => (
+            <button key={m} onClick={() => setColorMode(m)}
+              className={cn('px-2.5 h-6 text-[10px] font-medium uppercase tracking-wider transition-all',
+                i > 0 && 'border-l border-neutral-line',
+                colorMode === m ? 'bg-sumi-300 text-ivory-50' : 'bg-white text-sumi-100 hover:bg-ivory-100')}>
+              {lbl}
+            </button>
+          ))}
+        </div>
         {manual && (
           <>
             <AxisControl label="PBR" lo={pbrLo === '' ? niceNum(auto.pbrLo) : pbrLo} hi={pbrHi === '' ? niceNum(auto.pbrHi) : pbrHi}
@@ -1779,10 +1872,10 @@ function ValuationChart({ data }) {
           <ScatterChart margin={{ top:20, right:30, bottom:50, left:50 }}>
             <CartesianGrid stroke="#E6E1D4" strokeDasharray="1 3" />
             {fx(1) >= xLo && fx(1) <= xHi && (
-              <ReferenceArea x1={xLo} x2={fx(1)} y1={Math.max(8,yLo)} y2={yHi} fill="#C7391C" fillOpacity={0.05} stroke="#C7391C" strokeOpacity={0.3} strokeDasharray="2 2" />
+              <ReferenceArea x1={xLo} x2={fx(1)} y1={Math.max(8,yLo)} y2={yHi} fill="#C7391C" fillOpacity={0.05 * shadeMul} stroke="#C7391C" strokeOpacity={0.3 * shadeMul} strokeDasharray="2 2" />
             )}
             {fx(1) >= xLo && fx(1) <= xHi && (
-              <ReferenceArea x1={fx(1)} x2={xHi} y1={Math.max(15,yLo)} y2={yHi} fill="#2E7D57" fillOpacity={0.04} />
+              <ReferenceArea x1={fx(1)} x2={xHi} y1={Math.max(15,yLo)} y2={yHi} fill="#2E7D57" fillOpacity={0.04 * shadeMul} />
             )}
             {fx(1) >= xLo && fx(1) <= xHi && <ReferenceLine x={fx(1)} stroke="#1A1A18" strokeOpacity={0.4} strokeDasharray="3 3" />}
             {8 >= yLo && 8 <= yHi && <ReferenceLine y={8} stroke="#1A1A18" strokeOpacity={0.2} strokeDasharray="3 3" />}
@@ -1798,16 +1891,10 @@ function ValuationChart({ data }) {
               label={{ value:'ROE', angle:-90, position:'insideLeft', offset:0,
                 style:{ fontSize:10, fill:'#4A4945', textTransform:'uppercase', letterSpacing:'0.18em' } }} />
             <Tooltip cursor={{ strokeDasharray:'3 3', stroke:'#6B6A65' }} content={<ValuationTooltip/>} />
-            <Scatter data={points} isAnimationActive={false}>
-              {points.map(p => {
-                const clamped = p.clampedX || p.clampedY;
-                return (
-                  <Cell key={p.ticker} fill={colorFor(p)} fillOpacity={visibleOpacity(p)}
-                    stroke={clamped ? colorFor(p) : colorFor(p)} strokeOpacity={clamped ? 1 : visibleOpacity(p) * 0.6}
-                    strokeWidth={clamped ? 1.5 : 1}
-                    r={clamped ? 4 : Math.min(14, Math.max(4, Math.sqrt(p.z) / 12))} />
-                );
-              })}
+            <Scatter data={points} isAnimationActive={false} shape={<ValuationDot/>}>
+              {points.map(p => (
+                <Cell key={p.ticker} fill={colorFor(p)} fillOpacity={visibleOpacity(p)} stroke={colorFor(p)} />
+              ))}
             </Scatter>
           </ScatterChart>
         </ResponsiveContainer>
