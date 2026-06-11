@@ -1668,37 +1668,19 @@ const SEGMENT_META = {
 };
 const SEGMENT_FALLBACK = '#6B6A65';
 
-// Custom scatter marker: circle for in-range points, a small triangle pointing
-// outward for clamped outliers (so they read as "beyond the edge" instead of
-// rendering as a half-clipped circle on the border).
+// Scatter marker: every point is a full circle. With the generous auto-range
+// above, points effectively never land on the border, so there's nothing to
+// clip. The rare clamped point (only if the user hand-narrows the axes) is
+// drawn a touch smaller and dimmer so it's clearly "parked at the edge".
 function ValuationDot(props) {
   const { cx, cy, payload, fill, fillOpacity, stroke } = props;
   if (cx == null || cy == null) return null;
   const clamped = payload.clampedX || payload.clampedY;
-  if (!clamped) {
-    return <circle cx={cx} cy={cy} r={payload._r} fill={fill}
-      fillOpacity={fillOpacity} stroke={stroke} strokeOpacity={fillOpacity * 0.6} />;
-  }
-  // direction the point is "escaping" toward
-  const dx = payload.clampedX ? (payload._edgeRight ? 1 : -1) : 0;
-  const dy = payload.clampedY ? (payload._edgeTop ? -1 : 1) : 0;
-  const sz = 5;
-  // nudge inward a touch so the triangle isn't clipped by the plot edge
-  const px = cx - dx * 3, py = cy - dy * 3;
-  let pts;
-  if (dx !== 0 && dy === 0) {           // left/right → horizontal triangle
-    pts = dx > 0
-      ? `${px+sz},${py} ${px-sz},${py-sz} ${px-sz},${py+sz}`
-      : `${px-sz},${py} ${px+sz},${py-sz} ${px+sz},${py+sz}`;
-  } else if (dy !== 0 && dx === 0) {    // up/down → vertical triangle
-    pts = dy < 0
-      ? `${px},${py-sz} ${px-sz},${py+sz} ${px+sz},${py+sz}`
-      : `${px},${py+sz} ${px-sz},${py-sz} ${px+sz},${py-sz}`;
-  } else {                              // corner → diamond
-    pts = `${px},${py-sz} ${px+sz},${py} ${px},${py+sz} ${px-sz},${py}`;
-  }
-  return <polygon points={pts} fill={fill} fillOpacity={Math.max(fillOpacity, 0.9)}
-    stroke={stroke} strokeWidth={1.2} strokeOpacity={1} />;
+  const r = clamped ? Math.min(payload._r, 5) : payload._r;
+  return <circle cx={cx} cy={cy} r={r} fill={fill}
+    fillOpacity={clamped ? fillOpacity * 0.5 : fillOpacity}
+    stroke={stroke} strokeOpacity={fillOpacity * 0.6}
+    strokeDasharray={clamped ? '2 2' : undefined} />;
 }
 
 function AxisControl({ label, lo, hi, onLo, onHi, suffix }) {
@@ -1734,17 +1716,23 @@ function ValuationChart({ data }) {
       sector: s.sector, segment: s.segment,
     })), [data, lang]);
 
-  // ── Auto bounds via winsorization (2nd–98th percentile) so a single PBR=23
-  //    or ROE=-47 outlier doesn't compress everyone into a corner ───────────
+  // ── Auto bounds: use the 1st–99th percentile (drops only the single most
+  //    extreme outlier like PBR=23) then add generous padding so points sit
+  //    comfortably inside the plot rather than on the edge. With this much
+  //    headroom, clamping almost never fires and every marker is a full circle.
   const auto = useMemo(() => {
     if (!raw.length) return { pbrLo:0.2, pbrHi:8, roeLo:-20, roeHi:30 };
     const pbrs = raw.map(p => p.pbr).sort((a,b)=>a-b);
     const roes = raw.map(p => p.roe).sort((a,b)=>a-b);
+    const pLo = quantile(pbrs, 0.01), pHi = quantile(pbrs, 0.99);
+    const rLo = quantile(roes, 0.01), rHi = quantile(roes, 0.99);
+    const rPad = Math.max(4, (rHi - rLo) * 0.08);   // ROE breathing room
     return {
-      pbrLo: Math.max(0.1, quantile(pbrs, 0.0)),
-      pbrHi: quantile(pbrs, 0.98),
-      roeLo: Math.min(0, quantile(roes, 0.02)),
-      roeHi: quantile(roes, 0.98),
+      // PBR padded multiplicatively (log-friendly): ÷1.25 low, ×1.25 high
+      pbrLo: Math.max(0.1, pLo / 1.25),
+      pbrHi: pHi * 1.25,
+      roeLo: Math.min(0, rLo - rPad),
+      roeHi: rHi + rPad,
     };
   }, [raw]);
 
@@ -1862,7 +1850,7 @@ function ValuationChart({ data }) {
         )}
         {!manual && nClamped > 0 && (
           <span className="text-[10px] text-sumi-50">
-            {lang==='ko' ? `이상치 ${nClamped}개 가장자리 표시 (자동 범위 조정됨)` : `${nClamped} outliers clamped to edges (auto-ranged)`}
+            {lang==='ko' ? `극단치 ${nClamped}개는 가장자리에 표시` : `${nClamped} extreme point(s) parked at edge`}
           </span>
         )}
       </div>
