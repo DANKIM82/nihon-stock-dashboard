@@ -384,6 +384,10 @@ def fetch_stock(meta: dict[str, str], retries: int = 1) -> dict | None:
         "perZ": None,
         "roeZ": None,
         "valZ": None,
+        # catalyst layer (attached in main)
+        "catalysts": [],
+        "reformDisclosed": None,
+        "recentCatalyst": False,
     }
 
 
@@ -642,6 +646,14 @@ def main() -> int:
         "--short-state", default="short_state.json",
         help="Path of the persistent JPX short-position state file.",
     )
+    parser.add_argument(
+        "--skip-catalysts", action="store_true",
+        help="Skip the catalyst layer (EDINET/TDnet/JPX reform).",
+    )
+    parser.add_argument(
+        "--catalyst-state", default="catalyst_state.json",
+        help="Path of the persistent catalyst state file.",
+    )
     args = parser.parse_args()
 
     tickers_path = Path(args.tickers)
@@ -783,6 +795,45 @@ def main() -> int:
     n_z = sum(1 for s in stocks if s["valZ"] is not None)
     print(f"  ✓ sector z-scores computed for {n_z}/{len(stocks)} stocks")
 
+    # ── Catalyst layer (best-effort: EDINET 5%, TDnet, JPX reform) ──────────
+    catalyst_meta = {"edinet": False, "tdnet": False, "reform": False}
+    if not args.skip_catalysts:
+        print()
+        print("⚡ Updating catalyst layer (EDINET / TDnet / JPX reform)...")
+        try:
+            from catalysts import update_catalysts
+        except ImportError:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            from catalysts import update_catalysts
+        try:
+            cat = update_catalysts(args.catalyst_state, tickers)
+        except Exception as e:
+            print(f"    ! catalyst layer failed: {e}", file=sys.stderr)
+            cat = None
+        if cat:
+            from datetime import timedelta as _td
+            cutoff_30d = (datetime.now(timezone.utc) - _td(days=30)
+                          ).strftime("%Y-%m-%d")
+            n_attached = 0
+            for s in stocks:
+                evs = cat["events"].get(s["ticker"], [])
+                s["catalysts"] = evs
+                s["recentCatalyst"] = any(e["date"] >= cutoff_30d for e in evs)
+                if s["ticker"] in cat["reform"]:
+                    s["reformDisclosed"] = cat["reform"][s["ticker"]]
+                if evs or s["reformDisclosed"] is not None:
+                    n_attached += 1
+            catalyst_meta = cat["meta"]
+            print(f"  ✓ catalysts attached to {n_attached}/{len(stocks)} stocks")
+        else:
+            for s in stocks:
+                prev = prev_stocks.get(s["ticker"])
+                if prev:
+                    s["catalysts"] = prev.get("catalysts", [])
+                    s["reformDisclosed"] = prev.get("reformDisclosed")
+                    s["recentCatalyst"] = prev.get("recentCatalyst", False)
+            print("  ⚠ catalyst layer unavailable — carried forward previous values")
+
     # ── Derive summaries ────────────────────────────────────────────────────
     sector_perf = compute_sector_performance(stocks)
     summary = compute_market_summary(stocks)
@@ -806,6 +857,7 @@ def main() -> int:
         "marketTone": generate_market_summary(_headlines_for_payload),
         "shortData": short_meta,
         "marginData": margin_meta,
+        "catalystData": catalyst_meta,
     }
 
     payload = clean_nans(payload)

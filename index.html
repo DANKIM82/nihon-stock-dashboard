@@ -196,6 +196,12 @@ const dict = {
   bookExport:{ ko:'CSV 내보내기', en:'Export CSV' },
   bookRemove:{ ko:'제거', en:'Remove' },
   bookNote:{ ko:'비중은 NAV 대비 %입니다. 숏은 음수로 합산됩니다. 데이터는 브라우저에만 저장됩니다.', en:'Weights are % of NAV; shorts aggregate as negatives. Stored locally in your browser only.' },
+  detailCatalysts:{ ko:'카탈리스트', en:'Catalysts' },
+  catNone:{ ko:'최근 90일 내 감지된 이벤트가 없습니다.', en:'No events detected in the last 90 days.' },
+  catNote:{ ko:'출처: EDINET 대량보유보고 · TDnet 적시공시 (최근 90일)', en:'Sources: EDINET 5% reports · TDnet timely disclosures (last 90 days)' },
+  presetCatalyst:{ ko:'최근 카탈리스트 (30일)', en:'Recent Catalyst (30d)' },
+  reformYes:{ ko:'자본효율 공시', en:'Reform Disclosed' },
+  reformNo:{ ko:'자본효율 미공시', en:'No Reform Disclosure' },
   filterSearch:{ ko:'종목 검색…', en:'Search ticker or name…' },
   filterSector:{ ko:'섹터', en:'Sector' },
   filterSegment:{ ko:'시장 구분', en:'Market Segment' },
@@ -391,6 +397,21 @@ function WatchlistStar({ ticker }) {
   );
 }
   
+/* ==========================================================================
+   Catalyst helpers
+   ========================================================================== */
+const CAT_TYPE = {
+  '5pct':    { ko:'5% 보고',   en:'5% Filing',  cls:'bg-vermillion-50 text-vermillion-600' },
+  buyback:   { ko:'자사주',    en:'Buyback',    cls:'bg-bull-soft text-bull' },
+  tob:       { ko:'공개매수',  en:'TOB',        cls:'bg-vermillion-50 text-vermillion-600' },
+  mbo:       { ko:'MBO',      en:'MBO',        cls:'bg-vermillion-50 text-vermillion-600' },
+  reform:    { ko:'자본효율',  en:'Reform',     cls:'bg-ivory-100 text-sumi-100' },
+  guidance:  { ko:'실적수정',  en:'Guidance',   cls:'bg-ivory-100 text-sumi-100' },
+  dividend:  { ko:'배당수정',  en:'Dividend',   cls:'bg-ivory-100 text-sumi-100' },
+};
+const catLabel = (type, lang) => (CAT_TYPE[type] || { ko:type, en:type })[lang] || type;
+const catCls = type => (CAT_TYPE[type] || {}).cls || 'bg-ivory-100 text-sumi-100';
+
 /* ==========================================================================
    Long/Short Book Context — persists positions to localStorage
    ========================================================================== */
@@ -1071,10 +1092,10 @@ function ScreenerFilter({ value, onChange, resultCount }) {
   const [showAll, setShowAll] = useState(false);
   const visibleSectors = showAll ? ALL_SECTORS : ALL_SECTORS.slice(0, 6);
   const update = patch => onChange({ ...value, ...patch });
-  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, watchlistOnly:false });
+  const reset = () => onChange({ search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, recentCatalystOnly:false, watchlistOnly:false });
   const toggleSector = s => update({ sectors: value.sectors.includes(s) ? value.sectors.filter(x=>x!==s) : [...value.sectors, s] });
   const toggleSegment = s => update({ segments: value.segments.includes(s) ? value.segments.filter(x=>x!==s) : [...value.segments, s] });
-  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.advMin !== null || value.shortMin !== null || value.belowBookOnly || value.qualityOnly || value.shortCandidatesOnly || value.watchlistOnly;
+  const hasAnyFilter = value.search || value.sectors.length || value.segments.length || value.perMax !== null || value.pbrMax !== null || value.divMin !== null || value.roeMin !== null || value.advMin !== null || value.shortMin !== null || value.belowBookOnly || value.qualityOnly || value.shortCandidatesOnly || value.recentCatalystOnly || value.watchlistOnly;
   return (
     <div className="bg-white border border-neutral-line shadow-editorial mb-6">
       <div className="flex flex-wrap gap-2 px-5 py-4 border-b border-neutral-line bg-ivory-50">
@@ -1084,6 +1105,8 @@ function ScreenerFilter({ value, onChange, resultCount }) {
           icon={<IconZap size={12} sw={2.4}/>} label={t('presetQuality')} />
         <PresetButton active={value.shortCandidatesOnly} onClick={() => update({ shortCandidatesOnly: !value.shortCandidatesOnly })}
           icon={<IconTrendDown size={12} sw={2.4}/>} label={t('presetShortCandidates')} />
+        <PresetButton active={value.recentCatalystOnly} onClick={() => update({ recentCatalystOnly: !value.recentCatalystOnly })}
+          icon={<IconZap size={12} sw={2.4}/>} label={t('presetCatalyst')} />
         <PresetButton active={value.watchlistOnly} onClick={() => update({ watchlistOnly: !value.watchlistOnly })}
           icon={<IconStar size={12} sw={2.4} filled={value.watchlistOnly}/>} label={`${t('presetWatchlist')} (${watchlistCount})`} />
         <div className="flex-1" />
@@ -1248,6 +1271,8 @@ function StockTable({ rows, onSelect }) {
                     <span className="font-mono text-[11px] font-semibold tabular text-sumi-300">{s.ticker}</span>
                     {s.belowBook && <span className="w-1.5 h-1.5 rounded-full bg-vermillion-500"
                       title={lang === 'ko' ? 'PBR 1배 미만 — 자본효율 리폼 대상' : 'Below book — TSE capital reform watch'}/>}
+                    {s.recentCatalyst && <IconZap size={11} sw={2.4} className="text-vermillion-500 flex-shrink-0"
+                      title={lang === 'ko' ? '최근 30일 내 카탈리스트' : 'Catalyst within 30 days'}/>}
                   </div>
                 </td>
                 <td className="px-3 py-3 min-w-[220px]">
@@ -1619,6 +1644,28 @@ function StockDetailPanel({ stock, onClose }) {
             <MetricRow label={t('colPerf1Y')} value={formatPercent(stock.perf1Y)} colorize={stock.perf1Y}/>
           </MetricGrid>
         </section>
+        <section className="px-6 pt-6">
+          <SectionTitle icon={<IconZap size={12} sw={2.4}/>}>{t('detailCatalysts')}</SectionTitle>
+          {(!stock.catalysts || stock.catalysts.length === 0) ? (
+            <p className="mt-3 text-[11px] text-sumi-50">{t('catNone')}</p>
+          ) : (
+            <ul className="mt-3 divide-y divide-neutral-line border border-neutral-line bg-white">
+              {stock.catalysts.map((ev, i) => (
+                <li key={i} className="px-3 py-2.5 flex items-start gap-2.5">
+                  <span className="font-mono text-[10px] text-sumi-50 tabular pt-0.5 flex-shrink-0 w-[72px]">{ev.date}</span>
+                  <span className={cn('flex-shrink-0 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide', catCls(ev.type))}>
+                    {catLabel(ev.type, lang)}
+                  </span>
+                  <span className="flex-1 min-w-0">
+                    <span className="block text-[11px] text-sumi-100 leading-snug">{ev.title}</span>
+                    {ev.filer && <span className="block text-[10px] text-sumi-50 mt-0.5 truncate">{ev.filer}</span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+          <p className="mt-2 text-[10px] leading-snug text-sumi-50">{t('catNote')}</p>
+        </section>
         <section className="px-6 pt-6 pb-2">
           <SectionTitle icon={<IconActivity size={12} sw={2.4}/>}>{t('detailLiquidity')}</SectionTitle>
           <MetricGrid>
@@ -1654,7 +1701,7 @@ function StockDetailPanel({ stock, onClose }) {
 /* ==========================================================================
    Filter logic + root App
    ========================================================================== */
-const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, watchlistOnly:false };
+const defaultFilters = { search:'', sectors:[], segments:[], perMax:null, pbrMax:null, divMin:null, roeMin:null, advMin:null, shortMin:null, belowBookOnly:false, qualityOnly:false, shortCandidatesOnly:false, recentCatalystOnly:false, watchlistOnly:false };
 function applyFilters(all, f, watchlist) {
   return all.filter(s => {
     if (f.watchlistOnly && !watchlist.includes(s.ticker)) return false;
@@ -1673,6 +1720,7 @@ function applyFilters(all, f, watchlist) {
     if (f.shortMin !== null && (s.shortPct == null || s.shortPct < f.shortMin)) return false;
     if (f.belowBookOnly && !s.belowBook) return false;
     if (f.shortCandidatesOnly && !s.shortCandidate) return false;
+    if (f.recentCatalystOnly && !s.recentCatalyst) return false;
     if (f.qualityOnly) {
       const ok = (s.roe ?? 0) >= 15 && (s.operatingMargin ?? 0) >= 15 && (s.debtToEquity ?? 99) <= 1.0;
       if (!ok) return false;

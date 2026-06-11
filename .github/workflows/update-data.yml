@@ -36,12 +36,13 @@ jobs:
       - name: Fetch latest stock data
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
         run: python scripts/fetch_data.py --output data.json --sleep 0.6
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update data.json"
-          file_pattern: "data.json short_state.json"
+          file_pattern: "data.json short_state.json catalyst_state.json"
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
