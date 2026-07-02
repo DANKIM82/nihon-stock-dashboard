@@ -1,7 +1,7 @@
 """
 Fetch Japanese stock data from Yahoo Finance and write data.json.
 
-This script is executed by GitHub Actions on a schedule (장중 30분마다, see
+This script is executed by GitHub Actions on a schedule (장중 10분마다, see
 .github/workflows/update-data.yml) but also runs locally:
 
     python scripts/fetch_data.py                     # writes ./data.json
@@ -231,6 +231,42 @@ def compute_div_yield(info: dict) -> float | None:
 
     return None
 
+
+
+# ============================================================================
+# Intraday fast fetch (장중 10분 업데이트용)
+# ============================================================================
+
+def fetch_stock_intraday(meta: dict[str, str]) -> dict | None:
+    """
+    장중 빠른 업데이트용: fast_info만 사용해 가격/등락만 갱신.
+    펀더멘털(PER, PBR 등)은 건드리지 않는다 — caller가 prev_stocks에서 병합.
+    약 0.05~0.1s/ticker, 250개 기준 ~30초.
+    """
+    ticker_code = meta["ticker"]
+    try:
+        yft = yf.Ticker(f"{ticker_code}.T")
+        fi = yft.fast_info
+        price = safe(getattr(fi, "last_price", None))
+        prev_close = safe(getattr(fi, "previous_close", None))
+    except Exception as e:
+        print(f" ! intraday fast_info failed for {ticker_code}: {e}", file=sys.stderr)
+        return None
+
+    if price is None:
+        return None
+
+    change = change_pct = None
+    if prev_close:
+        change = round(price - prev_close, 2)
+        change_pct = round((price / prev_close - 1) * 100, 2)
+
+    return {
+        "ticker": ticker_code,
+        "price": price,
+        "change": change,
+        "changePercent": change_pct,
+    }
 
 
 # ============================================================================
@@ -768,6 +804,14 @@ def main() -> int:
         help="Skip the catalyst layer (EDINET/TDnet/JPX reform).",
     )
     parser.add_argument(
+        "--intraday",
+        action="store_true",
+        help=(
+            "장중 빠른 모드: fast_info로 가격/등락만 업데이트. "
+            "펀더멘털은 이전 data.json에서 그대로 유지."
+        ),
+    )
+    parser.add_argument(
         "--force-catalysts", action="store_true",
         help="Run the catalyst scan even intraday (default: close window only).",
     )
@@ -800,8 +844,43 @@ def main() -> int:
     failures: list[str] = []
     t0 = time.time()
 
+    # ── intraday 모드: 이전 data.json 로드 (루프 전에 반드시 필요) ─────────
+    prev_stocks_for_intraday: dict[str, dict] = {}
+    _out_path_intraday = Path(args.output)
+    if _out_path_intraday.exists():
+        try:
+            _prev_payload = json.loads(_out_path_intraday.read_text(encoding="utf-8"))
+            prev_stocks_for_intraday = {
+                s["ticker"]: s for s in _prev_payload.get("stocks", [])
+            }
+        except Exception:
+            pass
+
+    if args.intraday and not prev_stocks_for_intraday:
+        print("⚠ --intraday 지정됐지만 이전 data.json 없음 → full fetch로 전환")
+        args.intraday = False
+
+    _sleep = 0.05 if args.intraday else args.sleep
+
     for i, meta in enumerate(tickers, 1):
-        result = fetch_stock(meta)
+        if args.intraday:
+            partial = fetch_stock_intraday(meta)
+            prev = prev_stocks_for_intraday.get(meta["ticker"])
+            if partial and prev:
+                # 펀더멘털은 전날 값 유지, 가격/등락만 덮어씀
+                result = dict(prev)
+                result["price"] = partial["price"]
+                result["change"] = partial["change"]
+                result["changePercent"] = partial["changePercent"]
+            elif partial:
+                result = partial   # prev 없으면 가격만이라도
+            elif prev:
+                result = prev      # 완전 실패 시 이전 값 유지
+            else:
+                result = None
+        else:
+            result = fetch_stock(meta)
+
         if result:
             stocks.append(result)
             tag = "✓"
@@ -818,7 +897,7 @@ def main() -> int:
                 f"{meta['nameEn']:<32s}  {elapsed:5.0f}s elapsed, ETA {eta:.0f}s"
             )
 
-        time.sleep(args.sleep)
+        time.sleep(_sleep)
 
     elapsed = time.time() - t0
     print()
@@ -841,14 +920,7 @@ def main() -> int:
 
     # ── JPX short positions (best-effort) ───────────────────────────────────
     short_meta = {"ok": False, "asOf": None, "coveredStocks": 0}
-    prev_stocks: dict[str, dict] = {}
-    out_prev = Path(args.output)
-    if out_prev.exists():
-        try:
-            prev_payload = json.loads(out_prev.read_text(encoding="utf-8"))
-            prev_stocks = {s["ticker"]: s for s in prev_payload.get("stocks", [])}
-        except Exception:
-            pass
+    prev_stocks = prev_stocks_for_intraday  # intraday 루프에서 이미 로드된 값 재사용
 
     if not args.skip_jpx:
         print()
