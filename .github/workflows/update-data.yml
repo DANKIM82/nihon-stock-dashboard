@@ -2,8 +2,8 @@ name: Update stock data
 
 on:
   schedule:
-    # 도쿄 장중 15분마다 (UTC 0:00-6:45 = JST 9:00-15:45)
-    - cron: "*/15 0-6 * * 1-5"
+    # 도쿄 장중 10분마다 (UTC 0:00-6:50 = JST 9:00-15:50)
+    - cron: "*/10 0-6 * * 1-5"
     # 장 마감 후 최종 업데이트 (UTC 7:30 = JST 16:30) — 카탈리스트 포함
     - cron: "30 7 * * 1-5"
   workflow_dispatch:
@@ -37,7 +37,18 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
-        run: python scripts/fetch_data.py --output data.json --sleep 0.3
+        run: |
+          # UTC 시간 기준으로 장중/마감 구분
+          # UTC 0~6시 = JST 9:00~15:00 → intraday 모드 (fast_info만, ~30초)
+          # UTC 7:30   = JST 16:30     → full 모드 (펀더멘털 포함, ~4분)
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" -ge 0 ] && [ "$HOUR" -le 6 ]; then
+            echo "📈 장중 intraday 모드 (UTC ${HOUR}시 = JST $((HOUR+9))시)"
+            python scripts/fetch_data.py --output data.json --sleep 0.05 --intraday --skip-jpx
+          else
+            echo "🔔 마감 후 full 모드 (UTC ${HOUR}시 = JST $((HOUR+9))시)"
+            python scripts/fetch_data.py --output data.json --sleep 0.3
+          fi
 
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
