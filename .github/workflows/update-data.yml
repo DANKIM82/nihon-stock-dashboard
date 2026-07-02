@@ -38,15 +38,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
         run: |
-          # UTC 시간 기준으로 장중/마감 구분
-          # UTC 0~6시 = JST 9:00~15:00 → intraday 모드 (fast_info만, ~30초)
-          # UTC 7:30   = JST 16:30     → full 모드 (펀더멘털 포함, ~4분)
           HOUR=$(date -u +%H)
           if [ "$HOUR" -ge 0 ] && [ "$HOUR" -le 6 ]; then
-            echo "📈 장중 intraday 모드 (UTC ${HOUR}시 = JST $((HOUR+9))시)"
+            echo "장중 intraday 모드 (UTC ${HOUR}시)"
             python scripts/fetch_data.py --output data.json --sleep 0.05 --intraday --skip-jpx
           else
-            echo "🔔 마감 후 full 모드 (UTC ${HOUR}시 = JST $((HOUR+9))시)"
+            echo "마감 후 full 모드 (UTC ${HOUR}시)"
             python scripts/fetch_data.py --output data.json --sleep 0.3
           fi
 
