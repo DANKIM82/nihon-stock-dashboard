@@ -1052,6 +1052,7 @@ function IndexDashboard({ indices }) {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-line border border-neutral-line">
       {indices.map(idx => <IndexCard key={idx.symbol} idx={idx} />)}
     </div>
+    <MarketHeadlines headlines={headlines} tone={marketTone}/>
   );
 }
 
@@ -2324,17 +2325,7 @@ function App() {
           <PortfolioBook stocks={stocks}/>
         </section>
         <div className="editorial-rule mb-10"/>
-        <section id="research" className="mb-14 scroll-mt-20">
-          <div className="mb-6">
-            <div className="text-[11px] tracking-[0.28em] uppercase text-sumi-50 mb-2">
-              {lang === 'ko' ? '리서치' : 'Research'}
-            </div>
-            <h3 className="font-display text-[28px] leading-tight tracking-tight text-sumi-300">
-              {lang === 'ko' ? '리서치' : 'Research'}
-            </h3>
-          </div>
-          <MarketHeadlines headlines={headlines} tone={marketTone}/>
-        </section>
+        
       </main>
       <footer className="border-t border-neutral-line py-8">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-sumi-50">
