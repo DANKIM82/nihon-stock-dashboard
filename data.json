@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-20T08:49:22.305324+00:00",
+  "asOf": "2026-07-20T10:29:31.164597+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -1645,7 +1645,7 @@
       "shortSharesM": 17.5,
       "shortDtc": 4.5,
       "shortReporters": 1,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-06-01",
       "shortCandidate": false,
       "marginLongM": null,
@@ -4679,7 +4679,7 @@
       "shortSharesM": 8.22,
       "shortDtc": 1.8,
       "shortReporters": 2,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-07-14",
       "shortCandidate": false,
       "marginLongM": null,
@@ -14867,7 +14867,7 @@
       "shortSharesM": 1.94,
       "shortDtc": 3.4,
       "shortReporters": 2,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-07-15",
       "shortCandidate": false,
       "marginLongM": null,
@@ -18260,7 +18260,7 @@
       "advValueB": 1.976,
       "advSharesM": 1.049,
       "sharesOutM": 221.41,
-      "freeFloatPct": 93.6,
+      "freeFloatPct": 93.2,
       "netCashB": 102.09,
       "netCashPct": 25.6,
       "shortPct": 4.4,
@@ -21120,6 +21120,24 @@
   },
   "headlines": [
     {
+      "title": "Japanese Yen: BoJ expectations skewed to upside – BBH",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaVZtYmlMekpCdWp4YndpWWVXUS1tdUpwaXlJZGNQZURFUHFLLTg1OGtlbUFNSVVuZ2N6NlhQLXRyU2N0dVdFRXVlRzd2dE40MGtmaDd6elA2RjlzQTNSS2xXS014Ni04S3dGNFFqV29KMDFmX1B2VHRhQWVIRjMtd0l4MFNCWGd1SFVKX2VzQ2V2M0sxTi1KYQ?oc=5",
+      "publishedTs": 1784541582
+    },
+    {
+      "title": "Euro holds steady vs Japanese Yen ahead of ECB, BoJ meetings",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ19oWDV5LUJRNjU1OE1QUS1PMWtuR3FEOEV2YjE1QkloMS0xT0hSbGU1ank3bmJOb3I4OFo3aDIzeHFWWC1LUWRPTkVRb0hFX3dBLVZIeXkza09qODA1SnVsRWpNNjQxTUw0QWk1amlhREE4d1lHVzBsTGdOeXloVktzWEZSUjgzM2pOWk1IeTJSSURWcEhXLU9nY3NKMWN2QzBJUg?oc=5",
+      "publishedTs": 1784541041
+    },
+    {
+      "title": "Australian Dollar rises against Japanese Yen due to RBA-BoJ rate differential",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeXFpTXdXaEp0RXJfS3R3b1pRUmhPYzAta19ieTBzcDJhd19qdHVISlBkVnpDUDdCYmZlbTdJd0FJUGItc1pQRnlPcGpjZFJsY09SeWEtb3dYckcwOTB3MFFOZ2dYdTA0Y0FVVDctMXJTOXB4dW1LR2RkYzhCVldTUlV2QnVEaDdiOGs2dEZyWS1tYWJPaEs1azRPX2hEakdYVlhCbGh6VThESEJoTkkwdFZZSmVvX19ZNEZBWA?oc=5",
+      "publishedTs": 1784539289
+    },
+    {
       "title": "Amazon Japan supplier AZ-Com Maruwa to adopt yen stablecoin JPYC for payments",
       "publisher": "CoinDesk",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaVhfalItMW1QTXNlZ1FoMkdIbHFwNmFVRlcyUXdwX3M3emQxaXlLeWg0ZG5IdjZ1V1hPc3AtMXVyeDdoQ2VLQUxTb0JWanFEUDNOVWNqUlYtNkxJQ0tKZ3B2cVBwSkY1NXZURVRKY2dkdVBoODA5enhuQ2g2QzNmUUlUSGdjLWlRXzA0MUgwN3BZanZyQzdOVWZVNzR2aGx0anRVblN1MWdvUm1LVUlKV0FJVkNTMWR2dl9SUXBoYw?oc=5",
@@ -21142,32 +21160,9 @@
       "publisher": "BitKE",
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9JazloQktUYVQ4SFZuSi1lM3hNaVFpakc4VFJ2NjVUSEFOR2ZSdC1BUWtEV0UwLUluNDQxRmlCb0M2NkV1eUl5eVlNSTgyaGVOS1ZpSWw5Z3FIQTNXNUtvM0JFbDI2TDEwaWo5M0h2LXBDMi1iSXpMZ2J3VGw?oc=5",
       "publishedTs": 1784523605
-    },
-    {
-      "title": "Chinese scholar stresses dialogue in Japan as ties hang by thread",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWm9LemRvQnBEaEtueHRTZFgzc0R3YllWOElucTVoZm91eXBLRzJsV0FGdEl5WFQzRVFRZWdNLUhTVl8zMU11OHRUTjgxcENjWVRDWHNIelRCSlR1cVBtRUlBeUJNZHQ3Vkp1bnY5YTVZdmw4dW1hSnczVEg2SHRucTFaejlMTVZBT28tQzdZeUdReTB1M2xmMFpJOTJkWXMwRF8yN0Q2dWZTQzhFQjM1Y1JMU2M?oc=5",
-      "publishedTs": 1784521860
-    },
-    {
-      "title": "Australian Dollar gains ground against Japanese Yen, intervention risk looms",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYUZIV2d0ZnpxWWNwOUJvWDFNbm5NTjVrX0FiRnZPcmxEbWx5azE5b2ZzWTc2UkVlLVpIVkw0Ry0tSTlfNjYyZXhCVU04ZzBDbXhJM3NIc0pqOEFYeE1oOUc2eFRCOUR4LW1JN1F4dTJFMlpUQy1xcnFqQkZQS096NGdTTXAxSnhocG9Ia253WmdjcFNaQkhKbjZGSnhTU2xWZUIwTm5aVHVWRURVdXp0NzI1bm9vUWhXREE?oc=5",
-      "publishedTs": 1784520996
-    },
-    {
-      "title": "Japanese Yen hangs near four-decade low as bears turn cautious amid intervention risks",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV2c4T0VlX2t4YUxtUUxWaUtNNXZaVENsZ1gwZ1NHbDRWMXl4eEF4YWxSa0R2T0doaXdnM2tYTU0xVFREbVdGSlp6ZFJzdDlOcVo5VmN6eWpjWENyemd1RHExRm0wZXk2aGxIWUhDT2taRGttVEJZMlJDVm4wdDktLXJGMEFrTTNlU3ktbk50Q3JVb05nVkctcmJyQ2E5NW1tbG1URWtuQXYwNzJkWHl3c1ZRZ3I2NkZ4YW1GX0xWZXhzMVhnMTQ1bw?oc=5",
-      "publishedTs": 1784512197
     }
   ],
-  "marketTone": {
-    "ko": "일본 엔화는 중동 분쟁 심화 속에서 미 달러 대비 40년래 최저치 부근에서 약세를 지속하며 시장의 주요 관심사로 부상했습니다. 엔화는 162.75 부근에서 하락세가 제한될 수 있다는 분석과 함께, 일본 당국의 개입 가능성이 커지면서 투자자들의 경계심이 높아지고 있습니다. 한편, 아마존 재팬 공급업체와 주요 물류 기업이 엔화 스테이블코인 JPYC를 결제 수단으로 채택하거나 검토하는 등 스테이블코인 활용 움직임도 포착되고 있습니다.",
-    "en": "The Japanese Yen remains a key focus, trading near a four-decade low against the US Dollar and underperforming amid intensifying Middle East conflicts. Market participants are cautious, with losses potentially limited near 162.75, as the looming risk of intervention by Japanese authorities keeps bears wary. Separately, the adoption of the yen stablecoin JPYC is gaining traction, with an Amazon Japan supplier and a major logistics firm exploring its use for payments.",
-    "model": "gemini-2.5-flash",
-    "generatedTs": 1784537368
-  },
+  "marketTone": null,
   "shortData": {
     "ok": true,
     "asOf": "2026-07-16",
