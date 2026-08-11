@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-11T01:06:42.557395+00:00",
+  "asOf": "2026-08-11T03:10:34.681133+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -11,13 +11,12 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 65606.71,
-      "change": -76.55,
-      "changePercent": -0.12,
+      "value": 66970.22,
+      "change": 1363.51,
+      "changePercent": 2.08,
       "high52w": 72831.73,
       "low52w": 41835.17,
       "sparkline": [
-        68557.73,
         67242.73,
         67743.5,
         68751.51,
@@ -36,7 +35,8 @@
         63957.53,
         66300.44,
         65683.26,
-        65606.71
+        65606.71,
+        66970.22
       ]
     },
     {
@@ -79,7 +79,7 @@
       "change": 480.0,
       "changePercent": 1.3,
       "high52w": 37930.0,
-      "low52w": 27250.0,
+      "low52w": 27405.0,
       "sparkline": [
         36460.0,
         36630.0,
@@ -22867,53 +22867,53 @@
   },
   "headlines": [
     {
-      "title": "Bessent’s Whatever-It-Takes Yen Pledge Masks Limited Firepower",
+      "title": "Yen Holds Steady As Traders Test Japan’s Resolve",
+      "publisher": "finimize.com",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOczhpZ1hNVzlZUnoxVllrR3d5bGttYnpOR1RNbWc0RC1TWUhBLWU1SGpzaEZHeW44ZDZPVnEtcTVIbW5MNkRDRG50V0k3bk91aC01QjVxSm56WUFxblVFenAySWxyQVJfRnBUamFsZEZncDhqOEJaXy1fQ2M2OEhXTnFR?oc=5",
+      "publishedTs": 1786415474
+    },
+    {
+      "title": "Japan's ¥370 Trillion Investment Plan to Boost Yen",
+      "publisher": "Briefs Finance",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdlNtVzVrYkw0MVNVb1A1Tmt3M2M0UHJhcHJGS21SU3d6OGZkQmFKSTR3eDVmNF9Well3cEYzaXBWcjB0VGRmTnJRa0FPUE4tU3ppUmZjVzd0WjR3MFY3X3NJbXhFbVNjYTdUZTNUdkJES3d4dk92V1NKT2VDeHhhZjc0SGo1LXJMczZzMTlPWS1vQQ?oc=5",
+      "publishedTs": 1786412890
+    },
+    {
+      "title": "Oil prices rise, Asia stocks drift amid US-Iran stalemate",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRnpVTlc5WDU3ZUFOMTJjSFRLNGFCWUItblV4clc0UnVXUi05VVBaRkFleHpsdWtmcl9YZDRtN3BkaDhqUy1PTWx1aDhjalNDc09RNGh5eDFYN2FnTGxraUlhRWtFUnl0UTJrbV82Yi1CaFEyNmNwaHlvQVdobElUNEZVaw?oc=5",
+      "publishedTs": 1786412460
+    },
+    {
+      "title": "Yen steadies as intervention boost fades; RBA in focus",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzhZVWVFX0IxZHRHRTExeHVkajFlQ3U3X3RhbjdFbW5uNnFHR0lLNmd5ZVZRT0tqd1h2X090Snd4bk5VLWhKd0UwaTlDUTNkbnpsLWRIdXFJWE1wdDlUbVd0SXJjb1JYaVlKTVVxUllYQ2lRZjNZcFA1LWVEY2xZRTVHdkNEd3cyNGRNNDhHUDRYem15Szg5dFFadXRCNnFYNHQ1Yg?oc=5",
+      "publishedTs": 1786412040
+    },
+    {
+      "title": "Japan Post Holdings Co Ltd (JPPHY) (Q1 2027) Earnings Call Highlights: Banking Strength Offsets ...",
+      "publisher": "Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdWtydkppT2RDd3p4VkMtMXNwMENfdFh6NzlYYm1NZVFOdXRFOFBhaDM4UkNqcVZyblZJVUZfX1htaE5aODRBZGd6Z2lLNVdKdDVTQW5MUzdUMXpoSlBJSUtMTlVtOEhOX0I5bDhQbWdfa3RkWXlMd21ZTm5EY2l3ZQ?oc=5",
+      "publishedTs": 1786410420
+    },
+    {
+      "title": "Yen erases half of intervention gains as traders test Japan and U.S. authorities",
+      "publisher": "japantimes.co.jp",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoMHh1MDdEYUdaalRYVFRPcnpIRXlFbGhXckNVT29neTZiMlBGd0FBUmRVTVpjVEhPMElseGhPME0tWHVxSnhSdWZOSGhiYmJSSEJNT08zaXgtTGsybG9paUthZFpRNHVBQUliY1lWaGdjT2ZyRVliWGQxUQ?oc=5",
+      "publishedTs": 1786410060
+    },
+    {
+      "title": "Bessent’s Whatever-It-Takes Yen Vow Masks Limited Firepower",
       "publisher": "Bloomberg.com",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc0FlazBkTUpmdjI5YUt6WHJSRjVXWW9KMmc5UDFPa0RNc0o1d0Zrc2lDVno5eHd1SUFZUW1yTWd3bWx6c1p4OVdGLW53LWl0cDM0NVlrRDBBR19JczdCOVV6aDc4UFVWT3picFFFcFliWkN2SHlCY2tiU1Q0SV9HSG1mNDVIaHpoNzdVRGFWNkNhYnRuejh1cWl3Y1ZJQ25uZ2lQQU5HSHNRdEd0RmtxVVpPTQ?oc=5",
       "publishedTs": 1786409520
-    },
-    {
-      "title": "Japanese Yen Outlook: US CPI, Intervention Risks Put USD/JPY Bulls on Notice",
-      "publisher": "FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMzh3aHE5cDhEUTh2SXE3aWltbHp6RnFVeWpjSTVnbmhGLUkxeTFBc1cwRjFpQ0NFbGsxcS1LM2tIam9INktWank3RzZTelUzS2YxeVljSUZsQzVGcktpUUdrRWJ1cXdDVU4xV2hMejdLV3pXSEMySzM3VlZBQkk1ZWRMc1NKaW9xXzd3a0NOR3h6XzQ3TktTM1VsSVF1VG9nOVNqN1pYdDltODNVZFU1amc1Y3dZaTdyYVN0M3ZR?oc=5",
-      "publishedTs": 1786409051
-    },
-    {
-      "title": "Yen Falls Back to 159 Per Dollar, Erasing Half of US-Japan Intervention Gains",
-      "publisher": "bloomingbit",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rQ0pqaFE0R2xueUhiQm50YkhXeHJnaG5mZno2bl9xTzVNZU1mT3FmSDB6YndZVEM2QmlxMmNKR1NleHdoRjJCSm5xeVdoZGdnS05USA?oc=5",
-      "publishedTs": 1786404989
-    },
-    {
-      "title": "Intervention bought the Japanese Yen a price, not a buyer",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTTZsVWdDY09QaDVvUEhhZ21ZcnZLOHNBZ3NvdTFnQjdkZlp3WnFjTnQySzdCWndTR0RsMk56OHA3NS1TamNVVDJjQ1hLWm1ndWhuZDgwb2FLaVpMUnl3QWRaSndia1dZSi1iOEJFNlcxOFpvNUtNUWJjeFlobXpnWE1jcU1zbEk2bDF0akliTUZYcnQ4S21IcVlnTmt1cGZN?oc=5",
-      "publishedTs": 1786404734
-    },
-    {
-      "title": "Yen support looks fragile; Tokyo opts for passive strategy, missed chance to press intervention advantage",
-      "publisher": "investingLive",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQkp5SnNvS1NUUzhzRld0enV4cUlvQkpwNzhDWjdwb3hjaE56Z2IyVndzekFrOVlkdEN0REhIREVLcGJCdmZJWkpPcUpfMkwxTzFubWx1SEljeThCbTNRV2VteUhjTW5uS2ZRcHRWTU01TDlMUUpqNzhqcjVfdENoR2lyc3NlMjRPNVhLQ19nR2t4MjFkcGVLTVNqaVJCNXVPeFM1ZHJCR1lkUkJSRVR6OWdtdWpFSmdHS0pKd1Q3VDNWMk1FWW1fNWNlYXNmdWxxWFE?oc=5",
-      "publishedTs": 1786403344
-    },
-    {
-      "title": "BOJ's rate-hike path runs into Takaichi's bond market problems",
-      "publisher": "reuters.com",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMVU4YTMyZzBlVkRSS1puYTluVjgycklHS2dRbnVCSkxVMWdjcEUtdlZ0NVpIakhpckplY0dGSGQyOFkxQmhpTnMzT0dRNWlfRHg5R2MzQ3BUcV90cTFjMlF5elB3SUVlMWloQnpleUowUHNHSFJKeW1iV2lkNnhtdGtWUURyQi1DcURaaG1SR18xa3lmd2MtaEsyb2E1Q082c25nX2E3UEYzV0JJcUQxOGNfMFZrdw?oc=5",
-      "publishedTs": 1786403315
-    },
-    {
-      "title": "Yen erases gains after US-Japan intervention",
-      "publisher": "Semafor",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMGxoUnJ4NEd4eF9oS08talcxOXJfc3FXZzVLSnUwVldtMHBXc0R1QWhESUFicEZYY1JtSHE5Z003V2tIQWxtS0MxM08wZjVaSXVSSS1LSF9BNkdPME5sWHpYNlBRXzF5NExhVGdwZ1Z2SE5kZnhtN3dJdk5oa3Z1X29xb2Uxci15RnY4Sl9jQ2g?oc=5",
-      "publishedTs": 1786401180
     }
   ],
   "marketTone": {
-    "ko": "엔화는 최근 미일 공조 개입 이후 상승분을 상당 부분 반납하며 다시 달러당 159엔 수준으로 약세를 보이고 있습니다. 시장에서는 과거 개입이 일시적인 가격 지지 효과만 있었을 뿐 근본적인 매수세를 유인하지 못했으며, 엔화 지지력이 취약하다는 인식이 확산되고 있습니다. 일본은행(BOJ)의 금리 인상 경로 또한 국내 채권 시장 문제에 직면해 있어 정책 여력이 제한될 수 있으며, 향후 발표될 미국 소비자물가지수(CPI)와 추가 개입 가능성이 USD/JPY 환율의 주요 변수로 작용할 전망입니다.",
-    "en": "The Japanese Yen is showing renewed weakness, erasing a significant portion of its gains following recent US-Japan intervention, with the currency falling back towards 159 per dollar. Market sentiment suggests that past intervention provided only temporary price support rather than fundamentally altering buying interest, and Yen support is now perceived as fragile. Adding to the pressure, the Bank of Japan's potential rate-hike path faces domestic bond market challenges, while upcoming US CPI data and the ongoing risk of further intervention remain key catalysts for the USD/JPY pair.",
+    "ko": "일본 증시는 엔화 움직임에 촉각을 곤두세우고 있으며, 트레이더들이 일본 및 미국 당국의 개입 의지를 시험하면서 엔화는 안정세를 보이다가도 다시 압력을 받는 모습입니다. 과거 개입 효과가 희미해지면서 엔화는 개입으로 얻었던 상승분의 절반을 반납했으며, 이는 현재 정책 수단의 효과와 당국의 대응 여력에 대한 의문을 제기하고 있습니다. 한편, 엔화 강세를 위한 370조 엔 규모의 투자 계획이 잠재적 촉매제로 주목받고 있지만, 유가 상승과 미-이란 교착 상태 등 지정학적 긴장 속에 아시아 증시 전반은 혼조세를 보이며 전반적인 신중한 분위기를 더하고 있습니다.",
+    "en": "The Japanese market is closely watching the yen, which remains steady but is experiencing renewed pressure as traders test the resolve of Japanese and US authorities following recent interventions. The boost from previous interventions appears to be fading, with the yen erasing half of its gains, raising questions about the effectiveness of current policy tools and the extent of available \"firepower.\" While a significant ¥370 trillion investment plan is eyed as a potential future catalyst to boost the yen, broader Asian stocks are drifting amid rising oil prices and geopolitical tensions, adding to the cautious sentiment.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1786410408
+    "generatedTs": 1786417843
   },
   "shortData": {
     "ok": false,
