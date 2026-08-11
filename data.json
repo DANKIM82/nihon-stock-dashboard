@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-10T09:01:34.024683+00:00",
+  "asOf": "2026-08-11T01:06:42.557395+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -11,12 +11,13 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 66970.22,
-      "change": 1363.51,
-      "changePercent": 2.08,
+      "value": 65606.71,
+      "change": -76.55,
+      "changePercent": -0.12,
       "high52w": 72831.73,
       "low52w": 41835.17,
       "sparkline": [
+        68557.73,
         67242.73,
         67743.5,
         68751.51,
@@ -35,8 +36,7 @@
         63957.53,
         66300.44,
         65683.26,
-        65606.71,
-        66970.22
+        65606.71
       ]
     },
     {
@@ -22867,67 +22867,67 @@
   },
   "headlines": [
     {
-      "title": "Japanese Yen: Intervention faces persistent rate gap – HSBC",
+      "title": "Bessent’s Whatever-It-Takes Yen Pledge Masks Limited Firepower",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc0FlazBkTUpmdjI5YUt6WHJSRjVXWW9KMmc5UDFPa0RNc0o1d0Zrc2lDVno5eHd1SUFZUW1yTWd3bWx6c1p4OVdGLW53LWl0cDM0NVlrRDBBR19JczdCOVV6aDc4UFVWT3picFFFcFliWkN2SHlCY2tiU1Q0SV9HSG1mNDVIaHpoNzdVRGFWNkNhYnRuejh1cWl3Y1ZJQ25uZ2lQQU5HSHNRdEd0RmtxVVpPTQ?oc=5",
+      "publishedTs": 1786409520
+    },
+    {
+      "title": "Japanese Yen Outlook: US CPI, Intervention Risks Put USD/JPY Bulls on Notice",
+      "publisher": "FOREX.com",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMzh3aHE5cDhEUTh2SXE3aWltbHp6RnFVeWpjSTVnbmhGLUkxeTFBc1cwRjFpQ0NFbGsxcS1LM2tIam9INktWank3RzZTelUzS2YxeVljSUZsQzVGcktpUUdrRWJ1cXdDVU4xV2hMejdLV3pXSEMySzM3VlZBQkk1ZWRMc1NKaW9xXzd3a0NOR3h6XzQ3TktTM1VsSVF1VG9nOVNqN1pYdDltODNVZFU1amc1Y3dZaTdyYVN0M3ZR?oc=5",
+      "publishedTs": 1786409051
+    },
+    {
+      "title": "Yen Falls Back to 159 Per Dollar, Erasing Half of US-Japan Intervention Gains",
+      "publisher": "bloomingbit",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rQ0pqaFE0R2xueUhiQm50YkhXeHJnaG5mZno2bl9xTzVNZU1mT3FmSDB6YndZVEM2QmlxMmNKR1NleHdoRjJCSm5xeVdoZGdnS05USA?oc=5",
+      "publishedTs": 1786404989
+    },
+    {
+      "title": "Intervention bought the Japanese Yen a price, not a buyer",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQzAxc09ybmFXamRxRHk5TXdNcUc0X1JoOHFhcGJHYVdEQ3BzRWRPbldqNG0tUmU3LV9XMW0wcnJmOW0wTEY1UWExTm81cGFVSzJ4aV83azB3NmYya2VSbHBsUDY2OFc0ZkttVXFvZ1htaTBUR3BFdXpWYWVnaE9GcldfRHBFekxOYVE0dlF4REdDRWs4dXRobVFKRTEyRDdz?oc=5",
-      "publishedTs": 1786351846
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTTZsVWdDY09QaDVvUEhhZ21ZcnZLOHNBZ3NvdTFnQjdkZlp3WnFjTnQySzdCWndTR0RsMk56OHA3NS1TamNVVDJjQ1hLWm1ndWhuZDgwb2FLaVpMUnl3QWRaSndia1dZSi1iOEJFNlcxOFpvNUtNUWJjeFlobXpnWE1jcU1zbEk2bDF0akliTUZYcnQ4S21IcVlnTmt1cGZN?oc=5",
+      "publishedTs": 1786404734
+    },
+    {
+      "title": "Yen support looks fragile; Tokyo opts for passive strategy, missed chance to press intervention advantage",
+      "publisher": "investingLive",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQkp5SnNvS1NUUzhzRld0enV4cUlvQkpwNzhDWjdwb3hjaE56Z2IyVndzekFrOVlkdEN0REhIREVLcGJCdmZJWkpPcUpfMkwxTzFubWx1SEljeThCbTNRV2VteUhjTW5uS2ZRcHRWTU01TDlMUUpqNzhqcjVfdENoR2lyc3NlMjRPNVhLQ19nR2t4MjFkcGVLTVNqaVJCNXVPeFM1ZHJCR1lkUkJSRVR6OWdtdWpFSmdHS0pKd1Q3VDNWMk1FWW1fNWNlYXNmdWxxWFE?oc=5",
+      "publishedTs": 1786403344
     },
     {
       "title": "BOJ's rate-hike path runs into Takaichi's bond market problems",
-      "publisher": "Reuters",
+      "publisher": "reuters.com",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMVU4YTMyZzBlVkRSS1puYTluVjgycklHS2dRbnVCSkxVMWdjcEUtdlZ0NVpIakhpckplY0dGSGQyOFkxQmhpTnMzT0dRNWlfRHg5R2MzQ3BUcV90cTFjMlF5elB3SUVlMWloQnpleUowUHNHSFJKeW1iV2lkNnhtdGtWUURyQi1DcURaaG1SR18xa3lmd2MtaEsyb2E1Q082c25nX2E3UEYzV0JJcUQxOGNfMFZrdw?oc=5",
-      "publishedTs": 1786350230
+      "publishedTs": 1786403315
     },
     {
-      "title": "Summary of opinions suggests Bank of Japan set for more tightening",
-      "publisher": "Financial Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04bWZOckRUVlVNa0lwRnF3R0xESHJQMXdxV0NOcnhRUWV5dVRXMjBXMGNuWlh2MnZESHJHSkNpQVpsREtzZ3JDWHhEODU3b1hNQkMwR2h0dkNyMmRNQzVXRGF6U0dpN1BzY0pfdDJWcWk?oc=5",
-      "publishedTs": 1786349990
-    },
-    {
-      "title": "Japan's Nikkei posts highest close in nearly four weeks on AI rally",
-      "publisher": "The Star",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTzJhWFZ1Q2o5OVl2Q0o0LVhYSFVEZjhxNlF4NmpDeWlWUWVPakxiZUU5RVJEVEZGbW04Nm9kR0NKSlpyVDl4czZRRE14b1FjekQyUU44ZXd1VURyVUtWbHNpcTM4YjM1NUNYNDJqY19hbFQ2ZWJ2RkVESGpmR1FPQy1jVzVCNG13VkgzQm1Ja0lCaktXa0twMWk4Q0ljdFZhUWVUSm05dmVESzFpQkJvbzZjNTgySFNFY2pYRzhjN3BYYmxUdU1tNEZ3?oc=5",
-      "publishedTs": 1786348860
-    },
-    {
-      "title": "Asian shares track Wall Street gains, while oil prices bounce higher",
-      "publisher": "washingtonpost.com",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZUpDd2ZMZVZZT0V6YS0tZzFrZHk3WFlFem9tWDVCRU5mcDlnaHhsa0FPNkdxRGFFbXNwNTl6S3JWMTNFTGVtTW9wU04wbzBHc2lIUEI2aU4yd2hjOUpfN1NOdy1DdDdmcHNidE5ORjZLY2hQd3RrVmpnWkN2aWswLXAwUkpoNkpIWFpzeFctWml3dGEtc1VLeGJvMXkzTDZSSnRUbDNvQmRobmJCSDUxc1ZwZ3c2NmpvTExndGpoSG00VGJRQlE?oc=5",
-      "publishedTs": 1786348448
-    },
-    {
-      "title": "Sony and TSMC Invest 1 Trillion Yen in Japan Sensor Venture",
-      "publisher": "조선일보",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVW1fXzlta0l5Umc3Z1NiN0RpelM0Sl9LT3A3RXhBcmd4d0FFTm4wSlNIMGZZTjRFUGhfY0VtNHI5czBTMHZSX3ZwRkFicWFCTVo5aWJLWEhNWTUzNENqM0dGb2Utc1RMUTk3WnBTM1NzT0YtMnFyNjBvMWxYalNQLUpQbUNmMjJC?oc=5",
-      "publishedTs": 1786348149
-    },
-    {
-      "title": "Japan's Nikkei posts highest close in nearly four weeks on AI rally",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZ3NrS1ZPUVhaYWxXQ3Z2dmx0ZkQ0SnBRV0MzSnBCWEpVMjFqelVIeGlJaXdWUHVqSVRobU5jakwzYm1iY284Slg4VHlOWkJLYl9GT3pxU201RnAtWl8zZTlFeER3bjJFQ19OQ0dXY0RPSzNBdUtGR3FIZlFXOVJnMHZmUGxxYmRqbXJFcTZsNXZQbEU3X0wxWDVlZHppQnJpS3ZxV0trMVdlTGRNSmdUck9HY3RnMVh0TFF0UkdqdnRDU3FJWnROOFlGLXdRaWp1MkN3?oc=5",
-      "publishedTs": 1786346038
+      "title": "Yen erases gains after US-Japan intervention",
+      "publisher": "Semafor",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMGxoUnJ4NEd4eF9oS08talcxOXJfc3FXZzVLSnUwVldtMHBXc0R1QWhESUFicEZYY1JtSHE5Z003V2tIQWxtS0MxM08wZjVaSXVSSS1LSF9BNkdPME5sWHpYNlBRXzF5NExhVGdwZ1Z2SE5kZnhtN3dJdk5oa3Z1X29xb2Uxci15RnY4Sl9jQ2g?oc=5",
+      "publishedTs": 1786401180
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 AI 랠리에 힘입어 닛케이 지수가 약 4주 만에 최고치를 기록했으며, 아시아 증시 전반이 월스트리트 상승세를 추종하며 긍정적인 흐름을 보였습니다. 특히 소니와 TSMC의 1조 엔 규모 센서 합작 투자 소식은 기술 부문에 대한 기대를 높였습니다. 한편, 일본은행(BOJ)은 추가 긴축에 나설 것으로 예상되지만, 금리 인상 경로는 채권 시장 문제에 직면할 수 있다는 우려가 제기됩니다. 엔화 개입 역시 지속적인 금리 격차로 인해 난항을 겪을 수 있다는 분석입니다.",
-    "en": "Japan's Nikkei index closed at a nearly four-week high today, buoyed by an ongoing AI rally and tracking broader gains in Asian shares following Wall Street. A significant 1 trillion yen investment by Sony and TSMC in a sensor venture also underscored positive sentiment in the tech sector. Meanwhile, the Bank of Japan appears set for further monetary tightening, though its rate-hike path faces challenges from bond market problems. The yen's potential intervention also remains complicated by a persistent rate gap.",
+    "ko": "엔화는 최근 미일 공조 개입 이후 상승분을 상당 부분 반납하며 다시 달러당 159엔 수준으로 약세를 보이고 있습니다. 시장에서는 과거 개입이 일시적인 가격 지지 효과만 있었을 뿐 근본적인 매수세를 유인하지 못했으며, 엔화 지지력이 취약하다는 인식이 확산되고 있습니다. 일본은행(BOJ)의 금리 인상 경로 또한 국내 채권 시장 문제에 직면해 있어 정책 여력이 제한될 수 있으며, 향후 발표될 미국 소비자물가지수(CPI)와 추가 개입 가능성이 USD/JPY 환율의 주요 변수로 작용할 전망입니다.",
+    "en": "The Japanese Yen is showing renewed weakness, erasing a significant portion of its gains following recent US-Japan intervention, with the currency falling back towards 159 per dollar. Market sentiment suggests that past intervention provided only temporary price support rather than fundamentally altering buying interest, and Yen support is now perceived as fragile. Adding to the pressure, the Bank of Japan's potential rate-hike path faces domestic bond market challenges, while upcoming US CPI data and the ongoing risk of further intervention remain key catalysts for the USD/JPY pair.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1786352501
+    "generatedTs": 1786410408
   },
   "shortData": {
-    "ok": true,
-    "asOf": "2026-08-07",
-    "coveredStocks": 111
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "marginData": {
-    "ok": true,
-    "asOf": "2026-07-31",
-    "coveredStocks": 245
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "catalystData": {
-    "edinet": true,
-    "tdnet": true,
+    "edinet": false,
+    "tdnet": false,
     "reform": false
   }
 }
