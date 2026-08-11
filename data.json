@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-11T04:39:24.092284+00:00",
+  "asOf": "2026-08-11T05:40:49.987676+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -22867,6 +22867,12 @@
   },
   "headlines": [
     {
+      "title": "Yen steadies as intervention boost fades; RBA in focus",
+      "publisher": "cnbc.com",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMk0xdzdIMk5ZVGVUWWk5bTlWWXBTRkZKQVJoOHhLamJJblFlUDdXLWYteEJWc21FZVhDd1VrbWNHOVhOX2VNSmJkbU9lUmJIcHExZ185bDdyTjF4MFNIaVNicnIzWWVkMlUyZEpid1pQeFNjRFdyTHlEYTdBOE1OSXZpYzdfYjFIUEJpLUQwQnRZRU5Q0gGaAUFVX3lxTE1WNkRuY0Jha1pRWEEzTDRROXA0aTlwQ2docjN3RVRudldEaDROUUZFRE5YSU5zY1RDRUtORjREdkdiMExLWG83TnhCMWNxVjhQQmpOR3JEY3ZKQjYwM1lJMjJzaU9FeGpRZ19CVEh2QmpvV0tlNnBZVGdMM1dGUnM0S2tpNW1kS3J4TmhNMWJDVmtvSlZLZTR4RHc?oc=5",
+      "publishedTs": 1786423432
+    },
+    {
       "title": "US-Japan Intervention Loses Force as Yen Slides Back Toward 160 Per Dollar",
       "publisher": "bloomingbit",
       "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5xa1ZjRzdhMEdWOEYtaVpYUDJQdnhDUWpCaWd4cW9UMTg0b2dIRUp4SGxaekQwZ3pPX1ptdVRYTnAtZFJRc1pfbjFGYUhndXBaSHFWUQ?oc=5",
@@ -22901,19 +22907,13 @@
       "publisher": "Nikkei Asia",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPR1ppOVhGZHN6SjNRZkJ1dlA5MmQwZnVLQm5zaHI0Y2l0YVdUSUkxYWVkY0txNXU3QlAwR1JfLWNFWW9JZkIzaktjNkFhcUxkMjJ0VkVlS2tkWlFDMkt1dTlJU0V5cTRySmltUG9Xa0Q3YTQyM2VTVktpR3RDek45LXlwazJvSFFpTTJBUzUzRll2U2VrUmViR0dldFhCNkMyYnpEWWFUX1dXSEFYVGtULUJlTW1idw?oc=5",
       "publishedTs": 1786418460
-    },
-    {
-      "title": "Japanese Yen holds range in thin holiday trading amid intervention speculations",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRmdkTy1WbnhBcTFJOTd0d1NYLVMxZ2NGcTNRZm9xOWFqa2hmdk1QbER6emN1R0tMU29ZSjRVeGczNEJBYWJBdk9TRFdzaC14M2xGSE5TN1lYRzdqTUdTODB3cU1YY0VjdFdsWnIyb3BjQVAyM3pSdGd4RzU0bzhPczNwWGpkV1N4ZlFCcDFLanU0bjJ3WDN6dFJKV2Q5MVZ3bnlXQm1BNDJadWpvNkFnbFNySEVlRVpWNTJXZTMtWQ?oc=5",
-      "publishedTs": 1786418091
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시 헤드라인은 엔화 약세에 대한 지속적인 우려가 지배적입니다. 미일 당국의 개입 효과가 약화되며 엔화가 다시 달러당 160엔에 근접하는 가운데, 국내에서는 이자카야 파산이 사상 최고치를 기록하며 음주 문화 변화를 시사하고 중국의 대일 희토류 수출이 급감하는 등 공급망 불안도 부각됩니다. 또한, 간토 지역에 태풍 상륙 가능성이 제기되며 추가적인 위험 요인으로 작용하고 있습니다.",
-    "en": "Today's Japanese market headlines are dominated by persistent concerns over the yen's weakness, with intervention efforts appearing to lose force as the currency slides towards 160 per dollar. Alongside ongoing currency volatility and intervention speculation, domestic challenges are highlighted by record izakaya bankruptcies and a significant plunge in China's rare earth exports to Japan. Further risks include a potential typhoon landfall in the Kanto region, while some analysts speculate a Fed's Japan Yen plan could impact Bitcoin.",
+    "ko": "오늘 일본 증시 헤드라인은 엔화 약세에 대한 지속적인 우려를 부각하고 있습니다. 최근 개입 효과가 희미해지면서 엔화는 다시 달러당 160엔 수준으로 미끄러지고 있으며, 국내에서는 이자카야 파산이 사상 최고치를 기록하며 음주 문화 변화를 시사합니다. 또한, 중국의 대일 희토류 수출이 급감하여 공급망 문제가 제기되는 가운데, 간토 지역에 태풍 상륙이 예고되어 추가적인 위험 요인으로 작용하고 있습니다. 한편, 연준의 '일본 엔화 계획'이 비트코인에 미칠 영향에 대한 투기적 논의도 주목받고 있습니다.",
+    "en": "Japanese market headlines today highlight persistent concerns over the yen's weakness, as the impact of recent intervention fades and the currency slides back towards 160 per dollar. Domestically, Japan faces record izakaya bankruptcies, signaling shifts in consumer culture, while a significant plunge in China's rare earth exports poses supply chain challenges. Additionally, a typhoon is expected to make landfall in the Kanto region, adding a weather-related risk, alongside speculative discussions linking a potential Fed 'Japan Yen Plan' to Bitcoin's performance.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1786423175
+    "generatedTs": 1786426858
   },
   "shortData": {
     "ok": false,
