@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-21T08:14:54.591483+00:00",
+  "asOf": "2026-09-21T14:30:56.154675+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -13381,7 +13381,7 @@
       "advValueB": 1.861,
       "advSharesM": 0.909,
       "sharesOutM": 279.75,
-      "freeFloatPct": 90.1,
+      "freeFloatPct": 90.0,
       "netCashB": 4.58,
       "netCashPct": 0.8,
       "shortPct": null,
@@ -23271,53 +23271,53 @@
   },
   "headlines": [
     {
-      "title": "Tokyo Market Closed as Yen Intervention Watch Dominates Silver Week",
-      "publisher": "News On Japan",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iSnh6NXN0N3VmSUZrZjZ6czBZYllRVHJENkdVcjlLZXh1dHJQMjNpeWNSTWozYk16VVdmcDlBNWNUdWg4cjR3bzR6cGlqMW1oZDQtdQ?oc=5",
-      "publishedTs": 1789976910
-    },
-    {
-      "title": "Stocks advance after Bessent says talks with China were successful before Trump-Xi meeting",
-      "publisher": "ABC News - Breaking News, Latest News and Videos",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObXp2cHE2MFRzUkQwUEFFbnFWbUpBUUowUVNCS0RzSUg1UmdMbnhQZVo5N3h5UGhIZ0xsTHViVm5yYks1UnktNFM4U0V4bUt4cEg5QXlldjhnb0JoT3BmNmRFdVVFaXNzd3JEQzNkdjRyZ3BOck1NcEE1ZkRMTmtzZ0xDUEEyWnc5bVdET1dCWHZWNnNZVFdKWGE4R01PVDNSWG54bW80NVI4d9IBrwFBVV95cUxQdXpLLXFsRmdhbHEwWjdDVktvWXNjc2o3bjBKWFlObnN1dWdtczlsT3Vra1g3SzB6UU02Y3B5Sl85aV8zbnNpaExRNll3N3VhRnItMDVERnpnZG5hRFZsVnhTTWl5dl9Ua0plTEpmNTZqXy1veHI3VDFGdXMxdU84T1NsTllGTk83WU1RWmdMTXRQa2dmdWIteVNCS3lCR0Z6aHlibWtPZHI4UkxKNndn?oc=5",
-      "publishedTs": 1789976272
-    },
-    {
-      "title": "Japanese Yen: Policy delay risks weakness against US Dollar - Commerzbank",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUHRGSDczQ0x3Z3NKTUdZcE5XOUJ5N016eWRzdkRUZmNYOEVrUDk3WWRiUUpBSk9MX1ZrWkdkVF9FUVY0WjhOa1pnV2JqQUxFV2o1VWhyeDRKSnk1NFE2MHE1QjhCOHJrNGN3VjdueFgzVUhpdWh1M1podjBFMm9qOW1IWnJjNTRMVFI3ZWNFdURhSWR5Q25kdTBrSURZOEdaRERiNVpxYnhMZ3h0UnUxYjFvNA?oc=5",
-      "publishedTs": 1789973588
-    },
-    {
-      "title": "Tech lifts share markets in Asia as oil slips",
-      "publisher": "WTVB",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1UaXN6cDhIV09FX3FOanNCbTdMUWF5MXV1VWVpNUc1R2RpaDNfUWY4X1o2V2ZXYzlPVWdWcU1waFcxRjdjNjBrTG9XenZyQjdwREdfUTNRRHlrTWdYV2FJM1dSWDBkdlFHaDFhLVdod2FyQTBtZEJDVDExVmc0dw?oc=5",
-      "publishedTs": 1789968078
-    },
-    {
-      "title": "Stocks advance after Bessent says talks with China were successful before Trump-Xi meeting",
-      "publisher": "News4JAX",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbkJDN1VhZ2EyM3NhUVEweHRUUVRteWpJMXJnQlNrQTFiQ1g5ZDk3bTA5WjJuTlJBQ3c3OFMwTWFyVVVqLUdlQ25RaE1ESjJ4Y0VOXzA3dWN1ZEttX2xfLU9kaXlRTnBSOHNzRk9VV19DWFdOazRndW9PNFdWdHNTTFdGcDN3NzE3eVZKMk5IZWR6WXlFM1ZsNjNremxxeDNfcWJvTk9Zd2t2am9DMTlFOGtMaXZ3TEJVZmZwakUwczJ6WnZ0d1JRUHBtSWZIWUxTR3c?oc=5",
-      "publishedTs": 1789967976
-    },
-    {
-      "title": "Yen moves toward two-week low as Japanese authorities watch closely",
-      "publisher": "Economies.com",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZHplajZYd0tWcDFqMXNNREdqbzd2OVk5N25TWVBaYWhLOHZOdmJObTJQc3lfSkNlWjZEakgwa0dNLTV5WmVUNW5KTkFOU05LanZWODdiMnZLdGZ0eld3R0N6LVowY3dxOWRCbkF5OXFZdW9mZUdoOHU3U1BkenpwcnNOMUFDSDJrQUs3dmJTY2VsRDQ4VFlTUlkyOEI0SW9ZNGVRLVplTHMwc3dtdTdwM0tqaVBZcmJoT1E?oc=5",
-      "publishedTs": 1789967100
-    },
-    {
-      "title": "Japan's disaster worries lift demand for emergency supplies",
+      "title": "Takaichi to stress Japanese investment in US in talks with Trump",
       "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbXZuV3ViekJkd0xzOUV2b2syLWZuRFV5R2lIWDJ3eHRJUVkxOHNrcjE3Qk5vMlZjcFNaSEpIZ2NNb1c5TV8ySlE4MFFjekQxVFZISjRXMnVfVWdFU3U2X2VMdjhSckEyaUVOSk5yZl9uLWFQMXRJMnJzUHlxNEhDWDUwVGlIeHZlcmZSNlJkWXBVMGVTZy1sMHdKUHpEdjM3aVBDbUxSME9UU0ZTVVE?oc=5",
-      "publishedTs": 1789965600
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOREVSbkJNUVhEUXBnaFY2UHMzdHU4ZmZIUTdjbEtoNkhQVnNubkhDc2VLeGxGRm55YUo0WHhzUTQwS1htUktlZGp6UjExLXlsLXVNcmtXU2VBUTdzNjRiaHM4alhtbzc2bG1wZFhuU2RIOHZwb3FWcjllQUN0SzM2TjUtdkpKX1liNURUT3h1Z1BEaFl4dFNQeEYzdm9uNWNjYW15RVEzVE9wZ3JOdnhxY2pEVnM2enJxR0hoVGFn?oc=5",
+      "publishedTs": 1789999860
+    },
+    {
+      "title": "UBS AM’s Zhao Is Ready to Sell Yen If Japan Intervenes Again",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ0JsbTRIVXBKSEgxUVRCY2xiVGJGVkZIYmZWOFBjOUM2TFRubEdWcjJZVzE4ekptVms3NXd4bmt0bEt3NS16eTl5VVM5SFBNalVwZHhTdFBZRF9QY21TM3ViMXhsZ0RRRFQ1UGJjeFRxdDR1emlyOWVYQ1YwbDhkZHZPS3IyS3FGR0p1YTlWcFd3a25EbEVPcEswSTQzN1o5bzBPRlk4dDdham1IaG1UMw?oc=5",
+      "publishedTs": 1789994568
+    },
+    {
+      "title": "Swipe east: Tinder operator steps up expansion in Japan, CEO says",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMzl2V1NkZ0s1TjltMUtFbnh6TkZuRy1GcDFFWjFxZngtak1VdUFyZWpZd2Y0c1BaUjFLTFdfYVhGSlR3engzUkczZFFJUXl2bkl0dHBST3dyaFFlSzhDMkU2VTVSMll1RVhWNEF2aGZ4WGJqaDQ2MVdFYWxtVkNXQ1ZDWXpLZWhBWnJSQ04wYlowRkFHLURfdnZPa2c2MWVKWFhyTWRWQW5fQkk?oc=5",
+      "publishedTs": 1789994460
+    },
+    {
+      "title": "Japan: here’s why the yen no longer attracts carry trades",
+      "publisher": "Il Sole 24 ORE",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPd2RRQlBJZkVsYm5iVkhKYzgzcGZwZl9LWDJrMnJyTWZQR1lScnk5VUd5ajRNNGlJQ09DUWZabG1zVHF5WWRZWkQyWUplR3BjY0NyN0Y0aXMzcEtTdmhiRWRMdmo2UFVpa1lDU01iTHdacXBlbkNCdVI1RE5MT21kMnZxT2xJSGdLTGtfRnlMSzQyRFQ0dXlEeFlJN2xBQQ?oc=5",
+      "publishedTs": 1789994216
+    },
+    {
+      "title": "BOJ Conducts Rate Check ahead of Long Holiday Period in Japan",
+      "publisher": "nippon.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSTNvMHVvSE9MY1VkRWV3S2hlY0QzcG96cXJ6M2hXR0laa21sazJ3OHRKejZGdDhxX1JhVGhnRGRIcTBOT2I3V05LNWUxc0ludTJleVJKTlY0RW95bk10VkZlMXNiZm9QM0tyNWhuSGlZeGw0NE1TMnNUYVFVZ0JseXJHTW5RTnF6R3d4dkd6T2hIb1VIV1ZTWHZ0bzdFalVzS1QybnpIbG5jNktjWVRta1hQU1Q?oc=5",
+      "publishedTs": 1789993165
+    },
+    {
+      "title": "For policymakers, markets prove to be a tough crowd",
+      "publisher": "Axios",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBOVXc3a1prbDlKSmdxWFJleEk0dXlLQVFhcEdoVll5M05ReG5PNFhVMi1TSWFFQmVGSTRLdGpMUnZvZ0o5SjFxY0hYTEduNV9DeHMwRVYtajI0Uk9mVk1mVzJuRkpqdWJ2?oc=5",
+      "publishedTs": 1789989491
+    },
+    {
+      "title": "Funds warm up to Japan's yen",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVVTUUo2M2lQdWFhSHdFcFBYY1VEZDltdi1iaHU5Sk1CUkR2S1hSaWNGUFptQUFheXp0LWNhUV9VRWpzNmlTNGJmOUF5YkctbGFXS1hHQ0lkR0JFRzNZOWswSjdCcnZiS1NGeFdEMFA4bk5jeHRUUWNwRnE1WWJIUG90SDdfSF82WnpyUGFLWU96SDZSTDl2WGducmZCOEk?oc=5",
+      "publishedTs": 1789986285
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 실버 위크로 휴장한 가운데, 아시아 증시는 미중 무역 협상 진전과 기술주 강세에 힘입어 상승세를 보였습니다. 한편, 엔화는 2주 만에 최저치로 약세를 보이며 당국의 개입 경계감이 고조되고 있습니다. 코메르츠방크는 일본의 정책 지연이 엔화의 추가 약세 위험을 키울 수 있다고 분석하며, 엔화 움직임이 주요 관심사로 부상하고 있습니다.",
-    "en": "Japanese markets are closed today for Silver Week, but broader Asian sentiment shows stocks advancing, buoyed by positive developments in US-China trade talks and strength in the tech sector. The Japanese Yen, however, is weakening towards a two-week low, with authorities closely watching for potential intervention. Commerzbank notes that policy delays risk further yen weakness against the US Dollar, making yen movements a key focus.",
+    "ko": "오늘 일본 증시 헤드라인은 엔화 동향과 일본은행(BOJ)의 통화 정책에 대한 복합적인 시각을 보여줍니다. 엔화 약세가 지속되며 캐리 트레이드 매력이 감소했다는 분석이 나오는 한편, 일부 펀드는 엔화에 대해 긍정적인 시각을 보이기 시작했습니다. 일본은행은 장기 연휴를 앞두고 금리 점검을 실시하며 정책 변화에 대한 시장의 기대를 높였으며, 이는 주요 촉매로 작용하고 있습니다. 한편, 시장은 잠재적인 엔화 개입 가능성에 주목하며 주요 자산운용사들은 이에 대비하고 있는 모습입니다.",
+    "en": "Today's headlines highlight a mixed sentiment surrounding the Japanese market, primarily driven by yen dynamics and Bank of Japan policy speculation. The yen's weakness and its diminishing appeal for carry trades are prominent, though some funds are reportedly 'warming up' to the currency. A key catalyst is the BOJ's recent rate check ahead of a long holiday period, fueling anticipation of potential policy shifts. Meanwhile, the market remains watchful for possible currency intervention, with some major asset managers ready to act.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1789978503
+    "generatedTs": 1790001064
   },
   "shortData": {
     "ok": true,
