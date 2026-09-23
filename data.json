@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-23T02:39:33.404251+00:00",
+  "asOf": "2026-09-23T08:00:55.681853+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -2419,7 +2419,7 @@
       "revenueGrowthYoY": 40.4,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 9.21,
+      "perf1Y": 7.85,
       "sparkline": [
         666.1,
         672.2,
@@ -6485,13 +6485,6 @@
           "title": "大量保有報告書 (신규)",
           "filer": "National Indemnity Company",
           "source": "edinet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "buyback",
-          "title": "自己株式の取得状況及び取得終了に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
         }
       ],
       "reformDisclosed": null,
@@ -9211,20 +9204,6 @@
           "title": "譲渡制限付株式報酬としての自己株式の処分の払込完了について",
           "filer": null,
           "source": "tdnet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "reform",
-          "title": "資本コストや株価を意識した経営の実現に向けた対応に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "buyback",
-          "title": "譲渡制限付株式報酬としての自己株式の処分について",
-          "filer": null,
-          "source": "tdnet"
         }
       ],
       "reformDisclosed": null,
@@ -10291,7 +10270,7 @@
       "revenueGrowthYoY": 14.2,
       "epsGrowthYoY": 210.1,
       "belowBook": false,
-      "perf1Y": 6.06,
+      "perf1Y": 7.38,
       "sparkline": [
         4137.0,
         4134.0,
@@ -13423,7 +13402,7 @@
       "price": 6078.0,
       "change": -215.0,
       "changePercent": -3.42,
-      "marketCapB": 564.34,
+      "marketCapB": 556.44,
       "per": 16.84,
       "pbr": 1.07,
       "dividendYield": 2.96,
@@ -13459,10 +13438,10 @@
       ],
       "advValueB": 3.314,
       "advSharesM": 0.533,
-      "sharesOutM": 92.85,
-      "freeFloatPct": 99.7,
+      "sharesOutM": 91.55,
+      "freeFloatPct": 101.1,
       "netCashB": -178.56,
-      "netCashPct": -31.6,
+      "netCashPct": -32.1,
       "shortPct": 1.04,
       "shortSharesM": 0.99,
       "shortDtc": 1.9,
@@ -13631,7 +13610,7 @@
       "revenueGrowthYoY": 0.7,
       "epsGrowthYoY": 4836.4,
       "belowBook": false,
-      "perf1Y": 26.85,
+      "perf1Y": 26.23,
       "sparkline": [
         1917.0,
         1933.5,
@@ -15167,13 +15146,6 @@
           "date": "2026-07-23",
           "type": "buyback",
           "title": "譲渡制限付株式報酬としての自己株式の処分の払込完了に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "buyback",
-          "title": "譲渡制限付株式報酬としての自己株式の処分に関するお知らせ",
           "filer": null,
           "source": "tdnet"
         }
@@ -20234,20 +20206,6 @@
           "title": "大量保有報告書 (신규)",
           "filer": "野村證券株式会社",
           "source": "edinet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "buyback",
-          "title": "譲渡制限付株式(RS)報酬としての自己株式の処分に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "buyback",
-          "title": "業績連動型譲渡制限付株式(PSRSU)報酬としての自己株式の処分に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
         }
       ],
       "reformDisclosed": null,
@@ -21873,13 +21831,6 @@
           "title": "譲渡制限付株式報酬としての自己株式の処分に関するお知らせ",
           "filer": null,
           "source": "tdnet"
-        },
-        {
-          "date": "2026-06-24",
-          "type": "buyback",
-          "title": "自己株式の取得結果および取得終了に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
         }
       ],
       "reformDisclosed": null,
@@ -23249,6 +23200,24 @@
   },
   "headlines": [
     {
+      "title": "Japanese Yen weakens further against US Dollar as hawkish Fed bets dominate",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMFM5V19USEZZZjd6OUN1Rmlpc1puN0cxRkxHdEMtSVNoNC0wQzlWUjJrXzNuRkJiZmpTWkxfSnd4ajlFbEY0T2R1Y2NNVGQxWEhSVTl4NTI1aUR0ZERZY3JybmJtTnoxaXpvRXh3ZEE5SHBOaXBqbTdBVGVLSGJsazVJTXk2cDBxNldRcXYyWDRqVmtBcWR1SXdKQ3VfTTRJSHZaSGtPT0dzd25YWWhXMG9vZ29Bckx4SlE?oc=5",
+      "publishedTs": 1790145094
+    },
+    {
+      "title": "Japan draws foreign couples for weddings as domestic marriages decline",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNTMxOS1PdXA5SWVWV2owd0dTZGZtTkttMWVIZGdrdUxUY1NzSlRWOFloLTZBMktTaDF4WWtpTUF1X1dUR2d1eGpUb21IdS0xenczT0RwdUFEaDZMZTh2N0ZmNUV2X051THptSF96eXcwY2o4SmRMemFRRE0xWkN0NXdmUS1pRG1qdThRWDE1MmkwcnZQOWpnWk94Y1VQMkRRczNOZlMzZlNZajFtOXR6RERWWFFwSjl5MWc?oc=5",
+      "publishedTs": 1790136360
+    },
+    {
+      "title": "3 Japanese Dividend Stocks With Yields Over 3%",
+      "publisher": "simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLUFTREJJOGxlTWdZXzBtTVZtNGVYTWdEWHRoWFNKeGk2WDVDMUdEXzlGNFRlbVZvejdQVWc2U0doUUE4SHZKNDY4aDZ6UjFEMXdadmxadmc3VkI3bnptUXRTdXN1Z2dNM1dKZUdLek9UYjY1Ymk4NTdKUV9MVlkxeFBjajdsZ2xCVmZUMlZOLWF6YkdSUV9PSXlXR0U0MWl2Ny1Va0xsYzdHTGVGOUVjSFA0UmNMVEI3ZkJEelRfWdIBxAFBVV95cUxQSUcwakRleW1zMDdkNkstbVNPSHFia0xkaDFfVDUweDJhNGYySG4xYmowbUZobDUzN1VaNkRtZ3VvaUJPSno2eHprelh1c2l3eGFsUk1BY1pVQThZcFoxd2dINmdwcG5zdG9obFh3eDVBRWhTY0hoelVOOFdPaUFKUUpxbjNCRkpDQ0Nnem8xczRRZ0s2TlhQUVhlU1g4VVZHcFQ2MWxYSGVBWGZRMWpGRlFuV0EycFJwM1JpVEh1a3BSeW1X?oc=5",
+      "publishedTs": 1790130904
+    },
+    {
       "title": "Japan PM voices support for International Criminal Court in UN speech",
       "publisher": "Nikkei Asia",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQd1l5ZXoxZ09lM1BVbTduSGJjTTJwVXVSekpROF8tejlxSWNXMUNPVnVid3J5TTBkbGRuZkFLRDF3bU01QTJEUnZ4RmswUUg3RkhDLXY0TVVCWkwwaEtRTWhZWGVHXzVnZ2ptVTJuOVBNSGJ0LWpzeURCUGZzbmw0Yk9vOWVTRG0xa1d3YUpTUXppWk9MUmZseTNoUkxzZXI0Rm5GVlFBdFdEVDdvcEI3SDZLYXo0WlM0VWtwcF9wOXZaWjl1?oc=5",
@@ -23261,7 +23230,7 @@
       "publishedTs": 1790129281
     },
     {
-      "title": "Asia stocks ride tech wave higher, oil stays subdued",
+      "title": "Asia stocks ride tech wave higher, oil slips again",
       "publisher": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSzB2Vlh0Nm9MZUlDRnA2S1pIMUJXWmZtdlZEVUdFRDV2WEJ1U3pLQnJKUFNBU3YyZGxXZ0trVk1tdm9lVFp0aEh5N0VpVUdOZDNWYjRzOTdUVW84bEYwYnZHNEQ1X213dHl5OGlpQWNSUEFkdXRpRC1rUTRDaDRBMFh2Zw?oc=5",
       "publishedTs": 1790128260
@@ -23271,45 +23240,27 @@
       "publisher": "Japan Wire by Kyodo News",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJUjlscWxBbkl5eFBwMEdzNElyaHRoc05aUy1adFA2dGg3M2NOVjRYYlQteFkwUTFSYTE5dU1OYzV4bFJ1OTNBaHUwSXU5WFdGNm55V0xxN0Ztdw?oc=5",
       "publishedTs": 1790126400
-    },
-    {
-      "title": "3 Japanese Quality Stocks With ROE Over 25%",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWVNhR19EVWxjTlpPdkF3eEFUNnRvOFpCZkJ3MmZaZ1R5eHVEQ0p5Q3RnbE91eUY5ZnBvY0hOTUVfc0JPZ0NTaExWZ0ZnN0ZyZDBzdUVHTW1JajZ0OF85Tk5RR040YmNxN3NIV3R5b0g2TjlDdVZPNDMwWjc1SDIyUG5kMXZ0ZTRZb285eS1UTFVNZXNIYVhPVjFB?oc=5",
-      "publishedTs": 1790122860
-    },
-    {
-      "title": "The Japanese Yen spikes and unwinds as Iran offers to reopen Hormuz",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMFdZaTRTZWtIUUN1LUYwckJ0S3hWMVUyN252ZFpkU2ZRLUttM0x5bVlNbndoSlRhaDE3Yl91WTR2NWo2OFhGanFMd09XZ2huOU5mMi1WZDAwREFCWWh3TUhXTTdKeWpMMy1KeXYyR05EaDhDMjZFRjh5cVFYSDBaSWVESDAwN1h1RmZtNHdBbVlqWWliTFBseFJUZHhTSG9Oei1aUTEzY180b3lQQ1BB?oc=5",
-      "publishedTs": 1790117142
-    },
-    {
-      "title": "Japan's NEC joins Meta on ultrafast US-France undersea fiber-optic line",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ29ITWw0RnhjV1dlX2QtV2VPelNHM0Z3RXQ3QmszY0x1TkVicjdPNzduMTVrc0x5cmdfVEwycUpTeWdjbWVPMHVJQnUtV3FNdENZcnQyZFZqems2cVVncXBkcHEzaFVIWDY4cEttYWNGOVU1ZVdmTTJtdFl4NVhYYXBqTkxsQ2JsdDkwQlhOeXFCNWZmT0hhaFNPcTRkQ0lEYVRYVWlDZE5VOFB1c1Y5aU43a1laWElUa3AyS2RjQQ?oc=5",
-      "publishedTs": 1790112540
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시 헤드라인은 엔화 변동성과 기술주 강세가 주요 동력으로 작용하며 혼조세를 보였습니다. 일본 엔화는 일본은행의 매파적 신호 부재로 약세를 보였으나, 지정학적 소식에 일시적으로 급등하는 등 변동성이 컸으며, 당국의 잠재적 개입 가능성이 주시되고 있습니다. 아시아 증시가 기술주 랠리에 힘입어 상승세를 보였고 일부 일본 우량주 및 NEC와 같은 기술 기업 소식도 긍정적이었지만, 국내 소비 위축으로 인한 소매업체의 저가 상품 출시 등 내수 소비는 여전히 압박을 받는 모습입니다.",
-    "en": "Today's Japanese market headlines present a mixed picture, primarily driven by Yen volatility and broader tech sector strength. The Japanese Yen softened due to the Bank of Japan's lack of hawkish guidance, though it saw a brief spike on geopolitical news, with potential intervention remaining a key watchpoint. While Asia stocks, including some Japanese quality names and tech firms like NEC, rode a tech wave higher, domestic consumer sentiment appears challenged, as evidenced by a retailer launching budget-friendly products amid a consumer crunch.",
+    "ko": "오늘 일본 증시는 아시아 전반의 기술주 강세에 힘입어 긍정적인 흐름을 보였으나, 엔화 약세가 지속되며 혼조세를 나타냈습니다. 엔화는 미국 연방준비제도(Fed)의 매파적 기조와 일본은행(BoJ)의 비둘기파적 스탠스 유지로 인해 달러 대비 추가 약세를 기록했으며, 잠재적 시장 개입 가능성이 주시되고 있습니다. 이러한 가운데 일본 고배당주에 대한 관심은 여전하지만, 국내 소비 시장에서는 소비 위축 조짐이 나타나 소매업체들이 대응에 나서고 있습니다.",
+    "en": "Japanese markets present a mixed outlook today, with equities likely participating in a broader Asian tech-driven rally. However, the Japanese Yen continues to weaken significantly against the US Dollar, driven by a hawkish Fed and the Bank of Japan's perceived lack of hawkish guidance. This persistent depreciation has led to increased speculation regarding potential currency intervention. Meanwhile, domestic consumer spending shows signs of pressure, even as interest in Japanese dividend stocks remains.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1790131180
+    "generatedTs": 1790150463
   },
   "shortData": {
-    "ok": false,
-    "asOf": null,
-    "coveredStocks": 0
+    "ok": true,
+    "asOf": "2026-09-17",
+    "coveredStocks": 142
   },
   "marginData": {
-    "ok": false,
-    "asOf": null,
-    "coveredStocks": 0
+    "ok": true,
+    "asOf": "2026-09-11",
+    "coveredStocks": 245
   },
   "catalystData": {
-    "edinet": false,
-    "tdnet": false,
+    "edinet": true,
+    "tdnet": true,
     "reform": false
   }
 }
