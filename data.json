@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-12T03:33:21.919643+00:00",
+  "asOf": "2026-10-12T11:21:17.876925+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -158,7 +158,7 @@
       "revenueGrowthYoY": 10.4,
       "epsGrowthYoY": 86.9,
       "belowBook": true,
-      "perf1Y": 0.12,
+      "perf1Y": 1.36,
       "sparkline": [
         2921.26,
         2943.87,
@@ -199,9 +199,9 @@
       "marginRatio": 11.03,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.46,
-      "perZ": -1.03,
+      "perZ": -1.04,
       "roeZ": 0.03,
-      "valZ": -0.74,
+      "valZ": -0.75,
       "catalysts": [
         {
           "date": "2026-10-05",
@@ -241,9 +241,9 @@
       ],
       "reformDisclosed": null,
       "recentCatalyst": true,
-      "activistScore": 29,
+      "activistScore": 30,
       "activistSub": {
-        "value": 43,
+        "value": 44,
         "cash": 0,
         "prof": 0,
         "payout": 43,
@@ -272,7 +272,7 @@
       "revenueGrowthYoY": 8.2,
       "epsGrowthYoY": 47.6,
       "belowBook": false,
-      "perf1Y": -16.92,
+      "perf1Y": -11.51,
       "sparkline": [
         3607.76,
         3622.69,
@@ -313,7 +313,7 @@
       "marginRatio": 24.25,
       "marginAsOf": "2026-10-08",
       "pbrZ": 0.28,
-      "perZ": 0.08,
+      "perZ": 0.09,
       "roeZ": 0.09,
       "valZ": 0.18,
       "catalysts": [
@@ -379,7 +379,7 @@
       "revenueGrowthYoY": 10.9,
       "epsGrowthYoY": -17.8,
       "belowBook": false,
-      "perf1Y": 8.61,
+      "perf1Y": 4.35,
       "sparkline": [
         6804.0,
         6804.0,
@@ -457,7 +457,7 @@
       "revenueGrowthYoY": 32.8,
       "epsGrowthYoY": 51.0,
       "belowBook": false,
-      "perf1Y": 32.36,
+      "perf1Y": 40.68,
       "sparkline": [
         76003.62,
         76222.83,
@@ -534,7 +534,7 @@
       "revenueGrowthYoY": 28.8,
       "epsGrowthYoY": 50.9,
       "belowBook": false,
-      "perf1Y": 53.35,
+      "perf1Y": 54.48,
       "sparkline": [
         3554.55,
         3614.76,
@@ -612,7 +612,7 @@
       "revenueGrowthYoY": 10.9,
       "epsGrowthYoY": 7.5,
       "belowBook": false,
-      "perf1Y": 12.63,
+      "perf1Y": 13.6,
       "sparkline": [
         169.54,
         172.49,
@@ -712,7 +712,7 @@
       "revenueGrowthYoY": 22.8,
       "epsGrowthYoY": 57.9,
       "belowBook": false,
-      "perf1Y": 28.32,
+      "perf1Y": 30.64,
       "sparkline": [
         4973.17,
         4922.83,
@@ -790,7 +790,7 @@
       "revenueGrowthYoY": 33.3,
       "epsGrowthYoY": 40.4,
       "belowBook": false,
-      "perf1Y": 108.16,
+      "perf1Y": 112.52,
       "sparkline": [
         10373.86,
         10201.93,
@@ -876,7 +876,7 @@
       "revenueGrowthYoY": 18.9,
       "epsGrowthYoY": 73.7,
       "belowBook": false,
-      "perf1Y": 111.77,
+      "perf1Y": 122.05,
       "sparkline": [
         15292.9,
         15837.47,
@@ -917,9 +917,9 @@
       "marginRatio": 1.25,
       "marginAsOf": "2026-10-08",
       "pbrZ": 4.79,
-      "perZ": 2.07,
+      "perZ": 2.06,
       "roeZ": 3.3,
-      "valZ": 3.43,
+      "valZ": 3.42,
       "catalysts": [
         {
           "date": "2026-10-01",
@@ -976,7 +976,7 @@
       "revenueGrowthYoY": 24.8,
       "epsGrowthYoY": 35.0,
       "belowBook": false,
-      "perf1Y": 65.22,
+      "perf1Y": 63.17,
       "sparkline": [
         3312.93,
         3361.65,
@@ -1051,7 +1051,7 @@
       "price": 6085.0,
       "change": -45.0,
       "changePercent": -0.73,
-      "marketCapB": 11044.67,
+      "marketCapB": 11048.73,
       "per": 24.1,
       "pbr": 2.48,
       "dividendYield": 1.91,
@@ -1062,7 +1062,7 @@
       "revenueGrowthYoY": 5.4,
       "epsGrowthYoY": 5.7,
       "belowBook": false,
-      "perf1Y": 21.93,
+      "perf1Y": 21.29,
       "sparkline": [
         5699.33,
         5742.18,
@@ -1087,7 +1087,7 @@
       ],
       "advValueB": 39.285,
       "advSharesM": 6.65,
-      "sharesOutM": 1815.06,
+      "sharesOutM": 1815.73,
       "freeFloatPct": 102.4,
       "netCashB": 1395.74,
       "netCashPct": 12.6,
@@ -1183,7 +1183,7 @@
       "revenueGrowthYoY": 35.0,
       "epsGrowthYoY": 49.7,
       "belowBook": false,
-      "perf1Y": 75.57,
+      "perf1Y": 77.29,
       "sparkline": [
         8403.75,
         8532.64,
@@ -1290,7 +1290,7 @@
       "revenueGrowthYoY": -9.5,
       "epsGrowthYoY": 55.0,
       "belowBook": false,
-      "perf1Y": -36.61,
+      "perf1Y": -34.31,
       "sparkline": [
         8401.0,
         7989.0,
@@ -1363,7 +1363,7 @@
       "price": 2893.0,
       "change": -16.5,
       "changePercent": -0.57,
-      "marketCapB": 10692.42,
+      "marketCapB": 10690.17,
       "per": 14.86,
       "pbr": 2.15,
       "dividendYield": 2.9,
@@ -1374,7 +1374,7 @@
       "revenueGrowthYoY": 3.6,
       "epsGrowthYoY": 19.4,
       "belowBook": false,
-      "perf1Y": 23.38,
+      "perf1Y": 22.09,
       "sparkline": [
         2934.57,
         2965.63,
@@ -1399,7 +1399,7 @@
       ],
       "advValueB": 26.821,
       "advSharesM": 9.075,
-      "sharesOutM": 3695.96,
+      "sharesOutM": 3695.19,
       "freeFloatPct": 80.9,
       "netCashB": -4465.75,
       "netCashPct": -41.8,
@@ -1488,7 +1488,7 @@
       "revenueGrowthYoY": 13.5,
       "epsGrowthYoY": 147.5,
       "belowBook": true,
-      "perf1Y": 10.06,
+      "perf1Y": 12.07,
       "sparkline": [
         1587.0,
         1601.2,
@@ -1573,7 +1573,7 @@
       "revenueGrowthYoY": 8.9,
       "epsGrowthYoY": 4.8,
       "belowBook": false,
-      "perf1Y": 25.22,
+      "perf1Y": 26.19,
       "sparkline": [
         2276.28,
         2260.44,
@@ -1687,7 +1687,7 @@
       "revenueGrowthYoY": 20.0,
       "epsGrowthYoY": 0.5,
       "belowBook": false,
-      "perf1Y": 26.8,
+      "perf1Y": 33.01,
       "sparkline": [
         5146.75,
         5155.71,
@@ -1786,7 +1786,7 @@
       "revenueGrowthYoY": 10.2,
       "epsGrowthYoY": -9.8,
       "belowBook": false,
-      "perf1Y": 37.75,
+      "perf1Y": 38.2,
       "sparkline": [
         5518.42,
         5559.7,
@@ -1863,7 +1863,7 @@
       "revenueGrowthYoY": 31.7,
       "epsGrowthYoY": 55.6,
       "belowBook": false,
-      "perf1Y": 28.27,
+      "perf1Y": 29.76,
       "sparkline": [
         5084.12,
         5022.0,
@@ -1953,7 +1953,7 @@
       "change": -3290.0,
       "changePercent": -4.38,
       "marketCapB": 22026.38,
-      "per": 42.41,
+      "per": 40.65,
       "pbr": 8.07,
       "dividendYield": 1.25,
       "roe": 22.3,
@@ -1963,7 +1963,7 @@
       "revenueGrowthYoY": 14.6,
       "epsGrowthYoY": 24.0,
       "belowBook": false,
-      "perf1Y": 45.24,
+      "perf1Y": 39.46,
       "sparkline": [
         66860.0,
         66810.0,
@@ -2004,9 +2004,9 @@
       "marginRatio": 2.32,
       "marginAsOf": "2026-10-08",
       "pbrZ": 2.53,
-      "perZ": 2.08,
+      "perZ": 1.97,
       "roeZ": 0.91,
-      "valZ": 2.3,
+      "valZ": 2.25,
       "catalysts": [
         {
           "date": "2026-10-08",
@@ -2049,7 +2049,7 @@
       "revenueGrowthYoY": 9.1,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -19.91,
+      "perf1Y": -20.77,
       "sparkline": [
         2591.0,
         2737.0,
@@ -2126,7 +2126,7 @@
       "revenueGrowthYoY": 3.6,
       "epsGrowthYoY": 55.5,
       "belowBook": false,
-      "perf1Y": 4.82,
+      "perf1Y": 8.11,
       "sparkline": [
         4317.0,
         4338.0,
@@ -2240,7 +2240,7 @@
       "revenueGrowthYoY": 26.7,
       "epsGrowthYoY": 107.2,
       "belowBook": false,
-      "perf1Y": 38.68,
+      "perf1Y": 41.71,
       "sparkline": [
         2198.99,
         2189.16,
@@ -2318,7 +2318,7 @@
       "revenueGrowthYoY": 8.0,
       "epsGrowthYoY": -13.4,
       "belowBook": false,
-      "perf1Y": -5.93,
+      "perf1Y": -6.4,
       "sparkline": [
         3494.69,
         3487.78,
@@ -2396,7 +2396,7 @@
       "revenueGrowthYoY": 40.4,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 5.3,
+      "perf1Y": 4.53,
       "sparkline": [
         664.02,
         678.46,
@@ -2496,7 +2496,7 @@
       "revenueGrowthYoY": 0.0,
       "epsGrowthYoY": 97.3,
       "belowBook": false,
-      "perf1Y": -8.84,
+      "perf1Y": -7.84,
       "sparkline": [
         3799.26,
         3709.59,
@@ -2574,7 +2574,7 @@
       "revenueGrowthYoY": 17.0,
       "epsGrowthYoY": 44.6,
       "belowBook": false,
-      "perf1Y": 41.92,
+      "perf1Y": 47.25,
       "sparkline": [
         6610.0,
         6614.0,
@@ -2660,7 +2660,7 @@
       "revenueGrowthYoY": 10.4,
       "epsGrowthYoY": 50.2,
       "belowBook": false,
-      "perf1Y": -17.87,
+      "perf1Y": -16.62,
       "sparkline": [
         3134.34,
         3164.25,
@@ -2701,9 +2701,9 @@
       "marginRatio": 1.06,
       "marginAsOf": "2026-10-08",
       "pbrZ": 0.96,
-      "perZ": 1.49,
+      "perZ": 1.52,
       "roeZ": null,
-      "valZ": 1.23,
+      "valZ": 1.24,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -2737,7 +2737,7 @@
       "revenueGrowthYoY": 14.6,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -34.34,
+      "perf1Y": -35.53,
       "sparkline": [
         1383.5,
         1363.0,
@@ -2815,7 +2815,7 @@
       "revenueGrowthYoY": 9.1,
       "epsGrowthYoY": -10.5,
       "belowBook": true,
-      "perf1Y": -16.91,
+      "perf1Y": -16.24,
       "sparkline": [
         1852.1,
         1848.67,
@@ -2901,7 +2901,7 @@
       "revenueGrowthYoY": 20.7,
       "epsGrowthYoY": 66.5,
       "belowBook": false,
-      "perf1Y": 190.89,
+      "perf1Y": 192.75,
       "sparkline": [
         7096.83,
         7492.09,
@@ -3001,7 +3001,7 @@
       "revenueGrowthYoY": -26.3,
       "epsGrowthYoY": -34.9,
       "belowBook": false,
-      "perf1Y": 130.46,
+      "perf1Y": 145.25,
       "sparkline": [
         35280.0,
         36320.0,
@@ -3042,7 +3042,7 @@
       "marginRatio": 1.59,
       "marginAsOf": "2026-10-08",
       "pbrZ": 2.63,
-      "perZ": 1.41,
+      "perZ": 1.42,
       "roeZ": 1.81,
       "valZ": 2.02,
       "catalysts": [
@@ -3094,7 +3094,7 @@
       "revenueGrowthYoY": 39.3,
       "epsGrowthYoY": 95.3,
       "belowBook": false,
-      "perf1Y": 129.49,
+      "perf1Y": 144.76,
       "sparkline": [
         32840.0,
         33920.0,
@@ -3135,9 +3135,9 @@
       "marginRatio": 0.93,
       "marginAsOf": "2026-10-08",
       "pbrZ": 4.8,
-      "perZ": 1.97,
+      "perZ": 1.98,
       "roeZ": 3.89,
-      "valZ": 3.38,
+      "valZ": 3.39,
       "catalysts": [
         {
           "date": "2026-09-30",
@@ -3229,7 +3229,7 @@
       "revenueGrowthYoY": 9.9,
       "epsGrowthYoY": 75.2,
       "belowBook": false,
-      "perf1Y": 88.35,
+      "perf1Y": 91.12,
       "sparkline": [
         3380.25,
         3442.77,
@@ -3350,7 +3350,7 @@
       "revenueGrowthYoY": 14.0,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 28.62,
+      "perf1Y": 35.59,
       "sparkline": [
         5138.26,
         5065.68,
@@ -3391,7 +3391,7 @@
       "marginRatio": 43.83,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.31,
-      "perZ": -0.36,
+      "perZ": -0.35,
       "roeZ": -0.33,
       "valZ": -0.33,
       "catalysts": [],
@@ -3428,7 +3428,7 @@
       "revenueGrowthYoY": -10.3,
       "epsGrowthYoY": -37.2,
       "belowBook": false,
-      "perf1Y": 130.16,
+      "perf1Y": 139.35,
       "sparkline": [
         12964.04,
         12983.95,
@@ -3469,9 +3469,9 @@
       "marginRatio": 4.86,
       "marginAsOf": "2026-10-08",
       "pbrZ": 0.45,
-      "perZ": 0.11,
+      "perZ": 0.12,
       "roeZ": 0.44,
-      "valZ": 0.28,
+      "valZ": 0.29,
       "catalysts": [
         {
           "date": "2026-07-28",
@@ -3514,7 +3514,7 @@
       "revenueGrowthYoY": 12.5,
       "epsGrowthYoY": -35.6,
       "belowBook": false,
-      "perf1Y": -7.03,
+      "perf1Y": -1.47,
       "sparkline": [
         5626.0,
         5718.0,
@@ -3607,7 +3607,7 @@
       "revenueGrowthYoY": 3.9,
       "epsGrowthYoY": -76.1,
       "belowBook": false,
-      "perf1Y": 6.98,
+      "perf1Y": 13.7,
       "sparkline": [
         3721.46,
         3764.19,
@@ -3707,7 +3707,7 @@
       "revenueGrowthYoY": 38.3,
       "epsGrowthYoY": 94.3,
       "belowBook": false,
-      "perf1Y": 51.62,
+      "perf1Y": 52.71,
       "sparkline": [
         2793.46,
         2831.21,
@@ -3747,7 +3747,7 @@
       "marginShortM": 0.62,
       "marginRatio": 8.09,
       "marginAsOf": "2026-10-08",
-      "pbrZ": -0.24,
+      "pbrZ": -0.23,
       "perZ": -0.82,
       "roeZ": -0.21,
       "valZ": -0.53,
@@ -3785,7 +3785,7 @@
       "revenueGrowthYoY": 10.4,
       "epsGrowthYoY": 11.1,
       "belowBook": false,
-      "perf1Y": -8.25,
+      "perf1Y": -0.96,
       "sparkline": [
         3145.78,
         3166.59,
@@ -3826,9 +3826,9 @@
       "marginRatio": 4.43,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.35,
-      "perZ": -0.83,
+      "perZ": -0.82,
       "roeZ": -0.13,
-      "valZ": -0.59,
+      "valZ": -0.58,
       "catalysts": [
         {
           "date": "2026-09-30",
@@ -3885,7 +3885,7 @@
       "revenueGrowthYoY": 17.7,
       "epsGrowthYoY": 34.7,
       "belowBook": false,
-      "perf1Y": 25.92,
+      "perf1Y": 35.32,
       "sparkline": [
         5848.0,
         5794.0,
@@ -3926,9 +3926,9 @@
       "marginRatio": 23.13,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.18,
-      "perZ": 0.12,
+      "perZ": 0.13,
       "roeZ": -0.35,
-      "valZ": -0.03,
+      "valZ": -0.02,
       "catalysts": [
         {
           "date": "2026-09-18",
@@ -3970,7 +3970,7 @@
       "recentCatalyst": true,
       "activistScore": 19,
       "activistSub": {
-        "value": 1,
+        "value": 0,
         "cash": 34,
         "prof": 0,
         "payout": 0,
@@ -3999,7 +3999,7 @@
       "revenueGrowthYoY": 28.5,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 108.74,
+      "perf1Y": 110.46,
       "sparkline": [
         3315.0,
         3320.0,
@@ -4040,15 +4040,15 @@
       "marginRatio": 4.68,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.31,
-      "perZ": -0.74,
+      "perZ": -0.73,
       "roeZ": -0.0,
-      "valZ": -0.53,
+      "valZ": -0.52,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
       "activistScore": 24,
       "activistSub": {
-        "value": 11,
+        "value": 10,
         "cash": 0,
         "prof": 0,
         "payout": 70,
@@ -4077,7 +4077,7 @@
       "revenueGrowthYoY": 14.5,
       "epsGrowthYoY": 158.6,
       "belowBook": false,
-      "perf1Y": 5.59,
+      "perf1Y": 12.88,
       "sparkline": [
         4484.15,
         4567.8,
@@ -4155,7 +4155,7 @@
       "revenueGrowthYoY": 2.4,
       "epsGrowthYoY": 49.8,
       "belowBook": false,
-      "perf1Y": 44.14,
+      "perf1Y": 48.56,
       "sparkline": [
         4864.09,
         4880.81,
@@ -4255,7 +4255,7 @@
       "revenueGrowthYoY": 0.1,
       "epsGrowthYoY": -43.3,
       "belowBook": false,
-      "perf1Y": 22.81,
+      "perf1Y": 24.61,
       "sparkline": [
         396.57,
         401.36,
@@ -4367,7 +4367,7 @@
       "revenueGrowthYoY": 28.0,
       "epsGrowthYoY": 278.3,
       "belowBook": false,
-      "perf1Y": 59.0,
+      "perf1Y": 62.27,
       "sparkline": [
         1770.58,
         1799.05,
@@ -4434,7 +4434,7 @@
       "price": 6567.0,
       "change": 48.0,
       "changePercent": 0.74,
-      "marketCapB": 5813.9,
+      "marketCapB": 5804.02,
       "per": 20.11,
       "pbr": 1.1,
       "dividendYield": 3.05,
@@ -4445,7 +4445,7 @@
       "revenueGrowthYoY": 32.6,
       "epsGrowthYoY": 59.4,
       "belowBook": false,
-      "perf1Y": 35.82,
+      "perf1Y": 37.99,
       "sparkline": [
         6482.79,
         6551.78,
@@ -4470,10 +4470,10 @@
       ],
       "advValueB": 16.238,
       "advSharesM": 2.435,
-      "sharesOutM": 885.32,
-      "freeFloatPct": 92.2,
+      "sharesOutM": 883.82,
+      "freeFloatPct": 92.4,
       "netCashB": 258.36,
-      "netCashPct": 4.4,
+      "netCashPct": 4.5,
       "shortPct": null,
       "shortSharesM": null,
       "shortDtc": null,
@@ -4545,7 +4545,7 @@
       "revenueGrowthYoY": 17.4,
       "epsGrowthYoY": 170.6,
       "belowBook": false,
-      "perf1Y": 52.38,
+      "perf1Y": 55.86,
       "sparkline": [
         5915.65,
         5977.55,
@@ -4645,7 +4645,7 @@
       "revenueGrowthYoY": 57.2,
       "epsGrowthYoY": 82.6,
       "belowBook": false,
-      "perf1Y": 49.27,
+      "perf1Y": 55.07,
       "sparkline": [
         1797.0,
         1837.0,
@@ -4738,7 +4738,7 @@
       "revenueGrowthYoY": 31.2,
       "epsGrowthYoY": 42.0,
       "belowBook": false,
-      "perf1Y": 40.57,
+      "perf1Y": 43.07,
       "sparkline": [
         1616.0,
         1666.0,
@@ -4816,7 +4816,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 28.66,
+      "perf1Y": 35.93,
       "sparkline": [
         2160.94,
         2186.48,
@@ -4907,7 +4907,7 @@
       "revenueGrowthYoY": 30.0,
       "epsGrowthYoY": 70.2,
       "belowBook": false,
-      "perf1Y": 89.83,
+      "perf1Y": 86.89,
       "sparkline": [
         3210.0,
         3299.0,
@@ -4985,7 +4985,7 @@
       "revenueGrowthYoY": 28.8,
       "epsGrowthYoY": 64.3,
       "belowBook": false,
-      "perf1Y": -13.98,
+      "perf1Y": -11.75,
       "sparkline": [
         3187.11,
         3259.43,
@@ -5011,7 +5011,7 @@
       "advValueB": 11.094,
       "advSharesM": 3.51,
       "sharesOutM": 646.39,
-      "freeFloatPct": 89.9,
+      "freeFloatPct": 90.0,
       "netCashB": -220.79,
       "netCashPct": -11.2,
       "shortPct": 3.18,
@@ -5099,7 +5099,7 @@
       "revenueGrowthYoY": 15.8,
       "epsGrowthYoY": 16.3,
       "belowBook": false,
-      "perf1Y": 63.72,
+      "perf1Y": 68.71,
       "sparkline": [
         2394.57,
         2470.51,
@@ -5213,7 +5213,7 @@
       "revenueGrowthYoY": 3.0,
       "epsGrowthYoY": 1.2,
       "belowBook": true,
-      "perf1Y": -14.98,
+      "perf1Y": -14.84,
       "sparkline": [
         3848.57,
         3817.7,
@@ -5299,7 +5299,7 @@
       "revenueGrowthYoY": -0.6,
       "epsGrowthYoY": -17.9,
       "belowBook": false,
-      "perf1Y": -7.69,
+      "perf1Y": -7.33,
       "sparkline": [
         2969.27,
         2947.63,
@@ -5377,7 +5377,7 @@
       "revenueGrowthYoY": 21.1,
       "epsGrowthYoY": 37.4,
       "belowBook": true,
-      "perf1Y": 45.16,
+      "perf1Y": 46.31,
       "sparkline": [
         7082.68,
         7079.73,
@@ -5477,7 +5477,7 @@
       "revenueGrowthYoY": 68.9,
       "epsGrowthYoY": 16.2,
       "belowBook": true,
-      "perf1Y": 63.75,
+      "perf1Y": 66.77,
       "sparkline": [
         6940.15,
         6881.98,
@@ -5555,7 +5555,7 @@
       "revenueGrowthYoY": 17.1,
       "epsGrowthYoY": -21.1,
       "belowBook": false,
-      "perf1Y": 62.37,
+      "perf1Y": 63.11,
       "sparkline": [
         3289.04,
         3241.88,
@@ -5676,7 +5676,7 @@
       "revenueGrowthYoY": 14.7,
       "epsGrowthYoY": 8.2,
       "belowBook": false,
-      "perf1Y": 38.91,
+      "perf1Y": 41.35,
       "sparkline": [
         7323.48,
         7294.85,
@@ -5766,7 +5766,7 @@
       "change": -11.5,
       "changePercent": -0.44,
       "marketCapB": 2958.47,
-      "per": 11.18,
+      "per": 11.19,
       "pbr": 1.06,
       "dividendYield": 1.98,
       "roe": 10.01,
@@ -5776,7 +5776,7 @@
       "revenueGrowthYoY": 18.6,
       "epsGrowthYoY": 98.3,
       "belowBook": false,
-      "perf1Y": 38.2,
+      "perf1Y": 38.24,
       "sparkline": [
         2837.5,
         2794.5,
@@ -5883,7 +5883,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 19.64,
+      "perf1Y": 22.51,
       "sparkline": [
         20655.73,
         20670.6,
@@ -5983,7 +5983,7 @@
       "revenueGrowthYoY": 11.3,
       "epsGrowthYoY": 269.0,
       "belowBook": false,
-      "perf1Y": 16.73,
+      "perf1Y": 17.14,
       "sparkline": [
         2397.85,
         2329.43,
@@ -6061,7 +6061,7 @@
       "revenueGrowthYoY": 10.9,
       "epsGrowthYoY": 361.1,
       "belowBook": false,
-      "perf1Y": -8.09,
+      "perf1Y": -4.32,
       "sparkline": [
         2788.89,
         2652.46,
@@ -6128,7 +6128,7 @@
       "price": 73120.0,
       "change": 1580.0,
       "changePercent": 2.21,
-      "marketCapB": 4568.38,
+      "marketCapB": 4564.01,
       "per": 27.84,
       "pbr": 2.13,
       "dividendYield": 1.37,
@@ -6139,7 +6139,7 @@
       "revenueGrowthYoY": 35.4,
       "epsGrowthYoY": 97.9,
       "belowBook": false,
-      "perf1Y": 37.3,
+      "perf1Y": 43.32,
       "sparkline": [
         67404.17,
         67195.67,
@@ -6164,8 +6164,8 @@
       ],
       "advValueB": 20.935,
       "advSharesM": 0.299,
-      "sharesOutM": 62.48,
-      "freeFloatPct": 89.0,
+      "sharesOutM": 62.42,
+      "freeFloatPct": 89.1,
       "netCashB": 754.23,
       "netCashPct": 16.5,
       "shortPct": null,
@@ -6207,7 +6207,7 @@
         }
       ],
       "reformDisclosed": null,
-      "recentCatalyst": true,
+      "recentCatalyst": false,
       "activistScore": 24,
       "activistSub": {
         "value": 0,
@@ -6239,7 +6239,7 @@
       "revenueGrowthYoY": 7.5,
       "epsGrowthYoY": 148.5,
       "belowBook": false,
-      "perf1Y": 19.05,
+      "perf1Y": 18.35,
       "sparkline": [
         5718.97,
         5591.03,
@@ -6346,7 +6346,7 @@
       "revenueGrowthYoY": 20.6,
       "epsGrowthYoY": 22.2,
       "belowBook": false,
-      "perf1Y": 23.78,
+      "perf1Y": 29.89,
       "sparkline": [
         5083.86,
         4959.36,
@@ -6453,7 +6453,7 @@
       "revenueGrowthYoY": 9.0,
       "epsGrowthYoY": 13.2,
       "belowBook": false,
-      "perf1Y": 52.15,
+      "perf1Y": 52.91,
       "sparkline": [
         1819.42,
         1791.73,
@@ -6553,7 +6553,7 @@
       "revenueGrowthYoY": 37.6,
       "epsGrowthYoY": 40.1,
       "belowBook": false,
-      "perf1Y": 65.99,
+      "perf1Y": 65.3,
       "sparkline": [
         7453.93,
         7367.66,
@@ -6639,7 +6639,7 @@
       "revenueGrowthYoY": 4.6,
       "epsGrowthYoY": 45.0,
       "belowBook": true,
-      "perf1Y": -9.21,
+      "perf1Y": -7.99,
       "sparkline": [
         1639.39,
         1651.77,
@@ -6719,7 +6719,7 @@
       "price": 2915.5,
       "change": 11.5,
       "changePercent": 0.4,
-      "marketCapB": 1251.89,
+      "marketCapB": 1242.38,
       "per": 9.32,
       "pbr": 0.91,
       "dividendYield": 2.06,
@@ -6730,7 +6730,7 @@
       "revenueGrowthYoY": 22.6,
       "epsGrowthYoY": -19.0,
       "belowBook": true,
-      "perf1Y": 4.04,
+      "perf1Y": 5.12,
       "sparkline": [
         2921.73,
         2934.11,
@@ -6755,8 +6755,8 @@
       ],
       "advValueB": 6.911,
       "advSharesM": 2.345,
-      "sharesOutM": 429.39,
-      "freeFloatPct": 96.2,
+      "sharesOutM": 426.13,
+      "freeFloatPct": 96.9,
       "netCashB": 16.6,
       "netCashPct": 1.3,
       "shortPct": 5.47,
@@ -6830,7 +6830,7 @@
       "revenueGrowthYoY": 10.2,
       "epsGrowthYoY": -79.9,
       "belowBook": true,
-      "perf1Y": 3.55,
+      "perf1Y": 5.47,
       "sparkline": [
         2944.42,
         2945.9,
@@ -6908,7 +6908,7 @@
       "revenueGrowthYoY": 16.9,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 1.26,
+      "perf1Y": 3.88,
       "sparkline": [
         1093.85,
         1096.79,
@@ -6949,7 +6949,7 @@
       "marginRatio": 11.18,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.69,
-      "perZ": -0.0,
+      "perZ": 0.01,
       "roeZ": -0.55,
       "valZ": -0.34,
       "catalysts": [
@@ -7001,7 +7001,7 @@
       "revenueGrowthYoY": 22.0,
       "epsGrowthYoY": 80.0,
       "belowBook": false,
-      "perf1Y": -8.38,
+      "perf1Y": -6.72,
       "sparkline": [
         1964.42,
         1986.15,
@@ -7042,9 +7042,9 @@
       "marginRatio": 20.96,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.38,
-      "perZ": -1.09,
+      "perZ": -1.11,
       "roeZ": 0.29,
-      "valZ": -0.74,
+      "valZ": -0.75,
       "catalysts": [
         {
           "date": "2026-07-14",
@@ -7087,7 +7087,7 @@
       "revenueGrowthYoY": 3.0,
       "epsGrowthYoY": -8.0,
       "belowBook": true,
-      "perf1Y": -16.76,
+      "perf1Y": -16.05,
       "sparkline": [
         2499.14,
         2504.52,
@@ -7128,7 +7128,7 @@
       "marginRatio": 10.6,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.57,
-      "perZ": 0.16,
+      "perZ": 0.17,
       "roeZ": -0.8,
       "valZ": -0.2,
       "catalysts": [
@@ -7194,7 +7194,7 @@
       "revenueGrowthYoY": 9.5,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": -20.97,
+      "perf1Y": -17.75,
       "sparkline": [
         307.3,
         308.2,
@@ -7271,7 +7271,7 @@
       "revenueGrowthYoY": 17.8,
       "epsGrowthYoY": 224.1,
       "belowBook": false,
-      "perf1Y": 66.32,
+      "perf1Y": 67.69,
       "sparkline": [
         1742.5,
         1761.0,
@@ -7312,9 +7312,9 @@
       "marginRatio": 3.21,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.26,
-      "perZ": -1.04,
+      "perZ": -1.05,
       "roeZ": -0.39,
-      "valZ": -0.65,
+      "valZ": -0.66,
       "catalysts": [
         {
           "date": "2026-08-04",
@@ -7357,7 +7357,7 @@
       "revenueGrowthYoY": 11.6,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -34.91,
+      "perf1Y": -31.63,
       "sparkline": [
         718.0,
         723.6,
@@ -7424,7 +7424,7 @@
       "change": -5.5,
       "changePercent": -0.28,
       "marketCapB": 4514.9,
-      "per": 15.8,
+      "per": 15.9,
       "pbr": 1.25,
       "dividendYield": 3.01,
       "roe": 8.08,
@@ -7434,7 +7434,7 @@
       "revenueGrowthYoY": 5.9,
       "epsGrowthYoY": -3.3,
       "belowBook": false,
-      "perf1Y": 4.0,
+      "perf1Y": 1.53,
       "sparkline": [
         2028.5,
         2016.0,
@@ -7475,7 +7475,7 @@
       "marginRatio": 6.09,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.32,
-      "perZ": -0.34,
+      "perZ": -0.33,
       "roeZ": -0.36,
       "valZ": -0.33,
       "catalysts": [
@@ -7529,7 +7529,7 @@
         "value": 10,
         "cash": 0,
         "prof": 0,
-        "payout": 5,
+        "payout": 4,
         "float": 100
       },
       "activistCandidate": false
@@ -7555,7 +7555,7 @@
       "revenueGrowthYoY": -2.3,
       "epsGrowthYoY": -1.5,
       "belowBook": false,
-      "perf1Y": 26.44,
+      "perf1Y": 28.12,
       "sparkline": [
         3269.25,
         3249.36,
@@ -7596,9 +7596,9 @@
       "marginRatio": 2.82,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.1,
-      "perZ": 0.06,
+      "perZ": 0.07,
       "roeZ": -0.26,
-      "valZ": -0.02,
+      "valZ": -0.01,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -7633,7 +7633,7 @@
       "revenueGrowthYoY": 16.4,
       "epsGrowthYoY": 122.6,
       "belowBook": false,
-      "perf1Y": 7.51,
+      "perf1Y": 10.31,
       "sparkline": [
         1928.5,
         1923.5,
@@ -7711,7 +7711,7 @@
       "revenueGrowthYoY": 8.4,
       "epsGrowthYoY": 284.9,
       "belowBook": true,
-      "perf1Y": 26.72,
+      "perf1Y": 31.93,
       "sparkline": [
         1518.63,
         1536.88,
@@ -7801,7 +7801,7 @@
       "change": 47.0,
       "changePercent": 1.71,
       "marketCapB": 2217.55,
-      "per": 11.51,
+      "per": 11.54,
       "pbr": 1.64,
       "dividendYield": 2.71,
       "roe": 15.14,
@@ -7811,7 +7811,7 @@
       "revenueGrowthYoY": 9.2,
       "epsGrowthYoY": 164.9,
       "belowBook": false,
-      "perf1Y": 27.78,
+      "perf1Y": 29.39,
       "sparkline": [
         2804.0,
         2791.0,
@@ -7852,7 +7852,7 @@
       "marginRatio": 4.14,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.36,
-      "perZ": -0.92,
+      "perZ": -0.91,
       "roeZ": 1.37,
       "valZ": -0.64,
       "catalysts": [
@@ -7885,7 +7885,7 @@
         "value": 13,
         "cash": 0,
         "prof": 0,
-        "payout": 38,
+        "payout": 37,
         "float": 100
       },
       "activistCandidate": false
@@ -7911,7 +7911,7 @@
       "revenueGrowthYoY": 12.0,
       "epsGrowthYoY": 114.2,
       "belowBook": true,
-      "perf1Y": -11.37,
+      "perf1Y": -9.2,
       "sparkline": [
         1605.0,
         1594.0,
@@ -7989,7 +7989,7 @@
       "revenueGrowthYoY": 13.2,
       "epsGrowthYoY": 16.8,
       "belowBook": false,
-      "perf1Y": 26.75,
+      "perf1Y": 28.64,
       "sparkline": [
         5058.61,
         5009.85,
@@ -8103,7 +8103,7 @@
       "revenueGrowthYoY": 15.0,
       "epsGrowthYoY": 26.4,
       "belowBook": false,
-      "perf1Y": 35.61,
+      "perf1Y": 37.86,
       "sparkline": [
         1684.82,
         1672.39,
@@ -8203,7 +8203,7 @@
       "revenueGrowthYoY": 10.0,
       "epsGrowthYoY": 20.5,
       "belowBook": false,
-      "perf1Y": 7.87,
+      "perf1Y": 9.01,
       "sparkline": [
         2881.64,
         2866.82,
@@ -8289,7 +8289,7 @@
       "revenueGrowthYoY": 9.4,
       "epsGrowthYoY": 32.9,
       "belowBook": false,
-      "perf1Y": 13.23,
+      "perf1Y": 14.35,
       "sparkline": [
         3413.0,
         3439.0,
@@ -8367,7 +8367,7 @@
       "revenueGrowthYoY": 10.5,
       "epsGrowthYoY": 264.8,
       "belowBook": false,
-      "perf1Y": 24.27,
+      "perf1Y": 32.31,
       "sparkline": [
         3351.0,
         3330.0,
@@ -8444,7 +8444,7 @@
       "revenueGrowthYoY": 5.8,
       "epsGrowthYoY": 51.2,
       "belowBook": false,
-      "perf1Y": 41.63,
+      "perf1Y": 41.88,
       "sparkline": [
         4288.19,
         4246.73,
@@ -8537,7 +8537,7 @@
       "revenueGrowthYoY": 6.9,
       "epsGrowthYoY": 27.9,
       "belowBook": false,
-      "perf1Y": -2.68,
+      "perf1Y": 0.23,
       "sparkline": [
         944.1,
         945.2,
@@ -8615,7 +8615,7 @@
       "revenueGrowthYoY": 21.1,
       "epsGrowthYoY": -18.1,
       "belowBook": false,
-      "perf1Y": -34.71,
+      "perf1Y": -32.74,
       "sparkline": [
         2662.61,
         2661.14,
@@ -8701,7 +8701,7 @@
       "revenueGrowthYoY": 17.8,
       "epsGrowthYoY": 19.7,
       "belowBook": false,
-      "perf1Y": -18.34,
+      "perf1Y": -14.01,
       "sparkline": [
         6476.0,
         6418.0,
@@ -8779,7 +8779,7 @@
       "revenueGrowthYoY": 15.6,
       "epsGrowthYoY": 26.0,
       "belowBook": false,
-      "perf1Y": 0.43,
+      "perf1Y": 3.14,
       "sparkline": [
         4544.89,
         4592.11,
@@ -8857,7 +8857,7 @@
       "revenueGrowthYoY": 17.4,
       "epsGrowthYoY": 32.9,
       "belowBook": false,
-      "perf1Y": 44.07,
+      "perf1Y": 47.66,
       "sparkline": [
         11675.0,
         11465.0,
@@ -8971,7 +8971,7 @@
       "revenueGrowthYoY": 63.7,
       "epsGrowthYoY": 148.2,
       "belowBook": false,
-      "perf1Y": 11.47,
+      "perf1Y": 13.41,
       "sparkline": [
         2809.43,
         2794.13,
@@ -9057,7 +9057,7 @@
       "revenueGrowthYoY": 15.3,
       "epsGrowthYoY": 83.0,
       "belowBook": false,
-      "perf1Y": -4.74,
+      "perf1Y": -3.37,
       "sparkline": [
         2224.0,
         2206.0,
@@ -9135,7 +9135,7 @@
       "revenueGrowthYoY": 10.3,
       "epsGrowthYoY": -30.0,
       "belowBook": false,
-      "perf1Y": -3.53,
+      "perf1Y": -2.75,
       "sparkline": [
         3163.24,
         3195.87,
@@ -9228,7 +9228,7 @@
       "revenueGrowthYoY": 23.6,
       "epsGrowthYoY": 94.1,
       "belowBook": false,
-      "perf1Y": -0.05,
+      "perf1Y": 4.39,
       "sparkline": [
         1798.87,
         1760.28,
@@ -9328,7 +9328,7 @@
       "revenueGrowthYoY": 19.9,
       "epsGrowthYoY": 68.3,
       "belowBook": false,
-      "perf1Y": -7.46,
+      "perf1Y": -7.1,
       "sparkline": [
         2250.17,
         2217.43,
@@ -9435,7 +9435,7 @@
       "revenueGrowthYoY": 3.5,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -37.35,
+      "perf1Y": -30.49,
       "sparkline": [
         1082.5,
         1068.0,
@@ -9512,7 +9512,7 @@
       "revenueGrowthYoY": 11.9,
       "epsGrowthYoY": 173.6,
       "belowBook": false,
-      "perf1Y": 39.28,
+      "perf1Y": 36.45,
       "sparkline": [
         1546.0,
         1545.51,
@@ -9605,7 +9605,7 @@
       "revenueGrowthYoY": 14.0,
       "epsGrowthYoY": 204.3,
       "belowBook": true,
-      "perf1Y": 40.68,
+      "perf1Y": 38.95,
       "sparkline": [
         1156.34,
         1168.18,
@@ -9704,7 +9704,7 @@
       "revenueGrowthYoY": 9.9,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 24.17,
+      "perf1Y": 26.84,
       "sparkline": [
         565.89,
         559.38,
@@ -9782,7 +9782,7 @@
       "revenueGrowthYoY": 11.8,
       "epsGrowthYoY": 208.3,
       "belowBook": true,
-      "perf1Y": 17.72,
+      "perf1Y": 19.12,
       "sparkline": [
         2544.98,
         2532.23,
@@ -9867,7 +9867,7 @@
       "revenueGrowthYoY": 42.3,
       "epsGrowthYoY": 225.7,
       "belowBook": false,
-      "perf1Y": 84.6,
+      "perf1Y": 84.43,
       "sparkline": [
         10257.34,
         10079.3,
@@ -9960,7 +9960,7 @@
       "revenueGrowthYoY": 14.0,
       "epsGrowthYoY": 92.5,
       "belowBook": true,
-      "perf1Y": 29.86,
+      "perf1Y": 33.29,
       "sparkline": [
         1209.31,
         1216.23,
@@ -10067,7 +10067,7 @@
       "revenueGrowthYoY": 14.2,
       "epsGrowthYoY": 210.1,
       "belowBook": false,
-      "perf1Y": 13.77,
+      "perf1Y": 14.68,
       "sparkline": [
         3759.0,
         3778.0,
@@ -10167,7 +10167,7 @@
       "revenueGrowthYoY": 19.3,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 98.76,
+      "perf1Y": 94.66,
       "sparkline": [
         2461.07,
         2320.64,
@@ -10253,7 +10253,7 @@
       "revenueGrowthYoY": 9.4,
       "epsGrowthYoY": 3.4,
       "belowBook": false,
-      "perf1Y": 12.28,
+      "perf1Y": 12.04,
       "sparkline": [
         234.9,
         238.82,
@@ -10339,7 +10339,7 @@
       "revenueGrowthYoY": -10.9,
       "epsGrowthYoY": 231.6,
       "belowBook": false,
-      "perf1Y": 5.89,
+      "perf1Y": 8.11,
       "sparkline": [
         2489.0,
         2509.5,
@@ -10432,7 +10432,7 @@
       "revenueGrowthYoY": 1.9,
       "epsGrowthYoY": 80.4,
       "belowBook": false,
-      "perf1Y": -20.27,
+      "perf1Y": -16.41,
       "sparkline": [
         2693.64,
         2694.51,
@@ -10532,7 +10532,7 @@
       "revenueGrowthYoY": 13.1,
       "epsGrowthYoY": 24.1,
       "belowBook": false,
-      "perf1Y": 6.78,
+      "perf1Y": 13.42,
       "sparkline": [
         516.4,
         526.3,
@@ -10632,7 +10632,7 @@
       "revenueGrowthYoY": 54.7,
       "epsGrowthYoY": 69.1,
       "belowBook": false,
-      "perf1Y": 0.58,
+      "perf1Y": 6.55,
       "sparkline": [
         4260.54,
         4173.99,
@@ -10717,7 +10717,7 @@
       "revenueGrowthYoY": 33.6,
       "epsGrowthYoY": 64.2,
       "belowBook": false,
-      "perf1Y": -0.02,
+      "perf1Y": 7.24,
       "sparkline": [
         20581.31,
         20243.1,
@@ -10795,7 +10795,7 @@
       "revenueGrowthYoY": 9.3,
       "epsGrowthYoY": 34.6,
       "belowBook": false,
-      "perf1Y": 18.67,
+      "perf1Y": 23.19,
       "sparkline": [
         5357.78,
         5212.44,
@@ -10888,7 +10888,7 @@
       "revenueGrowthYoY": 18.7,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 46.19,
+      "perf1Y": 49.03,
       "sparkline": [
         1441.64,
         1454.48,
@@ -10995,7 +10995,7 @@
       "revenueGrowthYoY": -2.6,
       "epsGrowthYoY": 62.9,
       "belowBook": true,
-      "perf1Y": 35.51,
+      "perf1Y": 38.4,
       "sparkline": [
         3912.0,
         3877.0,
@@ -11109,7 +11109,7 @@
       "revenueGrowthYoY": -21.4,
       "epsGrowthYoY": -79.4,
       "belowBook": true,
-      "perf1Y": 33.36,
+      "perf1Y": 39.22,
       "sparkline": [
         1887.86,
         1867.11,
@@ -11195,7 +11195,7 @@
       "revenueGrowthYoY": 3.9,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": -32.6,
+      "perf1Y": -30.5,
       "sparkline": [
         575.1,
         546.3,
@@ -11272,7 +11272,7 @@
       "revenueGrowthYoY": 9.8,
       "epsGrowthYoY": 38.2,
       "belowBook": true,
-      "perf1Y": 20.37,
+      "perf1Y": 21.48,
       "sparkline": [
         2955.76,
         2914.36,
@@ -11350,7 +11350,7 @@
       "revenueGrowthYoY": 3.2,
       "epsGrowthYoY": -58.8,
       "belowBook": true,
-      "perf1Y": 28.27,
+      "perf1Y": 29.95,
       "sparkline": [
         3027.17,
         3015.32,
@@ -11428,7 +11428,7 @@
       "revenueGrowthYoY": 4.0,
       "epsGrowthYoY": -62.1,
       "belowBook": false,
-      "perf1Y": 12.13,
+      "perf1Y": 13.3,
       "sparkline": [
         6191.96,
         6205.82,
@@ -11528,7 +11528,7 @@
       "revenueGrowthYoY": 1.5,
       "epsGrowthYoY": -23.8,
       "belowBook": false,
-      "perf1Y": 32.88,
+      "perf1Y": 34.94,
       "sparkline": [
         5878.83,
         5868.94,
@@ -11628,7 +11628,7 @@
       "revenueGrowthYoY": 39.4,
       "epsGrowthYoY": 207.4,
       "belowBook": false,
-      "perf1Y": 3.96,
+      "perf1Y": 5.77,
       "sparkline": [
         3657.66,
         3617.92,
@@ -11728,7 +11728,7 @@
       "revenueGrowthYoY": -23.1,
       "epsGrowthYoY": -37.4,
       "belowBook": false,
-      "perf1Y": -11.74,
+      "perf1Y": -10.18,
       "sparkline": [
         1486.82,
         1465.59,
@@ -11814,7 +11814,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -6.92,
+      "perf1Y": -6.86,
       "sparkline": [
         3279.97,
         3200.62,
@@ -11891,7 +11891,7 @@
       "revenueGrowthYoY": -0.8,
       "epsGrowthYoY": -16.3,
       "belowBook": true,
-      "perf1Y": -2.56,
+      "perf1Y": -1.33,
       "sparkline": [
         1277.94,
         1265.69,
@@ -11917,7 +11917,7 @@
       "advValueB": 3.423,
       "advSharesM": 2.782,
       "sharesOutM": 713.23,
-      "freeFloatPct": 80.1,
+      "freeFloatPct": 81.9,
       "netCashB": -1722.89,
       "netCashPct": -203.8,
       "shortPct": null,
@@ -11969,7 +11969,7 @@
       "revenueGrowthYoY": 32.3,
       "epsGrowthYoY": 14.9,
       "belowBook": false,
-      "perf1Y": 6.11,
+      "perf1Y": 7.88,
       "sparkline": [
         1752.0,
         1740.0,
@@ -12037,7 +12037,7 @@
       "change": 5.0,
       "changePercent": 0.16,
       "marketCapB": 657.67,
-      "per": 10.71,
+      "per": 10.72,
       "pbr": 1.08,
       "dividendYield": 4.09,
       "roe": 10.64,
@@ -12047,7 +12047,7 @@
       "revenueGrowthYoY": 16.6,
       "epsGrowthYoY": 185.5,
       "belowBook": false,
-      "perf1Y": 8.86,
+      "perf1Y": 11.23,
       "sparkline": [
         3335.0,
         3305.0,
@@ -12133,7 +12133,7 @@
       "revenueGrowthYoY": 14.1,
       "epsGrowthYoY": 17.2,
       "belowBook": false,
-      "perf1Y": 3.49,
+      "perf1Y": 5.44,
       "sparkline": [
         1169.0,
         1165.55,
@@ -12219,7 +12219,7 @@
       "revenueGrowthYoY": 8.6,
       "epsGrowthYoY": 48.6,
       "belowBook": false,
-      "perf1Y": 47.75,
+      "perf1Y": 50.73,
       "sparkline": [
         5402.57,
         5293.86,
@@ -12333,7 +12333,7 @@
       "revenueGrowthYoY": 18.4,
       "epsGrowthYoY": 9.3,
       "belowBook": false,
-      "perf1Y": 12.57,
+      "perf1Y": 14.52,
       "sparkline": [
         13135.51,
         12401.93,
@@ -12418,7 +12418,7 @@
       "revenueGrowthYoY": 19.0,
       "epsGrowthYoY": 122.3,
       "belowBook": false,
-      "perf1Y": 19.89,
+      "perf1Y": 19.57,
       "sparkline": [
         3060.2,
         2978.48,
@@ -12496,7 +12496,7 @@
       "revenueGrowthYoY": 9.3,
       "epsGrowthYoY": 398.2,
       "belowBook": false,
-      "perf1Y": 2.31,
+      "perf1Y": 2.97,
       "sparkline": [
         2489.16,
         2349.65,
@@ -12638,7 +12638,7 @@
       "revenueGrowthYoY": 9.2,
       "epsGrowthYoY": 73.5,
       "belowBook": false,
-      "perf1Y": 3.45,
+      "perf1Y": 4.28,
       "sparkline": [
         2769.72,
         2701.0,
@@ -12724,7 +12724,7 @@
       "revenueGrowthYoY": -1.5,
       "epsGrowthYoY": 17.9,
       "belowBook": false,
-      "perf1Y": 6.9,
+      "perf1Y": 6.79,
       "sparkline": [
         5109.53,
         4912.52,
@@ -12823,7 +12823,7 @@
       "revenueGrowthYoY": 9.0,
       "epsGrowthYoY": 9.0,
       "belowBook": true,
-      "perf1Y": -15.74,
+      "perf1Y": -16.05,
       "sparkline": [
         2227.41,
         2210.57,
@@ -12909,7 +12909,7 @@
       "revenueGrowthYoY": -5.8,
       "epsGrowthYoY": -2.4,
       "belowBook": true,
-      "perf1Y": 3.22,
+      "perf1Y": 4.4,
       "sparkline": [
         3321.0,
         3372.0,
@@ -12987,7 +12987,7 @@
       "revenueGrowthYoY": -16.1,
       "epsGrowthYoY": 107.2,
       "belowBook": false,
-      "perf1Y": 45.13,
+      "perf1Y": 49.65,
       "sparkline": [
         2440.0,
         2379.5,
@@ -13045,20 +13045,6 @@
           "title": "譲渡制限付株式報酬としての自己株式の処分の払込完了に関するお知らせ",
           "filer": null,
           "source": "tdnet"
-        },
-        {
-          "date": "2026-07-13",
-          "type": "buyback",
-          "title": "業績連動型株式報酬としての自己株式の処分に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
-        },
-        {
-          "date": "2026-07-13",
-          "type": "buyback",
-          "title": "譲渡制限付株式報酬としての自己株式の処分に関するお知らせ",
-          "filer": null,
-          "source": "tdnet"
         }
       ],
       "reformDisclosed": null,
@@ -13094,7 +13080,7 @@
       "revenueGrowthYoY": 1.1,
       "epsGrowthYoY": -16.7,
       "belowBook": false,
-      "perf1Y": 11.82,
+      "perf1Y": 11.34,
       "sparkline": [
         2005.29,
         2005.78,
@@ -13180,7 +13166,7 @@
       "revenueGrowthYoY": 8.7,
       "epsGrowthYoY": -0.8,
       "belowBook": false,
-      "perf1Y": 3.38,
+      "perf1Y": 4.8,
       "sparkline": [
         2047.33,
         2047.67,
@@ -13280,7 +13266,7 @@
       "revenueGrowthYoY": 4.5,
       "epsGrowthYoY": -22.0,
       "belowBook": false,
-      "perf1Y": -19.27,
+      "perf1Y": -17.88,
       "sparkline": [
         1666.0,
         1701.0,
@@ -13306,7 +13292,7 @@
       "advValueB": 5.638,
       "advSharesM": 3.187,
       "sharesOutM": 665.46,
-      "freeFloatPct": 51.0,
+      "freeFloatPct": 50.0,
       "netCashB": 124.62,
       "netCashPct": 10.1,
       "shortPct": 4.45,
@@ -13321,7 +13307,7 @@
       "marginRatio": 2.99,
       "marginAsOf": "2026-10-08",
       "pbrZ": 0.38,
-      "perZ": 0.69,
+      "perZ": 0.68,
       "roeZ": -0.0,
       "valZ": 0.53,
       "catalysts": [
@@ -13355,7 +13341,7 @@
         "cash": 25,
         "prof": 0,
         "payout": 36,
-        "float": 42
+        "float": 40
       },
       "activistCandidate": false
     },
@@ -13380,7 +13366,7 @@
       "revenueGrowthYoY": 0.7,
       "epsGrowthYoY": 4836.4,
       "belowBook": false,
-      "perf1Y": 22.71,
+      "perf1Y": 25.17,
       "sparkline": [
         1845.0,
         1844.0,
@@ -13458,7 +13444,7 @@
       "revenueGrowthYoY": 7.3,
       "epsGrowthYoY": -64.0,
       "belowBook": false,
-      "perf1Y": 41.84,
+      "perf1Y": 52.55,
       "sparkline": [
         2446.0,
         2508.5,
@@ -13544,7 +13530,7 @@
       "revenueGrowthYoY": 39.3,
       "epsGrowthYoY": 44.3,
       "belowBook": true,
-      "perf1Y": 35.31,
+      "perf1Y": 38.09,
       "sparkline": [
         5771.83,
         5654.7,
@@ -13630,7 +13616,7 @@
       "revenueGrowthYoY": 34.1,
       "epsGrowthYoY": 22.5,
       "belowBook": false,
-      "perf1Y": 18.65,
+      "perf1Y": 19.97,
       "sparkline": [
         2117.83,
         2128.22,
@@ -13730,7 +13716,7 @@
       "revenueGrowthYoY": -3.9,
       "epsGrowthYoY": -5.0,
       "belowBook": false,
-      "perf1Y": 9.52,
+      "perf1Y": 10.91,
       "sparkline": [
         2600.0,
         2604.0,
@@ -13771,9 +13757,9 @@
       "marginRatio": 1.19,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.16,
-      "perZ": 0.49,
+      "perZ": 0.5,
       "roeZ": -0.5,
-      "valZ": 0.16,
+      "valZ": 0.17,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -13808,7 +13794,7 @@
       "revenueGrowthYoY": 3.9,
       "epsGrowthYoY": 5.2,
       "belowBook": false,
-      "perf1Y": -16.35,
+      "perf1Y": -15.41,
       "sparkline": [
         1086.63,
         1087.61,
@@ -13849,9 +13835,9 @@
       "marginRatio": 1.73,
       "marginAsOf": "2026-10-08",
       "pbrZ": 3.45,
-      "perZ": 0.16,
+      "perZ": 0.18,
       "roeZ": 3.54,
-      "valZ": 1.81,
+      "valZ": 1.82,
       "catalysts": [
         {
           "date": "2026-10-02",
@@ -13908,7 +13894,7 @@
       "revenueGrowthYoY": 3.8,
       "epsGrowthYoY": 23.0,
       "belowBook": false,
-      "perf1Y": 34.32,
+      "perf1Y": 33.27,
       "sparkline": [
         1542.23,
         1537.29,
@@ -13949,9 +13935,9 @@
       "marginRatio": 2.21,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.01,
-      "perZ": -0.4,
+      "perZ": -0.39,
       "roeZ": null,
-      "valZ": -0.21,
+      "valZ": -0.2,
       "catalysts": [
         {
           "date": "2026-10-01",
@@ -13991,7 +13977,7 @@
       ],
       "reformDisclosed": null,
       "recentCatalyst": true,
-      "activistScore": 20,
+      "activistScore": 19,
       "activistSub": {
         "value": 4,
         "cash": 0,
@@ -14021,7 +14007,7 @@
       "revenueGrowthYoY": -8.7,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 25.76,
+      "perf1Y": 27.27,
       "sparkline": [
         1621.16,
         1628.05,
@@ -14106,7 +14092,7 @@
       "revenueGrowthYoY": 12.2,
       "epsGrowthYoY": 237.7,
       "belowBook": true,
-      "perf1Y": 8.17,
+      "perf1Y": 11.86,
       "sparkline": [
         1785.5,
         1776.0,
@@ -14184,7 +14170,7 @@
       "revenueGrowthYoY": 10.4,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 109.53,
+      "perf1Y": 110.7,
       "sparkline": [
         3122.0,
         3058.0,
@@ -14269,7 +14255,7 @@
       "revenueGrowthYoY": 2.4,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 6.33,
+      "perf1Y": 7.49,
       "sparkline": [
         845.94,
         841.93,
@@ -14347,7 +14333,7 @@
       "revenueGrowthYoY": 7.5,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 8.2,
+      "perf1Y": 12.87,
       "sparkline": [
         1295.11,
         1302.09,
@@ -14440,7 +14426,7 @@
       "revenueGrowthYoY": 15.0,
       "epsGrowthYoY": 170.4,
       "belowBook": false,
-      "perf1Y": 198.6,
+      "perf1Y": 207.36,
       "sparkline": [
         16070.0,
         16005.0,
@@ -14554,7 +14540,7 @@
       "revenueGrowthYoY": 12.8,
       "epsGrowthYoY": 23.0,
       "belowBook": false,
-      "perf1Y": 68.88,
+      "perf1Y": 74.67,
       "sparkline": [
         7933.91,
         7878.38,
@@ -14647,7 +14633,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 9.1,
+      "perf1Y": 13.1,
       "sparkline": [
         3973.05,
         3992.76,
@@ -14731,7 +14717,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 42.08,
+      "perf1Y": 48.31,
       "sparkline": [
         3257.91,
         3261.85,
@@ -14817,7 +14803,7 @@
       "revenueGrowthYoY": 10.8,
       "epsGrowthYoY": 4462.9,
       "belowBook": true,
-      "perf1Y": 15.75,
+      "perf1Y": 12.44,
       "sparkline": [
         2102.6,
         2104.57,
@@ -14903,7 +14889,7 @@
       "revenueGrowthYoY": 21.3,
       "epsGrowthYoY": -3.9,
       "belowBook": true,
-      "perf1Y": 50.0,
+      "perf1Y": 52.64,
       "sparkline": [
         3336.35,
         3328.54,
@@ -14996,7 +14982,7 @@
       "revenueGrowthYoY": 6.3,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 15.34,
+      "perf1Y": 16.87,
       "sparkline": [
         3535.0,
         3587.0,
@@ -15095,7 +15081,7 @@
       "revenueGrowthYoY": 27.7,
       "epsGrowthYoY": 10.2,
       "belowBook": false,
-      "perf1Y": 66.94,
+      "perf1Y": 79.28,
       "sparkline": [
         3967.0,
         3921.0,
@@ -15188,7 +15174,7 @@
       "revenueGrowthYoY": 19.9,
       "epsGrowthYoY": 38.3,
       "belowBook": false,
-      "perf1Y": -13.31,
+      "perf1Y": -7.15,
       "sparkline": [
         1545.0,
         1535.5,
@@ -15255,7 +15241,7 @@
       "price": 5022.0,
       "change": 20.0,
       "changePercent": 0.4,
-      "marketCapB": 473.51,
+      "marketCapB": 471.0,
       "per": 8.42,
       "pbr": 0.93,
       "dividendYield": 3.19,
@@ -15266,7 +15252,7 @@
       "revenueGrowthYoY": 18.9,
       "epsGrowthYoY": 157.3,
       "belowBook": true,
-      "perf1Y": 39.44,
+      "perf1Y": 42.23,
       "sparkline": [
         4646.0,
         4645.0,
@@ -15291,10 +15277,10 @@
       ],
       "advValueB": 2.418,
       "advSharesM": 0.502,
-      "sharesOutM": 94.29,
-      "freeFloatPct": 72.6,
+      "sharesOutM": 93.79,
+      "freeFloatPct": 73.0,
       "netCashB": -363.13,
-      "netCashPct": -76.7,
+      "netCashPct": -77.1,
       "shortPct": 4.07,
       "shortSharesM": 3.9,
       "shortDtc": 7.8,
@@ -15362,7 +15348,7 @@
         "cash": 0,
         "prof": 0,
         "payout": 46,
-        "float": 85
+        "float": 86
       },
       "activistCandidate": false
     },
@@ -15387,7 +15373,7 @@
       "revenueGrowthYoY": 9.4,
       "epsGrowthYoY": 5.8,
       "belowBook": false,
-      "perf1Y": -26.45,
+      "perf1Y": -23.59,
       "sparkline": [
         1197.76,
         1215.47,
@@ -15473,7 +15459,7 @@
       "revenueGrowthYoY": 2.9,
       "epsGrowthYoY": 6.7,
       "belowBook": true,
-      "perf1Y": 21.93,
+      "perf1Y": 24.72,
       "sparkline": [
         567.11,
         580.23,
@@ -15551,7 +15537,7 @@
       "revenueGrowthYoY": 23.3,
       "epsGrowthYoY": 4095.7,
       "belowBook": false,
-      "perf1Y": 48.39,
+      "perf1Y": 50.3,
       "sparkline": [
         1642.09,
         1632.69,
@@ -15577,7 +15563,7 @@
       "advValueB": 9.101,
       "advSharesM": 5.706,
       "sharesOutM": 1198.61,
-      "freeFloatPct": 72.7,
+      "freeFloatPct": 82.4,
       "netCashB": -1918.8,
       "netCashPct": -106.4,
       "shortPct": 1.08,
@@ -15598,13 +15584,13 @@
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
-      "activistScore": 25,
+      "activistScore": 26,
       "activistSub": {
         "value": 15,
         "cash": 0,
         "prof": 0,
         "payout": 77,
-        "float": 85
+        "float": 100
       },
       "activistCandidate": false
     },
@@ -15629,7 +15615,7 @@
       "revenueGrowthYoY": 10.4,
       "epsGrowthYoY": 114.4,
       "belowBook": false,
-      "perf1Y": 34.19,
+      "perf1Y": 41.52,
       "sparkline": [
         6835.0,
         6792.0,
@@ -15670,9 +15656,9 @@
       "marginRatio": 14.03,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.41,
-      "perZ": -1.04,
+      "perZ": -1.05,
       "roeZ": 0.2,
-      "valZ": -0.72,
+      "valZ": -0.73,
       "catalysts": [
         {
           "date": "2026-08-10",
@@ -15715,7 +15701,7 @@
       "revenueGrowthYoY": 13.5,
       "epsGrowthYoY": 74.5,
       "belowBook": true,
-      "perf1Y": 20.21,
+      "perf1Y": 20.82,
       "sparkline": [
         5581.0,
         5532.0,
@@ -15788,8 +15774,8 @@
       "sector": "Materials",
       "segment": "Prime",
       "price": 496.0,
-      "change": null,
-      "changePercent": null,
+      "change": 0.0,
+      "changePercent": 0.0,
       "marketCapB": 252.57,
       "per": 16.19,
       "pbr": 0.47,
@@ -15801,7 +15787,7 @@
       "revenueGrowthYoY": 17.2,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": -14.48,
+      "perf1Y": -6.77,
       "sparkline": [
         492.0,
         492.0,
@@ -15869,7 +15855,7 @@
       "change": -27.0,
       "changePercent": -0.51,
       "marketCapB": 377.99,
-      "per": 15.82,
+      "per": 15.84,
       "pbr": 0.77,
       "dividendYield": 3.07,
       "roe": 5.46,
@@ -15879,7 +15865,7 @@
       "revenueGrowthYoY": 3.0,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 6.42,
+      "perf1Y": 8.76,
       "sparkline": [
         4791.0,
         4806.0,
@@ -15920,7 +15906,7 @@
       "marginRatio": 10.88,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.42,
-      "perZ": -0.29,
+      "perZ": -0.28,
       "roeZ": -0.58,
       "valZ": -0.35,
       "catalysts": [
@@ -15986,7 +15972,7 @@
       "revenueGrowthYoY": 5.1,
       "epsGrowthYoY": 23.5,
       "belowBook": true,
-      "perf1Y": 6.44,
+      "perf1Y": 12.37,
       "sparkline": [
         4076.3,
         3999.43,
@@ -16093,7 +16079,7 @@
       "revenueGrowthYoY": 18.4,
       "epsGrowthYoY": 5.5,
       "belowBook": false,
-      "perf1Y": 106.8,
+      "perf1Y": 111.66,
       "sparkline": [
         1980.0,
         2000.0,
@@ -16193,7 +16179,7 @@
       "revenueGrowthYoY": 1.7,
       "epsGrowthYoY": 12.5,
       "belowBook": false,
-      "perf1Y": 54.89,
+      "perf1Y": 59.81,
       "sparkline": [
         5743.45,
         5757.31,
@@ -16279,7 +16265,7 @@
       "revenueGrowthYoY": 10.6,
       "epsGrowthYoY": 69.3,
       "belowBook": false,
-      "perf1Y": 123.11,
+      "perf1Y": 131.69,
       "sparkline": [
         5087.53,
         5014.26,
@@ -16372,7 +16358,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 15.22,
+      "perf1Y": 16.13,
       "sparkline": [
         1995.81,
         1990.41,
@@ -16450,7 +16436,7 @@
       "revenueGrowthYoY": 4.1,
       "epsGrowthYoY": 332.0,
       "belowBook": true,
-      "perf1Y": -5.89,
+      "perf1Y": -5.07,
       "sparkline": [
         1789.91,
         1787.96,
@@ -16526,7 +16512,7 @@
       "change": -142.0,
       "changePercent": -2.05,
       "marketCapB": 499.89,
-      "per": 24.04,
+      "per": 24.05,
       "pbr": 2.34,
       "dividendYield": 1.35,
       "roe": 10.23,
@@ -16536,7 +16522,7 @@
       "revenueGrowthYoY": -13.9,
       "epsGrowthYoY": 35.4,
       "belowBook": false,
-      "perf1Y": -28.04,
+      "perf1Y": -26.54,
       "sparkline": [
         7265.9,
         6792.9,
@@ -16614,7 +16600,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 31.94,
+      "perf1Y": 35.86,
       "sparkline": [
         2924.98,
         2925.97,
@@ -16699,7 +16685,7 @@
       "revenueGrowthYoY": 15.7,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 21.98,
+      "perf1Y": 24.27,
       "sparkline": [
         1045.0,
         1006.0,
@@ -16777,7 +16763,7 @@
       "revenueGrowthYoY": 38.4,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 67.25,
+      "perf1Y": 71.14,
       "sparkline": [
         5324.81,
         5195.3,
@@ -16870,7 +16856,7 @@
       "revenueGrowthYoY": 58.2,
       "epsGrowthYoY": 268.9,
       "belowBook": false,
-      "perf1Y": 54.42,
+      "perf1Y": 54.53,
       "sparkline": [
         9456.0,
         9263.0,
@@ -16956,7 +16942,7 @@
       "revenueGrowthYoY": 24.3,
       "epsGrowthYoY": 331.9,
       "belowBook": false,
-      "perf1Y": 342.26,
+      "perf1Y": 329.26,
       "sparkline": [
         4117.0,
         4012.31,
@@ -17049,7 +17035,7 @@
       "revenueGrowthYoY": 15.9,
       "epsGrowthYoY": 89.1,
       "belowBook": false,
-      "perf1Y": 111.51,
+      "perf1Y": 108.2,
       "sparkline": [
         2170.59,
         2093.26,
@@ -17127,7 +17113,7 @@
       "revenueGrowthYoY": null,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 99.71,
+      "perf1Y": 96.12,
       "sparkline": [
         5471.95,
         5189.03,
@@ -17227,7 +17213,7 @@
       "revenueGrowthYoY": 57.9,
       "epsGrowthYoY": 48.1,
       "belowBook": false,
-      "perf1Y": 73.85,
+      "perf1Y": 75.36,
       "sparkline": [
         3388.95,
         3482.54,
@@ -17316,7 +17302,7 @@
         }
       ],
       "reformDisclosed": null,
-      "recentCatalyst": true,
+      "recentCatalyst": false,
       "activistScore": 10,
       "activistSub": {
         "value": 0,
@@ -17348,7 +17334,7 @@
       "revenueGrowthYoY": 135.6,
       "epsGrowthYoY": 41.3,
       "belowBook": true,
-      "perf1Y": 75.38,
+      "perf1Y": 77.48,
       "sparkline": [
         3360.36,
         3474.81,
@@ -17426,7 +17412,7 @@
       "revenueGrowthYoY": 16.3,
       "epsGrowthYoY": 262.9,
       "belowBook": false,
-      "perf1Y": 33.14,
+      "perf1Y": 40.32,
       "sparkline": [
         4275.19,
         4250.51,
@@ -17522,7 +17508,7 @@
         }
       ],
       "reformDisclosed": null,
-      "recentCatalyst": true,
+      "recentCatalyst": false,
       "activistScore": 27,
       "activistSub": {
         "value": 18,
@@ -17554,7 +17540,7 @@
       "revenueGrowthYoY": 29.7,
       "epsGrowthYoY": 108.2,
       "belowBook": false,
-      "perf1Y": 38.25,
+      "perf1Y": 41.9,
       "sparkline": [
         2401.86,
         2348.06,
@@ -17653,7 +17639,7 @@
       "revenueGrowthYoY": 27.1,
       "epsGrowthYoY": 43.5,
       "belowBook": false,
-      "perf1Y": 13.88,
+      "perf1Y": 19.34,
       "sparkline": [
         53421.55,
         53411.58,
@@ -17694,9 +17680,9 @@
       "marginRatio": 7.74,
       "marginAsOf": "2026-10-08",
       "pbrZ": 3.79,
-      "perZ": 2.27,
+      "perZ": 2.26,
       "roeZ": 2.09,
-      "valZ": 3.03,
+      "valZ": 3.02,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -17721,7 +17707,7 @@
       "change": -21.0,
       "changePercent": -0.88,
       "marketCapB": 6440.86,
-      "per": 16.21,
+      "per": 16.63,
       "pbr": 0.65,
       "dividendYield": 2.55,
       "roe": 5.12,
@@ -17731,7 +17717,7 @@
       "revenueGrowthYoY": 6.4,
       "epsGrowthYoY": 97.8,
       "belowBook": true,
-      "perf1Y": 66.28,
+      "perf1Y": 67.06,
       "sparkline": [
         2372.15,
         2404.27,
@@ -17772,9 +17758,9 @@
       "marginRatio": 5.14,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.6,
-      "perZ": -0.23,
+      "perZ": -0.19,
       "roeZ": -0.94,
-      "valZ": -0.41,
+      "valZ": -0.4,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -17783,7 +17769,7 @@
         "value": 57,
         "cash": 100,
         "prof": 36,
-        "payout": 17,
+        "payout": 15,
         "float": 55
       },
       "activistCandidate": false
@@ -17799,7 +17785,7 @@
       "change": -96.0,
       "changePercent": -1.62,
       "marketCapB": 692.23,
-      "per": 17.24,
+      "per": 17.27,
       "pbr": 0.99,
       "dividendYield": 2.31,
       "roe": 6.07,
@@ -17809,7 +17795,7 @@
       "revenueGrowthYoY": 18.0,
       "epsGrowthYoY": 141.5,
       "belowBook": true,
-      "perf1Y": 67.84,
+      "perf1Y": 65.97,
       "sparkline": [
         5700.0,
         5611.0,
@@ -17909,7 +17895,7 @@
       "revenueGrowthYoY": 3.5,
       "epsGrowthYoY": -0.7,
       "belowBook": false,
-      "perf1Y": 16.24,
+      "perf1Y": 25.52,
       "sparkline": [
         4392.0,
         4312.0,
@@ -17995,7 +17981,7 @@
       "revenueGrowthYoY": 18.9,
       "epsGrowthYoY": 337.9,
       "belowBook": false,
-      "perf1Y": 81.03,
+      "perf1Y": 84.0,
       "sparkline": [
         4335.29,
         4334.3,
@@ -18088,7 +18074,7 @@
       "revenueGrowthYoY": 11.4,
       "epsGrowthYoY": 958.5,
       "belowBook": false,
-      "perf1Y": 25.4,
+      "perf1Y": 29.66,
       "sparkline": [
         4241.3,
         4164.63,
@@ -18188,7 +18174,7 @@
       "revenueGrowthYoY": 17.3,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 6.76,
+      "perf1Y": 12.21,
       "sparkline": [
         3120.17,
         3126.12,
@@ -18273,7 +18259,7 @@
       "revenueGrowthYoY": 30.6,
       "epsGrowthYoY": 793.2,
       "belowBook": true,
-      "perf1Y": 41.09,
+      "perf1Y": 45.28,
       "sparkline": [
         1044.11,
         1032.3,
@@ -18373,7 +18359,7 @@
       "revenueGrowthYoY": 6.7,
       "epsGrowthYoY": 63.0,
       "belowBook": true,
-      "perf1Y": 10.55,
+      "perf1Y": 11.22,
       "sparkline": [
         364.66,
         364.07,
@@ -18451,7 +18437,7 @@
       "revenueGrowthYoY": 8.2,
       "epsGrowthYoY": 112.5,
       "belowBook": true,
-      "perf1Y": 47.25,
+      "perf1Y": 52.1,
       "sparkline": [
         2003.89,
         1976.36,
@@ -18492,7 +18478,7 @@
       "marginRatio": 5.94,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.52,
-      "perZ": 1.38,
+      "perZ": 1.37,
       "roeZ": -1.26,
       "valZ": 0.43,
       "catalysts": [],
@@ -18529,7 +18515,7 @@
       "revenueGrowthYoY": 16.3,
       "epsGrowthYoY": 95.6,
       "belowBook": false,
-      "perf1Y": 25.38,
+      "perf1Y": 30.03,
       "sparkline": [
         3348.6,
         3348.6,
@@ -18570,7 +18556,7 @@
       "marginRatio": 49.89,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.45,
-      "perZ": -1.09,
+      "perZ": -1.08,
       "roeZ": null,
       "valZ": -0.77,
       "catalysts": [
@@ -18603,7 +18589,7 @@
       "price": 15015.0,
       "change": 430.0,
       "changePercent": 2.95,
-      "marketCapB": 2192.06,
+      "marketCapB": 2192.05,
       "per": 20.51,
       "pbr": 2.77,
       "dividendYield": 1.43,
@@ -18614,7 +18600,7 @@
       "revenueGrowthYoY": 10.2,
       "epsGrowthYoY": 90.3,
       "belowBook": false,
-      "perf1Y": 40.42,
+      "perf1Y": 47.93,
       "sparkline": [
         13007.65,
         12754.64,
@@ -18689,18 +18675,18 @@
       "price": 4783.0,
       "change": 3.0,
       "changePercent": 0.06,
-      "marketCapB": 1240.56,
-      "per": 36.82,
-      "pbr": 2.56,
+      "marketCapB": 1240.9,
+      "per": 34.52,
+      "pbr": 2.46,
       "dividendYield": 1.51,
-      "roe": 7.51,
-      "roa": 3.6,
-      "operatingMargin": 6.11,
+      "roe": 7.64,
+      "roa": 3.58,
+      "operatingMargin": 9.26,
       "debtToEquity": 0.24,
-      "revenueGrowthYoY": 10.6,
-      "epsGrowthYoY": -21.7,
+      "revenueGrowthYoY": 9.0,
+      "epsGrowthYoY": 19.9,
       "belowBook": false,
-      "perf1Y": 17.23,
+      "perf1Y": 17.75,
       "sparkline": [
         4503.0,
         4432.0,
@@ -18725,10 +18711,10 @@
       ],
       "advValueB": 15.82,
       "advSharesM": 3.444,
-      "sharesOutM": 259.37,
+      "sharesOutM": 259.44,
       "freeFloatPct": 100.0,
-      "netCashB": -63.54,
-      "netCashPct": -5.1,
+      "netCashB": -59.26,
+      "netCashPct": -4.8,
       "shortPct": 0.55,
       "shortSharesM": 1.49,
       "shortDtc": 0.4,
@@ -18740,18 +18726,18 @@
       "marginShortM": 0.24,
       "marginRatio": 25.49,
       "marginAsOf": "2026-10-08",
-      "pbrZ": -0.26,
-      "perZ": 0.28,
-      "roeZ": -0.58,
-      "valZ": 0.01,
+      "pbrZ": -0.28,
+      "perZ": 0.15,
+      "roeZ": -0.57,
+      "valZ": -0.07,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
       "activistScore": 11,
       "activistSub": {
-        "value": 0,
+        "value": 1,
         "cash": 0,
-        "prof": 6,
+        "prof": 5,
         "payout": 0,
         "float": 100
       },
@@ -18778,7 +18764,7 @@
       "revenueGrowthYoY": 13.0,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -25.53,
+      "perf1Y": -21.97,
       "sparkline": [
         1845.07,
         1854.95,
@@ -18819,7 +18805,7 @@
       "marginRatio": 5.55,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.2,
-      "perZ": 0.95,
+      "perZ": 0.96,
       "roeZ": -0.72,
       "valZ": 0.38,
       "catalysts": [
@@ -18864,7 +18850,7 @@
       "revenueGrowthYoY": 29.9,
       "epsGrowthYoY": 19.7,
       "belowBook": false,
-      "perf1Y": -2.45,
+      "perf1Y": 3.87,
       "sparkline": [
         7215.0,
         7376.0,
@@ -18957,7 +18943,7 @@
       "revenueGrowthYoY": 10.8,
       "epsGrowthYoY": 56.2,
       "belowBook": false,
-      "perf1Y": 45.06,
+      "perf1Y": 51.15,
       "sparkline": [
         6037.0,
         6030.0,
@@ -18998,7 +18984,7 @@
       "marginRatio": 15.4,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.46,
-      "perZ": -0.1,
+      "perZ": -0.09,
       "roeZ": -0.8,
       "valZ": -0.28,
       "catalysts": [
@@ -19043,7 +19029,7 @@
       "revenueGrowthYoY": 14.4,
       "epsGrowthYoY": 96.3,
       "belowBook": false,
-      "perf1Y": 74.95,
+      "perf1Y": 80.32,
       "sparkline": [
         2963.97,
         2986.69,
@@ -19150,7 +19136,7 @@
       "revenueGrowthYoY": 6.4,
       "epsGrowthYoY": 89.2,
       "belowBook": false,
-      "perf1Y": 140.27,
+      "perf1Y": 147.55,
       "sparkline": [
         4153.75,
         4266.07,
@@ -19191,9 +19177,9 @@
       "marginRatio": 4.92,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.38,
-      "perZ": 0.52,
+      "perZ": 0.53,
       "roeZ": -0.79,
-      "valZ": 0.07,
+      "valZ": 0.08,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -19228,7 +19214,7 @@
       "revenueGrowthYoY": -7.9,
       "epsGrowthYoY": -88.6,
       "belowBook": false,
-      "perf1Y": -27.99,
+      "perf1Y": -25.11,
       "sparkline": [
         629.6,
         669.2,
@@ -19314,7 +19300,7 @@
       "revenueGrowthYoY": 38.0,
       "epsGrowthYoY": 464.6,
       "belowBook": false,
-      "perf1Y": 88.2,
+      "perf1Y": 99.38,
       "sparkline": [
         3154.7,
         3165.62,
@@ -19355,9 +19341,9 @@
       "marginRatio": 8.62,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.1,
-      "perZ": -0.03,
+      "perZ": -0.02,
       "roeZ": -0.24,
-      "valZ": -0.07,
+      "valZ": -0.06,
       "catalysts": [
         {
           "date": "2026-08-31",
@@ -19369,7 +19355,7 @@
       ],
       "reformDisclosed": null,
       "recentCatalyst": false,
-      "activistScore": 19,
+      "activistScore": 18,
       "activistSub": {
         "value": 1,
         "cash": 26,
@@ -19400,7 +19386,7 @@
       "revenueGrowthYoY": -0.4,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 16.86,
+      "perf1Y": 21.6,
       "sparkline": [
         2092.89,
         2142.16,
@@ -19504,7 +19490,7 @@
       "change": 54.0,
       "changePercent": 1.18,
       "marketCapB": 1149.3,
-      "per": 20.4,
+      "per": 20.39,
       "pbr": 2.29,
       "dividendYield": 1.99,
       "roe": null,
@@ -19514,7 +19500,7 @@
       "revenueGrowthYoY": 8.6,
       "epsGrowthYoY": -18.3,
       "belowBook": false,
-      "perf1Y": 1.97,
+      "perf1Y": 7.99,
       "sparkline": [
         4591.63,
         4592.62,
@@ -19612,7 +19598,7 @@
       "revenueGrowthYoY": 19.8,
       "epsGrowthYoY": 156.9,
       "belowBook": false,
-      "perf1Y": 81.13,
+      "perf1Y": 86.59,
       "sparkline": [
         2081.0,
         2061.0,
@@ -19712,7 +19698,7 @@
       "revenueGrowthYoY": 16.8,
       "epsGrowthYoY": 203.8,
       "belowBook": false,
-      "perf1Y": 126.89,
+      "perf1Y": 119.29,
       "sparkline": [
         4896.0,
         4844.0,
@@ -19803,7 +19789,7 @@
       "revenueGrowthYoY": 10.7,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": 215.34,
+      "perf1Y": 232.59,
       "sparkline": [
         8927.6,
         9356.47,
@@ -19844,7 +19830,7 @@
       "marginRatio": 3.54,
       "marginAsOf": "2026-10-08",
       "pbrZ": 0.0,
-      "perZ": 2.95,
+      "perZ": 2.96,
       "roeZ": -0.78,
       "valZ": 1.48,
       "catalysts": [
@@ -19896,7 +19882,7 @@
       "revenueGrowthYoY": 13.0,
       "epsGrowthYoY": 13.1,
       "belowBook": false,
-      "perf1Y": -12.17,
+      "perf1Y": -7.49,
       "sparkline": [
         4452.15,
         4213.85,
@@ -19996,7 +19982,7 @@
       "revenueGrowthYoY": 12.6,
       "epsGrowthYoY": 21.7,
       "belowBook": false,
-      "perf1Y": 66.7,
+      "perf1Y": 70.09,
       "sparkline": [
         1830.77,
         1869.3,
@@ -20095,7 +20081,7 @@
       "revenueGrowthYoY": 6.8,
       "epsGrowthYoY": 27.4,
       "belowBook": true,
-      "perf1Y": 11.42,
+      "perf1Y": 14.78,
       "sparkline": [
         2121.18,
         2132.92,
@@ -20136,9 +20122,9 @@
       "marginRatio": 43.32,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.44,
-      "perZ": -0.86,
+      "perZ": -0.87,
       "roeZ": -0.04,
-      "valZ": -0.65,
+      "valZ": -0.66,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -20173,7 +20159,7 @@
       "revenueGrowthYoY": 1.8,
       "epsGrowthYoY": 90.9,
       "belowBook": true,
-      "perf1Y": -12.53,
+      "perf1Y": -6.79,
       "sparkline": [
         351.92,
         355.47,
@@ -20214,9 +20200,9 @@
       "marginRatio": 3.48,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.63,
-      "perZ": 2.26,
+      "perZ": 2.31,
       "roeZ": -0.88,
-      "valZ": 0.81,
+      "valZ": 0.84,
       "catalysts": [],
       "reformDisclosed": null,
       "recentCatalyst": false,
@@ -20251,7 +20237,7 @@
       "revenueGrowthYoY": 3.8,
       "epsGrowthYoY": -86.4,
       "belowBook": false,
-      "perf1Y": 4.1,
+      "perf1Y": 5.52,
       "sparkline": [
         1730.7,
         1712.3,
@@ -20343,7 +20329,7 @@
       "revenueGrowthYoY": 16.2,
       "epsGrowthYoY": 30.0,
       "belowBook": false,
-      "perf1Y": 14.93,
+      "perf1Y": 18.13,
       "sparkline": [
         23210.0,
         23135.0,
@@ -20464,7 +20450,7 @@
       "revenueGrowthYoY": 30.3,
       "epsGrowthYoY": -2.9,
       "belowBook": false,
-      "perf1Y": 120.51,
+      "perf1Y": 128.9,
       "sparkline": [
         2233.75,
         2267.37,
@@ -20556,7 +20542,7 @@
       "revenueGrowthYoY": 15.0,
       "epsGrowthYoY": 137.2,
       "belowBook": true,
-      "perf1Y": 22.69,
+      "perf1Y": 23.02,
       "sparkline": [
         2504.64,
         2508.59,
@@ -20663,7 +20649,7 @@
       "revenueGrowthYoY": 1.9,
       "epsGrowthYoY": -45.7,
       "belowBook": false,
-      "perf1Y": 15.42,
+      "perf1Y": 17.18,
       "sparkline": [
         3035.52,
         3062.35,
@@ -20791,7 +20777,7 @@
       "revenueGrowthYoY": 12.0,
       "epsGrowthYoY": 362.3,
       "belowBook": false,
-      "perf1Y": 17.32,
+      "perf1Y": 23.83,
       "sparkline": [
         1217.21,
         1208.31,
@@ -20869,7 +20855,7 @@
       "revenueGrowthYoY": 5.9,
       "epsGrowthYoY": 94.4,
       "belowBook": false,
-      "perf1Y": 23.23,
+      "perf1Y": 24.22,
       "sparkline": [
         2101.0,
         2118.5,
@@ -20946,7 +20932,7 @@
       "revenueGrowthYoY": 7.4,
       "epsGrowthYoY": 14.4,
       "belowBook": false,
-      "perf1Y": -8.47,
+      "perf1Y": -7.67,
       "sparkline": [
         2795.2,
         2795.2,
@@ -20987,9 +20973,9 @@
       "marginRatio": 9.7,
       "marginAsOf": "2026-10-08",
       "pbrZ": 0.03,
-      "perZ": -0.26,
+      "perZ": -0.25,
       "roeZ": 0.03,
-      "valZ": -0.12,
+      "valZ": -0.11,
       "catalysts": [
         {
           "date": "2026-10-01",
@@ -21074,7 +21060,7 @@
       "revenueGrowthYoY": 4.6,
       "epsGrowthYoY": 38.9,
       "belowBook": true,
-      "perf1Y": 9.67,
+      "perf1Y": 12.99,
       "sparkline": [
         4555.0,
         4581.0,
@@ -21160,7 +21146,7 @@
       "revenueGrowthYoY": 20.7,
       "epsGrowthYoY": 81.6,
       "belowBook": true,
-      "perf1Y": 46.18,
+      "perf1Y": 45.39,
       "sparkline": [
         3358.0,
         3457.0,
@@ -21238,7 +21224,7 @@
       "revenueGrowthYoY": 27.3,
       "epsGrowthYoY": 59.8,
       "belowBook": false,
-      "perf1Y": 65.16,
+      "perf1Y": 63.56,
       "sparkline": [
         1707.29,
         1734.43,
@@ -21316,7 +21302,7 @@
       "revenueGrowthYoY": 51.8,
       "epsGrowthYoY": 40.2,
       "belowBook": false,
-      "perf1Y": 81.95,
+      "perf1Y": 86.9,
       "sparkline": [
         2651.34,
         2697.32,
@@ -21423,7 +21409,7 @@
       "revenueGrowthYoY": 13.1,
       "epsGrowthYoY": 25.8,
       "belowBook": false,
-      "perf1Y": 74.39,
+      "perf1Y": 77.92,
       "sparkline": [
         7492.35,
         7666.04,
@@ -21501,7 +21487,7 @@
       "revenueGrowthYoY": -59.1,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -5.18,
+      "perf1Y": -2.29,
       "sparkline": [
         154.86,
         155.05,
@@ -21600,7 +21586,7 @@
       "revenueGrowthYoY": -12.0,
       "epsGrowthYoY": 20.2,
       "belowBook": false,
-      "perf1Y": 34.44,
+      "perf1Y": 36.53,
       "sparkline": [
         4623.2,
         4762.88,
@@ -21675,7 +21661,7 @@
         }
       ],
       "reformDisclosed": null,
-      "recentCatalyst": true,
+      "recentCatalyst": false,
       "activistScore": 16,
       "activistSub": {
         "value": 3,
@@ -21707,7 +21693,7 @@
       "revenueGrowthYoY": 5.2,
       "epsGrowthYoY": 3.1,
       "belowBook": true,
-      "perf1Y": 9.35,
+      "perf1Y": 10.46,
       "sparkline": [
         2888.68,
         2895.6,
@@ -21785,7 +21771,7 @@
       "revenueGrowthYoY": 3.5,
       "epsGrowthYoY": -16.5,
       "belowBook": false,
-      "perf1Y": 6.32,
+      "perf1Y": 7.32,
       "sparkline": [
         1759.24,
         1765.63,
@@ -21885,7 +21871,7 @@
       "revenueGrowthYoY": 8.3,
       "epsGrowthYoY": -0.1,
       "belowBook": true,
-      "perf1Y": -2.11,
+      "perf1Y": -2.01,
       "sparkline": [
         777.75,
         781.69,
@@ -21963,7 +21949,7 @@
       "revenueGrowthYoY": 4.0,
       "epsGrowthYoY": 21.2,
       "belowBook": false,
-      "perf1Y": -3.2,
+      "perf1Y": -0.76,
       "sparkline": [
         1384.63,
         1383.63,
@@ -22041,7 +22027,7 @@
       "revenueGrowthYoY": 1.4,
       "epsGrowthYoY": null,
       "belowBook": false,
-      "perf1Y": -9.66,
+      "perf1Y": -7.8,
       "sparkline": [
         1910.68,
         1940.84,
@@ -22082,7 +22068,7 @@
       "marginRatio": 2.23,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.39,
-      "perZ": 2.6,
+      "perZ": 2.59,
       "roeZ": -1.32,
       "valZ": 1.1,
       "catalysts": [],
@@ -22108,8 +22094,8 @@
       "price": 5618.0,
       "change": 35.0,
       "changePercent": 0.63,
-      "marketCapB": 1334.97,
-      "per": 72.53,
+      "marketCapB": 1318.78,
+      "per": 72.71,
       "pbr": 1.61,
       "dividendYield": 1.78,
       "roe": 2.44,
@@ -22119,7 +22105,7 @@
       "revenueGrowthYoY": 12.4,
       "epsGrowthYoY": 179.5,
       "belowBook": false,
-      "perf1Y": 64.05,
+      "perf1Y": 67.05,
       "sparkline": [
         5291.0,
         5328.0,
@@ -22144,10 +22130,10 @@
       ],
       "advValueB": 5.152,
       "advSharesM": 0.92,
-      "sharesOutM": 237.62,
-      "freeFloatPct": 84.6,
+      "sharesOutM": 234.74,
+      "freeFloatPct": 85.7,
       "netCashB": -646.64,
-      "netCashPct": -48.4,
+      "netCashPct": -49.0,
       "shortPct": 3.29,
       "shortSharesM": 8.05,
       "shortDtc": 8.8,
@@ -22160,9 +22146,9 @@
       "marginRatio": 2.43,
       "marginAsOf": "2026-10-08",
       "pbrZ": -0.21,
-      "perZ": 4.52,
+      "perZ": 4.53,
       "roeZ": -1.3,
-      "valZ": 2.15,
+      "valZ": 2.16,
       "catalysts": [
         {
           "date": "2026-10-01",
@@ -22215,7 +22201,7 @@
       "price": 1465.0,
       "change": 0.5,
       "changePercent": 0.03,
-      "marketCapB": 496.11,
+      "marketCapB": 494.7,
       "per": 12.34,
       "pbr": 1.31,
       "dividendYield": 3.0,
@@ -22226,7 +22212,7 @@
       "revenueGrowthYoY": 2.9,
       "epsGrowthYoY": -65.7,
       "belowBook": false,
-      "perf1Y": 28.91,
+      "perf1Y": 29.25,
       "sparkline": [
         1508.83,
         1499.96,
@@ -22251,8 +22237,8 @@
       ],
       "advValueB": 1.439,
       "advSharesM": 0.958,
-      "sharesOutM": 338.64,
-      "freeFloatPct": 87.4,
+      "sharesOutM": 337.68,
+      "freeFloatPct": 87.6,
       "netCashB": -75.34,
       "netCashPct": -15.2,
       "shortPct": null,
@@ -22333,7 +22319,7 @@
       "revenueGrowthYoY": 12.0,
       "epsGrowthYoY": 49.5,
       "belowBook": false,
-      "perf1Y": 30.4,
+      "perf1Y": 33.02,
       "sparkline": [
         1994.12,
         1927.91,
@@ -22426,7 +22412,7 @@
       "revenueGrowthYoY": 4.4,
       "epsGrowthYoY": null,
       "belowBook": true,
-      "perf1Y": 15.36,
+      "perf1Y": 17.98,
       "sparkline": [
         1071.19,
         1057.39,
@@ -22504,7 +22490,7 @@
       "revenueGrowthYoY": 7.0,
       "epsGrowthYoY": -20.7,
       "belowBook": true,
-      "perf1Y": 21.51,
+      "perf1Y": 23.93,
       "sparkline": [
         1066.81,
         1058.4,
@@ -22582,7 +22568,7 @@
       "revenueGrowthYoY": 46.7,
       "epsGrowthYoY": -4.3,
       "belowBook": true,
-      "perf1Y": 14.2,
+      "perf1Y": 17.67,
       "sparkline": [
         1374.73,
         1402.32,
@@ -22657,7 +22643,7 @@
     },
     {
       "sector": "Materials",
-      "changePercent": -0.3,
+      "changePercent": -0.29,
       "avgPbr": 1.82,
       "count": 37
     },
@@ -22719,67 +22705,67 @@
   "marketSummary": {
     "advancers": 144,
     "decliners": 100,
-    "unchanged": 0,
+    "unchanged": 1,
     "belowBookCount": 64,
-    "avgPer": 20.83,
+    "avgPer": 20.82,
     "avgPbr": 2.23,
     "avgDiv": 2.46,
     "totalListings": 245
   },
   "headlines": [
     {
-      "title": "Dollar-yen capped on Japanese holiday, hovering in lower 158 range as U.S. bond market closed",
-      "publisher": "BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1R0lfQTFaNlQ5aUdSdENNWXRtUVEzaGxMOHgySXBVSTJiSE5zVnBmLUxsMDVtb2lBcDVTMHc4aVV3WE9RZXdNX3FBMmJrcXhHZTYzUFAzQnVJTVlRTWpId01zNmxGbnl4YUd3VU5EcUJTejVvcFE?oc=5",
-      "publishedTs": 1791768900
+      "title": "3 Japanese Growth Stocks To Own In October 2026",
+      "publisher": "Simply Wall Street",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZnZwQVpGMkdZYTBjR1JtQVpFcmVYeDA2T3E3NWhnM0JPOXMxOVJiZGhfUk9raXNLbXpVdEZFYW9zT3VNQmpQSmZwRS1haHJDT3lidzRrdGt2MGZKQkdmb1FJeFNGeW0zLVRObFZVWEo2eVVpYnZ6c3BTd1h3RXlMSVBrYWx0SVJFdHhhaUw4V3dOdXpoMHBneVVtT2dDN2FEYWE5U2dYajJxY0hZVl8ySjZCZHBCeklr0gG-AUFVX3lxTFBBRjZJMjhMcWNFNlRVUzB2dHRWNjBMX3hkY3ZDbzVxTXlvUEJVTzZXZWxOdFRLNEdMTG1hUEFhakRyNV93cFlQcUl2VFpKczRXdlI1a3M1SkYxbC12R2ZiTjBMZDd6bnlZVnkwbS1iT2R3TXd6N25LMG1OeHpqNWx0U215bmYwUXNjbHZfTGVTR3VYenRuNWY0UXNGQnRJQndtLXRsQ0tKZHFEM0drWlg1dGx3Vnc5ajV2ZUVrNlE?oc=5",
+      "publishedTs": 1791802065
     },
     {
-      "title": "Japanese Yen holds range amid Japanese holiday, dovish BoJ signals",
+      "title": "Asian Oil Storage Stocks In Focus As Japan Pushes Bigger Regional Reserves",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTjVfdU5oUnFSQ3VZUkdrT3BuRm1oeTEtekpwMUMybE1hN3pvY19xNzVxcDBKdGFvMkdJMERPNWJqck05UzJyR1dNWFdERmVxaUVNUGozQ0I3V2x1OVh2Y3IzUG1CUk9OSHJKZm15U2wwQ0pFdGItT0pvNFZFV2lNYkJHdTlCTTlpYXloRFB6bmQ?oc=5",
+      "publishedTs": 1791799738
+    },
+    {
+      "title": "Euro holds range vs Yen as French strains, Japan’s loose policy offset",
       "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYlR2d0VxQTkySGdaN2lCc20zd0NqeHlfa2l4bUEyUHpSdDNReVM4bFQ0Wm9xYWlxdU1xX0xYems0TDhhY1pKbTUzR2tyT2JlR0JIZFBzLVliX3VlaGlVd096UzUwQ2loLU9EZ1NnN09HZUpjLTh0OUU0S3NFbW5sckxFb213UHJsTGk3WXBxenNJdlE5c3J6LUI5OGlGdkd0eGdLbmV5YnNERnI0?oc=5",
-      "publishedTs": 1791768546
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQm9hMy1LOXNZZ3RRSXpqMXBxUzJFVE9CbTMzVFNwQ0xIMnVrV05jV0ZKR2RoWU1PYld5czQzc1F6RHlkV3BxS01naFg2R04wSVUyXy1TUVF3dDZaUjZiZl9tMUhjQ3Z5eVBTc0VpSlBuSThfTXlxU1A0dmQxTWJXZks4TXpQd3BuSFloeUVHOFBCRjB5M0p1VGFJTnU0LVY3bXp2UVpfQ19vdXZuNmFuLQ?oc=5",
+      "publishedTs": 1791797035
     },
     {
-      "title": "Investors bet on Japan, Australia rental housing as rates, home prices rise",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeHM2OVZiOGRCS3MzdTRLXzkwaVN6WnJMbDNOMEFCc01pby16YjNhQjdwWFpITEM4Um1vY0NZblZsTEtna1B6R3h2dm9kUmxITlRqMldjRVJsX3pKNjZWdDFvUm1aU1BkN0NYWWE0SklpUUt6VHFuaVQ3VlBQalJMUFNuc1hDYUNwMnpJSnBJdUFhSFNUUDR6bUprcm1KVXJmeFpWYTBpd3JDcFA2RDlGczEyRmdqdEJpQVNVaTk2NExXNnZFbWc?oc=5",
-      "publishedTs": 1791752400
+      "title": "Japanese Yen stays vulnerable vs bullish on fiscal and Fed risks",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVW9WWFFyeFpYWm9ma1RnQzJZX1AtYlVpQ2FQaVczZUNFaEtmYlFFTGRxWlBkd0l5QWszZXEtN2VvMVh0M2VCUVJvTkpONzd4c1N1SXBSc3praDlOOFRuNHNMV0o3U0FUN1V1ejhWOUV0QWE5VzNFb1hXUjFoaFo4ejc1SjNiRE05NXg3U2NoOFRmeGcxX3JENkRqeTIwNVJWbUtKcjd6empFUEJ6U1kwV21ncFI3X2c?oc=5",
+      "publishedTs": 1791796056
     },
     {
-      "title": "A cop, a flare and 300,000,000 yen: Japan’s most bizarre unsolved crime from 1962",
-      "publisher": "Dangerous Minds",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vbjc3MXBhZGlzeDg0LU4zMTVuUVp3Vnd2NGdLY0JaOUJuckJHUEc2WlFsZUFPbk9iNzBfMlRyX19sZUwyQkh0YThzUlRWbjhaenpHR2lmQkprd0R3OTNYMkg2YWFoQkRyalBzY2xlR3VQRlNzUzZVNQ?oc=5",
-      "publishedTs": 1791745200
+      "title": "Nikkei: France’s Thales to build maintenance base in Japan in first for foreign defence firm",
+      "publisher": "Malay Mail",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNS1MtSWEwaTNCSGdYSTlCX011eXkwLVpJRFkwR2dkbVM4c0kwQ3dGOEFzX3l5WUhQVDBKSUd6T3lkX3dURERDR2JzVHdCc0xZa0Nodk5lTnQ2cGRRY3dja2V3ckVRRWJCVHV0d0FKX0JWREVTSHVzdmczeG83Um9VWndkUnRKM3NrSGF0Zl9NcTdQaU9hZDBYWUdJMk5KRjNpdEpSSkR4Ym5Ia29DVVVhcGFGbE8tdTZTdVg1amRjekFWMFpQMUs1OGxUWndPRnlKNjg0MFVwakxsVUpoSEHSAeMBQVVfeXFMUGxpREwwR3JBOUNQMURSaUpMMjJVYWxEUFd0Vm5iOGlfa1VpQm5mOGxhYk1qYTdZQ3hoVE83bE5NbWlBODFFcjM2YXcyczN2UktJV3RwZlRFTGJuWk9VcWIzQ2Y0VTRvb0JKN1BIWTk5U2VLS3hELUQtOVJ1QVBhb3dVdFhFVTFqMllnaWRIREV2MkhNejhsYS1wWmN5Uk1hM21WNnlhc1pDN19IdGkxZGFGblM2cDlNY1NMbG1xZktlek1BakNDV2hKVDMtSjVaWGswQWNEREU3SzJHUzdWd2oxb3M?oc=5",
+      "publishedTs": 1791790052
     },
     {
-      "title": "3 Japanese Growth Stocks With At Least 15% Earnings Growth",
-      "publisher": "Simply Wall Street",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNXZZQzhnSzRkOU05ZW5WOFhCandiRm8zWTNxZFdtd0xVSWVEdV9Ud2xaaFZ6dVNrcjBVOWpfSGxfZkpxSElCTnNSdmVqZi15Nm5JaFRockQ3NEZaRWE1dzUxWDFTZkdhdkxNYlhaNE9PQnJSbC1sRUNxajc3OFd3MzhESi1XWjd1eTl6NVlDYldnOWRQNGFaX29WUUtvaFQwMkRPTlBmRWczLWZqVEdpY05tOHJDLUVyVkxnbXh3RHNidDBLVVBBU2J5T1VtWmx1YkxpWNIB2gFBVV95cUxQejdYc19ndW01N1VYcVl1RjVtdzZ0OU5QaU1OTmo4Nms5LWMyR0NNeXFtMDVlVERuN2FxS0xZNVFzdzlGSU5VZDFVRW9yangzTVNVNmlUQUc3YUNoZk9PSmhrVmFCTDUyTkJYUC05ODVERFZkSEVWMzhNZXFncHBNSDNGUzEtZHhoekh3ZHdLaGYyYW1tRGt1bUo1V2ZoODlXMWtxaFk3bElOSEF6YkRndU56d0dCaHNBN0tKRURNZlFIYVhuWXdILWJzbE03ZkZJQk15TDhwVnBjZw?oc=5",
-      "publishedTs": 1791739670
+      "title": "French defense firm Thales to build Japan base, media report says",
+      "publisher": "The Japan Times",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQmNFWFpiM0NWbHZSYk55MEhEbWNiamJzNjY4Y3AyalZDTHVGVUJwZlVBZDVSaTFrbEtLcUZmMlV6SUVkUXVkLUw0SXcwVXkwVVpoaXMtMFpHWkswNG1VdjJNbFJCbmY1SXZWcms2UjRtNDVCNS1VXzc2VU9aeVBwckNYUEg2STQyRWpZeWNrWHVudU80?oc=5",
+      "publishedTs": 1791788040
     },
     {
-      "title": "Sansan And 2 Other Japanese Growth Stocks To Watch",
-      "publisher": "Simply Wall Street",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdEJtcXZDWHdiUm9SV3lfQWRTWS1YQUxJRW0tTHVJUmk3eGpqTVdlNmR3RVM5SEIxRmlpcjZUX05iWUJ5NVZhWGJyTlhIX2Z5Y09UZXJyelJKT2ttQXNKWUlkQm9TWlFpV1ByTXEtNllNcjNMRndjSVRQNEo0bVpOYm9ET1F5UGlmR1cwQVVKVVBPZExmX1RYSVNjY3o5bE9pQU40bEZvUVlNTTJYM3o3eGg3elZENG1TdDAw0gHAAUFVX3lxTE42OTNlTFRqRUctbFNldU4xNkhLVDlFcmJHeThjbnYySDlta1NmOE0yTjgwOU5qeXBXcExuNXNSQ3c4Y1E0TTBPbVZqSDc4aXJpX3ZXVzlEN1hWeFdjMzVIT2E1NUZWeGQ1LWJlYkt3aUNyZDBXNEV0OWVLdFNMSURJNjV5QWw4Und4azdLSkR5UUt1RkdpbHZYa2V2aFhMLTFxOVdEYThKZWRyRnhCNThVN2xxNEt6LWlTejJqSzNLSA?oc=5",
-      "publishedTs": 1791713847
-    },
-    {
-      "title": "Japan arrests 6 over $580K crypto laundering case",
-      "publisher": "Crypto News",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JREkzMjRldFpxLWdLdDc4a0dlOUNoOXpVQWVHYlhIZGJSWlNoS0lzak8wX09uOEt4VkVSNVNKZm5HZ2ZxU0FqSXlfc1E4aU1pR2p1Q2ZTdWRFWGtIYzdoallKWFExMmV0WkJLRW04aTJkN2ZlTzdfSA?oc=5",
-      "publishedTs": 1791709704
+      "title": "French defense firm Thales to build Japan base: Nikkei",
+      "publisher": "Bangladesh Sangbad Sangstha (BSS)",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5KYmZDYXNoMWpuRjFuU0pjUVhhYU1VSVF3aEMwcE5zakUteEtnZlpQajNPUGZZNnpUZ0lBaGUyV3hmWXU1OGRoMVR5S19iVWwwS1RIM3RnYw?oc=5",
+      "publishedTs": 1791784822
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시 헤드라인에서는 엔화의 안정적인 움직임과 투자 기회 모색이 주요 테마로 부각되었습니다. 일본 휴일과 미국 채권시장 휴장으로 달러-엔 환율은 158엔대 초반에서 제한적인 움직임을 보였으며, 일본은행의 비둘기파적 신호가 엔화 흐름에 영향을 미쳤습니다. 한편, 투자자들은 금리 및 주택 가격 상승 속에서 일본 임대 주택 시장에 주목하고 있으며, 높은 실적 성장을 보이는 일본 성장주들에 대한 관심도 이어지고 있습니다.",
-    "en": "The Japanese Yen is holding a stable range, with the dollar-yen pair capped in the lower 158 range, influenced by a Japanese holiday and the closure of the U.S. bond market. This stability comes amid dovish signals from the Bank of Japan. Concurrently, investors are actively seeking opportunities in Japanese assets, particularly betting on rental housing in a climate of rising rates and home prices, and highlighting several growth stocks with strong earnings potential.",
+    "ko": "오늘 일본 증시 헤드라인은 엔화의 지속적인 취약성을 강조합니다. 일본의 완화적인 통화 정책과 재정 위험, 그리고 프랑스의 정치적 불안정 및 미국 연방준비제도(Fed)의 잠재적 움직임 등 대외 요인들이 엔화 약세에 영향을 미치고 있습니다. 한편, 일본이 역내 석유 비축량 확대를 추진하면서 아시아 석유 저장 관련주들이 주목받고 있으며, 프랑스 방위산업체 탈레스의 일본 내 정비 기지 건설 소식은 방위 산업 분야의 외국인 투자에 있어 중요한 진전으로 평가됩니다.",
+    "en": "Today's Japanese market headlines highlight the Yen's continued vulnerability, influenced by Japan's loose monetary policy, domestic fiscal risks, and external factors like French political strains and potential Fed actions. Separately, Japan's strategic initiatives are in focus, with a push for larger regional oil reserves drawing attention to Asian oil storage stocks. Additionally, French defense firm Thales's decision to build a maintenance base in Japan marks a notable development for foreign investment in the defense sector.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1791776009
+    "generatedTs": 1791804084
   },
   "shortData": {
-    "ok": false,
-    "asOf": null,
-    "coveredStocks": 0
+    "ok": true,
+    "asOf": "2026-10-08",
+    "coveredStocks": 119
   },
   "marginData": {
     "ok": false,
@@ -22787,8 +22773,8 @@
     "coveredStocks": 0
   },
   "catalystData": {
-    "edinet": false,
-    "tdnet": false,
+    "edinet": true,
+    "tdnet": true,
     "reform": false
   }
 }
