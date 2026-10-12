@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-09T14:34:50.751941+00:00",
+  "asOf": "2026-10-12T03:33:21.919643+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -15788,8 +15788,8 @@
       "sector": "Materials",
       "segment": "Prime",
       "price": 496.0,
-      "change": 0.0,
-      "changePercent": 0.0,
+      "change": null,
+      "changePercent": null,
       "marketCapB": 252.57,
       "per": 16.19,
       "pbr": 0.47,
@@ -22657,7 +22657,7 @@
     },
     {
       "sector": "Materials",
-      "changePercent": -0.29,
+      "changePercent": -0.3,
       "avgPbr": 1.82,
       "count": 37
     },
@@ -22719,7 +22719,7 @@
   "marketSummary": {
     "advancers": 144,
     "decliners": 100,
-    "unchanged": 1,
+    "unchanged": 0,
     "belowBookCount": 64,
     "avgPer": 20.83,
     "avgPbr": 2.23,
@@ -22728,58 +22728,58 @@
   },
   "headlines": [
     {
-      "title": "British Pound gains ground as Japanese Yen underperforms",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMVFpUEphWkdjdUJyZFJselZKUkMtcUk0akR4aVppb2RDQjRHbFVzSjdrY04zRGFYWjdVSjZFOFFxaHdQbmxzbUk2d0NLcU5yT0hZZE8tV2V5aWJETFl0OTItYU5CUk1ESVp0cTU2VDM1eHNKQ3FqVWpFS2d4eEtFQ19yUVpqeUpNM0Y4QklHREUxYU9SLXRtMWMzUHdic1hI?oc=5",
-      "publishedTs": 1791548452
-    },
-    {
-      "title": "Japanese Yen: Choppy trade inside defined range – UOB",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSHZCX1p3ckY3M0hkTGU5TUZKYTgwNVVLN3FIX0I4ckdhdmdaQTM4enpka0Q0cGs4LWRKaGJCSjNqLU12ZGQ5WHNVMl8wOGZYQ0RRZ2s4YTU3OXpaVV9qbGFLWU5NczBvSEh4QXFUMmdpZmxpenhNRTRyOTFoUXZJSUJWMm9vTWxKZ2NTcThOWUFtM2dTRTZBWQ?oc=5",
-      "publishedTs": 1791548401
-    },
-    {
-      "title": "Japanese Yen underperforms against its peers into the weekend",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM05oQlY2S1BUYjNCaFl6aFMtWE1CeEtyLTVrRElnUm9uVGE1c3FibWtZWmdKbTRha0t4WFZnakxkSUMwOGhSa2tOOTNmaTA5VS05eFQ4cEQwakVrZXlMWEZ6Y1Rka1JZcDBBaFZjblRKSm15OVBoWjdmSHMxQWFvUF84ZHEtd3laTmU0REktYmpyWXdxR3F3c09EQU9qX1JTZ2wyVnlzVQ?oc=5",
-      "publishedTs": 1791546547
-    },
-    {
-      "title": "Round One And 2 More Japanese Insider Owned Growth Stocks",
-      "publisher": "Simply Wall Street",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPalQtLW9BTXR4Smh1NkIyVS1wSnNDZnhaZUZiaU1fWFNmczAzeTBLLUp0WkVob0xaYWk4V29rdV9PU0FHV29VSXRWbEs0NFhpb3NmWUdCaTFIYV8tdVpBVTd2cy1MVkZPb2JTMVp1a3c1TzBBSHNPaGNndFZLZVE2cEVfYVFzVWFFeGF4VkdxektpMjFKYV9HRHBNaEVEeVFYVGpyZ2piNWtsS1RGT3paYVBhYld4Yzd4dzcwQXhsNDNSYnJSTGdEaEU5SlFVQ3dqc3Q4ZNIB2gFBVV95cUxNZ1BUNTBjbWJwRjJvLWhYWjRTSVhvYkZLbzBONDZsTnZVaHdFWWpUT3o2azVLWXBwX3V4VzdKOEc0djR1M3FZUVptaTdaOXA1Vm1MSGlWQjNvVjZub1Z1R3VDcG54T2kwR2d3bnZCUm0yb0t5OHQxOWRtbER6LTdrNW8wRGg3TGlaeGV2ci10R3hLU1JZQUtTalV6VEkxaVQ0VUNUYW92SklmVTdBVEhJTXZlZFlJZGZGTjByUEVmM3ZGc0ZpQTFySDY0Y0p4aWs4NEVPZGR3cWtRdw?oc=5",
-      "publishedTs": 1791544202
-    },
-    {
-      "title": "Nikkei Tumbles As AI Rally Reverses",
-      "publisher": "News On Japan",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5HWFVUYVRsUkxEakZXNUZiS1dKRWR4VTc5eXB3ZU1DTWRpTEV1M2xpVkJMNFJGTDJsRzhUaGp6REV0cVBiZU5obURBNHVsNW5xaGRUVA?oc=5",
-      "publishedTs": 1791541076
-    },
-    {
-      "title": "Yen Extends Decline to Lower 158 Range as Rising U.S. Yields Put Japan-U.S. Rate Differential in Focus",
+      "title": "Dollar-yen capped on Japanese holiday, hovering in lower 158 range as U.S. bond market closed",
       "publisher": "BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RNFRVM2hrSjIxem14Skd2Y2pxSjU0ZnNRY29qeHNSMFZoSU5SRmFhdGZzd2lKYzE2SGRKQ1hINlZuQnItQndGUEliZEkxdmZuaEhhUDBjNnY0UGNLaTU5YXhlYldLNE1oLVlMbVA3eU1tY2NjdlE?oc=5",
-      "publishedTs": 1791537900
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1R0lfQTFaNlQ5aUdSdENNWXRtUVEzaGxMOHgySXBVSTJiSE5zVnBmLUxsMDVtb2lBcDVTMHc4aVV3WE9RZXdNX3FBMmJrcXhHZTYzUFAzQnVJTVlRTWpId01zNmxGbnl4YUd3VU5EcUJTejVvcFE?oc=5",
+      "publishedTs": 1791768900
     },
     {
-      "title": "The BoJ and Japanese FSA held the 25th Financial Services Agency-Bank of Japan Liaison Meeting",
-      "publisher": "Newsquawk",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQajgyS0tza0JNd1pFTmg0bTBoWE5VdHVMU2VyOXhEOU1QYjZyX3BJTW1KS2VJcFY1Wi1xckJZamF3Z3FycUZ3WTZ0WExoLXgweUdSYm1NWDlSMmM3NS1leTVOcGZSWmh6eFVWMXJjYVNocEtMWXlLZ3lWcldDeHFHQjU5SEZCNDRLVk9PVVZKN3l6bmhMZTFFeGJrcm81aXpoenNXem0ydHZ6LWZoajg2REtDMFdyUU1NTTh6QjRJT0ZXSlhQRi1sakpR?oc=5",
-      "publishedTs": 1791537706
+      "title": "Japanese Yen holds range amid Japanese holiday, dovish BoJ signals",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYlR2d0VxQTkySGdaN2lCc20zd0NqeHlfa2l4bUEyUHpSdDNReVM4bFQ0Wm9xYWlxdU1xX0xYems0TDhhY1pKbTUzR2tyT2JlR0JIZFBzLVliX3VlaGlVd096UzUwQ2loLU9EZ1NnN09HZUpjLTh0OUU0S3NFbW5sckxFb213UHJsTGk3WXBxenNJdlE5c3J6LUI5OGlGdkd0eGdLbmV5YnNERnI0?oc=5",
+      "publishedTs": 1791768546
+    },
+    {
+      "title": "Investors bet on Japan, Australia rental housing as rates, home prices rise",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeHM2OVZiOGRCS3MzdTRLXzkwaVN6WnJMbDNOMEFCc01pby16YjNhQjdwWFpITEM4Um1vY0NZblZsTEtna1B6R3h2dm9kUmxITlRqMldjRVJsX3pKNjZWdDFvUm1aU1BkN0NYWWE0SklpUUt6VHFuaVQ3VlBQalJMUFNuc1hDYUNwMnpJSnBJdUFhSFNUUDR6bUprcm1KVXJmeFpWYTBpd3JDcFA2RDlGczEyRmdqdEJpQVNVaTk2NExXNnZFbWc?oc=5",
+      "publishedTs": 1791752400
+    },
+    {
+      "title": "A cop, a flare and 300,000,000 yen: Japan’s most bizarre unsolved crime from 1962",
+      "publisher": "Dangerous Minds",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vbjc3MXBhZGlzeDg0LU4zMTVuUVp3Vnd2NGdLY0JaOUJuckJHUEc2WlFsZUFPbk9iNzBfMlRyX19sZUwyQkh0YThzUlRWbjhaenpHR2lmQkprd0R3OTNYMkg2YWFoQkRyalBzY2xlR3VQRlNzUzZVNQ?oc=5",
+      "publishedTs": 1791745200
+    },
+    {
+      "title": "3 Japanese Growth Stocks With At Least 15% Earnings Growth",
+      "publisher": "Simply Wall Street",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNXZZQzhnSzRkOU05ZW5WOFhCandiRm8zWTNxZFdtd0xVSWVEdV9Ud2xaaFZ6dVNrcjBVOWpfSGxfZkpxSElCTnNSdmVqZi15Nm5JaFRockQ3NEZaRWE1dzUxWDFTZkdhdkxNYlhaNE9PQnJSbC1sRUNxajc3OFd3MzhESi1XWjd1eTl6NVlDYldnOWRQNGFaX29WUUtvaFQwMkRPTlBmRWczLWZqVEdpY05tOHJDLUVyVkxnbXh3RHNidDBLVVBBU2J5T1VtWmx1YkxpWNIB2gFBVV95cUxQejdYc19ndW01N1VYcVl1RjVtdzZ0OU5QaU1OTmo4Nms5LWMyR0NNeXFtMDVlVERuN2FxS0xZNVFzdzlGSU5VZDFVRW9yangzTVNVNmlUQUc3YUNoZk9PSmhrVmFCTDUyTkJYUC05ODVERFZkSEVWMzhNZXFncHBNSDNGUzEtZHhoekh3ZHdLaGYyYW1tRGt1bUo1V2ZoODlXMWtxaFk3bElOSEF6YkRndU56d0dCaHNBN0tKRURNZlFIYVhuWXdILWJzbE03ZkZJQk15TDhwVnBjZw?oc=5",
+      "publishedTs": 1791739670
+    },
+    {
+      "title": "Sansan And 2 Other Japanese Growth Stocks To Watch",
+      "publisher": "Simply Wall Street",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdEJtcXZDWHdiUm9SV3lfQWRTWS1YQUxJRW0tTHVJUmk3eGpqTVdlNmR3RVM5SEIxRmlpcjZUX05iWUJ5NVZhWGJyTlhIX2Z5Y09UZXJyelJKT2ttQXNKWUlkQm9TWlFpV1ByTXEtNllNcjNMRndjSVRQNEo0bVpOYm9ET1F5UGlmR1cwQVVKVVBPZExmX1RYSVNjY3o5bE9pQU40bEZvUVlNTTJYM3o3eGg3elZENG1TdDAw0gHAAUFVX3lxTE42OTNlTFRqRUctbFNldU4xNkhLVDlFcmJHeThjbnYySDlta1NmOE0yTjgwOU5qeXBXcExuNXNSQ3c4Y1E0TTBPbVZqSDc4aXJpX3ZXVzlEN1hWeFdjMzVIT2E1NUZWeGQ1LWJlYkt3aUNyZDBXNEV0OWVLdFNMSURJNjV5QWw4Und4azdLSkR5UUt1RkdpbHZYa2V2aFhMLTFxOVdEYThKZWRyRnhCNThVN2xxNEt6LWlTejJqSzNLSA?oc=5",
+      "publishedTs": 1791713847
+    },
+    {
+      "title": "Japan arrests 6 over $580K crypto laundering case",
+      "publisher": "Crypto News",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JREkzMjRldFpxLWdLdDc4a0dlOUNoOXpVQWVHYlhIZGJSWlNoS0lzak8wX09uOEt4VkVSNVNKZm5HZ2ZxU0FqSXlfc1E4aU1pR2p1Q2ZTdWRFWGtIYzdoallKWFExMmV0WkJLRW04aTJkN2ZlTzdfSA?oc=5",
+      "publishedTs": 1791709704
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 인공지능(AI) 랠리 반전의 영향으로 닛케이 지수가 하락하며 전반적으로 약세를 보였습니다. 엔화는 주요 통화 대비 약세를 지속하며 158엔대 하단까지 하락폭을 확대했습니다. 이러한 엔화 약세는 미국 국채 금리 상승으로 인한 미일 금리차 확대가 주된 요인으로 지목됩니다. 한편, 일본은행(BOJ)과 금융청(FSA)은 제25차 실무자 회의를 개최했습니다.",
-    "en": "The Japanese market is exhibiting a negative tone today, with the Nikkei index tumbling as the AI rally reverses. The Japanese Yen continues to underperform, extending its decline to the lower 158 range against its peers. This Yen weakness is primarily attributed to rising U.S. yields, which are widening the Japan-U.S. interest rate differential. Separately, the Bank of Japan and Financial Services Agency held their 25th liaison meeting.",
+    "ko": "오늘 일본 증시 헤드라인에서는 엔화의 안정적인 움직임과 투자 기회 모색이 주요 테마로 부각되었습니다. 일본 휴일과 미국 채권시장 휴장으로 달러-엔 환율은 158엔대 초반에서 제한적인 움직임을 보였으며, 일본은행의 비둘기파적 신호가 엔화 흐름에 영향을 미쳤습니다. 한편, 투자자들은 금리 및 주택 가격 상승 속에서 일본 임대 주택 시장에 주목하고 있으며, 높은 실적 성장을 보이는 일본 성장주들에 대한 관심도 이어지고 있습니다.",
+    "en": "The Japanese Yen is holding a stable range, with the dollar-yen pair capped in the lower 158 range, influenced by a Japanese holiday and the closure of the U.S. bond market. This stability comes amid dovish signals from the Bank of Japan. Concurrently, investors are actively seeking opportunities in Japanese assets, particularly betting on rental housing in a climate of rising rates and home prices, and highlighting several growth stocks with strong earnings potential.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1791556498
+    "generatedTs": 1791776009
   },
   "shortData": {
-    "ok": true,
-    "asOf": "2026-10-08",
-    "coveredStocks": 119
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "marginData": {
     "ok": false,
@@ -22787,8 +22787,8 @@
     "coveredStocks": 0
   },
   "catalystData": {
-    "edinet": true,
-    "tdnet": true,
+    "edinet": false,
+    "tdnet": false,
     "reform": false
   }
 }
