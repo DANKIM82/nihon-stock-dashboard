@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-02T17:24:41.303853+00:00",
+  "asOf": "2026-11-03T04:45:59.716269+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -11,13 +11,12 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 63290.11,
-      "change": -1369.36,
-      "changePercent": -2.12,
+      "value": 63081.86,
+      "change": -208.25,
+      "changePercent": -0.33,
       "high52w": 72831.73,
       "low52w": 48235.3,
       "sparkline": [
-        68309.46,
         69946.86,
         70683.98,
         70035.71,
@@ -36,7 +35,8 @@
         63268.37,
         63954.19,
         64659.47,
-        63290.11
+        63290.11,
+        63081.86
       ]
     },
     {
@@ -2349,7 +2349,7 @@
       "nameJp": "日本製鉄",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 657.3,
+      "price": 657.2999877929688,
       "change": 3.0,
       "changePercent": 0.46,
       "marketCapB": 3435.24,
@@ -4238,7 +4238,7 @@
       "nameJp": "東京海上ホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 575.6,
+      "price": 575.5999755859375,
       "change": -0.9,
       "changePercent": -0.16,
       "marketCapB": 16241.34,
@@ -7140,7 +7140,7 @@
       "nameJp": "日産自動車",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 262.6,
+      "price": 262.6000061035156,
       "change": -3.4,
       "changePercent": -1.28,
       "marketCapB": 918.15,
@@ -7303,7 +7303,7 @@
       "nameJp": "楽天グループ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 606.7,
+      "price": 606.7000122070312,
       "change": -22.5,
       "changePercent": -3.58,
       "marketCapB": 1323.81,
@@ -10093,7 +10093,7 @@
       "nameJp": "ソフトバンク",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 234.9,
+      "price": 234.89999389648438,
       "change": 1.5,
       "changePercent": 0.64,
       "marketCapB": 11236.14,
@@ -10350,7 +10350,7 @@
       "nameJp": "LYコーポレーション",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 500.4,
+      "price": 500.3999938964844,
       "change": -0.6,
       "changePercent": -0.12,
       "marketCapB": 3447.13,
@@ -14031,7 +14031,7 @@
       "nameJp": "王子ホールディングス",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 821.4,
+      "price": 821.4000244140625,
       "change": 5.8,
       "changePercent": 0.71,
       "marketCapB": 697.56,
@@ -15543,8 +15543,8 @@
       "sector": "Materials",
       "segment": "Prime",
       "price": 496.0,
-      "change": 0.0,
-      "changePercent": 0.0,
+      "change": null,
+      "changePercent": null,
       "marketCapB": 252.57,
       "per": 16.19,
       "pbr": 0.47,
@@ -17938,7 +17938,7 @@
       "nameJp": "日本精工",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 999.9,
+      "price": 999.9000244140625,
       "change": 2.3,
       "changePercent": 0.23,
       "marketCapB": 489.27,
@@ -18038,7 +18038,7 @@
       "nameJp": "ＮＴＮ",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 350.6,
+      "price": 350.6000061035156,
       "change": -9.6,
       "changePercent": -2.67,
       "marketCapB": 208.43,
@@ -19786,7 +19786,7 @@
       "nameJp": "三菱自動車工業",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 335.8,
+      "price": 335.79998779296875,
       "change": -6.9,
       "changePercent": -2.01,
       "marketCapB": 449.42,
@@ -21086,7 +21086,7 @@
       "nameJp": "ソニーフィナンシャルグループ",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 143.8,
+      "price": 143.8000030517578,
       "change": 1.1,
       "changePercent": 0.77,
       "marketCapB": 964.67,
@@ -21463,7 +21463,7 @@
       "nameJp": "京王電鉄",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 774.1,
+      "price": 774.0999755859375,
       "change": 7.4,
       "changePercent": 0.97,
       "marketCapB": 448.11,
@@ -22332,7 +22332,7 @@
   "marketSummary": {
     "advancers": 111,
     "decliners": 132,
-    "unchanged": 2,
+    "unchanged": 1,
     "belowBookCount": 67,
     "avgPer": 21.05,
     "avgPbr": 2.13,
@@ -22341,63 +22341,63 @@
   },
   "headlines": [
     {
-      "title": "US stocks recover some of last week's sell-off after oil prices fall sharply",
-      "publisher": "KTVN",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNSlBwdnBlN0dneldXT3NuTjF1VEdiNFk4U2liOEFISXJiSmVCcUVsbThPMkcyN2llTWdNSnJYYk5jLWRuaGloc0hEaTE5N0hncFRsSEN4VGNpT3d1aWlhLS1vRVFqRV9UU21DTEtlR2pOMEtqem4yTnpLcHMzTGwzb3hDV0lLYkk1Y1UzR2ZjWGFkaHZwQzRPWlFfcUI4dmRKaXVwaEd2NmRXOEt4Vmp1XzhTb0prZ00wY2NUMm53b0UtRDdVLWp0MzU4VEMySzB0dlU1QUFzQ2JlUzVJQ21acHR3WFl0aFZVMlpTVXFycVRpSm8?oc=5",
-      "publishedTs": 1793638306
-    },
-    {
-      "title": "Japan weighs standards for self-driving cars without steering wheels",
+      "title": "Cyberdefense needs military-style resilience mindset in AI era",
       "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeFVVTXBNUWV3RlV4T3F4bzNQVUhXYzcyMDlObUYyR0ZoZjJ0OFVoZXdGS3h0Rmg5LVFqS3RnVFdXd1EwbkdkX0V1dGZfSlV4ZENsOVV2dnFGbk9DZ0UwZUFNcUtEbHBmSzBIalpia1ZDUUZaSncwOFhQSVZTRlV6WUNWWlJXVVIwdHpSRlpwSjNmU2RMZHhRWDFUaGU4aDBJUWhnZmoycXVMMDZZc3h4QTdpOA?oc=5",
-      "publishedTs": 1793637000
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb2tMc25KTmVsZUNqSVJGczNkWG9hZkpxb3pzOHI5R19yOTFyR1k4d1VjTEtkeGpYODY0anNsMFhySlFjUVFUa1lZSU1OT3FwcmZPNVVmdW9Fb1h1d21RaHBMb1o1TVNvZVhuY0UyQTFwWWtCYVFNTE44X1N2RGRoOXg2eHRqQllGd2dVcXNuMGwtZWx6UVdCRFNkUHBUNENkN0JxMVVxTQ?oc=5",
+      "publishedTs": 1793673120
     },
     {
-      "title": "US stocks recover some of last week's sell-off after oil prices drop",
-      "publisher": "thecanadianpressnews.ca",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNeEFuX2RZNEYtUGpaNVZYWnpSbTRjd3pkZXJHalpDNzViSXNhUnRkMFRFT1p3RGltNXJvT2dXWnM5d2E5VzVwN2FHY2RzNGZIZzF1enk1cXlqUHhGdkFHUmowZjRBUHNjSUdCM2w4Mlp0M0dMeGdrRHlZSU9VcVZ0XzV1eHVmZUs3MjNqRERFaW1iMjdscWFVQWpTQnpjcFQ4UDBvejJrSkxLYjFHajUxZ3JJVTZQaHR6Q05Rb2tkZEVnYkd5dV9uOGVyYkl3TEFCNVctTDlPcnRBRnp0TG92ZUxPWW1oUlFiMm50NnlEVGhtSDJ5?oc=5",
-      "publishedTs": 1793633089
+      "title": "Japanese Yen consolidates vs recovering USD as intervention risks help limit losses",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYkxHRlVZaThxUHNyN3RQejExczdKOG1IOXluU0FBUkhGS3U4M1ZzdVZxa0ZzQVE1cG02TWZ6cE5IU2NvZmRZZWVBUDl5cXVIbmNEdHRyYzdLTDcxRjc0d2JJRXBpRW1rWEx1ZEtzMzVzUlg2SFp1ZDg2akhPXzhVR0hqdWVvMlU4ZmdvMi1STktjSGU2aUl2Z1VGSzNOc2pNZnhHYjlya1NGRVFoNVJveTI0LWtkUkNjS2d2SnEtQ0d0VVMt?oc=5",
+      "publishedTs": 1793672046
     },
     {
-      "title": "US stocks recover some of last week's sell-off after oil prices drop | National News | 2news.com",
-      "publisher": "KTVN",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQN3pHdThJUFNLYVhITjh1NnBFTDBJNnJ6ZnVnTVJ3Y1ZjS0VYVHlZY3Y2djhYMHRteC0zZGU5VWRZMkUzRlRnRTZZMWU0VmNNcmxMSldfSnBWZHVsT3VybTJfYlhMbWRjOE54eXBjd0JieGZyQnZGbGx0ZDJSd05LNVBFVHlKb3dfTzlMSFVmU2lvRjRtZzRkWFVneG9WN2JvVTdKc1BuT3dGR3dHUjlwbXV0SDN1WUVUS0pZS29EVWZ5SmVORGRVN3paUVFSMExBenBCN1dlZU90Yl9GYkdFdHg3Ul9pUQ?oc=5",
-      "publishedTs": 1793631002
+      "title": "Breakingviews - COMMENTARY: Japan petrol subsidy cut could mark fiscal limit",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT0k4dS04a21IWWNOQmVjdktob0FTTnpubWZDUEktMFR3dXNjUXRlSVhrSFZlUVBZaXcwTFA2VnFfLVVnc2V3aUNQNGFjU1g4N2RqcTJMY2YxMi1sVi0xVS1wSUZ0VWhtNHhQTm81bGFoUXdIYllIRWNuNGNSZllFbWM5NENXUE1tTC1sY3ZoZDFORl9qSnMxZ0I2OXJnUE40WlF1NkhwS3I5eFZZd0E?oc=5",
+      "publishedTs": 1793670180
     },
     {
-      "title": "US stocks recover some of last week's sell-off after oil prices drop",
-      "publisher": "Yakima Herald-Republic",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQMDNHS2lVaHh5MXhmd1dWNkVEczFaeG1uX3BxM3BKcnVTYmZ0VUJlODV0VWRiNG9hRDg4UnNnTUhJVVNVWmJlbmRCM0Y4VDUxX1VMT01zcEdWamdjdFBXYk1hX2pwYl9EaFJ1N1ZwNDNWdGQ3c2s1VnZkWlljTGt4NkljOGViOW81aERTM1J5eEd3UWpEOExmQ3RXeDB2MDRUSHo3RXd4ODFvZXE4bEpHRUNIZFRQd1NaTmpQWkFaNWp5VXE4TFROQVBoTGlsMTNncFNZOU8wMlgtYjgzSERrTG9vMXBFdHRBOTJJcmxTQXo3ZldYcmdNd0xZYmt3Y1FDbTVpaFVPTknSAY4CQVVfeXFMUFZCM0hBY1VBNU1HV09ZZjRjV3NPdmNSc0w5YWRxbVZOZDhXd0VNYnZFZU42cF9nZkloU0trTlBrVEdvUFpRVXlGeDF4c2hjS0hBcEpuWmFZb1Ruc3RVbFcySEQxLU9sOTZRaXQzWVJuZER2cEU1RWpFdkhjUnQtUXhKUUgyRXpzaDlpVGFiTG03aWdfdWE0VGJaMjFpYzV4Sy1nc1d3TEdrSGREUHpzaVMyQ3ltS0RvRE1HeWVPRV84TXhfRWtmbHZUTG9IVDRFMkRwaUJZYVhVRktPdE5KcVROdnB0Q3BJY01fSTVBWHJScHVJcTFLNDc5MERPUzRwYi1XVVRtcUlWQnRocC1n?oc=5",
-      "publishedTs": 1793630448
+      "title": "Japan Markets Closed; South Korea's Kospi Drops Over 3% as SK Hynix and Samsung Tumble 5%",
+      "publisher": "TradingKey",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS2gyQmdaRVNsSVRORXc3MXZfelJfRERrTWR5cGJlX29jLWJYVGlPMGdFbURGNVgwMTl5SlRyQ2VySW9sb085NDRmR3FIU2haN3JvQjM5T2g1V3RGei1QbWNfOUc3ZG1BT3JtdnpUenh3M09XalRsTFFMQTA4Q3ZuRWVaOHhwVFNaaHVaTnZxQVlLX3Buc3d4TUVIX0xCLU9WM3IxUURpcjI2ejdILXFnRXUzLWgwTVZSaXVabDdSYUxGMk54?oc=5",
+      "publishedTs": 1793666683
     },
     {
-      "title": "Anthropic seeks to raise up to $3.5bn from Japanese investors in IPO",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaVBBSl9Tbm5yVDV1WWlMRnFHSUM4Ni05aXVGMF9zbFJiU2VCWklPZThmcFY4M0ZGTlc2aDNGNUZLbFpyVWg0UnJPT1F6ZmUzSnZCUFJtWGFoRmpCMTVFWllEMVZ5eXUtLVlINWlfMWtnTGloWlZaaWxjU3JXNXJ3dUFHTXZJMlJ5QVlOTTRuRjdLNjdSM0tGX284MG1NdnF1R1ktMG1NUlJoZlVrdzRnTFpB?oc=5",
-      "publishedTs": 1793629800
+      "title": "Editorial: Japan's 2% inflation calls expansionary fiscal policy into question",
+      "publisher": "毎日新聞",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41OTdGdElqXzNnZnFGYmZkaDYyU3E5cGs4aEdRTUtBblNqeXhVS2laZTV5Q2R3aW0tU0VDSWtqTFI5eEpsMGdBMG1JRG5FUnprWGE3WWJfc04yajl1ZF82T1dreWZuLVgyODIxbmhGcE9RQzQ?oc=5",
+      "publishedTs": 1793664039
     },
     {
-      "title": "Japan's Nikkei Stock Average Churns Around 63,000 Level as U.S. Midterm Elections, Holiday Keep Trading Thin",
-      "publisher": "BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5qbnJwMnEzMEtTMnJVUUZJYUZkTG51S0FBMGt4SUE5MzhURXpTUU56eGs4alphQmdTOWlwalpUTlBpRE9Xa09zSURCcTVvM1dWcHY3X2tWUU9CVUR0Q004TTFSTjQwX3dOcndYcmZ1aVExT2hSaXc?oc=5",
-      "publishedTs": 1793623285
+      "title": "More drops for AI and tech stocks overshadow gains for most of Wall Street",
+      "publisher": "Toronto Star",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQZVhRUVBNWFJhZmhidnhGN3J0U3VZcmx3MW9BSnFDVjd2ZHhIa2NNbzlnekRDTHJ1U2JsNnlabGdnbGxSN1ZPX3RUZ0JFTnNDd3NVYzI0S1ZRWDJpQTRmeVpseDZJNlJuZ1RSQWQzdVdqQnM3NDlnZExxQ09oblZkQjh0a3JXbkZiZmJWRmRXT2ZTbkhmRHVfX2xaLWdrdk5WWDJvS0JLQzVYano1Ym9FNDBSZDFOVlRFcWdTV1J0dVk4ZF9uaU9QUVRxZTNfcEpuZVZwakxNNThGVGVmdWFIalN5RV9hZFdYQlNpaFZKcDVMTWJ6?oc=5",
+      "publishedTs": 1793662613
+    },
+    {
+      "title": "Bank of Japan Set to Raise Rates to 1.50% in December as Fed Flies Blind",
+      "publisher": "Startup Fortune",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc0VHUlZNXzZuSHQ2ckRPakdidEJHcWI3ZEpvd2Y5Sk9seEdPa0FkbkZXNjFtTF9GWHJtbjZHTUY3ajhpVmdrYTBEU1F4M1I1Tm54TVBDdXRVODQ1WUZ0UGVEV195clMtVUNqbkMtemFkT2NOOU1ybENXZmlHMGxETGd2Z1FQYzl0amJoNTExNEI5TmxieGg1SGhGUUk3Uk0?oc=5",
+      "publishedTs": 1793660158
     }
   ],
   "marketTone": {
-    "ko": "오늘 일본 증시는 미국 중간선거에 대한 경계감과 연휴로 인한 거래량 감소로 닛케이 평균주가가 63,000선 부근에서 등락을 거듭하며 한산한 흐름을 보였습니다. 외부적으로는 국제 유가 급락에 힘입어 미국 증시가 지난주 매도세에서 일부 회복세를 나타내며 긍정적인 배경을 제공했습니다. 이와 함께 일본 투자자들이 인공지능(AI) 기업 앤트로픽의 기업공개(IPO)에 대규모 투자를 검토 중인 것으로 알려져 주목됩니다.",
-    "en": "The Japanese stock market experienced thin trading today, with the Nikkei Stock Average churning around the 63,000 level. This subdued domestic activity is attributed to caution surrounding the U.S. Midterm Elections and holiday-induced low volume. Meanwhile, U.S. stocks showed some recovery from last week's sell-off following a sharp drop in oil prices, providing a positive external backdrop. Separately, Japanese investors are reportedly considering significant investment in AI firm Anthropic's IPO.",
+    "ko": "오늘 일본 증시는 휴장했으나, 주요 헤드라인을 통해 정책 변화와 시장 동향에 대한 관심이 집중되었습니다. 일본은행은 12월까지 기준금리를 1.50%로 인상할 것으로 예상되며 통화정책 전환 가능성을 시사했습니다. 한편, 2% 인플레이션과 유류 보조금 삭감은 확장적 재정 정책의 한계를 지적하며 재정 건전성에 대한 논의를 촉발했습니다. 엔화는 개입 리스크 속에서 달러 대비 손실폭을 제한하며 안정적인 흐름을 보였으나, 글로벌 AI 및 기술주 하락세는 지속되어 전반적인 투자 심리에 영향을 미쳤습니다.",
+    "en": "Japanese markets were closed today, but several key themes emerged from related headlines. The Bank of Japan is anticipated to raise rates to 1.50% by December, signaling a potential shift in monetary policy. Concurrently, Japan's 2% inflation is prompting questions about expansionary fiscal policies, with petrol subsidy cuts potentially marking fiscal limits. The Japanese Yen consolidated against a recovering USD amid intervention risks, while global AI and tech stocks continued to see declines, setting a cautious regional backdrop.",
     "model": "gemini-2.5-flash",
-    "generatedTs": 1793640291
+    "generatedTs": 1793681170
   },
   "shortData": {
-    "ok": true,
-    "asOf": "2026-11-02",
-    "coveredStocks": 115
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "marginData": {
-    "ok": true,
-    "asOf": "2026-10-30",
-    "coveredStocks": 244
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "catalystData": {
     "edinet": false,
