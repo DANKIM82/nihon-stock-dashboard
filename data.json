@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-10T13:43:56.855183+00:00",
+  "asOf": "2026-11-10T15:47:10.502184+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -11,12 +11,13 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 60459.58,
-      "change": 1684.08,
-      "changePercent": 2.87,
+      "value": 58775.5,
+      "change": 1340.73,
+      "changePercent": 2.33,
       "high52w": 72831.73,
       "low52w": 48235.3,
       "sparkline": [
+        69030.92,
         67777.52,
         67744.29,
         64425.95,
@@ -35,17 +36,16 @@
         62188.63,
         61077.9,
         57434.77,
-        58775.5,
-        60459.58
+        58775.5
       ]
     },
     {
       "symbol": "1306",
       "nameKo": "토픽스 (ETF 1306)",
       "nameEn": "TOPIX (NEXT FUNDS ETF)",
-      "value": 410.5,
-      "change": 8.4,
-      "changePercent": 2.09,
+      "value": null,
+      "change": null,
+      "changePercent": null,
       "high52w": 442.0,
       "low52w": 36.74,
       "sparkline": [
@@ -68,16 +68,16 @@
         415.6,
         388.6,
         402.1,
-        410.5
+        null
       ]
     },
     {
       "symbol": "1591",
       "nameKo": "JPX 니케이 400 (ETF)",
       "nameEn": "JPX-Nikkei 400 (NEXT FUNDS ETF)",
-      "value": 35380.0,
-      "change": 540.0,
-      "changePercent": 1.55,
+      "value": null,
+      "change": null,
+      "changePercent": null,
       "high52w": 38480.0,
       "low52w": 29170.0,
       "sparkline": [
@@ -100,16 +100,16 @@
         36000.0,
         35000.0,
         34840.0,
-        35380.0
+        null
       ]
     },
     {
       "symbol": "2516",
       "nameKo": "도쿄 그로스 (ETF)",
       "nameEn": "Tokyo Growth 250 (NEXT FUNDS ETF)",
-      "value": 597.1,
-      "change": 20.7,
-      "changePercent": 3.59,
+      "value": null,
+      "change": null,
+      "changePercent": null,
       "high52w": 675.0,
       "low52w": 504.7,
       "sparkline": [
@@ -132,7 +132,7 @@
         597.6,
         574.3,
         576.4,
-        597.1
+        null
       ]
     }
   ],
@@ -179,9 +179,9 @@
         3533.0,
         3338.0,
         3491.0,
-        3414.0
+        null
       ],
-      "advValueB": 95.31,
+      "advValueB": 95.127,
       "advSharesM": 29.573,
       "sharesOutM": 11778.25,
       "freeFloatPct": 92.2,
@@ -286,9 +286,9 @@
         4211.0,
         4142.0,
         4297.0,
-        4237.0
+        null
       ],
-      "advValueB": 80.475,
+      "advValueB": 80.911,
       "advSharesM": 19.879,
       "sharesOutM": 5828.25,
       "freeFloatPct": 100.2,
@@ -386,9 +386,9 @@
         3980.0,
         3549.0,
         3400.0,
-        3872.0
+        null
       ],
-      "advValueB": 242.168,
+      "advValueB": 241.701,
       "advSharesM": 54.905,
       "sharesOutM": 5699.05,
       "freeFloatPct": 64.1,
@@ -464,9 +464,9 @@
         72390.0,
         69750.0,
         71580.0,
-        75200.0
+        null
       ],
-      "advValueB": 59.484,
+      "advValueB": 59.671,
       "advSharesM": 0.774,
       "sharesOutM": 242.52,
       "freeFloatPct": 77.2,
@@ -549,9 +549,9 @@
         3449.0,
         3224.0,
         3366.0,
-        3435.0
+        null
       ],
-      "advValueB": 119.213,
+      "advValueB": 119.004,
       "advSharesM": 35.124,
       "sharesOutM": 11255.76,
       "freeFloatPct": 100.0,
@@ -627,9 +627,9 @@
         164.9,
         160.2,
         165.2,
-        164.5
+        null
       ],
-      "advValueB": 37.256,
+      "advValueB": 37.419,
       "advSharesM": 218.469,
       "sharesOutM": 80764.91,
       "freeFloatPct": 60.7,
@@ -727,9 +727,9 @@
         5274.0,
         4958.0,
         5170.0,
-        5311.0
+        null
       ],
-      "advValueB": 54.515,
+      "advValueB": 53.975,
       "advSharesM": 11.015,
       "sharesOutM": 3663.36,
       "freeFloatPct": 99.9,
@@ -813,9 +813,9 @@
         8753.0,
         8263.0,
         8492.0,
-        9006.0
+        null
       ],
-      "advValueB": 172.823,
+      "advValueB": 172.884,
       "advSharesM": 18.054,
       "sharesOutM": 2263.55,
       "freeFloatPct": 96.6,
@@ -899,9 +899,9 @@
         18010.0,
         17000.0,
         17665.0,
-        17960.0
+        null
       ],
-      "advValueB": 91.705,
+      "advValueB": 93.199,
       "advSharesM": 4.992,
       "sharesOutM": 1388.87,
       "freeFloatPct": 98.2,
@@ -1006,9 +1006,9 @@
         3191.0,
         3008.0,
         3126.0,
-        3228.0
+        null
       ],
-      "advValueB": 69.336,
+      "advValueB": 69.83,
       "advSharesM": 21.765,
       "sharesOutM": 7526.68,
       "freeFloatPct": 100.9,
@@ -1084,9 +1084,9 @@
         5693.0,
         5312.0,
         5441.0,
-        5658.0
+        null
       ],
-      "advValueB": 39.862,
+      "advValueB": 40.269,
       "advSharesM": 6.826,
       "sharesOutM": 1815.75,
       "freeFloatPct": 99.9,
@@ -1184,9 +1184,9 @@
         7741.0,
         7199.0,
         7569.0,
-        7907.0
+        null
       ],
-      "advValueB": 72.203,
+      "advValueB": 71.806,
       "advSharesM": 9.357,
       "sharesOutM": 2414.48,
       "freeFloatPct": 100.8,
@@ -1277,9 +1277,9 @@
         8880.0,
         8178.0,
         8606.0,
-        8452.0
+        null
       ],
-      "advValueB": 71.514,
+      "advValueB": 72.215,
       "advSharesM": 8.471,
       "sharesOutM": 1152.92,
       "freeFloatPct": 97.7,
@@ -1289,7 +1289,7 @@
       "shortSharesM": 7.02,
       "shortDtc": 0.8,
       "shortReporters": 1,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": true,
       "marginLongM": 5.77,
@@ -1355,9 +1355,9 @@
         2940.0,
         2833.5,
         2819.0,
-        2839.0
+        null
       ],
-      "advValueB": 30.464,
+      "advValueB": 30.658,
       "advSharesM": 10.659,
       "sharesOutM": 3685.8,
       "freeFloatPct": 78.0,
@@ -1455,9 +1455,9 @@
         1941.5,
         1831.0,
         1883.5,
-        1853.0
+        null
       ],
-      "advValueB": 28.153,
+      "advValueB": 27.942,
       "advSharesM": 15.537,
       "sharesOutM": 3893.02,
       "freeFloatPct": 100.0,
@@ -1532,9 +1532,9 @@
         2395.5,
         2241.0,
         2350.0,
-        2356.0
+        null
       ],
-      "advValueB": 41.181,
+      "advValueB": 40.742,
       "advSharesM": 17.847,
       "sharesOutM": 6898.25,
       "freeFloatPct": 91.7,
@@ -1646,9 +1646,9 @@
         4772.0,
         4542.0,
         4702.0,
-        4864.0
+        null
       ],
-      "advValueB": 78.248,
+      "advValueB": 78.409,
       "advSharesM": 14.844,
       "sharesOutM": 4457.09,
       "freeFloatPct": 98.2,
@@ -1746,9 +1746,9 @@
         6888.0,
         6560.0,
         6673.0,
-        6593.0
+        null
       ],
-      "advValueB": 33.435,
+      "advValueB": 33.995,
       "advSharesM": 5.201,
       "sharesOutM": 1597.45,
       "freeFloatPct": 99.9,
@@ -1824,9 +1824,9 @@
         5039.0,
         4620.0,
         4780.0,
-        4979.0
+        null
       ],
-      "advValueB": 32.889,
+      "advValueB": 33.126,
       "advSharesM": 6.66,
       "sharesOutM": 2836.13,
       "freeFloatPct": 88.7,
@@ -1924,9 +1924,9 @@
         81020.0,
         77950.0,
         80810.0,
-        81570.0
+        null
       ],
-      "advValueB": 98.494,
+      "advValueB": 99.524,
       "advSharesM": 1.285,
       "sharesOutM": 306.86,
       "freeFloatPct": 62.5,
@@ -2010,9 +2010,9 @@
         1673.0,
         1613.0,
         1645.0,
-        1736.0
+        null
       ],
-      "advValueB": 18.64,
+      "advValueB": 19.085,
       "advSharesM": 10.423,
       "sharesOutM": 1147.98,
       "freeFloatPct": 78.2,
@@ -2087,9 +2087,9 @@
         4879.0,
         4645.0,
         4731.0,
-        4735.0
+        null
       ],
-      "advValueB": 19.327,
+      "advValueB": 19.481,
       "advSharesM": 4.063,
       "sharesOutM": 833.32,
       "freeFloatPct": 95.8,
@@ -2194,9 +2194,9 @@
         2672.5,
         2471.5,
         2582.5,
-        2621.0
+        null
       ],
-      "advValueB": 15.621,
+      "advValueB": 15.623,
       "advSharesM": 6.258,
       "sharesOutM": 1793.12,
       "freeFloatPct": 99.7,
@@ -2272,9 +2272,9 @@
         4017.0,
         3829.0,
         4005.0,
-        3944.0
+        null
       ],
-      "advValueB": 12.353,
+      "advValueB": 12.037,
       "advSharesM": 3.348,
       "sharesOutM": 1128.87,
       "freeFloatPct": 94.7,
@@ -2323,7 +2323,7 @@
       "nameJp": "日本製鉄",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 687.9000244140625,
+      "price": 687.9,
       "change": 14.2,
       "changePercent": 2.11,
       "marketCapB": 3595.15,
@@ -2358,9 +2358,9 @@
         666.0,
         656.5,
         674.9,
-        687.9
+        null
       ],
-      "advValueB": 21.11,
+      "advValueB": 20.494,
       "advSharesM": 31.956,
       "sharesOutM": 5226.27,
       "freeFloatPct": 99.7,
@@ -2370,7 +2370,7 @@
       "shortSharesM": 161.37,
       "shortDtc": 5.0,
       "shortReporters": 3,
-      "shortPctChange": -0.19,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 30.41,
@@ -2458,9 +2458,9 @@
         3052.0,
         2912.5,
         3063.0,
-        3151.0
+        null
       ],
-      "advValueB": 82.469,
+      "advValueB": 81.411,
       "advSharesM": 24.829,
       "sharesOutM": 3360.21,
       "freeFloatPct": 97.9,
@@ -2551,9 +2551,9 @@
         7769.0,
         6269.0,
         5269.0,
-        5500.0
+        null
       ],
-      "advValueB": 55.49,
+      "advValueB": 37.849,
       "advSharesM": 8.554,
       "sharesOutM": 1775.43,
       "freeFloatPct": 61.8,
@@ -2629,9 +2629,9 @@
         3712.0,
         3529.0,
         3773.0,
-        3729.0
+        null
       ],
-      "advValueB": 20.248,
+      "advValueB": 20.072,
       "advSharesM": 5.997,
       "sharesOutM": 1639.72,
       "freeFloatPct": 70.1,
@@ -2722,9 +2722,9 @@
         1309.5,
         1221.0,
         1294.0,
-        1283.5
+        null
       ],
-      "advValueB": 17.802,
+      "advValueB": 17.99,
       "advSharesM": 15.089,
       "sharesOutM": 2768.1,
       "freeFloatPct": 92.5,
@@ -2800,9 +2800,9 @@
         1926.0,
         1860.5,
         1931.0,
-        1911.0
+        null
       ],
-      "advValueB": 21.657,
+      "advValueB": 21.921,
       "advSharesM": 11.605,
       "sharesOutM": 2509.95,
       "freeFloatPct": 33.9,
@@ -2907,9 +2907,9 @@
         5032.0,
         4882.0,
         4933.0,
-        5274.0
+        null
       ],
-      "advValueB": 160.689,
+      "advValueB": 163.364,
       "advSharesM": 25.964,
       "sharesOutM": 1806.66,
       "freeFloatPct": 95.7,
@@ -3007,9 +3007,9 @@
         33570.0,
         32040.0,
         32480.0,
-        34990.0
+        null
       ],
-      "advValueB": 206.078,
+      "advValueB": 208.896,
       "advSharesM": 5.303,
       "sharesOutM": 89.71,
       "freeFloatPct": 87.0,
@@ -3019,7 +3019,7 @@
       "shortSharesM": 0.52,
       "shortDtc": 0.1,
       "shortReporters": 1,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 1.24,
@@ -3100,9 +3100,9 @@
         29485.0,
         28015.0,
         28375.0,
-        29690.0
+        null
       ],
-      "advValueB": 638.342,
+      "advValueB": 632.196,
       "advSharesM": 19.185,
       "sharesOutM": 722.1,
       "freeFloatPct": 99.7,
@@ -3235,9 +3235,9 @@
         2964.5,
         2800.5,
         2805.0,
-        2936.5
+        null
       ],
-      "advValueB": 20.681,
+      "advValueB": 21.025,
       "advSharesM": 6.201,
       "sharesOutM": 1266.65,
       "freeFloatPct": 98.0,
@@ -3349,9 +3349,9 @@
         4751.0,
         4497.0,
         4824.0,
-        4908.0
+        null
       ],
-      "advValueB": 38.906,
+      "advValueB": 38.514,
       "advSharesM": 8.075,
       "sharesOutM": 2046.88,
       "freeFloatPct": 97.9,
@@ -3435,9 +3435,9 @@
         7763.0,
         7778.0,
         7916.0,
-        8437.0
+        null
       ],
-      "advValueB": 35.483,
+      "advValueB": 35.928,
       "advSharesM": 3.399,
       "sharesOutM": 189.09,
       "freeFloatPct": 98.0,
@@ -3513,9 +3513,9 @@
         7083.0,
         6478.0,
         6703.0,
-        6689.0
+        null
       ],
-      "advValueB": 13.097,
+      "advValueB": 13.428,
       "advSharesM": 1.825,
       "sharesOutM": 129.79,
       "freeFloatPct": 94.3,
@@ -3525,7 +3525,7 @@
       "shortSharesM": 2.24,
       "shortDtc": 1.2,
       "shortReporters": 1,
-      "shortPctChange": 0.14,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": true,
       "marginLongM": 0.41,
@@ -3599,9 +3599,9 @@
         3430.0,
         3218.0,
         3434.0,
-        3440.0
+        null
       ],
-      "advValueB": 38.817,
+      "advValueB": 38.722,
       "advSharesM": 9.853,
       "sharesOutM": 1726.62,
       "freeFloatPct": 94.8,
@@ -3699,9 +3699,9 @@
         2252.0,
         2107.0,
         2112.0,
-        2257.0
+        null
       ],
-      "advValueB": 35.833,
+      "advValueB": 36.065,
       "advSharesM": 13.72,
       "sharesOutM": 1898.15,
       "freeFloatPct": 100.0,
@@ -3785,9 +3785,9 @@
         3573.0,
         3298.0,
         3415.0,
-        3446.0
+        null
       ],
-      "advValueB": 12.359,
+      "advValueB": 12.517,
       "advSharesM": 3.52,
       "sharesOutM": 642.72,
       "freeFloatPct": 102.3,
@@ -3797,7 +3797,7 @@
       "shortSharesM": 5.48,
       "shortDtc": 1.6,
       "shortReporters": 1,
-      "shortPctChange": 0.1,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.21,
@@ -3885,9 +3885,9 @@
         5653.0,
         5312.0,
         5339.0,
-        5530.0
+        null
       ],
-      "advValueB": 42.96,
+      "advValueB": 43.372,
       "advSharesM": 7.537,
       "sharesOutM": 924.91,
       "freeFloatPct": 100.0,
@@ -3999,9 +3999,9 @@
         2628.5,
         2477.5,
         2559.5,
-        2743.0
+        null
       ],
-      "advValueB": 46.904,
+      "advValueB": 47.443,
       "advSharesM": 16.219,
       "sharesOutM": 1827.49,
       "freeFloatPct": 94.0,
@@ -4077,9 +4077,9 @@
         4722.0,
         4317.0,
         4479.0,
-        4408.0
+        null
       ],
-      "advValueB": 41.251,
+      "advValueB": 40.531,
       "advSharesM": 8.233,
       "sharesOutM": 1327.43,
       "freeFloatPct": 95.1,
@@ -4163,9 +4163,9 @@
         5243.0,
         4930.0,
         5107.0,
-        5149.0
+        null
       ],
-      "advValueB": 25.905,
+      "advValueB": 26.544,
       "advSharesM": 5.024,
       "sharesOutM": 1419.81,
       "freeFloatPct": 96.5,
@@ -4228,7 +4228,7 @@
       "nameJp": "東京海上ホールディングス",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 584.2999877929688,
+      "price": 584.3,
       "change": -2.1,
       "changePercent": -0.36,
       "marketCapB": 16486.83,
@@ -4263,9 +4263,9 @@
         606.0,
         569.8,
         584.1,
-        584.3
+        null
       ],
-      "advValueB": 49.671,
+      "advValueB": 50.048,
       "advSharesM": 87.647,
       "sharesOutM": 28216.37,
       "freeFloatPct": null,
@@ -4368,9 +4368,9 @@
         1835.5,
         1706.0,
         1763.5,
-        1802.0
+        null
       ],
-      "advValueB": 16.372,
+      "advValueB": 16.404,
       "advSharesM": 9.069,
       "sharesOutM": 3602.19,
       "freeFloatPct": 88.6,
@@ -4446,9 +4446,9 @@
         7296.0,
         6770.0,
         7085.0,
-        7164.0
+        null
       ],
-      "advValueB": 19.917,
+      "advValueB": 20.073,
       "advSharesM": 2.852,
       "sharesOutM": 881.47,
       "freeFloatPct": 92.6,
@@ -4546,9 +4546,9 @@
         5858.0,
         5401.0,
         5538.0,
-        5209.0
+        null
       ],
-      "advValueB": 23.296,
+      "advValueB": 22.434,
       "advSharesM": 4.092,
       "sharesOutM": 1073.25,
       "freeFloatPct": 99.4,
@@ -4646,9 +4646,9 @@
         1771.5,
         1632.0,
         1692.5,
-        1741.0
+        null
       ],
-      "advValueB": 10.133,
+      "advValueB": 10.134,
       "advSharesM": 5.9,
       "sharesOutM": 1388.57,
       "freeFloatPct": 99.1,
@@ -4724,9 +4724,9 @@
         1579.0,
         1450.0,
         1489.0,
-        1505.0
+        null
       ],
-      "advValueB": 15.626,
+      "advValueB": 15.741,
       "advSharesM": 10.613,
       "sharesOutM": 2922.59,
       "freeFloatPct": 95.2,
@@ -4802,9 +4802,9 @@
         2186.5,
         2069.5,
         2122.0,
-        2145.5
+        null
       ],
-      "advValueB": 10.062,
+      "advValueB": 10.316,
       "advSharesM": 4.665,
       "sharesOutM": 1018.43,
       "freeFloatPct": null,
@@ -4893,9 +4893,9 @@
         3063.0,
         2890.0,
         3044.0,
-        3123.0
+        null
       ],
-      "advValueB": 20.011,
+      "advValueB": 19.92,
       "advSharesM": 6.591,
       "sharesOutM": 3561.99,
       "freeFloatPct": 49.9,
@@ -4971,9 +4971,9 @@
         2876.0,
         2736.0,
         2836.5,
-        2853.0
+        null
       ],
-      "advValueB": 12.374,
+      "advValueB": 12.349,
       "advSharesM": 4.259,
       "sharesOutM": 646.39,
       "freeFloatPct": 90.0,
@@ -5092,9 +5092,9 @@
         2248.0,
         2108.5,
         2191.5,
-        2292.0
+        null
       ],
-      "advValueB": 24.298,
+      "advValueB": 24.207,
       "advSharesM": 10.815,
       "sharesOutM": 2224.06,
       "freeFloatPct": 100.9,
@@ -5199,9 +5199,9 @@
         4374.0,
         4172.0,
         4350.0,
-        4320.0
+        null
       ],
-      "advValueB": 12.484,
+      "advValueB": 12.43,
       "advSharesM": 3.142,
       "sharesOutM": 949.38,
       "freeFloatPct": 94.5,
@@ -5299,9 +5299,9 @@
         3284.0,
         3182.0,
         3295.0,
-        3287.0
+        null
       ],
-      "advValueB": 8.449,
+      "advValueB": 8.552,
       "advSharesM": 2.722,
       "sharesOutM": 455.08,
       "freeFloatPct": 98.7,
@@ -5311,7 +5311,7 @@
       "shortSharesM": 19.05,
       "shortDtc": 7.0,
       "shortReporters": 4,
-      "shortPctChange": -0.22,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 1.85,
@@ -5385,9 +5385,9 @@
         7038.0,
         6635.0,
         6543.0,
-        6624.0
+        null
       ],
-      "advValueB": 20.895,
+      "advValueB": 20.866,
       "advSharesM": 2.92,
       "sharesOutM": 403.56,
       "freeFloatPct": 99.8,
@@ -5478,9 +5478,9 @@
         6976.0,
         6516.0,
         6440.0,
-        6485.0
+        null
       ],
-      "advValueB": 24.664,
+      "advValueB": 24.348,
       "advSharesM": 3.427,
       "sharesOutM": 343.62,
       "freeFloatPct": 99.7,
@@ -5490,7 +5490,7 @@
       "shortSharesM": 9.23,
       "shortDtc": 2.7,
       "shortReporters": 2,
-      "shortPctChange": 0.18,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 1.35,
@@ -5571,9 +5571,9 @@
         3185.0,
         2998.5,
         3005.0,
-        2994.0
+        null
       ],
-      "advValueB": 13.326,
+      "advValueB": 13.21,
       "advSharesM": 4.025,
       "sharesOutM": 543.39,
       "freeFloatPct": 64.1,
@@ -5583,7 +5583,7 @@
       "shortSharesM": 69.02,
       "shortDtc": 17.1,
       "shortReporters": 7,
-      "shortPctChange": -0.02,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 1.34,
@@ -5685,9 +5685,9 @@
         6269.0,
         5801.0,
         5971.0,
-        6130.0
+        null
       ],
-      "advValueB": 27.582,
+      "advValueB": 28.134,
       "advSharesM": 4.211,
       "sharesOutM": 886.22,
       "freeFloatPct": 98.8,
@@ -5785,9 +5785,9 @@
         2727.0,
         2527.5,
         2470.0,
-        2548.5
+        null
       ],
-      "advValueB": 11.119,
+      "advValueB": 11.042,
       "advSharesM": 4.253,
       "sharesOutM": 1126.39,
       "freeFloatPct": 98.0,
@@ -5885,9 +5885,9 @@
         21465.0,
         21790.0,
         22445.0,
-        22930.0
+        null
       ],
-      "advValueB": 27.264,
+      "advValueB": 26.683,
       "advSharesM": 1.265,
       "sharesOutM": 278.21,
       "freeFloatPct": 100.2,
@@ -5897,7 +5897,7 @@
       "shortSharesM": 2.43,
       "shortDtc": 1.9,
       "shortReporters": 1,
-      "shortPctChange": 0.12,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 0.31,
@@ -5985,9 +5985,9 @@
         2071.5,
         1957.0,
         2025.5,
-        1963.0
+        null
       ],
-      "advValueB": 22.158,
+      "advValueB": 20.483,
       "advSharesM": 10.461,
       "sharesOutM": 873.2,
       "freeFloatPct": 91.1,
@@ -5997,7 +5997,7 @@
       "shortSharesM": 6.26,
       "shortDtc": 0.6,
       "shortReporters": 1,
-      "shortPctChange": 0.17,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 17.95,
@@ -6063,9 +6063,9 @@
         2428.5,
         2292.0,
         2396.5,
-        2449.5
+        null
       ],
-      "advValueB": 35.07,
+      "advValueB": 35.628,
       "advSharesM": 14.501,
       "sharesOutM": 1060.9,
       "freeFloatPct": 96.7,
@@ -6075,7 +6075,7 @@
       "shortSharesM": 17.03,
       "shortDtc": 1.2,
       "shortReporters": 2,
-      "shortPctChange": 0.24,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": true,
       "marginLongM": 12.49,
@@ -6149,9 +6149,9 @@
         59130.0,
         55290.0,
         57640.0,
-        60160.0
+        null
       ],
-      "advValueB": 22.494,
+      "advValueB": 22.81,
       "advSharesM": 0.356,
       "sharesOutM": 62.42,
       "freeFloatPct": 89.1,
@@ -6242,9 +6242,9 @@
         5250.0,
         4827.0,
         5024.0,
-        5117.0
+        null
       ],
-      "advValueB": 5.957,
+      "advValueB": 5.952,
       "advSharesM": 1.139,
       "sharesOutM": 207.37,
       "freeFloatPct": 65.7,
@@ -6349,9 +6349,9 @@
         5108.0,
         4726.0,
         4880.0,
-        5089.0
+        null
       ],
-      "advValueB": 22.161,
+      "advValueB": 22.152,
       "advSharesM": 4.504,
       "sharesOutM": 1620.84,
       "freeFloatPct": 100.0,
@@ -6456,9 +6456,9 @@
         1735.0,
         1597.0,
         1638.5,
-        1705.5
+        null
       ],
-      "advValueB": 20.619,
+      "advValueB": 20.807,
       "advSharesM": 12.111,
       "sharesOutM": 4725.55,
       "freeFloatPct": 100.0,
@@ -6556,9 +6556,9 @@
         6761.0,
         6194.0,
         6422.0,
-        6690.0
+        null
       ],
-      "advValueB": 19.245,
+      "advValueB": 19.511,
       "advSharesM": 2.737,
       "sharesOutM": 937.68,
       "freeFloatPct": 74.5,
@@ -6634,9 +6634,9 @@
         1688.0,
         1609.5,
         1644.0,
-        1642.5
+        null
       ],
-      "advValueB": 4.987,
+      "advValueB": 5.055,
       "advSharesM": 3.094,
       "sharesOutM": 558.69,
       "freeFloatPct": null,
@@ -6725,9 +6725,9 @@
         3315.0,
         3237.0,
         3340.0,
-        3363.0
+        null
       ],
-      "advValueB": 10.81,
+      "advValueB": 10.749,
       "advSharesM": 3.546,
       "sharesOutM": 421.71,
       "freeFloatPct": 95.8,
@@ -6737,7 +6737,7 @@
       "shortSharesM": 21.53,
       "shortDtc": 6.1,
       "shortReporters": 5,
-      "shortPctChange": -0.05,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.4,
@@ -6825,9 +6825,9 @@
         3433.0,
         3277.0,
         3401.0,
-        3468.0
+        null
       ],
-      "advValueB": 9.035,
+      "advValueB": 8.83,
       "advSharesM": 2.881,
       "sharesOutM": 429.95,
       "freeFloatPct": 98.2,
@@ -6903,9 +6903,9 @@
         1189.5,
         1131.5,
         1103.0,
-        1150.0
+        null
       ],
-      "advValueB": 8.078,
+      "advValueB": 7.831,
       "advSharesM": 7.266,
       "sharesOutM": 630.97,
       "freeFloatPct": 94.1,
@@ -6915,7 +6915,7 @@
       "shortSharesM": 17.31,
       "shortDtc": 2.4,
       "shortReporters": 3,
-      "shortPctChange": -1.0,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 4.75,
@@ -6981,9 +6981,9 @@
         2273.5,
         2196.5,
         2297.5,
-        2248.0
+        null
       ],
-      "advValueB": 19.636,
+      "advValueB": 19.406,
       "advSharesM": 9.246,
       "sharesOutM": 1929.27,
       "freeFloatPct": 94.9,
@@ -6993,7 +6993,7 @@
       "shortSharesM": 33.63,
       "shortDtc": 3.6,
       "shortReporters": 3,
-      "shortPctChange": -0.06,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 2.08,
@@ -7067,9 +7067,9 @@
         2883.0,
         2718.0,
         2789.5,
-        2821.5
+        null
       ],
-      "advValueB": 10.69,
+      "advValueB": 9.307,
       "advSharesM": 3.955,
       "sharesOutM": 689.39,
       "freeFloatPct": 78.7,
@@ -7139,7 +7139,7 @@
       "nameJp": "日産自動車",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 282.1000061035156,
+      "price": 282.1,
       "change": 3.5,
       "changePercent": 1.26,
       "marketCapB": 986.33,
@@ -7174,9 +7174,9 @@
         292.7,
         269.7,
         279.0,
-        282.1
+        null
       ],
-      "advValueB": 12.238,
+      "advValueB": 12.354,
       "advSharesM": 44.618,
       "sharesOutM": 3496.38,
       "freeFloatPct": 78.2,
@@ -7186,7 +7186,7 @@
       "shortSharesM": 488.6,
       "shortDtc": 11.0,
       "shortReporters": 8,
-      "shortPctChange": -0.08,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 64.56,
@@ -7251,9 +7251,9 @@
         1840.0,
         1668.0,
         1761.0,
-        1799.0
+        null
       ],
-      "advValueB": 9.733,
+      "advValueB": 9.701,
       "advSharesM": 5.496,
       "sharesOutM": 970.62,
       "freeFloatPct": 95.0,
@@ -7337,9 +7337,9 @@
         665.4,
         620.0,
         650.6,
-        650.0
+        null
       ],
-      "advValueB": 12.953,
+      "advValueB": 13.058,
       "advSharesM": 20.497,
       "sharesOutM": 2181.99,
       "freeFloatPct": 66.6,
@@ -7349,7 +7349,7 @@
       "shortSharesM": 11.22,
       "shortDtc": 0.5,
       "shortReporters": 1,
-      "shortPctChange": -0.25,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 34.84,
@@ -7414,9 +7414,9 @@
         2260.0,
         2165.0,
         2205.0,
-        2180.5
+        null
       ],
-      "advValueB": 20.585,
+      "advValueB": 20.826,
       "advSharesM": 9.777,
       "sharesOutM": 2267.08,
       "freeFloatPct": 86.8,
@@ -7500,9 +7500,9 @@
         3503.0,
         3260.0,
         3427.0,
-        3405.0
+        null
       ],
-      "advValueB": 8.391,
+      "advValueB": 8.411,
       "advSharesM": 2.513,
       "sharesOutM": 565.06,
       "freeFloatPct": 78.2,
@@ -7512,7 +7512,7 @@
       "shortSharesM": 6.94,
       "shortDtc": 2.8,
       "shortReporters": 2,
-      "shortPctChange": 0.06,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.63,
@@ -7578,9 +7578,9 @@
         1845.5,
         1743.0,
         1782.5,
-        1773.5
+        null
       ],
-      "advValueB": 10.633,
+      "advValueB": 10.805,
       "advSharesM": 6.071,
       "sharesOutM": 1062.85,
       "freeFloatPct": 99.9,
@@ -7590,7 +7590,7 @@
       "shortSharesM": 7.76,
       "shortDtc": 1.3,
       "shortReporters": 1,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.63,
@@ -7656,9 +7656,9 @@
         1770.0,
         1678.5,
         1650.5,
-        1674.0
+        null
       ],
-      "advValueB": 5.182,
+      "advValueB": 5.245,
       "advSharesM": 2.908,
       "sharesOutM": 557.86,
       "freeFloatPct": 75.2,
@@ -7756,9 +7756,9 @@
         3167.0,
         2967.0,
         3121.0,
-        3060.0
+        null
       ],
-      "advValueB": 8.937,
+      "advValueB": 8.873,
       "advSharesM": 3.033,
       "sharesOutM": 790.54,
       "freeFloatPct": 100.8,
@@ -7856,9 +7856,9 @@
         1783.5,
         1698.5,
         1761.0,
-        1737.5
+        null
       ],
-      "advValueB": 11.979,
+      "advValueB": 12.044,
       "advSharesM": 7.148,
       "sharesOutM": 1462.66,
       "freeFloatPct": 100.0,
@@ -7868,7 +7868,7 @@
       "shortSharesM": 14.47,
       "shortDtc": 2.0,
       "shortReporters": 1,
-      "shortPctChange": -0.13,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 1.28,
@@ -7934,9 +7934,9 @@
         4872.0,
         4268.0,
         4430.0,
-        4345.0
+        null
       ],
-      "advValueB": 20.694,
+      "advValueB": 19.283,
       "advSharesM": 4.253,
       "sharesOutM": 951.32,
       "freeFloatPct": 99.3,
@@ -8041,9 +8041,9 @@
         1944.0,
         1775.5,
         1862.5,
-        1664.5
+        null
       ],
-      "advValueB": 7.761,
+      "advValueB": 6.792,
       "advSharesM": 4.343,
       "sharesOutM": 926.83,
       "freeFloatPct": 83.1,
@@ -8053,7 +8053,7 @@
       "shortSharesM": 26.02,
       "shortDtc": 6.0,
       "shortReporters": 4,
-      "shortPctChange": -0.06,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.26,
@@ -8148,9 +8148,9 @@
         3214.0,
         3063.0,
         3166.0,
-        3132.0
+        null
       ],
-      "advValueB": 3.405,
+      "advValueB": 3.409,
       "advSharesM": 1.116,
       "sharesOutM": 286.58,
       "freeFloatPct": 74.5,
@@ -8160,7 +8160,7 @@
       "shortSharesM": 3.52,
       "shortDtc": 3.2,
       "shortReporters": 2,
-      "shortPctChange": -0.11,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 0.21,
@@ -8226,9 +8226,9 @@
         3891.0,
         3800.0,
         3929.0,
-        3913.0
+        null
       ],
-      "advValueB": 14.317,
+      "advValueB": 14.245,
       "advSharesM": 3.803,
       "sharesOutM": 904.76,
       "freeFloatPct": 87.3,
@@ -8238,7 +8238,7 @@
       "shortSharesM": 41.63,
       "shortDtc": 10.9,
       "shortReporters": 5,
-      "shortPctChange": 0.58,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 0.2,
@@ -8304,9 +8304,9 @@
         4114.0,
         3759.0,
         3861.0,
-        3876.0
+        null
       ],
-      "advValueB": 10.654,
+      "advValueB": 10.649,
       "advSharesM": 2.89,
       "sharesOutM": 399.62,
       "freeFloatPct": 94.9,
@@ -8316,7 +8316,7 @@
       "shortSharesM": 33.89,
       "shortDtc": 11.7,
       "shortReporters": 5,
-      "shortPctChange": 0.22,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 0.42,
@@ -8389,9 +8389,9 @@
         4422.0,
         4217.0,
         4337.0,
-        4295.0
+        null
       ],
-      "advValueB": 4.873,
+      "advValueB": 4.915,
       "advSharesM": 1.131,
       "sharesOutM": 271.17,
       "freeFloatPct": 94.4,
@@ -8475,9 +8475,9 @@
         1100.0,
         1046.5,
         1078.5,
-        1090.0
+        null
       ],
-      "advValueB": 6.394,
+      "advValueB": 6.392,
       "advSharesM": 6.226,
       "sharesOutM": 1720.8,
       "freeFloatPct": 66.4,
@@ -8553,9 +8553,9 @@
         3078.0,
         2767.0,
         2847.0,
-        2804.5
+        null
       ],
-      "advValueB": 26.296,
+      "advValueB": 26.665,
       "advSharesM": 9.474,
       "sharesOutM": 1822.07,
       "freeFloatPct": 100.0,
@@ -8631,9 +8631,9 @@
         7190.0,
         6806.0,
         7185.0,
-        7162.0
+        null
       ],
-      "advValueB": 23.342,
+      "advValueB": 23.645,
       "advSharesM": 3.49,
       "sharesOutM": 1645.58,
       "freeFloatPct": 38.9,
@@ -8709,9 +8709,9 @@
         5280.0,
         4858.0,
         5039.0,
-        5010.0
+        null
       ],
-      "advValueB": 7.083,
+      "advValueB": 7.142,
       "advSharesM": 1.42,
       "sharesOutM": 282.24,
       "freeFloatPct": 99.6,
@@ -8787,9 +8787,9 @@
         12425.0,
         11585.0,
         11965.0,
-        11980.0
+        null
       ],
-      "advValueB": 15.718,
+      "advValueB": 15.954,
       "advSharesM": 1.299,
       "sharesOutM": 523.91,
       "freeFloatPct": 84.7,
@@ -8887,9 +8887,9 @@
         3192.0,
         2981.5,
         3056.0,
-        3040.0
+        null
       ],
-      "advValueB": 9.526,
+      "advValueB": 9.713,
       "advSharesM": 3.184,
       "sharesOutM": 851.18,
       "freeFloatPct": 100.0,
@@ -8980,9 +8980,9 @@
         2620.5,
         2427.0,
         2533.0,
-        2511.0
+        null
       ],
-      "advValueB": 4.908,
+      "advValueB": 4.998,
       "advSharesM": 2.035,
       "sharesOutM": 523.59,
       "freeFloatPct": 44.8,
@@ -9058,9 +9058,9 @@
         3494.0,
         3288.0,
         3350.0,
-        3469.0
+        null
       ],
-      "advValueB": 12.851,
+      "advValueB": 12.736,
       "advSharesM": 3.757,
       "sharesOutM": 1195.99,
       "freeFloatPct": 99.9,
@@ -9136,9 +9136,9 @@
         2017.0,
         2065.5,
         2138.5,
-        2127.0
+        null
       ],
-      "advValueB": 7.438,
+      "advValueB": 7.359,
       "advSharesM": 3.794,
       "sharesOutM": 602.04,
       "freeFloatPct": 85.2,
@@ -9236,9 +9236,9 @@
         2627.5,
         2500.5,
         2548.0,
-        2511.0
+        null
       ],
-      "advValueB": 15.125,
+      "advValueB": 15.284,
       "advSharesM": 6.272,
       "sharesOutM": 1475.1,
       "freeFloatPct": 98.0,
@@ -9322,9 +9322,9 @@
         1143.0,
         1039.0,
         1083.0,
-        1107.0
+        null
       ],
-      "advValueB": 0.849,
+      "advValueB": 0.859,
       "advSharesM": 0.787,
       "sharesOutM": 128.57,
       "freeFloatPct": 74.2,
@@ -9399,9 +9399,9 @@
         1605.5,
         1490.5,
         1537.0,
-        1580.5
+        null
       ],
-      "advValueB": 7.882,
+      "advValueB": 7.889,
       "advSharesM": 4.977,
       "sharesOutM": 1333.58,
       "freeFloatPct": 97.2,
@@ -9499,9 +9499,9 @@
         1046.0,
         1003.5,
         1009.5,
-        1051.0
+        null
       ],
-      "advValueB": 9.277,
+      "advValueB": 9.386,
       "advSharesM": 8.284,
       "sharesOutM": 1358.69,
       "freeFloatPct": 100.0,
@@ -9598,9 +9598,9 @@
         519.1,
         473.3,
         483.0,
-        503.0
+        null
       ],
-      "advValueB": 8.818,
+      "advValueB": 8.809,
       "advSharesM": 16.321,
       "sharesOutM": 1651.87,
       "freeFloatPct": 98.6,
@@ -9684,9 +9684,9 @@
         2490.0,
         2321.5,
         2361.5,
-        2447.0
+        null
       ],
-      "advValueB": 3.874,
+      "advValueB": 3.879,
       "advSharesM": 1.54,
       "sharesOutM": 307.89,
       "freeFloatPct": 98.1,
@@ -9777,9 +9777,9 @@
         8184.0,
         7633.0,
         7873.0,
-        7500.0
+        null
       ],
-      "advValueB": 21.997,
+      "advValueB": 20.752,
       "advSharesM": 2.677,
       "sharesOutM": 268.49,
       "freeFloatPct": 94.5,
@@ -9863,9 +9863,9 @@
         1221.0,
         1183.5,
         1234.5,
-        1320.0
+        null
       ],
-      "advValueB": 6.163,
+      "advValueB": 5.511,
       "advSharesM": 5.036,
       "sharesOutM": 1456.66,
       "freeFloatPct": 99.9,
@@ -9970,9 +9970,9 @@
         4256.0,
         4105.0,
         4268.0,
-        4242.0
+        null
       ],
-      "advValueB": 15.208,
+      "advValueB": 15.212,
       "advSharesM": 3.756,
       "sharesOutM": 1234.13,
       "freeFloatPct": 98.2,
@@ -10063,9 +10063,9 @@
         1675.0,
         1540.0,
         1604.5,
-        1752.5
+        null
       ],
-      "advValueB": 29.772,
+      "advValueB": 30.054,
       "advSharesM": 14.409,
       "sharesOutM": 572.14,
       "freeFloatPct": 96.4,
@@ -10075,7 +10075,7 @@
       "shortSharesM": 8.8,
       "shortDtc": 0.6,
       "shortReporters": 1,
-      "shortPctChange": -0.08,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 9.0,
@@ -10114,7 +10114,7 @@
       "nameJp": "ソフトバンク",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 233.8000030517578,
+      "price": 233.8,
       "change": -3.3,
       "changePercent": -1.39,
       "marketCapB": 11183.52,
@@ -10149,9 +10149,9 @@
         244.1,
         235.4,
         238.4,
-        233.8
+        null
       ],
-      "advValueB": 20.563,
+      "advValueB": 20.325,
       "advSharesM": 86.057,
       "sharesOutM": 47833.72,
       "freeFloatPct": 59.6,
@@ -10227,9 +10227,9 @@
         2701.5,
         2627.0,
         2682.5,
-        2666.0
+        null
       ],
-      "advValueB": 2.911,
+      "advValueB": 2.898,
       "advSharesM": 1.121,
       "sharesOutM": 92.51,
       "freeFloatPct": 49.7,
@@ -10239,7 +10239,7 @@
       "shortSharesM": 6.28,
       "shortDtc": 5.6,
       "shortReporters": 5,
-      "shortPctChange": 0.52,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 1.2,
@@ -10305,9 +10305,9 @@
         2943.0,
         2853.0,
         2947.5,
-        2897.0
+        null
       ],
-      "advValueB": 6.967,
+      "advValueB": 6.929,
       "advSharesM": 2.49,
       "sharesOutM": 779.46,
       "freeFloatPct": 41.3,
@@ -10398,9 +10398,9 @@
         544.6,
         541.0,
         559.4,
-        530.5
+        null
       ],
-      "advValueB": 10.73,
+      "advValueB": 10.551,
       "advSharesM": 20.505,
       "sharesOutM": 6864.13,
       "freeFloatPct": 37.4,
@@ -10505,9 +10505,9 @@
         4357.0,
         4144.0,
         4410.0,
-        4415.0
+        null
       ],
-      "advValueB": 14.77,
+      "advValueB": 14.959,
       "advSharesM": 3.528,
       "sharesOutM": 418.34,
       "freeFloatPct": 79.0,
@@ -10517,7 +10517,7 @@
       "shortSharesM": 4.12,
       "shortDtc": 1.2,
       "shortReporters": 1,
-      "shortPctChange": -0.03,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.56,
@@ -10582,9 +10582,9 @@
         28985.0,
         27350.0,
         28555.0,
-        28975.0
+        null
       ],
-      "advValueB": 20.999,
+      "advValueB": 20.949,
       "advSharesM": 0.813,
       "sharesOutM": 135.56,
       "freeFloatPct": 70.4,
@@ -10668,9 +10668,9 @@
         6759.0,
         6392.0,
         6773.0,
-        6649.0
+        null
       ],
-      "advValueB": 19.767,
+      "advValueB": 18.648,
       "advSharesM": 3.139,
       "sharesOutM": 641.37,
       "freeFloatPct": 83.3,
@@ -10746,9 +10746,9 @@
         1278.5,
         1174.0,
         1224.5,
-        1245.5
+        null
       ],
-      "advValueB": 13.596,
+      "advValueB": 13.659,
       "advSharesM": 9.959,
       "sharesOutM": 2650.24,
       "freeFloatPct": 99.6,
@@ -10846,9 +10846,9 @@
         3579.0,
         3413.0,
         3514.0,
-        3548.0
+        null
       ],
-      "advValueB": 20.638,
+      "advValueB": 20.631,
       "advSharesM": 5.453,
       "sharesOutM": 1149.58,
       "freeFloatPct": 73.4,
@@ -10946,9 +10946,9 @@
         1544.0,
         1459.0,
         1491.0,
-        1541.0
+        null
       ],
-      "advValueB": 2.101,
+      "advValueB": 2.094,
       "advSharesM": 1.269,
       "sharesOutM": 255.24,
       "freeFloatPct": 58.0,
@@ -10989,7 +10989,7 @@
       "nameJp": "東京電力ホールディングス",
       "sector": "Utilities",
       "segment": "Prime",
-      "price": 446.3999938964844,
+      "price": 446.4,
       "change": 19.6,
       "changePercent": 4.59,
       "marketCapB": 715.44,
@@ -11024,9 +11024,9 @@
         446.2,
         410.1,
         427.4,
-        446.4
+        null
       ],
-      "advValueB": 15.721,
+      "advValueB": 15.834,
       "advSharesM": 33.182,
       "sharesOutM": 1602.69,
       "freeFloatPct": 94.3,
@@ -11036,7 +11036,7 @@
       "shortSharesM": 105.74,
       "shortDtc": 3.2,
       "shortReporters": 4,
-      "shortPctChange": 0.25,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 62.9,
@@ -11102,9 +11102,9 @@
         2714.0,
         2554.5,
         2615.5,
-        2669.0
+        null
       ],
-      "advValueB": 10.599,
+      "advValueB": 10.758,
       "advSharesM": 3.939,
       "sharesOutM": 1114.06,
       "freeFloatPct": 89.8,
@@ -11180,9 +11180,9 @@
         2501.0,
         2333.0,
         2380.5,
-        2438.0
+        null
       ],
-      "advValueB": 10.016,
+      "advValueB": 10.248,
       "advSharesM": 3.919,
       "sharesOutM": 755.39,
       "freeFloatPct": 97.6,
@@ -11192,7 +11192,7 @@
       "shortSharesM": 9.78,
       "shortDtc": 2.5,
       "shortReporters": 2,
-      "shortPctChange": 0.1,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.58,
@@ -11266,9 +11266,9 @@
         6668.0,
         6214.0,
         6348.0,
-        6440.0
+        null
       ],
-      "advValueB": 8.312,
+      "advValueB": 8.252,
       "advSharesM": 1.309,
       "sharesOutM": 325.43,
       "freeFloatPct": 90.2,
@@ -11366,9 +11366,9 @@
         6010.0,
         5572.0,
         5734.0,
-        5773.0
+        null
       ],
-      "advValueB": 6.675,
+      "advValueB": 6.757,
       "advSharesM": 1.154,
       "sharesOutM": 376.53,
       "freeFloatPct": 99.9,
@@ -11466,9 +11466,9 @@
         4276.0,
         3910.0,
         4014.0,
-        4042.0
+        null
       ],
-      "advValueB": 23.09,
+      "advValueB": 22.913,
       "advSharesM": 5.983,
       "sharesOutM": 1196.47,
       "freeFloatPct": 95.3,
@@ -11573,9 +11573,9 @@
         1737.5,
         1612.0,
         1573.5,
-        1556.0
+        null
       ],
-      "advValueB": 19.898,
+      "advValueB": 19.932,
       "advSharesM": 12.652,
       "sharesOutM": 2692.32,
       "freeFloatPct": 98.4,
@@ -11659,9 +11659,9 @@
         3567.0,
         3212.0,
         3319.0,
-        3294.0
+        null
       ],
-      "advValueB": 15.314,
+      "advValueB": 15.5,
       "advSharesM": 4.68,
       "sharesOutM": 923.62,
       "freeFloatPct": null,
@@ -11744,9 +11744,9 @@
         1331.0,
         1247.0,
         1191.5,
-        1190.5
+        null
       ],
-      "advValueB": 4.274,
+      "advValueB": 4.189,
       "advSharesM": 3.494,
       "sharesOutM": 713.23,
       "freeFloatPct": 82.0,
@@ -11822,9 +11822,9 @@
         2020.0,
         1895.5,
         1940.0,
-        1936.5
+        null
       ],
-      "advValueB": 6.199,
+      "advValueB": 6.344,
       "advSharesM": 3.437,
       "sharesOutM": 759.32,
       "freeFloatPct": 87.7,
@@ -11922,9 +11922,9 @@
         3573.0,
         3316.0,
         3354.0,
-        3369.0
+        null
       ],
-      "advValueB": 3.361,
+      "advValueB": 3.401,
       "advSharesM": 1.022,
       "sharesOutM": 207.14,
       "freeFloatPct": 99.8,
@@ -12000,9 +12000,9 @@
         1131.5,
         1022.0,
         1038.5,
-        1060.5
+        null
       ],
-      "advValueB": 2.104,
+      "advValueB": 2.054,
       "advSharesM": 1.935,
       "sharesOutM": 303.27,
       "freeFloatPct": 97.4,
@@ -12078,9 +12078,9 @@
         5444.0,
         4822.0,
         4917.0,
-        5122.0
+        null
       ],
-      "advValueB": 3.201,
+      "advValueB": 3.199,
       "advSharesM": 0.592,
       "sharesOutM": 114.29,
       "freeFloatPct": 88.6,
@@ -12090,7 +12090,7 @@
       "shortSharesM": 1.19,
       "shortDtc": 2.0,
       "shortReporters": 2,
-      "shortPctChange": 0.5,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.03,
@@ -12192,9 +12192,9 @@
         11315.0,
         10460.0,
         11050.0,
-        11410.0
+        null
       ],
-      "advValueB": 10.236,
+      "advValueB": 10.172,
       "advSharesM": 0.911,
       "sharesOutM": 163.01,
       "freeFloatPct": 92.3,
@@ -12277,9 +12277,9 @@
         3115.0,
         2936.0,
         3039.0,
-        3112.0
+        null
       ],
-      "advValueB": 9.021,
+      "advValueB": 9.056,
       "advSharesM": 3.044,
       "sharesOutM": 687.42,
       "freeFloatPct": 94.2,
@@ -12355,9 +12355,9 @@
         2085.5,
         1960.5,
         2111.0,
-        2160.0
+        null
       ],
-      "advValueB": 8.774,
+      "advValueB": 8.302,
       "advSharesM": 4.269,
       "sharesOutM": 672.51,
       "freeFloatPct": 83.7,
@@ -12490,9 +12490,9 @@
         2884.5,
         2682.0,
         2735.5,
-        2738.5
+        null
       ],
-      "advValueB": 2.087,
+      "advValueB": 2.063,
       "advSharesM": 0.78,
       "sharesOutM": 264.86,
       "freeFloatPct": 90.0,
@@ -12568,9 +12568,9 @@
         4830.0,
         4464.0,
         4675.0,
-        4823.0
+        null
       ],
-      "advValueB": 9.184,
+      "advValueB": 9.064,
       "advSharesM": 1.945,
       "sharesOutM": 461.88,
       "freeFloatPct": 92.5,
@@ -12645,9 +12645,9 @@
         2391.0,
         2284.5,
         2310.5,
-        2286.0
+        null
       ],
-      "advValueB": 10.2,
+      "advValueB": 10.354,
       "advSharesM": 4.489,
       "sharesOutM": 1239.08,
       "freeFloatPct": 97.5,
@@ -12723,9 +12723,9 @@
         3694.0,
         3475.0,
         3563.0,
-        3535.0
+        null
       ],
-      "advValueB": 11.548,
+      "advValueB": 11.5,
       "advSharesM": 3.318,
       "sharesOutM": 648.4,
       "freeFloatPct": 94.3,
@@ -12801,9 +12801,9 @@
         2138.5,
         1950.5,
         2051.5,
-        2167.0
+        null
       ],
-      "advValueB": 2.827,
+      "advValueB": 2.822,
       "advSharesM": 1.347,
       "sharesOutM": 242.08,
       "freeFloatPct": 91.4,
@@ -12879,9 +12879,9 @@
         2423.5,
         2273.0,
         2386.5,
-        2380.5
+        null
       ],
-      "advValueB": 2.489,
+      "advValueB": 2.473,
       "advSharesM": 1.135,
       "sharesOutM": 279.62,
       "freeFloatPct": 90.1,
@@ -12965,9 +12965,9 @@
         2045.5,
         1903.5,
         1947.5,
-        1970.0
+        null
       ],
-      "advValueB": 3.718,
+      "advValueB": 3.711,
       "advSharesM": 1.835,
       "sharesOutM": 271.97,
       "freeFloatPct": 98.3,
@@ -12977,7 +12977,7 @@
       "shortSharesM": 4.03,
       "shortDtc": 2.2,
       "shortReporters": 2,
-      "shortPctChange": 0.6,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.19,
@@ -13072,9 +13072,9 @@
         1896.5,
         1806.5,
         1898.5,
-        1886.0
+        null
       ],
-      "advValueB": 6.791,
+      "advValueB": 6.885,
       "advSharesM": 3.612,
       "sharesOutM": 664.65,
       "freeFloatPct": 49.7,
@@ -13084,7 +13084,7 @@
       "shortSharesM": 14.97,
       "shortDtc": 4.1,
       "shortReporters": 2,
-      "shortPctChange": -1.28,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 1.9,
@@ -13172,9 +13172,9 @@
         2330.0,
         2161.5,
         2239.5,
-        2193.0
+        null
       ],
-      "advValueB": 2.353,
+      "advValueB": 2.365,
       "advSharesM": 1.151,
       "sharesOutM": 389.97,
       "freeFloatPct": 100.0,
@@ -13250,9 +13250,9 @@
         3342.0,
         3100.0,
         2835.0,
-        2881.5
+        null
       ],
-      "advValueB": 3.429,
+      "advValueB": 3.437,
       "advSharesM": 1.178,
       "sharesOutM": 191.44,
       "freeFloatPct": 70.0,
@@ -13262,7 +13262,7 @@
       "shortSharesM": 15.69,
       "shortDtc": 13.3,
       "shortReporters": 3,
-      "shortPctChange": 0.09,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.09,
@@ -13343,9 +13343,9 @@
         5145.0,
         4769.0,
         4916.0,
-        5154.0
+        null
       ],
-      "advValueB": 8.524,
+      "advValueB": 8.563,
       "advSharesM": 1.636,
       "sharesOutM": 208.06,
       "freeFloatPct": 99.5,
@@ -13421,9 +13421,9 @@
         2257.0,
         2129.5,
         2138.0,
-        2126.0
+        null
       ],
-      "advValueB": 2.463,
+      "advValueB": 2.418,
       "advSharesM": 1.149,
       "sharesOutM": 250.67,
       "freeFloatPct": 88.9,
@@ -13514,9 +13514,9 @@
         3050.0,
         2833.0,
         2955.5,
-        3000.0
+        null
       ],
-      "advValueB": 5.973,
+      "advValueB": 6.025,
       "advSharesM": 2.131,
       "sharesOutM": 244.33,
       "freeFloatPct": 82.1,
@@ -13526,7 +13526,7 @@
       "shortSharesM": 11.45,
       "shortDtc": 5.4,
       "shortReporters": 4,
-      "shortPctChange": 0.51,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.12,
@@ -13592,9 +13592,9 @@
         1209.0,
         1137.0,
         1159.0,
-        1169.5
+        null
       ],
-      "advValueB": 4.481,
+      "advValueB": 4.529,
       "advSharesM": 3.776,
       "sharesOutM": 866.82,
       "freeFloatPct": 45.8,
@@ -13692,9 +13692,9 @@
         1779.0,
         1630.0,
         1700.5,
-        1721.5
+        null
       ],
-      "advValueB": 5.686,
+      "advValueB": 5.767,
       "advSharesM": 3.248,
       "sharesOutM": 692.46,
       "freeFloatPct": 91.8,
@@ -13798,7 +13798,7 @@
         1873.0,
         1690.5,
         1726.5,
-        1770.5
+        null
       ],
       "advValueB": 1.578,
       "advSharesM": 0.928,
@@ -13810,7 +13810,7 @@
       "shortSharesM": 1.65,
       "shortDtc": 1.8,
       "shortReporters": 1,
-      "shortPctChange": 0.05,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.29,
@@ -13875,7 +13875,7 @@
         1960.0,
         1842.0,
         1888.0,
-        1920.5
+        null
       ],
       "advValueB": 2.623,
       "advSharesM": 1.406,
@@ -13953,9 +13953,9 @@
         1911.5,
         1784.5,
         1792.5,
-        1911.0
+        null
       ],
-      "advValueB": 31.585,
+      "advValueB": 32.252,
       "advSharesM": 13.328,
       "sharesOutM": 349.73,
       "freeFloatPct": 100.0,
@@ -13965,7 +13965,7 @@
       "shortSharesM": 6.61,
       "shortDtc": 0.5,
       "shortReporters": 3,
-      "shortPctChange": 0.69,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 3.82,
@@ -13995,7 +13995,7 @@
       "nameJp": "王子ホールディングス",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 830.2000122070312,
+      "price": 830.2,
       "change": 0.1,
       "changePercent": 0.01,
       "marketCapB": 705.03,
@@ -14030,9 +14030,9 @@
         850.8,
         800.5,
         827.2,
-        830.2
+        null
       ],
-      "advValueB": 3.713,
+      "advValueB": 3.719,
       "advSharesM": 4.496,
       "sharesOutM": 849.23,
       "freeFloatPct": 89.9,
@@ -14116,9 +14116,9 @@
         1299.0,
         1227.0,
         1225.0,
-        1221.0
+        null
       ],
-      "advValueB": 0.851,
+      "advValueB": 0.852,
       "advSharesM": 0.674,
       "sharesOutM": 115.31,
       "freeFloatPct": 86.1,
@@ -14202,9 +14202,9 @@
         11335.0,
         10530.0,
         10960.0,
-        12000.0
+        null
       ],
-      "advValueB": 42.742,
+      "advValueB": 43.27,
       "advSharesM": 3.196,
       "sharesOutM": 189.71,
       "freeFloatPct": 99.9,
@@ -14288,9 +14288,9 @@
         7289.0,
         6763.0,
         6948.0,
-        6884.0
+        null
       ],
-      "advValueB": 6.034,
+      "advValueB": 5.785,
       "advSharesM": 0.771,
       "sharesOutM": 133.4,
       "freeFloatPct": 96.9,
@@ -14374,9 +14374,9 @@
         3736.0,
         3565.0,
         3655.0,
-        3785.0
+        null
       ],
-      "advValueB": 2.327,
+      "advValueB": 2.329,
       "advSharesM": 0.603,
       "sharesOutM": 71.95,
       "freeFloatPct": null,
@@ -14386,7 +14386,7 @@
       "shortSharesM": 2.38,
       "shortDtc": 3.9,
       "shortReporters": 4,
-      "shortPctChange": -0.55,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 1.66,
@@ -14465,9 +14465,9 @@
         2916.0,
         2758.5,
         2892.5,
-        2953.0
+        null
       ],
-      "advValueB": 2.516,
+      "advValueB": 2.468,
       "advSharesM": 0.843,
       "sharesOutM": 86.17,
       "freeFloatPct": 96.8,
@@ -14551,9 +14551,9 @@
         1796.0,
         1733.0,
         1586.0,
-        1698.0
+        null
       ],
-      "advValueB": 9.28,
+      "advValueB": 8.839,
       "advSharesM": 5.072,
       "sharesOutM": 361.54,
       "freeFloatPct": 92.8,
@@ -14629,9 +14629,9 @@
         3261.0,
         3138.0,
         3207.0,
-        3288.0
+        null
       ],
-      "advValueB": 1.957,
+      "advValueB": 1.989,
       "advSharesM": 0.6,
       "sharesOutM": 97.18,
       "freeFloatPct": 99.8,
@@ -14641,7 +14641,7 @@
       "shortSharesM": 2.47,
       "shortDtc": 4.1,
       "shortReporters": 3,
-      "shortPctChange": -0.02,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.75,
@@ -14715,9 +14715,9 @@
         4105.0,
         3867.0,
         3964.0,
-        3910.0
+        null
       ],
-      "advValueB": 4.777,
+      "advValueB": 4.8,
       "advSharesM": 1.247,
       "sharesOutM": 259.59,
       "freeFloatPct": 84.6,
@@ -14727,7 +14727,7 @@
       "shortSharesM": 8.73,
       "shortDtc": 7.0,
       "shortReporters": 3,
-      "shortPctChange": -0.07,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.14,
@@ -14792,9 +14792,9 @@
         3800.0,
         3583.0,
         3805.0,
-        3947.0
+        null
       ],
-      "advValueB": 7.469,
+      "advValueB": 7.418,
       "advSharesM": 2.042,
       "sharesOutM": 165.36,
       "freeFloatPct": 62.8,
@@ -14804,7 +14804,7 @@
       "shortSharesM": 7.66,
       "shortDtc": 3.8,
       "shortReporters": 5,
-      "shortPctChange": 0.17,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 1.07,
@@ -14878,9 +14878,9 @@
         2079.0,
         1838.0,
         1914.5,
-        1938.5
+        null
       ],
-      "advValueB": 10.088,
+      "advValueB": 10.208,
       "advSharesM": 5.315,
       "sharesOutM": 448.59,
       "freeFloatPct": 53.2,
@@ -14971,9 +14971,9 @@
         4819.0,
         4465.0,
         4522.0,
-        4689.0
+        null
       ],
-      "advValueB": 2.054,
+      "advValueB": 2.028,
       "advSharesM": 0.423,
       "sharesOutM": 93.79,
       "freeFloatPct": 73.0,
@@ -15078,9 +15078,9 @@
         1350.0,
         1283.5,
         1325.0,
-        1320.0
+        null
       ],
-      "advValueB": 5.408,
+      "advValueB": 5.392,
       "advSharesM": 4.174,
       "sharesOutM": 507.1,
       "freeFloatPct": 80.7,
@@ -15156,9 +15156,9 @@
         643.7,
         570.4,
         562.8,
-        580.5
+        null
       ],
-      "advValueB": 2.73,
+      "advValueB": 2.738,
       "advSharesM": 4.243,
       "sharesOutM": 494.18,
       "freeFloatPct": 86.9,
@@ -15234,9 +15234,9 @@
         1363.0,
         1230.5,
         1260.5,
-        1290.0
+        null
       ],
-      "advValueB": 6.965,
+      "advValueB": 6.993,
       "advSharesM": 4.74,
       "sharesOutM": 1198.61,
       "freeFloatPct": 82.4,
@@ -15312,9 +15312,9 @@
         7251.0,
         6774.0,
         7040.0,
-        7166.0
+        null
       ],
-      "advValueB": 7.147,
+      "advValueB": 7.186,
       "advSharesM": 1.048,
       "sharesOutM": 157.75,
       "freeFloatPct": 94.8,
@@ -15390,9 +15390,9 @@
         4951.0,
         4699.0,
         4761.0,
-        4866.0
+        null
       ],
-      "advValueB": 9.805,
+      "advValueB": 9.587,
       "advSharesM": 1.875,
       "sharesOutM": 212.39,
       "freeFloatPct": 96.2,
@@ -15402,7 +15402,7 @@
       "shortSharesM": 5.4,
       "shortDtc": 2.9,
       "shortReporters": 2,
-      "shortPctChange": -0.37,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 1.04,
@@ -15535,9 +15535,9 @@
         4999.0,
         4540.0,
         4616.0,
-        4777.0
+        null
       ],
-      "advValueB": 4.045,
+      "advValueB": 4.058,
       "advSharesM": 0.811,
       "sharesOutM": 71.79,
       "freeFloatPct": 95.7,
@@ -15642,9 +15642,9 @@
         4480.0,
         4236.0,
         4402.0,
-        3859.0
+        null
       ],
-      "advValueB": 2.492,
+      "advValueB": 2.333,
       "advSharesM": 0.597,
       "sharesOutM": 108.96,
       "freeFloatPct": 98.4,
@@ -15654,7 +15654,7 @@
       "shortSharesM": 2.38,
       "shortDtc": 4.0,
       "shortReporters": 2,
-      "shortPctChange": 0.11,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.42,
@@ -15735,9 +15735,9 @@
         1671.0,
         1561.0,
         1570.0,
-        1587.0
+        null
       ],
-      "advValueB": 3.11,
+      "advValueB": 3.104,
       "advSharesM": 1.667,
       "sharesOutM": 202.34,
       "freeFloatPct": 99.9,
@@ -15821,9 +15821,9 @@
         5641.0,
         5362.0,
         5562.0,
-        5796.0
+        null
       ],
-      "advValueB": 6.971,
+      "advValueB": 7.038,
       "advSharesM": 1.222,
       "sharesOutM": 164.45,
       "freeFloatPct": 96.7,
@@ -15914,9 +15914,9 @@
         4725.0,
         4310.0,
         4406.0,
-        4685.0
+        null
       ],
-      "advValueB": 8.029,
+      "advValueB": 8.122,
       "advSharesM": 1.644,
       "sharesOutM": 281.58,
       "freeFloatPct": 99.8,
@@ -16007,9 +16007,9 @@
         1996.5,
         1922.0,
         1960.0,
-        1992.5
+        null
       ],
-      "advValueB": 3.987,
+      "advValueB": 3.749,
       "advSharesM": 1.995,
       "sharesOutM": 395.45,
       "freeFloatPct": 96.6,
@@ -16093,9 +16093,9 @@
         1791.0,
         1747.0,
         1802.0,
-        1809.0
+        null
       ],
-      "advValueB": 9.12,
+      "advValueB": 8.854,
       "advSharesM": 5.188,
       "sharesOutM": 636.12,
       "freeFloatPct": 96.1,
@@ -16171,9 +16171,9 @@
         5547.0,
         5166.0,
         5424.0,
-        5779.0
+        null
       ],
-      "advValueB": 5.947,
+      "advValueB": 5.91,
       "advSharesM": 0.99,
       "sharesOutM": 73.61,
       "freeFloatPct": 98.5,
@@ -16183,7 +16183,7 @@
       "shortSharesM": 2.69,
       "shortDtc": 2.7,
       "shortReporters": 3,
-      "shortPctChange": -0.13,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": true,
       "marginLongM": 1.1,
@@ -16257,9 +16257,9 @@
         2556.0,
         2416.0,
         2457.0,
-        2544.0
+        null
       ],
-      "advValueB": 0.881,
+      "advValueB": 0.887,
       "advSharesM": 0.336,
       "sharesOutM": 61.68,
       "freeFloatPct": 92.8,
@@ -16343,9 +16343,9 @@
         711.0,
         666.0,
         683.0,
-        720.0
+        null
       ],
-      "advValueB": 0.265,
+      "advValueB": 0.267,
       "advSharesM": 0.353,
       "sharesOutM": 19.3,
       "freeFloatPct": 69.0,
@@ -16355,7 +16355,7 @@
       "shortSharesM": 1.84,
       "shortDtc": 5.2,
       "shortReporters": 7,
-      "shortPctChange": 0.26,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 1.45,
@@ -16421,9 +16421,9 @@
         4192.0,
         3874.0,
         3920.0,
-        4139.0
+        null
       ],
-      "advValueB": 5.974,
+      "advValueB": 5.885,
       "advSharesM": 1.377,
       "sharesOutM": 130.68,
       "freeFloatPct": 99.9,
@@ -16499,9 +16499,9 @@
         7923.0,
         7375.0,
         7602.0,
-        7894.0
+        null
       ],
-      "advValueB": 3.757,
+      "advValueB": 3.724,
       "advSharesM": 0.471,
       "sharesOutM": 59.15,
       "freeFloatPct": 96.8,
@@ -16577,9 +16577,9 @@
         2143.5,
         1960.0,
         2000.0,
-        2197.0
+        null
       ],
-      "advValueB": 75.152,
+      "advValueB": 73.202,
       "advSharesM": 28.051,
       "sharesOutM": 703.5,
       "freeFloatPct": 92.5,
@@ -16670,9 +16670,9 @@
         1431.0,
         1360.0,
         1435.5,
-        1493.5
+        null
       ],
-      "advValueB": 53.558,
+      "advValueB": 54.068,
       "advSharesM": 30.715,
       "sharesOutM": 3120.28,
       "freeFloatPct": 99.9,
@@ -16756,9 +16756,9 @@
         3260.0,
         2962.0,
         3080.0,
-        3089.0
+        null
       ],
-      "advValueB": 150.343,
+      "advValueB": 144.948,
       "advSharesM": 38.392,
       "sharesOutM": 1655.7,
       "freeFloatPct": 100.0,
@@ -16842,9 +16842,9 @@
         3079.0,
         2903.5,
         3021.0,
-        3175.0
+        null
       ],
-      "advValueB": 7.979,
+      "advValueB": 7.869,
       "advSharesM": 2.594,
       "sharesOutM": 526.83,
       "freeFloatPct": 99.3,
@@ -16942,9 +16942,9 @@
         3518.0,
         3233.0,
         3355.0,
-        3482.0
+        null
       ],
-      "advValueB": 1.822,
+      "advValueB": 1.84,
       "advSharesM": 0.529,
       "sharesOutM": 177.77,
       "freeFloatPct": 88.1,
@@ -17035,9 +17035,9 @@
         3950.0,
         3775.0,
         3905.0,
-        4150.0
+        null
       ],
-      "advValueB": 2.54,
+      "advValueB": 2.565,
       "advSharesM": 0.582,
       "sharesOutM": 58.22,
       "freeFloatPct": 91.0,
@@ -17047,7 +17047,7 @@
       "shortSharesM": 1.58,
       "shortDtc": 2.7,
       "shortReporters": 3,
-      "shortPctChange": 0.49,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 0.16,
@@ -17128,9 +17128,9 @@
         2269.5,
         2112.5,
         2173.0,
-        2281.0
+        null
       ],
-      "advValueB": 4.523,
+      "advValueB": 4.594,
       "advSharesM": 1.908,
       "sharesOutM": 303.58,
       "freeFloatPct": 102.2,
@@ -17227,9 +17227,9 @@
         41450.0,
         40860.0,
         42430.0,
-        45320.0
+        null
       ],
-      "advValueB": 113.384,
+      "advValueB": 114.437,
       "advSharesM": 2.3,
       "sharesOutM": 108.51,
       "freeFloatPct": 80.6,
@@ -17305,9 +17305,9 @@
         2433.0,
         2251.5,
         2303.0,
-        2349.5
+        null
       ],
-      "advValueB": 11.847,
+      "advValueB": 12.073,
       "advSharesM": 4.994,
       "sharesOutM": 2734.39,
       "freeFloatPct": 57.5,
@@ -17383,9 +17383,9 @@
         5112.0,
         4690.0,
         4964.0,
-        5214.0
+        null
       ],
-      "advValueB": 4.522,
+      "advValueB": 4.516,
       "advSharesM": 0.839,
       "sharesOutM": 118.52,
       "freeFloatPct": 95.3,
@@ -17490,9 +17490,9 @@
         3454.0,
         3198.0,
         3243.0,
-        3502.0
+        null
       ],
-      "advValueB": 13.784,
+      "advValueB": 13.942,
       "advSharesM": 3.62,
       "sharesOutM": 455.4,
       "freeFloatPct": 98.1,
@@ -17568,9 +17568,9 @@
         4305.0,
         4154.0,
         4193.0,
-        4465.0
+        null
       ],
-      "advValueB": 5.63,
+      "advValueB": 5.538,
       "advSharesM": 1.227,
       "sharesOutM": 246.23,
       "freeFloatPct": 89.2,
@@ -17580,7 +17580,7 @@
       "shortSharesM": 5.6,
       "shortDtc": 4.6,
       "shortReporters": 3,
-      "shortPctChange": 0.09,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.15,
@@ -17675,9 +17675,9 @@
         5033.0,
         4661.0,
         4667.0,
-        4864.0
+        null
       ],
-      "advValueB": 1.492,
+      "advValueB": 1.49,
       "advSharesM": 0.299,
       "sharesOutM": 50.7,
       "freeFloatPct": 93.9,
@@ -17775,9 +17775,9 @@
         3510.0,
         3329.0,
         3405.0,
-        3415.0
+        null
       ],
-      "advValueB": 3.717,
+      "advValueB": 3.678,
       "advSharesM": 1.109,
       "sharesOutM": 203.0,
       "freeFloatPct": 69.8,
@@ -17818,7 +17818,7 @@
       "nameJp": "日本精工",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 996.9000244140625,
+      "price": 996.9,
       "change": 38.2,
       "changePercent": 3.98,
       "marketCapB": 487.8,
@@ -17853,9 +17853,9 @@
         995.4,
         924.9,
         954.0,
-        996.9
+        null
       ],
-      "advValueB": 2.59,
+      "advValueB": 2.601,
       "advSharesM": 2.58,
       "sharesOutM": 489.32,
       "freeFloatPct": 95.9,
@@ -17904,7 +17904,7 @@
       "nameJp": "ＮＴＮ",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 349.29998779296875,
+      "price": 349.3,
       "change": 16.3,
       "changePercent": 4.89,
       "marketCapB": 207.67,
@@ -17939,9 +17939,9 @@
         349.9,
         325.8,
         332.2,
-        349.3
+        null
       ],
-      "advValueB": 1.341,
+      "advValueB": 1.359,
       "advSharesM": 3.748,
       "sharesOutM": 594.53,
       "freeFloatPct": 92.8,
@@ -18025,9 +18025,9 @@
         2061.5,
         1892.5,
         1989.0,
-        2061.5
+        null
       ],
-      "advValueB": 3.708,
+      "advValueB": 3.758,
       "advSharesM": 1.811,
       "sharesOutM": 318.33,
       "freeFloatPct": 72.3,
@@ -18111,9 +18111,9 @@
         2906.5,
         2715.0,
         2778.0,
-        2918.5
+        null
       ],
-      "advValueB": 9.601,
+      "advValueB": 9.489,
       "advSharesM": 3.08,
       "sharesOutM": 401.6,
       "freeFloatPct": 90.4,
@@ -18203,9 +18203,9 @@
         11235.0,
         10685.0,
         10885.0,
-        11390.0
+        null
       ],
-      "advValueB": 13.979,
+      "advValueB": 14.139,
       "advSharesM": 1.095,
       "sharesOutM": 145.99,
       "freeFloatPct": 98.1,
@@ -18289,9 +18289,9 @@
         3760.0,
         3445.0,
         3579.0,
-        3773.0
+        null
       ],
-      "advValueB": 20.207,
+      "advValueB": 20.428,
       "advSharesM": 4.897,
       "sharesOutM": 259.44,
       "freeFloatPct": 100.0,
@@ -18301,7 +18301,7 @@
       "shortSharesM": 3.31,
       "shortDtc": 0.7,
       "shortReporters": 2,
-      "shortPctChange": -0.07,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 5.67,
@@ -18367,9 +18367,9 @@
         1611.0,
         1556.5,
         1579.0,
-        1663.5
+        null
       ],
-      "advValueB": 12.411,
+      "advValueB": 12.484,
       "advSharesM": 6.871,
       "sharesOutM": 175.29,
       "freeFloatPct": 99.9,
@@ -18379,7 +18379,7 @@
       "shortSharesM": 17.87,
       "shortDtc": 2.6,
       "shortReporters": 7,
-      "shortPctChange": 0.07,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 6.95,
@@ -18453,9 +18453,9 @@
         12270.0,
         11735.0,
         12765.0,
-        12415.0
+        null
       ],
-      "advValueB": 23.53,
+      "advValueB": 23.647,
       "advSharesM": 2.108,
       "sharesOutM": 146.98,
       "freeFloatPct": 89.3,
@@ -18531,9 +18531,9 @@
         4947.0,
         4644.0,
         4821.0,
-        5196.0
+        null
       ],
-      "advValueB": 8.636,
+      "advValueB": 8.332,
       "advSharesM": 1.588,
       "sharesOutM": 196.63,
       "freeFloatPct": 98.0,
@@ -18624,9 +18624,9 @@
         2904.0,
         2657.0,
         2660.5,
-        2796.0
+        null
       ],
-      "advValueB": 6.422,
+      "advValueB": 6.433,
       "advSharesM": 2.055,
       "sharesOutM": 316.72,
       "freeFloatPct": 91.1,
@@ -18636,7 +18636,7 @@
       "shortSharesM": 4.45,
       "shortDtc": 2.2,
       "shortReporters": 2,
-      "shortPctChange": -0.04,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.16,
@@ -18724,9 +18724,9 @@
         3168.0,
         3008.0,
         2974.5,
-        3167.0
+        null
       ],
-      "advValueB": 49.794,
+      "advValueB": 50.349,
       "advSharesM": 13.875,
       "sharesOutM": 2335.1,
       "freeFloatPct": 98.7,
@@ -18810,9 +18810,9 @@
         559.0,
         529.0,
         538.0,
-        537.0
+        null
       ],
-      "advValueB": 2.408,
+      "advValueB": 2.335,
       "advSharesM": 4.284,
       "sharesOutM": 649.31,
       "freeFloatPct": null,
@@ -18822,7 +18822,7 @@
       "shortSharesM": 39.99,
       "shortDtc": 9.3,
       "shortReporters": 3,
-      "shortPctChange": 0.13,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 3.69,
@@ -18886,9 +18886,9 @@
         2288.5,
         2214.5,
         2173.0,
-        2306.5
+        null
       ],
-      "advValueB": 5.671,
+      "advValueB": 5.702,
       "advSharesM": 2.081,
       "sharesOutM": 127.99,
       "freeFloatPct": 100.0,
@@ -18979,9 +18979,9 @@
         1913.0,
         1794.5,
         1816.0,
-        1931.0
+        null
       ],
-      "advValueB": 4.952,
+      "advValueB": 4.958,
       "advSharesM": 2.512,
       "sharesOutM": 189.29,
       "freeFloatPct": null,
@@ -18991,7 +18991,7 @@
       "shortSharesM": 8.0,
       "shortDtc": 3.2,
       "shortReporters": 4,
-      "shortPctChange": 0.12,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 0.22,
@@ -19077,9 +19077,9 @@
         4034.0,
         3850.0,
         3971.0,
-        4288.0
+        null
       ],
-      "advValueB": 6.31,
+      "advValueB": 6.211,
       "advSharesM": 1.436,
       "sharesOutM": 248.71,
       "freeFloatPct": null,
@@ -19089,7 +19089,7 @@
       "shortSharesM": 1.31,
       "shortDtc": 0.9,
       "shortReporters": 1,
-      "shortPctChange": null,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": true,
       "marginLongM": 0.18,
@@ -19168,9 +19168,9 @@
         2184.0,
         1971.5,
         2017.5,
-        2128.0
+        null
       ],
-      "advValueB": 2.907,
+      "advValueB": 2.917,
       "advSharesM": 1.308,
       "sharesOutM": 219.3,
       "freeFloatPct": 98.4,
@@ -19246,9 +19246,9 @@
         3246.0,
         2759.0,
         2831.5,
-        3036.0
+        null
       ],
-      "advValueB": 21.637,
+      "advValueB": 21.806,
       "advSharesM": 6.111,
       "sharesOutM": 386.07,
       "freeFloatPct": 95.0,
@@ -19258,7 +19258,7 @@
       "shortSharesM": 7.96,
       "shortDtc": 1.3,
       "shortReporters": 3,
-      "shortPctChange": -0.55,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 1.06,
@@ -19331,9 +19331,9 @@
         6580.0,
         6674.0,
         6651.0,
-        6966.0
+        null
       ],
-      "advValueB": 271.568,
+      "advValueB": 276.872,
       "advSharesM": 31.528,
       "sharesOutM": 132.4,
       "freeFloatPct": 100.5,
@@ -19343,7 +19343,7 @@
       "shortSharesM": 2.95,
       "shortDtc": 0.1,
       "shortReporters": 3,
-      "shortPctChange": 0.77,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 3.8,
@@ -19417,9 +19417,9 @@
         3341.0,
         3092.0,
         3376.0,
-        3529.0
+        null
       ],
-      "advValueB": 6.29,
+      "advValueB": 5.368,
       "advSharesM": 1.77,
       "sharesOutM": 100.92,
       "freeFloatPct": 93.6,
@@ -19429,7 +19429,7 @@
       "shortSharesM": 2.15,
       "shortDtc": 1.2,
       "shortReporters": 1,
-      "shortPctChange": -0.02,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 3.12,
@@ -19510,9 +19510,9 @@
         1695.0,
         1582.5,
         1662.5,
-        1710.0
+        null
       ],
-      "advValueB": 7.316,
+      "advValueB": 7.311,
       "advSharesM": 4.337,
       "sharesOutM": 1106.49,
       "freeFloatPct": 100.4,
@@ -19609,9 +19609,9 @@
         2217.5,
         2125.0,
         2143.0,
-        2194.5
+        null
       ],
-      "advValueB": 6.253,
+      "advValueB": 6.097,
       "advSharesM": 2.947,
       "sharesOutM": 687.24,
       "freeFloatPct": 77.3,
@@ -19621,7 +19621,7 @@
       "shortSharesM": 13.92,
       "shortDtc": 4.7,
       "shortReporters": 3,
-      "shortPctChange": 0.66,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.69,
@@ -19674,7 +19674,7 @@
       "nameJp": "三菱自動車工業",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 340.3999938964844,
+      "price": 340.4,
       "change": 0.5,
       "changePercent": 0.15,
       "marketCapB": 455.58,
@@ -19709,9 +19709,9 @@
         381.4,
         347.2,
         337.8,
-        340.4
+        null
       ],
-      "advValueB": 3.308,
+      "advValueB": 3.279,
       "advSharesM": 9.428,
       "sharesOutM": 1338.35,
       "freeFloatPct": 48.3,
@@ -19721,7 +19721,7 @@
       "shortSharesM": 64.82,
       "shortDtc": 6.9,
       "shortReporters": 4,
-      "shortPctChange": -0.45,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-09",
       "shortCandidate": false,
       "marginLongM": 6.72,
@@ -19795,9 +19795,9 @@
         1651.5,
         1517.5,
         1546.0,
-        1604.5
+        null
       ],
-      "advValueB": 3.252,
+      "advValueB": 3.29,
       "advSharesM": 1.931,
       "sharesOutM": 329.47,
       "freeFloatPct": 80.1,
@@ -19807,7 +19807,7 @@
       "shortSharesM": 6.27,
       "shortDtc": 3.2,
       "shortReporters": 2,
-      "shortPctChange": 0.08,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.39,
@@ -19880,9 +19880,9 @@
         24075.0,
         22395.0,
         23185.0,
-        23515.0
+        null
       ],
-      "advValueB": 38.633,
+      "advValueB": 39.283,
       "advSharesM": 1.534,
       "sharesOutM": 331.63,
       "freeFloatPct": 99.4,
@@ -19987,9 +19987,9 @@
         2077.0,
         1874.0,
         1895.0,
-        2033.0
+        null
       ],
-      "advValueB": 3.354,
+      "advValueB": 3.348,
       "advSharesM": 1.535,
       "sharesOutM": 243.99,
       "freeFloatPct": null,
@@ -20079,9 +20079,9 @@
         2034.0,
         1881.0,
         1948.5,
-        2022.5
+        null
       ],
-      "advValueB": 5.641,
+      "advValueB": 5.72,
       "advSharesM": 2.629,
       "sharesOutM": 561.11,
       "freeFloatPct": 90.7,
@@ -20186,9 +20186,9 @@
         2802.0,
         2558.0,
         2655.0,
-        2695.0
+        null
       ],
-      "advValueB": 5.815,
+      "advValueB": 5.92,
       "advSharesM": 2.065,
       "sharesOutM": 424.29,
       "freeFloatPct": 96.1,
@@ -20293,9 +20293,9 @@
         1361.0,
         1202.5,
         1243.5,
-        1289.5
+        null
       ],
-      "advValueB": 3.789,
+      "advValueB": 3.773,
       "advSharesM": 3.047,
       "sharesOutM": 439.9,
       "freeFloatPct": 96.7,
@@ -20305,7 +20305,7 @@
       "shortSharesM": 3.23,
       "shortDtc": 1.1,
       "shortReporters": 1,
-      "shortPctChange": -0.01,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.39,
@@ -20371,9 +20371,9 @@
         2264.0,
         2133.0,
         2199.0,
-        2206.5
+        null
       ],
-      "advValueB": 3.628,
+      "advValueB": 3.709,
       "advSharesM": 1.694,
       "sharesOutM": 293.02,
       "freeFloatPct": 94.9,
@@ -20383,7 +20383,7 @@
       "shortSharesM": 2.72,
       "shortDtc": 1.6,
       "shortReporters": 1,
-      "shortPctChange": -0.69,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-10-29",
       "shortCandidate": false,
       "marginLongM": 0.78,
@@ -20456,9 +20456,9 @@
         2917.0,
         2802.5,
         2852.0,
-        2833.0
+        null
       ],
-      "advValueB": 2.84,
+      "advValueB": 2.854,
       "advSharesM": 1.016,
       "sharesOutM": 174.04,
       "freeFloatPct": 99.2,
@@ -20591,9 +20591,9 @@
         4233.0,
         3939.0,
         4081.0,
-        4154.0
+        null
       ],
-      "advValueB": 3.998,
+      "advValueB": 4.049,
       "advSharesM": 0.967,
       "sharesOutM": 143.67,
       "freeFloatPct": 99.9,
@@ -20669,9 +20669,9 @@
         3081.0,
         2959.0,
         3049.0,
-        3140.0
+        null
       ],
-      "advValueB": 3.279,
+      "advValueB": 3.256,
       "advSharesM": 1.068,
       "sharesOutM": 138.46,
       "freeFloatPct": 98.0,
@@ -20681,7 +20681,7 @@
       "shortSharesM": 9.32,
       "shortDtc": 8.7,
       "shortReporters": 6,
-      "shortPctChange": -0.13,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 2.65,
@@ -20747,9 +20747,9 @@
         1650.5,
         1566.5,
         1606.0,
-        1654.5
+        null
       ],
-      "advValueB": 15.682,
+      "advValueB": 15.951,
       "advSharesM": 9.563,
       "sharesOutM": 2753.95,
       "freeFloatPct": 96.0,
@@ -20825,9 +20825,9 @@
         2568.5,
         2377.0,
         2498.5,
-        2605.0
+        null
       ],
-      "advValueB": 9.12,
+      "advValueB": 8.978,
       "advSharesM": 3.625,
       "sharesOutM": 685.81,
       "freeFloatPct": 100.1,
@@ -20939,9 +20939,9 @@
         6947.0,
         6432.0,
         6676.0,
-        6938.0
+        null
       ],
-      "advValueB": 5.396,
+      "advValueB": 5.332,
       "advSharesM": 0.776,
       "sharesOutM": 188.98,
       "freeFloatPct": 98.5,
@@ -20990,7 +20990,7 @@
       "nameJp": "ソニーフィナンシャルグループ",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 142.3000030517578,
+      "price": 142.3,
       "change": -0.2,
       "changePercent": -0.14,
       "marketCapB": 954.61,
@@ -21025,9 +21025,9 @@
         147.2,
         141.2,
         142.8,
-        142.3
+        null
       ],
-      "advValueB": 8.574,
+      "advValueB": 8.431,
       "advSharesM": 59.308,
       "sharesOutM": 6708.45,
       "freeFloatPct": null,
@@ -21102,9 +21102,9 @@
         5044.0,
         4602.0,
         4792.0,
-        4879.0
+        null
       ],
-      "advValueB": 7.932,
+      "advValueB": 8.021,
       "advSharesM": 1.647,
       "sharesOutM": 473.81,
       "freeFloatPct": 100.9,
@@ -21202,9 +21202,9 @@
         3069.0,
         2879.5,
         2945.0,
-        2952.5
+        null
       ],
-      "advValueB": 1.986,
+      "advValueB": 1.988,
       "advSharesM": 0.682,
       "sharesOutM": 195.53,
       "freeFloatPct": 97.3,
@@ -21280,9 +21280,9 @@
         1850.0,
         1753.0,
         1810.5,
-        1797.0
+        null
       ],
-      "advValueB": 2.182,
+      "advValueB": 2.191,
       "advSharesM": 1.24,
       "sharesOutM": 339.82,
       "freeFloatPct": 99.3,
@@ -21345,7 +21345,7 @@
       "nameJp": "京王電鉄",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 783.0999755859375,
+      "price": 783.1,
       "change": 3.9,
       "changePercent": 0.5,
       "marketCapB": 453.32,
@@ -21380,9 +21380,9 @@
         809.0,
         761.3,
         773.0,
-        783.1
+        null
       ],
-      "advValueB": 1.703,
+      "advValueB": 1.702,
       "advSharesM": 2.225,
       "sharesOutM": 578.88,
       "freeFloatPct": 97.5,
@@ -21458,9 +21458,9 @@
         1485.5,
         1402.0,
         1471.0,
-        1488.5
+        null
       ],
-      "advValueB": 2.971,
+      "advValueB": 2.95,
       "advSharesM": 2.116,
       "sharesOutM": 482.24,
       "freeFloatPct": 94.1,
@@ -21470,7 +21470,7 @@
       "shortSharesM": 4.37,
       "shortDtc": 2.1,
       "shortReporters": 1,
-      "shortPctChange": 0.06,
+      "shortPctChange": 0.0,
       "shortAsOf": "2026-11-06",
       "shortCandidate": false,
       "marginLongM": 0.28,
@@ -21536,9 +21536,9 @@
         2362.0,
         2220.0,
         2286.0,
-        2325.0
+        null
       ],
-      "advValueB": 3.97,
+      "advValueB": 3.949,
       "advSharesM": 1.855,
       "sharesOutM": 316.68,
       "freeFloatPct": 80.4,
@@ -21622,9 +21622,9 @@
         5854.0,
         5498.0,
         5542.0,
-        5629.0
+        null
       ],
-      "advValueB": 5.955,
+      "advValueB": 6.061,
       "advSharesM": 1.023,
       "sharesOutM": 234.74,
       "freeFloatPct": 90.7,
@@ -21722,9 +21722,9 @@
         1243.5,
         1186.5,
         1209.0,
-        1237.5
+        null
       ],
-      "advValueB": 2.348,
+      "advValueB": 2.377,
       "advSharesM": 1.708,
       "sharesOutM": 337.68,
       "freeFloatPct": 86.8,
@@ -21829,9 +21829,9 @@
         1869.0,
         1739.0,
         1784.0,
-        1821.0
+        null
       ],
-      "advValueB": 3.539,
+      "advValueB": 3.46,
       "advSharesM": 1.924,
       "sharesOutM": 283.52,
       "freeFloatPct": 46.9,
@@ -21915,9 +21915,9 @@
         1125.0,
         1056.0,
         1090.5,
-        1098.5
+        null
       ],
-      "advValueB": 2.654,
+      "advValueB": 2.711,
       "advSharesM": 2.505,
       "sharesOutM": 359.58,
       "freeFloatPct": 87.6,
@@ -22014,9 +22014,9 @@
         1077.5,
         1012.5,
         1034.5,
-        1063.5
+        null
       ],
-      "advValueB": 0.944,
+      "advValueB": 0.958,
       "advSharesM": 0.886,
       "sharesOutM": 208.96,
       "freeFloatPct": 88.9,
@@ -22100,9 +22100,9 @@
         1284.0,
         1228.5,
         1259.0,
-        1283.5
+        null
       ],
-      "advValueB": 3.872,
+      "advValueB": 3.931,
       "advSharesM": 3.024,
       "sharesOutM": 500.8,
       "freeFloatPct": 96.4,
@@ -22225,6 +22225,36 @@
   },
   "headlines": [
     {
+      "title": "Mitsui Chemicals to Acquire JSR With Development Bank of Japan for $8.8 Billion",
+      "publisher": "WSJ",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWlJPRjJiWWNmd1RhNVN2YmxSaVNvenpmTjV5ZFVabDA0S1YwWlVvbWFGdy1SZ2pHdER4ZDl4aUZRZW1iWURtdl9QZjcwUmNlRWU4NFh1LTJkUExSSEJBQi1CZzg2aG1QS3d1T051Yk02a1VrQXdCclFLc1M5a3ZuYzJXUktfejVHZFA3UjA0RDZIT1dUOENwZ1BPbUJmSVA1enpoWjI3R3VRa3NpbGhVcmtlWGNOZFNwcHpLQkdYSQ?oc=5",
+      "publishedTs": 1794324842
+    },
+    {
+      "title": "Kioxia leveraged product debuts in Hong Kong in first for Japan stock",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORWdYNWIwUndSRXFlYmlFWWhxVU9uS2pXY2hISkpEOWw3UjBRVm5fd2Y0eU9SalRyMTR4d29mX0h5eERKRDV5OUE4VGxhM1IzNnd3d0YxN1dDYjV1NW9NYkpYSEdaSXNicnRyV0phQ29XdlcySUllTENCbzVhbTJZeDd2eEF1QjhPWExnQkZ1TWw3UkRURTdwb2NyVTl6bFlCRGJieDhhbTNheHdPZ1puaWhCSC1yNFdHNVVZ?oc=5",
+      "publishedTs": 1794323940
+    },
+    {
+      "title": "Bank of Japan policymaker highlights economic risks of rate rise",
+      "publisher": "Nation Thailand",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FQVpKWmJUOHo4c0VIUjBXUjVWWHpzb2l4alNCbW9pTHJOQU9oa3pEei1oRmh0MzBaQlluWmk4TzNOc1Y0OTlaWmY5eWRkaDJKYVZrbzNjSkVFSUYyMnJR?oc=5",
+      "publishedTs": 1794322680
+    },
+    {
+      "title": "Nikkei Surges 1,684 Points to Reclaim 60,000 on Tuesday",
+      "publisher": "News On Japan",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mb1MxeEluUnFfTG1nNnQwZFlWRXNZY1NEb2trWGFnZmhPdGxRTUpFM0NYTVVJUlBlbXl0YTBnY2Y2N3FDeDNzQmo5VWp5LXdBNUhPMg?oc=5",
+      "publishedTs": 1794318663
+    },
+    {
+      "title": "Yen Falls to Lower 158 Range in New York as Dollar Buying on U.S.-Japan Rate Gap Persists",
+      "publisher": "BigGo Finance",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MTzhMVjhIdDBpT1hXMHdHUVIwRHFRcXI5OXB3MklJNC1GUXE1TDczVFl4MEVYTVRWMmx5TEd5anp2dHhsaHRFQ0drRFdYUU80dHB5TFlxVGtHcjNFTGJTWWRXZ0VBZ2RnZl9KUHZsOXFSZnpzTnc?oc=5",
+      "publishedTs": 1794317100
+    },
+    {
       "title": "Japan leads foreign investment in Hung Yen with $6.82 billion",
       "publisher": "Vietnam Investment Review - VIR",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPT2lVcU9kVlN3aEI4VUI1bGFQR0dOTEZlZm01UXd5akIyM3ZHZUdoUDhieTBPX0hqUXc4QmlvS0pGZm1TRzBNR2tBekpsbkNqUm1sM2JRSlVLMXlhMTZwcGRUWWFKNkFONl9IaXRLVF9na0J4QjdUT09FTk5CMG1OcmpxU1V0X1B0UUlQelBsa1loVkZt?oc=5",
@@ -22235,36 +22265,6 @@
       "publisher": "Disruption Banking",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPemlMdU9OaHJ0ZEVGN2xxVG8tQVE5aEE1MTJKS2NOWHdURFNvNGY1THg4bkhEdWh0NjZldWUxUkpCUkx6UVA4ZVBKeTJQSm5yTXNCLUh3REdTb09DM0RUVkE4ZXlpdlpiTEx3aWRDTm9oeVpaQXB0OE1hT2I5dEZrNnRLOHk0MURZWlFLSFpVOGZ0MzMzbllKeDZ2TkZfQUJt?oc=5",
       "publishedTs": 1794308411
-    },
-    {
-      "title": "Bank of Japan rate debate switches to pace and timing of future hikes",
-      "publisher": "Financial Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ga3RTSE5NRHdocGpDOGE2R1R2Tmt3dzRjZTMtSVh6YTY5eVZHdGZkMFRKSzJaaDNKZ3MzUEplamdjRllBRG5xT1lKQ3ctR0tkVWhUbFFkbUljM21wMEMyMkZodTdTMUpaODJZWFZCNmI?oc=5",
-      "publishedTs": 1794305602
-    },
-    {
-      "title": "Japan Govt Debt Falls by 23 T. Yen",
-      "publisher": "Nippon.com",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE45dlFkZ045bTRBcTdRSllTSWduWmZSMjRxVlNScjdkVm1CWmlXUUdfYUtHUFRXTllYZHoxS0oyNkFkQjVTMzFpUjVNYzlyLU1ZRXVzdA?oc=5",
-      "publishedTs": 1794302281
-    },
-    {
-      "title": "Nikkei 225 gains for 2nd day on AI, chip buying",
-      "publisher": "NHKニュース",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE40MXBGV0M3b3BDNmE2SXN3MTRQaWozM3VpX0tON2JkM2tFNjJodS1SZng4dGcxWGk4NU1IZlpETzE3Ynp5NkRkek5KQklJd1YwMlZJSERWTFFaYnlSVHdzYzhzYw?oc=5",
-      "publishedTs": 1794301544
-    },
-    {
-      "title": "British Pound advances to mid-212.00s vs Yen as hawkish BoE meets weak Japanese data",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPazlVbDk0ZnFlVmY0RDFndTFvbFNEcUJFSFoyTEQxNFBOemQtQkhkblFsMkhHbmc1UlpuM0tDTnd3ZDBOQ3JnY2VsM3NFcW90UHhHQmV2YzVUY1dBd1pGbE5qTjRld0U0a1JPbHpmcUlwTnQyTHR1elZRWnBEdmlvcjdOVGpROHZzT3VhUEQ1Z3pLZEZPVUxSRzNSQzU2XzRMNkZlSlc3LUY5bk1EUU5ZaWh1VEZYVU1IaXY5ck80Q2tiTmhR?oc=5",
-      "publishedTs": 1794298057
-    },
-    {
-      "title": "Vietnam's FPT sees rising demand for AI adoption in Japan",
-      "publisher": "Nikkei Asia",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0Z4TkNseEN5OWxBOWVtdzd4TUd4NjIxZThnU2pieWdRUGZxcVpjOXB3MWJJMXZEbjFvdU1sSlNrM2t1dF9ROXZKWnlWeUNwOURuNnRJRWdJNkl3UnpBRl9OQThta2IwRDNCalhzQndCYmkzWm9SYl92d2xKckZDUDJLV19zSE9QcjVtZnFpWXNkYVlKZ1NqVWxRNGFhZlZ5X0JXX29PM0ZMQnBYUUlRODVXdWo4ZzFqWXp5WWQxNTJGcWF4QWxyOHk3bThuS3RRRGhGVE9kLUZRTnFzc09oRmxNdnQ?oc=5",
-      "publishedTs": 1794297000
     }
   ],
   "marketTone": null,
@@ -22279,8 +22279,8 @@
     "coveredStocks": 244
   },
   "catalystData": {
-    "edinet": true,
-    "tdnet": true,
+    "edinet": false,
+    "tdnet": false,
     "reform": false
   }
 }
