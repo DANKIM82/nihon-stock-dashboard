@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-20T16:20:39.377107+00:00",
+  "asOf": "2026-11-23T04:58:17.057407+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -11,13 +11,12 @@
       "symbol": "N225",
       "nameKo": "닛케이 225",
       "nameEn": "Nikkei 225",
-      "value": 59444.21,
-      "change": 419.93,
-      "changePercent": 0.71,
+      "value": 56436.65,
+      "change": -3007.56,
+      "changePercent": -5.06,
       "high52w": 72831.73,
-      "low52w": 48490.03,
+      "low52w": 48511.95,
       "sparkline": [
-        62907.84,
         62693.16,
         62189.65,
         63268.37,
@@ -36,16 +35,17 @@
         59662.02,
         58860.43,
         59024.28,
-        59444.21
+        59444.21,
+        56436.65
       ]
     },
     {
       "symbol": "1306",
       "nameKo": "토픽스 (ETF 1306)",
       "nameEn": "TOPIX (NEXT FUNDS ETF)",
-      "value": null,
-      "change": null,
-      "changePercent": null,
+      "value": 386.2,
+      "change": -16.0,
+      "changePercent": -3.98,
       "high52w": 442.0,
       "low52w": 36.74,
       "sparkline": [
@@ -68,18 +68,18 @@
         404.5,
         401.9,
         402.2,
-        null
+        386.2
       ]
     },
     {
       "symbol": "1591",
       "nameKo": "JPX 니케이 400 (ETF)",
       "nameEn": "JPX-Nikkei 400 (NEXT FUNDS ETF)",
-      "value": null,
-      "change": null,
-      "changePercent": null,
+      "value": 33660.0,
+      "change": -1240.0,
+      "changePercent": -3.55,
       "high52w": 38480.0,
-      "low52w": 29375.0,
+      "low52w": 29630.0,
       "sparkline": [
         36150.0,
         36290.0,
@@ -100,16 +100,16 @@
         34960.0,
         34800.0,
         34900.0,
-        null
+        33660.0
       ]
     },
     {
       "symbol": "2516",
       "nameKo": "도쿄 그로스 (ETF)",
       "nameEn": "Tokyo Growth 250 (NEXT FUNDS ETF)",
-      "value": null,
-      "change": null,
-      "changePercent": null,
+      "value": 512.0,
+      "change": -28.6,
+      "changePercent": -5.29,
       "high52w": 675.0,
       "low52w": 504.7,
       "sparkline": [
@@ -132,7 +132,7 @@
         549.3,
         542.4,
         540.6,
-        null
+        512.0
       ]
     }
   ],
@@ -608,7 +608,7 @@
       "nameJp": "日本電信電話",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 167.7,
+      "price": 167.6999969482422,
       "change": -1.5,
       "changePercent": -0.89,
       "marketCapB": 13539.01,
@@ -7182,7 +7182,7 @@
       "nameJp": "日産自動車",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 266.3,
+      "price": 266.29998779296875,
       "change": 5.3,
       "changePercent": 2.03,
       "marketCapB": 932.07,
@@ -7345,7 +7345,7 @@
       "nameJp": "楽天グループ",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 554.7,
+      "price": 554.7000122070312,
       "change": -54.6,
       "changePercent": -8.96,
       "marketCapB": 1210.35,
@@ -9529,7 +9529,7 @@
       "nameJp": "三菱ケミカルグループ",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 988.8,
+      "price": 988.7999877929688,
       "change": -48.7,
       "changePercent": -4.69,
       "marketCapB": 1343.54,
@@ -9628,7 +9628,7 @@
       "nameJp": "住友化学",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 459.6,
+      "price": 459.6000061035156,
       "change": -26.1,
       "changePercent": -5.37,
       "marketCapB": 764.07,
@@ -10165,7 +10165,7 @@
       "nameJp": "ソフトバンク",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 244.1,
+      "price": 244.10000610351562,
       "change": -2.8,
       "changePercent": -1.13,
       "marketCapB": 11696.79,
@@ -10399,7 +10399,7 @@
       "nameJp": "LYコーポレーション",
       "sector": "Communication",
       "segment": "Prime",
-      "price": 499.9,
+      "price": 499.8999938964844,
       "change": -15.0,
       "changePercent": -2.91,
       "marketCapB": 3431.38,
@@ -14109,7 +14109,7 @@
       "nameJp": "王子ホールディングス",
       "sector": "Materials",
       "segment": "Prime",
-      "price": 809.1,
+      "price": 809.0999755859375,
       "change": -17.7,
       "changePercent": -2.14,
       "marketCapB": 687.75,
@@ -15596,8 +15596,8 @@
       "sector": "Materials",
       "segment": "Prime",
       "price": 496.0,
-      "change": 0.0,
-      "changePercent": 0.0,
+      "change": null,
+      "changePercent": null,
       "marketCapB": 252.57,
       "per": 16.19,
       "pbr": 0.47,
@@ -19881,7 +19881,7 @@
       "nameJp": "三菱自動車工業",
       "sector": "ConsumerDiscretionary",
       "segment": "Prime",
-      "price": 299.7,
+      "price": 299.70001220703125,
       "change": -7.1,
       "changePercent": -2.31,
       "marketCapB": 401.25,
@@ -21206,7 +21206,7 @@
       "nameJp": "ソニーフィナンシャルグループ",
       "sector": "Financials",
       "segment": "Prime",
-      "price": 142.3,
+      "price": 142.3000030517578,
       "change": -2.7,
       "changePercent": -1.86,
       "marketCapB": 954.61,
@@ -21561,7 +21561,7 @@
       "nameJp": "京王電鉄",
       "sector": "Industrials",
       "segment": "Prime",
-      "price": 748.3,
+      "price": 748.2999877929688,
       "change": -11.4,
       "changePercent": -1.5,
       "marketCapB": 433.18,
@@ -22377,7 +22377,7 @@
     },
     {
       "sector": "Materials",
-      "changePercent": -5.7,
+      "changePercent": -5.86,
       "avgPbr": 1.14,
       "count": 37
     },
@@ -22439,24 +22439,67 @@
   "marketSummary": {
     "advancers": 9,
     "decliners": 235,
-    "unchanged": 1,
+    "unchanged": 0,
     "belowBookCount": 74,
     "avgPer": 20.28,
     "avgPbr": 1.95,
     "avgDiv": 2.68,
     "totalListings": 245
   },
-  "headlines": [],
+  "headlines": [
+    {
+      "title": "Japan's Ricoh shoots for younger buyers with stripped-down cameras",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZW0xVG10S0NUbnZaYjZSdnNLQWs1V0FHdlVKblVLUVhFNjlmT2VVTkJFWW05TlNfUnpzMHQxdlJRY2lRYWxGUUVScXBHQXBENHpBMW9INkt4ejFJRVJpb0UwNUdYcDFWb29RUHJibFJsT01SNmwwSlp3aC1KZm1DbzZ1U2M5aGJwdTFhdXdRZUpjLV9jbmd3WldXRU10Q3ZwVlNDNnE5QjZpWUhS?oc=5",
+      "publishedTs": 1795406100
+    },
+    {
+      "title": "Morningstar Adjusts Japan Tobacco's Price Target to 5,200 Yen",
+      "publisher": "marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUmJFWFQxZzF4eW10Ujk3dEVqVUlYekhRekVfdFhKZlluX2xFaHNVLS1ieW5IRy1YWDFvX1dNRUZWSXBNSE04ZEZPZjItLUxVck1heHotR3RKUmF2WmtSdmJvUVZ3TGNRNDdGQVhuUnVNdUx3b0ZaQzdyVXE5V2RnSGFFT3MxdTdjNjRYWkpEcjdDenptRWZidURqak92RDk1QzVfNG9OX2tmeEZtb2s0aDhzdHk?oc=5",
+      "publishedTs": 1795403650
+    },
+    {
+      "title": "ANA Revenue Hits Record ¥1.4 Trillion: Plan Japan Flights",
+      "publisher": "deeparrival.com",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdXo3ck05VElBbGJscjVEbGNXZHBZUGtSVklmNXM4Q0hsOWRHWW16ZTktNU9FNkdDWDZ1b05NcV9PSExKajR4TTVZRnZVdGFyZElmZE5TX2p0SVFLcnpRV0NJOFFXUFVGRWJEM29fSmpCVUtQc3JBNk5FcWk0R0MyX2RtX1hyUQ?oc=5",
+      "publishedTs": 1795398926
+    },
+    {
+      "title": "Japanese Yen drifts lower as uncertainty over BoJ's policy path offsets softer USD",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYTV5X044U05hSWdhNjNkREV6NWpPTHdKYUJpd0E2N1UxM0J3VzAycWFaZ0dyQzNXVEpLdTlLdTlocmhiMjBnT2NDOGhKUnVjejNZM1V4V3dqLW1UX1NfM1NDTExvcDZxSXNPakp1aW1ud2FJMWxseTlHYThVM0RSSzNfRWlETWtkZ1RES2ZzTEtOOHRVSmFWYnBtWE5RTGo1YnNUNGdBX0R5ZHkzZkRmRXo5UFhyQllIUjk0YURnMHVTdw?oc=5",
+      "publishedTs": 1795397912
+    },
+    {
+      "title": "South Korea Stocks Open Lower, Kospi Falls Over 3%, Samsung Electronics Drops 3.5%; Japan Markets Closed",
+      "publisher": "TradingKey",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMkRORlJlMmxsTndvamlfdnRPMEVUc3FfbFNMTU0zTHNzamphaXFnVUFIQWxyNjBEN25ieUFUTFFTYk1kT2ktUUpkWnFhOW43UWo4TkhnV2tzVWZEYm82cUhFaWlHY3ZFQ1U1TUZaN25QNVVtMlViV19pVXZrSmtkUFNtMDJWNlhYel9PVWM4WjRBWXdPTlBKcE16Y01tbGRXcW8ySGg3VFdoMWs?oc=5",
+      "publishedTs": 1795394201
+    },
+    {
+      "title": "Japan Week Ahead: Rising Costs, Weak Yen Hurting Households but BOJ Board Seen Leaning Toward Another Rate Hike in December",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNcmJJVVdEQ2lkS2hEVF9SV090aHpwdEIxVGk2ekEwajV2YkRIa1lBaldQSTlKdm8tdXVPZ3pyNWs1cHdSbjJoem9VYm5la1A4NXJsaC1QREdtSUxJV2pnNHoxa2pHbUpkN2FIeWNDRms1ZXJGejdSWTBFUHNBWjRKakUtekd6bDczcHJWMkN5MlBWcTQzMGF4dE1OVmpjNFJIRjhqWG5UZTF2dkN1VVpaVVpmRzI2NEUwNlFCTUhuYWhGaW1xLWpDSmRGUm04QnB5QUpKMEVEVERqRUtJenBra1o5TXQ1YzlDV2RZbnYzeUFFUm9TNElJNDZ1d3NERTZJZk80ZlFrVHlOdS1y?oc=5",
+      "publishedTs": 1795385940
+    },
+    {
+      "title": "November 2026s Japanese AI Stocks To Improve Your Portfolio",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWWpZMWZfWmVYV1VtYWdUY1RzdTFETi1VRFkxdVA2OUNaMHh3bUkycnE4OF95dEdub3BiZ2ZSY1JWUDhRc1VnR0FHVTd0Q21QV29CRXBuWjdOd0x2WFphUHVRRGp3MXhXYjhIWllhQVdnMlVaYktCcTBqNGN2S2x4MDNKelRzdFhqa0RUcjRqZG9POXRNcC1QSEpTU3RSUQ?oc=5",
+      "publishedTs": 1795385282
+    }
+  ],
   "marketTone": null,
   "shortData": {
-    "ok": true,
-    "asOf": "2026-11-19",
-    "coveredStocks": 118
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "marginData": {
-    "ok": true,
-    "asOf": "2026-11-19",
-    "coveredStocks": 244
+    "ok": false,
+    "asOf": null,
+    "coveredStocks": 0
   },
   "catalystData": {
     "edinet": false,
