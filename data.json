@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-23T15:43:14.758305+00:00",
+  "asOf": "2026-11-23T19:28:38.535222+00:00",
   "source": "yfinance",
   "counts": {
     "stocks": 245,
@@ -22451,6 +22451,36 @@
   },
   "headlines": [
     {
+      "title": "Stocks Soar as Huang’s Nvidia Return Fuels AI Bets: Markets Wrap",
+      "publisher": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFVRM2J2cTZ6eU02Qzk1TF83UmhsSEN3SlpHYjJuc2lDeXBVM0h6WkN2bEJCUlk5RnZNOFMta05FOXFqeTZQQWZnbFl2RG1WTWVNSXYwVWhZRFZxRkx6SDlhTWtUWk92UVBJa2FGWVk3ak9rOUVJYjZ6RDBqcUZCOEpiWmFVWGxvVmM1Y2prdDk2N19EZG0xWjU3aFV5QkJ6MjF4eExGSkd3TWxaWGRBVzhB?oc=5",
+      "publishedTs": 1795460813
+    },
+    {
+      "title": "Japanese Yen weakens as Nvidia-led stock rally boosts risk appetite",
+      "publisher": "FXStreet",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUDNLMi1OTGdLSmFGc0pBWXE0MFViQ1hKUExwalZSQ2FobnZjNmZVSlp5RDFsdXQ5cm81WXRhWl9Jd3l2R2EwdWVIN3ZvbzYyWUQxN21BVVdIZUx5X2puSzdVQVZjQTJNcmM5d3ptb011b19XeFh3OWNybVJodVFELUd0QjhULXR2THdGOG9tWXZQM2tQc3FCNFBTbjdvOUx2WGxlWmlfR21JODVBZGtz?oc=5",
+      "publishedTs": 1795457750
+    },
+    {
+      "title": "Japanese state-backed lender to invest in late-stage drug trials",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTWpWWTlmRmxrOVlhbkdhN0dJeHdzdlFfOGlJc0w4OTl5b0wyOEFycGM0V0xHV1N6X3UxWW1JRlN2eEhsNlZINU4tOTZoa0R2X1ZHRlloSC00bGpVby1yVkNSZHF2QW9PTEVhdWlPUWNrS3RHQ0wtbGhHQWM5djBidzd3WW1McXZqWGYwMVQwMmJSdVRKajB5eFNTc0JzUG96Zkh2bzZ3M0xMR2xOa0p2YkN2UQ?oc=5",
+      "publishedTs": 1795454940
+    },
+    {
+      "title": "Japan's Sumitomo creates fund to bring AI to smaller businesses",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUzJ1WXhhdG95ZWk4azAtMldvNjFNN0VULUs5ZFZYVmJlUUpBbG5jVThWSUhhS29uaXEyRzZxZVRNR3hKY3BmcjByREVMMDEtMUpBN2RaOVY5ejV6Y0FvTWpyMEs2c1N2UmJvUXpMZHBtTDBzUkswQl9rNXpWUVVmMURUS3owVnR3OHZBUTBLUTBReDE0cWpBWjhyWTFmNmw4S0twdkVyUQ?oc=5",
+      "publishedTs": 1795450800
+    },
+    {
+      "title": "Japan ambassador meets with detained Japanese journalist in Russia",
+      "publisher": "Nikkei Asia",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQc25VYVFOOFgwQkJRN0JpU3hzQUtGTDRDR1hvNVlELW56Y29OSFBDbDBrMkcyeXFNV3RNcnFBc2ZzVVB6SmpyeGUwM3Q1UGhmaW96NUxuTFd5NXZady1NQmNVc3RhZ01IMVJ0SlBnMlFJcXBPdWRxTnREN1lQMjNRN0ZWLU1LWjFyOWlzLXJmNEV4RlFZNHJUeXFDa1VFZGR3UnlfRUpXc002T1ZuZEVBREp6aXZ1eVVucVJYUjZGQmQ?oc=5",
+      "publishedTs": 1795449060
+    },
+    {
       "title": "Asian Stocks Tumble As AI Bubble Fears Weigh on Technology Shares",
       "publisher": "تسنیم",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYjBYaHI3N092VnpuU3hYc1dPRTkxMUhzeTJoRVJ0cjhlYkZtQ3JQemlZb2pHbllDbkRXUzVLSUFBUXlnWXM0UEY5Slh1cGRsOUZsVWRjVXhnSjhRX3kzWGk5ZF9SWXczendJWGphbW1ZS2dFbHJrcWZmWHEtTlJrNTVZckN5MVRmd25vWElHNVNTWHNGWnU1OVhkb3pxcjlid1gtbXlCRmtGWHhVby1rN3J4eWFNbGJMRVHSAb8BQVVfeXFMUE9BdENhdU5Rbkw5UUtNWUF6OHNpVGM0UFNDeEY1aGliY2VDZWpxbUZqeDY1MlZoS2ZuYWMyandjYldIaGs5WENHX2tBb0NMY21Ld09rbXNXeHBjSzJtVDlDY0NtTVlRNEFJdkpvRUhOYTNRWG04RWhiU2ZDY2kxX3V3OE5oUFE0Qi1tNlFzdW1QNEliN1JZTmV0RTZjRzVLWEo5RWVRa1NHZEt2dnNTNWVybFZubHVzeW01RlBVa3M?oc=5",
@@ -22461,36 +22491,6 @@
       "publisher": "FXStreet",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMmNhdFB6WXdFUXlIeDBXYllxNjJmOTdpVUw0dW54TXllZnRxTHQ3ZXF6R1BfTTU0UHBmUHFBWk5USHRMY3BfbWRvNmxBVXBOWjN4QTJjN1UwUEc3VzRzSjRubWZTYzZOd2hnazNadVhlaGNJUjBobWRHaGYtNzdIaWlkZ2VWUmRVWjZibnliVjBSV1oyWlZZX19WclJPeWMtTU80LUtjNmp2eXJUTWc?oc=5",
       "publishedTs": 1795432228
-    },
-    {
-      "title": "2027 Acura Integra Type S Reportedly Limited to 250 Units in Japan, Priced From 8,998,000 Yen",
-      "publisher": "autoevolution",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQVFhd3N1X1lXd0RTd3kxYlprV3hlTHFEUzlaNTh3UXJRYkREMzh4T2hBMW5IdklUZGY1cnhXcWFYNmx3aF9rTnRrcFdFZHFpV09iZks5LUk1UXllUEU5X3hSNndKVGhPTTNiQ3hPOE9wLVRHUUx6VjMtTkJoWHRUc3gzekd2bTZiLXRnS1k4Wmx6OVJHWlN0QURkVGpHUDVCRUloN2VwUmZITHJXTlBRN2VaOFhqT2ZNLUlHS0JPMkowdmlBem1sN0E4ZWRLX1JKYlIw?oc=5",
-      "publishedTs": 1795429813
-    },
-    {
-      "title": "USD/JPY Falls as Equity Rout Fuels Yen Demand and Modest Japan Inflation Cools BoJ Hike Bets",
-      "publisher": "VT Markets",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdzdGdWlMYnNWWl9SYTBfVVRidkgxemRDZG5oM1h3TjVCR3pCY0J6UUV5cnZ3dDF6dmJNQ1Ftb1E2cWw0bVk4N09ncmR2SGd3OXBQdFphc0lka3haVHk1b3U4bkFmeDJLVjJ6angxYTBmaDN5ZS1uZXlnSUxqM0FKRjByNE13c05wM1JyNzNQWEt3QW9RYTlpWUhiUjBsY1lxWDkzZFNwTG1Zdzl5eEdub3RZT1oxM21adTdTNjVIRklxVlVHQUdJVDJTcmh5cHI5dmVSOA?oc=5",
-      "publishedTs": 1795429121
-    },
-    {
-      "title": "USD/JPY slips after Japan inflation lifts yen as intervention fears cap gains near 160.00",
-      "publisher": "VT Markets",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcHdId3pPdUFOUXJEVmQzRTBpUDQ4dkFnZi1GY1g5b1N5dEoyRzNrWXk2Rkl4ZC1aakRjcXpQMVJwUjlSVm8tdGxqSWxJNVhTbC12MHU4dGdIQlVSNDV1T2NOZ0daakFrUDFhUEdKVmlXcFVXSHNBTkdmYUl1TkRsNzlkWlpKNzRZX1JOX09sblIyOHdpMkFaQjhBbkw2X3FoZ1Nsek1abmdCMXFYSkw1bzUwb3l1SUt5M3p3VnBVX0w2d3h3OVhPM2lGRVhTczl0?oc=5",
-      "publishedTs": 1795429109
-    },
-    {
-      "title": "Japanese Yen: Upside risk builds against US Dollar – UOB",
-      "publisher": "FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNLVZjRnJ6SWM3Mk9Pel9oU1d3eTlybzd0QUFSVzJiRERCRDQ0dDl4eXhTeXdlbE5iLUM2QjljQUhzNFJDdURJd29lcGhRZnpmUXp4LXZNYXZrdXlqb21rcVNqZnNOX2hzcHc3RWh1c2NIT19ta1pndkRPMWVQdHpqVnpFNWZ1X21PbndEcmU1azBXMXFQQWIySDc5SQ?oc=5",
-      "publishedTs": 1795426211
-    },
-    {
-      "title": "Number of people in Japan making 100 mil. yen or more doubles over decade",
-      "publisher": "毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hNlk4TEhWZngyRllQNUl2WWIxRjY1SHJXNXFIRHRaZFl4LUVUckllT2ZrSW9xeTJpRE5LbEVVZlg4Vkk3T0xkSGdxQlZFbkh1YTFaQXFPMjRnRzVua0pLTG55amVyTWp6VzRZM0tpWUhCRTQ?oc=5",
-      "publishedTs": 1795424443
     }
   ],
   "marketTone": null,
@@ -22500,9 +22500,9 @@
     "coveredStocks": 118
   },
   "marginData": {
-    "ok": false,
-    "asOf": null,
-    "coveredStocks": 0
+    "ok": true,
+    "asOf": "2026-11-19",
+    "coveredStocks": 244
   },
   "catalystData": {
     "edinet": false,
